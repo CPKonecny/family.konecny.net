@@ -4,3 +4,4 @@ __pycache__/
 export/raw/
 site/config.test.json
 .DS_Store
+data/report.md

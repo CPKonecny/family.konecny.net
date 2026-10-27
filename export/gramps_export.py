@@ -1823,7 +1823,7 @@ def main(argv=None) -> int:
         json.dump(bundle, f, ensure_ascii=False, indent=1, sort_keys=True)
         f.write("\n")
     os.replace(tmp, bundle_path)
-    with open(os.path.join(data_dir, "report.md"), "w", encoding="utf-8") as f:
+    with open(os.path.expanduser("~/gramps-tools/export-report.md"), "w", encoding="utf-8") as f:
         f.write(text)
     size = os.path.getsize(bundle_path) / 1024
     progress(f"wrote {bundle_path} ({size:.0f} KB), data/report.md, {copied} public media files"
