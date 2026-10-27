@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% from "_macros.html" import plink, placelink, datetext, stamp, fact, ladder, notecard, mediacard, summarybar %}
+{% block description %}{{ p.name.display }}{% if p.status == 'full' %}, {{ p|lifespan }}{% if p.birth and p.birth.place %}, born {{ site.place_name(p.birth.place) }}{% endif %}{% endif %}.{% endblock %}
+{% block body %}
+<article class="person c-{{ line_color }}">
+  <header class="phead">
+    <p class="eyebrow">{% if p.status == 'full' %}{{ p.name.surname }}{% else %}Living{% endif %} · {{ p.id }}</p>
+    <h1>{{ p.name.display }}</h1>
+    {% if p.status == 'full' %}
+    {% if p.alt_names %}<p class="aka">also {% for a in p.alt_names %}{{ a.display }}{% if a.type and a.type != 'Birth Name' %} <small>({{ a.type|lower }})</small>{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}</p>{% endif %}
+    <p class="span">
+      <b>{{ p|lifespan }}</b>
+      {% if p.birth %} · born {% if p.birth.date %}{{ p.birth.date.text }}{% endif %}{% if p.birth.place %} {{ placelink(site.place(p.birth.place)) }}{% endif %}{% endif %}
+      {% if p.death %} · died {% if p.death.date %}{{ p.death.date.text }}{% endif %}{% if p.death.place %} {{ placelink(site.place(p.death.place)) }}{% endif %}{% endif %}
+    </p>
+    {{ summarybar(summary) }}
+    {% else %}
+    <p class="living-note">A living member of the family. This site shows only the name and the family links; nothing else is published for living people.</p>
+    {% endif %}
+  </header>
+
+  <section class="kin">
+    <h2>Family</h2>
+    <dl class="kinlist">
+      {% if parents %}<div><dt>Parents</dt><dd>{% for q in parents %}{{ plink(q) }}{% if not loop.last %} · {% endif %}{% endfor %}{% for f in parent_families %} <a class="famlink" href="/family/{{ f.id }}/">family</a>{% endfor %}</dd></div>{% endif %}
+      {% if siblings %}<div><dt>Siblings</dt><dd>{% for q in siblings %}{{ plink(q) }}{% if not loop.last %} · {% endif %}{% endfor %}</dd></div>{% endif %}
+      {% for fm in families %}
+      <div><dt>{% if fm.spouse %}Married{% else %}Family{% endif %}</dt>
+        <dd>{% if fm.spouse %}{{ plink(fm.spouse) }}{% endif %}{% if fm.family.status == 'full' and fm.family.marriage and fm.family.marriage.date %} <span class="yrs">m. {{ fm.family.marriage.date.text }}{% if fm.family.marriage.place %}, {{ site.place_name(fm.family.marriage.place, true) }}{% endif %}</span>{% endif %}
+          <a class="famlink" href="/family/{{ fm.family.id }}/">family</a>
+          {% if fm.children %}<div class="kids">Children: {% for c in fm.children %}{{ plink(c) }}{% if not loop.last %} · {% endif %}{% endfor %}</div>{% endif %}
+        </dd></div>
+      {% endfor %}
+      {% if not parents and not siblings and not families %}<div><dd class="muted">No family links recorded.</dd></div>{% endif %}
+    </dl>
+  </section>
+
+  {% if p.status == 'full' %}
+  <section class="timeline">
+    <h2>Life, with the evidence</h2>
+    {% if name_citations %}
+    <details class="ev namecit"><summary>Name · {{ name_citations|length }} source{{ 's' if name_citations|length != 1 }}</summary>{{ ladder(name_citations) }}</details>
+    {% endif %}
+    {% if facts %}
+    <ol class="facts">
+      {% for f in facts %}{{ fact(f) }}{% endfor %}
+    </ol>
+    {% else %}
+    <p class="muted">No events recorded yet.</p>
+    {% endif %}
+  </section>
+
+  {% if p.attributes %}
+  <section class="attrs">
+    <h2>Other details</h2>
+    <dl class="kinlist">{% for a in p.attributes %}<div><dt>{{ a.type }}</dt><dd>{{ a.value|typo }}</dd></div>{% endfor %}</dl>
+  </section>
+  {% endif %}
+
+  {% if notes %}
+  <section class="notes">
+    <h2>Notes</h2>
+    {% for n in notes %}{{ notecard(n) }}{% endfor %}
+  </section>
+  {% endif %}
+
+  {% if media %}
+  <section class="gallery">
+    <h2>Images</h2>
+    <div class="mediarow">{% for m in media %}{{ mediacard(m) }}{% endfor %}</div>
+  </section>
+  {% endif %}
+
+  <footer class="pfoot">
+    <p>Research database: <a href="{{ cfg.private_site }}/person/{{ p.id }}" rel="noopener">{{ p.id }}</a> (family login){% if p.xref and p.xref.ancestry %} · Ancestry tree person {{ p.xref.ancestry }}{% endif %}{% if p.provenance %} · from {{ p.provenance|join(', ') }}{% endif %}</p>
+  </footer>
+  {% endif %}
+</article>
+{% endblock %}

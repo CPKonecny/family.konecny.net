@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% from "_macros.html" import plink, placelink, datetext, stamp %}
+{% block body %}
+<article class="placepage">
+  <header class="phead">
+    <p class="eyebrow">Place · {{ pl.type|lower }} · {{ pl.id }}</p>
+    <h1>{{ pl.name }}</h1>
+    {% if chain|length > 1 %}<p class="span">{% for q in chain[1:] %}{{ placelink(q, true) }}{% if not loop.last %} › {% endif %}{% endfor %}</p>{% endif %}
+    {% if pl.alt_names %}<p class="aka">also {% for a in pl.alt_names %}{{ a.value }}{% if a.lang %} <small>({{ a.lang }})</small>{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}</p>{% endif %}
+    {% if pl.lat and pl.long %}<p class="coord">{{ '%.4f'|format(pl.lat) }}, {{ '%.4f'|format(pl.long) }} · <a href="https://www.openstreetmap.org/?mlat={{ pl.lat }}&amp;mlon={{ pl.long }}#map=12/{{ pl.lat }}/{{ pl.long }}" rel="noopener">map</a></p>{% else %}<p class="muted">No coordinates yet.</p>{% endif %}
+  </header>
+  {% if within %}
+  <section class="kin"><h2>Places within</h2><ul class="plain">{% for q in within %}<li>{{ placelink(q, true) }} <span class="muted">{{ q.type|lower }}</span></li>{% endfor %}</ul></section>
+  {% endif %}
+  <section class="timeline">
+    <h2>What happened here · {{ rows|length }}</h2>
+    {% if rows %}
+    <ol class="facts plain-facts">
+      {% for r in rows %}
+      <li class="fact">
+        <div class="when">{{ datetext(r.event.date) }}</div>
+        <div class="what"><b>{{ r.label }}</b>{% if r.people %} — {% for q in r.people %}{{ plink(q) }}{% if not loop.last %}, {% endif %}{% endfor %}{% endif %}{% if r.families %} — {% for fm in r.families %}<a href="/family/{{ fm.id }}/">{% if fm.father and fm.father in site.people %}{{ site.people[fm.father].name.display }}{% endif %}{% if fm.father and fm.mother %} &amp; {% endif %}{% if fm.mother and fm.mother in site.people %}{{ site.people[fm.mother].name.display }}{% endif %}</a>{% if not loop.last %}, {% endif %}{% endfor %}{% endif %}{% if r.event.description %} <span class="desc">{{ r.event.description|typo }}</span>{% endif %}</div>
+        <div class="mark">{{ stamp(r.event) }}</div>
+      </li>
+      {% endfor %}
+    </ol>
+    {% else %}<p class="muted">No published event here; it encloses places that have some.</p>{% endif %}
+  </section>
+</article>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% from "_macros.html" import plink %}
+{% block body %}
+<article class="index">
+  <header class="phead">
+    <p class="eyebrow">Index · {{ total }} people</p>
+    <h1>People</h1>
+    <p class="span"><label class="search"><span class="vh">Filter by name</span><input type="search" id="people-filter" placeholder="Filter by name — Konečný, Tauber, Wood …" autocomplete="off"></label></p>
+  </header>
+  <nav class="letters" aria-label="By surname initial">{% for L in by_letter %}<a href="#L{{ L }}">{{ L }}</a>{% endfor %}</nav>
+  {% for L, people in by_letter.items() %}
+  <section class="letter" id="L{{ L }}">
+    <h2>{{ L }}</h2>
+    <ul class="plist" data-filter-list>
+      {% for p in people %}<li data-k="{{ p.name.display|lower }} {{ p.name.sort|lower }}">{{ plink(p) }}{% if p.status == 'full' and p.birth and p.birth.place %} <span class="muted">· {{ site.place_name(p.birth.place, true) }}</span>{% endif %}</li>{% endfor %}
+    </ul>
+  </section>
+  {% endfor %}
+  <p class="muted" id="filter-empty" hidden>Nobody matches.</p>
+</article>
+{% endblock %}

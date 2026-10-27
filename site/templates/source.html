@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% from "_macros.html" import stamp, notecard %}
+{% block body %}
+<article class="source">
+  <header class="phead">
+    <p class="eyebrow">Source · {{ s.id }}</p>
+    <h1>{{ s.title|typo }}</h1>
+    <p class="span">{% if s.author %}{{ s.author|typo }}{% endif %}{% if s.pubinfo %}{% if s.author %} · {% endif %}{{ s.pubinfo|typo }}{% endif %}</p>
+  </header>
+  {% if repos %}
+  <section class="kin"><h2>Held at</h2>
+    <ul class="plain">{% for r, ref in repos %}<li>{{ r.name }}{% if ref.call_number %} — {{ ref.call_number }}{% endif %}{% for u in r.urls %} · <a href="{{ u.url }}" rel="noopener">{{ u.desc or u.url }}</a>{% endfor %}</li>{% endfor %}</ul>
+  </section>
+  {% endif %}
+  {% if s.attributes %}<section class="kin"><h2>Details</h2><dl class="kinlist">{% for k, v in s.attributes.items() %}<div><dt>{{ k }}</dt><dd>{{ v }}</dd></div>{% endfor %}</dl></section>{% endif %}
+  {% if notes %}<section class="notes"><h2>Notes</h2>{% for n in notes %}{{ notecard(n) }}{% endfor %}</section>{% endif %}
+  <section class="cits">
+    <h2>Citations from this source · {{ citations|length }}</h2>
+    {% if citations %}
+    <ul class="citlist">
+      {% for c in citations %}
+      <li><a href="/citation/{{ c.id }}/">{{ c.page|typo if c.page else c.id }}</a> <span class="tier t-{{ c.tier or 'none' }}">{{ TIER_LABEL.get(c.tier, 'tier not set') }}</span> <span class="conf">{{ c.confidence|dots }}</span> {{ stamp(c) }}{% if c.media %} <span class="img">image</span>{% endif %}</li>
+      {% endfor %}
+    </ul>
+    {% else %}<p class="muted">No published citation uses this source yet.</p>{% endif %}
+  </section>
+  <footer class="pfoot"><p>Research database: <a href="{{ cfg.private_site }}/source/{{ s.id }}" rel="noopener">{{ s.id }}</a> (family login)</p></footer>
+</article>
+{% endblock %}

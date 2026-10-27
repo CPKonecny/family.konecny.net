@@ -1,0 +1,435 @@
+<title>Konecny Site Directions</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..800;1,6..72,300..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,300..700;1,8..60,300..700&family=IBM+Plex+Mono:wght@400;500&family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&family=Barlow+Condensed:wght@500;600&family=Syne:wght@500;700;800&family=Manrope:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a quiet neutral shell holding three phone-width mocks side by side; each mock carries its own palette and type in both themes. */
+:root {
+  --bg: #f5f4f0; --fg: #1d1c1a; --muted: #6a6762; --line: #d9d6cf; --card: #ffffff; --accent: #2a4a6b;
+  --shell-font: "Source Sans 3", system-ui, sans-serif;
+  /* Direction A — Matrika */
+  --a-paper: #e9ebe3; --a-ink: #2b2118; --a-red: #a8322a; --a-blue: #4f6f8f; --a-muted: #6f675c; --a-rule: #c9b9a6; --a-stamp: #f1f2ec; --a-ochre: #9a7a2e;
+  /* Direction B — The Crossing */
+  --b-paper: #eef2f3; --b-ink: #16232b; --b-route: #c7352c; --b-sea: #5f8da3; --b-ochre: #b8862b; --b-muted: #5b6a72; --b-grid: #d6dee2; --b-card: #f8fafb;
+  /* Direction C — Kronika */
+  --c-paper: #f2f3f7; --c-ink: #15192b; --c-red: #c1272d; --c-indigo: #1f2a63; --c-ochre: #d99a18; --c-muted: #5c6075; --c-surface: #ffffff; --c-rule: #d7d9e4;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #15161a; --fg: #e8e6e1; --muted: #9b9890; --line: #2d2f36; --card: #1d1f25; --accent: #8fb3d9; color-scheme: dark;
+    --a-paper: #1a1613; --a-ink: #e8e0d2; --a-red: #d1584e; --a-blue: #7fa0bd; --a-muted: #9c9184; --a-rule: #4a3f35; --a-stamp: #241f1a; --a-ochre: #c9a456;
+    --b-paper: #0e171d; --b-ink: #dfe8ec; --b-route: #e85a4f; --b-sea: #6ea3bd; --b-ochre: #d6a648; --b-muted: #8fa0a8; --b-grid: #1f2d35; --b-card: #142128;
+    --c-paper: #121a3a; --c-ink: #f3f1ea; --c-red: #ff6257; --c-indigo: #9fb0ff; --c-ochre: #f0b93c; --c-muted: #a9aec9; --c-surface: #1b2550; --c-rule: #2d3a6e;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #15161a; --fg: #e8e6e1; --muted: #9b9890; --line: #2d2f36; --card: #1d1f25; --accent: #8fb3d9; color-scheme: dark;
+  --a-paper: #1a1613; --a-ink: #e8e0d2; --a-red: #d1584e; --a-blue: #7fa0bd; --a-muted: #9c9184; --a-rule: #4a3f35; --a-stamp: #241f1a; --a-ochre: #c9a456;
+  --b-paper: #0e171d; --b-ink: #dfe8ec; --b-route: #e85a4f; --b-sea: #6ea3bd; --b-ochre: #d6a648; --b-muted: #8fa0a8; --b-grid: #1f2d35; --b-card: #142128;
+  --c-paper: #121a3a; --c-ink: #f3f1ea; --c-red: #ff6257; --c-indigo: #9fb0ff; --c-ochre: #f0b93c; --c-muted: #a9aec9; --c-surface: #1b2550; --c-rule: #2d3a6e;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--fg); font-family: var(--shell-font); font-size: 16px; line-height: 1.5;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 0 48px; }
+.wrap { max-width: 1320px; margin: 0 auto; }
+header.top { display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: baseline; justify-content: space-between; padding-block: 28px 8px; border-bottom: 1px solid var(--line); }
+header.top h1 { font-size: 1.15rem; font-weight: 600; margin: 0; letter-spacing: 0.01em; }
+header.top h1 small { font-weight: 400; color: var(--muted); }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 999px; padding: 2px; background: var(--card); }
+.seg button { border: 0; background: transparent; color: var(--muted); font: inherit; font-size: 0.85rem; padding: 4px 12px; border-radius: 999px; cursor: pointer; }
+.seg button[aria-pressed="true"] { background: var(--fg); color: var(--bg); }
+.seg button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.intro { max-width: 68ch; color: var(--muted); margin: 16px 0 8px; }
+.intro b { color: var(--fg); font-weight: 600; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 32px 28px; margin-top: 24px; align-items: start; }
+.dir { min-width: 0; }
+.dir > .head { margin: 0 0 12px; }
+.dir .eyebrow { font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+.dir h2 { margin: 2px 0 4px; font-size: 1.6rem; font-weight: 600; letter-spacing: -0.01em; text-wrap: balance; }
+.dir .thesis { margin: 0; color: var(--muted); max-width: 44ch; }
+.notes { margin-top: 14px; font-size: 0.93rem; display: grid; gap: 8px; }
+.notes p { margin: 0; }
+.notes b { font-weight: 600; }
+/* phone frame */
+.phone { width: 100%; max-width: 400px; border-radius: 30px; border: 1px solid var(--line); box-shadow: 0 12px 40px rgba(0,0,0,0.12); overflow: hidden; margin-top: 8px; }
+.phone .scr { height: 760px; overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin; }
+.phone .scr > * { min-width: 0; }
+.hint { font-size: 0.8rem; color: var(--muted); margin-top: 6px; }
+/* review chips shared semantics, styled per direction */
+.chip { display: inline-flex; align-items: center; gap: 5px; white-space: nowrap; }
+.chip i { width: 9px; height: 9px; border-radius: 50%; border: 1.5px solid currentColor; display: inline-block; }
+.chip.human i { background: currentColor; }
+.chip.ai i { background: linear-gradient(90deg, currentColor 50%, transparent 50%); }
+table.cmp { width: 100%; border-collapse: collapse; font-size: 0.92rem; margin-top: 12px; }
+table.cmp th, table.cmp td { text-align: left; vertical-align: top; padding: 10px 10px 10px 0; border-bottom: 1px solid var(--line); }
+table.cmp th { color: var(--muted); font-weight: 600; width: 16%; }
+.cmpwrap { overflow-x: auto; }
+section.after { margin-top: 44px; border-top: 1px solid var(--line); padding-top: 20px; }
+section.after h2 { font-size: 1.2rem; margin: 0 0 4px; }
+section.after p { max-width: 68ch; }
+
+/* ===================== Direction A — Matrika ===================== */
+.dir-a { background: var(--a-paper); color: var(--a-ink); font-family: "Source Serif 4", Georgia, serif; font-size: 15px; line-height: 1.45;
+  background-image: repeating-linear-gradient(to bottom, transparent 0 27px, color-mix(in srgb, var(--a-blue) 9%, transparent) 27px 28px); }
+.dir-a .pad { padding: 18px 18px 26px; }
+.dir-a .runhead { font-family: "IBM Plex Mono", monospace; font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--a-muted); display: flex; justify-content: space-between; border-bottom: 1px solid var(--a-red); padding-bottom: 6px; }
+.dir-a .runhead::after { content: ""; }
+.dir-a .mast { font-family: "Newsreader", "Source Serif 4", serif; font-weight: 400; font-size: 38px; line-height: 1; margin: 18px 0 2px; letter-spacing: -0.01em; }
+.dir-a .mast em { font-style: italic; color: var(--a-red); }
+.dir-a .sub { font-style: italic; color: var(--a-muted); margin: 0 0 18px; font-size: 14.5px; }
+.dir-a h3 { font-family: "IBM Plex Mono", monospace; font-weight: 500; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--a-red); margin: 22px 0 6px; border-top: 1px solid var(--a-red); border-bottom: 1px solid var(--a-red); padding: 3px 0; display: flex; justify-content: space-between; }
+.dir-a h3 span { color: var(--a-muted); }
+.dir-a .reg { list-style: none; margin: 0; padding: 0; }
+.dir-a .reg li { display: grid; grid-template-columns: 34px 1fr; gap: 0 10px; padding: 7px 0 6px; border-bottom: 1px dotted var(--a-rule); }
+.dir-a .reg .g { font-family: "IBM Plex Mono", monospace; font-size: 11px; color: var(--a-muted); padding-top: 4px; }
+.dir-a .reg .nm { font-family: "Newsreader", serif; font-size: 19px; line-height: 1.15; }
+.dir-a .reg .nm .sp { font-size: 15px; color: var(--a-muted); font-style: italic; }
+.dir-a .reg .meta { font-size: 13px; color: var(--a-muted); font-style: italic; }
+.dir-a .reg .meta b { font-style: normal; font-weight: 500; color: var(--a-ink); }
+.dir-a .reg .side { font-family: "IBM Plex Mono", monospace; font-size: 10.5px; color: var(--a-blue); margin-top: 2px; }
+.dir-a .reg li.living .nm { color: var(--a-muted); }
+.dir-a .person { margin-top: 10px; }
+.dir-a .person .nm { font-family: "Newsreader", serif; font-size: 27px; line-height: 1.05; }
+.dir-a .person .aka { font-style: italic; color: var(--a-muted); font-size: 14px; margin: 3px 0 0; }
+.dir-a .facts { margin: 10px 0 0; padding: 0; list-style: none; }
+.dir-a .facts li { display: grid; grid-template-columns: 76px 1fr auto; gap: 8px; align-items: baseline; padding: 6px 0; border-bottom: 1px dotted var(--a-rule); font-size: 14px; }
+.dir-a .facts .d { font-family: "IBM Plex Mono", monospace; font-size: 11.5px; color: var(--a-ink); }
+.dir-a .facts .pl { color: var(--a-muted); font-style: italic; }
+.dir-a .stamp { font-family: "IBM Plex Mono", monospace; font-size: 9.5px; letter-spacing: 0.08em; text-transform: uppercase; border: 1px solid currentColor; padding: 1px 5px; border-radius: 2px; transform: rotate(-2deg); }
+.dir-a .stamp.human { color: var(--a-red); }
+.dir-a .stamp.ai { color: var(--a-blue); }
+.dir-a .stamp.un { color: var(--a-muted); border-style: dashed; }
+.dir-a .ladder { list-style: none; margin: 6px 0 0; padding: 0; }
+.dir-a .ladder li { padding: 8px 0 8px 12px; border-left: 2px solid var(--a-rule); margin-left: 6px; position: relative; }
+.dir-a .ladder li::before { content: ""; position: absolute; left: -7px; top: 10px; width: 12px; height: 12px; border-radius: 50%; background: var(--a-paper); border: 2px solid var(--a-red); font-size: 0; }
+.dir-a .ladder li.t-index::before { border-color: var(--a-blue); }
+.dir-a .ladder li.t-compiled::before { border-color: var(--a-ochre); }
+.dir-a .ladder li.t-tree::before { border-color: var(--a-rule); }
+.dir-a .ladder li.wanted { border-left-style: dashed; }
+.dir-a .ladder li.wanted::before { border-style: dashed; }
+.dir-a .ladder .tier { font-family: "IBM Plex Mono", monospace; font-size: 10.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--a-red); }
+.dir-a .ladder .says { font-family: "Newsreader", serif; font-size: 17px; }
+.dir-a .ladder .says.conflict { color: var(--a-red); }
+.dir-a .ladder .src { font-size: 13px; color: var(--a-muted); font-style: italic; }
+.dir-a .ladder .row { display: flex; justify-content: space-between; gap: 8px; align-items: baseline; margin-top: 3px; }
+.dir-a .conf { font-family: "IBM Plex Mono", monospace; font-size: 10.5px; color: var(--a-muted); letter-spacing: 0.15em; }
+.dir-a .margin { font-size: 12.5px; color: var(--a-blue); font-style: italic; margin-top: 10px; border-top: 1px solid var(--a-rule); padding-top: 6px; }
+
+/* ===================== Direction B — The Crossing ===================== */
+.dir-b { background: var(--b-paper); color: var(--b-ink); font-family: "Source Sans 3", system-ui, sans-serif; font-size: 15px; line-height: 1.45;
+  background-image: linear-gradient(var(--b-grid) 1px, transparent 1px), linear-gradient(90deg, var(--b-grid) 1px, transparent 1px); background-size: 36px 36px; }
+.dir-b .pad { padding: 16px 18px 26px; }
+.dir-b .coord { font-family: "Barlow Condensed", "Arial Narrow", sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--b-muted); display: flex; justify-content: space-between; }
+.dir-b .coord b { color: var(--b-route); }
+.dir-b .mast { font-family: "Bricolage Grotesque", "Source Sans 3", sans-serif; font-weight: 700; font-size: 34px; line-height: 0.98; letter-spacing: -0.025em; margin: 12px 0 6px; text-wrap: balance; }
+.dir-b .mast span { color: var(--b-route); }
+.dir-b .sub { color: var(--b-muted); margin: 0 0 14px; max-width: 32ch; }
+.dir-b h3 { font-family: "Barlow Condensed", sans-serif; font-weight: 600; font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--b-sea); margin: 22px 0 10px; display: flex; align-items: center; gap: 10px; }
+.dir-b h3::after { content: ""; flex: 1; height: 1px; background: var(--b-sea); opacity: 0.5; }
+.dir-b .route { list-style: none; margin: 0; padding: 0 0 0 26px; position: relative; }
+.dir-b .route::before { content: ""; position: absolute; left: 9px; top: 10px; bottom: 10px; width: 3px; background: var(--b-route); border-radius: 2px; }
+.dir-b .route li { position: relative; padding: 0 0 16px; }
+.dir-b .route li::before { content: ""; position: absolute; left: -22px; top: 6px; width: 11px; height: 11px; border-radius: 50%; background: var(--b-paper); border: 3px solid var(--b-route); }
+.dir-b .route li.living::before { background: var(--b-paper); border-color: var(--b-muted); }
+.dir-b .route li.sea { padding-bottom: 14px; }
+.dir-b .route li.sea::before { display: none; }
+.dir-b .route li.sea .lbl { font-family: "Barlow Condensed", sans-serif; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; font-size: 11.5px; color: var(--b-sea); background: var(--b-paper); display: inline-block; padding: 2px 6px; margin-left: -4px; border: 1px dashed var(--b-sea); }
+.dir-b .route li.sea::after { content: ""; position: absolute; left: -17px; top: -6px; bottom: 4px; width: 3px; background: repeating-linear-gradient(to bottom, var(--b-sea) 0 6px, var(--b-paper) 6px 11px); }
+.dir-b .route .nm { font-family: "Bricolage Grotesque", sans-serif; font-weight: 600; font-size: 19px; letter-spacing: -0.01em; line-height: 1.1; }
+.dir-b .route .nm .sp { font-weight: 400; color: var(--b-muted); font-size: 15px; }
+.dir-b .route .st { font-family: "Barlow Condensed", sans-serif; font-weight: 600; font-size: 12.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--b-sea); margin-top: 2px; }
+.dir-b .route .yrs { font-size: 13px; color: var(--b-muted); font-variant-numeric: tabular-nums; }
+.dir-b .route li.living .nm { color: var(--b-muted); }
+.dir-b .card { background: var(--b-card); border: 1px solid var(--b-grid); border-radius: 10px; padding: 14px 14px 12px; }
+.dir-b .person .nm { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 26px; letter-spacing: -0.02em; line-height: 1.02; }
+.dir-b .person .aka { color: var(--b-muted); font-size: 13.5px; margin: 4px 0 10px; }
+.dir-b .places { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 10px; }
+.dir-b .places span { font-family: "Barlow Condensed", sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--b-ink); border: 1px solid var(--b-sea); border-radius: 4px; padding: 2px 7px; }
+.dir-b .places span b { color: var(--b-sea); font-weight: 600; margin-right: 4px; }
+.dir-b .facts { list-style: none; margin: 0; padding: 0; }
+.dir-b .facts li { display: grid; grid-template-columns: 46px 1fr auto; gap: 8px; align-items: baseline; padding: 7px 0; border-top: 1px solid var(--b-grid); font-size: 14px; }
+.dir-b .facts .d { font-family: "Barlow Condensed", sans-serif; font-weight: 600; font-size: 15px; color: var(--b-route); letter-spacing: 0.02em; font-variant-numeric: tabular-nums; }
+.dir-b .facts .pl { color: var(--b-muted); }
+.dir-b .pin { font-family: "Barlow Condensed", sans-serif; font-size: 11.5px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; }
+.dir-b .pin.human { color: var(--b-route); }
+.dir-b .pin.ai { color: var(--b-sea); }
+.dir-b .pin.un { color: var(--b-muted); }
+.dir-b .ladder { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.dir-b .ladder li { display: grid; grid-template-columns: 58px 1fr; gap: 10px; align-items: start; }
+.dir-b .ladder .tier { font-family: "Barlow Condensed", sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--b-ink); padding-top: 3px; }
+.dir-b .ladder .bar { height: 6px; border-radius: 3px; background: var(--b-grid); position: relative; margin: 6px 0 5px; }
+.dir-b .ladder .bar i { position: absolute; left: 0; top: 0; bottom: 0; border-radius: 3px; background: var(--b-ochre); }
+.dir-b .ladder li.t-record .bar i { background: var(--b-route); }
+.dir-b .ladder li.t-index .bar i { background: var(--b-sea); }
+.dir-b .ladder .says { font-weight: 600; }
+.dir-b .ladder .says.conflict { color: var(--b-route); }
+.dir-b .ladder .src { font-size: 13px; color: var(--b-muted); }
+.dir-b .ladder li.wanted .tier { color: var(--b-muted); }
+.dir-b .ladder li.wanted .bar { border: 1px dashed var(--b-muted); background: transparent; }
+.dir-b .legend { font-size: 12.5px; color: var(--b-muted); margin-top: 10px; display: flex; gap: 12px; flex-wrap: wrap; }
+
+/* ===================== Direction C — Kronika ===================== */
+.dir-c { background: var(--c-paper); color: var(--c-ink); font-family: "Manrope", system-ui, sans-serif; font-size: 15px; line-height: 1.45; }
+.dir-c .pad { padding: 18px 18px 26px; }
+.dir-c .mono { font-family: "JetBrains Mono", monospace; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--c-muted); }
+.dir-c .mast { font-family: "Syne", "Manrope", sans-serif; font-weight: 800; font-size: 46px; line-height: 0.92; letter-spacing: -0.03em; margin: 10px 0 4px; }
+.dir-c .mast span { color: var(--c-red); }
+.dir-c .sub { font-weight: 500; color: var(--c-muted); margin: 6px 0 16px; }
+.dir-c .bands { display: flex; height: 8px; margin: 0 0 18px; }
+.dir-c .bands i { flex: 1; } .dir-c .bands i:nth-child(1) { background: var(--c-red); } .dir-c .bands i:nth-child(2) { background: var(--c-indigo); } .dir-c .bands i:nth-child(3) { background: var(--c-ochre); }
+.dir-c h3 { font-family: "Syne", sans-serif; font-weight: 700; font-size: 15px; letter-spacing: -0.01em; margin: 22px 0 10px; display: flex; align-items: baseline; gap: 10px; }
+.dir-c h3 .mono { margin-left: auto; }
+.dir-c .ribbon { list-style: none; margin: 0; padding: 0; }
+.dir-c .ribbon li { display: grid; grid-template-columns: 14px 44px 1fr; gap: 0 10px; padding: 0 0 14px; align-items: start; }
+.dir-c .ribbon li .rb { background: var(--c-red); width: 14px; align-self: stretch; }
+.dir-c .ribbon li.wood .rb { background: var(--c-indigo); }
+.dir-c .ribbon li.living .rb { background: repeating-linear-gradient(to bottom, var(--c-red) 0 6px, transparent 6px 10px); }
+.dir-c .ribbon li.knot .rb { background: linear-gradient(to bottom, var(--c-red) 50%, var(--c-indigo) 50%); }
+.dir-c .ribbon .num { font-family: "Syne", sans-serif; font-weight: 800; font-size: 28px; line-height: 1; color: var(--c-ochre); letter-spacing: -0.04em; padding-top: 2px; }
+.dir-c .ribbon .nm { font-family: "Syne", sans-serif; font-weight: 700; font-size: 19px; line-height: 1.08; letter-spacing: -0.015em; }
+.dir-c .ribbon .nm .sp { font-family: "Manrope", sans-serif; font-weight: 500; font-size: 14px; color: var(--c-muted); display: block; margin-top: 2px; }
+.dir-c .ribbon .yrs { font-family: "JetBrains Mono", monospace; font-size: 12px; color: var(--c-muted); margin-top: 3px; }
+.dir-c .ribbon li.living .nm { color: var(--c-muted); }
+.dir-c .ribbon li.knot .nm { color: var(--c-red); }
+.dir-c .person .nm { font-family: "Syne", sans-serif; font-weight: 800; font-size: 30px; line-height: 0.98; letter-spacing: -0.03em; }
+.dir-c .person .aka { color: var(--c-muted); font-weight: 500; margin: 6px 0 12px; font-size: 14px; }
+.dir-c .facts { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.dir-c .facts li { background: var(--c-surface); border-radius: 6px; padding: 9px 10px; display: grid; grid-template-columns: 1fr auto; gap: 2px 10px; }
+.dir-c .facts .d { font-family: "JetBrains Mono", monospace; font-size: 11.5px; color: var(--c-red); grid-column: 1; }
+.dir-c .facts .what { font-weight: 700; grid-column: 1; }
+.dir-c .facts .pl { color: var(--c-muted); font-size: 13.5px; grid-column: 1; }
+.dir-c .facts .mark { grid-column: 2; grid-row: 1 / span 3; align-self: center; }
+.dir-c .mark { font-family: "JetBrains Mono", monospace; font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; padding: 3px 7px; border-radius: 3px; border: 1.5px solid currentColor; }
+.dir-c .mark.human { color: var(--c-paper); background: var(--c-indigo); border-color: var(--c-indigo); }
+.dir-c .mark.ai { color: var(--c-indigo); background: transparent; }
+.dir-c .mark.un { color: var(--c-muted); border-style: dashed; }
+.dir-c .ladder { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.dir-c .ladder li { display: grid; grid-template-columns: 10px 1fr; gap: 10px; background: var(--c-surface); border-radius: 6px; padding: 9px 10px 9px 0; overflow: hidden; }
+.dir-c .ladder li .tb { background: var(--c-red); }
+.dir-c .ladder li.t-index .tb { background: var(--c-indigo); }
+.dir-c .ladder li.t-compiled .tb { background: var(--c-ochre); }
+.dir-c .ladder li.t-tree .tb { background: var(--c-rule); }
+.dir-c .ladder li.wanted { background: transparent; border: 1.5px dashed var(--c-rule); padding-left: 0; }
+.dir-c .ladder li.wanted .tb { background: transparent; }
+.dir-c .ladder .tier { font-family: "JetBrains Mono", monospace; font-size: 10.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--c-muted); }
+.dir-c .ladder .says { font-family: "Syne", sans-serif; font-weight: 700; font-size: 17px; letter-spacing: -0.01em; }
+.dir-c .ladder .says.conflict { color: var(--c-red); }
+.dir-c .ladder .src { font-size: 13px; color: var(--c-muted); }
+.dir-c .ladder .row { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin-top: 4px; }
+.dir-c .dots { font-family: "JetBrains Mono", monospace; font-size: 11px; color: var(--c-ochre); letter-spacing: 0.1em; }
+@media (prefers-reduced-motion: no-preference) { .seg button { transition: background 0.15s; } }
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <h1>family.konecny.net <small>· three design directions</small></h1>
+    <div class="seg" role="group" aria-label="Preview theme">
+      <button type="button" id="th-system" aria-pressed="true">System</button>
+      <button type="button" id="th-light" aria-pressed="false">Light</button>
+      <button type="button" id="th-dark" aria-pressed="false">Dark</button>
+    </div>
+  </header>
+  <p class="intro">Each panel is a phone-width mock of the same three things the v0 site needs: the <b>lineage spine</b> (the Konečný line from you back to Vlachovice), a <b>person page</b> (Anna Tauber) and the <b>evidence ladder</b> on one fact (her birth, which has four conflicting readings in the file). Names, dates and sources are from the research log; the review stamps are illustrative. Scroll inside each phone; switch themes above.</p>
+
+  <div class="grid">
+
+    <!-- ============ A ============ -->
+    <article class="dir">
+      <div class="head">
+        <div class="eyebrow">Direction A</div>
+        <h2>Matrika</h2>
+        <p class="thesis">The site as a scholarly edition of the family's own records: ruled pages, running heads, inked stamps, marginalia.</p>
+      </div>
+      <div class="phone"><div class="scr dir-a"><div class="pad">
+        <div class="runhead"><span>Konečný · Kadlec · Tauber · Král</span><span>Wood · Toepel</span></div>
+        <p class="mast">Koneč<em>ný</em> → Konecny</p>
+        <p class="sub">A family history from Moravian Wallachia and Plymouth Colony to Two Rivers, Wisconsin</p>
+
+        <h3>The Konečný line <span>from Chris · 7 generations</span></h3>
+        <ul class="reg">
+          <li class="living"><span class="g">I</span><div><div class="nm">Chris Konecny</div><div class="meta">living · name only</div></div></li>
+          <li class="living"><span class="g">II</span><div><div class="nm">Peter Jan Konecny</div><div class="meta">living · name only</div></div></li>
+          <li><span class="g">III</span><div><div class="nm">Frank Konecny <span class="sp">× Marjorie June Wood</span></div><div class="meta"><b>1924–2006</b> · Manitowoc → Two Rivers, Wisconsin</div><div class="side">m. 31 May 1947, Two Rivers · ↳ Wood line, 13 generations to the Mayflower</div></div></li>
+          <li><span class="g">IV</span><div><div class="nm">Petr Pavel Konečný <span class="sp">× Anna Tauber</span></div><div class="meta"><b>1893–1936</b> · Svatý Štěpán, Brumov parish → New York 1913 → Manitowoc</div><div class="side">+ 3 siblings · naturalised 1922</div></div></li>
+          <li><span class="g">V</span><div><div class="nm">Jan Konečný <span class="sp">× Veronika Kadlec</span></div><div class="meta"><b>1867–?</b> · Štítná nad Vláří 131 → Milwaukee 1913</div></div></li>
+          <li><span class="g">VI</span><div><div class="nm">Jan Konečný <span class="sp">× Františka Šebák</span></div><div class="meta"><b>about 1832–?</b> · Štítná 72 · m. 2 June 1868</div><div class="side">sign. 4740 s. 18</div></div></li>
+          <li><span class="g">VII</span><div><div class="nm">Pavel Konečný <span class="sp">× Marina Trchel</span></div><div class="meta"><b>?–before 1868</b> · servant at the manor farm, Vlachovice</div><div class="side">open: baptism not yet found (C2)</div></div></li>
+        </ul>
+
+        <h3>Person <span>I0006</span></h3>
+        <div class="person">
+          <div class="nm">Anna Tauber Konecny</div>
+          <p class="aka">Anna Taubrová · 1891–1974 · Mostiště 7, Radnice parish → Manitowoc → Two Rivers</p>
+          <ul class="facts">
+            <li><span class="d">15 Sep 1891</span><span>Born, Mostiště 7 <span class="pl">· Radnice parish, Bohemia</span></span><span class="stamp human">reviewed</span></li>
+            <li><span class="d">22 Feb 1919</span><span>Married Petr Pavel Konečný <span class="pl">· Chicago or Manitowoc</span></span><span class="stamp un">needs a look</span></li>
+            <li><span class="d">1920</span><span>Household, Manitowoc Ward 4 <span class="pl">· census</span></span><span class="stamp ai">AI-checked</span></li>
+            <li><span class="d">1940</span><span>Widow, head of household <span class="pl">· Manitowoc</span></span><span class="stamp un">unreviewed</span></li>
+            <li><span class="d">25 Jan 1974</span><span>Died, Two Rivers <span class="pl">· Wisconsin</span></span><span class="stamp human">reviewed</span></li>
+          </ul>
+        </div>
+
+        <h3>Evidence <span>birth · 4 readings</span></h3>
+        <ul class="ladder">
+          <li class="wanted"><div class="tier">record · wanted</div><div class="says">Radnice baptism register, 1891</div><div class="src">SOA Plzeň via Porta fontium — queued (C9); this is the reading that settles it</div></li>
+          <li class="t-compiled"><div class="tier">compiled</div><div class="says">15 September 1891</div><div class="src">Family register abstract shown in Radnice, 4 October 2026</div><div class="row"><span class="conf">●●●○</span><span class="stamp human">reviewed</span></div></li>
+          <li class="t-record"><div class="tier">record</div><div class="says conflict">15 October 1892</div><div class="src">Petition for naturalization no. 855, Manitowoc, 1921 (names her as wife)</div><div class="row"><span class="conf">●●●○</span><span class="stamp human">reviewed</span></div></li>
+          <li class="t-index"><div class="tier">index</div><div class="says conflict">15 September 1892</div><div class="src">Herald Times Reporter, 26 January 1974, p. 10 (obituary)</div><div class="row"><span class="conf">●●○○</span><span class="stamp un">unreviewed</span></div></li>
+          <li class="t-tree"><div class="tier">tree</div><div class="says">15 September 1891</div><div class="src">Ancestry member trees — leads only</div><div class="row"><span class="conf">●○○○</span><span class="stamp un">unreviewed</span></div></li>
+        </ul>
+        <p class="margin">The tree keeps 15 Sep 1891. The petition's 1892 is the only primary document and it disagrees; the Radnice register read decides.</p>
+      </div></div></div>
+      <div class="hint">Phone mock · scrolls</div>
+      <div class="notes">
+        <p><b>Tone.</b> Quiet, documentary, trustworthy. It looks like the registers it is built from, so the evidence ladder feels native rather than bolted on.</p>
+        <p><b>Type.</b> Newsreader for names and headings, Source Serif 4 for text, IBM Plex Mono for signatures, IDs and stamps. All three carry Czech diacritics properly; Newsreader's italics do the Czech name forms (Taubrová, Konečná) justice.</p>
+        <p><b>Lineages.</b> A register: one ruled entry per generation, Roman generation numbers in the margin, sign./folio references and open questions as marginalia. Branches collapse to "+ 3 siblings".</p>
+        <p><b>Fits best if</b> the site's main readers are the serious ones (you, Karel's reviewers, the citizenship file). Risk: the migration map and timeline (v1) have to be drawn in the same ink-on-paper idiom or they will look pasted in.</p>
+      </div>
+    </article>
+
+    <!-- ============ B ============ -->
+    <article class="dir">
+      <div class="head">
+        <div class="eyebrow">Direction B</div>
+        <h2>The Crossing</h2>
+        <p class="thesis">The site as an atlas of movement: every lineage is a route, every generation a station, the Atlantic the fold in the middle.</p>
+      </div>
+      <div class="phone"><div class="scr dir-b"><div class="pad">
+        <div class="coord"><span>49.07° N · 17.98° E</span><b>→</b><span>44.15° N · 87.57° W</span></div>
+        <p class="mast">From Štítná to <span>Two Rivers</span></p>
+        <p class="sub">Four families, two continents, one small town on Lake Michigan.</p>
+
+        <h3>Konečný line · 7 stations</h3>
+        <ul class="route">
+          <li class="living"><div class="nm">Chris Konecny</div><div class="yrs">living · name only</div></li>
+          <li class="living"><div class="nm">Peter Jan Konecny</div><div class="yrs">living · name only</div></li>
+          <li><div class="nm">Frank Konecny <span class="sp">× Marjorie June Wood</span></div><div class="st">Two Rivers, Wisconsin</div><div class="yrs">1924–2006 · married here 31 May 1947 → Wood line joins</div></li>
+          <li><div class="nm">Petr Pavel Konečný <span class="sp">× Anna Tauber</span></div><div class="st">Manitowoc, Wisconsin</div><div class="yrs">1893–1936 · glazier, then shipyard · naturalised 1922</div></li>
+          <li class="sea"><span class="lbl">Bremen → New York · Kaiser Wilhelm II · 20 Aug 1913</span></li>
+          <li><div class="nm">Jan Konečný <span class="sp">× Veronika Kadlec</span></div><div class="st">Štítná nad Vláří 131 · Moravian Wallachia</div><div class="yrs">1867–? · followed to Milwaukee, 1913</div></li>
+          <li><div class="nm">Jan Konečný <span class="sp">× Františka Šebák</span></div><div class="st">Štítná 72 · Brumov parish</div><div class="yrs">about 1832–? · m. 2 June 1868</div></li>
+          <li><div class="nm">Pavel Konečný <span class="sp">× Marina Trchel</span></div><div class="st">Vlachovice · manor farm</div><div class="yrs">?–before 1868 · baptism still to find</div></li>
+        </ul>
+
+        <h3>Person</h3>
+        <div class="card person">
+          <div class="nm">Anna Tauber Konecny</div>
+          <p class="aka">Anna Taubrová · 1891–1974 · I0006</p>
+          <div class="places"><span><b>b.</b>Mostiště 7</span><span><b>m.</b>Manitowoc?</span><span><b>d.</b>Two Rivers</span></div>
+          <ul class="facts">
+            <li><span class="d">1891</span><span>Born 15 Sep, Mostiště 7 <span class="pl">· Radnice parish</span></span><span class="pin human">reviewed</span></li>
+            <li><span class="d">1919</span><span>Married Petr Pavel Konečný <span class="pl">· Chicago or Manitowoc</span></span><span class="pin un">needs a look</span></li>
+            <li><span class="d">1920</span><span>Household, Manitowoc Ward 4 <span class="pl">· census</span></span><span class="pin ai">AI-checked</span></li>
+            <li><span class="d">1940</span><span>Widow, head of household <span class="pl">· Manitowoc</span></span><span class="pin un">unreviewed</span></li>
+            <li><span class="d">1974</span><span>Died 25 Jan, Two Rivers <span class="pl">· Wisconsin</span></span><span class="pin human">reviewed</span></li>
+          </ul>
+        </div>
+
+        <h3>Evidence · her birth</h3>
+        <div class="card">
+          <ul class="ladder">
+            <li class="wanted"><div class="tier">record</div><div><div class="says">Radnice baptism register, 1891</div><div class="bar"></div><div class="src">Not read yet — Porta fontium, queued (C9). Settles the date.</div></div></li>
+            <li class="t-compiled"><div class="tier">compiled</div><div><div class="says">15 Sep 1891 <span class="pin human">· reviewed</span></div><div class="bar"><i style="width:75%"></i></div><div class="src">Family register abstract, Radnice, 4 Oct 2026</div></div></li>
+            <li class="t-record"><div class="tier">record</div><div><div class="says conflict">15 Oct 1892 <span class="pin human">· reviewed</span></div><div class="bar"><i style="width:75%"></i></div><div class="src">Petition for naturalization no. 855, 1921 (as wife)</div></div></li>
+            <li class="t-index"><div class="tier">index</div><div><div class="says conflict">15 Sep 1892 <span class="pin un">· unreviewed</span></div><div class="bar"><i style="width:50%"></i></div><div class="src">Herald Times Reporter obituary, 26 Jan 1974, p. 10</div></div></li>
+            <li class="t-tree"><div class="tier">tree</div><div><div class="says">15 Sep 1891 <span class="pin un">· unreviewed</span></div><div class="bar"><i style="width:25%"></i></div><div class="src">Ancestry member trees</div></div></li>
+          </ul>
+          <div class="legend"><span>bar = confidence</span><span>colour = tier</span><span>pin = review state</span></div>
+        </div>
+      </div></div></div>
+      <div class="hint">Phone mock · scrolls</div>
+      <div class="notes">
+        <p><b>Tone.</b> Kinetic and legible. The story the family actually tells each other is the crossing, and this direction puts it on every page.</p>
+        <p><b>Type.</b> Bricolage Grotesque for headlines (strong háčky, a little personality), Source Sans 3 for text, Barlow Condensed caps for place and station labels the way maps letter them.</p>
+        <p><b>Lineages.</b> A route: a vertical line with one station per generation, the place as the station name, the ocean as a dashed gap. The Wood line joins as a second line at the 1947 station; the Tauber/Král line as a branch into Manitowoc.</p>
+        <p><b>Fits best if</b> the v1 map and timeline are the heart of the site, because here they are not add-ons; the spine already <i>is</i> a map. Risk: the pre-1800 colonial generations have few places and the route can feel thin there.</p>
+      </div>
+    </article>
+
+    <!-- ============ C ============ -->
+    <article class="dir">
+      <div class="head">
+        <div class="eyebrow">Direction C</div>
+        <h2>Kronika</h2>
+        <p class="thesis">A family chronicle in the spirit of Czech interwar book design and Moravian blueprint cloth: bold type, three colours, two ribbons that tie at a wedding.</p>
+      </div>
+      <div class="phone"><div class="scr dir-c"><div class="pad">
+        <div class="mono">kronika rodiny · family.konecny.net</div>
+        <p class="mast">KONE<span>Č</span>NÝ<br>WOOD</p>
+        <p class="sub">Two threads. Moravia and the Mayflower, tied in Two Rivers in 1947.</p>
+        <div class="bands"><i></i><i></i><i></i></div>
+
+        <h3>The Konečný thread <span class="mono">from Chris</span></h3>
+        <ul class="ribbon">
+          <li class="living"><span class="rb"></span><span class="num">1</span><div><div class="nm">Chris Konecny</div><div class="yrs">living · name only</div></div></li>
+          <li class="living"><span class="rb"></span><span class="num">2</span><div><div class="nm">Peter Jan Konecny</div><div class="yrs">living · name only</div></div></li>
+          <li class="knot"><span class="rb"></span><span class="num">3</span><div><div class="nm">Frank Konecny <span class="sp">× Marjorie June Wood — the Wood thread ties in here</span></div><div class="yrs">1924–2006 · Two Rivers · m. 31 May 1947</div></div></li>
+          <li><span class="rb"></span><span class="num">4</span><div><div class="nm">Petr Pavel Konečný <span class="sp">× Anna Tauber</span></div><div class="yrs">1893–1936 · Svatý Štěpán → Manitowoc 1913</div></div></li>
+          <li><span class="rb"></span><span class="num">5</span><div><div class="nm">Jan Konečný <span class="sp">× Veronika Kadlec</span></div><div class="yrs">1867–? · Štítná nad Vláří 131</div></div></li>
+          <li><span class="rb"></span><span class="num">6</span><div><div class="nm">Jan Konečný <span class="sp">× Františka Šebák</span></div><div class="yrs">about 1832–? · Štítná 72</div></div></li>
+          <li><span class="rb"></span><span class="num">7</span><div><div class="nm">Pavel Konečný <span class="sp">× Marina Trchel</span></div><div class="yrs">?–before 1868 · Vlachovice</div></div></li>
+        </ul>
+
+        <h3>Anna <span class="mono">I0006</span></h3>
+        <div class="person">
+          <div class="nm">Anna Tauber Konecny</div>
+          <p class="aka">Anna Taubrová · 1891–1974 · Mostiště 7, Radnice → Manitowoc → Two Rivers</p>
+          <ul class="facts">
+            <li><span class="d">15 Sep 1891</span><span class="what">Born, Mostiště 7</span><span class="pl">Radnice parish, Bohemia</span><span class="mark human">reviewed</span></li>
+            <li><span class="d">22 Feb 1919</span><span class="what">Married Petr Pavel Konečný</span><span class="pl">Chicago or Manitowoc — unsettled</span><span class="mark un">needs a look</span></li>
+            <li><span class="d">1920</span><span class="what">Household, Manitowoc Ward 4</span><span class="pl">census</span><span class="mark ai">AI-checked</span></li>
+            <li><span class="d">1940</span><span class="what">Widow, head of household</span><span class="pl">Manitowoc</span><span class="mark un">unreviewed</span></li>
+            <li><span class="d">25 Jan 1974</span><span class="what">Died, Two Rivers</span><span class="pl">Wisconsin</span><span class="mark human">reviewed</span></li>
+          </ul>
+        </div>
+
+        <h3>Evidence for her birth <span class="mono">4 readings</span></h3>
+        <ul class="ladder">
+          <li class="wanted"><span class="tb"></span><div><div class="tier">record · wanted</div><div class="says">Radnice baptism register, 1891</div><div class="src">Porta fontium — queued (C9). The reading that settles it.</div></div></li>
+          <li class="t-compiled"><span class="tb"></span><div><div class="tier">compiled</div><div class="says">15 September 1891</div><div class="src">Family register abstract, Radnice, 4 October 2026</div><div class="row"><span class="dots">●●●○</span><span class="mark human">reviewed</span></div></div></li>
+          <li class="t-record"><span class="tb"></span><div><div class="tier">record</div><div class="says conflict">15 October 1892</div><div class="src">Petition for naturalization no. 855, Manitowoc, 1921</div><div class="row"><span class="dots">●●●○</span><span class="mark human">reviewed</span></div></div></li>
+          <li class="t-index"><span class="tb"></span><div><div class="tier">index</div><div class="says conflict">15 September 1892</div><div class="src">Herald Times Reporter, 26 Jan 1974, p. 10</div><div class="row"><span class="dots">●●○○</span><span class="mark un">unreviewed</span></div></div></li>
+          <li class="t-tree"><span class="tb"></span><div><div class="tier">tree</div><div class="says">15 September 1891</div><div class="src">Ancestry member trees — leads only</div><div class="row"><span class="dots">●○○○</span><span class="mark un">unreviewed</span></div></div></li>
+        </ul>
+      </div></div></div>
+      <div class="hint">Phone mock · scrolls</div>
+      <div class="notes">
+        <p><b>Tone.</b> Warm, bold, celebratory; made for the cousins who will read it on a phone at a reunion, not only for the researchers.</p>
+        <p><b>Type.</b> Syne 800 for names and headlines (the háček becomes a signature mark), Manrope for text, JetBrains Mono for dates and IDs.</p>
+        <p><b>Lineages.</b> Threads: a red Konečný ribbon and an indigo Wood ribbon run down the page and tie at the 1947 wedding; big generation numerals; the ribbon dashes where a person is living. Tauber/Král and Toepel get their own colours.</p>
+        <p><b>Fits best if</b> you want the site to feel like a book the family is proud of, with scroll-driven chapters later. Risk: bold colour has to be rationed on dense evidence pages, or the ladder shouts.</p>
+      </div>
+    </article>
+  </div>
+
+  <section class="after">
+    <h2>Side by side</h2>
+    <div class="cmpwrap"><table class="cmp">
+      <tr><th></th><th>A · Matrika</th><th>B · The Crossing</th><th>C · Kronika</th></tr>
+      <tr><th>Reads as</th><td>a critical edition of the records</td><td>an atlas of the family's movement</td><td>a chronicle the family is proud of</td></tr>
+      <tr><th>Spine</th><td>ruled register entries, Roman numerals, marginalia</td><td>route line with stations and the ocean gap</td><td>coloured ribbons that tie at 1947</td></tr>
+      <tr><th>Evidence ladder</th><td>ruled ladder with inked stamps</td><td>legend bars: tier colour, confidence length, review pin</td><td>tier-coloured blocks with woven marks</td></tr>
+      <tr><th>v1 map and timeline</th><td>must be drawn in the same ink idiom</td><td>native; the spine is already a map</td><td>fits as a chapter with the three colours</td></tr>
+      <tr><th>v2 name and place evolution</th><td>natural: variant spellings as register forms</td><td>natural: station names change by period</td><td>good: the háček as a motif carries it</td></tr>
+      <tr><th>Phone feel</th><td>calm long read</td><td>scannable, vertical</td><td>punchy, big type</td></tr>
+    </table></div>
+    <p>Pieces mix: for example B's route spine with A's evidence ladder, or C's masthead and colours on A's pages. Say which direction, or which combination, and v0 gets built from it.</p>
+  </section>
+</div>
+
+<script>
+(function () {
+  var root = document.documentElement;
+  var btns = { system: document.getElementById('th-system'), light: document.getElementById('th-light'), dark: document.getElementById('th-dark') };
+  function set(mode) {
+    if (mode === 'system') root.removeAttribute('data-theme'); else root.setAttribute('data-theme', mode);
+    Object.keys(btns).forEach(function (k) { btns[k].setAttribute('aria-pressed', String(k === mode)); });
+    try { localStorage.setItem('konecny-directions-theme', mode); } catch (e) {}
+  }
+  Object.keys(btns).forEach(function (k) { btns[k].addEventListener('click', function () { set(k); }); });
+  var saved = null;
+  try { saved = localStorage.getItem('konecny-directions-theme'); } catch (e) {}
+  if (saved === 'light' || saved === 'dark') set(saved);
+  else if (root.getAttribute('data-theme') === 'light' || root.getAttribute('data-theme') === 'dark') set(root.getAttribute('data-theme'));
+})();
+</script>

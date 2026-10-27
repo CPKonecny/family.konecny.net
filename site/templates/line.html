@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% from "_macros.html" import plink, placelink, datetext, stamp, summarybar %}
+{% block description %}{{ line.title }} — {{ line.generations }} generations from {{ line.stations[0].person.name.display }} to {{ line.stations[-1].person.name.display }}.{% endblock %}
+{% block body %}
+<article class="line c-{{ line.color }}">
+  <header class="linehead">
+    <p class="eyebrow">Lineage · {{ line.generations }} generations</p>
+    <h1>{{ line.title }}</h1>
+    <p class="sub">{{ line.subtitle|typo }}</p>
+  </header>
+
+  <ol class="route">
+    {% for s in line.stations %}
+    {% set p = s.person %}
+    {% if s.crossing %}
+    <li class="sea"><span class="lbl">{{ s.crossing.label }}{% if s.crossing.date and s.crossing.date.text %} · {{ s.crossing.date.text }}{% endif %}{% if s.crossing.description %} · {{ s.crossing.description|typo }}{% endif %}</span></li>
+    {% endif %}
+    <li class="station{% if p.status != 'full' %} living{% endif %}">
+      <span class="gen">{{ s.gen }}</span>
+      <div class="st">
+        <div class="nm">{{ plink(p, false) }}{% if s.spouse %} <span class="sp">× {{ plink(s.spouse, false) }}</span>{% endif %}</div>
+        {% if p.status == 'full' %}
+        <div class="place">{% if s.birth_place %}{{ s.birth_place }}{% endif %}{% if s.death_place and s.death_place != s.birth_place %}{% if s.birth_place %} → {% endif %}{{ s.death_place }}{% endif %}</div>
+        <div class="yrs">{{ s.lifespan }}{% if s.marriage and s.marriage.date %} · m. {{ s.marriage.date.text }}{% endif %}{% if s.siblings %} · {{ s.siblings }} sibling{{ 's' if s.siblings != 1 }}{% endif %}</div>
+        {% if s.facts and s.facts.total %}<div class="mini">{{ s.facts.total }} facts · {{ s.facts.human }} reviewed · {{ s.facts.ai }} AI-checked · {{ s.facts.un }} unreviewed</div>{% endif %}
+        {% else %}
+        <div class="yrs">living · name only</div>
+        {% endif %}
+      </div>
+    </li>
+    {% endfor %}
+  </ol>
+  <p class="linefoot">Branches are collapsed to a sibling count on each station; open a person to see the whole family.</p>
+</article>
+{% endblock %}

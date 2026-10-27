@@ -1,0 +1,78 @@
+{% macro stamp(obj) -%}
+{% set r = review_label(obj) %}<span class="stamp {{ r[0] }}" title="Review state from the research database">{{ r[1] }}</span>
+{%- endmacro %}
+
+{% macro plink(p, years=True) -%}
+<a class="p c-{{ site.line_of(p) }}" href="/person/{{ p.id }}/">{{ p.name.display }}</a>{% if years %} <span class="yrs">{{ p|lifespan }}</span>{% endif %}
+{%- endmacro %}
+
+{% macro placelink(pl, short=False) -%}
+{% if pl %}<a class="pl" href="/place/{{ pl.id }}/">{{ pl.name if short else (pl.display or pl.name) }}</a>{% endif %}
+{%- endmacro %}
+
+{% macro datetext(d) -%}
+{% if d and d.text %}<time{% if d.iso %} datetime="{{ d.iso }}"{% endif %}>{{ d.text }}</time>{% else %}<span class="nodate">date unknown</span>{% endif %}
+{%- endmacro %}
+
+{% macro ladder(rows) -%}
+{% if rows %}
+<ol class="ladder">
+  {% for r in rows %}
+  <li class="t-{{ r.tier or 'none' }}">
+    <span class="tier">{{ r.tier_label }}</span>
+    <span class="src"><a href="/citation/{{ r.citation.id }}/">{% if r.source %}{{ r.source.title }}{% else %}Citation {{ r.citation.id }}{% endif %}</a>{% if r.citation.page %} <span class="page">{{ r.citation.page|typo }}</span>{% endif %}</span>
+    <span class="conf" title="confidence: {{ r.conf_label }}">{{ r.confidence|dots }}</span>
+    {{ stamp(r.citation) }}
+    {% if r.has_image %}<span class="img">{% if r.public_image %}image{% else %}image · family login{% endif %}</span>{% endif %}
+    {% if r.notes %}<span class="hasnote">{{ r.notes|length }} note{{ 's' if r.notes|length != 1 }}</span>{% endif %}
+  </li>
+  {% endfor %}
+</ol>
+{% else %}
+<p class="nocite">No citation attached yet.</p>
+{% endif %}
+{%- endmacro %}
+
+{% macro fact(f, show_person=None) -%}
+<li class="fact">
+  <div class="when">{{ datetext(f.date) }}</div>
+  <div class="what">
+    <b>{{ f.label }}</b>{% if show_person %} — {{ plink(show_person, false) }}{% endif %}{% if f.place %}, {{ placelink(f.place) }}{% endif %}
+    {% if f.description %}<span class="desc">{{ f.description|typo }}</span>{% endif %}
+  </div>
+  <div class="mark">{{ stamp(f.event) }}</div>
+  <details class="ev">
+    <summary>Evidence · {{ f.citations|length }} source{{ 's' if f.citations|length != 1 }}{% if f.notes %} · {{ f.notes|length }} note{{ 's' if f.notes|length != 1 }}{% endif %}</summary>
+    {{ ladder(f.citations) }}
+    {% for n in f.notes %}{{ notecard(n) }}{% endfor %}
+    {% if f.media %}<div class="mediarow">{% for m in f.media %}{{ mediacard(m) }}{% endfor %}</div>{% endif %}
+  </details>
+</li>
+{%- endmacro %}
+
+{% macro notecard(n) -%}
+<div class="note{% if n.preformatted %} pre{% endif %}">
+  <div class="notehead"><span class="ntype">{{ n.type|lower }}</span> {{ stamp(n) }}</div>
+  {% if n.preformatted %}<pre>{{ n.text }}</pre>{% else %}{{ n.html|safe }}{% endif %}
+</div>
+{%- endmacro %}
+
+{% macro mediacard(m) -%}
+<figure class="media {{ m.access }}">
+  {% if m.access == 'public' %}
+  <a href="/{{ m.file }}"><img src="/{{ m.thumb }}" alt="{{ m.desc }}" loading="lazy"></a>
+  {% else %}
+  <a class="login" href="{{ m.private_url }}" rel="noopener"><span class="lock" aria-hidden="true"></span>record image<br><small>family login</small></a>
+  {% endif %}
+  <figcaption>{{ m.desc|typo }}{% if m.date and m.date.text %} <span class="yrs">{{ m.date.text }}</span>{% endif %}</figcaption>
+</figure>
+{%- endmacro %}
+
+{% macro summarybar(s) -%}
+{% if s.total %}
+<p class="sumbar"><span>{{ s.total }} fact{{ 's' if s.total != 1 }}</span>
+  <span class="human">{{ s.human }} reviewed</span>
+  <span class="ai">{{ s.ai }} AI-checked</span>
+  <span class="un">{{ s.un }} unreviewed</span>{% if s.needs %} <span class="needs">{{ s.needs }} need a look</span>{% endif %}</p>
+{% endif %}
+{%- endmacro %}

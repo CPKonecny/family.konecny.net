@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block body %}
+<article class="prose">
+  <header class="phead"><p class="eyebrow">Research</p><h1>Open questions</h1>
+  <p class="span muted">What the research has not settled yet, from the working log. Items are kept in the log’s own words; the code at the front is the log’s item number.</p></header>
+  {% if body %}{{ body|md|safe }}{% else %}<p class="muted">No open questions have been published yet.</p>{% endif %}
+</article>
+{% endblock %}

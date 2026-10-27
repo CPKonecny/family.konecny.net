@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% from "_macros.html" import plink, stamp %}
+{% block bodyclass %}home{% endblock %}
+{% block body %}
+<section class="mast">
+  <div class="coord"><span>49.07° N · 17.98° E</span><span class="arrow" aria-hidden="true">→</span><span>44.15° N · 87.57° W</span></div>
+  <h1 class="wordmark">Kone<i>č</i>ný<br>→ Konecny</h1>
+  <p class="tagline">{{ cfg.tagline|typo }}</p>
+  <div class="threads" aria-hidden="true">{% for l in lines %}<i class="c-{{ l.color }}"></i>{% endfor %}</div>
+</section>
+
+{% if body %}<section class="prose intro">{{ body|md|safe }}</section>{% endif %}
+
+<section class="lines">
+  <h2 class="eyebrow">Lineages · each one a route to Two Rivers</h2>
+  <div class="linegrid">
+    {% for l in lines %}
+    <a class="linecard c-{{ l.color }}" href="/line/{{ l.slug }}/">
+      <span class="band" aria-hidden="true"></span>
+      <span class="lt">{{ l.title }}</span>
+      <span class="ls">{{ l.subtitle }}</span>
+      <span class="lm">{{ l.generations }} generations · {{ l.stations[0].person.name.display }} → {{ l.stations[-1].person.name.display }}</span>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="stats">
+  <dl>
+    <div><dt>People</dt><dd>{{ stats.people_full }}<small> in full · {{ stats.people_living }} living, by name</small></dd></div>
+    <div><dt>Facts</dt><dd>{{ rs.total }}<small>{{ rs.human }} reviewed · {{ rs.ai }} AI-checked · {{ rs.un }} unreviewed</small></dd></div>
+    <div><dt>Citations</dt><dd>{{ stats.citations }}<small> from {{ stats.sources }} sources</small></dd></div>
+    <div><dt>Places</dt><dd>{{ stats.places }}</dd></div>
+  </dl>
+</section>
+
+<section class="howto">
+  <h2 class="eyebrow">How to read a fact here</h2>
+  <div class="howgrid">
+    <div><b>Every fact carries its evidence.</b> Open “Evidence” under any fact to see the sources ranked by how good they are: a <em>record</em> read from the original image outranks an <em>index</em>, which outranks a <em>compiled</em> genealogy, which outranks a member <em>tree</em> or family memory.</div>
+    <div><b>Review state is shown as it is.</b> <span class="stamp human">reviewed</span> means a person checked the fact against its source; <span class="stamp ai">AI-checked</span> means an automated checker found no conflict; <span class="stamp un">unreviewed</span> means nobody has looked yet. Most of the imported tree starts unreviewed, and the site says so.</div>
+    <div><b>Living people appear by name only.</b> No dates, places, photos or documents, and anything marked private in the research database stays off this site. Record images from Ancestry and FamilySearch stay behind the family login; our transcriptions and reasoning are public.</div>
+  </div>
+</section>
+
+{% if recent %}
+<section class="recent">
+  <h2 class="eyebrow">Recently worked on</h2>
+  <ul class="plist">
+    {% for p in recent %}<li>{{ plink(p) }}</li>{% endfor %}
+  </ul>
+</section>
+{% endif %}
+{% endblock %}

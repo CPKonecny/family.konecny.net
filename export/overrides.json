@@ -1,0 +1,8 @@
+{
+  "_comment": "Per-object publication overrides for family.konecny.net. Keys are Gramps IDs (I0123, O0045, E0200 …) or handles; the value is a free-text reason. Lives in git; the nightly export reads it. Rules, in order: exclude > private > deceased > living > Gramps' probably-alive verdict.",
+  "living": {},
+  "deceased": {},
+  "exclude": {},
+  "public_media": {},
+  "withhold": {}
+}

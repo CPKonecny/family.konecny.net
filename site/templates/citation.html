@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% from "_macros.html" import plink, placelink, datetext, stamp, notecard, mediacard %}
+{% block body %}
+<article class="citation">
+  <header class="phead">
+    <p class="eyebrow">Citation · {{ c.id }} · <span class="tier t-{{ c.tier or 'none' }}">{{ row.tier_label }}</span></p>
+    <h1>{% if src %}<a href="/source/{{ src.id }}/">{{ src.title|typo }}</a>{% else %}Citation{% endif %}</h1>
+    {% if c.page %}<p class="span"><b>{{ c.page|typo }}</b>{% if c.date and c.date.text %} · {{ c.date.text }}{% endif %}</p>{% endif %}
+  </header>
+
+  <section class="evidence-card">
+    <h2>Weight of this evidence</h2>
+    <dl class="kinlist">
+      <div><dt>Tier</dt><dd>{{ row.tier_label }}{% if not c.tier %} <span class="muted">— not yet classified; see <a href="/about/">how tiers work</a></span>{% endif %}</dd></div>
+      <div><dt>Confidence</dt><dd><span class="conf">{{ c.confidence|dots }}</span> {{ row.conf_label }}</dd></div>
+      <div><dt>Review</dt><dd>{{ stamp(c) }}{% if c.flags %} <span class="muted">{{ c.flags|join(', ') }}</span>{% endif %}</dd></div>
+      {% if c.source_type or c.information or c.evidence %}
+      <div><dt>Analysis</dt><dd>{% if c.source_type %}{{ c.source_type }} source{% endif %}{% if c.information %} · {{ c.information }} information{% endif %}{% if c.evidence %} · {{ c.evidence }} evidence{% endif %}</dd></div>
+      {% endif %}
+      {% if c.url %}<div><dt>Online</dt><dd><a href="{{ c.url }}" rel="noopener">{{ c.url }}</a></dd></div>{% endif %}
+      {% if c.ancestry_record_id %}<div><dt>Ancestry record</dt><dd>{{ c.ancestry_record_id }}</dd></div>{% endif %}
+      {% if c.attributes %}{% for k, v in c.attributes.items() %}<div><dt>{{ k }}</dt><dd>{{ v }}</dd></div>{% endfor %}{% endif %}
+      {% if src and src.repositories %}<div><dt>Held at</dt><dd>{% for r in src.repositories %}{{ site.repositories[r.ref].name if r.ref in site.repositories else r.ref }}{% if r.call_number %} ({{ r.call_number }}){% endif %}{% if not loop.last %}; {% endif %}{% endfor %}</dd></div>{% endif %}
+    </dl>
+  </section>
+
+  {% if media %}
+  <section class="gallery">
+    <h2>Record image</h2>
+    <div class="mediarow">{% for m in media %}{{ mediacard(m) }}{% endfor %}</div>
+    {% if media|selectattr('access','equalto','login')|list %}<p class="muted">Images downloaded from Ancestry or FamilySearch stay on the family side of the site under their terms of use. The transcription and the reasoning below are ours and public.</p>{% endif %}
+  </section>
+  {% endif %}
+
+  {% if notes %}
+  <section class="notes">
+    <h2>Transcription and reasoning</h2>
+    {% for n in notes %}{{ notecard(n) }}{% endfor %}
+  </section>
+  {% endif %}
+
+  <section class="usedfor">
+    <h2>What it supports</h2>
+    {% if used %}
+    <ul class="uselist">
+      {% for u in used %}
+      <li>
+        {% if u.type == 'event' %}<b>{{ u.label }}</b>{% if u.event.date and u.event.date.text %} · {{ u.event.date.text }}{% endif %}{% if u.event.place %} · {{ placelink(site.place(u.event.place), true) }}{% endif %}
+          {% if u.people %} — {% for q in u.people %}{{ plink(q, false) }}{% if not loop.last %}, {% endif %}{% endfor %}{% endif %}
+          {% if u.families %} — {% for fm in u.families %}<a href="/family/{{ fm.id }}/">family {{ fm.id }}</a>{% if not loop.last %}, {% endif %}{% endfor %}{% endif %}
+        {% elif u.type == 'person' %}<b>Person</b> — {{ plink(u.person, false) }}
+        {% elif u.type == 'family' %}<b>Family</b> — <a href="/family/{{ u.family.id }}/">{{ u.family.id }}</a>
+        {% elif u.type == 'place' %}<b>Place</b> — {{ placelink(u.place) }}
+        {% elif u.type == 'media' %}<b>Image</b> — {{ u.media.desc|typo }}
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+    {% else %}<p class="muted">Not attached to a published fact.</p>{% endif %}
+  </section>
+  <footer class="pfoot"><p>Research database: <a href="{{ cfg.private_site }}/citation/{{ c.id }}" rel="noopener">{{ c.id }}</a> (family login)</p></footer>
+</article>
+{% endblock %}

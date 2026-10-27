@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block body %}
+<article class="index">
+  <header class="phead"><p class="eyebrow">Index · {{ rows|length }} sources</p><h1>Sources</h1>
+  <p class="span muted">Every source cited by a published fact, with the number of citations drawn from it.</p></header>
+  <ul class="plist">
+    {% for r in rows %}<li><a href="/source/{{ r.source.id }}/">{{ r.source.title|typo }}</a>{% if r.source.author %} <span class="muted">· {{ r.source.author|typo }}</span>{% endif %} <span class="muted">· {{ r.n }}</span></li>{% endfor %}
+  </ul>
+</article>
+{% endblock %}

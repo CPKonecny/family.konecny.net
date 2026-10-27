@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{% if title %}{{ title }} · {% endif %}{{ cfg.site_name }}</title>
+<meta name="description" content="{% block description %}{{ cfg.tagline }}{% endblock %}">
+<meta name="robots" content="index,follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,300..700;1,8..60,300..700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="/static/site.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+<script>try{var t=localStorage.getItem('fk-theme');if(t==='light'||t==='dark'){document.documentElement.setAttribute('data-theme',t)}}catch(e){}</script>
+</head>
+<body class="{% block bodyclass %}{% endblock %}">
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <a class="brand" href="/"><span class="wm">Kone<i>č</i>ný → Konecny</span></a>
+  <nav class="nav" aria-label="Site">
+    <a href="/people/">People</a>
+    <a href="/places/">Places</a>
+    <a href="/sources/">Sources</a>
+    <a href="/questions/">Open questions</a>
+    <a href="/about/">About</a>
+  </nav>
+  <div class="theme" role="group" aria-label="Theme">
+    <button type="button" data-theme-set="system" aria-pressed="true" title="Follow the device">Auto</button><button type="button" data-theme-set="light" aria-pressed="false">Light</button><button type="button" data-theme-set="dark" aria-pressed="false">Dark</button>
+  </div>
+</header>
+<main id="main" class="{% block mainclass %}{% endblock %}">
+{% block body %}{% endblock %}
+</main>
+<footer class="foot">
+  <p>{{ cfg.site_name }} · built {{ now }} from the research database as of {{ meta.generated[:10] }} · {{ meta.counts_people.full }} people in full, {{ meta.counts_people.living }} living people by name only.</p>
+  <p>Review states are shown as they stand in the database: <span class="stamp human">reviewed</span> by a person, <span class="stamp ai">AI-checked</span> against its own citation, <span class="stamp un">unreviewed</span> not yet checked, <span class="stamp needs">needs a look</span> flagged by the checker. <a href="/about/">How this site works</a>.</p>
+</footer>
+<script src="/static/site.js" defer></script>
+</body>
+</html>

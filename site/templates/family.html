@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% from "_macros.html" import plink, placelink, datetext, stamp, fact, notecard, mediacard %}
+{% block body %}
+<article class="family">
+  <header class="phead">
+    <p class="eyebrow">Family · {{ f.id }}{% if f.type and f.type != 'Married' %} · {{ f.type|lower }}{% endif %}</p>
+    <h1>{% if father %}{{ father.name.display }}{% endif %}{% if father and mother %} <span class="amp">&amp;</span> {% endif %}{% if mother %}{{ mother.name.display }}{% endif %}</h1>
+    <p class="span">
+      {% if father %}{{ plink(father) }}{% endif %}{% if father and mother %} · {% endif %}{% if mother %}{{ plink(mother) }}{% endif %}
+    </p>
+    {% if f.status != 'full' %}<p class="living-note">One of the partners is living, so only the names and the children are shown.</p>{% endif %}
+  </header>
+
+  {% if children %}
+  <section class="kin">
+    <h2>Children</h2>
+    <ol class="kids-list">{% for c in children %}<li>{{ plink(c) }}</li>{% endfor %}</ol>
+  </section>
+  {% endif %}
+
+  {% if facts %}
+  <section class="timeline">
+    <h2>Events, with the evidence</h2>
+    <ol class="facts">{% for x in facts %}{{ fact(x) }}{% endfor %}</ol>
+  </section>
+  {% endif %}
+
+  {% if notes %}<section class="notes"><h2>Notes</h2>{% for n in notes %}{{ notecard(n) }}{% endfor %}</section>{% endif %}
+  {% if media %}<section class="gallery"><h2>Images</h2><div class="mediarow">{% for m in media %}{{ mediacard(m) }}{% endfor %}</div></section>{% endif %}
+  {% if f.status == 'full' %}
+  <footer class="pfoot"><p>Research database: <a href="{{ cfg.private_site }}/family/{{ f.id }}" rel="noopener">{{ f.id }}</a> (family login)</p></footer>
+  {% endif %}
+</article>
+{% endblock %}
