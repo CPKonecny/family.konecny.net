@@ -123,7 +123,7 @@ class Api:
         self.token = data["access_token"]
 
     BUSY = (500, 502, 503, 504)      # Gramps Web under write load (SQLite lock, worker busy): wait and try again
-    WAITS = (3, 10, 30)
+    WAITS = (2, 5, 15, 30)
 
     def _request(self, path: str, params: dict | None = None, raw: bool = False,
                  retry: bool = True, attempt: int = 0):
@@ -173,7 +173,7 @@ class Api:
             if e.code == 401 and retry and self.password:
                 self.login(self.user, self.password)
                 return self.send(method, path, payload, retry=False)
-            if e.code in self.BUSY and attempt < len(self.WAITS) and method != "POST":
+            if e.code in self.BUSY and attempt < len(self.WAITS):   # a locked SQLite write rolls back, so a retry cannot duplicate
                 time.sleep(self.WAITS[attempt])
                 return self.send(method, path, payload, retry, attempt + 1)
             raise ApiError(f"{method} {url}: HTTP {e.code} {e.read()[:300]!r}") from None
