@@ -122,8 +122,11 @@ class Api:
             raise ApiError(f"cannot reach {self.base}: {e.reason}") from None
         self.token = data["access_token"]
 
+    BUSY = (500, 502, 503, 504)      # Gramps Web under write load (SQLite lock, worker busy): wait and try again
+    WAITS = (3, 10, 30)
+
     def _request(self, path: str, params: dict | None = None, raw: bool = False,
-                 retry: bool = True):
+                 retry: bool = True, attempt: int = 0):
         url = f"{self.base}/{path.lstrip('/')}"
         if params:
             url += "?" + urllib.parse.urlencode(params)
@@ -141,6 +144,9 @@ class Api:
             if e.code == 401 and retry and self.password:
                 self.login(self.user, self.password)
                 return self._request(path, params, raw, retry=False)
+            if e.code in self.BUSY and attempt < len(self.WAITS):
+                time.sleep(self.WAITS[attempt])
+                return self._request(path, params, raw, retry, attempt + 1)
             raise ApiError(f"GET {url}: HTTP {e.code} {e.read()[:300]!r}") from None
         if raw:
             return body, headers
@@ -152,7 +158,7 @@ class Api:
     def get_bytes(self, path: str, params: dict | None = None) -> bytes:
         return self._request(path, params, raw=True)[0]
 
-    def send(self, method: str, path: str, payload=None, retry: bool = True):
+    def send(self, method: str, path: str, payload=None, retry: bool = True, attempt: int = 0):
         """PUT/POST/DELETE with a JSON body — used by the validator and the geocoder, never by the export."""
         url = f"{self.base}/{path.lstrip('/')}"
         data = json.dumps(payload).encode() if payload is not None else None
@@ -167,6 +173,9 @@ class Api:
             if e.code == 401 and retry and self.password:
                 self.login(self.user, self.password)
                 return self.send(method, path, payload, retry=False)
+            if e.code in self.BUSY and attempt < len(self.WAITS) and method != "POST":
+                time.sleep(self.WAITS[attempt])
+                return self.send(method, path, payload, retry, attempt + 1)
             raise ApiError(f"{method} {url}: HTTP {e.code} {e.read()[:300]!r}") from None
         return json.loads(body.decode()) if body else None
 

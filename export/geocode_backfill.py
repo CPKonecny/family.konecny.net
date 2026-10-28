@@ -198,7 +198,7 @@ def main(argv=None) -> int:
         if not os.path.exists(csv_path):
             print(f"ERROR: {csv_path} not found — run without --apply first", file=sys.stderr)
             return 2
-        written = skipped = 0
+        written = skipped = failed = 0
         with open(csv_path, encoding="utf-8", newline="") as f:
             for row in csv.DictReader(f):
                 if row.get("status", "").strip().lower() not in ("auto", "ok"):
@@ -213,7 +213,12 @@ def main(argv=None) -> int:
                 if not p or not (-90 <= lat <= 90 and -180 <= lon <= 180):
                     skipped += 1
                     continue
-                obj = api.get(f"places/{p['handle']}")
+                try:
+                    obj = api.get(f"places/{p['handle']}")
+                except ApiError as e:
+                    print(f"  {row['id']}: {e}", file=sys.stderr)
+                    failed += 1
+                    continue
                 if (obj.get("lat") or obj.get("long")) and not args.redo:
                     skipped += 1
                     continue
@@ -223,7 +228,9 @@ def main(argv=None) -> int:
                     written += 1
                 except ApiError as e:
                     print(f"  {row['id']}: {e}", file=sys.stderr)
-        print(f"wrote coordinates to {written} places; skipped {skipped} (status not auto/ok, bad numbers, or already set)")
+                    failed += 1
+        print(f"wrote coordinates to {written} places; skipped {skipped} (status not auto/ok, bad numbers, or already set); "
+              f"failed {failed}" + (" — run --apply again" if failed else ""))
         return 0
 
     geo = Geocoder(cache_path, args.email, args.sleep, mock=args.mock)

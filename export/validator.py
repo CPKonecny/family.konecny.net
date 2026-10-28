@@ -39,7 +39,7 @@ import urllib.request
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from gramps_export import (Api, ApiError, TABLES, date_obj, name_of, plain_text, tag_names, typestr)  # noqa: E402
 
-VERSION = "0.4.0"
+VERSION = "0.5.0"
 DONE_TAGS = {"reviewed", "ai-validated", "needs-human"}
 QUEUE_TAGS = {"unreviewed", "agent-proposed"}
 VERDICTS = ("supports", "consistent", "partial", "contradicts", "unreadable", "irrelevant")
@@ -122,7 +122,7 @@ class Model:
             content.append({"type": "image", "source": {"type": "base64", "media_type": media_type,
                                                         "data": base64.b64encode(data).decode()}})
         content.append({"type": "text", "text": text})
-        body = {"model": self.model, "max_tokens": 900, "system": SYSTEM,
+        body = {"model": self.model, "max_tokens": 2000, "system": SYSTEM,
                 "messages": [{"role": "user", "content": content}]}
         req = urllib.request.Request(f"{API_URL}/messages", data=json.dumps(body).encode(), headers=self._headers())
         for attempt in range(4):
@@ -181,7 +181,7 @@ def parse_json(raw: str) -> dict:
                 return json.loads(m.group(0))
             except ValueError:
                 pass
-    return {"verdict": "unreadable", "match_points": [], "flags": ["model returned no usable JSON"],
+    return {"verdict": "unreadable", "match_points": [], "flags": [], "limits": ["model returned no usable JSON"],
             "tier": None, "confidence": 0, "note": s[:500]}
 
 
@@ -381,6 +381,8 @@ def main(argv=None) -> int:
     ap.add_argument("--include-bare", action="store_true",
                     help="also check citations with no image and no transcription (off: there is nothing to check them against)")
     ap.add_argument("--overrides", default=os.path.join(os.path.dirname(os.path.abspath(__file__)), "overrides.json"))
+    ap.add_argument("--reapply", action="store_true",
+                    help="write verdicts whose apply failed (verdict file says applied: false) — no model calls")
     ap.add_argument("--revert", help="comma-separated citation IDs: put them (and their facts) back to 'unreviewed'")
     ap.add_argument("--max-age", type=int, default=110)
     args = ap.parse_args(argv)
@@ -623,6 +625,9 @@ def main(argv=None) -> int:
                 tree.tag_handle = {t["name"]: t["handle"] for t in api.get("tags/")}
             needed[name] = tree.tag_handle[name]
 
+    if args.reapply:
+        return reapply(api, tree, args, needed, progress)
+
     # run
     results = collections.Counter()
     errors_in_a_row = 0
@@ -716,7 +721,49 @@ def main(argv=None) -> int:
     return 0
 
 
-def apply_verdict(api: Api, tree: Tree, c: dict, claims: list, rec: dict, tags: dict):
+def reapply(api: Api, tree: Tree, args, needed: dict, progress) -> int:
+    """Write verdict files that were decided but never landed in Gramps (server error during --apply)."""
+    if not args.apply:
+        print("ERROR: --reapply writes to Gramps; add --apply", file=sys.stderr)
+        return 2
+    by_id = {c.get("gramps_id"): c for c in tree.citations.values()}
+    todo = []
+    for fn in sorted(os.listdir(args.out)):
+        if not fn.endswith(".json"):
+            continue
+        path = os.path.join(args.out, fn)
+        with open(path, encoding="utf-8") as f:
+            rec = json.load(f)
+        if rec.get("applied") or rec.get("outcome") == "unchanged":
+            continue
+        todo.append((path, rec))
+    progress(f"reapply: {len(todo)} verdict files not yet in Gramps")
+    ok = failed = gone = 0
+    for path, rec in todo:
+        c = by_id.get(rec.get("gramps_id"))
+        if not c:
+            gone += 1
+            continue
+        stamp = f"Validator ({rec['model']}, {rec['checked'][:10]})"
+        has_note = any(plain_text((tree.notes.get(n) or {}).get("text")).startswith(stamp) for n in c.get("note_list") or [])
+        try:
+            apply_verdict(api, tree, c, tree.claims_for(c["handle"]), rec, needed, post_note=not has_note)
+        except ApiError as e:
+            failed += 1
+            progress(f"  {rec['gramps_id']}: still failing — {e}")
+            continue
+        rec["applied"] = True
+        rec.pop("apply_error", None)
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(rec, f, ensure_ascii=False, indent=1)
+        ok += 1
+        if ok % 25 == 0:
+            progress(f"  {ok}/{len(todo)} written")
+    print(f"reapplied {ok}; still failing {failed}; citation no longer in Gramps {gone}")
+    return 0 if not failed else 1
+
+
+def apply_verdict(api: Api, tree: Tree, c: dict, claims: list, rec: dict, tags: dict, post_note: bool = True):
     """Swap review tags on the citation and its claims, add the Tier when missing, attach the reasoning."""
     outcome = rec["outcome"]
     add = [tags[outcome], tags["agent-validator"]]
@@ -744,7 +791,7 @@ def apply_verdict(api: Api, tree: Tree, c: dict, claims: list, rec: dict, tags: 
                  + ("\nMatches: " + "; ".join(rec["match_points"]) if rec["match_points"] else "")
                  + ("\nFlags: " + "; ".join(rec["flags"]) if rec["flags"] else "")
                  + ("\nLimits: " + "; ".join(rec.get("limits") or []) if rec.get("limits") else ""))
-    created = api.send("POST", "notes/", {"text": {"string": note_text, "tags": []}, "type": "Research", "format": 0,
+    created = None if not post_note else api.send("POST", "notes/", {"text": {"string": note_text, "tags": []}, "type": "Research", "format": 0,
                                           "private": False, "tag_list": [tags["agent-validator"]]})
     note_handle = None
     for tr in created or []:
