@@ -4,7 +4,7 @@
   "tagline": "A family history from Moravian Wallachia, the Radnice coalfield and Plymouth Colony to Two Rivers, Wisconsin",
   "private_site": "https://familytree.konecny.net",
   "contact_note": "Family members can ask Chris for a login to the research database, which holds the record images and the private papers.",
-  "root_person": "name:Chris Konecny",
+  "root_person": "I0141",
   "lines": [
     {
       "slug": "konecny",
@@ -12,7 +12,7 @@
       "subtitle": "Vlachovice and Štítná nad Vláří → Manitowoc → Two Rivers",
       "color": "konecny",
       "surnames": ["Konečný", "Konecny", "Konečná", "Kadlec", "Šebák", "Kostka", "Trchel", "Miklas", "Bilnitza"],
-      "from": "name:Chris Konecny",
+      "from": "I0141",
       "to": "ancestry:212795061711"
     },
     {
@@ -21,7 +21,7 @@
       "subtitle": "Mostiště, Radnice parish → Manitowoc",
       "color": "tauber",
       "surnames": ["Tauber", "Taubr", "Taubrová", "Král", "Králová", "Kralova"],
-      "from": "name:Chris Konecny",
+      "from": "I0141",
       "to": "ancestry:212735815392"
     },
     {
@@ -30,7 +30,7 @@
       "subtitle": "Plymouth Colony → Vermont → Quebec → Wisconsin",
       "color": "wood",
       "surnames": ["Wood", "Bentley", "Chill", "Seymour", "Howland", "Tilley", "Chipman", "Huckins", "Nelson"],
-      "from": "name:Chris Konecny",
+      "from": "I0141",
       "to": "ancestry:212799418061"
     },
     {
@@ -39,7 +39,7 @@
       "subtitle": "Minnesota → Arizona",
       "color": "toepel",
       "surnames": ["Toepel"],
-      "from": "name:Chris Konecny",
+      "from": "I0141",
       "to": "ancestry:212799248447"
     }
   ],
