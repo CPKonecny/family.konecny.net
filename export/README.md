@@ -1,8 +1,8 @@
-# family.konecny.net — export runbook
+# family.konecny.net — server runbook (export, validator, geocoder)
 
-`gramps_export.py` turns the Gramps master into the public-safe data bundle the site builds from. It runs on the server, talks only to the loopback API (`http://127.0.0.1:5055/api`), needs nothing beyond Python 3.8's standard library, and writes exactly three things into the site repo: `data/bundle.json`, `data/report.md`, `media/` (public files + thumbnails). Version 0.3.0 · bundle schema 0.3 · tested against gramps-webapi 3.24 / Gramps 6.0.8.
+`gramps_export.py` turns the Gramps master into the public-safe data bundle the site builds from. It runs on the server, talks only to the loopback API (`http://127.0.0.1:5055/api`), needs nothing beyond Python 3.8's standard library, and writes exactly three things into the site repo: `data/bundle.json`, `data/report.md`, `media/` (public files + thumbnails). Export 0.3 · validator 0.1 · geocoder 0.1 · bundle schema 0.3 · all tested against gramps-webapi 3.24 / Gramps 6.0.8. Three scripts live in `export/`; they share one API client and never store a password.
 
-## 1. First dry run (now)
+## 1. First dry run (done 27 Oct 2026; kept for a rebuild)
 
 From your workstation, after downloading the two files from the chat:
 
@@ -92,6 +92,41 @@ Check: `tail ~/gramps-tools/family-site-export.log` the next morning; `data/repo
 --thumb 600               thumbnail size for public media
 ```
 
-## 6. Mark a media object public (Gramps Web)
+## 6. Validator — `validator.py` (operating model §7)
+
+The second agent. For each citation still tagged `unreviewed` or `agent-proposed` it collects the claims the citation is attached to (the events, the person, the name), the source and citation text, the transcription notes, and the record image through the API's thumbnail endpoint, and asks a Claude model one question: does this record support these claims? The model is a different family from Karel's, as the operating model asks. One verdict file per citation lands in `~/gramps-tools/validation/`; with `--apply` the verdict also goes into Gramps:
+
+| verdict | tags written | also |
+|---|---|---|
+| `supports` or `consistent`, no flags | `ai-validated` on the citation and on each claim | reasoning as a Research note on the citation; `Tier` attribute added when the citation has none; `agent-validator` provenance tag |
+| anything else (`partial`, `contradicts`, `unreadable`, `irrelevant`, or any flag) | `needs-human` | same |
+
+Rules it keeps: exactly one review tag per object; a human `reviewed` tag is never touched; `needs-human` on a fact is sticky until a person clears it, so a second citation that "supports" cannot hide a conflict another citation raised. Direct lines first (ancestors of the root person in `site/config.json`), closest generations first.
+
+```
+install -d -m 700 ~/.config/family-site && (umask 077; read -rsp 'Anthropic API key: ' k; echo; printf '%s\n' "$k" > ~/.config/family-site/anthropic.key)
+cd ~/gramps-tools/family-site/export && read -p 'Gramps user: ' u
+python3 validator.py --dry-run --user "$u" | head -40        # queue, order, cost estimate; nothing called
+python3 validator.py --limit 10 --apply --user "$u"           # first batch, written to Gramps — check one in Gramps Web
+python3 validator.py --all --apply --user "$u"                # the rest (an evening; ~1,150 citations ≈ 15 USD on Sonnet)
+```
+
+`--apply` needs an Editor account (the `applier` account or yours); verdict files alone need only read access. The key comes from console.anthropic.com → API keys; the record images are sent to that API for reading, which is the same kind of exposure as Karel reading them on Grok. Useful flags: `--ids C0634,C0636` to re-check specific citations, `--redo` to re-run ones that have verdict files, `--only-direct`, `--model` to pick another Claude model (the script falls back to the newest Sonnet it can see), `--mock` to test the plumbing without a model.
+
+The site shows the result the next morning: `AI-checked` stamps, the validator's note on the citation page, and the tier instead of "est."
+
+## 7. Geocoder — `geocode_backfill.py` (v1 of the site needs it)
+
+Looks up every place without coordinates on Nominatim (OpenStreetMap, free, one request per second), writes `~/gramps-tools/geocode_review.csv`, and only on a second run with `--apply` writes latitude/longitude into Gramps. House numbers, "Ward 4" and the like are stripped before lookup; "USA", "Bohemia", "Moravia" are mapped to the modern country for the search only — nothing in the place name itself changes.
+
+```
+cd ~/gramps-tools/family-site/export && read -p 'Gramps user: ' u
+python3 geocode_backfill.py --user "$u"            # ~6 minutes for 315 places; writes the review file
+python3 geocode_backfill.py --apply --user "$u"    # after the review
+```
+
+In the CSV, review rows come first. `auto` = clean match, written as is. `review` = look once: the reason column says why (another place with the same name, only the district matched, name differs); fix lat/lon from mapy.cz or OpenStreetMap if needed and set status to `ok`, or leave it and it is skipped. `none` = nothing found; add coordinates by hand and set `ok`, or leave it. Re-running the lookup reuses the cache, so a second pass is quick. Splitting the flat Ancestry place strings into a Gramps hierarchy (town → county → state → country) is a separate, later step; the map does not need it.
+
+## 8. Mark a media object public (Gramps Web)
 
 Open the media object → Tags → add `public`. It becomes a file on the site at the next export, provided it is not attached to a living person and its path is not under the Ancestry/FamilySearch/import folders. Our own scans belong under `photos/`, `documents/`, `letters/`; record images stay under `records/`.

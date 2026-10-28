@@ -152,6 +152,24 @@ class Api:
     def get_bytes(self, path: str, params: dict | None = None) -> bytes:
         return self._request(path, params, raw=True)[0]
 
+    def send(self, method: str, path: str, payload=None, retry: bool = True):
+        """PUT/POST/DELETE with a JSON body — used by the validator and the geocoder, never by the export."""
+        url = f"{self.base}/{path.lstrip('/')}"
+        data = json.dumps(payload).encode() if payload is not None else None
+        req = urllib.request.Request(url, data=data, method=method, headers={
+            "Authorization": f"Bearer {self.token}", "Content-Type": "application/json",
+            "Accept": "application/json"})
+        self.calls += 1
+        try:
+            with urllib.request.urlopen(req, timeout=self.timeout) as r:
+                body = r.read()
+        except urllib.error.HTTPError as e:
+            if e.code == 401 and retry and self.password:
+                self.login(self.user, self.password)
+                return self.send(method, path, payload, retry=False)
+            raise ApiError(f"{method} {url}: HTTP {e.code} {e.read()[:300]!r}") from None
+        return json.loads(body.decode()) if body else None
+
     def paged(self, endpoint: str, pagesize: int = 500):
         """Yield every object of a collection endpoint, page by page."""
         page, seen, total = 1, 0, None
@@ -1826,7 +1844,7 @@ def main(argv=None) -> int:
     with open(os.path.expanduser("~/gramps-tools/export-report.md"), "w", encoding="utf-8") as f:
         f.write(text)
     size = os.path.getsize(bundle_path) / 1024
-    progress(f"wrote {bundle_path} ({size:.0f} KB), data/report.md, {copied} public media files"
+    progress(f"wrote {bundle_path} ({size:.0f} KB), ~/gramps-tools/export-report.md (private), {copied} public media files"
              + (f", {failed} failed" if failed else "") + f" in {time.time() - t0:.1f}s")
     return 0
 
