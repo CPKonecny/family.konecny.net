@@ -34729,6 +34729,557 @@
    ],
    "tier": "record",
    "url": "https://www.portafontium.eu/iipimage/30067817/radnice-ro-31_2370-o"
+  },
+  "C1206": {
+   "ancestry_record_id": "",
+   "change": 1793197802,
+   "cited_by": [
+    {
+     "id": "E1539",
+     "type": "event"
+    },
+    {
+     "id": "E1540",
+     "type": "event"
+    },
+    {
+     "id": "I0382",
+     "type": "person"
+    }
+   ],
+   "confidence": 2,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "104f1d2e2d78780134088deb439a",
+   "id": "C1206",
+   "information": "secondary",
+   "media": [],
+   "notes": [
+    "N0847",
+    "N0848"
+   ],
+   "page": "Memorial ID 209824876",
+   "proposal_file": "2026-10-28_1025_oregan-johnfx_add-person.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0185",
+   "source_type": "derivative",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "index",
+   "url": "https://www.findagrave.com/memorial/209824876/john-francis-xavier-oregan"
+  },
+  "C1207": {
+   "ancestry_record_id": "",
+   "change": 1793197803,
+   "cited_by": [
+    {
+     "id": "E1541",
+     "type": "event"
+    },
+    {
+     "id": "E1542",
+     "type": "event"
+    },
+    {
+     "id": "I0383",
+     "type": "person"
+    }
+   ],
+   "confidence": 2,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "104f1d2e4d0d61d9a2982ac89b53",
+   "id": "C1207",
+   "information": "secondary",
+   "media": [],
+   "notes": [
+    "N0849",
+    "N0850"
+   ],
+   "page": "Ruth Charlton / O'Regan",
+   "proposal_file": "2026-10-28_1026_charlton-ruth_add-person.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0186",
+   "source_type": "derivative",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "index",
+   "url": ""
+  },
+  "C1208": {
+   "ancestry_record_id": "",
+   "change": 1793197804,
+   "cited_by": [
+    {
+     "id": "E0768",
+     "type": "event"
+    }
+   ],
+   "confidence": 4,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "104f1d2e8568308c9e57f7ec84cd",
+   "id": "C1208",
+   "information": "primary",
+   "media": [
+    {
+     "ref": "O0172"
+    }
+   ],
+   "notes": [
+    "N0851",
+    "N0852"
+   ],
+   "page": "radnice-ro-19_2480-n (Mostiště, fol. 250, row 2)",
+   "proposal_file": "2026-10-28_0948_tauber-marieludmila_birth-1864.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0187",
+   "source_type": "original",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "record",
+   "url": "https://www.portafontium.eu/iipimage/30067805/radnice-ro-19_2480-n"
+  },
+  "C1209": {
+   "ancestry_record_id": "",
+   "change": 1793197806,
+   "cited_by": [
+    {
+     "id": "E0769",
+     "type": "event"
+    }
+   ],
+   "confidence": 4,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "104f1d2eb7b97dfc64e08d29320c",
+   "id": "C1209",
+   "information": "primary",
+   "media": [
+    {
+     "ref": "O0173"
+    }
+   ],
+   "notes": [
+    "N0853",
+    "N0854"
+   ],
+   "page": "radnice-ro-20_3560-z",
+   "proposal_file": "2026-10-28_0949_tauber-marieludmila_death-1864.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0188",
+   "source_type": "original",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "record",
+   "url": "https://www.portafontium.eu/iipimage/30067806/radnice-ro-20_3560-z"
+  },
+  "C1211": {
+   "ancestry_record_id": "",
+   "change": 1793197807,
+   "cited_by": [
+    {
+     "id": "E0773",
+     "type": "event"
+    }
+   ],
+   "confidence": 4,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "104f1d2ef54c3313c7ef1b8ae4ec",
+   "id": "C1211",
+   "information": "primary",
+   "media": [
+    {
+     "ref": "O0175"
+    }
+   ],
+   "notes": [
+    "N0857",
+    "N0858"
+   ],
+   "page": "radnice-ro-19_1570-n (Mostiště, fol. 154, row 5)",
+   "proposal_file": "2026-10-28_0952_tauber-frantisek1865_birth-1865.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0187",
+   "source_type": "original",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "record",
+   "url": "https://www.portafontium.eu/iipimage/30067805/radnice-ro-19_1570-n"
+  },
+  "C1212": {
+   "ancestry_record_id": "",
+   "change": 1793197808,
+   "cited_by": [
+    {
+     "id": "E0774",
+     "type": "event"
+    }
+   ],
+   "confidence": 4,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "104f1d2f0f7a1c72b4cfcf783358",
+   "id": "C1212",
+   "information": "primary",
+   "media": [
+    {
+     "ref": "O0176"
+    }
+   ],
+   "notes": [
+    "N0859",
+    "N0860"
+   ],
+   "page": "radnice-ro-20_3570-z (Mostiště, fol. 363)",
+   "proposal_file": "2026-10-28_0953_tauber-frantisek1865_death-1867.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0188",
+   "source_type": "original",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "record",
+   "url": "https://www.portafontium.eu/iipimage/30067806/radnice-ro-20_3570-z"
+  },
+  "C1214": {
+   "ancestry_record_id": "",
+   "change": 1793197809,
+   "cited_by": [
+    {
+     "id": "E0778",
+     "type": "event"
+    }
+   ],
+   "confidence": 4,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "104f1d2f41ce6783332e2f053961",
+   "id": "C1214",
+   "information": "primary",
+   "media": [
+    {
+     "ref": "O0178"
+    }
+   ],
+   "notes": [
+    "N0863",
+    "N0864"
+   ],
+   "page": "radnice-ro-29_2860-n (Mostiště, fol. 283, row 3)",
+   "proposal_file": "2026-10-28_0956_tauber-marieklara_birth-1867.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0189",
+   "source_type": "original",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "record",
+   "url": "https://www.portafontium.eu/iipimage/30067815/radnice-ro-29_2860-n"
+  },
+  "C1216": {
+   "ancestry_record_id": "",
+   "change": 1793197810,
+   "cited_by": [
+    {
+     "id": "E0783",
+     "type": "event"
+    }
+   ],
+   "confidence": 4,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "104f1d2f7270717988adce78cf65",
+   "id": "C1216",
+   "information": "primary",
+   "media": [
+    {
+     "ref": "O0180"
+    }
+   ],
+   "notes": [
+    "N0867",
+    "N0868"
+   ],
+   "page": "radnice-ro-29_2900-n (Mostiště, fol. 287, row 3)",
+   "proposal_file": "2026-10-28_0959_tauber-frantisek1869_birth-1869.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0189",
+   "source_type": "original",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "record",
+   "url": "https://www.portafontium.eu/iipimage/30067815/radnice-ro-29_2900-n"
+  },
+  "C1217": {
+   "ancestry_record_id": "",
+   "change": 1793197811,
+   "cited_by": [
+    {
+     "id": "E0784",
+     "type": "event"
+    }
+   ],
+   "confidence": 4,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "104f1d2f8c884cc89058f5e5a145",
+   "id": "C1217",
+   "information": "primary",
+   "media": [
+    {
+     "ref": "O0181"
+    }
+   ],
+   "notes": [
+    "N0869",
+    "N0870"
+   ],
+   "page": "radnice-ro-20_3640-z (Mostiště, fol. 370)",
+   "proposal_file": "2026-10-28_1000_tauber-frantisek1869_death-1879.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0188",
+   "source_type": "original",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "record",
+   "url": "https://www.portafontium.eu/iipimage/30067806/radnice-ro-20_3640-z"
+  },
+  "C1219": {
+   "ancestry_record_id": "",
+   "change": 1793197812,
+   "cited_by": [
+    {
+     "id": "E1543",
+     "type": "event"
+    }
+   ],
+   "confidence": 2,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "104f1d2fba197dd7c5b878ed2e83",
+   "id": "C1219",
+   "information": "secondary",
+   "media": [],
+   "notes": [
+    "N0873",
+    "N0874"
+   ],
+   "page": "Memorial ID 209824876",
+   "proposal_file": "2026-10-28_1027_oregan-johnfx_birth-1904.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0185",
+   "source_type": "derivative",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "index",
+   "url": "https://www.findagrave.com/memorial/209824876/john-francis-xavier-oregan"
+  },
+  "C1220": {
+   "ancestry_record_id": "",
+   "change": 1793197813,
+   "cited_by": [
+    {
+     "id": "E1544",
+     "type": "event"
+    }
+   ],
+   "confidence": 2,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "104f1d2fd8666bcaf7e7748d3126",
+   "id": "C1220",
+   "information": "secondary",
+   "media": [],
+   "notes": [
+    "N0875",
+    "N0876"
+   ],
+   "page": "OREGAN, JOHN F., d. 16 May 1978, Jefferson County, Kentucky",
+   "proposal_file": "2026-10-28_1028_oregan-johnfx_death-1978.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0190",
+   "source_type": "derivative",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "index",
+   "url": ""
+  },
+  "C1221": {
+   "ancestry_record_id": "",
+   "change": 1793197814,
+   "cited_by": [
+    {
+     "id": "E1545",
+     "type": "event"
+    }
+   ],
+   "confidence": 2,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "104f1d2fecde3031f1ada254f3cf",
+   "id": "C1221",
+   "information": "secondary",
+   "media": [],
+   "notes": [
+    "N0877",
+    "N0878"
+   ],
+   "page": "Ruth Charlton / O'Regan",
+   "proposal_file": "2026-10-28_1029_charlton-ruth_birth-1915.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0186",
+   "source_type": "derivative",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "index",
+   "url": ""
+  },
+  "C1222": {
+   "ancestry_record_id": "",
+   "change": 1793197814,
+   "cited_by": [
+    {
+     "id": "E1546",
+     "type": "event"
+    }
+   ],
+   "confidence": 2,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "104f1d3005983985aa0a64af1680",
+   "id": "C1222",
+   "information": "secondary",
+   "media": [],
+   "notes": [
+    "N0879",
+    "N0880"
+   ],
+   "page": "Memorial ID 173959295",
+   "proposal_file": "2026-10-28_1030_charlton-ruth_death-2007.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0191",
+   "source_type": "derivative",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "index",
+   "url": "https://www.findagrave.com/memorial/173959295/ruth-oregan"
   }
  },
  "events": {
@@ -60563,9 +61114,10 @@
   },
   "E0768": {
    "attributes": [],
-   "change": 1793041025,
+   "change": 1793197805,
    "citations": [
-    "C0798"
+    "C0798",
+    "C1208"
    ],
    "date": {
     "day": 29,
@@ -60577,9 +61129,11 @@
     "text": "29 January 1864",
     "year": 1864
    },
-   "description": "",
+   "description": "House 26; baptized 31 Jan 1864 (P. Ignác Chlumecký); midwife Barbora Opatrna (Lohovice); RO19 fol.250 2480-n row 2",
    "families": [],
-   "flags": [],
+   "flags": [
+    "agent-proposed"
+   ],
    "handle": "104ebd54ba62809c1923196d91a",
    "id": "E0768",
    "media": [],
@@ -60592,12 +61146,16 @@
    ],
    "place": "P0219",
    "provenance": [
+    "agent-karel",
+    "agent-proposed",
     "import-ancestry-2026-10-25"
    ],
    "review": "unreviewed",
    "tags": [
-    "import-ancestry-2026-10-25",
-    "unreviewed"
+    "agent-proposed",
+    "agent-karel",
+    "unreviewed",
+    "import-ancestry-2026-10-25"
    ],
    "type": "Birth"
   },
@@ -60608,9 +61166,10 @@
      "value": "Source: family abstract, 4 Oct 2026; Detail: handwritten family sheets; no register image read; Image: —; URL: —"
     }
    ],
-   "change": 1793041025,
+   "change": 1793197806,
    "citations": [
-    "C0799"
+    "C0799",
+    "C1209"
    ],
    "date": {
     "day": 22,
@@ -60622,9 +61181,11 @@
     "text": "22 February 1864",
     "year": 1864
    },
-   "description": "",
+   "description": "RO20: zem 22 Feb 1864 / poch 25 Feb 1864 Chomle; house 26; age 21 days; cause Psotník (NEEDS REVIEW). Death row name Marie only (not Ludmila).",
    "families": [],
-   "flags": [],
+   "flags": [
+    "agent-proposed"
+   ],
    "handle": "104ebd54ba6ae82c43b72464679",
    "id": "E0769",
    "media": [],
@@ -60635,14 +61196,18 @@
      "role": "Primary"
     }
    ],
-   "place": null,
+   "place": "P0321",
    "provenance": [
+    "agent-karel",
+    "agent-proposed",
     "import-ancestry-2026-10-25"
    ],
    "review": "unreviewed",
    "tags": [
-    "import-ancestry-2026-10-25",
-    "unreviewed"
+    "agent-proposed",
+    "agent-karel",
+    "unreviewed",
+    "import-ancestry-2026-10-25"
    ],
    "type": "Death"
   },
@@ -60735,9 +61300,10 @@
   },
   "E0773": {
    "attributes": [],
-   "change": 1793041026,
+   "change": 1793197807,
    "citations": [
-    "C0800"
+    "C0800",
+    "C1211"
    ],
    "date": {
     "day": 1,
@@ -60749,9 +61315,11 @@
     "text": "1 February 1865",
     "year": 1865
    },
-   "description": "",
+   "description": "House 27; baptized 2 Feb 1865 (P. Ant. Farka); midwife Barbora Opatrná (Lohovice); RO19 fol.154 1570-n row 5",
    "families": [],
-   "flags": [],
+   "flags": [
+    "agent-proposed"
+   ],
    "handle": "104ebd54ba7c49a6c109c7509dff",
    "id": "E0773",
    "media": [],
@@ -60762,14 +61330,18 @@
      "role": "Primary"
     }
    ],
-   "place": null,
+   "place": "P0321",
    "provenance": [
+    "agent-karel",
+    "agent-proposed",
     "import-ancestry-2026-10-25"
    ],
    "review": "unreviewed",
    "tags": [
-    "import-ancestry-2026-10-25",
-    "unreviewed"
+    "agent-proposed",
+    "agent-karel",
+    "unreviewed",
+    "import-ancestry-2026-10-25"
    ],
    "type": "Birth"
   },
@@ -60780,9 +61352,10 @@
      "value": "Source: family abstract, 4 Oct 2026; Detail: handwritten family sheets; no register image read; Image: —; URL: —"
     }
    ],
-   "change": 1793041026,
+   "change": 1793197808,
    "citations": [
-    "C0801"
+    "C0801",
+    "C1212"
    ],
    "date": {
     "day": 18,
@@ -60794,9 +61367,11 @@
     "text": "18 April 1867",
     "year": 1867
    },
-   "description": "",
+   "description": "RO20 fol.363: zem 18 Apr 1867 / poch 20 Apr 1867 Chomle; house 27; age 2 years; cause Chronický střevní katarrh; P. Ant. Farkaš.",
    "families": [],
-   "flags": [],
+   "flags": [
+    "agent-proposed"
+   ],
    "handle": "104ebd54ba857f048fc7bafd2cad",
    "id": "E0774",
    "media": [],
@@ -60807,14 +61382,18 @@
      "role": "Primary"
     }
    ],
-   "place": null,
+   "place": "P0321",
    "provenance": [
+    "agent-karel",
+    "agent-proposed",
     "import-ancestry-2026-10-25"
    ],
    "review": "unreviewed",
    "tags": [
-    "import-ancestry-2026-10-25",
-    "unreviewed"
+    "agent-proposed",
+    "agent-karel",
+    "unreviewed",
+    "import-ancestry-2026-10-25"
    ],
    "type": "Death"
   },
@@ -60907,9 +61486,10 @@
   },
   "E0778": {
    "attributes": [],
-   "change": 1793041027,
+   "change": 1793197809,
    "citations": [
-    "C0802"
+    "C0802",
+    "C1214"
    ],
    "date": {
     "day": 5,
@@ -60921,9 +61501,11 @@
     "text": "5 January 1867",
     "year": 1867
    },
-   "description": "",
+   "description": "House 27; baptized 6 Jan 1867 (P. Frant. Pavlovský, kaplan); midwife Barbora Opatrna (Lohovice); RO29 fol.283 2860-n row 3. No † margin. STEP 7 Czech O/Z CLEAN NEGATIVE — fate OPEN. Godparents unlocked.",
    "families": [],
-   "flags": [],
+   "flags": [
+    "agent-proposed"
+   ],
    "handle": "104ebd54ba985ea3eb1e188aad2b",
    "id": "E0778",
    "media": [],
@@ -60934,14 +61516,18 @@
      "role": "Primary"
     }
    ],
-   "place": null,
+   "place": "P0321",
    "provenance": [
+    "agent-karel",
+    "agent-proposed",
     "import-ancestry-2026-10-25"
    ],
    "review": "unreviewed",
    "tags": [
-    "import-ancestry-2026-10-25",
-    "unreviewed"
+    "agent-proposed",
+    "agent-karel",
+    "unreviewed",
+    "import-ancestry-2026-10-25"
    ],
    "type": "Birth"
   },
@@ -61063,9 +61649,10 @@
   },
   "E0783": {
    "attributes": [],
-   "change": 1793041028,
+   "change": 1793197811,
    "citations": [
-    "C0803"
+    "C0803",
+    "C1216"
    ],
    "date": {
     "day": 23,
@@ -61077,9 +61664,11 @@
     "text": "23 July 1869",
     "year": 1869
    },
-   "description": "",
+   "description": "House 27; baptized 25 Jul 1869 (František Bradáč, farář); midwife Barbora Opatrná (Radnice); RO29 fol.287 2900-n row 3; godparents unlocked",
    "families": [],
-   "flags": [],
+   "flags": [
+    "agent-proposed"
+   ],
    "handle": "104ebd54baab5e07aaf96a2739d4",
    "id": "E0783",
    "media": [],
@@ -61090,14 +61679,18 @@
      "role": "Primary"
     }
    ],
-   "place": null,
+   "place": "P0321",
    "provenance": [
+    "agent-karel",
+    "agent-proposed",
     "import-ancestry-2026-10-25"
    ],
    "review": "unreviewed",
    "tags": [
-    "import-ancestry-2026-10-25",
-    "unreviewed"
+    "agent-proposed",
+    "agent-karel",
+    "unreviewed",
+    "import-ancestry-2026-10-25"
    ],
    "type": "Birth"
   },
@@ -61108,9 +61701,10 @@
      "value": "Source: family abstract, 4 Oct 2026; Detail: handwritten family sheets; no register image read; Image: —; URL: —"
     }
    ],
-   "change": 1793041029,
+   "change": 1793197811,
    "citations": [
-    "C0804"
+    "C0804",
+    "C1217"
    ],
    "date": {
     "day": 12,
@@ -61122,9 +61716,11 @@
     "text": "12 June 1879",
     "year": 1879
    },
-   "description": "",
+   "description": "RO20 fol.370: zem 12 Jun 1879 / poch 15 Jun 1879 Chomle; house 27; age 10 years; cause Bleskem zabit (killed by lightning); Antonín Chvalkovský, kaplan.",
    "families": [],
-   "flags": [],
+   "flags": [
+    "agent-proposed"
+   ],
    "handle": "104ebd54bab116d902fb888b911",
    "id": "E0784",
    "media": [],
@@ -61135,14 +61731,18 @@
      "role": "Primary"
     }
    ],
-   "place": null,
+   "place": "P0321",
    "provenance": [
+    "agent-karel",
+    "agent-proposed",
     "import-ancestry-2026-10-25"
    ],
    "review": "unreviewed",
    "tags": [
-    "import-ancestry-2026-10-25",
-    "unreviewed"
+    "agent-proposed",
+    "agent-karel",
+    "unreviewed",
+    "import-ancestry-2026-10-25"
    ],
    "type": "Death"
   },
@@ -83427,6 +84027,350 @@
     "agent-karel"
    ],
    "type": "Marriage"
+  },
+  "E1539": {
+   "attributes": [],
+   "change": 1793197802,
+   "citations": [
+    "C1206"
+   ],
+   "date": {
+    "day": 30,
+    "iso": "1904-07-30",
+    "modifier": null,
+    "month": 7,
+    "quality": null,
+    "sort": 2416692,
+    "text": "30 July 1904",
+    "year": 1904
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "104f1d2e31c54c03a407490fbb5b",
+   "id": "E1539",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0382",
+     "role": "Primary"
+    }
+   ],
+   "place": null,
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Birth"
+  },
+  "E1540": {
+   "attributes": [],
+   "change": 1793197802,
+   "citations": [
+    "C1206"
+   ],
+   "date": {
+    "day": 16,
+    "iso": "1978-05-16",
+    "modifier": null,
+    "month": 5,
+    "quality": null,
+    "sort": 2443645,
+    "text": "16 May 1978",
+    "year": 1978
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "104f1d2e35cd564fa92c06c0ebb6",
+   "id": "E1540",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0382",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0288",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Death"
+  },
+  "E1541": {
+   "attributes": [],
+   "change": 1793197803,
+   "citations": [
+    "C1207"
+   ],
+   "date": {
+    "day": 9,
+    "iso": "1915-06-09",
+    "modifier": null,
+    "month": 6,
+    "quality": null,
+    "sort": 2420658,
+    "text": "9 June 1915",
+    "year": 1915
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "104f1d2e57ea69eba4b5024e7e10",
+   "id": "E1541",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0383",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0320",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Birth"
+  },
+  "E1542": {
+   "attributes": [],
+   "change": 1793197803,
+   "citations": [
+    "C1207"
+   ],
+   "date": {
+    "day": 4,
+    "iso": "2007-08-04",
+    "modifier": null,
+    "month": 8,
+    "quality": null,
+    "sort": 2454317,
+    "text": "4 August 2007",
+    "year": 2007
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "104f1d2e5bb84e0c12a6a0640d47",
+   "id": "E1542",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0383",
+     "role": "Primary"
+    }
+   ],
+   "place": null,
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Death"
+  },
+  "E1543": {
+   "attributes": [],
+   "change": 1793197812,
+   "citations": [
+    "C1219"
+   ],
+   "date": {
+    "day": 30,
+    "iso": "1904-07-30",
+    "modifier": null,
+    "month": 7,
+    "quality": null,
+    "sort": 2416692,
+    "text": "30 July 1904",
+    "year": 1904
+   },
+   "description": "FG 209824876: b. 30 Jul 1904; place not stated. SSDI age 73 at 16 May 1978 consistent.",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "104f1d2fc1c37d640202b56f8253",
+   "id": "E1543",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0382",
+     "role": "Primary"
+    }
+   ],
+   "place": null,
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Birth"
+  },
+  "E1544": {
+   "attributes": [],
+   "change": 1793197813,
+   "citations": [
+    "C1220"
+   ],
+   "date": {
+    "day": 16,
+    "iso": "1978-05-16",
+    "modifier": null,
+    "month": 5,
+    "quality": null,
+    "sort": 2443645,
+    "text": "16 May 1978",
+    "year": 1978
+   },
+   "description": "SSDI: OREGAN, JOHN F. of Jefferson County, Kentucky died 16 May 1978 at age 73. Burial Calvary Cemetery, Louisville (FG) — note only.",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "104f1d2fdd1a7aab487892507c0",
+   "id": "E1544",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0382",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0288",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Death"
+  },
+  "E1545": {
+   "attributes": [],
+   "change": 1793197814,
+   "citations": [
+    "C1221"
+   ],
+   "date": {
+    "day": 9,
+    "iso": "1915-06-09",
+    "modifier": null,
+    "month": 6,
+    "quality": null,
+    "sort": 2420658,
+    "text": "9 June 1915",
+    "year": 1915
+   },
+   "description": "NUMIDENT: b. 9 Jun 1915 Louisville, KY; parents Albert B Charlton × Ernestine Werst (not added). NEEDS REVIEW vs FG header 1914.",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "104f1d2ff18c7f658f7fe12c13e6",
+   "id": "E1545",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0383",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0320",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Birth"
+  },
+  "E1546": {
+   "attributes": [],
+   "change": 1793197814,
+   "citations": [
+    "C1222"
+   ],
+   "date": {
+    "day": 4,
+    "iso": "2007-08-04",
+    "modifier": null,
+    "month": 8,
+    "quality": null,
+    "sort": 2454317,
+    "text": "4 August 2007",
+    "year": 2007
+   },
+   "description": "NUMIDENT/FG: d. 4 Aug 2007; place not stated.",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "104f1d300a875399996dab25eb6a",
+   "id": "E1546",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0383",
+     "role": "Primary"
+    }
+   ],
+   "place": null,
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Death"
   }
  },
  "families": {
@@ -89665,6 +90609,33 @@
     "agent-karel"
    ],
    "type": "Married"
+  },
+  "F0178": {
+   "attributes": [],
+   "change": 1793197804,
+   "children": [],
+   "citations": [],
+   "events": [],
+   "father": "I0382",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "104f1d2e669a615ae331bc1a6b32",
+   "id": "F0178",
+   "media": [],
+   "mother": "I0383",
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Married"
   }
  },
  "media": {
@@ -95833,6 +96804,369 @@
     "agent-proposed",
     "agent-karel"
    ]
+  },
+  "O0172": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1208",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-10-28_0948_tauber-marieludmila_birth-1864.jpg"
+   },
+   "checksum": "32ed8f1f0b62030840bbd203956d0288",
+   "citations": [],
+   "date": null,
+   "desc": "Radnice Roman Catholic parish registers (SOA Plzeň, Porta fontium), RO19 births — radnice-ro-19_2480-n (Mostiště, fol. 250, row 2)",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "104f1d2e7e5262b9bb4036cb0b54",
+   "id": "O0172",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0172",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-proposed",
+    "agent-karel"
+   ]
+  },
+  "O0173": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1209",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-10-28_0949_tauber-marieludmila_death-1864.jpg"
+   },
+   "checksum": "9d1007a9c0e7c7c88cf3c69dcdbfaaf8",
+   "citations": [],
+   "date": null,
+   "desc": "Radnice Roman Catholic parish registers (SOA Plzeň, Porta fontium), RO20 deaths — radnice-ro-20_3560-z",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "104f1d2eaa853a681613b028031d",
+   "id": "O0173",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0173",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-proposed",
+    "agent-karel"
+   ]
+  },
+  "O0174": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "I0188",
+     "type": "person"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-10-28_0950_tauber-marieludmila_birth-media_1_left.jpg"
+   },
+   "checksum": "32ed8f1f0b62030840bbd203956d0288",
+   "citations": [],
+   "date": null,
+   "desc": "Radnice Roman Catholic parish registers (SOA Plzeň, Porta fontium), RO19 births — radnice-ro-19_2480-n (Mostiště, fol. 250, row 2)",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "104f1d2ed4f259350e5a4ccb368e",
+   "id": "O0174",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0174",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-proposed",
+    "agent-karel"
+   ]
+  },
+  "O0175": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1211",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-10-28_0952_tauber-frantisek1865_birth-1865.jpg"
+   },
+   "checksum": "dff3573047db1d7a5adee9b7acfcddba",
+   "citations": [],
+   "date": null,
+   "desc": "Radnice Roman Catholic parish registers (SOA Plzeň, Porta fontium), RO19 births — radnice-ro-19_1570-n (Mostiště, fol. 154, row 5)",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "104f1d2eee891500be4a9dec8ec6",
+   "id": "O0175",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0175",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-proposed",
+    "agent-karel"
+   ]
+  },
+  "O0176": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1212",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-10-28_0953_tauber-frantisek1865_death-1867.jpg"
+   },
+   "checksum": "c484306960726e00aafe975bfdcbfd84",
+   "citations": [],
+   "date": null,
+   "desc": "Radnice Roman Catholic parish registers (SOA Plzeň, Porta fontium), RO20 deaths — radnice-ro-20_3570-z (Mostiště, fol. 363)",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "104f1d2f089d53cbe6cf99e3845c",
+   "id": "O0176",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0176",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-proposed",
+    "agent-karel"
+   ]
+  },
+  "O0177": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "I0189",
+     "type": "person"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-10-28_0954_tauber-frantisek1865_birth-media_1_left.jpg"
+   },
+   "checksum": "dff3573047db1d7a5adee9b7acfcddba",
+   "citations": [],
+   "date": null,
+   "desc": "Radnice Roman Catholic parish registers (SOA Plzeň, Porta fontium), RO19 births — radnice-ro-19_1570-n (Mostiště, fol. 154, row 5)",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "104f1d2f22a37dfacd572c5de48a",
+   "id": "O0177",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0177",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-proposed",
+    "agent-karel"
+   ]
+  },
+  "O0178": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1214",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-10-28_0956_tauber-marieklara_birth-1867.jpg"
+   },
+   "checksum": "779ebb6d1886fa3dba01ff1df9ca848c",
+   "citations": [],
+   "date": null,
+   "desc": "Radnice Roman Catholic parish registers (SOA Plzeň, Porta fontium), RO29 births — radnice-ro-29_2860-n (Mostiště, fol. 283, row 3)",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "104f1d2f3b467e89ae29157e8204",
+   "id": "O0178",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0178",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-proposed",
+    "agent-karel"
+   ]
+  },
+  "O0179": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "I0190",
+     "type": "person"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-10-28_0957_tauber-marieklara_birth-media_1_left.jpg"
+   },
+   "checksum": "779ebb6d1886fa3dba01ff1df9ca848c",
+   "citations": [],
+   "date": null,
+   "desc": "Radnice Roman Catholic parish registers (SOA Plzeň, Porta fontium), RO29 births — radnice-ro-29_2860-n (Mostiště, fol. 283, row 3)",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "104f1d2f55f55a6bea0c9bf94173",
+   "id": "O0179",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0179",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-proposed",
+    "agent-karel"
+   ]
+  },
+  "O0180": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1216",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-10-28_0959_tauber-frantisek1869_birth-1869.jpg"
+   },
+   "checksum": "ba91ebf7968a08f276d4ed76a9eb77ed",
+   "citations": [],
+   "date": null,
+   "desc": "Radnice Roman Catholic parish registers (SOA Plzeň, Porta fontium), RO29 births — radnice-ro-29_2900-n (Mostiště, fol. 287, row 3)",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "104f1d2f6ba6996f45ef677aac3",
+   "id": "O0180",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0180",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-proposed",
+    "agent-karel"
+   ]
+  },
+  "O0181": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1217",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-10-28_1000_tauber-frantisek1869_death-1879.jpg"
+   },
+   "checksum": "35b355f9459a4287a91049692ca4a184",
+   "citations": [],
+   "date": null,
+   "desc": "Radnice Roman Catholic parish registers (SOA Plzeň, Porta fontium), RO20 deaths — radnice-ro-20_3640-z (Mostiště, fol. 370)",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "104f1d2f85661f1cff09468f190c",
+   "id": "O0181",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0181",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-proposed",
+    "agent-karel"
+   ]
+  },
+  "O0182": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "I0191",
+     "type": "person"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-10-28_1001_tauber-frantisek1869_birth-media_1_left.jpg"
+   },
+   "checksum": "ba91ebf7968a08f276d4ed76a9eb77ed",
+   "citations": [],
+   "date": null,
+   "desc": "Radnice Roman Catholic parish registers (SOA Plzeň, Porta fontium), RO29 births — radnice-ro-29_2900-n (Mostiště, fol. 287, row 3)",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "104f1d2fa03f54c0cc4e731b5cc1",
+   "id": "O0182",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0182",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-proposed",
+    "agent-karel"
+   ]
   }
  },
  "meta": {
@@ -95844,21 +97178,21 @@
    "very high"
   ],
   "counts": {
-   "citations": 1179,
-   "events": 1394,
-   "families": 177,
-   "media": 163,
-   "notes": 732,
-   "people": 382,
-   "places": 312,
-   "repositories": 15,
-   "sources": 180
+   "citations": 1192,
+   "events": 1402,
+   "families": 178,
+   "media": 174,
+   "notes": 760,
+   "people": 384,
+   "places": 315,
+   "repositories": 16,
+   "sources": 187
   },
   "counts_people": {
-   "full": 317,
+   "full": 319,
    "living": 65
   },
-  "generated": "2026-10-28T11:01:17+00:00",
+  "generated": "2026-10-28T17:32:48+00:00",
   "generator": "gramps_export.py 0.3.0",
   "gramps_version": "6.0.8",
   "gramps_webapi_version": "3.17.0",
@@ -110277,6 +111611,538 @@
    "tags": [],
    "text": "2026-10-27 (karel): Annie 27 Oct POSITIVE. Ancestry: Anežka 212806421666 already child of Jan 212735815392 × Anna 212735815432; František Vlček 212811640965 CREATED; Marriage 28 Oct 1901 Radnice ON with Porta cite + gallery jpg + Research Note (NEEDS REVIEW crop; Gross WEAK). Family event — spouse required. Kamenec birthplace left unset on František (ambiguous autocomplete).",
    "type": "Research"
+  },
+  "N0845": {
+   "attached_to": [
+    {
+     "id": "I0038",
+     "type": "person"
+    }
+   ],
+   "change": 1793196002,
+   "flags": [],
+   "handle": "104f1c1b6e4c5a7e7c49441ab09e",
+   "html": "<p>2026-10-28 (karel): {&#x27;type&#x27;: &#x27;Research Note&#x27;, &#x27;text&#x27;: &#x27;COMPILED (not VR) — Birth 26 Jan 1787, possibly Rehoboth, Mass., or more probably Brattleboro, Vt., son of Philip Wood and Eunice Pierce; d. Farnham 24 Jan 1848 aged 60 yrs 11 mos. Source: Assemblée nationale du Québec biography (Allaire &amp; Johnson, Dictionnaire des parlementaires du Québec 1792–1992, p. 780). Day held at 26 (Wikipedia 27 weak); no town VR found (FS 1784223 blocked). Not VR-locked.&#x27;}</p>",
+   "id": "N0845",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-10-28 (karel): {'type': 'Research Note', 'text': 'COMPILED (not VR) — Birth 26 Jan 1787, possibly Rehoboth, Mass., or more probably Brattleboro, Vt., son of Philip Wood and Eunice Pierce; d. Farnham 24 Jan 1848 aged 60 yrs 11 mos. Source: Assemblée nationale du Québec biography (Allaire & Johnson, Dictionnaire des parlementaires du Québec 1792–1992, p. 780). Day held at 26 (Wikipedia 27 weak); no town VR found (FS 1784223 blocked). Not VR-locked.'}",
+   "type": "Research"
+  },
+  "N0846": {
+   "attached_to": [
+    {
+     "id": "I0124",
+     "type": "person"
+    }
+   ],
+   "change": 1793196002,
+   "flags": [],
+   "handle": "104f1c1b7711319cc37ef4a96d58",
+   "html": "<p>2026-10-28 (karel): {&#x27;type&#x27;: &#x27;Research Note&#x27;, &#x27;text&#x27;: &quot;COMPILED (not VR) — Birth 29 Apr 1756 Rehoboth, Mass.; d. Brattleboro 16 Jul 1845; bur. Prospect Hill; Pvt., Capt. Stephen Bullock&#x27;s Co., Col. Thomas Carpenter&#x27;s Regt., RI Alarm Dec 1776. Source: Cabot, Annals of Brattleboro vol. 1 (1921) p. 159. Supporting: Prospect Hill gravestone listing &#x27;WOOD, Philip, died 16 July 1845, ae 89&#x27;. Arnold Vital Record of Rehoboth has no Philip Wood birth — day not VR-locked.&quot;}</p>",
+   "id": "N0846",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-10-28 (karel): {'type': 'Research Note', 'text': \"COMPILED (not VR) — Birth 29 Apr 1756 Rehoboth, Mass.; d. Brattleboro 16 Jul 1845; bur. Prospect Hill; Pvt., Capt. Stephen Bullock's Co., Col. Thomas Carpenter's Regt., RI Alarm Dec 1776. Source: Cabot, Annals of Brattleboro vol. 1 (1921) p. 159. Supporting: Prospect Hill gravestone listing 'WOOD, Philip, died 16 July 1845, ae 89'. Arnold Vital Record of Rehoboth has no Philip Wood birth — day not VR-locked.\"}",
+   "type": "Research"
+  },
+  "N0847": {
+   "attached_to": [
+    {
+     "id": "C1206",
+     "type": "citation"
+    }
+   ],
+   "change": 1793197802,
+   "flags": [],
+   "handle": "104f1d2e27184b1f0cef674959ae",
+   "html": "<p>Transcription (as written): John Francis Xavier O&#x27;Regan; b. 30 Jul 1904; d. 16 May 1978; burial Calvary Cemetery, Louisville, Jefferson County, Kentucky.</p>",
+   "id": "N0847",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): John Francis Xavier O'Regan; b. 30 Jul 1904; d. 16 May 1978; burial Calvary Cemetery, Louisville, Jefferson County, Kentucky.",
+   "type": "Transcript"
+  },
+  "N0848": {
+   "attached_to": [
+    {
+     "id": "C1206",
+     "type": "citation"
+    }
+   ],
+   "change": 1793197802,
+   "flags": [],
+   "handle": "104f1d2e2a41190df19ebcb84a3c",
+   "html": "<p>2026-10-28 (karel): Created on Ancestry (pid 212811830091). Must precede 1026–1032. Father of Martha Chill 212801416730 (obit lock, FG 209872760). Burial Calvary Cemetery, Louisville (FG) — note only, no burial event. FG 182930384 REJECTED (wrong man).<br>Conflicts: [&quot;FG 182930384 rejected — different John O&#x27;Regan; do not attach.&quot;, &#x27;SSDI cite has no URL.&#x27;]</p>",
+   "id": "N0848",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-10-28 (karel): Created on Ancestry (pid 212811830091). Must precede 1026–1032. Father of Martha Chill 212801416730 (obit lock, FG 209872760). Burial Calvary Cemetery, Louisville (FG) — note only, no burial event. FG 182930384 REJECTED (wrong man).\nConflicts: [\"FG 182930384 rejected — different John O'Regan; do not attach.\", 'SSDI cite has no URL.']",
+   "type": "Research"
+  },
+  "N0849": {
+   "attached_to": [
+    {
+     "id": "C1207",
+     "type": "citation"
+    }
+   ],
+   "change": 1793197803,
+   "flags": [],
+   "handle": "104f1d2e4722209e41b00b934ff9",
+   "html": "<p>Transcription (as written): Ruth Charlton; b. 9 Jun 1915, Louisville, Jefferson, Kentucky; father Albert B Charlton; mother Ernestine Werst; d. 4 Aug 2007.</p>",
+   "id": "N0849",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Ruth Charlton; b. 9 Jun 1915, Louisville, Jefferson, Kentucky; father Albert B Charlton; mother Ernestine Werst; d. 4 Aug 2007.",
+   "type": "Transcript"
+  },
+  "N0850": {
+   "attached_to": [
+    {
+     "id": "C1207",
+     "type": "citation"
+    }
+   ],
+   "change": 1793197803,
+   "flags": [],
+   "handle": "104f1d2e49fbee58d6c55e40cd2",
+   "html": "<p>2026-10-28 (karel): Created on Ancestry (pid 212811830141). Birth surname Charlton; married_surname O&#x27;Regan. Mother of Martha Chill 212801416730. NUMIDENT parents Albert B Charlton and Ernestine Werst — note only, NOT created. Must precede 1029/1030/1032.<br>Conflicts: [&#x27;Birth year NEEDS REVIEW: NUMIDENT 1915 vs FG 173959295 header 1914; 1915 used.&#x27;, &#x27;Parents Albert B Charlton × Ernestine Werst not added.&#x27;, &#x27;NUMIDENT cite has no URL.&#x27;]</p>",
+   "id": "N0850",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-10-28 (karel): Created on Ancestry (pid 212811830141). Birth surname Charlton; married_surname O'Regan. Mother of Martha Chill 212801416730. NUMIDENT parents Albert B Charlton and Ernestine Werst — note only, NOT created. Must precede 1029/1030/1032.\nConflicts: ['Birth year NEEDS REVIEW: NUMIDENT 1915 vs FG 173959295 header 1914; 1915 used.', 'Parents Albert B Charlton × Ernestine Werst not added.', 'NUMIDENT cite has no URL.']",
+   "type": "Research"
+  },
+  "N0851": {
+   "attached_to": [
+    {
+     "id": "C1208",
+     "type": "citation"
+    }
+   ],
+   "change": 1793197804,
+   "flags": [],
+   "handle": "104f1d2e78566114d577b203f39b",
+   "html": "<p>Transcription (as written): RO19 fol. 250, row 2, Mostiště: Marie Ludmila, female, legitimate, born 29 Jan 1864, baptized 31 Jan 1864, Mostiště house 26. Father Taubr/Tauber Jan, havíř [miner], son of † Tomáš Taubr; mother Králová Barbora, daughter of Jan Král of Mostiště 7. Priest P. Ignác Chlumecký, kpl.; midwife Barbora Opatrna, zkoumaná z Lohovic. Margin: † 22/2 64. Godparents written in Kurrent — LOW CONFIDENCE / unlocked, not transcribed.</p>",
+   "id": "N0851",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): RO19 fol. 250, row 2, Mostiště: Marie Ludmila, female, legitimate, born 29 Jan 1864, baptized 31 Jan 1864, Mostiště house 26. Father Taubr/Tauber Jan, havíř [miner], son of † Tomáš Taubr; mother Králová Barbora, daughter of Jan Král of Mostiště 7. Priest P. Ignác Chlumecký, kpl.; midwife Barbora Opatrna, zkoumaná z Lohovic. Margin: † 22/2 64. Godparents written in Kurrent — LOW CONFIDENCE / unlocked, not transcribed.",
+   "type": "Transcript"
+  },
+  "N0852": {
+   "attached_to": [
+    {
+     "id": "C1208",
+     "type": "citation"
+    }
+   ],
+   "change": 1793197804,
+   "flags": [],
+   "handle": "104f1d2e7b3313953ee11509b365",
+   "html": "<p>2026-10-28 (karel): Parish STEP 5: first child of Jan Tauber 212735815392 × Barbora Králová 212806421374 (married 20 Oct 1863). Birth fact ON Ancestry.</p>",
+   "id": "N0852",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-10-28 (karel): Parish STEP 5: first child of Jan Tauber 212735815392 × Barbora Králová 212806421374 (married 20 Oct 1863). Birth fact ON Ancestry.",
+   "type": "Research"
+  },
+  "N0853": {
+   "attached_to": [
+    {
+     "id": "C1209",
+     "type": "citation"
+    }
+   ],
+   "change": 1793197805,
+   "flags": [],
+   "handle": "104f1d2ea17f1c147d168ecc1f0a",
+   "html": "<p>Transcription (as written): Marie Taubrová, Mostiště 26; died 22 Feb 1864, buried 25 Feb 1864 Chomle; age 21 days (vs ~24 days from birth 29 Jan — soft); cause Psotník (NR). Parents Jan × Barbora. Soft: register given name Marie only, not Ludmila.</p>",
+   "id": "N0853",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Marie Taubrová, Mostiště 26; died 22 Feb 1864, buried 25 Feb 1864 Chomle; age 21 days (vs ~24 days from birth 29 Jan — soft); cause Psotník (NR). Parents Jan × Barbora. Soft: register given name Marie only, not Ludmila.",
+   "type": "Transcript"
+  },
+  "N0854": {
+   "attached_to": [
+    {
+     "id": "C1209",
+     "type": "citation"
+    }
+   ],
+   "change": 1793197805,
+   "flags": [],
+   "handle": "104f1d2ea69c1e302f5a6999d425",
+   "html": "<p>2026-10-28 (karel): Parish STEP 10 LOCK. Ancestry Death Description + 7 RO20 crops ON 28 Oct (identity/name/date/parents/age/cause/place). Soft: Marie-only name; age 21d; Psotník NR.<br>Conflicts: [&#x27;Death row given name Marie only (not Ludmila).&#x27;, &#x27;Age 21 days vs ~24 from birth 29 Jan.&#x27;, &#x27;Cause Psotník NEEDS REVIEW.&#x27;]</p>",
+   "id": "N0854",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-10-28 (karel): Parish STEP 10 LOCK. Ancestry Death Description + 7 RO20 crops ON 28 Oct (identity/name/date/parents/age/cause/place). Soft: Marie-only name; age 21d; Psotník NR.\nConflicts: ['Death row given name Marie only (not Ludmila).', 'Age 21 days vs ~24 from birth 29 Jan.', 'Cause Psotník NEEDS REVIEW.']",
+   "type": "Research"
+  },
+  "N0857": {
+   "attached_to": [
+    {
+     "id": "C1211",
+     "type": "citation"
+    }
+   ],
+   "change": 1793197807,
+   "flags": [],
+   "handle": "104f1d2ee8d242e9777a7ac65429",
+   "html": "<p>Transcription (as written): RO19 fol. 154, row 5, Mostiště: František, male, legitimate, born 1 Feb 1865, baptized 2 Feb 1865, Mostiště house 27. Father Taubr Jan, havíř [miner] v Mosticích č.d. 26, son of † Tomáš Taubr (havíř, Mostiště 10) and Lidmila née Ocásková (Mostiště 6); mother Králová Barbora, daughter of Jan Král, rolník, Mostiště 7, and Marie née Čermáková (Dvorec 246). Priest P. Ant. Farka, kaplan; midwife Barbora Opatrná, zkoumaná z Lohovic. Margin: † 18/4 [18]67. Godparents (Kurrent) LOW CONFIDENCE / unlocked, not transcribed.</p>",
+   "id": "N0857",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): RO19 fol. 154, row 5, Mostiště: František, male, legitimate, born 1 Feb 1865, baptized 2 Feb 1865, Mostiště house 27. Father Taubr Jan, havíř [miner] v Mosticích č.d. 26, son of † Tomáš Taubr (havíř, Mostiště 10) and Lidmila née Ocásková (Mostiště 6); mother Králová Barbora, daughter of Jan Král, rolník, Mostiště 7, and Marie née Čermáková (Dvorec 246). Priest P. Ant. Farka, kaplan; midwife Barbora Opatrná, zkoumaná z Lohovic. Margin: † 18/4 [18]67. Godparents (Kurrent) LOW CONFIDENCE / unlocked, not transcribed.",
+   "type": "Transcript"
+  },
+  "N0858": {
+   "attached_to": [
+    {
+     "id": "C1211",
+     "type": "citation"
+    }
+   ],
+   "change": 1793197807,
+   "flags": [],
+   "handle": "104f1d2eebc1762ac9f02253e67c",
+   "html": "<p>2026-10-28 (karel): Parish STEP 5: second child of Jan Tauber 212735815392 × Barbora Králová 212806421374. Birth fact ON Ancestry.<br>Conflicts: [&quot;Child house 27 vs father&#x27;s line house 26.&quot;]</p>",
+   "id": "N0858",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-10-28 (karel): Parish STEP 5: second child of Jan Tauber 212735815392 × Barbora Králová 212806421374. Birth fact ON Ancestry.\nConflicts: [\"Child house 27 vs father's line house 26.\"]",
+   "type": "Research"
+  },
+  "N0859": {
+   "attached_to": [
+    {
+     "id": "C1212",
+     "type": "citation"
+    }
+   ],
+   "change": 1793197808,
+   "flags": [],
+   "handle": "104f1d2f030a64ee52a76c9cf0dd",
+   "html": "<p>Transcription (as written): Tauber František, syn Jana Taubra, havíře, a matky Barbory rozené Králové z Mostic, Mostiště 27; died 18 Apr 1867, buried 20 Apr 1867 Chomle; svobodný, katolické, mužské; age 2 let; cause Chronický střevní katarrh; priest P. Ant. Farkaš, kaplan. Same-row LOCK; matches baptism margin † 18/4 67.</p>",
+   "id": "N0859",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Tauber František, syn Jana Taubra, havíře, a matky Barbory rozené Králové z Mostic, Mostiště 27; died 18 Apr 1867, buried 20 Apr 1867 Chomle; svobodný, katolické, mužské; age 2 let; cause Chronický střevní katarrh; priest P. Ant. Farkaš, kaplan. Same-row LOCK; matches baptism margin † 18/4 67.",
+   "type": "Transcript"
+  },
+  "N0860": {
+   "attached_to": [
+    {
+     "id": "C1212",
+     "type": "citation"
+    }
+   ],
+   "change": 1793197808,
+   "flags": [],
+   "handle": "104f1d2f05ca6c5747c58922835b",
+   "html": "<p>2026-10-28 (karel): Parish STEP 10 LOCK. Ancestry Death fact enriched 28 Oct 2026: RO20 Description+place Mostiště + 7 crops (identity/name/date/parents/age/cause/place).</p>",
+   "id": "N0860",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-10-28 (karel): Parish STEP 10 LOCK. Ancestry Death fact enriched 28 Oct 2026: RO20 Description+place Mostiště + 7 crops (identity/name/date/parents/age/cause/place).",
+   "type": "Research"
+  },
+  "N0863": {
+   "attached_to": [
+    {
+     "id": "C1214",
+     "type": "citation"
+    }
+   ],
+   "change": 1793197809,
+   "flags": [],
+   "handle": "104f1d2f35db16e3ca54dfd1d896",
+   "html": "<p>Transcription (as written): RO29 fol. 283, row 3, Mostiště: Maria Klára, female, legitimate, born 5 Jan 1867, baptized 6 Jan 1867, Mostiště house 27. Father Taubr/Tauber Jan, havíř [miner] of Mostiště, son of † Tomáš Taubr (Mostiště 10) and Lidmila née Ocásková (Mostiště 6); mother Králová Barbora, daughter of Jan Král, farmer of Mostiště 7, and Marie née Čermáková of Dvorec 246. Priest P. Frant. Pavlovský, kaplan; midwife Barbora Opatrna, zkoumaná z Lohovic. Margin: none seen. Godparents written in Kurrent — LOW CONFIDENCE / unlocked, not transcribed.</p>",
+   "id": "N0863",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): RO29 fol. 283, row 3, Mostiště: Maria Klára, female, legitimate, born 5 Jan 1867, baptized 6 Jan 1867, Mostiště house 27. Father Taubr/Tauber Jan, havíř [miner] of Mostiště, son of † Tomáš Taubr (Mostiště 10) and Lidmila née Ocásková (Mostiště 6); mother Králová Barbora, daughter of Jan Král, farmer of Mostiště 7, and Marie née Čermáková of Dvorec 246. Priest P. Frant. Pavlovský, kaplan; midwife Barbora Opatrna, zkoumaná z Lohovic. Margin: none seen. Godparents written in Kurrent — LOW CONFIDENCE / unlocked, not transcribed.",
+   "type": "Transcript"
+  },
+  "N0864": {
+   "attached_to": [
+    {
+     "id": "C1214",
+     "type": "citation"
+    }
+   ],
+   "change": 1793197809,
+   "flags": [],
+   "handle": "104f1d2f388966f73a77744130be",
+   "html": "<p>2026-10-28 (karel): Parish STEP 5: child of Jan Tauber 212735815392 × Barbora Králová 212806421374. Birth fact + RO29 cite ON Ancestry. STEP 7 O/Z negative: no death proposal.</p>",
+   "id": "N0864",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-10-28 (karel): Parish STEP 5: child of Jan Tauber 212735815392 × Barbora Králová 212806421374. Birth fact + RO29 cite ON Ancestry. STEP 7 O/Z negative: no death proposal.",
+   "type": "Research"
+  },
+  "N0867": {
+   "attached_to": [
+    {
+     "id": "C1216",
+     "type": "citation"
+    }
+   ],
+   "change": 1793197810,
+   "flags": [],
+   "handle": "104f1d2f65b418b5f8b4bc939782",
+   "html": "<p>Transcription (as written): RO29 fol. 287, row 3, Mostiště: František, male, legitimate, catholic, born 23 Jul 1869, baptized 25 Jul 1869, Mostiště house 27 (Panství Liblínské, Rokycanský, Plzeňský). Father Tauber Jan, havíř [miner] z Mostic č.d. 27, son of † Tomáš Taubr (havíř, Mostiště 10) and Lidmila née Ocásková (Mostiště 6); mother Králova Barbora, daughter of Jan Král, rolník, Mostiště 7, and Marie née Čermáková (as written on this row: z Mostic č.d. 24). Priest František Bradáč, farář; midwife Barbora Opatrná, zkoumaná z Radnic. Margin: † 18 12/6 79. Godparents (Kurrent) LOW CONFIDENCE / unlocked: Jan {Mýšl?} rolník z Mostic; Lidmila {Šmídová?} manželka Františka {?} z Mostic.</p>",
+   "id": "N0867",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): RO29 fol. 287, row 3, Mostiště: František, male, legitimate, catholic, born 23 Jul 1869, baptized 25 Jul 1869, Mostiště house 27 (Panství Liblínské, Rokycanský, Plzeňský). Father Tauber Jan, havíř [miner] z Mostic č.d. 27, son of † Tomáš Taubr (havíř, Mostiště 10) and Lidmila née Ocásková (Mostiště 6); mother Králova Barbora, daughter of Jan Král, rolník, Mostiště 7, and Marie née Čermáková (as written on this row: z Mostic č.d. 24). Priest František Bradáč, farář; midwife Barbora Opatrná, zkoumaná z Radnic. Margin: † 18 12/6 79. Godparents (Kurrent) LOW CONFIDENCE / unlocked: Jan {Mýšl?} rolník z Mostic; Lidmila {Šmídová?} manželka Františka {?} z Mostic.",
+   "type": "Transcript"
+  },
+  "N0868": {
+   "attached_to": [
+    {
+     "id": "C1216",
+     "type": "citation"
+    }
+   ],
+   "change": 1793197810,
+   "flags": [],
+   "handle": "104f1d2f68ffcdabf741744a3be",
+   "html": "<p>2026-10-28 (karel): Parish STEP 5 (S5-4): child of Jan Tauber 212735815392 × Barbora Králová 212806421374. Birth fact ON Ancestry.<br>Conflicts: [&quot;Maternal grandmother Marie Čermáková&#x27;s place reads &#x27;z Mostic č.d. 24&#x27; on this row vs &#x27;ze Dvorce č.d. 246&#x27; on earlier siblings&#x27; rows — both kept as written.&quot;, &#x27;Godparents LOW CONFIDENCE / unlocked.&#x27;]</p>",
+   "id": "N0868",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-10-28 (karel): Parish STEP 5 (S5-4): child of Jan Tauber 212735815392 × Barbora Králová 212806421374. Birth fact ON Ancestry.\nConflicts: [\"Maternal grandmother Marie Čermáková's place reads 'z Mostic č.d. 24' on this row vs 'ze Dvorce č.d. 246' on earlier siblings' rows — both kept as written.\", 'Godparents LOW CONFIDENCE / unlocked.']",
+   "type": "Research"
+  },
+  "N0869": {
+   "attached_to": [
+    {
+     "id": "C1217",
+     "type": "citation"
+    }
+   ],
+   "change": 1793197811,
+   "flags": [],
+   "handle": "104f1d2f7fdc73cae1ff3191f6c0",
+   "html": "<p>Transcription (as written): Tauber František, syn Jana, havíře, a matky † Barbory {Královy / Karlovy?} z Mostic, Mostiště 27; died 12 Jun 1879, buried 15 Jun 1879 Chomle; svobodný, katolické, mužské; age 10 let; cause Bleskem zabit; priest Antonín Chvalkovský, kaplan. Same-row LOCK; matches baptism margin † 12/6 79.</p>",
+   "id": "N0869",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Tauber František, syn Jana, havíře, a matky † Barbory {Královy / Karlovy?} z Mostic, Mostiště 27; died 12 Jun 1879, buried 15 Jun 1879 Chomle; svobodný, katolické, mužské; age 10 let; cause Bleskem zabit; priest Antonín Chvalkovský, kaplan. Same-row LOCK; matches baptism margin † 12/6 79.",
+   "type": "Transcript"
+  },
+  "N0870": {
+   "attached_to": [
+    {
+     "id": "C1217",
+     "type": "citation"
+    }
+   ],
+   "change": 1793197811,
+   "flags": [],
+   "handle": "104f1d2f82bf212df9aba86e2bef",
+   "html": "<p>2026-10-28 (karel): Parish STEP 10 LOCK (S10-3). Ancestry Death fact enriched 28 Oct 2026: RO20 3640-z Description+place Mostiště + 7 crops (identity/name/date/parents/age/cause/place). Mother maiden Královy/Karlovy NEEDS REVIEW kept in Description.<br>Conflicts: [&#x27;Mother maiden on this row: dual-crop Královy (mother_maiden) vs Karlovy (identity_full) — NEEDS REVIEW; Králová locked on other RO20 rows. Identity LOCK does not depend on it.&#x27;, &#x27;Neighbor Vyčichlo František (house 11) same date/cause — shared lightning event.&#x27;]</p>",
+   "id": "N0870",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-10-28 (karel): Parish STEP 10 LOCK (S10-3). Ancestry Death fact enriched 28 Oct 2026: RO20 3640-z Description+place Mostiště + 7 crops (identity/name/date/parents/age/cause/place). Mother maiden Královy/Karlovy NEEDS REVIEW kept in Description.\nConflicts: ['Mother maiden on this row: dual-crop Královy (mother_maiden) vs Karlovy (identity_full) — NEEDS REVIEW; Králová locked on other RO20 rows. Identity LOCK does not depend on it.', 'Neighbor Vyčichlo František (house 11) same date/cause — shared lightning event.']",
+   "type": "Research"
+  },
+  "N0873": {
+   "attached_to": [
+    {
+     "id": "C1219",
+     "type": "citation"
+    }
+   ],
+   "change": 1793197812,
+   "flags": [],
+   "handle": "104f1d2fafdd4df5816fa73e11c",
+   "html": "<p>Transcription (as written): John Francis Xavier O&#x27;Regan; b. 30 Jul 1904; d. 16 May 1978; burial Calvary Cemetery, Louisville, Jefferson County, Kentucky.</p>",
+   "id": "N0873",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): John Francis Xavier O'Regan; b. 30 Jul 1904; d. 16 May 1978; burial Calvary Cemetery, Louisville, Jefferson County, Kentucky.",
+   "type": "Transcript"
+  },
+  "N0874": {
+   "attached_to": [
+    {
+     "id": "C1219",
+     "type": "citation"
+    }
+   ],
+   "change": 1793197812,
+   "flags": [],
+   "handle": "104f1d2fb4fa38cdee008540e02e",
+   "html": "<p>2026-10-28 (karel): FG birth date; SSDI age consistent. Index tier only.</p>",
+   "id": "N0874",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-10-28 (karel): FG birth date; SSDI age consistent. Index tier only.",
+   "type": "Research"
+  },
+  "N0875": {
+   "attached_to": [
+    {
+     "id": "C1220",
+     "type": "citation"
+    }
+   ],
+   "change": 1793197813,
+   "flags": [],
+   "handle": "104f1d2fd1fe1d5e754dada1acbf",
+   "html": "<p>Transcription (as written): OREGAN, JOHN F. of Jefferson County, Kentucky died 16 May 1978 at age 73</p>",
+   "id": "N0875",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): OREGAN, JOHN F. of Jefferson County, Kentucky died 16 May 1978 at age 73",
+   "type": "Transcript"
+  },
+  "N0876": {
+   "attached_to": [
+    {
+     "id": "C1220",
+     "type": "citation"
+    }
+   ],
+   "change": 1793197813,
+   "flags": [],
+   "handle": "104f1d2fd52e8a7e9d9edcbf8a2",
+   "html": "<p>2026-10-28 (karel): SSDI + FG agree on date. FG 182930384 rejected (wrong man).<br>Conflicts: [&#x27;SSDI cite has no URL; FG supplies URL in additional_citations.&#x27;]</p>",
+   "id": "N0876",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-10-28 (karel): SSDI + FG agree on date. FG 182930384 rejected (wrong man).\nConflicts: ['SSDI cite has no URL; FG supplies URL in additional_citations.']",
+   "type": "Research"
+  },
+  "N0877": {
+   "attached_to": [
+    {
+     "id": "C1221",
+     "type": "citation"
+    }
+   ],
+   "change": 1793197813,
+   "flags": [],
+   "handle": "104f1d2fe69a1b133c6072393820",
+   "html": "<p>Transcription (as written): Ruth Charlton; b. 9 Jun 1915, Louisville, Jefferson, Kentucky; father Albert B Charlton; mother Ernestine Werst; d. 4 Aug 2007.</p>",
+   "id": "N0877",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Ruth Charlton; b. 9 Jun 1915, Louisville, Jefferson, Kentucky; father Albert B Charlton; mother Ernestine Werst; d. 4 Aug 2007.",
+   "type": "Transcript"
+  },
+  "N0878": {
+   "attached_to": [
+    {
+     "id": "C1221",
+     "type": "citation"
+    }
+   ],
+   "change": 1793197814,
+   "flags": [],
+   "handle": "104f1d2fe99e5e8e3933b0e18664",
+   "html": "<p>2026-10-28 (karel): NUMIDENT preferred over FG header year.<br>Conflicts: [&#x27;NEEDS REVIEW: NUMIDENT 1915 vs FG 173959295 header 1914.&#x27;, &#x27;NUMIDENT cite has no URL.&#x27;]</p>",
+   "id": "N0878",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-10-28 (karel): NUMIDENT preferred over FG header year.\nConflicts: ['NEEDS REVIEW: NUMIDENT 1915 vs FG 173959295 header 1914.', 'NUMIDENT cite has no URL.']",
+   "type": "Research"
+  },
+  "N0879": {
+   "attached_to": [
+    {
+     "id": "C1222",
+     "type": "citation"
+    }
+   ],
+   "change": 1793197814,
+   "flags": [],
+   "handle": "104f1d2fff4f21b573abb9646031",
+   "html": "<p>Transcription (as written): Ruth O&#x27;Regan; header birth year 1914; d. 4 Aug 2007.</p>",
+   "id": "N0879",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Ruth O'Regan; header birth year 1914; d. 4 Aug 2007.",
+   "type": "Transcript"
+  },
+  "N0880": {
+   "attached_to": [
+    {
+     "id": "C1222",
+     "type": "citation"
+    }
+   ],
+   "change": 1793197814,
+   "flags": [],
+   "handle": "104f1d30024b53faf1246523d5b5",
+   "html": "<p>2026-10-28 (karel): FG + NUMIDENT agree on death date.</p>",
+   "id": "N0880",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-10-28 (karel): FG + NUMIDENT agree on death date.",
+   "type": "Research"
   }
  },
  "people": {
@@ -113678,7 +115544,7 @@
     "type": "Birth",
     "year": 1787
    },
-   "change": 1793043739,
+   "change": 1793196002,
    "citations": [],
    "death": {
     "date": {
@@ -113730,7 +115596,9 @@
     "F0019",
     "F0161"
    ],
-   "flags": [],
+   "flags": [
+    "agent-proposed"
+   ],
    "gender": "M",
    "handle": "104ebd54a671443bc81fb9e8674b",
    "id": "I0038",
@@ -113756,19 +115624,24 @@
    },
    "notes": [
     "N0056",
-    "N0064"
+    "N0064",
+    "N0845"
    ],
    "parents": [
     "F0040"
    ],
    "provenance": [
+    "agent-karel",
+    "agent-proposed",
     "import-ancestry-2026-10-25"
    ],
    "review": "unreviewed",
    "status": "full",
    "tags": [
-    "import-ancestry-2026-10-25",
-    "unreviewed"
+    "agent-proposed",
+    "agent-karel",
+    "unreviewed",
+    "import-ancestry-2026-10-25"
    ],
    "urls": [],
    "xref": {
@@ -120450,7 +122323,7 @@
     "type": "Birth",
     "year": 1756
    },
-   "change": 1793043740,
+   "change": 1793196002,
    "citations": [],
    "death": {
     "date": {
@@ -120517,7 +122390,9 @@
    "families": [
     "F0040"
    ],
-   "flags": [],
+   "flags": [
+    "agent-proposed"
+   ],
    "gender": "M",
    "handle": "104ebd54ac1a178b906633aea77e",
    "id": "I0124",
@@ -120549,19 +122424,24 @@
    },
    "notes": [
     "N0130",
-    "N0137"
+    "N0137",
+    "N0846"
    ],
    "parents": [
     "F0023"
    ],
    "provenance": [
+    "agent-karel",
+    "agent-proposed",
     "import-ancestry-2026-10-25"
    ],
    "review": "unreviewed",
    "status": "full",
    "tags": [
-    "import-ancestry-2026-10-25",
-    "unreviewed"
+    "agent-proposed",
+    "agent-karel",
+    "unreviewed",
+    "import-ancestry-2026-10-25"
    ],
    "urls": [],
    "xref": {
@@ -126882,7 +128762,7 @@
     "type": "Birth",
     "year": 1864
    },
-   "change": 1793043721,
+   "change": 1793197807,
    "citations": [],
    "death": {
     "date": {
@@ -126896,7 +128776,7 @@
      "year": 1864
     },
     "event": "E0769",
-    "place": null,
+    "place": "P0321",
     "type": "Death",
     "year": 1864
    },
@@ -126923,11 +128803,17 @@
     }
    ],
    "families": [],
-   "flags": [],
+   "flags": [
+    "agent-proposed"
+   ],
    "gender": "F",
    "handle": "104ebd54ba5f4e16a19b001031a0",
    "id": "I0188",
-   "media": [],
+   "media": [
+    {
+     "ref": "O0174"
+    }
+   ],
    "name": {
     "call": "",
     "display": "Marie Ludmila Tauber",
@@ -126947,13 +128833,17 @@
     "F0079"
    ],
    "provenance": [
+    "agent-karel",
+    "agent-proposed",
     "import-ancestry-2026-10-25"
    ],
    "review": "unreviewed",
    "status": "full",
    "tags": [
-    "import-ancestry-2026-10-25",
-    "unreviewed"
+    "agent-proposed",
+    "agent-karel",
+    "unreviewed",
+    "import-ancestry-2026-10-25"
    ],
    "urls": [],
    "xref": {
@@ -126985,11 +128875,11 @@
      "year": 1865
     },
     "event": "E0773",
-    "place": null,
+    "place": "P0321",
     "type": "Birth",
     "year": 1865
    },
-   "change": 1793043731,
+   "change": 1793197809,
    "citations": [],
    "death": {
     "date": {
@@ -127003,7 +128893,7 @@
      "year": 1867
     },
     "event": "E0774",
-    "place": null,
+    "place": "P0321",
     "type": "Death",
     "year": 1867
    },
@@ -127030,11 +128920,17 @@
     }
    ],
    "families": [],
-   "flags": [],
+   "flags": [
+    "agent-proposed"
+   ],
    "gender": "M",
    "handle": "104ebd54ba797dd567265b03cc2e",
    "id": "I0189",
-   "media": [],
+   "media": [
+    {
+     "ref": "O0177"
+    }
+   ],
    "name": {
     "call": "",
     "display": "František Tauber",
@@ -127054,13 +128950,17 @@
     "F0079"
    ],
    "provenance": [
+    "agent-karel",
+    "agent-proposed",
     "import-ancestry-2026-10-25"
    ],
    "review": "unreviewed",
    "status": "full",
    "tags": [
-    "import-ancestry-2026-10-25",
-    "unreviewed"
+    "agent-proposed",
+    "agent-karel",
+    "unreviewed",
+    "import-ancestry-2026-10-25"
    ],
    "urls": [],
    "xref": {
@@ -127092,11 +128992,11 @@
      "year": 1867
     },
     "event": "E0778",
-    "place": null,
+    "place": "P0321",
     "type": "Birth",
     "year": 1867
    },
-   "change": 1793043714,
+   "change": 1793197810,
    "citations": [],
    "death": {
     "date": null,
@@ -127128,11 +129028,17 @@
     }
    ],
    "families": [],
-   "flags": [],
+   "flags": [
+    "agent-proposed"
+   ],
    "gender": "F",
    "handle": "104ebd54ba94276d4313a8091f83",
    "id": "I0190",
-   "media": [],
+   "media": [
+    {
+     "ref": "O0179"
+    }
+   ],
    "name": {
     "call": "",
     "display": "Marie Klára Tauber",
@@ -127152,13 +129058,17 @@
     "F0079"
    ],
    "provenance": [
+    "agent-karel",
+    "agent-proposed",
     "import-ancestry-2026-10-25"
    ],
    "review": "unreviewed",
    "status": "full",
    "tags": [
-    "import-ancestry-2026-10-25",
-    "unreviewed"
+    "agent-proposed",
+    "agent-karel",
+    "unreviewed",
+    "import-ancestry-2026-10-25"
    ],
    "urls": [],
    "xref": {
@@ -127190,11 +129100,11 @@
      "year": 1869
     },
     "event": "E0783",
-    "place": null,
+    "place": "P0321",
     "type": "Birth",
     "year": 1869
    },
-   "change": 1793043731,
+   "change": 1793197812,
    "citations": [],
    "death": {
     "date": {
@@ -127208,7 +129118,7 @@
      "year": 1879
     },
     "event": "E0784",
-    "place": null,
+    "place": "P0321",
     "type": "Death",
     "year": 1879
    },
@@ -127235,11 +129145,17 @@
     }
    ],
    "families": [],
-   "flags": [],
+   "flags": [
+    "agent-proposed"
+   ],
    "gender": "M",
    "handle": "104ebd54baa85c0dc9591ec8b6f5",
    "id": "I0191",
-   "media": [],
+   "media": [
+    {
+     "ref": "O0182"
+    }
+   ],
    "name": {
     "call": "",
     "display": "František Tauber",
@@ -127259,13 +129175,17 @@
     "F0079"
    ],
    "provenance": [
+    "agent-karel",
+    "agent-proposed",
     "import-ancestry-2026-10-25"
    ],
    "review": "unreviewed",
    "status": "full",
    "tags": [
-    "import-ancestry-2026-10-25",
-    "unreviewed"
+    "agent-proposed",
+    "agent-karel",
+    "unreviewed",
+    "import-ancestry-2026-10-25"
    ],
    "urls": [],
    "xref": {
@@ -141113,6 +143033,212 @@
    },
    "parents": [],
    "status": "living"
+  },
+  "I0382": {
+   "alt_names": [],
+   "attributes": [],
+   "birth": {
+    "date": {
+     "day": 30,
+     "iso": "1904-07-30",
+     "modifier": null,
+     "month": 7,
+     "quality": null,
+     "sort": 2416692,
+     "text": "30 July 1904",
+     "year": 1904
+    },
+    "event": "E1539",
+    "place": null,
+    "type": "Birth",
+    "year": 1904
+   },
+   "change": 1793197813,
+   "citations": [
+    "C1206"
+   ],
+   "death": {
+    "date": {
+     "day": 16,
+     "iso": "1978-05-16",
+     "modifier": null,
+     "month": 5,
+     "quality": null,
+     "sort": 2443645,
+     "text": "16 May 1978",
+     "year": 1978
+    },
+    "event": "E1540",
+    "place": "P0288",
+    "type": "Death",
+    "year": 1978
+   },
+   "events": [
+    {
+     "ref": "E1539",
+     "role": "Primary"
+    },
+    {
+     "ref": "E1540",
+     "role": "Primary"
+    },
+    {
+     "ref": "E1543",
+     "role": "Primary"
+    },
+    {
+     "ref": "E1544",
+     "role": "Primary"
+    }
+   ],
+   "families": [
+    "F0178"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "gender": "M",
+   "handle": "104f1d2e3b84272beafa452523ec",
+   "id": "I0382",
+   "media": [],
+   "name": {
+    "call": "",
+    "display": "John Francis Xavier O'Regan",
+    "first": "John Francis Xavier",
+    "nick": "",
+    "prefix": "",
+    "sort": "O'Regan, John Francis Xavier",
+    "suffix": "",
+    "surname": "O'Regan",
+    "title": "",
+    "type": "Birth Name"
+   },
+   "notes": [],
+   "parents": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-proposed",
+    "agent-karel"
+   ],
+   "urls": [],
+   "xref": {
+    "ancestry": "212811830091"
+   }
+  },
+  "I0383": {
+   "alt_names": [
+    {
+     "call": "",
+     "date": null,
+     "display": "Ruth O'Regan",
+     "first": "Ruth",
+     "nick": "",
+     "prefix": "",
+     "sort": "O'Regan, Ruth",
+     "suffix": "",
+     "surname": "O'Regan",
+     "title": "",
+     "type": "Married Name"
+    }
+   ],
+   "attributes": [],
+   "birth": {
+    "date": {
+     "day": 9,
+     "iso": "1915-06-09",
+     "modifier": null,
+     "month": 6,
+     "quality": null,
+     "sort": 2420658,
+     "text": "9 June 1915",
+     "year": 1915
+    },
+    "event": "E1541",
+    "place": "P0320",
+    "type": "Birth",
+    "year": 1915
+   },
+   "change": 1793197815,
+   "citations": [
+    "C1207"
+   ],
+   "death": {
+    "date": {
+     "day": 4,
+     "iso": "2007-08-04",
+     "modifier": null,
+     "month": 8,
+     "quality": null,
+     "sort": 2454317,
+     "text": "4 August 2007",
+     "year": 2007
+    },
+    "event": "E1542",
+    "place": null,
+    "type": "Death",
+    "year": 2007
+   },
+   "events": [
+    {
+     "ref": "E1541",
+     "role": "Primary"
+    },
+    {
+     "ref": "E1542",
+     "role": "Primary"
+    },
+    {
+     "ref": "E1545",
+     "role": "Primary"
+    },
+    {
+     "ref": "E1546",
+     "role": "Primary"
+    }
+   ],
+   "families": [
+    "F0178"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "gender": "F",
+   "handle": "104f1d2e61285e1ccca3b8c83a28",
+   "id": "I0383",
+   "media": [],
+   "name": {
+    "call": "",
+    "display": "Ruth Charlton",
+    "first": "Ruth",
+    "nick": "",
+    "prefix": "",
+    "sort": "Charlton, Ruth",
+    "suffix": "",
+    "surname": "Charlton",
+    "title": "",
+    "type": "Birth Name"
+   },
+   "notes": [],
+   "parents": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-proposed",
+    "agent-karel"
+   ],
+   "urls": [],
+   "xref": {
+    "ancestry": "212811830141"
+   }
   }
  },
  "places": {
@@ -148784,6 +150910,33 @@
    "type": "Unknown",
    "urls": []
   },
+  "P0288": {
+   "alt_names": [],
+   "citations": [],
+   "code": "",
+   "display": "Jefferson County, Kentucky, USA",
+   "enclosed_by": [],
+   "flags": [],
+   "handle": "104ebd54c99034a22eae95c4ce59",
+   "hierarchy": [
+    "P0288"
+   ],
+   "id": "P0288",
+   "lat": null,
+   "long": null,
+   "media": [],
+   "name": "Jefferson County, Kentucky, USA",
+   "notes": [],
+   "provenance": [
+    "import-ancestry-2026-10-25"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "import-ancestry-2026-10-25"
+   ],
+   "type": "Unknown",
+   "urls": []
+  },
   "P0289": {
    "alt_names": [],
    "citations": [],
@@ -149599,6 +151752,70 @@
    ],
    "type": "Unknown",
    "urls": []
+  },
+  "P0320": {
+   "alt_names": [],
+   "citations": [],
+   "code": "",
+   "display": "Louisville, Jefferson County, Kentucky, USA",
+   "enclosed_by": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "104f1d2e52043f0767ca95e73d5c",
+   "hierarchy": [
+    "P0320"
+   ],
+   "id": "P0320",
+   "lat": null,
+   "long": null,
+   "media": [],
+   "name": "Louisville, Jefferson County, Kentucky, USA",
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed",
+    "needs-place"
+   ],
+   "type": "Unknown",
+   "urls": []
+  },
+  "P0321": {
+   "alt_names": [],
+   "citations": [],
+   "code": "",
+   "display": "Mostiště, Radnice, Bohemia",
+   "enclosed_by": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "104f1d2e8e593511748a75454f3b",
+   "hierarchy": [
+    "P0321"
+   ],
+   "id": "P0321",
+   "lat": null,
+   "long": null,
+   "media": [],
+   "name": "Mostiště, Radnice, Bohemia",
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed",
+    "needs-place"
+   ],
+   "type": "Unknown",
+   "urls": []
   }
  },
  "repositories": {
@@ -149718,6 +151935,14 @@
    "handle": "104ef8d9361d22293a51d0bb09a7",
    "id": "R0014",
    "name": "SortedByName.com (aggregator of SSA NUMIDENT public file)",
+   "notes": [],
+   "type": "Archive",
+   "urls": []
+  },
+  "R0015": {
+   "handle": "104f1d2e3fd831a8037ef69a9fc2",
+   "id": "R0015",
+   "name": "U.S. Social Security Administration",
    "notes": [],
    "type": "Archive",
    "urls": []
@@ -155864,6 +158089,243 @@
     "agent-proposed"
    ],
    "title": "U.S. Social Security NUMIDENT public file (via SortedByName.com), Irene Benz Tauber"
+  },
+  "S0185": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1206",
+    "C1219"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "104f1d2e23f84a3ee8999d273841",
+   "id": "S0185",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0011"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "Find a Grave memorial 209824876: John Francis Xavier O'Regan"
+  },
+  "S0186": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1207",
+    "C1221"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "104f1d2e4367bbdf45234b6fd62",
+   "id": "S0186",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0015"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "U.S., Social Security Numerident (NUMIDENT): Ruth Charlton O'Regan"
+  },
+  "S0187": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1208",
+    "C1211"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "104f1d2e74e93def21e7a9f728c",
+   "id": "S0187",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0007"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "Radnice Roman Catholic parish registers (SOA Plzeň, Porta fontium), RO19 births"
+  },
+  "S0188": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1209",
+    "C1212",
+    "C1217"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "104f1d2e9c2e206c0e801b44e0cc",
+   "id": "S0188",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0007"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "Radnice Roman Catholic parish registers (SOA Plzeň, Porta fontium), RO20 deaths"
+  },
+  "S0189": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1214",
+    "C1216"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "104f1d2f3241702200f89addcbd9",
+   "id": "S0189",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0007"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "Radnice Roman Catholic parish registers (SOA Plzeň, Porta fontium), RO29 births"
+  },
+  "S0190": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1220"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "104f1d2fcd8568f7be932e521474",
+   "id": "S0190",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0015"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "U.S., Social Security Death Index (SBN/SSDI): John F. O'Regan"
+  },
+  "S0191": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1222"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "104f1d2ffb5e6d5965a30afa133c",
+   "id": "S0191",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0011"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "Find a Grave memorial 173959295: Ruth O'Regan"
   }
  }
 }
