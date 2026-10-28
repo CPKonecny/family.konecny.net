@@ -48,7 +48,11 @@ EVENT_LABEL = {
 }
 BIRTH_LIKE = ("Birth", "Baptism", "Christening")
 DEATH_LIKE = ("Death", "Burial", "Cremation")
-CROSSING_TYPES = ("Immigration", "Emigration")
+CROSSING_TYPES = ("Immigration", "Emigration", "Arrival", "Departure")
+# GEDCOM/Ancestry artefacts imported as events: never shown as life events
+HIDDEN_EVENT_TYPES = {"_AMTID", "_MTTAG", "_ORIG"}
+NOTE_EVENT_TYPES = {"research note", "spouse order research note"}   # shown as research notes
+NAME_EVENT_TYPES = {"aka"}                                             # shown with the names
 
 
 # ----------------------------------------------------------------------------- #
@@ -256,12 +260,43 @@ class Site:
         d = e.get("date") or {}
         return (0, d["sort"]) if d.get("sort") else (1, 0)
 
+    @staticmethod
+    def is_bare(e: dict) -> bool:
+        """an Ancestry 'deceased'-style marker: no date, place, text, citation or note"""
+        return not (e.get("date") or e.get("place") or e.get("description") or e.get("citations") or e.get("notes"))
+
+    def kind(self, e: dict) -> str:
+        t = e["type"].lower()
+        if e["type"] in HIDDEN_EVENT_TYPES:
+            return "hidden"
+        if t in NOTE_EVENT_TYPES:
+            return "note"
+        if t in NAME_EVENT_TYPES:
+            return "name"
+        if self.is_bare(e):
+            return "hidden"
+        return "fact"
+
+    def extras_of(self, p: dict) -> dict:
+        """research-note and AKA pseudo-events from the Ancestry import, kept out of the fact list"""
+        notes, names = [], []
+        for ref in p.get("events", []):
+            e = self.events.get(ref["ref"])
+            if not e:
+                continue
+            k = self.kind(e)
+            if k == "note" and e.get("description"):
+                notes.append({"event": e, "text": e["description"], "citations": self.ladder(e.get("citations", []))})
+            elif k == "name" and e.get("description"):
+                names.append({"event": e, "text": e["description"], "citations": self.ladder(e.get("citations", []))})
+        return {"notes": notes, "names": names}
+
     def facts_of(self, p: dict) -> list[dict]:
         """person's events (own + family events), sorted, with labels and evidence"""
         out = []
         for ref in p.get("events", []):
             e = self.events.get(ref["ref"])
-            if not e:
+            if not e or self.kind(e) != "fact":
                 continue
             out.append(self._fact(e, role=ref.get("role"), ref_citations=ref.get("citations", []),
                                   ref_notes=ref.get("notes", []), person=p))
@@ -272,7 +307,7 @@ class Site:
             spouse = self.spouse_in(f, p["id"])
             for ref in f.get("events", []):
                 e = self.events.get(ref["ref"])
-                if not e:
+                if not e or self.kind(e) != "fact":
                     continue
                 out.append(self._fact(e, role=ref.get("role"), ref_citations=ref.get("citations", []),
                                       ref_notes=ref.get("notes", []), person=p, spouse=spouse, family=f))
@@ -470,7 +505,7 @@ def main(argv=None) -> int:
             fams.append({"family": f, "spouse": site.spouse_in(f, p["id"]),
                          "children": [site.people[c["ref"]] for c in f.get("children", []) if c["ref"] in site.people]})
         parent_fams = [site.families[fid] for fid in p.get("parents", []) if fid in site.families]
-        write(f"person/{p['id']}/index.html", "person.html", p=p, facts=facts, families=fams, parent_families=parent_fams,
+        write(f"person/{p['id']}/index.html", "person.html", p=p, facts=facts, extras=site.extras_of(p) if p["status"] == "full" else {"notes": [], "names": []}, families=fams, parent_families=parent_fams,
               parents=site.parents_of(p), siblings=site.siblings_of(p), summary=site.review_summary(facts),
               line_color=site.line_of(p), title=p["name"]["display"],
               notes=[site.notes[n] for n in p.get("notes", []) if n in site.notes],
@@ -485,7 +520,7 @@ def main(argv=None) -> int:
         if f.get("status") == "full":
             for ref in f.get("events", []):
                 e = site.events.get(ref["ref"])
-                if e:
+                if e and site.kind(e) == "fact":
                     facts.append(site._fact(e, role=ref.get("role"), ref_citations=ref.get("citations", []), ref_notes=ref.get("notes", [])))
             facts.sort(key=lambda x: site.sort_key(x["event"]))
         children = [site.people[c["ref"]] for c in f.get("children", []) if c["ref"] in site.people]

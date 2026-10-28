@@ -7,7 +7,7 @@
     <p class="eyebrow">{% if p.status == 'full' %}{{ p.name.surname }}{% else %}Living{% endif %} · {{ p.id }}</p>
     <h1>{{ p.name.display }}</h1>
     {% if p.status == 'full' %}
-    {% if p.alt_names %}<p class="aka">also {% for a in p.alt_names %}{{ a.display }}{% if a.type and a.type != 'Birth Name' %} <small>({{ a.type|lower }})</small>{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}</p>{% endif %}
+    {% if p.alt_names or extras.names %}<p class="aka">also {% for a in p.alt_names %}{{ a.display }}{% if a.type and a.type != 'Birth Name' %} <small>({{ a.type|lower }})</small>{% endif %}{% if not loop.last or extras.names %}, {% endif %}{% endfor %}{% for a in extras.names %}{{ a.text|typo }}{% if not loop.last %}, {% endif %}{% endfor %}</p>{% endif %}
     <p class="span">
       <b>{{ p|lifespan }}</b>
       {% if p.birth %} · born {% if p.birth.date %}{{ p.birth.date.text }}{% endif %}{% if p.birth.place %} {{ placelink(site.place(p.birth.place)) }}{% endif %}{% endif %}
@@ -57,9 +57,16 @@
   </section>
   {% endif %}
 
-  {% if notes %}
+  {% if notes or extras.notes %}
   <section class="notes">
     <h2>Notes</h2>
+    {% for n in extras.notes %}
+    <div class="note">
+      <div class="notehead"><span class="ntype">research note</span> {{ stamp(n.event) }}</div>
+      <p>{{ n.text|typo }}</p>
+      {% if n.citations %}<details class="ev"><summary>Evidence · {{ n.citations|length }} source{{ 's' if n.citations|length != 1 }}</summary>{{ ladder(n.citations) }}</details>{% endif %}
+    </div>
+    {% endfor %}
     {% for n in notes %}{{ notecard(n) }}{% endfor %}
   </section>
   {% endif %}
