@@ -39,7 +39,7 @@ import urllib.request
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from gramps_export import (Api, ApiError, TABLES, date_obj, name_of, plain_text, tag_names, typestr)  # noqa: E402
 
-VERSION = "0.2.0"
+VERSION = "0.3.0"
 DONE_TAGS = {"reviewed", "ai-validated", "needs-human"}
 QUEUE_TAGS = {"unreviewed", "agent-proposed"}
 VERDICTS = ("supports", "consistent", "partial", "contradicts", "unreadable", "irrelevant")
@@ -115,7 +115,7 @@ class Model:
             content.append({"type": "image", "source": {"type": "base64", "media_type": media_type,
                                                         "data": base64.b64encode(data).decode()}})
         content.append({"type": "text", "text": text})
-        body = {"model": self.model, "max_tokens": 900, "temperature": 0, "system": SYSTEM,
+        body = {"model": self.model, "max_tokens": 900, "system": SYSTEM,
                 "messages": [{"role": "user", "content": content}]}
         req = urllib.request.Request(f"{API_URL}/messages", data=json.dumps(body).encode(), headers=self._headers())
         for attempt in range(4):
@@ -147,6 +147,19 @@ class Model:
             if k in model_id:
                 return v
         return None
+
+
+def sniff_image(data: bytes) -> str | None:
+    """media type from the bytes; None for anything the model API does not take (PDF, TIFF, HTML errors)"""
+    if data[:3] == b"\xff\xd8\xff":
+        return "image/jpeg"
+    if data[:8] == b"\x89PNG\r\n\x1a\n":
+        return "image/png"
+    if data[:6] in (b"GIF87a", b"GIF89a"):
+        return "image/gif"
+    if data[:4] == b"RIFF" and data[8:12] == b"WEBP":
+        return "image/webp"
+    return None
 
 
 def parse_json(raw: str) -> dict:
@@ -357,6 +370,12 @@ def main(argv=None) -> int:
     ap.add_argument("--max-images", type=int, default=2)
     ap.add_argument("--image-px", type=int, default=2200, help="longest side of the image sent to the model")
     ap.add_argument("--mock", action="store_true", help="no model: fake verdicts (to test the pipeline)")
+    ap.add_argument("--include-living", action="store_true", help="also check citations about living people (off: they never reach the site)")
+    ap.add_argument("--include-bare", action="store_true",
+                    help="also check citations with no image and no transcription (off: there is nothing to check them against)")
+    ap.add_argument("--overrides", default=os.path.join(os.path.dirname(os.path.abspath(__file__)), "overrides.json"))
+    ap.add_argument("--revert", help="comma-separated citation IDs: put them (and their facts) back to 'unreviewed'")
+    ap.add_argument("--max-age", type=int, default=110)
     args = ap.parse_args(argv)
 
     def progress(msg):
@@ -365,7 +384,7 @@ def main(argv=None) -> int:
     # model
     if args.mock:
         model = MockModel()
-    elif not args.dry_run:
+    elif not args.dry_run and not args.revert:
         key = os.environ.get("ANTHROPIC_API_KEY")
         if not key and os.path.exists(args.key_file):
             with open(args.key_file, encoding="utf-8") as f:
@@ -443,6 +462,75 @@ def main(argv=None) -> int:
         return bool(HARD_SOURCE.search(src.get("title") or "")) or any(
             HARD_SOURCE.search(typestr(a.get("type")) + " " + str(a.get("value"))) for a in c.get("attribute_list") or [])
 
+    # living people (local rule + overrides.json), so their records are not sent anywhere
+    ov_living, ov_dead = set(), set()
+    try:
+        with open(args.overrides, encoding="utf-8") as f:
+            ov = json.load(f)
+        ov_living = set(ov.get("living", {})) | set(ov.get("exclude", {}))
+        ov_dead = set(ov.get("deceased", {}))
+    except (OSError, ValueError):
+        pass
+    cutoff = dt.date.today().year - args.max_age
+
+    def is_living(ph: str) -> bool:
+        p = tree.people.get(ph) or {}
+        gid = p.get("gramps_id")
+        if gid in ov_dead:
+            return False
+        if gid in ov_living:
+            return True
+        for ref in p.get("event_ref_list", []):
+            e = tree.events.get(ref["ref"])
+            if e and typestr(e.get("type")) in ("Death", "Burial", "Cremation", "Probate") and typestr(ref.get("role")) == "Primary":
+                return False
+        b = tree.year_of(p, ("Birth", "Baptism", "Christening"))
+        return b is None or b > cutoff
+
+    def claim_people(ch: str) -> set:
+        out = set()
+        for kind, h, extra in tree.owners.get(ch, []):
+            if kind == "event":
+                out.update(ph for ph, _r in tree.participants.get(h, []))
+                fam = tree.event_family.get(h)
+                if fam:
+                    out.update(x for x in (tree.families[fam].get("father_handle"), tree.families[fam].get("mother_handle")) if x)
+            elif kind == "family":
+                f = tree.families.get(h) or {}
+                out.update(x for x in (f.get("father_handle"), f.get("mother_handle")) if x)
+            else:
+                out.add(h)
+        return out
+
+    def is_bare(c: dict) -> bool:
+        return not c.get("media_list") and not c.get("note_list")
+
+    # revert
+    if args.revert:
+        ids = [x.strip() for x in args.revert.split(",") if x.strip()]
+        drop = {tree.tag_handle.get(n) for n in ("ai-validated", "needs-human", "agent-validator")} - {None}
+        un = tree.tag_handle.get("unreviewed")
+        n = 0
+        for ch, c in tree.citations.items():
+            if c.get("gramps_id") not in ids:
+                continue
+            for kind, h, cl in [("citations", ch, None)] + [("events" if k == "event" else "families", hh, None)
+                                                           for k, hh, _x in tree.owners.get(ch, []) if k in ("event", "family")]:
+                obj = api.get(f"{kind}/{h}")
+                tl = [t for t in obj.get("tag_list", []) if t not in drop]
+                if un and un not in tl and tree.tag_handle.get("reviewed") not in tl:
+                    tl.append(un)
+                if tl != obj.get("tag_list"):
+                    obj["tag_list"] = tl
+                    api.send("PUT", f"{kind}/{h}", obj)
+            try:
+                os.remove(os.path.join(args.out, f"{c.get('gramps_id')}.json"))
+            except OSError:
+                pass
+            n += 1
+        print(f"reverted {n} citations (and their facts) to unreviewed; validator notes stay on the citations")
+        return 0
+
     # queue
     os.makedirs(args.out, exist_ok=True)
     done_files = {fn[:-5] for fn in os.listdir(args.out) if fn.endswith(".json")}
@@ -462,6 +550,14 @@ def main(argv=None) -> int:
             continue
         if not tree.owners.get(ch):
             skipped["not attached to anything"] += 1
+            continue
+        if not args.include_living and wanted is None:
+            people = claim_people(ch)
+            if people and all(is_living(ph) for ph in people):
+                skipped["about living people only"] += 1
+                continue
+        if not args.include_bare and wanted is None and is_bare(c):
+            skipped["no image and no transcription (nothing to check)"] += 1
             continue
         if gid in done_files and not args.redo and wanted is None:
             skipped["verdict file exists (use --redo)"] += 1
@@ -522,6 +618,7 @@ def main(argv=None) -> int:
 
     # run
     results = collections.Counter()
+    errors_in_a_row = 0
     flagged = []
     t0 = time.time()
     for i, (_d, gen, gid, ch) in enumerate(queue, 1):
@@ -534,7 +631,11 @@ def main(argv=None) -> int:
                 continue
             try:
                 data = api.get_bytes(f"media/{med['handle']}/thumbnail/{args.image_px}", {"square": "0"})
-                images.append(("image/jpeg", data))
+                kind = sniff_image(data)
+                if kind:
+                    images.append((kind, data))
+                else:
+                    progress(f"  {gid}: image {med.get('gramps_id')} is not a JPEG/PNG/GIF/WebP ({med.get('mime')}); skipped")
             except ApiError as e:
                 progress(f"  {gid}: image {med.get('gramps_id')} not fetched ({e})")
         text = "CLAIMS this citation is attached to:\n" + "\n".join(f"{k + 1}. {cl['text']}" for k, cl in enumerate(claims)) \
@@ -543,9 +644,15 @@ def main(argv=None) -> int:
         use = hard_model if (hard_model and images and is_hard(c)) else model
         try:
             v = use.ask(text, images)
+            errors_in_a_row = 0
         except ApiError as e:
-            progress(f"  {gid}: model error — {e}; stopping")
-            break
+            errors_in_a_row += 1
+            progress(f"  {gid}: model error — {e}")
+            results["error"] += 1
+            if errors_in_a_row >= 3:
+                progress("  three errors in a row; stopping")
+                break
+            continue
         verdict = v.get("verdict") if v.get("verdict") in VERDICTS else "unreadable"
         flags = [str(x) for x in (v.get("flags") or [])]
         tier = v.get("tier") if v.get("tier") in TIERS else None
