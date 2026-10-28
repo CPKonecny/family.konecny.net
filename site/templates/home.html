@@ -11,10 +11,11 @@
 
 {% if body %}<section class="prose intro">{{ body|md|safe }}</section>{% endif %}
 
+{% for side in sides %}
 <section class="lines">
-  <h2 class="eyebrow">Lineages · each one a route to Two Rivers</h2>
+  {% if side.title %}<h2 class="sidehead">{{ side.title }}{% if side.subtitle %} <small>{{ side.subtitle|typo }}</small>{% endif %}</h2>{% endif %}
   <div class="linegrid">
-    {% for l in lines %}
+    {% for l in side.lines %}
     <a class="linecard c-{{ l.color }}" href="/line/{{ l.slug }}/">
       <span class="band" aria-hidden="true"></span>
       <span class="lt">{{ l.title }}</span>
@@ -24,6 +25,7 @@
     {% endfor %}
   </div>
 </section>
+{% endfor %}
 
 <section class="stats">
   <dl>

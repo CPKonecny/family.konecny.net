@@ -429,6 +429,9 @@ class Site:
                 "crossing": crossing, "marriage": marriage,
                 "facts": self.review_summary(self.facts_of(p)) if p["status"] == "full" else None,
             })
+        if not any(st["person"]["status"] == "full" for st in stations):
+            self.warnings.append(f"line {line['slug']}: only living people so far — not shown yet")
+            return None
         return {**line, "stations": stations, "generations": len(stations)}
 
 
@@ -614,7 +617,12 @@ def main(argv=None) -> int:
                   "media_login": sum(1 for m in site.media.values() if m["access"] == "login")})
     write("about/index.html", "about.html", body=content("about.md"), stats=stats, rs=rs, cit_rev=cit_rev, title="About this site")
     recent = sorted([p for p in site.people.values() if p["status"] == "full" and p.get("change")], key=lambda p: -p["change"])[:8]
-    write("index.html", "home.html", lines=lines, stats=stats, rs=rs, recent=recent, body=content("home.md"), title=None)
+    sides = []
+    for sd in cfg.get("sides") or [{"key": None, "title": "", "subtitle": ""}]:
+        ls = [l for l in lines if l.get("side") == sd["key"] or sd["key"] is None]
+        if ls:
+            sides.append({**sd, "lines": ls})
+    write("index.html", "home.html", sides=sides, lines=lines, stats=stats, rs=rs, recent=recent, body=content("home.md"), title=None)
     write("404.html", "404.html", title="Not found")
 
     # static, data, media, CNAME

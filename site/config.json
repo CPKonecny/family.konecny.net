@@ -1,7 +1,7 @@
 {
   "site_name": "Konečný → Konecny",
   "site_url": "https://family.konecny.net",
-  "tagline": "A family history from Moravian Wallachia, the Radnice coalfield and Plymouth Colony to Two Rivers, Wisconsin",
+  "tagline": "Where our family comes from — Bohemia and Moravia, Plymouth Colony, Denmark and beyond — and the records that show it",
   "private_site": "https://familytree.konecny.net",
   "contact_note": "Family members can ask Chris for a login to the research database, which holds the record images and the private papers.",
   "root_person": "I0141",
@@ -11,48 +11,136 @@
       "title": "The Konečný line",
       "subtitle": "Vlachovice and Štítná nad Vláří → Manitowoc → Two Rivers",
       "color": "konecny",
-      "surnames": ["Konečný", "Konecny", "Konečná", "Kadlec", "Šebák", "Kostka", "Trchel", "Miklas", "Bilnitza"],
+      "surnames": [
+        "Konečný",
+        "Konecny",
+        "Konečná",
+        "Kadlec",
+        "Šebák",
+        "Kostka",
+        "Trchel",
+        "Miklas",
+        "Bilnitza"
+      ],
       "from": "I0141",
-      "to": "ancestry:212795061711"
+      "to": "ancestry:212795061711",
+      "side": "konecny"
     },
     {
       "slug": "tauber",
       "title": "The Tauber and Král line",
       "subtitle": "Mostiště, Radnice parish → Manitowoc",
       "color": "tauber",
-      "surnames": ["Tauber", "Taubr", "Taubrová", "Král", "Králová", "Kralova"],
+      "surnames": [
+        "Tauber",
+        "Taubr",
+        "Taubrová",
+        "Král",
+        "Králová",
+        "Kralova"
+      ],
       "from": "I0141",
-      "to": "ancestry:212735815392"
+      "to": "ancestry:212735815392",
+      "side": "konecny"
     },
     {
       "slug": "wood",
       "title": "The Wood line, back to the Mayflower",
       "subtitle": "Plymouth Colony → Vermont → Quebec → Wisconsin",
       "color": "wood",
-      "surnames": ["Wood", "Bentley", "Chill", "Seymour", "Howland", "Tilley", "Chipman", "Huckins", "Nelson"],
+      "surnames": [
+        "Wood",
+        "Bentley",
+        "Chill",
+        "Seymour",
+        "Howland",
+        "Tilley",
+        "Chipman",
+        "Huckins",
+        "Nelson"
+      ],
       "from": "I0141",
-      "to": "ancestry:212799418061"
+      "to": "ancestry:212799418061",
+      "side": "konecny"
     },
     {
       "slug": "toepel",
       "title": "The Toepel line",
       "subtitle": "Minnesota → Arizona",
       "color": "toepel",
-      "surnames": ["Toepel"],
+      "surnames": [
+        "Toepel"
+      ],
       "from": "I0141",
-      "to": "ancestry:212799248447"
+      "to": "ancestry:212799248447",
+      "side": "konecny"
+    },
+    {
+      "slug": "morris",
+      "side": "morris",
+      "title": "The Morris line",
+      "subtitle": "to be researched",
+      "color": "wood",
+      "surnames": [
+        "Morris",
+        "Ward"
+      ],
+      "from": "I0027",
+      "to": "I0063"
     }
   ],
   "world_events": [
-    {"year": 1620, "label": "Mayflower lands at Plymouth"},
-    {"year": 1776, "label": "American independence"},
-    {"year": 1848, "label": "Revolutions; serfdom abolished in the Austrian lands"},
-    {"year": 1867, "label": "Austro-Hungarian Compromise"},
-    {"year": 1914, "label": "First World War begins"},
-    {"year": 1918, "label": "Czechoslovakia founded"},
-    {"year": 1939, "label": "Second World War begins"},
-    {"year": 1947, "label": "Frank Konecny marries Marjorie Wood in Two Rivers"},
-    {"year": 1948, "label": "Communist takeover in Czechoslovakia"},
-    {"year": 1989, "label": "Velvet Revolution"}
+    {
+      "year": 1620,
+      "label": "Mayflower lands at Plymouth"
+    },
+    {
+      "year": 1776,
+      "label": "American independence"
+    },
+    {
+      "year": 1848,
+      "label": "Revolutions; serfdom abolished in the Austrian lands"
+    },
+    {
+      "year": 1867,
+      "label": "Austro-Hungarian Compromise"
+    },
+    {
+      "year": 1914,
+      "label": "First World War begins"
+    },
+    {
+      "year": 1918,
+      "label": "Czechoslovakia founded"
+    },
+    {
+      "year": 1939,
+      "label": "Second World War begins"
+    },
+    {
+      "year": 1947,
+      "label": "Frank Konecny marries Marjorie Wood in Two Rivers"
+    },
+    {
+      "year": 1948,
+      "label": "Communist takeover in Czechoslovakia"
+    },
+    {
+      "year": 1989,
+      "label": "Velvet Revolution"
+    }
+  ],
+  "sides": [
+    {
+      "key": "konecny",
+      "title": "The Konecny side",
+      "subtitle": "Chris’s family"
+    },
+    {
+      "key": "morris",
+      "title": "The Morris side",
+      "subtitle": "Jessica’s family"
+    }
   ]
 }

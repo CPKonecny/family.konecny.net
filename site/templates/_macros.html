@@ -41,12 +41,20 @@
     {% if f.description %}<span class="desc">{{ f.description|typo }}</span>{% endif %}
   </div>
   <div class="mark">{{ stamp(f.event) }}</div>
+  {% if f.citations %}
+  {% set top = f.citations[0] %}
+  <div class="topsrc"><span class="tier">{{ top.tier_label }}</span> <a href="/citation/{{ top.citation.id }}/">{% if top.source %}{{ top.source.title|typo }}{% else %}Citation {{ top.citation.id }}{% endif %}</a></div>
+  {% else %}
+  <div class="topsrc none">No source attached yet</div>
+  {% endif %}
+  {% if f.citations|length > 1 or f.notes or f.media or (f.citations and f.citations[0].notes) %}
   <details class="ev">
-    <summary>Evidence · {{ f.citations|length }} source{{ 's' if f.citations|length != 1 }}{% if f.notes %} · {{ f.notes|length }} note{{ 's' if f.notes|length != 1 }}{% endif %}</summary>
+    <summary>All evidence · {{ f.citations|length }} source{{ 's' if f.citations|length != 1 }}{% if f.notes %} · {{ f.notes|length }} note{{ 's' if f.notes|length != 1 }}{% endif %}</summary>
     {{ ladder(f.citations) }}
     {% for n in f.notes %}{{ notecard(n) }}{% endfor %}
     {% if f.media %}<div class="mediarow">{% for m in f.media %}{{ mediacard(m) }}{% endfor %}</div>{% endif %}
   </details>
+  {% endif %}
 </li>
 {%- endmacro %}
 

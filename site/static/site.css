@@ -215,3 +215,17 @@ details.ev summary:hover { color: var(--ink); }
 .prose code { font-family: var(--mono); font-size: 0.85em; }
 .coord a { text-transform: none; letter-spacing: 0; }
 @media (prefers-reduced-motion: no-preference) { .theme button, .linecard { transition: background 0.15s, border-color 0.15s; } }
+
+/* best source shown inline under each fact; the full ladder sits behind "All evidence" */
+.fact .topsrc { grid-column: 1 / -1; font-size: 0.9rem; display: flex; gap: 8px; align-items: baseline; min-width: 0; }
+.fact .topsrc a { overflow-wrap: anywhere; }
+.fact .topsrc.none { color: var(--muted); font-style: italic; }
+details.ev summary { display: inline-block; border: 1px solid var(--rule); border-radius: 999px; padding: 3px 10px; margin-top: 4px; background: var(--card); }
+details.ev summary::before { content: "+ "; }
+@media (min-width: 640px) { .fact .topsrc { grid-column: 2 / -1; } }
+/* long Ancestry strings must wrap on phones */
+.kinlist .yrs { white-space: normal; }
+.ladder .page, .ladder .src a { overflow-wrap: anywhere; }
+
+.sidehead { font-size: 1.35rem; margin: 26px 0 10px; }
+.sidehead small { font-family: var(--text); font-weight: 400; font-size: 0.95rem; color: var(--muted); margin-left: 6px; }
