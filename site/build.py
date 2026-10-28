@@ -55,6 +55,40 @@ NOTE_EVENT_TYPES = {"research note", "spouse order research note"}   # shown as 
 NAME_EVENT_TYPES = {"aka"}                                             # shown with the names
 
 
+TIER_ALIASES = {"published": "compiled", "hint": "tree", "newspaper": "record", "member-tree": "tree", "ai": "ai-draft"}
+_REC_KEYS = ("census", "passenger", "crew list", "draft registration", "naturalization", "church record", "parish",
+             "register", "acta publica", "porta fontium", "drouin", "directories", "lutheran", "certificate",
+             "herald", "tribune", "intelligencer", "gazette", "reporter", "times", "newspapers.com)", "obituary,")
+_COMPILED_KEYS = ("family histories", "genealogy", "lineage", "mayflower", "marriage records, 1560", "great migration",
+                  "torrey", "abstract", "find a grave")
+_TREE_KEYS = ("family tree", "member tree", "thrulines", "reunion", "wikitree", "geni.com")
+
+
+def clean_title(t: str) -> str:
+    """RootsMagic/Ancestry source titles -> readable: drop <I> tags, leading commas, 'N.p.' and publisher tails."""
+    s = re.sub(r"</?i>", "", t or "", flags=re.I).strip().lstrip(",").strip()
+    s = re.sub(r"\s*\(N\.p\.:?\s*n\.p\.,?\s*n\.d\.\)\.?\s*$", "", s)
+    s = re.sub(r"\s*\((Provo|Lehi|Salt Lake City|Orem)[^()]*\)\.?\s*$", "", s)
+    s = re.sub(r"^Ancestry\.com(?: and The Church of Jesus Christ of Latter-day Saints)?,\s*", "", s)
+    return s.rstrip(" .") or (t or "")
+
+
+def estimate_tier(title: str, has_image: bool):
+    """-> (tier, estimated?) from the source type, used only when the citation carries no Tier attribute"""
+    t = (title or "").lower()
+    if any(k in t for k in _TREE_KEYS):
+        return "tree"
+    if any(k in t for k in _COMPILED_KEYS):
+        return "compiled"
+    if "index" in t:
+        return "index"
+    if any(k in t for k in _REC_KEYS):
+        if "parish" in t or "acta publica" in t or "porta fontium" in t or "drouin" in t:
+            return "record"
+        return "record" if has_image else "index"
+    return None
+
+
 # ----------------------------------------------------------------------------- #
 # helpers exposed to templates
 # ----------------------------------------------------------------------------- #
@@ -175,6 +209,9 @@ class Site:
         self.places = bundle["places"]
         self.citations = bundle["citations"]
         self.sources = bundle["sources"]
+        for src in self.sources.values():
+            src["title_raw"] = src.get("title", "")
+            src["title"] = clean_title(src.get("title", ""))
         self.repositories = bundle["repositories"]
         self.notes = bundle["notes"]
         self.media = bundle["media"]
@@ -229,6 +266,11 @@ class Site:
         if not pl:
             return ""
         return pl["name"] if short else (pl.get("display") or pl["name"])
+
+    def town(self, pid) -> str:
+        """first part of a place name: 'Madison, Dane County, Wisconsin, USA' -> 'Madison'"""
+        name = self.place_name(pid, short=True)
+        return name.split(",")[0].strip() if name else ""
 
     def parents_of(self, p: dict) -> list[dict]:
         out = []
@@ -337,9 +379,14 @@ class Site:
             if not c:
                 continue
             src = self.sources.get(c.get("source")) if c.get("source") else None
-            tier = c.get("tier")
+            tier = TIER_ALIASES.get(c.get("tier"), c.get("tier"))
+            est = False
+            if tier not in TIER_RANK:
+                tier = estimate_tier((src or {}).get("title", ""), bool(c.get("media")))
+                est = tier is not None
+            label = TIER_LABEL.get(tier, "unclassified") + (" · est." if est else "")
             rows.append({
-                "citation": c, "source": src, "tier": tier, "tier_label": TIER_LABEL.get(tier, "tier not set"),
+                "citation": c, "source": src, "tier": tier, "tier_label": label, "tier_est": est,
                 "rank": TIER_RANK.get(tier, 9), "confidence": c.get("confidence", 2),
                 "conf_label": CONF_LABEL[max(0, min(4, int(c.get("confidence", 2) or 0)))],
                 "review": review_label(c),
@@ -399,9 +446,38 @@ class Site:
             out.append((pid, fam_below))
         return out
 
+    def ancestors_by_depth(self, pid: str) -> dict:
+        depth, queue = {pid: 0}, collections.deque([pid])
+        while queue:
+            cur = queue.popleft()
+            for fid in self.people.get(cur, {}).get("parents", []):
+                f = self.families.get(fid) or {}
+                for key in ("father", "mother"):
+                    par = f.get(key)
+                    if par and par in self.people and par not in depth:
+                        depth[par] = depth[cur] + 1
+                        queue.append(par)
+        return depth
+
+    def deepest(self, start: str | None, line: dict) -> str | None:
+        """'to': 'auto' or 'auto:I0073' -> the furthest-back ancestor whose surname belongs to the line"""
+        if not start:
+            return None
+        via = line["to"].split(":", 1)[1] if ":" in line["to"] else None
+        base = self.resolve(via) if via else start
+        if not base:
+            return None
+        names = {n.lower() for n in line.get("surnames", [])}
+        depth = self.ancestors_by_depth(base)
+        hits = [(d, pid) for pid, d in depth.items()
+                 if (self.people[pid]["name"].get("surname") or "").lower() in names and self.people[pid]["status"] == "full"]
+        if not hits:
+            return base
+        return max(hits, key=lambda x: (x[0], -((self.people[x[1]].get("birth") or {}).get("year") or 9999)))[1]
+
     def build_line(self, line: dict) -> dict | None:
         start = self.resolve(line["from"])
-        goal = self.resolve(line["to"])
+        goal = self.deepest(start, line) if str(line.get("to", "")).startswith("auto") else self.resolve(line["to"])
         if not start or not goal:
             self.warnings.append(f"line {line['slug']}: cannot resolve {'from' if not start else 'to'} ({line['from'] if not start else line['to']})")
             return None
@@ -415,8 +491,8 @@ class Site:
             fam = self.families.get(fam_below) if fam_below else None
             spouse = self.spouse_in(fam, pid) if fam else None
             siblings = max(0, len((fam or {}).get("children", [])) - 1) if fam else 0
-            birth_pl = self.place_name(p["birth"]["place"], short=True) if p.get("birth") and p["birth"].get("place") else ""
-            death_pl = self.place_name(p["death"]["place"], short=True) if p.get("death") and p["death"].get("place") else ""
+            birth_pl = self.town(p["birth"]["place"]) if p.get("birth") and p["birth"].get("place") else ""
+            death_pl = self.town(p["death"]["place"]) if p.get("death") and p["death"].get("place") else ""
             crossing = None
             for f in self.facts_of(p) if p["status"] == "full" else []:
                 if f["crossing"]:

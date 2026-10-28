@@ -3,7 +3,7 @@
    fact registers are the two signature components. Colour: ledger paper and ink, four lineage threads. */
 :root {
   --paper: #eeefe9; --ink: #1b1f26; --muted: #5f6670; --rule: #cfd3cb; --rule-soft: #dfe2db; --card: #f7f8f4; --link: #2f3f8f;
-  --t-konecny: #c0392b; --t-tauber: #a9781f; --t-wood: #2f3f8f; --t-toepel: #257a70; --t-neutral: #5f6670;
+  --t-konecny: #c0392b; --t-tauber: #a9781f; --t-wood: #2f3f8f; --t-toepel: #257a70; --t-hansen: #7a3b6e; --t-neutral: #5f6670;
   --sea: #5f8da3; --stamp-needs: #c0392b;
   --display: "Bricolage Grotesque", "Helvetica Neue", Arial, sans-serif;
   --text: "Source Serif 4", Georgia, "Times New Roman", serif;
@@ -13,13 +13,13 @@
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --paper: #0f171e; --ink: #e3e9ec; --muted: #93a0a8; --rule: #253239; --rule-soft: #1b262d; --card: #152028; --link: #9fb0ff;
-    --t-konecny: #ef6a5b; --t-tauber: #d9ab4e; --t-wood: #9fb0ff; --t-toepel: #5ec4ba; --t-neutral: #93a0a8;
+    --t-konecny: #ef6a5b; --t-tauber: #d9ab4e; --t-wood: #9fb0ff; --t-toepel: #5ec4ba; --t-hansen: #d48ac4; --t-neutral: #93a0a8;
     --sea: #6ea3bd; --stamp-needs: #ef6a5b; color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
   --paper: #0f171e; --ink: #e3e9ec; --muted: #93a0a8; --rule: #253239; --rule-soft: #1b262d; --card: #152028; --link: #9fb0ff;
-  --t-konecny: #ef6a5b; --t-tauber: #d9ab4e; --t-wood: #9fb0ff; --t-toepel: #5ec4ba; --t-neutral: #93a0a8;
+  --t-konecny: #ef6a5b; --t-tauber: #d9ab4e; --t-wood: #9fb0ff; --t-toepel: #5ec4ba; --t-hansen: #d48ac4; --t-neutral: #93a0a8;
   --sea: #6ea3bd; --stamp-needs: #ef6a5b; color-scheme: dark;
 }
 
@@ -65,7 +65,7 @@ article.index, article.line { max-width: 76ch; }
 .stamp.needs { color: var(--stamp-needs); }
 
 /* thread colours */
-.c-konecny { --thread: var(--t-konecny); } .c-tauber { --thread: var(--t-tauber); } .c-wood { --thread: var(--t-wood); } .c-toepel { --thread: var(--t-toepel); } .c-neutral { --thread: var(--t-neutral); }
+.c-konecny { --thread: var(--t-konecny); } .c-tauber { --thread: var(--t-tauber); } .c-wood { --thread: var(--t-wood); } .c-toepel { --thread: var(--t-toepel); } .c-hansen { --thread: var(--t-hansen); } .c-neutral { --thread: var(--t-neutral); }
 a.p { color: var(--ink); text-decoration-color: var(--thread, var(--t-neutral)); }
 a.p:hover { color: var(--thread, var(--link)); }
 .yrs { color: var(--muted); font-size: 0.9em; font-variant-numeric: tabular-nums; white-space: nowrap; }
@@ -229,3 +229,11 @@ details.ev summary::before { content: "+ "; }
 
 .sidehead { font-size: 1.35rem; margin: 26px 0 10px; }
 .sidehead small { font-family: var(--text); font-weight: 400; font-size: 0.95rem; color: var(--muted); margin-left: 6px; }
+
+/* phone header: keep the nav on one line */
+@media (max-width: 480px) {
+  .nav { gap: 2px 13px; font-size: 0.88rem; }
+  .theme button { padding: 3px 7px; }
+  .brand { font-size: 0.98rem; }
+}
+.ladder .tier .est, .topsrc .tier .est { opacity: 0.7; }

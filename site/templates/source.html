@@ -5,6 +5,7 @@
   <header class="phead">
     <p class="eyebrow">Source · {{ s.id }}</p>
     <h1>{{ s.title|typo }}</h1>
+    {% if s.title_raw and s.title_raw != s.title %}<p class="muted" style="font-size:.85rem">Full citation: {{ s.title_raw|striptags }}</p>{% endif %}
     <p class="span">{% if s.author %}{{ s.author|typo }}{% endif %}{% if s.pubinfo %}{% if s.author %} · {% endif %}{{ s.pubinfo|typo }}{% endif %}</p>
   </header>
   {% if repos %}

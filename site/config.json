@@ -72,8 +72,21 @@
         "Toepel"
       ],
       "from": "I0141",
-      "to": "ancestry:212799248447",
+      "to": "auto",
       "side": "konecny"
+    },
+    {
+      "slug": "hansen",
+      "side": "konecny",
+      "title": "The Hansen and Jensen line",
+      "subtitle": "Albert Lea and Clarks Grove, Minnesota · Danish roots in Vendsyssel, still to be traced",
+      "color": "hansen",
+      "surnames": [
+        "Hansen",
+        "Jensen"
+      ],
+      "from": "I0141",
+      "to": "auto:I0073"
     },
     {
       "slug": "morris",
@@ -86,7 +99,7 @@
         "Ward"
       ],
       "from": "I0027",
-      "to": "I0063"
+      "to": "auto"
     }
   ],
   "world_events": [
