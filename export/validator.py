@@ -39,7 +39,7 @@ import urllib.request
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from gramps_export import (Api, ApiError, TABLES, date_obj, name_of, plain_text, tag_names, typestr)  # noqa: E402
 
-VERSION = "0.3.0"
+VERSION = "0.4.0"
 DONE_TAGS = {"reviewed", "ai-validated", "needs-human"}
 QUEUE_TAGS = {"unreviewed", "agent-proposed"}
 VERDICTS = ("supports", "consistent", "partial", "contradicts", "unreadable", "irrelevant")
@@ -66,13 +66,20 @@ Rules
   hamlet of Bylnice). Treat that as consistent, and say so.
 - If the image does not show the relevant entry, or cannot be read, say so rather than guessing.
 - Index entries (no image) can at most be "consistent" unless they state the claim explicitly.
+- A record that supports part of a claim and is silent on the rest (a census age for a birth date, a
+  nickname for a full name, a residence given in a relative's obituary) is "consistent", with the gap
+  under "limits", not under "flags".
 
 Answer with JSON only, no prose around it, with exactly these keys:
   "verdict": one of "supports" (the record states the claim), "consistent" (nothing contradicts it but
              the evidence does not fully state it), "partial" (some claims supported, others not),
              "contradicts", "unreadable", "irrelevant" (the record is not about this person)
   "match_points": list of short strings — what in the record matches the claim
-  "flags": list of short strings — discrepancies or doubts; empty list if none
+  "flags": list of short strings — ONLY real problems: the record says something different from the claim
+           (another name, date, place, age, spouse, parent), or there is a concrete reason to doubt that the
+           record is about this person. Empty list if none. Do NOT put limitations here.
+  "limits": list of short strings — what this evidence cannot show (no image, index only, compiled source,
+            a census gives an age not a date, a nickname instead of the full name). These are normal and expected.
   "tier": one of "record" (an image of an original record is present and readable), "index"
           (index entry or abstract without the image), "compiled" (published genealogy, Find a Grave
           memorial, family history), "tree" (member tree, hint, reunion book), "oral", "ai-draft"
@@ -632,10 +639,15 @@ def main(argv=None) -> int:
             try:
                 data = api.get_bytes(f"media/{med['handle']}/thumbnail/{args.image_px}", {"square": "0"})
                 kind = sniff_image(data)
+                if not kind:                                   # thumbnail not an image: try the original file
+                    first = data[:16]
+                    data = api.get_bytes(f"media/{med['handle']}/file")
+                    kind = sniff_image(data) if len(data) < 4_500_000 else None
+                    if not kind:
+                        progress(f"  {gid}: image {med.get('gramps_id')} unusable ({med.get('mime')}; thumbnail starts {first!r}, "
+                                 f"file starts {data[:16]!r}, {len(data):,} bytes); skipped")
                 if kind:
                     images.append((kind, data))
-                else:
-                    progress(f"  {gid}: image {med.get('gramps_id')} is not a JPEG/PNG/GIF/WebP ({med.get('mime')}); skipped")
             except ApiError as e:
                 progress(f"  {gid}: image {med.get('gramps_id')} not fetched ({e})")
         text = "CLAIMS this citation is attached to:\n" + "\n".join(f"{k + 1}. {cl['text']}" for k, cl in enumerate(claims)) \
@@ -660,10 +672,16 @@ def main(argv=None) -> int:
             conf = max(0, min(4, int(v.get("confidence", 0))))
         except (TypeError, ValueError):
             conf = 0
-        outcome = "ai-validated" if verdict in ("supports", "consistent") and not flags else "needs-human"
+        limits = [str(x) for x in (v.get("limits") or [])]
+        if verdict in ("supports", "consistent") and not flags:
+            outcome = "ai-validated"
+        elif verdict == "unreadable" and not flags:
+            outcome = "unchanged"          # nothing learned: stays unreviewed
+        else:
+            outcome = "needs-human"
         rec = {
             "gramps_handle": ch, "gramps_id": gid, "object": "citation", "verdict": verdict,
-            "match_points": [str(x) for x in (v.get("match_points") or [])], "flags": flags,
+            "match_points": [str(x) for x in (v.get("match_points") or [])], "flags": flags, "limits": limits,
             "tier_suggested": tier, "tier_ok": (tier is None) or (next((a.get("value") for a in c.get("attribute_list") or [] if typestr(a.get("type")) == "Tier"), tier) == tier),
             "confidence_suggested": conf, "note": str(v.get("note") or "").strip(),
             "claims": [{"kind": cl["kind"], "id": cl["id"], "people": cl["people"], "text": cl["text"]} for cl in claims],
@@ -673,7 +691,7 @@ def main(argv=None) -> int:
         results[verdict] += 1
         if outcome == "needs-human":
             flagged.append(f"{gid}: {verdict} — {'; '.join(flags) or rec['note'][:120]}")
-        if args.apply:
+        if args.apply and outcome != "unchanged":
             try:
                 apply_verdict(api, tree, c, claims, rec, needed)
                 rec["applied"] = True
@@ -724,7 +742,8 @@ def apply_verdict(api: Api, tree: Tree, c: dict, claims: list, rec: dict, tags: 
     note_text = (f"Validator ({rec['model']}, {rec['checked'][:10]}): {rec['verdict']}, confidence {rec['confidence_suggested']}/4"
                  + (f", tier {rec['tier_suggested']}" if rec["tier_suggested"] else "") + ".\n" + rec["note"]
                  + ("\nMatches: " + "; ".join(rec["match_points"]) if rec["match_points"] else "")
-                 + ("\nFlags: " + "; ".join(rec["flags"]) if rec["flags"] else ""))
+                 + ("\nFlags: " + "; ".join(rec["flags"]) if rec["flags"] else "")
+                 + ("\nLimits: " + "; ".join(rec.get("limits") or []) if rec.get("limits") else ""))
     created = api.send("POST", "notes/", {"text": {"string": note_text, "tags": []}, "type": "Research", "format": 0,
                                           "private": False, "tag_list": [tags["agent-validator"]]})
     note_handle = None
