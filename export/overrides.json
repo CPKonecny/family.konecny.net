@@ -9,14 +9,5 @@
   "deceased": {},
   "exclude": {},
   "public_media": {},
-  "withhold": {
-    "E0525": "REJECTED — Galveston 8 Dec 1912 arrival is other man (Petr from Hovorany), not Petr Pavel Konečný of Svatý Štěpán / NY 1913",
-    "E0544": "REJECTED — Departure Bremen from Galveston 1912 Texas passenger list (wrong man)",
-    "E0546": "REJECTED — Residence Moravia from Galveston 1912 Texas passenger list (wrong man)",
-    "C0569": "REJECTED — Texas/Galveston passenger list S0116 citation on I0145 (wrong man)",
-    "C0586": "REJECTED — Texas/Galveston passenger list wrongly cited on birth E0524",
-    "C0592": "REJECTED — Texas/Galveston passenger list on arrival E0525",
-    "C0609": "REJECTED — Texas/Galveston passenger list on departure E0544",
-    "C0611": "REJECTED — Texas/Galveston passenger list on residence E0546"
-  }
+  "withhold": {}
 }
