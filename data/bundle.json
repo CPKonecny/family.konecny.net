@@ -17686,6 +17686,41 @@
    ],
    "tier": "record"
   },
+  "C0569": {
+   "change": 1793216353,
+   "cited_by": [
+    {
+     "id": "I0145",
+     "type": "person"
+    }
+   ],
+   "confidence": 2,
+   "date": null,
+   "flags": [],
+   "handle": "104ebd54b2555603b89312a028b5",
+   "id": "C0569",
+   "media": [
+    {
+     "ref": "O0086"
+    }
+   ],
+   "notes": [
+    "N0987"
+   ],
+   "page": "The National Archives At Washington, D.C.; Washington, D.C.; Series Title: Passenger Lists of Vessels Arriving At Galveston, Texas, 1896-1951; ARC Number: M1359; Record Group Title: Records of the Immigration and Naturalization Service, 1787-2004; Record G",
+   "provenance": [
+    "agent-validator",
+    "import-ancestry-2026-10-25"
+   ],
+   "review": "ai",
+   "source": "S0116",
+   "tags": [
+    "import-ancestry-2026-10-25",
+    "ai-validated",
+    "agent-validator"
+   ],
+   "tier": "record"
+  },
   "C0570": {
    "change": 1793041216,
    "cited_by": [
@@ -97493,6 +97528,34 @@
     "unreviewed"
    ]
   },
+  "O0086": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C0569",
+     "type": "citation"
+    }
+   ],
+   "attributes": {},
+   "checksum": "43bdc96e60ded0e3921f1fc1e51bb544",
+   "citations": [],
+   "date": null,
+   "desc": "Konecny Family Tree_media/TXM1359_14-0287.jpg",
+   "flags": [],
+   "handle": "104ebd54b2532cd6ec62e6a708e4",
+   "id": "O0086",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0086",
+   "provenance": [
+    "import-ancestry-2026-10-25"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "import-ancestry-2026-10-25",
+    "unreviewed"
+   ]
+  },
   "O0087": {
    "access": "login",
    "attached_to": [
@@ -100812,21 +100875,21 @@
    "very high"
   ],
   "counts": {
-   "citations": 1189,
+   "citations": 1190,
    "events": 1400,
    "families": 178,
-   "media": 173,
-   "notes": 1524,
+   "media": 174,
+   "notes": 1526,
    "people": 384,
    "places": 313,
    "repositories": 17,
-   "sources": 188
+   "sources": 189
   },
   "counts_people": {
    "full": 319,
    "living": 65
   },
-  "generated": "2026-10-28T21:24:52+00:00",
+  "generated": "2026-10-29T07:16:01+00:00",
   "generator": "gramps_export.py 0.3.0",
   "gramps_version": "6.0.8",
   "gramps_webapi_version": "3.17.0",
@@ -100850,7 +100913,7 @@
    "oral",
    "ai-draft"
   ],
-  "today": "2026-10-28",
+  "today": "2026-10-29",
   "tree": "Konecny"
  },
  "notes": {
@@ -112966,6 +113029,25 @@
    "text": "Records not imported into SOUR (source) Gramps ID S0115:\n\nLine ignored as not understood                                      Line 23293: 1 _SUBQ , <I>U.S., Naturalization Record Indexes, 1791-1992 (Indexed in World Archives Project).\nLine ignored as not understood                                      Line 23295: 1 _BIBL , Ancestry.com. U.S., Naturalization Record Indexes, 1791-1992 (Indexed in World Archives Project). Lehi, UT, USA: Ancestry.com Operations, Inc., 2010.\nLine ignored as not understood                                      Line 23298: 1 _TMPLT \nSkipped subordinate line                                            Line 23299: 2 TID 10000\nSkipped subordinate line                                            Line 23300: 2 TID2 101\nSkipped subordinate line                                            Line 23301: 2 FIELD \nSkipped subordinate line                                            Line 23302: 3 NAME Author\nSkipped subordinate line                                            Line 23303: 3 VALUE Ancestry.com\nSkipped subordinate line                                            Line 23304: 2 FIELD \nSkipped subordinate line                                            Line 23305: 3 NAME Publisher\nSkipped subordinate line                                            Line 23306: 3 VALUE Ancestry.com Operations, Inc.\nSkipped subordinate line                                            Line 23307: 2 FIELD \nSkipped subordinate line                                            Line 23308: 3 NAME PubPlace\nSkipped subordinate line                                            Line 23309: 3 VALUE Lehi, UT, USA\nSkipped subordinate line                                            Line 23310: 2 FIELD \nSkipped subordinate line                                            Line 23311: 3 NAME PubDate\nSkipped subordinate line                                            Line 23312: 3 VALUE 2010\nSkipped subordinate line                                            Line 23313: 2 FIELD \nSkipped subordinate line                                            Line 23314: 3 NAME Title\nSkipped subordinate line                                            Line 23315: 3 VALUE U.S., Naturalization Record Indexes, 1791-1992 (Indexed in World Archives Project)\n",
    "type": "GEDCOM import"
   },
+  "N0638": {
+   "attached_to": [
+    {
+     "id": "S0116",
+     "type": "source"
+    }
+   ],
+   "change": 1793036994,
+   "flags": [],
+   "handle": "104ebd54cfeb70c8fb5e5b8d1f8b",
+   "html": "<p>Records not imported into SOUR (source) Gramps ID S0116:</p><p>Line ignored as not understood                                      Line 23322: 1 _SUBQ , &lt;I&gt;Texas, U.S., Arriving and Departing Passenger and Crew Lists, 1893-1963.<br>Line ignored as not understood                                      Line 23324: 1 _BIBL , Ancestry.com. Texas, U.S., Arriving and Departing Passenger and Crew Lists, 1893-1963. Lehi, UT, USA: Ancestry.com Operations, Inc., 2014.<br>Line ignored as not understood                                      Line 23326: 1 _TMPLT <br>Skipped subordinate line                                            Line 23327: 2 TID 10000<br>Skipped subordinate line                                            Line 23328: 2 TID2 101<br>Skipped subordinate line                                            Line 23329: 2 FIELD <br>Skipped subordinate line                                            Line 23330: 3 NAME Author<br>Skipped subordinate line                                            Line 23331: 3 VALUE Ancestry.com<br>Skipped subordinate line                                            Line 23332: 2 FIELD <br>Skipped subordinate line                                            Line 23333: 3 NAME Publisher<br>Skipped subordinate line                                            Line 23334: 3 VALUE Ancestry.com Operations, Inc.<br>Skipped subordinate line                                            Line 23335: 2 FIELD <br>Skipped subordinate line                                            Line 23336: 3 NAME PubPlace<br>Skipped subordinate line                                            Line 23337: 3 VALUE Lehi, UT, USA<br>Skipped subordinate line                                            Line 23338: 2 FIELD <br>Skipped subordinate line                                            Line 23339: 3 NAME PubDate<br>Skipped subordinate line                                            Line 23340: 3 VALUE 2014<br>Skipped subordinate line                                            Line 23341: 2 FIELD <br>Skipped subordinate line                                            Line 23342: 3 NAME Title<br>Skipped subordinate line                                            Line 23343: 3 VALUE Texas, U.S., Arriving and Departing Passenger and Crew Lists, 1893-1963<br></p>",
+   "id": "N0638",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Records not imported into SOUR (source) Gramps ID S0116:\n\nLine ignored as not understood                                      Line 23322: 1 _SUBQ , <I>Texas, U.S., Arriving and Departing Passenger and Crew Lists, 1893-1963.\nLine ignored as not understood                                      Line 23324: 1 _BIBL , Ancestry.com. Texas, U.S., Arriving and Departing Passenger and Crew Lists, 1893-1963. Lehi, UT, USA: Ancestry.com Operations, Inc., 2014.\nLine ignored as not understood                                      Line 23326: 1 _TMPLT \nSkipped subordinate line                                            Line 23327: 2 TID 10000\nSkipped subordinate line                                            Line 23328: 2 TID2 101\nSkipped subordinate line                                            Line 23329: 2 FIELD \nSkipped subordinate line                                            Line 23330: 3 NAME Author\nSkipped subordinate line                                            Line 23331: 3 VALUE Ancestry.com\nSkipped subordinate line                                            Line 23332: 2 FIELD \nSkipped subordinate line                                            Line 23333: 3 NAME Publisher\nSkipped subordinate line                                            Line 23334: 3 VALUE Ancestry.com Operations, Inc.\nSkipped subordinate line                                            Line 23335: 2 FIELD \nSkipped subordinate line                                            Line 23336: 3 NAME PubPlace\nSkipped subordinate line                                            Line 23337: 3 VALUE Lehi, UT, USA\nSkipped subordinate line                                            Line 23338: 2 FIELD \nSkipped subordinate line                                            Line 23339: 3 NAME PubDate\nSkipped subordinate line                                            Line 23340: 3 VALUE 2014\nSkipped subordinate line                                            Line 23341: 2 FIELD \nSkipped subordinate line                                            Line 23342: 3 NAME Title\nSkipped subordinate line                                            Line 23343: 3 VALUE Texas, U.S., Arriving and Departing Passenger and Crew Lists, 1893-1963\n",
+   "type": "GEDCOM import"
+  },
   "N0639": {
    "attached_to": [
     {
@@ -117972,6 +118054,29 @@
     "agent-validator"
    ],
    "text": "Validator (claude-sonnet-5-5, 2026-10-28): consistent, confidence 3/4, tier record.\nThe image is readable, and line 6 on sheet 30A shows Peter Konecny, a Czechoslovakia-born head of household aged 36, which fits a birth in 1893 and the Czech name Petr Konečný. The record does not show the middle name Pavel or the 1936 death, so it supports the name only in part. It is consistent with the claim, not a full statement of it.\nMatches: Line 6 shows \"Konecny Peter\", head, age 36 (implies birth about 1893–94), which fits a man born in 1893; Born in Czechoslovakia, as were his parents; mother tongue Bohemian; immigrated 1913, naturalized; Wife Annie, 37, and children Joseph, Mary, Frank and William are listed with him; Manitowoc City, Wisconsin, ED 36-20, sheet 30A matches the citation detail\nLimits: The census gives the name as Peter Konecny, with no middle name Pavel and no diacritics; Age 36 gives a birth year, not a date, and does not confirm 1893 exactly; It does not show a death in 1936; It does not link this Peter to the Czech-form name Petr Pavel Konečný except by plausible name equivalence and birth year; The enumerator's April 1930 age of 36 could place birth in 1893 or early 1894",
+   "type": "Research"
+  },
+  "N0987": {
+   "attached_to": [
+    {
+     "id": "C0569",
+     "type": "citation"
+    }
+   ],
+   "change": 1793216353,
+   "flags": [],
+   "handle": "104f283cc1cc4bebd86c9a1f868d",
+   "html": "<p>Validator (claude-opus-5-5, 2026-10-28): consistent, confidence 3/4, tier record.<br>The S.S. Rhein manifest (sailing from Bremen, 15 Nov 1912), line 26, lists Petr Konečny, aged 19, male, a miner, Austrian/Bohemian by ditto marks, bound for Texas. The name and the implied birth year of about 1893 fit the claim. The record shows only the given name Petr, so the middle name Pavel is not supported by this source and must come from other evidence. The partly illegible residence and relative&#x27;s name could help confirm identity if read against other records.<br>Matches: Line 26 of the manifest reads &#x27;Konečny&#x27;, given name &#x27;Petr&#x27;, the same as the claimed surname and first name; Age 19 on a ship sailing 15 Nov 1912 implies birth about 1892–1893, consistent with the claimed birth year 1893; Male, single, miner; nationality and race are ditto-marked from the Austria/Bohemian entries above, consistent with a Czech origin; Final destination is Texas, which fits a Galveston arrival collection<br>Limits: The manifest gives only &#x27;Petr&#x27;. The middle name &#x27;Pavel&#x27; does not appear, so the full name is not confirmed; The age gives an approximate birth year, not a birth date; The record does not mention the 1936 death date; The last residence (looks like &#x27;Horrany&#x27;), the relative named (uncle Josef ...), and the Texas destination town are hard to read and were not used for matching</p>",
+   "id": "N0987",
+   "preformatted": false,
+   "provenance": [
+    "agent-validator"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-validator"
+   ],
+   "text": "Validator (claude-opus-5-5, 2026-10-28): consistent, confidence 3/4, tier record.\nThe S.S. Rhein manifest (sailing from Bremen, 15 Nov 1912), line 26, lists Petr Konečny, aged 19, male, a miner, Austrian/Bohemian by ditto marks, bound for Texas. The name and the implied birth year of about 1893 fit the claim. The record shows only the given name Petr, so the middle name Pavel is not supported by this source and must come from other evidence. The partly illegible residence and relative's name could help confirm identity if read against other records.\nMatches: Line 26 of the manifest reads 'Konečny', given name 'Petr', the same as the claimed surname and first name; Age 19 on a ship sailing 15 Nov 1912 implies birth about 1892–1893, consistent with the claimed birth year 1893; Male, single, miner; nationality and race are ditto-marked from the Austria/Bohemian entries above, consistent with a Czech origin; Final destination is Texas, which fits a Galveston arrival collection\nLimits: The manifest gives only 'Petr'. The middle name 'Pavel' does not appear, so the full name is not confirmed; The age gives an approximate birth year, not a birth date; The record does not mention the 1936 death date; The last residence (looks like 'Horrany'), the relative named (uncle Josef ...), and the Texas destination town are hard to read and were not used for matching",
    "type": "Research"
   },
   "N0988": {
@@ -145785,6 +145890,7 @@
     "citations": [
      "C0567",
      "C0568",
+     "C0569",
      "C0570",
      "C0571",
      "C0572",
@@ -177119,6 +177225,37 @@
     "import-ancestry-2026-10-25"
    ],
    "title": "Ancestry.com, U.S., Naturalization Record Indexes, 1791-1992 (Indexed in World Archives Project) (Lehi, UT, USA: Ancestry.com Operations, Inc., 2010)."
+  },
+  "S0116": {
+   "abbrev": "Texas, U.S., Arriving and Departing Passenger and Crew Lists, 1893-1963",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C0569"
+   ],
+   "flags": [],
+   "handle": "104ebd54b2501a89bb36ae23eea6",
+   "id": "S0116",
+   "media": [],
+   "notes": [
+    "N0638"
+   ],
+   "provenance": [
+    "import-ancestry-2026-10-25"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Book",
+     "ref": "R0001"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "import-ancestry-2026-10-25"
+   ],
+   "title": "Ancestry.com, Texas, U.S., Arriving and Departing Passenger and Crew Lists, 1893-1963 (Lehi, UT, USA: Ancestry.com Operations, Inc., 2014)."
   },
   "S0117": {
    "abbrev": "U.S., City Directories, 1822-1995",
