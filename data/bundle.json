@@ -38162,6 +38162,92 @@
    ],
    "tier": "newspaper",
    "url": "https://newspaperarchive.com/port-charlotte-daily-herald-news-dec-30-1974-p-3/"
+  },
+  "C1225": {
+   "ancestry_record_id": "",
+   "change": 1793307603,
+   "cited_by": [
+    {
+     "id": "E1548",
+     "type": "event"
+    }
+   ],
+   "confidence": 3,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "104f5ea07d1f1ef5fd2f7277b47f",
+   "id": "C1225",
+   "information": "primary",
+   "media": [
+    {
+     "ref": "O0183"
+    }
+   ],
+   "notes": [
+    "N1662",
+    "N1663"
+   ],
+   "page": "Book 4039, snímek 37 right, Tom IV fol. 71 (Josef Konečný, d. 25 Feb 1900)",
+   "proposal_file": "2026-10-29_1640_konecny-josefmethodej_birth-1898.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0194",
+   "source_type": "original",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "record",
+   "url": "https://actapublica.eu/"
+  },
+  "C1226": {
+   "ancestry_record_id": "",
+   "change": 1793307605,
+   "cited_by": [
+    {
+     "id": "E1549",
+     "type": "event"
+    }
+   ],
+   "confidence": 3,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "104f5ea0c9854fa35cf05dd8c3db",
+   "id": "C1226",
+   "information": "primary",
+   "media": [
+    {
+     "ref": "O0184"
+    }
+   ],
+   "notes": [
+    "N1664",
+    "N1665"
+   ],
+   "page": "Book 4039, snímek 37 right, Tom IV fol. 71 (Josef Konečný, d. 25 Feb 1900)",
+   "proposal_file": "2026-10-29_1641_konecny-josefmethodej_death-1900.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0194",
+   "source_type": "original",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "record",
+   "url": "https://actapublica.eu/"
   }
  },
  "events": {
@@ -88084,6 +88170,92 @@
     "agent-validator"
    ],
    "type": "Death"
+  },
+  "E1548": {
+   "attributes": [],
+   "change": 1793307604,
+   "citations": [
+    "C1225"
+   ],
+   "date": {
+    "day": 4,
+    "iso": "1898-07-04",
+    "modifier": null,
+    "month": 7,
+    "quality": null,
+    "sort": 2414475,
+    "text": "4 July 1898",
+    "year": 1898
+   },
+   "description": "Born 4 Jul 1898 (refines existing year-only Birth E0285 '1898').",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "104f5ea093ae29c88a952de48cf2",
+   "id": "E1548",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0074",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0323",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Birth"
+  },
+  "E1549": {
+   "attributes": [],
+   "change": 1793307605,
+   "citations": [
+    "C1226"
+   ],
+   "date": {
+    "day": 25,
+    "iso": "1900-02-25",
+    "modifier": null,
+    "month": 2,
+    "quality": null,
+    "sort": 2415076,
+    "text": "25 February 1900",
+    "year": 1900
+   },
+   "description": "Died 25 Feb 1900 aged 1 y 7 m, bronchitis; buried 27 Feb 1900. Father Jan Konečný, glass packer.",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "104f5ea0d6b55d3ea51e4f30f186",
+   "id": "E1549",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0074",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0323",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Death"
   }
  },
  "families": {
@@ -100864,6 +101036,105 @@
     "agent-proposed",
     "agent-karel"
    ]
+  },
+  "O0183": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1225",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-10-29_1640_konecny-josefmethodej_birth-1898.jpg"
+   },
+   "checksum": "7834a8235ecea7d851337e7d4950fee3",
+   "citations": [],
+   "date": null,
+   "desc": "Sidonie and Svatý Štěpán Roman Catholic parish, deaths Z 4039 (1880–1949) — Book 4039, snímek 37 right, Tom IV fol. 71 (Josef Konečný, d. 25 Feb 1900)",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "104f5ea06fdb6ff7b7bd7f2baacd",
+   "id": "O0183",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0183",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-proposed",
+    "agent-karel"
+   ]
+  },
+  "O0184": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1226",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-10-29_1641_konecny-josefmethodej_death-1900.jpg"
+   },
+   "checksum": "a71fe06bff1c396b1919ec9e59102687",
+   "citations": [],
+   "date": null,
+   "desc": "Sidonie and Svatý Štěpán Roman Catholic parish, deaths Z 4039 (1880–1949) — Book 4039, snímek 37 right, Tom IV fol. 71 (Josef Konečný, d. 25 Feb 1900)",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "104f5ea0b7463dbe76949512054b",
+   "id": "O0184",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0184",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-proposed",
+    "agent-karel"
+   ]
+  },
+  "O0185": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "I0074",
+     "type": "person"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-10-29_1643_konecny-josefmethodej_death-media_1.jpg"
+   },
+   "checksum": "a71fe06bff1c396b1919ec9e59102687",
+   "citations": [],
+   "date": null,
+   "desc": "Sidonie and Svatý Štěpán Roman Catholic parish, deaths Z 4039 (1880–1949) — Book 4039, snímek 37 right, Tom IV fol. 71 (Josef Konečný, d. 25 Feb 1900)",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "104f5ea0fd7e4a1cc205c36f3fe3",
+   "id": "O0185",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0185",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-proposed",
+    "agent-karel"
+   ]
   }
  },
  "meta": {
@@ -100875,21 +101146,21 @@
    "very high"
   ],
   "counts": {
-   "citations": 1190,
-   "events": 1400,
+   "citations": 1192,
+   "events": 1402,
    "families": 178,
-   "media": 174,
-   "notes": 1526,
+   "media": 177,
+   "notes": 1531,
    "people": 384,
-   "places": 313,
-   "repositories": 17,
-   "sources": 189
+   "places": 314,
+   "repositories": 18,
+   "sources": 190
   },
   "counts_people": {
    "full": 319,
    "living": 65
   },
-  "generated": "2026-10-29T07:16:01+00:00",
+  "generated": "2026-10-30T07:16:02+00:00",
   "generator": "gramps_export.py 0.3.0",
   "gramps_version": "6.0.8",
   "gramps_webapi_version": "3.17.0",
@@ -100913,7 +101184,7 @@
    "oral",
    "ai-draft"
   ],
-  "today": "2026-10-29",
+  "today": "2026-10-30",
   "tree": "Konecny"
  },
  "notes": {
@@ -133442,6 +133713,101 @@
    ],
    "text": "Validator (claude-sonnet-5-5, 2026-10-28): supports, confidence 2/4, tier index.\nThe MNHS index page shows Hansen, Ervin W., death date 1954-10-31, Freeborn County, certificate 1954-MN-004471. This states the death date and county in the claim directly. As an index with a common name and no birth date or parents, it cannot confirm that this is the same Ervin William Hansen born 1899, so confidence is capped at 2.\nMatches: Name Hansen, Ervin W. matches Ervin William Hansen (middle initial W.); Death date 1954-10-31 matches 31 October 1954; County Freeborn County matches Freeborn, Minnesota; Certificate ID 1954-MN-004471 matches the cited certificate number\nLimits: Index entry only; no image of the original death certificate; Middle name given only as initial W., so William is not confirmed; No birth date or age shown, so the 1899 birth year cannot be checked; No parents or spouse shown, so identity is not tied to the family tree beyond name and place; Place is county level only; city or township of death is not given",
    "type": "Research"
+  },
+  "N1662": {
+   "attached_to": [
+    {
+     "id": "C1225",
+     "type": "citation"
+    }
+   ],
+   "change": 1793307603,
+   "flags": [],
+   "handle": "104f5ea062e57c310421124c566a",
+   "html": "<p>Transcription (as written): MZA 4039 (Sidonie and Sv. Štěpán deaths 1880–1949), Tom IV fol. 71: Josef Konečný, d. 25 Feb 1900, bur. 27 Feb 1900, Sv. Štěpán, aged 1 y 7 m, bronchitis. &#x27;Josef Konečný, manželský syn Jana Konečného, baliče skla ve sv. Štěpáně a jeho manželky Veroniky, dcery Jiřího Kadlece, nádeníka ve sv. Štěpáně&#x27;. Priest Jakob Jelínek, farář.</p>",
+   "id": "N1662",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): MZA 4039 (Sidonie and Sv. Štěpán deaths 1880–1949), Tom IV fol. 71: Josef Konečný, d. 25 Feb 1900, bur. 27 Feb 1900, Sv. Štěpán, aged 1 y 7 m, bronchitis. 'Josef Konečný, manželský syn Jana Konečného, baliče skla ve sv. Štěpáně a jeho manželky Veroniky, dcery Jiřího Kadlece, nádeníka ve sv. Štěpáně'. Priest Jakob Jelínek, farář.",
+   "type": "Transcript"
+  },
+  "N1663": {
+   "attached_to": [
+    {
+     "id": "C1225",
+     "type": "citation"
+    }
+   ],
+   "change": 1793307603,
+   "flags": [],
+   "handle": "104f5ea069724010840b3f67d206",
+   "html": "<p>2026-10-29 (karel): Person ALREADY EXISTS as I0074 (child of F0073 = Jan I0147 × Veronika Kadlec I0148), so no add_person was drafted (would duplicate). Exact date 4 Jul 1898 from the known-children list in FORWARD-29oct.md; the 1900 death row&#x27;s age 1 y 7 m agrees. Applier should update E0285 rather than add a second Birth if it supports that.<br>Conflicts: [&#x27;Exact birth date not written on the death row itself (age only); the 4021 birth-register row was not re-read in this pass.&#x27;, &#x27;Death register gives given name Josef only (no Methoděj).&#x27;]</p>",
+   "id": "N1663",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-10-29 (karel): Person ALREADY EXISTS as I0074 (child of F0073 = Jan I0147 × Veronika Kadlec I0148), so no add_person was drafted (would duplicate). Exact date 4 Jul 1898 from the known-children list in FORWARD-29oct.md; the 1900 death row's age 1 y 7 m agrees. Applier should update E0285 rather than add a second Birth if it supports that.\nConflicts: ['Exact birth date not written on the death row itself (age only); the 4021 birth-register row was not re-read in this pass.', 'Death register gives given name Josef only (no Methoděj).']",
+   "type": "Research"
+  },
+  "N1664": {
+   "attached_to": [
+    {
+     "id": "C1226",
+     "type": "citation"
+    }
+   ],
+   "change": 1793307604,
+   "flags": [],
+   "handle": "104f5ea0a95a1b3a3179d13c108d",
+   "html": "<p>Transcription (as written): MZA 4039 (Sidonie and Sv. Štěpán deaths 1880–1949), Tom IV fol. 71: Josef Konečný, d. 25 Feb 1900, bur. 27 Feb 1900, Sv. Štěpán, aged 1 y 7 m, bronchitis. &#x27;Josef Konečný, manželský syn Jana Konečného, baliče skla ve sv. Štěpáně a jeho manželky Veroniky, dcery Jiřího Kadlece, nádeníka ve sv. Štěpáně&#x27;. Priest Jakob Jelínek, farář.</p>",
+   "id": "N1664",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): MZA 4039 (Sidonie and Sv. Štěpán deaths 1880–1949), Tom IV fol. 71: Josef Konečný, d. 25 Feb 1900, bur. 27 Feb 1900, Sv. Štěpán, aged 1 y 7 m, bronchitis. 'Josef Konečný, manželský syn Jana Konečného, baliče skla ve sv. Štěpáně a jeho manželky Veroniky, dcery Jiřího Kadlece, nádeníka ve sv. Štěpáně'. Priest Jakob Jelínek, farář.",
+   "type": "Transcript"
+  },
+  "N1665": {
+   "attached_to": [
+    {
+     "id": "C1226",
+     "type": "citation"
+    }
+   ],
+   "change": 1793307605,
+   "flags": [],
+   "handle": "104f5ea0b0804ed18a4be6d78c89",
+   "html": "<p>2026-10-29 (karel): Death row names both parents (SOLID). Fills existing empty Death event E0286 on I0074.<br>Conflicts: [&#x27;Register given name Josef (no Methoděj).&#x27;]</p>",
+   "id": "N1665",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-10-29 (karel): Death row names both parents (SOLID). Fills existing empty Death event E0286 on I0074.\nConflicts: ['Register given name Josef (no Methoděj).']",
+   "type": "Research"
+  },
+  "N1666": {
+   "attached_to": [
+    {
+     "id": "I0074",
+     "type": "person"
+    }
+   ],
+   "change": 1793307606,
+   "flags": [],
+   "handle": "104f5ea0e79a7a377d717a0e76b3",
+   "html": "<p>2026-10-29 (karel): {&#x27;type&#x27;: &#x27;Research&#x27;, &#x27;text&#x27;: &#x27;Searched MZA Acta Publica Sv. Štěpán deaths (4039) for Konečný deaths up to 1949. Found this death row (25 Feb 1900, aged 1 y 7 m, bronchitis) naming both parents Jan Konečný, glass packer, and Veronika, daughter of Jiří Kadlec. Ruled out any other Konečný deaths in that parish in that span. Source file: FORWARD-29oct.md.&#x27;}</p>",
+   "id": "N1666",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-10-29 (karel): {'type': 'Research', 'text': 'Searched MZA Acta Publica Sv. Štěpán deaths (4039) for Konečný deaths up to 1949. Found this death row (25 Feb 1900, aged 1 y 7 m, bronchitis) naming both parents Jan Konečný, glass packer, and Veronika, daughter of Jiří Kadlec. Ruled out any other Konečný deaths in that parish in that span. Source file: FORWARD-29oct.md.'}",
+   "type": "Research"
   }
  },
  "people": {
@@ -139777,7 +140143,7 @@
     "type": "Birth",
     "year": 1898
    },
-   "change": 1793043719,
+   "change": 1793307607,
    "citations": [
     "C0320"
    ],
@@ -139800,14 +140166,28 @@
     {
      "ref": "E0286",
      "role": "Primary"
+    },
+    {
+     "ref": "E1548",
+     "role": "Primary"
+    },
+    {
+     "ref": "E1549",
+     "role": "Primary"
     }
    ],
    "families": [],
-   "flags": [],
+   "flags": [
+    "agent-proposed"
+   ],
    "gender": "M",
    "handle": "104ebd54a9865d2d11e6d6f25749",
    "id": "I0074",
-   "media": [],
+   "media": [
+    {
+     "ref": "O0185"
+    }
+   ],
    "name": {
     "call": "",
     "display": "Josef Methoděj Konečný",
@@ -139821,19 +140201,24 @@
     "type": "Birth Name"
    },
    "notes": [
-    "N0108"
+    "N0108",
+    "N1666"
    ],
    "parents": [
     "F0073"
    ],
    "provenance": [
+    "agent-karel",
+    "agent-proposed",
     "import-ancestry-2026-10-25"
    ],
    "review": "unreviewed",
    "status": "full",
    "tags": [
     "import-ancestry-2026-10-25",
-    "unreviewed"
+    "agent-karel",
+    "unreviewed",
+    "agent-proposed"
    ],
    "urls": [],
    "xref": {
@@ -173066,6 +173451,38 @@
    ],
    "type": "Unknown",
    "urls": []
+  },
+  "P0323": {
+   "alt_names": [],
+   "citations": [],
+   "code": "",
+   "display": "Svatý Štěpán, Brumov-Bylnice, Zlín, Moravia",
+   "enclosed_by": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "104f5ea086db401609683424b7e3",
+   "hierarchy": [
+    "P0323"
+   ],
+   "id": "P0323",
+   "lat": null,
+   "long": null,
+   "media": [],
+   "name": "Svatý Štěpán, Brumov-Bylnice, Zlín, Moravia",
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed",
+    "needs-place"
+   ],
+   "type": "Unknown",
+   "urls": []
   }
  },
  "repositories": {
@@ -173201,6 +173618,14 @@
    "handle": "104f24b0c99563f23a9769b21c8e",
    "id": "R0016",
    "name": "NewspaperArchive (OCR, unauthenticated)",
+   "notes": [],
+   "type": "Archive",
+   "urls": []
+  },
+  "R0017": {
+   "handle": "104f5ea051ef1d7e0a75edafec6",
+   "id": "R0017",
+   "name": "Moravský zemský archiv v Brně (MZA), Acta Publica",
    "notes": [],
    "type": "Archive",
    "urls": []
@@ -179646,6 +180071,40 @@
     "agent-proposed"
    ],
    "title": "Port Charlotte Daily Herald News, 30 December 1974, p. 3 (death notice, William G. Chill)"
+  },
+  "S0194": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1225",
+    "C1226"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "104f5ea05a7b359f485bc24556db",
+   "id": "S0194",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0017"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "Sidonie and Svatý Štěpán Roman Catholic parish, deaths Z 4039 (1880–1949)"
   }
  }
 }
