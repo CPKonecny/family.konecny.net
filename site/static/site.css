@@ -47,7 +47,7 @@ time { font-variant-numeric: tabular-nums; }
 .wm i { font-style: normal; color: var(--t-konecny); }
 .nav { grid-area: nav; display: flex; flex-wrap: wrap; gap: 2px 16px; font-family: var(--display); font-size: 0.95rem; }
 .nav a { color: var(--ink); text-decoration: none; white-space: nowrap; padding: 4px 0; border-bottom: 2px solid transparent; }
-.nav a:hover { border-bottom-color: var(--ink); }
+.nav a:hover, .nav a[aria-current="page"] { border-bottom-color: var(--ink); }
 .theme { grid-area: theme; display: inline-flex; border: 1px solid var(--rule); border-radius: 999px; padding: 2px; background: var(--card); }
 .theme button { border: 0; background: transparent; color: var(--muted); font: 500 0.72rem var(--mono); letter-spacing: 0.06em; text-transform: uppercase; padding: 3px 9px; border-radius: 999px; cursor: pointer; }
 .theme button[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
@@ -237,3 +237,57 @@ details.ev summary::before { content: "+ "; }
   .brand { font-size: 0.98rem; }
 }
 .ladder .tier .est, .topsrc .tier .est { opacity: 0.7; }
+
+/* family stories — hand-maintained pages, same ledger as the rest of the site */
+.storyhome { grid-template-columns: minmax(240px, 42ch); }
+.stamp.proven { color: var(--paper); background: var(--ink); border-color: var(--ink); }
+.stamp.possible { color: var(--muted); border-style: dashed; background: transparent; }
+.storyrows { list-style: none; margin: 12px 0 8px; padding: 0; border-top: 1px solid var(--rule); }
+.storyrows > li { padding: 12px 0; border-bottom: 1px solid var(--rule); }
+.rowhead { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.storyrows .lead { font-family: var(--mono); font-size: 0.78rem; color: var(--ink); }
+.storyrows .what { margin: 3px 0 4px; }
+.storyrows .what b { font-family: var(--display); font-weight: 700; letter-spacing: -0.015em; }
+.storyrows .detail { margin: 0; }
+.callout { background: var(--card); border-left: 3px solid var(--ink); padding: 10px 14px; margin: 4px 0 16px; }
+.callout .calllead { font-family: var(--display); font-weight: 700; margin: 0 0 4px; }
+.callout p:last-child { margin-bottom: 0; }
+.story .cousin { background: var(--card); border: 1px solid var(--rule); border-radius: 8px; padding: 12px 14px; margin: 12px 0; }
+.story .kinlist > div { grid-template-columns: 9.5rem 1fr; }
+.tablewrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 4px 0 16px; }
+.story table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+.story th { font-family: var(--mono); font-size: 0.66rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); font-weight: 500; }
+.story th, .story td { text-align: left; vertical-align: top; padding: 8px 14px 8px 0; border-bottom: 1px solid var(--rule); overflow-wrap: anywhere; }
+.story td:first-child { font-family: var(--display); font-weight: 700; }
+.village { margin: 4px 0 28px; }
+.village h2 { margin-top: 26px; }
+.village figure { margin: 10px 0 12px; }
+.village img { width: 100%; height: auto; border-radius: 4px; border: 1px solid var(--rule); display: block; background: var(--card); }
+.village figcaption { margin-top: 6px; font-size: 0.85rem; color: var(--muted); overflow-wrap: anywhere; }
+.morelinks { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.morelinks a { font-family: var(--display); font-weight: 700; color: var(--ink); text-decoration: none; }
+.morelinks a:hover { text-decoration: underline; }
+.morelinks .site { display: block; font-family: var(--mono); font-size: 0.68rem; letter-spacing: 0.06em; color: var(--muted); margin-top: 1px; }
+.pager { display: flex; flex-wrap: wrap; gap: 8px 16px; justify-content: space-between; margin-top: 28px; padding-top: 14px; border-top: 1px solid var(--rule); }
+.pager a { font-family: var(--display); font-weight: 700; color: var(--ink); text-decoration: none; }
+.pager a:hover { text-decoration: underline; }
+.pager .next { margin-left: auto; }
+article.story.kind-table { max-width: 960px; }
+article.story.kind-places { max-width: 880px; }
+article.story.kind-places .village p,
+article.story.kind-places .span,
+article.story.kind-places .pager { max-width: 68ch; }
+@media (max-width: 640px) {
+  .story table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  .story table, .story tbody, .story tr, .story td { display: block; width: auto; }
+  .story tr { padding: 10px 0; border-bottom: 1px solid var(--rule); }
+  .story td { border-bottom: 0; padding: 2px 0; }
+  .story td::before { content: attr(data-label); display: block; font-family: var(--mono); font-size: 0.66rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+  .story td:first-child { font-size: 1.05rem; }
+}
+@media (max-width: 560px) {
+  .story .kinlist > div { grid-template-columns: 1fr; gap: 2px; padding-bottom: 8px; border-bottom: 1px solid var(--rule-soft); }
+  .story .kinlist > div:last-child { border-bottom: 0; padding-bottom: 0; }
+  .pager { flex-direction: column; }
+  .pager .next { margin-left: 0; }
+}

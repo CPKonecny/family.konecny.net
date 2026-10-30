@@ -1,4 +1,4 @@
-This site is the public face of a family-history research database. It is generated every night from that database, and it shows the research as it stands, including what is still uncertain. Nothing is written by hand on these pages except this one; every name, date, place and source comes from the database, and every fact says how well it is supported.
+This site is the public face of a family-history research database. It is generated every night from that database, and it shows the research as it stands, including what is still uncertain. The person, family, place and source pages come from that database: every name, date, place and source on them comes from the database, and every fact says how well it is supported. [Family stories](/stories/) are written by hand from the research notes, and they keep each citation, source and confidence label as it was written (Proven, Possible, family claim, compiled source only).
 
 ## What is here, and what is not
 

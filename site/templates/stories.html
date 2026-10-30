@@ -1,0 +1,127 @@
+{% extends "base.html" %}
+{% block description %}{% if section %}{{ section.heading }}. {% endif %}{{ stories.summary }}{% endblock %}
+{% block body %}
+<article class="prose story{% if section %} kind-{{ section.kind }}{% endif %}">
+  <header class="phead">
+    {% if section %}
+    <p class="eyebrow"><a href="/stories/">Family stories</a></p>
+    <h1>{{ section.heading|story }}</h1>
+    {% if section.caption_public %}<p class="span muted">{{ section.caption_public|story }}</p>{% endif %}
+    {% else %}
+    <p class="eyebrow">Stories</p>
+    <h1>Family stories</h1>
+    <p class="span">{{ stories.summary|story }}</p>
+    {% endif %}
+  </header>
+
+  {% if not section %}
+  <div class="linegrid">
+    {% for s in stories.sections %}
+    <a class="linecard c-neutral" href="/stories/{{ s.id }}/">
+      <span class="band" aria-hidden="true"></span>
+      <span class="lt">{{ s.heading|story }}</span>
+      {% if s.lede %}<span class="ls">{{ s.lede|story }}</span>{% endif %}
+    </a>
+    {% endfor %}
+  </div>
+
+  <h2 id="still">{{ stories.still.heading|story }}</h2>
+  <ul class="storyrows">
+    {% for item in stories.still.entries %}
+    <li>
+      <p class="what"><b>{{ item.title|story }}</b></p>
+      <p class="detail">{{ item.detail|story }}</p>
+    </li>
+    {% endfor %}
+  </ul>
+
+  <h2>{{ stories.further.heading|story }}</h2>
+  <ul class="morelinks">
+    {% for link in stories.further.links %}
+    <li><a href="{{ link.href }}">{{ link.title|story }}</a><span class="site">{{ link.site }}</span></li>
+    {% endfor %}
+  </ul>
+
+  {% elif section.kind == 'entries' %}
+  <ul class="storyrows">
+    {% for row in section.entries %}
+    <li>
+      <div class="rowhead">
+        {% if row.lead %}<span class="lead">{{ row.lead }}</span>{% endif %}
+        {% if row.status %}<span class="stamp {{ row.status|lower }}">{{ row.status }}</span>{% endif %}
+      </div>
+      <p class="what"><b>{{ row.title|story }}</b></p>
+      <p class="detail">{{ row.detail|story }}</p>
+    </li>
+    {% endfor %}
+  </ul>
+  {% for para in section.after %}
+  <p>{{ para|story }}</p>
+  {% endfor %}
+
+  {% elif section.kind == 'table' %}
+  <div class="tablewrap">
+    <table>
+      <thead>
+        <tr>{% for col in section.columns %}<th scope="col">{{ col }}</th>{% endfor %}</tr>
+      </thead>
+      <tbody>
+        {% for row in section.rows %}
+        <tr>
+          {% for cell in row %}
+          <td data-label="{{ section.columns[loop.index0] }}">{{ cell|story }}</td>
+          {% endfor %}
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% for para in section.after %}
+  <p{% if para.startswith('Careful:') %} class="note"{% endif %}>{{ para|story }}</p>
+  {% endfor %}
+
+  {% elif section.kind == 'places' %}
+  {% for place in section.places %}
+  <section class="village" id="{{ place.id }}">
+    <h2>{{ place.heading|story }}</h2>
+    {% if place.photo %}
+    <figure>
+      <img src="/stories/photos/{{ place.photo }}"
+        {% if place.photo_sm %}srcset="/stories/photos/{{ place.photo_sm }} 800w, /stories/photos/{{ place.photo }} {{ place.width or 1400 }}w"{% endif %}
+        sizes="(min-width: 900px) 880px, 100vw"
+        alt="{{ place.alt }}"
+        {% if place.width %}width="{{ place.width }}" height="{{ place.height }}"{% endif %}
+        loading="lazy" decoding="async">
+      {% if place.credit %}<figcaption>{{ place.credit|story }}</figcaption>{% endif %}
+    </figure>
+    {% endif %}
+    {% for para in place.paragraphs %}
+    <p>{{ para|story }}</p>
+    {% endfor %}
+  </section>
+  {% endfor %}
+
+  {% elif section.kind == 'cousins' %}
+  <div class="callout">
+    <p class="calllead">{{ section.callout.lead|story }}</p>
+    <p>{{ section.callout.text|story }}</p>
+  </div>
+  {% for group in section.groups %}
+  <div class="cousin">
+    <dl class="kinlist">
+      {% for item in group %}
+      <div><dt>{{ item.label }}</dt><dd>{{ item.value|story }}</dd></div>
+      {% endfor %}
+    </dl>
+  </div>
+  {% endfor %}
+  {% endif %}
+
+  {% if section %}
+  <nav class="pager" aria-label="Family stories">
+    {% if prev %}<a class="prev" href="/stories/{{ prev.id }}/"><span aria-hidden="true">← </span>{{ prev.heading|story }}</a>{% endif %}
+    {% if next %}<a class="next" href="/stories/{{ next.id }}/">{{ next.heading|story }}<span aria-hidden="true"> →</span></a>{% endif %}
+  </nav>
+  {% endif %}
+</article>
+{% endblock %}
