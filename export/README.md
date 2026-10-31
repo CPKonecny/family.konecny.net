@@ -116,7 +116,7 @@ python3 validator.py --all --apply --user "$u"                # the rest (an eve
 
 **One writer at a time.** Gramps Web stores the tree in SQLite, which takes one writer at a time; two scripts writing at once (validator + geocoder, or either + Karel) produce `HTTP 500 … database is locked`. The scripts now wait and retry (2/5/15/30 s), and every verdict is saved to its file before the write, so nothing is lost: after a run with `apply failed` lines, `python3 validator.py --reapply --apply --user <you>` writes the saved verdicts without calling the model again. Running the queue again is also free for anything already decided — citations with a verdict file are skipped.
 
-**Passwords.** Python's hidden prompt echoes on this server's terminal. Set the password once per session with `read -rsp 'Gramps password: ' GRAMPS_PASSWORD; echo; export GRAMPS_PASSWORD` — all three scripts read it — and `unset GRAMPS_PASSWORD` when done. The nightly export uses `~/.config/family-site/export.pw` (account `site-export`, role Guest).
+**Passwords.** Python's hidden prompt echoes on this server's terminal. Set the password once per session with `read -rsp 'Gramps password: ' GRAMPS_PASSWORD; echo; export GRAMPS_PASSWORD` — all three scripts read it — and `unset GRAMPS_PASSWORD` when done. The nightly export uses `~/.config/family-site/export.pw` (account `site-export`, role Guest). Gramps Web rate-limits logins (HTTP 429 when tools run back to back), so a fresh token is cached for 14 minutes in `~/.cache/family-site/` and reused; a 429 is retried after 20/40/60 s.
 
 The site shows the result the next morning: `AI-checked` stamps, the validator's note on the citation page, and the tier instead of "est."
 
@@ -139,6 +139,7 @@ In the CSV, review rows come first. `auto` = clean match, written as is. `review
 - `tools/backup_gramps.py` — full .gramps backup through the API to Z:\Backup\family-history. Run it before anything below that writes.
 - `tools/merge_family.py --into F0072 --from F0172` — merges a duplicate family into the real one (partners, children, events folded by type+date, citations/notes/media); dry run by default, `--apply` writes. Refuses if the two families have different partners.
 - `tools/set_note.py --person I0145 --starts "Death 28 Feb 1936" --file corrected.txt` — replaces one note's text with a file Karel sends; dry run by default.
+- `tools/fix_tiers.py` — maps non-standard Tier values on citations (published, hint, newspaper …) to the six real ones; dry run by default.
 - `tools/fix_dict_notes.py` — one-off from 31 Oct 2026: notes the applier stored as a Python dict (`{'type': 'Research', 'text': …}`); dry run by default, `--apply` writes.
 - Notes are never published when their type is *GEDCOM import* or their text is an import report; attributes whose type starts with `_` (`_UID`, `_AMTID`) are dropped; literal HTML entities in note text (`&amp;`) are turned back into characters.
 

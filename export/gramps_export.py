@@ -111,20 +111,53 @@ class Api:
         self.verbose = verbose
         self.calls = 0
 
+    # Gramps Web rate-limits POST /token/ per address, so several tools run back to back get HTTP 429.
+    # A fresh token is therefore cached (0600, under ~/.cache/family-site) and reused while it is valid.
+    CACHE_DIR = os.path.expanduser("~/.cache/family-site")
+    LOGIN_WAITS = (20, 40, 60)
+
+    def _cache_path(self, user: str) -> str:
+        tag = hashlib.md5(f"{self.base}|{user}".encode()).hexdigest()[:12]
+        return os.path.join(self.CACHE_DIR, f"token-{tag}.json")
+
     def login(self, user: str, password: str) -> None:
         self.user, self.password = user, password
-        body = json.dumps({"username": user, "password": password}).encode()
-        req = urllib.request.Request(
-            f"{self.base}/token/", data=body, method="POST",
-            headers={"Content-Type": "application/json", "Accept": "application/json"})
+        path = self._cache_path(user)
         try:
-            with urllib.request.urlopen(req, timeout=self.timeout) as r:
-                data = json.loads(r.read().decode())
-        except urllib.error.HTTPError as e:
-            raise ApiError(f"login failed: HTTP {e.code} {e.read()[:200]!r}") from None
-        except urllib.error.URLError as e:
-            raise ApiError(f"cannot reach {self.base}: {e.reason}") from None
+            with open(path, encoding="utf-8") as f:
+                cached = json.load(f)
+            if time.time() - cached.get("saved", 0) < 14 * 60:
+                self.token = cached["token"]
+                self._request("metadata/", retry=False)      # still valid?
+                return
+        except (OSError, ValueError, KeyError, ApiError):
+            self.token = None
+        body = json.dumps({"username": user, "password": password}).encode()
+        for attempt in range(len(self.LOGIN_WAITS) + 1):
+            req = urllib.request.Request(
+                f"{self.base}/token/", data=body, method="POST",
+                headers={"Content-Type": "application/json", "Accept": "application/json"})
+            try:
+                with urllib.request.urlopen(req, timeout=self.timeout) as r:
+                    data = json.loads(r.read().decode())
+                break
+            except urllib.error.HTTPError as e:
+                if e.code == 429 and attempt < len(self.LOGIN_WAITS):
+                    wait = self.LOGIN_WAITS[attempt]
+                    print(f"  Gramps Web is rate-limiting logins; waiting {wait}s", file=sys.stderr)
+                    time.sleep(wait)
+                    continue
+                raise ApiError(f"login failed: HTTP {e.code} {e.read()[:200]!r}") from None
+            except urllib.error.URLError as e:
+                raise ApiError(f"cannot reach {self.base}: {e.reason}") from None
         self.token = data["access_token"]
+        try:
+            os.makedirs(self.CACHE_DIR, mode=0o700, exist_ok=True)
+            fd = os.open(path, os.O_WRONLY | os.O_CREAT | os.O_TRUNC, 0o600)
+            with os.fdopen(fd, "w", encoding="utf-8") as f:
+                json.dump({"token": self.token, "saved": time.time()}, f)
+        except OSError:
+            pass                                             # no cache: every tool logs in, as before
 
     BUSY = (500, 502, 503, 504)      # Gramps Web under write load (SQLite lock, worker busy): wait and try again
     WAITS = (2, 5, 15, 30)
@@ -1657,20 +1690,15 @@ class Exporter:
             r.warn(f"leading asterisks stripped from {len(ASTERISK_NAMES)} names (Ancestry artefact — fix in Gramps, research log A6): "
                    + ", ".join(sorted(ASTERISK_NAMES)[:20]) + (" …" if len(ASTERISK_NAMES) > 20 else ""))
         # heuristic: published free text that names a living or excluded person in full
-        names = {}
-        for h in self.living_set | self.excluded_set:
-            nm = name_of(idx.people[h])
-            if nm["first"] and nm["surname"]:
-                names[f"{nm['first']} {nm['surname']}".lower()] = idx.people[h].get("gramps_id")
+        # event descriptions are not held back automatically (notes are, above); list the ones to look at,
+        # skipping names a deceased person also carries
+        pats = self.living_name_patterns()
         hits = []
-        if names:
-            texts = [("note", idx.notes[h].get("gramps_id"), plain_text(idx.notes[h].get("text"))) for h in inc["notes"]]
-            texts += [("event", idx.events[h].get("gramps_id"), idx.events[h].get("description") or "") for h in inc["events"]]
-            for kind, gid, text in texts:
-                low = text.lower()
-                for full, pid in names.items():
-                    if full in low:
-                        hits.append(f"{kind} {gid} mentions {pid}")
+        for h in inc["events"]:
+            low = fold_name(idx.events[h].get("description") or "")
+            for rx, pid in pats:
+                if low and rx.search(low):
+                    hits.append(f"event {idx.events[h].get('gramps_id')} mentions {pid}")
         held = getattr(self, "notes_held", [])
         if held:
             r.warn(f"{len(held)} notes held back because they name a living/excluded person (edit the note, or list it in "
@@ -1682,7 +1710,7 @@ class Exporter:
             r.warn("not checked in note text, because a deceased person has the same name (namesakes): "
                    + "; ".join(f"{p} '{k}'" for p, k in sorted(same)))
         if hits:
-            r.warn("published text may name living/excluded people (review, then overrides.withhold if needed): "
+            r.warn("event descriptions may name living/excluded people (review, then overrides.withhold if needed): "
                    + "; ".join(hits[:30]) + (" …" if len(hits) > 30 else ""))
 
     # ---- leak audit ------------------------------------------------------ #
