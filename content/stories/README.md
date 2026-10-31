@@ -14,4 +14,4 @@ status: confirming
 
 `confirming` prints this banner under the title: "In process of confirming — details are still being verified against records." `proven` prints no banner. Change that one field when the notes are confirmed; the story stays on the site either way.
 
-The wording, citations, sources, and confidence labels (Proven, Possible, family claim, compiled source only) are the research notes, unchanged. The village caption is: photos are from Wikimedia Commons, with the file name cited on each village.
+The wording, citations, sources, and confidence labels (Proven, Possible, family claim, compiled source only) are the research notes, unchanged. Each village photograph is credited in its caption — Photo: author, license, via Wikimedia Commons — and linked to the file page. Local file names are not written in the story text.
