@@ -240,6 +240,7 @@ details.ev summary::before { content: "+ "; }
 
 /* family stories — hand-maintained pages, same ledger as the rest of the site */
 .storyhome { grid-template-columns: minmax(240px, 42ch); }
+.status-banner { margin: 12px 0 16px; padding: 10px 14px; background: var(--card); border: 1px solid var(--rule); border-left: 3px solid var(--t-tauber); font-family: var(--display); font-weight: 600; font-size: 1rem; line-height: 1.35; }
 .stamp.proven { color: var(--paper); background: var(--ink); border-color: var(--ink); }
 .stamp.possible { color: var(--muted); border-style: dashed; background: transparent; }
 .storyrows { list-style: none; margin: 12px 0 8px; padding: 0; border-top: 1px solid var(--rule); }
@@ -276,7 +277,8 @@ article.story.kind-table { max-width: 960px; }
 article.story.kind-places { max-width: 880px; }
 article.story.kind-places .village p,
 article.story.kind-places .span,
-article.story.kind-places .pager { max-width: 68ch; }
+article.story.kind-places .pager,
+article.story.kind-places .status-banner { max-width: 68ch; }
 @media (max-width: 640px) {
   .story table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
   .story table, .story tbody, .story tr, .story td { display: block; width: auto; }

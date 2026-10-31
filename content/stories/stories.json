@@ -3,6 +3,7 @@
   "summary": "Soldiers, sea voyages, Czech villages, the work our people did, and the famous cousins we share ancestors with. Every story here comes from a real record or a published book; anything not yet proven is marked family claim or possible.",
   "sections": [
     {
+      "status": "confirming",
       "id": "military",
       "heading": "Military",
       "kind": "entries",
@@ -61,6 +62,7 @@
       ]
     },
     {
+      "status": "confirming",
       "id": "ships",
       "heading": "Ships & Arrivals",
       "kind": "table",
@@ -99,6 +101,7 @@
       ]
     },
     {
+      "status": "proven",
       "id": "villages",
       "heading": "The Old Villages",
       "kind": "places",
@@ -168,6 +171,7 @@
       ]
     },
     {
+      "status": "confirming",
       "id": "work",
       "heading": "What They Did for a Living",
       "kind": "table",
@@ -245,6 +249,7 @@
       ]
     },
     {
+      "status": "confirming",
       "id": "cousins",
       "heading": "Famous Cousins",
       "kind": "cousins",
@@ -293,6 +298,7 @@
     }
   ],
   "still": {
+    "status": "confirming",
     "id": "still",
     "heading": "Still looking for",
     "entries": [

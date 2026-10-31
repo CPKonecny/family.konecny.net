@@ -289,6 +289,11 @@ def section_lede(sec: dict) -> str:
 
 
 def load_stories(content_dir: str):
+    """Load every story in content/stories/.
+
+    `status` is display-only (`confirming` shows a banner, `proven` shows none).
+    A story is never skipped for being a draft or for still being confirmed.
+    """
     path = os.path.join(content_dir, "stories", "stories.json")
     if not os.path.exists(path):
         return None

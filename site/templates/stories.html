@@ -1,11 +1,13 @@
 {% extends "base.html" %}
 {% block description %}{% if section %}{{ section.heading }}. {% endif %}{{ stories.summary }}{% endblock %}
 {% block body %}
+{% set confirming_banner = "In process of confirming — details are still being verified against records." %}
 <article class="prose story{% if section %} kind-{{ section.kind }}{% endif %}">
   <header class="phead">
     {% if section %}
     <p class="eyebrow"><a href="/stories/">Family stories</a></p>
     <h1>{{ section.heading|story }}</h1>
+    {% if section.status == "confirming" %}<p class="status-banner" role="status">{{ confirming_banner }}</p>{% endif %}
     {% if section.caption_public %}<p class="span muted">{{ section.caption_public|story }}</p>{% endif %}
     {% else %}
     <p class="eyebrow">Stories</p>
@@ -26,6 +28,7 @@
   </div>
 
   <h2 id="still">{{ stories.still.heading|story }}</h2>
+  {% if stories.still.status == "confirming" %}<p class="status-banner" role="status">{{ confirming_banner }}</p>{% endif %}
   <ul class="storyrows">
     {% for item in stories.still.entries %}
     <li>
