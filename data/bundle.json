@@ -90064,10 +90064,13 @@
   },
   "F0019": {
    "attributes": [],
-   "change": 1793040859,
+   "change": 1793481954,
    "children": [
     {
      "ref": "I0125"
+    },
+    {
+     "ref": "I0031"
     }
    ],
    "citations": [],
@@ -91822,8 +91825,12 @@
   },
   "F0067": {
    "attributes": [],
-   "change": 1793040847,
-   "children": [],
+   "change": 1793481955,
+   "children": [
+    {
+     "ref": "I0134"
+    }
+   ],
    "citations": [],
    "events": [
     {
@@ -95032,65 +95039,6 @@
    "mother": "I0371",
    "status": "living"
   },
-  "F0160": {
-   "attributes": [],
-   "change": 1793040842,
-   "children": [
-    {
-     "ref": "I0029"
-    },
-    {
-     "ref": "I0028"
-    }
-   ],
-   "citations": [],
-   "events": [],
-   "father": null,
-   "flags": [],
-   "handle": "104ebd54a30514188f3f33f04206",
-   "id": "F0160",
-   "media": [],
-   "mother": "I0153",
-   "notes": [],
-   "provenance": [
-    "import-ancestry-2026-10-25"
-   ],
-   "review": "unreviewed",
-   "status": "full",
-   "tags": [
-    "import-ancestry-2026-10-25",
-    "unreviewed"
-   ],
-   "type": "Unknown"
-  },
-  "F0161": {
-   "attributes": [],
-   "change": 1793040859,
-   "children": [
-    {
-     "ref": "I0031"
-    }
-   ],
-   "citations": [],
-   "events": [],
-   "father": "I0038",
-   "flags": [],
-   "handle": "104ebd54a41a473dbb6572594e47",
-   "id": "F0161",
-   "media": [],
-   "mother": null,
-   "notes": [],
-   "provenance": [
-    "import-ancestry-2026-10-25"
-   ],
-   "review": "unreviewed",
-   "status": "full",
-   "tags": [
-    "import-ancestry-2026-10-25",
-    "unreviewed"
-   ],
-   "type": "Unknown"
-  },
   "F0162": {
    "attributes": [],
    "change": 1793040815,
@@ -95105,34 +95053,6 @@
    "flags": [],
    "handle": "104ebd54a7e05c5dc39f18c0d06e",
    "id": "F0162",
-   "media": [],
-   "mother": null,
-   "notes": [],
-   "provenance": [
-    "import-ancestry-2026-10-25"
-   ],
-   "review": "unreviewed",
-   "status": "full",
-   "tags": [
-    "import-ancestry-2026-10-25",
-    "unreviewed"
-   ],
-   "type": "Unknown"
-  },
-  "F0163": {
-   "attributes": [],
-   "change": 1793040846,
-   "children": [
-    {
-     "ref": "I0134"
-    }
-   ],
-   "citations": [],
-   "events": [],
-   "father": "I0136",
-   "flags": [],
-   "handle": "104ebd54b05b68d5d7869914a605",
-   "id": "F0163",
    "media": [],
    "mother": null,
    "notes": [],
@@ -102372,7 +102292,7 @@
   "counts": {
    "citations": 1206,
    "events": 1417,
-   "families": 175,
+   "families": 172,
    "media": 183,
    "notes": 1258,
    "people": 385,
@@ -102384,7 +102304,7 @@
    "full": 323,
    "living": 62
   },
-  "generated": "2026-10-31T21:17:25+00:00",
+  "generated": "2026-10-31T21:26:59+00:00",
   "generator": "gramps_export.py 0.3.0",
   "gramps_version": "6.0.8",
   "gramps_webapi_version": "3.17.0",
@@ -104731,16 +104651,16 @@
      "type": "person"
     }
    ],
-   "change": 1793036993,
+   "change": 1793481954,
    "flags": [],
    "handle": "104ebd54b28a650fe3ece74eace6",
-   "html": "<p>Death 28 Feb 1936 established from Find a Grave (Evergreen Cemetery, Manitowoc, WI; spou se Anna) plus a 26 Feb 1936 Two Rivers Reporter item &quot;Peter Konecny of Manitowoc Dead&quot; (Wisconsin Newspapers.com Stories &amp; Events Index) — both attached. Exact death place not yet confirmed by a certificate; Wisconsin&#x27;s pre-1959 death index is not on Ancestry, so a certified death record should be ordered from Wisconsin Vital Records / Manitowoc County. Naturalization: cert. F-855, Circuit Court, Manitowoc Co. Birthplace Hovorany, Hodonín, Moravia per 1912 Galveston manifest.</p><p>13 Aug 2026 IDENTITY / BIRTHPLACE CORRECTION: The Galveston 8 Dec 1912 S.S. Rhein Petr Konečný from Hovorany (uncle Josef, miner, destination Texas) is a DIFFERENT man. Our Peter is the NY 20 Aug 1913 S.S. Kaiser Wilhelm II arrival: Petr Konečný, 19, glazier, destination Milwaukee; mother Veronika Konečny of Kosťany, Bohemia; father Jan already in US. 1920/1930 censuses give immigration year 1913. Hovorany/Hodonín should not be used as birthplace for citizenship filing. SOA Litoměřice Košťany (Teplice) N 1889–1897 sign. 76/2 was read for June 1893 — no Petr Konečný / no Jan+Veronika. Next: Teplice-area neighbor parishes and other Bohemian Košťany. Do not order MZA Brno Hovorany extract for this person.</p><p>13 Aug 2026 PETITION 855 / NATURALIZATION PAPERS (FamilySearch, Wisconsin naturalization records vol. 5, images img569-img571; all three images uploaded to this profile&#x27;s gallery): Declaration of Intention no. 10633, Circuit Court Milwaukee Co., Wis., 14 Aug 1915 - Peter Konecny, age 22, glass blower, residence 722 14th St., Milwaukee; arrived New York 20 Aug 1913 on the Kaiser Wilhelm II; last foreign residence given as TEPLITZ (Teplice), Bohemia. Petition for Naturalization no. 855, Circuit Court Manitowoc Co., Wis., filed 28 Dec 1921 - occupation welder, residence N. 20th St., Manitowoc; wife Annie born 15 Oct 1892 Austria (tree currently shows 15 Sep 1891 Bohemia - conflict flagged, tree date NOT overwritten); one child listed: Joseph, born 1 Dec 1921 Manitowoc. Naturalized 6 Jun 1922, cert. F-855. NOTES: (1) The papers name Teplitz only as the LAST RESIDENCE before emigration - the birth VILLAGE is still unidentified and the birthplace field has deliberately NOT been changed to Teplice. (2) Hovorany is the WRONG man - the Galveston 1912 S.S. Rhein Petr Konecny from Hovorany is a different person, as noted above. (3) Joseph b. 1 Dec 1921 Manitowoc is NOT added as a profile this pass, pending confirmation (Frank b. 1924 is the child already in the tree).</p><p>13 Aug 2026 PARISH HUNT (off-Ancestry, not Ancestry collections): Hovorany RC birth book, MZA Brno sign. 5342 (1874-1919), READ for June 1893: NO Petr Konecny; surname absent from the index entirely. The Galveston 1912 Hovorany man is therefore a different Petr. SOA Litomerice, Kostany N 1889-1897 sign. 76/2, READ for June 1893: no Petr Konecny. Also READ and NEGATIVE for June 1893 (Catholic): Strelna 76/3; Jenikov 67/16; Hrob 53/9; Krupka 83/27; Dubi 128/37; Bohosudov 10/12; Kostomlaty 75/8; Duchcov 36/14 and 36/15 K-index; Teplice deanery index 162/M K 1893; Osek 131/B K 1893; Frycovice/Fritschowitz church books (FamilySearch) June 1893 - the Otilie b. 2 Jul 1893 there is to Ludvik x Veronika Sugar, NOT our family. Corroborating: 1913 New York manifest gives mother Veronika, Kostany, Bohemia; Declaration of Intention gives last residence Teplitz. CONCLUSION: birth village still unidentified; 28 Jun 1893 Hovorany birthplace remains unproven and no parish register entry has been located to date.</p><p>Teplitz Adressbuch: 1914 (MOB id/1625) OCR entire volume — no Konecny. 1873 (id/1712) and 1885 (id/1715) in-document search — no Konecny. 1909–1913 not digitized. House/business lists, not full residents. Source attached: https://digital.martin-opitz-bibliothek.de/detailseite/id/1625/page</p><p>Gebert 1912 (Kramerius uuid ea2d5b4e-a15e-4b5b-8793-dbd7d554030f): Gemeinde Kosten house-owner list pp.57-62 — no Konecny. Glassworks present (Glashütte der Gewerkschaft Kosten, Elisabeth, Josefhütte). Tenants not listed. Weigend Teplitz-Schönau 1912 (Ancestry 30937) also no Konecny (Kompert→Konkol). Directories 1873/1885/1912/1914 exhausted for named Konecny.</p><p>14 Aug 2026: Birth village is Svaty Stepan / Bylnice (osada of Bylnice, parish Brumov na Vlare), MZA Brno book 4021 s.151 house 160 — NOT Hovorany. 28 Jun 1893 date left locked. Lidecko / Jan ~1832 parked. Sebak wedding still OPEN.</p>",
+   "html": "<p>Death 28 Feb 1936 established from Find a Grave (Evergreen Cemetery, Manitowoc, WI; spouse Anna) plus a 26 Feb 1936 Two Rivers Reporter item &quot;Peter Konecny of Manitowoc Dead&quot; (Wisconsin Newspapers.com Stories &amp; Events Index) — both attached. Exact death place not yet confirmed by a certificate; Wisconsin&#x27;s pre-1959 death index is not on Ancestry, so a certified death record should be ordered from Wisconsin Vital Records / Manitowoc County. Naturalization: cert. F-855, Circuit Court, Manitowoc Co. Birthplace: Svatý Štěpán (osada of Bylnice), parish Brumov na Vláře, Moravia, MZA Brno book 4021 s.151, house 160 (see 14 Aug 2026 below). The 1912 Galveston manifest naming Hovorany is a different man and has been detached.</p><p>13 Aug 2026 IDENTITY / BIRTHPLACE CORRECTION: The Galveston 8 Dec 1912 S.S. Rhein Petr Konečný from Hovorany (uncle Josef, miner, destination Texas) is a DIFFERENT man. Our Peter is the NY 20 Aug 1913 S.S. Kaiser Wilhelm II arrival: Petr Konečný, 19, glazier, destination Milwaukee; mother Veronika Konečny of Kosťany, Bohemia; father Jan already in US. 1920/1930 censuses give immigration year 1913. Hovorany/Hodonín should not be used as birthplace for citizenship filing. SOA Litoměřice Košťany (Teplice) N 1889–1897 sign. 76/2 was read for June 1893 — no Petr Konečný / no Jan+Veronika. Next: Teplice-area neighbor parishes and other Bohemian Košťany. Do not order MZA Brno Hovorany extract for this person.</p><p>13 Aug 2026 PETITION 855 / NATURALIZATION PAPERS (FamilySearch, Wisconsin naturalization records vol. 5, images img569-img571; all three images uploaded to this profile&#x27;s gallery): Declaration of Intention no. 10633, Circuit Court Milwaukee Co., Wis., 14 Aug 1915 - Peter Konecny, age 22, glass blower, residence 722 14th St., Milwaukee; arrived New York 20 Aug 1913 on the Kaiser Wilhelm II; last foreign residence given as TEPLITZ (Teplice), Bohemia. Petition for Naturalization no. 855, Circuit Court Manitowoc Co., Wis., filed 28 Dec 1921 - occupation welder, residence N. 20th St., Manitowoc; wife Annie born 15 Oct 1892 Austria (tree currently shows 15 Sep 1891 Bohemia - conflict flagged, tree date NOT overwritten); one child listed: Joseph, born 1 Dec 1921 Manitowoc. Naturalized 6 Jun 1922, cert. F-855. NOTES: (1) The papers name Teplitz only as the LAST RESIDENCE before emigration - the birth VILLAGE is still unidentified and the birthplace field has deliberately NOT been changed to Teplice. (2) Hovorany is the WRONG man - the Galveston 1912 S.S. Rhein Petr Konecny from Hovorany is a different person, as noted above. (3) Joseph b. 1 Dec 1921 Manitowoc is now in the tree as I0043 (Frank b. 1924 is I0143).</p><p>13 Aug 2026 PARISH HUNT (off-Ancestry, not Ancestry collections): Hovorany RC birth book, MZA Brno sign. 5342 (1874-1919), READ for June 1893: NO Petr Konecny; surname absent from the index entirely. The Galveston 1912 Hovorany man is therefore a different Petr. SOA Litomerice, Kostany N 1889-1897 sign. 76/2, READ for June 1893: no Petr Konecny. Also READ and NEGATIVE for June 1893 (Catholic): Strelna 76/3; Jenikov 67/16; Hrob 53/9; Krupka 83/27; Dubi 128/37; Bohosudov 10/12; Kostomlaty 75/8; Duchcov 36/14 and 36/15 K-index; Teplice deanery index 162/M K 1893; Osek 131/B K 1893; Frycovice/Fritschowitz church books (FamilySearch) June 1893 - the Otilie b. 2 Jul 1893 there is to Ludvik x Veronika Sugar, NOT our family. Corroborating: 1913 New York manifest gives mother Veronika, Kostany, Bohemia; Declaration of Intention gives last residence Teplitz. CONCLUSION: birth village still unidentified; 28 Jun 1893 Hovorany birthplace remains unproven and no parish register entry has been located to date.</p><p>Teplitz Adressbuch: 1914 (MOB id/1625) OCR entire volume — no Konecny. 1873 (id/1712) and 1885 (id/1715) in-document search — no Konecny. 1909–1913 not digitized. House/business lists, not full residents. Source attached: https://digital.martin-opitz-bibliothek.de/detailseite/id/1625/page</p><p>Gebert 1912 (Kramerius uuid ea2d5b4e-a15e-4b5b-8793-dbd7d554030f): Gemeinde Kosten house-owner list pp.57-62 — no Konecny. Glassworks present (Glashütte der Gewerkschaft Kosten, Elisabeth, Josefhütte). Tenants not listed. Weigend Teplitz-Schönau 1912 (Ancestry 30937) also no Konecny (Kompert→Konkol). Directories 1873/1885/1912/1914 exhausted for named Konecny.</p><p>14 Aug 2026: Birth village is Svaty Stepan / Bylnice (osada of Bylnice, parish Brumov na Vlare), MZA Brno book 4021 s.151 house 160 — NOT Hovorany. 28 Jun 1893 date left locked. Lidecko / Jan ~1832 parked. Sebak wedding still OPEN.</p>",
    "id": "N0169",
    "preformatted": false,
    "provenance": [],
    "review": "unreviewed",
    "tags": [],
-   "text": "Death 28 Feb 1936 established from Find a Grave (Evergreen Cemetery, Manitowoc, WI; spou se Anna) plus a 26 Feb 1936 Two Rivers Reporter item \"Peter Konecny of Manitowoc Dead\" (Wisconsin Newspapers.com Stories & Events Index) — both attached. Exact death place not yet confirmed by a certificate; Wisconsin's pre-1959 death index is not on Ancestry, so a certified death record should be ordered from Wisconsin Vital Records / Manitowoc County. Naturalization: cert. F-855, Circuit Court, Manitowoc Co. Birthplace Hovorany, Hodonín, Moravia per 1912 Galveston manifest.\n\n13 Aug 2026 IDENTITY / BIRTHPLACE CORRECTION: The Galveston 8 Dec 1912 S.S. Rhein Petr Konečný from Hovorany (uncle Josef, miner, destination Texas) is a DIFFERENT man. Our Peter is the NY 20 Aug 1913 S.S. Kaiser Wilhelm II arrival: Petr Konečný, 19, glazier, destination Milwaukee; mother Veronika Konečny of Kosťany, Bohemia; father Jan already in US. 1920/1930 censuses give immigration year 1913. Hovorany/Hodonín should not be used as birthplace for citizenship filing. SOA Litoměřice Košťany (Teplice) N 1889–1897 sign. 76/2 was read for June 1893 — no Petr Konečný / no Jan+Veronika. Next: Teplice-area neighbor parishes and other Bohemian Košťany. Do not order MZA Brno Hovorany extract for this person.\n\n13 Aug 2026 PETITION 855 / NATURALIZATION PAPERS (FamilySearch, Wisconsin naturalization records vol. 5, images img569-img571; all three images uploaded to this profile's gallery): Declaration of Intention no. 10633, Circuit Court Milwaukee Co., Wis., 14 Aug 1915 - Peter Konecny, age 22, glass blower, residence 722 14th St., Milwaukee; arrived New York 20 Aug 1913 on the Kaiser Wilhelm II; last foreign residence given as TEPLITZ (Teplice), Bohemia. Petition for Naturalization no. 855, Circuit Court Manitowoc Co., Wis., filed 28 Dec 1921 - occupation welder, residence N. 20th St., Manitowoc; wife Annie born 15 Oct 1892 Austria (tree currently shows 15 Sep 1891 Bohemia - conflict flagged, tree date NOT overwritten); one child listed: Joseph, born 1 Dec 1921 Manitowoc. Naturalized 6 Jun 1922, cert. F-855. NOTES: (1) The papers name Teplitz only as the LAST RESIDENCE before emigration - the birth VILLAGE is still unidentified and the birthplace field has deliberately NOT been changed to Teplice. (2) Hovorany is the WRONG man - the Galveston 1912 S.S. Rhein Petr Konecny from Hovorany is a different person, as noted above. (3) Joseph b. 1 Dec 1921 Manitowoc is NOT added as a profile this pass, pending confirmation (Frank b. 1924 is the child already in the tree).\n\n13 Aug 2026 PARISH HUNT (off-Ancestry, not Ancestry collections): Hovorany RC birth book, MZA Brno sign. 5342 (1874-1919), READ for June 1893: NO Petr Konecny; surname absent from the index entirely. The Galveston 1912 Hovorany man is therefore a different Petr. SOA Litomerice, Kostany N 1889-1897 sign. 76/2, READ for June 1893: no Petr Konecny. Also READ and NEGATIVE for June 1893 (Catholic): Strelna 76/3; Jenikov 67/16; Hrob 53/9; Krupka 83/27; Dubi 128/37; Bohosudov 10/12; Kostomlaty 75/8; Duchcov 36/14 and 36/15 K-index; Teplice deanery index 162/M K 1893; Osek 131/B K 1893; Frycovice/Fritschowitz church books (FamilySearch) June 1893 - the Otilie b. 2 Jul 1893 there is to Ludvik x Veronika Sugar, NOT our family. Corroborating: 1913 New York manifest gives mother Veronika, Kostany, Bohemia; Declaration of Intention gives last residence Teplitz. CONCLUSION: birth village still unidentified; 28 Jun 1893 Hovorany birthplace remains unproven and no parish register entry has been located to date.\n\nTeplitz Adressbuch: 1914 (MOB id/1625) OCR entire volume — no Konecny. 1873 (id/1712) and 1885 (id/1715) in-document search — no Konecny. 1909–1913 not digitized. House/business lists, not full residents. Source attached: https://digital.martin-opitz-bibliothek.de/detailseite/id/1625/page\n\nGebert 1912 (Kramerius uuid ea2d5b4e-a15e-4b5b-8793-dbd7d554030f): Gemeinde Kosten house-owner list pp.57-62 — no Konecny. Glassworks present (Glashütte der Gewerkschaft Kosten, Elisabeth, Josefhütte). Tenants not listed. Weigend Teplitz-Schönau 1912 (Ancestry 30937) also no Konecny (Kompert→Konkol). Directories 1873/1885/1912/1914 exhausted for named Konecny.\n\n14 Aug 2026: Birth village is Svaty Stepan / Bylnice (osada of Bylnice, parish Brumov na Vlare), MZA Brno book 4021 s.151 house 160 — NOT Hovorany. 28 Jun 1893 date left locked. Lidecko / Jan ~1832 parked. Sebak wedding still OPEN.",
+   "text": "Death 28 Feb 1936 established from Find a Grave (Evergreen Cemetery, Manitowoc, WI; spouse Anna) plus a 26 Feb 1936 Two Rivers Reporter item \"Peter Konecny of Manitowoc Dead\" (Wisconsin Newspapers.com Stories & Events Index) — both attached. Exact death place not yet confirmed by a certificate; Wisconsin's pre-1959 death index is not on Ancestry, so a certified death record should be ordered from Wisconsin Vital Records / Manitowoc County. Naturalization: cert. F-855, Circuit Court, Manitowoc Co. Birthplace: Svatý Štěpán (osada of Bylnice), parish Brumov na Vláře, Moravia, MZA Brno book 4021 s.151, house 160 (see 14 Aug 2026 below). The 1912 Galveston manifest naming Hovorany is a different man and has been detached.\n\n13 Aug 2026 IDENTITY / BIRTHPLACE CORRECTION: The Galveston 8 Dec 1912 S.S. Rhein Petr Konečný from Hovorany (uncle Josef, miner, destination Texas) is a DIFFERENT man. Our Peter is the NY 20 Aug 1913 S.S. Kaiser Wilhelm II arrival: Petr Konečný, 19, glazier, destination Milwaukee; mother Veronika Konečny of Kosťany, Bohemia; father Jan already in US. 1920/1930 censuses give immigration year 1913. Hovorany/Hodonín should not be used as birthplace for citizenship filing. SOA Litoměřice Košťany (Teplice) N 1889–1897 sign. 76/2 was read for June 1893 — no Petr Konečný / no Jan+Veronika. Next: Teplice-area neighbor parishes and other Bohemian Košťany. Do not order MZA Brno Hovorany extract for this person.\n\n13 Aug 2026 PETITION 855 / NATURALIZATION PAPERS (FamilySearch, Wisconsin naturalization records vol. 5, images img569-img571; all three images uploaded to this profile's gallery): Declaration of Intention no. 10633, Circuit Court Milwaukee Co., Wis., 14 Aug 1915 - Peter Konecny, age 22, glass blower, residence 722 14th St., Milwaukee; arrived New York 20 Aug 1913 on the Kaiser Wilhelm II; last foreign residence given as TEPLITZ (Teplice), Bohemia. Petition for Naturalization no. 855, Circuit Court Manitowoc Co., Wis., filed 28 Dec 1921 - occupation welder, residence N. 20th St., Manitowoc; wife Annie born 15 Oct 1892 Austria (tree currently shows 15 Sep 1891 Bohemia - conflict flagged, tree date NOT overwritten); one child listed: Joseph, born 1 Dec 1921 Manitowoc. Naturalized 6 Jun 1922, cert. F-855. NOTES: (1) The papers name Teplitz only as the LAST RESIDENCE before emigration - the birth VILLAGE is still unidentified and the birthplace field has deliberately NOT been changed to Teplice. (2) Hovorany is the WRONG man - the Galveston 1912 S.S. Rhein Petr Konecny from Hovorany is a different person, as noted above. (3) Joseph b. 1 Dec 1921 Manitowoc is now in the tree as I0043 (Frank b. 1924 is I0143).\n\n13 Aug 2026 PARISH HUNT (off-Ancestry, not Ancestry collections): Hovorany RC birth book, MZA Brno sign. 5342 (1874-1919), READ for June 1893: NO Petr Konecny; surname absent from the index entirely. The Galveston 1912 Hovorany man is therefore a different Petr. SOA Litomerice, Kostany N 1889-1897 sign. 76/2, READ for June 1893: no Petr Konecny. Also READ and NEGATIVE for June 1893 (Catholic): Strelna 76/3; Jenikov 67/16; Hrob 53/9; Krupka 83/27; Dubi 128/37; Bohosudov 10/12; Kostomlaty 75/8; Duchcov 36/14 and 36/15 K-index; Teplice deanery index 162/M K 1893; Osek 131/B K 1893; Frycovice/Fritschowitz church books (FamilySearch) June 1893 - the Otilie b. 2 Jul 1893 there is to Ludvik x Veronika Sugar, NOT our family. Corroborating: 1913 New York manifest gives mother Veronika, Kostany, Bohemia; Declaration of Intention gives last residence Teplitz. CONCLUSION: birth village still unidentified; 28 Jun 1893 Hovorany birthplace remains unproven and no parish register entry has been located to date.\n\nTeplitz Adressbuch: 1914 (MOB id/1625) OCR entire volume — no Konecny. 1873 (id/1712) and 1885 (id/1715) in-document search — no Konecny. 1909–1913 not digitized. House/business lists, not full residents. Source attached: https://digital.martin-opitz-bibliothek.de/detailseite/id/1625/page\n\nGebert 1912 (Kramerius uuid ea2d5b4e-a15e-4b5b-8793-dbd7d554030f): Gemeinde Kosten house-owner list pp.57-62 — no Konecny. Glassworks present (Glashütte der Gewerkschaft Kosten, Elisabeth, Josefhütte). Tenants not listed. Weigend Teplitz-Schönau 1912 (Ancestry 30937) also no Konecny (Kompert→Konkol). Directories 1873/1885/1912/1914 exhausted for named Konecny.\n\n14 Aug 2026: Birth village is Svaty Stepan / Bylnice (osada of Bylnice, parish Brumov na Vlare), MZA Brno book 4021 s.151 house 160 — NOT Hovorany. 28 Jun 1893 date left locked. Lidecko / Jan ~1832 parked. Sebak wedding still OPEN.",
    "type": "Person Note"
   },
   "N0170": {
@@ -131877,9 +131797,7 @@
     "type": "Birth Name"
    },
    "notes": [],
-   "parents": [
-    "F0160"
-   ],
+   "parents": [],
    "provenance": [
     "import-ancestry-2026-10-25"
    ],
@@ -131973,9 +131891,7 @@
     "type": "Birth Name"
    },
    "notes": [],
-   "parents": [
-    "F0160"
-   ],
+   "parents": [],
    "provenance": [
     "import-ancestry-2026-10-25"
    ],
@@ -132151,7 +132067,7 @@
     "type": "Birth",
     "year": 1815
    },
-   "change": 1793478603,
+   "change": 1793481955,
    "citations": [
     "C1183"
    ],
@@ -132239,7 +132155,7 @@
     "N1702"
    ],
    "parents": [
-    "F0161"
+    "F0019"
    ],
    "provenance": [
     "agent-karel",
@@ -132965,7 +132881,7 @@
     "type": "Birth",
     "year": 1787
    },
-   "change": 1793478603,
+   "change": 1793481955,
    "citations": [],
    "death": {
     "date": {
@@ -133022,8 +132938,7 @@
     }
    ],
    "families": [
-    "F0019",
-    "F0161"
+    "F0019"
    ],
    "flags": [
     "agent-proposed"
@@ -140622,7 +140537,7 @@
     "type": "Birth",
     "year": 1694
    },
-   "change": 1793043729,
+   "change": 1793481956,
    "citations": [],
    "death": {
     "date": {
@@ -140679,7 +140594,7 @@
    },
    "notes": [],
    "parents": [
-    "F0163"
+    "F0067"
    ],
    "provenance": [
     "import-ancestry-2026-10-25"
@@ -140794,7 +140709,7 @@
     "type": "Birth",
     "year": 1666
    },
-   "change": 1793043729,
+   "change": 1793481956,
    "citations": [],
    "death": {
     "date": {
@@ -140828,8 +140743,7 @@
    ],
    "families": [
     "F0067",
-    "F0068",
-    "F0163"
+    "F0068"
    ],
    "flags": [],
    "gender": "M",
@@ -142653,8 +142567,7 @@
     }
    ],
    "families": [
-    "F0078",
-    "F0160"
+    "F0078"
    ],
    "flags": [],
    "gender": "F",
