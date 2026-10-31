@@ -46,6 +46,7 @@ import re
 import shutil
 import sys
 import time
+import unicodedata
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -678,6 +679,11 @@ def name_of(p: dict) -> dict:
     }
 
 
+def fold_name(t: str) -> str:
+    """lower case, diacritics stripped: 'Konečný' and 'Konecny' match each other"""
+    return "".join(c for c in unicodedata.normalize("NFKD", t or "") if not unicodedata.combining(c)).lower()
+
+
 def alt_names_of(p: dict) -> list[dict]:
     out = []
     for n in p.get("alternate_names", []) or []:
@@ -855,18 +861,34 @@ class Exporter:
         obj = self.idx.by_table[table].get(h)
         return bool(obj) and self.ov.has("withhold", obj)
 
+    @staticmethod
+    def _name_keys(p: dict) -> set:
+        """lower-case 'first surname' and 'first-given-name surname' for every name a person goes by"""
+        keys = set()
+        for nm in [name_of(p)] + alt_names_of(p):
+            first, sur = (nm.get("first") or "").strip(), (nm.get("surname") or "").strip()
+            if len(first) < 2 or len(sur) < 2:
+                continue
+            for given in {first, first.split()[0]}:
+                keys.add(fold_name(f"{given} {sur}"))
+        return keys
+
     def living_name_patterns(self) -> list:
-        """(regex, person id) for every name a living or excluded person goes by: first + surname, first given name + surname"""
-        pats = {}
+        """(regex, person id) for the names of living/excluded people. A name that a published (deceased) person
+        also carries is skipped — text can't tell namesakes apart — and listed in the report instead."""
+        dead = set()
+        for h, st in self.status.items():
+            if st == "full":
+                dead |= self._name_keys(self.idx.people[h])
+        pats, self.namesakes = {}, []
         for h in self.living_set | self.excluded_set:
             p = self.idx.people[h]
-            for nm in [name_of(p)] + alt_names_of(p):
-                first, sur = (nm.get("first") or "").strip(), (nm.get("surname") or "").strip()
-                if len(first) < 2 or len(sur) < 2:
-                    continue
-                for given in {first, first.split()[0]}:
-                    pats[f"{given} {sur}".lower()] = p.get("gramps_id")
-        return [(re.compile(r"(?<!\w)" + re.escape(k).replace(r"\ ", r"\s+") + r"(?!\w)"), v) for k, v in pats.items()]
+            for k in self._name_keys(p):
+                if k in dead:
+                    self.namesakes.append((p.get("gramps_id"), k))
+                else:
+                    pats[k] = p.get("gramps_id")
+        return [(re.compile(r"(?<!\w)" + r"\s+".join(map(re.escape, k.split())) + r"(?!\w)"), v) for k, v in pats.items()]
 
     def compute_inclusion(self):
         inc = self.included
@@ -1056,7 +1078,7 @@ class Exporter:
         for nh in note_refs:
             n = self.idx.notes.get(nh)
             if n and not n.get("private") and not self.withheld("notes", nh):
-                low = plain_text(n.get("text")).lower()
+                low = fold_name(plain_text(n.get("text")))
                 hit = next((pid for rx, pid in name_pats if rx.search(low)), None)
                 if hit and not self.ov.has("public_text", n):
                     self.notes_held.append((n.get("gramps_id"), hit))
@@ -1618,8 +1640,11 @@ class Exporter:
         held = getattr(self, "notes_held", [])
         if held:
             r.warn(f"{len(held)} notes held back because they name a living/excluded person (edit the note, or list it in "
-                   "overrides.public_text if naming them is fine): "
-                   + "; ".join(f"{n} names {p}" for n, p in held[:40]) + (" …" if len(held) > 40 else ""))
+                   "overrides.public_text if naming them is fine): " + "; ".join(f"{n} names {p}" for n, p in sorted(held)))
+        same = getattr(self, "namesakes", [])
+        if same:
+            r.warn("not checked in note text, because a deceased person has the same name (namesakes): "
+                   + "; ".join(f"{p} '{k}'" for p, k in sorted(same)))
         if hits:
             r.warn("published text may name living/excluded people (review, then overrides.withhold if needed): "
                    + "; ".join(hits[:30]) + (" …" if len(hits) > 30 else ""))
