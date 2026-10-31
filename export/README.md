@@ -36,7 +36,7 @@ Exit codes: 0 fine · 1 dry run found leak-audit problems · 2 login/API error �
 }
 ```
 
-Precedence per person: `exclude` → private flag → `deceased` → `living` → Gramps' own probably-alive verdict (`GET /api/living/{handle}`, max age 110, overridable with `--max-age`). `public_media` forces a file public; `withhold` keeps any event, citation, note or media object off the site regardless of other rules. A note whose text names a living or excluded person (first name + surname, any of their names) is held back automatically and listed in the report's warnings; `public_text` releases one after you have read it.
+Precedence per person: `exclude` → private flag → `deceased` → `living` → Gramps' own probably-alive verdict (`GET /api/living/{handle}`, max age 110, overridable with `--max-age`). `public_media` forces a file public; `withhold` keeps any family, event, citation, note or media object off the site regardless of other rules. A note whose text names a living or excluded person (first name + surname, any of their names) is held back automatically and listed in the report's warnings; `public_text` releases one after you have read it.
 
 ## 3. What the rules do (short form)
 

@@ -885,7 +885,7 @@ class Exporter:
     def classify_families(self):
         c = collections.Counter()
         for h, f in self.idx.families.items():
-            if f.get("private"):
+            if f.get("private") or self.ov.has("withhold", f):     # overrides.withhold works for families too
                 st = "excluded"
             else:
                 partners = [x for x in (f.get("father_handle"), f.get("mother_handle")) if x]
