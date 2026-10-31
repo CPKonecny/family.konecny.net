@@ -1,0 +1,376 @@
+{
+  "title": "Family stories",
+  "summary": "Soldiers, sea voyages, Czech villages, the work our people did, and the famous cousins we share ancestors with. Every story here comes from a real record or a published book; anything not yet proven is marked family claim or possible.",
+  "sections": [
+    {
+      "status": "confirming",
+      "id": "military",
+      "heading": "Military",
+      "kind": "entries",
+      "entries": [
+        {
+          "lead": "1776",
+          "title": "Philip Wood, Private, Revolutionary War",
+          "detail": "Marched from Rehoboth to Bristol, R.I., on the alarm of 8 Dec 1776, Capt. Stephen Bullock's company, Col. Thomas Carpenter's regiment, 16 days. Source: Massachusetts Soldiers and Sailors of the Revolutionary War, vol. 17, p. 766 (1908), archive.org/details/masssoldiers17bostrich; also Cabot, Annals of Brattleboro 1:159.",
+          "status": "Proven"
+        },
+        {
+          "lead": "1777",
+          "title": "A Philip Wood listed as deserted, Slade's Ferry",
+          "detail": "Same book, same page. Nothing shows this is our Philip; it may be another man.",
+          "status": "Possible"
+        },
+        {
+          "lead": "1770s",
+          "title": "Col. Timothy Church, Vermont officer",
+          "detail": "A real Revolutionary officer of Brattleboro. That he is our Abigail Church's family is not yet proven (Cabot, Annals of Brattleboro).",
+          "status": "Possible"
+        },
+        {
+          "lead": "1917",
+          "title": "Peter Konecny, WWI draft card",
+          "detail": "Registered 5 Jun 1917, Milwaukee: 695 12th St, welder at Harley-Davidson, had declared intention to become a citizen, born Mahren (Moravia). Source: U.S. WWI Draft Registration Cards (NARA M1509), as read in our research files.",
+          "status": "Proven"
+        },
+        {
+          "lead": "1917–18",
+          "title": "William Gust Chill, WWI draft card",
+          "detail": "Chicago board 26. Machinist on a drill press at Crane Co., Kedzie Ave and 40th St. Source: WWI Draft Cards (Ancestry 6482, record 776980).",
+          "status": "Proven"
+        },
+        {
+          "lead": "1942",
+          "title": "William Gust Chill, WWII draft card",
+          "detail": "Registered 16 Feb 1942; born 1 Nov 1899, Chicago; worked for Advance Polishing Wheels. Source: WWII Draft Cards Young Men (Ancestry 2238, record 40254388).",
+          "status": "Proven"
+        },
+        {
+          "lead": "1917–45",
+          "title": "Col. Norman Bentley Wood, U.S. Army, WWI and WWII",
+          "detail": "His stone at Forest View Cemetery, Two Rivers reads: Colonel U.S. Army Ret., WWI & II, 6 Nov 1889 to 10 Sep 1950. Source: Manitowoc County Genealogy cemetery list, 2manitowoc.com/89CS.html. His service file and draft card are not pulled yet.",
+          "status": "Proven"
+        },
+        {
+          "lead": "WWII",
+          "title": "Clarence L. Chill, WWII draft card",
+          "detail": "Clarence registered for the WWII draft, which helped identify his wife Helen. Card details are in our Chill files.",
+          "status": "Proven"
+        }
+      ],
+      "after": [
+        "Still to search: Dick Toepel (1925–2015) WWII service, Oscar Toepel's draft cards, Richard O. Toepel's draft card, Ervin Hansen's WWI card, Norman Wood's WWI draft card and Army file, and Franklin Wood (b. 1916) WWII service. Free sites blocked these searches."
+      ]
+    },
+    {
+      "status": "confirming",
+      "id": "ships",
+      "heading": "Ships & Arrivals",
+      "kind": "table",
+      "columns": [
+        "Who",
+        "Ship",
+        "Arrived",
+        "Source"
+      ],
+      "rows": [
+        [
+          "Peter Konecny, age 20",
+          "Kaiser Wilhelm II, from Bremen",
+          "New York, 20 Aug 1913",
+          "Passenger list image; arrival cert. 1072798 in his naturalization papers"
+        ],
+        [
+          "John Howland and Elizabeth Tilley",
+          "Mayflower",
+          "Cape Cod, Nov 1620",
+          "Bradford, Of Plymouth Plantation"
+        ],
+        [
+          "John Jenney family (Abigail)",
+          "Little James, with the Anne",
+          "Plymouth, 1623",
+          "Plymouth Colony Records 12:5, 12:13"
+        ]
+      ],
+      "after": [
+        "Peter came over alone at 20. On the ship list he named his mother Veronika back home in Košťany, Bohemia, and said his father Jan was already in America. He was going to Milwaukee. His naturalization petition (No. 855, Manitowoc, granted 6 Jun 1922) repeats the ship and date.",
+        "Careful: another young Petr Konečný landed at Galveston on the Rhein in Dec 1912. He was a miner bound for Texas and is not our Peter.",
+        "Howland's fall overboard: during a fierce storm mid-ocean, John Howland fell into the sea. He grabbed a topsail halyard trailing in the water and was hauled back aboard. Governor William Bradford told the story in Of Plymouth Plantation; it is retold at en.wikipedia.org/wiki/John_Howland.",
+        "Without that rope there would be no Howland line, and no us on this side. Elizabeth Tilley was a teenager on the same ship and lost both parents that first winter. Read more at en.wikipedia.org/wiki/John_Howland and en.wikipedia.org/wiki/Elizabeth_Tilley.",
+        "Anna Tauber's arrival: not found yet. She was born in Mostiště (written 'Moštice' in the Radnice parish register) near Radnice, Bohemia, on 15 Sep 1891 and married Peter in Chicago on 22 Feb 1919, so she arrived before then. Source: SOA Plzeň (Porta fontium), Radnice parish register RO 32, births 1883–1909, p. 96, https://www.portafontium.eu/iipimage/30071489/radnice-ro-32_0901-n."
+      ]
+    },
+    {
+      "status": "proven",
+      "id": "villages",
+      "heading": "The Old Villages",
+      "kind": "places",
+      "caption": "Photos are from Wikimedia Commons.",
+      "places": [
+        {
+          "id": "svaty-stepan",
+          "heading": "Svatý Štěpán (Bylnice): Peter's birthplace",
+          "paragraphs": [
+            "A glassworks hamlet founded after 1815 by Count Štěpán Illésházy, owner of the Brumov estate, and named for him. The houses were workers' homes around the glass furnace, which ran until the Depression shut it in 1936. Peter Petr Pavel was born here at house 160 on 28 Jun 1893 and baptized the next day in Brumov parish. Its chapel is St. John of Nepomuk, built after 1815; the parish church is St. Wenceslas in Brumov, from the 1300s.",
+            "Birth record: MZA Brno, Acta Publica book 4021, image 151, mza.cz/actapublica/matrika/detail/300. Photo: commons.wikimedia.org/wiki/File:Svatý_Štěpán,_místní_část_města_Brumov-Bylnice.jpg (v6.jpg). Map: openstreetmap.org/?mlat=49.0453&mlon=18.0289#map=14/49.0453/18.0289"
+          ],
+          "photo": "v6.jpg",
+          "alt": "Svatý Štěpán, místní část města Brumov-Bylnice",
+          "credit": "Photo: Zvonicek, CC BY-SA 3.0, via Wikimedia Commons",
+          "credit_href": "https://commons.wikimedia.org/wiki/File:Svat%C3%BD_%C5%A0t%C4%9Bp%C3%A1n,_m%C3%ADstn%C3%AD_%C4%8D%C3%A1st_m%C4%9Bsta_Brumov-Bylnice.jpg"
+        },
+        {
+          "id": "bylnice",
+          "heading": "Bylnice",
+          "paragraphs": [
+            "First written mention 1422. Today the southern part of the town of Brumov-Bylnice, in the White Carpathians near the Slovak border. Source: cs.wikipedia.org/wiki/Bylnice. Photo: v5.jpg. Map: openstreetmap.org/?mlat=49.0769&mlon=18.0192#map=14/49.0769/18.0192"
+          ],
+          "photo": "v5.jpg",
+          "alt": "Bylnice",
+          "credit": "Photo: Pavel Hrdlička, CC BY-SA 3.0, via Wikimedia Commons",
+          "credit_href": "https://commons.wikimedia.org/wiki/File:Bylnice,_Vl%C3%A1rsk%C3%A1_str.jpg"
+        },
+        {
+          "id": "stitna",
+          "heading": "Štítná nad Vláří",
+          "paragraphs": [
+            "First mentioned in 1374, in the Vlára river valley. Its parish church of St. Joseph is a classical-style building, protected as a monument since 1958. Grandfather Jan married here and worked at the manor farm. Source: cs.wikipedia.org/wiki/Štítná_nad_Vláří-Popov. Photo: v2.jpg. Map: openstreetmap.org/?mlat=49.0695&mlon=17.9753#map=14/49.0695/17.9753"
+          ],
+          "photo": "v2.jpg",
+          "alt": "Štítná nad Vláří",
+          "credit": "Photo: Palickap, CC BY-SA 3.0, via Wikimedia Commons",
+          "credit_href": "https://commons.wikimedia.org/wiki/File:%C5%A0t%C3%ADtn%C3%A1_nad_Vl%C3%A1%C5%99%C3%AD,_celkov%C3%BD_pohled.jpg"
+        },
+        {
+          "id": "vlachovice",
+          "heading": "Vlachovice",
+          "paragraphs": [
+            "A village on the little Vlára river, about 5 km from Valašské Klobouky. Parish church of St. Michael the Archangel. Great-great-grandfather Pavel Konečný worked at the manor farm here. Source: cs.wikipedia.org/wiki/Vlachovice_(okres_Zlín). Photo: v3.jpg. Map: openstreetmap.org/?mlat=49.1238&mlon=17.9400#map=14/49.1238/17.9400"
+          ],
+          "photo": "v3.jpg",
+          "alt": "Vlachovice",
+          "credit": "Photo: Palickap, CC BY-SA 3.0, via Wikimedia Commons",
+          "credit_href": "https://commons.wikimedia.org/wiki/File:Vlachovice_(ZL),_k%C5%99i%C5%BEovatka.jpg"
+        },
+        {
+          "id": "lidecko",
+          "heading": "Lidečko",
+          "paragraphs": [
+            "First mentioned in 1424, in the Senice valley. Church of St. Catherine of Alexandria, built about 1700 on the site of a 1511 church destroyed in Tatar raids in the 1600s. Home of Marina Trchel, Pavel's wife. Source: cs.wikipedia.org/wiki/Lidečko. Photo: v1.jpg. Map: openstreetmap.org/?mlat=49.2030&mlon=18.0513#map=14/49.2030/18.0513"
+          ],
+          "photo": "v1.jpg",
+          "alt": "Lidečko",
+          "credit": "Photo: palickap, CC BY 3.0, via Wikimedia Commons",
+          "credit_href": "https://commons.wikimedia.org/wiki/File:Lide%C4%8Dko.jpg"
+        },
+        {
+          "id": "hluk",
+          "heading": "Hluk",
+          "paragraphs": [
+            "A small town first mentioned in 1294, near Uherské Hradiště, known for its old fortress (tvrz) and folk traditions. Parish church of St. Lawrence. Peter's birth record calls his grandfather Jan a servant at the lord's farm in Hluk. Source: cs.wikipedia.org/wiki/Hluk_(okres_Uherské_Hradiště). Photo of the fortress: v4.jpg. Map: openstreetmap.org/?mlat=48.9881&mlon=17.5267#map=14/48.9881/17.5267"
+          ],
+          "photo": "v4.jpg",
+          "alt": "The fortress at Hluk",
+          "credit": "Photo: Rios, CC BY-SA 4.0, via Wikimedia Commons",
+          "credit_href": "https://commons.wikimedia.org/wiki/File:Hluk_tvrz.JPG"
+        }
+      ]
+    },
+    {
+      "status": "confirming",
+      "id": "work",
+      "heading": "What They Did for a Living",
+      "kind": "table",
+      "columns": [
+        "Who",
+        "Recorded work",
+        "Source"
+      ],
+      "rows": [
+        [
+          "Peter Konecny",
+          "Glazier (1913), glass blower (1915), welder at Harley-Davidson (1917), welder in Manitowoc (1921)",
+          "Ship list, declaration 10633, draft card, petition 855"
+        ],
+        [
+          "Jan Konečný (b. ~1867)",
+          "Day laborer (1893), glassworks helper (1895), Svatý Štěpán",
+          "Book 4021, images 151 and 165"
+        ],
+        [
+          "Jan Konečný of Hluk (b. ~1832)",
+          "Servant at the lord's manor farm (Hluk; Štítná at his wedding)",
+          "Book 4021 image 151; Štítná marriage"
+        ],
+        [
+          "Pavel Konečný",
+          "Manor farm servant at Vlachovice (named as dead at son's wedding)",
+          "Štítná marriage record"
+        ],
+        [
+          "František Šebák",
+          "Cottager (domkař), Štítná / Hluk",
+          "Book 4021 image 151"
+        ],
+        [
+          "Jiří Kadlec",
+          "Day laborer, Svatý Štěpán",
+          "Book 4021 image 151"
+        ],
+        [
+          "Jiří Kostka",
+          "Hill-clearing farmer (pasekář), Svatý Štěpán",
+          "Book 4021 image 151"
+        ],
+        [
+          "Jan Taubr (Anna's father)",
+          "Coal miner (havíř), Moštice (Mostiště)",
+          "Radnice births 32, p. 96 (Porta fontium)"
+        ],
+        [
+          "Tomáš Taubr",
+          "Blacksmith, Moštice (Mostiště)",
+          "Same record"
+        ],
+        [
+          "Samuel Wood",
+          "Oath commissioner (14 Jan 1838, Shefford); Justice of the Peace (20 Dec 1838, Farnham)",
+          "Quebec Almanack 1840, canadiana.ca/view/oocihm.29519"
+        ],
+        [
+          "Franklin Wood",
+          "Landowner who opened a street in Granby (1860)",
+          "SHHY, La toponymie de Granby, shhy.info"
+        ],
+        [
+          "Col. Norman B. Wood",
+          "Career U.S. Army officer",
+          "Forest View stone, 2manitowoc.com/89CS.html"
+        ]
+      ],
+      "after": [
+        "Life at the glassworks: whole families lived in company houses beside the furnace. Men worked in heat and smoke making window and table glass, and boys started young as helpers. Peter grew up in that trade, so it makes sense he arrived as a glazier and later welded.",
+        "Life as a manor servant: under the old estate system, landless men worked the lord's farm for wages and keep. A cottager owned a small house but little land, and a pasekář farmed steep cleared hillsides. It was a hard, poor life, and a big reason so many young people left for America.",
+        "The phrase herrschaftlicher Knecht (lord's farmhand) for Pavel is a family claim from the German-language summary; the Czech wedding record says služebný v panském dvoře, which means the same thing. His own marriage to Marina Trchel has not been found."
+      ]
+    },
+    {
+      "status": "confirming",
+      "id": "cousins",
+      "heading": "Famous Cousins",
+      "kind": "cousins",
+      "callout": {
+        "lead": "How cousins work",
+        "text": "We are not descended from these people. We share an ancestor with them, often 10 to 14 generations back, which makes them very distant cousins."
+      },
+      "groups": [
+        [
+          {
+            "label": "Shared ancestors",
+            "value": "John Howland and Elizabeth Tilley, Mayflower 1620"
+          },
+          {
+            "label": "Our line",
+            "value": "Their daughter Hope Howland m. John Chipman, then down to Hannah Nelson, who m. Jabez Wood in 1720, then the Woods to Marjorie June Wood, Frank's wife"
+          },
+          {
+            "label": "Famous cousins",
+            "value": "Presidents George H. W. Bush and George W. Bush; poets Ralph Waldo Emerson and Henry Wadsworth Longfellow; actors Humphrey Bogart, Alec Baldwin, Chevy Chase, John Lithgow, Christopher Lloyd"
+          },
+          {
+            "label": "Source",
+            "value": "Wikipedia, John Howland, Notable descendants (en.wikipedia.org/wiki/John_Howland)"
+          }
+        ],
+        [
+          {
+            "label": "Shared ancestor",
+            "value": "Alice Freeman Thompson Parke (about 1595–1664), Connecticut, a proven royal-descent gateway"
+          },
+          {
+            "label": "Our line",
+            "value": "Parke, Larrabee, Safford, Whipple, Church, Wood. One step (Elizabeth Whipple to Abigail Church) rests on a compiled source only, so this cousinship is possible, not proven."
+          },
+          {
+            "label": "Famous cousins",
+            "value": "Katharine Hepburn, Julia Child, Edgar Rice Burroughs, Thomas Pynchon, President Warren G. Harding, Gen. George B. McClellan, Cyrus McCormick, Nelson and David Rockefeller, and Diana, Princess of Wales"
+          },
+          {
+            "label": "Source",
+            "value": "Gary Boyd Roberts, Notable Kin column no. 68, Notable Descendants of Mrs. Alice Freeman Thompson Parke (American Ancestors / NEHGS); Roberts, Royal Descents of 900 Immigrants (2022)"
+          }
+        ]
+      ]
+    }
+  ],
+  "still": {
+    "status": "confirming",
+    "id": "still",
+    "heading": "Still looking for",
+    "entries": [
+      {
+        "title": "Anna Tauber's ship and arrival date",
+        "detail": "Search Ellis Island and Baltimore lists, 1905–1919"
+      },
+      {
+        "title": "Peter's father Jan's own arrival",
+        "detail": "He was in the U.S. by 1913"
+      },
+      {
+        "title": "Toepel, Hansen and Wood WWI/WWII draft cards",
+        "detail": "Dick, Oscar and Richard Toepel; Ervin Hansen; Norman and Franklin Wood"
+      },
+      {
+        "title": "Norman B. Wood's Army service record",
+        "detail": "NARA, St. Louis"
+      },
+      {
+        "title": "Pavel Konečný × Marina Trchel marriage",
+        "detail": "Not in Vlachovice, Brumov or Lidečko books read so far"
+      },
+      {
+        "title": "Proof Abigail Church is daughter of Reuben Church × Elizabeth Whipple",
+        "detail": "The one link holding back the Alice Freeman line"
+      },
+      {
+        "title": "O'Regan (Louisville) and Morris stories",
+        "detail": "Nothing filed yet"
+      }
+    ]
+  },
+  "further": {
+    "heading": "Where to read more",
+    "links": [
+      {
+        "title": "Our family site",
+        "site": "family.konecny.net",
+        "href": "https://family.konecny.net/"
+      },
+      {
+        "title": "Peter's birth book 4021",
+        "site": "MZA Brno Acta Publica",
+        "href": "https://www.mza.cz/actapublica/matrika/detail/300"
+      },
+      {
+        "title": "Massachusetts Soldiers and Sailors, vol. 17",
+        "site": "Internet Archive",
+        "href": "https://archive.org/details/masssoldiers17bostrich"
+      },
+      {
+        "title": "Quebec Almanack 1840 (Samuel Wood)",
+        "site": "Canadiana",
+        "href": "https://www.canadiana.ca/view/oocihm.29519"
+      },
+      {
+        "title": "John Howland",
+        "site": "Wikipedia",
+        "href": "https://en.wikipedia.org/wiki/John_Howland"
+      },
+      {
+        "title": "Forest View Cemetery list",
+        "site": "Manitowoc County Genealogy",
+        "href": "http://www.2manitowoc.com/89CS.html"
+      }
+    ]
+  }
+}

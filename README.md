@@ -7,7 +7,7 @@ export/      gramps_export.py (runs on the server), overrides.json, publish.sh, 
 data/        bundle.json + report.md — written by the export, committed by the server, never by hand
 media/       public media files + thumbnails — same
 site/        build.py, config.json, templates/, static/ — the generator
-content/     about.md, open-questions.md — the only hand-written pages
+content/     about.md, open-questions.md, stories/ — hand-written (the export never writes here; see content/stories/README.md)
 tools/       log_to_open_questions.py — research log → content/open-questions.md
 .github/     Pages workflow: on every push to main, build _site/ and deploy
 CNAME        family.konecny.net
@@ -29,7 +29,7 @@ Without `data/bundle.json` the build produces a placeholder site, so Pages and D
 
 ## What the site shows
 
-Everything comes from `data/bundle.json` (schema in `Konecny_Site_Bundle_Schema`). Living people are name and relationships only; private objects never reach the bundle; record images from Ancestry/FamilySearch are linked to the family login, not copied; every fact shows its citations ranked by tier and its review state as tagged in Gramps.
+Everything on the person, family, place and source pages comes from `data/bundle.json` (schema in `Konecny_Site_Bundle_Schema`). Living people are name and relationships only; private objects never reach the bundle; record images from Ancestry/FamilySearch are linked to the family login, not copied; every fact shows its citations ranked by tier and its review state as tagged in Gramps. Family stories are the exception: hand-written pages in `content/stories/`, built with the rest of the site and never touched by the export.
 
 ## Roadmap
 
