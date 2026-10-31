@@ -95,7 +95,7 @@
         alt="{{ place.alt }}"
         {% if place.width %}width="{{ place.width }}" height="{{ place.height }}"{% endif %}
         loading="lazy" decoding="async">
-      {% if place.credit %}<figcaption>{{ place.credit|story }}</figcaption>{% endif %}
+      {% if place.credit %}<figcaption>{% if place.credit_href %}<a href="{{ place.credit_href }}">{{ place.credit }}</a>{% else %}{{ place.credit|story }}{% endif %}</figcaption>{% endif %}
     </figure>
     {% endif %}
     {% for para in place.paragraphs %}

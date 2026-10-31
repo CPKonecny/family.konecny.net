@@ -265,6 +265,7 @@ details.ev summary::before { content: "+ "; }
 .village figure { margin: 10px 0 12px; }
 .village img { width: 100%; height: auto; border-radius: 4px; border: 1px solid var(--rule); display: block; background: var(--card); }
 .village figcaption { margin-top: 6px; font-size: 0.85rem; color: var(--muted); overflow-wrap: anywhere; }
+.village figcaption a { color: inherit; }
 .morelinks { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
 .morelinks a { font-family: var(--display); font-weight: 700; color: var(--ink); text-decoration: none; }
 .morelinks a:hover { text-decoration: underline; }

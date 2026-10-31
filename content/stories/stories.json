@@ -116,7 +116,8 @@
           ],
           "photo": "v6.jpg",
           "alt": "Svatý Štěpán, místní část města Brumov-Bylnice",
-          "credit": "Photo: commons.wikimedia.org/wiki/File:Svatý_Štěpán,_místní_část_města_Brumov-Bylnice.jpg (v6.jpg)"
+          "credit": "Photo: Zvonicek, CC BY-SA 3.0, via Wikimedia Commons",
+          "credit_href": "https://commons.wikimedia.org/wiki/File:Svat%C3%BD_%C5%A0t%C4%9Bp%C3%A1n,_m%C3%ADstn%C3%AD_%C4%8D%C3%A1st_m%C4%9Bsta_Brumov-Bylnice.jpg"
         },
         {
           "id": "bylnice",
@@ -126,7 +127,8 @@
           ],
           "photo": "v5.jpg",
           "alt": "Bylnice",
-          "credit": "Photo: v5.jpg"
+          "credit": "Photo: Pavel Hrdlička, CC BY-SA 3.0, via Wikimedia Commons",
+          "credit_href": "https://commons.wikimedia.org/wiki/File:Bylnice,_Vl%C3%A1rsk%C3%A1_str.jpg"
         },
         {
           "id": "stitna",
@@ -136,7 +138,8 @@
           ],
           "photo": "v2.jpg",
           "alt": "Štítná nad Vláří",
-          "credit": "Photo: v2.jpg"
+          "credit": "Photo: Palickap, CC BY-SA 3.0, via Wikimedia Commons",
+          "credit_href": "https://commons.wikimedia.org/wiki/File:%C5%A0t%C3%ADtn%C3%A1_nad_Vl%C3%A1%C5%99%C3%AD,_celkov%C3%BD_pohled.jpg"
         },
         {
           "id": "vlachovice",
@@ -146,7 +149,8 @@
           ],
           "photo": "v3.jpg",
           "alt": "Vlachovice",
-          "credit": "Photo: v3.jpg"
+          "credit": "Photo: Palickap, CC BY-SA 3.0, via Wikimedia Commons",
+          "credit_href": "https://commons.wikimedia.org/wiki/File:Vlachovice_(ZL),_k%C5%99i%C5%BEovatka.jpg"
         },
         {
           "id": "lidecko",
@@ -156,7 +160,8 @@
           ],
           "photo": "v1.jpg",
           "alt": "Lidečko",
-          "credit": "Photo: v1.jpg"
+          "credit": "Photo: palickap, CC BY 3.0, via Wikimedia Commons",
+          "credit_href": "https://commons.wikimedia.org/wiki/File:Lide%C4%8Dko.jpg"
         },
         {
           "id": "hluk",
@@ -166,7 +171,8 @@
           ],
           "photo": "v4.jpg",
           "alt": "The fortress at Hluk",
-          "credit": "Photo of the fortress: v4.jpg"
+          "credit": "Photo: Rios, CC BY-SA 4.0, via Wikimedia Commons",
+          "credit_href": "https://commons.wikimedia.org/wiki/File:Hluk_tvrz.JPG"
         }
       ]
     },
