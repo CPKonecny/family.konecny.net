@@ -77,6 +77,9 @@ CITATION_ATTRS = {
     "Proposal file": "proposal_file",
 }
 PERSON_XREF_ATTRS = {"Ancestry ID": "ancestry", "RM RIN": "rm_rin"}
+# notes that are tool output, not research: never published
+HIDDEN_NOTE_TYPES = {"gedcom import", "gramps import", "import"}
+IMPORT_LOG_START = ("records not imported into", "gedcom import report")
 RECORD_IMAGE_HINTS = ("ancestry", "familysearch", "family tree_media", "records/")
 MOD = {0: None, 1: "before", 2: "after", 3: "about", 4: "between", 5: "from-to",
        6: "text", 7: "from", 8: "to"}
@@ -684,6 +687,33 @@ def fold_name(t: str) -> str:
     return "".join(c for c in unicodedata.normalize("NFKD", t or "") if not unicodedata.combining(c)).lower()
 
 
+def is_tool_note(n: dict) -> bool:
+    """GEDCOM/Gramps import reports and similar tool output, attached to whoever was the default person"""
+    if (typestr(n.get("type")) or "").lower() in HIDDEN_NOTE_TYPES:
+        return True
+    head = plain_text(n.get("text")).lstrip().lower()[:60]
+    return head.startswith(IMPORT_LOG_START)
+
+
+_ENTITY = re.compile(r"&(amp|apos|quot|lt|gt|nbsp|#\d+|#x[0-9a-f]+);", re.I)
+
+
+def note_text_fixed(text):
+    """Note text as stored, except that HTML entities pasted in as literal text (&amp;, &apos;) are
+    turned back into characters. Only for notes without style spans, so offsets stay valid."""
+    if isinstance(text, dict):
+        if text.get("tags"):
+            return text
+        s = text.get("string", "") or ""
+    else:
+        s = text or ""
+    if _ENTITY.search(s):
+        s = html.unescape(s)
+        if _ENTITY.search(s):           # double-escaped (&amp;amp;)
+            s = html.unescape(s)
+    return s
+
+
 def alt_names_of(p: dict) -> list[dict]:
     out = []
     for n in p.get("alternate_names", []) or []:
@@ -1075,9 +1105,13 @@ class Exporter:
         # notes
         name_pats = self.living_name_patterns()
         self.notes_held = []      # (note id, person id): note text names a living/excluded person
+        self.notes_toolout = 0    # import logs and other tool output
         for nh in note_refs:
             n = self.idx.notes.get(nh)
             if n and not n.get("private") and not self.withheld("notes", nh):
+                if is_tool_note(n):
+                    self.notes_toolout += 1
+                    continue
                 low = fold_name(plain_text(n.get("text")))
                 hit = next((pid for rx, pid in name_pats if rx.search(low)), None)
                 if hit and not self.ov.has("public_text", n):
@@ -1158,7 +1192,7 @@ class Exporter:
                 if a.get("private"):
                     continue
                 t = typestr(a.get("type"))
-                if t in skip:
+                if t in skip or t.startswith("_"):      # _UID, _AMTID …: software bookkeeping
                     continue
                 d = {"type": t, "value": a.get("value", "")}
                 c = cites(a, owner)
@@ -1441,7 +1475,7 @@ class Exporter:
         for h in inc["notes"]:
             n = idx.notes[h]
             g = self.gid("notes", h)
-            text = n.get("text")
+            text = note_text_fixed(n.get("text"))
             rec = {"id": g, "handle": h, "type": typestr(n.get("type")) or "General",
                    "text": plain_text(text), "html": styled_to_html(text if isinstance(text, dict) else plain_text(text)),
                    "preformatted": bool(n.get("format")),
@@ -1641,6 +1675,8 @@ class Exporter:
         if held:
             r.warn(f"{len(held)} notes held back because they name a living/excluded person (edit the note, or list it in "
                    "overrides.public_text if naming them is fine): " + "; ".join(f"{n} names {p}" for n, p in sorted(held)))
+        if getattr(self, "notes_toolout", 0):
+            r.warn(f"{self.notes_toolout} import-log / tool-output notes left off the site (GEDCOM import report etc.)")
         same = getattr(self, "namesakes", [])
         if same:
             r.warn("not checked in note text, because a deceased person has the same name (namesakes): "

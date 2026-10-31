@@ -132,6 +132,16 @@ python3 geocode_backfill.py --apply --user "$u"    # after the review
 
 In the CSV, review rows come first. `auto` = clean match, written as is. `review` = look once: the reason column says why (another place with the same name, only the district matched, name differs); fix lat/lon from mapy.cz or OpenStreetMap if needed and set status to `ok`, or leave it and it is skipped. `none` = nothing found; add coordinates by hand and set `ok`, or leave it. Re-running the lookup reuses the cache, so a second pass is quick. `--apply` skips places that already have coordinates and ends with `failed N` — if N > 0, run it again (see *one writer at a time* above). Splitting the flat Ancestry place strings into a Gramps hierarchy (town → county → state → country) is a separate, later step; the map does not need it.
 
-## 8. Mark a media object public (Gramps Web)
+## 8. Repairs and checks (`tools/`)
+
+- `tools/check_stories.py` — runs in the GitHub build: fails it if a hand-written story names a living person (namesakes of deceased people are skipped and listed). Allow-list: `content/stories/living-ok.txt`.
+- `tools/check_families.py` — read-only, no login: duplicate families (same partner twice, one side missing). Run after a batch of Karel's marriage proposals.
+- `tools/backup_gramps.py` — full .gramps backup through the API to Z:\Backup\family-history. Run it before anything below that writes.
+- `tools/merge_family.py --into F0072 --from F0172` — merges a duplicate family into the real one (partners, children, events folded by type+date, citations/notes/media); dry run by default, `--apply` writes. Refuses if the two families have different partners.
+- `tools/set_note.py --person I0145 --starts "Death 28 Feb 1936" --file corrected.txt` — replaces one note's text with a file Karel sends; dry run by default.
+- `tools/fix_dict_notes.py` — one-off from 31 Oct 2026: notes the applier stored as a Python dict (`{'type': 'Research', 'text': …}`); dry run by default, `--apply` writes.
+- Notes are never published when their type is *GEDCOM import* or their text is an import report; attributes whose type starts with `_` (`_UID`, `_AMTID`) are dropped; literal HTML entities in note text (`&amp;`) are turned back into characters.
+
+## 9. Mark a media object public (Gramps Web)
 
 Open the media object → Tags → add `public`. It becomes a file on the site at the next export, provided it is not attached to a living person and its path is not under the Ancestry/FamilySearch/import folders. Our own scans belong under `photos/`, `documents/`, `letters/`; record images stay under `records/`.
