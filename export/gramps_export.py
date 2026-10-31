@@ -462,7 +462,7 @@ def looks_like_record_image(path: str, tags: list[str]) -> bool:
 # Overrides
 # --------------------------------------------------------------------------- #
 class Overrides:
-    KEYS = ("living", "deceased", "exclude", "public_media", "withhold")
+    KEYS = ("living", "deceased", "exclude", "public_media", "withhold", "public_text")
 
     def __init__(self, path: str | None):
         self.path = path
@@ -855,6 +855,19 @@ class Exporter:
         obj = self.idx.by_table[table].get(h)
         return bool(obj) and self.ov.has("withhold", obj)
 
+    def living_name_patterns(self) -> list:
+        """(regex, person id) for every name a living or excluded person goes by: first + surname, first given name + surname"""
+        pats = {}
+        for h in self.living_set | self.excluded_set:
+            p = self.idx.people[h]
+            for nm in [name_of(p)] + alt_names_of(p):
+                first, sur = (nm.get("first") or "").strip(), (nm.get("surname") or "").strip()
+                if len(first) < 2 or len(sur) < 2:
+                    continue
+                for given in {first, first.split()[0]}:
+                    pats[f"{given} {sur}".lower()] = p.get("gramps_id")
+        return [(re.compile(r"(?<!\w)" + re.escape(k).replace(r"\ ", r"\s+") + r"(?!\w)"), v) for k, v in pats.items()]
+
     def compute_inclusion(self):
         inc = self.included
         withheld_events = {}   # event handle -> reason
@@ -1038,9 +1051,16 @@ class Exporter:
                         if sh and sh in self.idx.sources and not self.idx.sources[sh].get("private"):
                             inc["sources"].add(sh)
         # notes
+        name_pats = self.living_name_patterns()
+        self.notes_held = []      # (note id, person id): note text names a living/excluded person
         for nh in note_refs:
             n = self.idx.notes.get(nh)
             if n and not n.get("private") and not self.withheld("notes", nh):
+                low = plain_text(n.get("text")).lower()
+                hit = next((pid for rx, pid in name_pats if rx.search(low)), None)
+                if hit and not self.ov.has("public_text", n):
+                    self.notes_held.append((n.get("gramps_id"), hit))
+                    continue
                 inc["notes"].add(nh)
         self.ev_withheld = collections.Counter(withheld_events.values())
         self.media_by_living = media_by_living
@@ -1595,6 +1615,11 @@ class Exporter:
                 for full, pid in names.items():
                     if full in low:
                         hits.append(f"{kind} {gid} mentions {pid}")
+        held = getattr(self, "notes_held", [])
+        if held:
+            r.warn(f"{len(held)} notes held back because they name a living/excluded person (edit the note, or list it in "
+                   "overrides.public_text if naming them is fine): "
+                   + "; ".join(f"{n} names {p}" for n, p in held[:40]) + (" …" if len(held) > 40 else ""))
         if hits:
             r.warn("published text may name living/excluded people (review, then overrides.withhold if needed): "
                    + "; ".join(hits[:30]) + (" …" if len(hits) > 30 else ""))

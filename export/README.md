@@ -1,6 +1,6 @@
 # family.konecny.net — server runbook (export, validator, geocoder)
 
-`gramps_export.py` turns the Gramps master into the public-safe data bundle the site builds from. It runs on the server, talks only to the loopback API (`http://127.0.0.1:5055/api`), needs nothing beyond Python 3.8's standard library, and writes exactly three things into the site repo: `data/bundle.json`, `data/report.md`, `media/` (public files + thumbnails). Export 0.3 · validator 0.1 · geocoder 0.1 · bundle schema 0.3 · all tested against gramps-webapi 3.24 / Gramps 6.0.8. Three scripts live in `export/`; they share one API client and never store a password.
+`gramps_export.py` turns the Gramps master into the public-safe data bundle the site builds from. It runs on the server, talks only to the loopback API (`http://127.0.0.1:5055/api`), needs nothing beyond Python 3.8's standard library, and writes exactly three things into the site repo: `data/bundle.json`, `data/report.md`, `media/` (public files + thumbnails). Export 0.3.1 · validator 0.5 · geocoder 0.1.1 · bundle schema 0.3 · all tested against gramps-webapi 3.24 / Gramps 6.0.8. Three scripts live in `export/`; they share one API client and never store a password.
 
 ## 1. First dry run (done 27 Oct 2026; kept for a rebuild)
 
@@ -31,11 +31,12 @@ Exit codes: 0 fine · 1 dry run found leak-audit problems · 2 login/API error �
   "deceased":     {"I0144": "d. 2019 per obituary, death event not entered yet"},
   "exclude":      {"I0301": "opted out entirely"},
   "public_media": {"O0012": "our own scan, tagged public but path looks like a record image"},
-  "withhold":     {"E0450": "event text mentions a living person"}
+  "withhold":     {"E0450": "event text mentions a living person"},
+  "public_text":  {"N0812": "names a living cousin by name and relationship only — fine"}
 }
 ```
 
-Precedence per person: `exclude` → private flag → `deceased` → `living` → Gramps' own probably-alive verdict (`GET /api/living/{handle}`, max age 110, overridable with `--max-age`). `public_media` forces a file public; `withhold` keeps any event, citation, note or media object off the site regardless of other rules.
+Precedence per person: `exclude` → private flag → `deceased` → `living` → Gramps' own probably-alive verdict (`GET /api/living/{handle}`, max age 110, overridable with `--max-age`). `public_media` forces a file public; `withhold` keeps any event, citation, note or media object off the site regardless of other rules. A note whose text names a living or excluded person (first name + surname, any of their names) is held back automatically and listed in the report's warnings; `public_text` releases one after you have read it.
 
 ## 3. What the rules do (short form)
 
@@ -113,6 +114,10 @@ python3 validator.py --all --apply --user "$u"                # the rest (an eve
 
 `--apply` needs an Editor account (the `applier` account or yours); verdict files alone need only read access. The key comes from console.anthropic.com → API keys; the record images are sent to that API for reading, which is the same kind of exposure as Karel reading them on Grok. Useful flags: `--ids C0634,C0636` to re-check specific citations, `--redo` to re-run ones that have verdict files, `--only-direct`, `--model` to pick another Claude model (the script falls back to the newest Sonnet it can see), `--mock` to test the plumbing without a model.
 
+**One writer at a time.** Gramps Web stores the tree in SQLite, which takes one writer at a time; two scripts writing at once (validator + geocoder, or either + Karel) produce `HTTP 500 … database is locked`. The scripts now wait and retry (2/5/15/30 s), and every verdict is saved to its file before the write, so nothing is lost: after a run with `apply failed` lines, `python3 validator.py --reapply --apply --user <you>` writes the saved verdicts without calling the model again. Running the queue again is also free for anything already decided — citations with a verdict file are skipped.
+
+**Passwords.** Python's hidden prompt echoes on this server's terminal. Set the password once per session with `read -rsp 'Gramps password: ' GRAMPS_PASSWORD; echo; export GRAMPS_PASSWORD` — all three scripts read it — and `unset GRAMPS_PASSWORD` when done. The nightly export uses `~/.config/family-site/export.pw` (account `site-export`, role Guest).
+
 The site shows the result the next morning: `AI-checked` stamps, the validator's note on the citation page, and the tier instead of "est."
 
 ## 7. Geocoder — `geocode_backfill.py` (v1 of the site needs it)
@@ -125,7 +130,7 @@ python3 geocode_backfill.py --user "$u"            # ~6 minutes for 315 places; 
 python3 geocode_backfill.py --apply --user "$u"    # after the review
 ```
 
-In the CSV, review rows come first. `auto` = clean match, written as is. `review` = look once: the reason column says why (another place with the same name, only the district matched, name differs); fix lat/lon from mapy.cz or OpenStreetMap if needed and set status to `ok`, or leave it and it is skipped. `none` = nothing found; add coordinates by hand and set `ok`, or leave it. Re-running the lookup reuses the cache, so a second pass is quick. Splitting the flat Ancestry place strings into a Gramps hierarchy (town → county → state → country) is a separate, later step; the map does not need it.
+In the CSV, review rows come first. `auto` = clean match, written as is. `review` = look once: the reason column says why (another place with the same name, only the district matched, name differs); fix lat/lon from mapy.cz or OpenStreetMap if needed and set status to `ok`, or leave it and it is skipped. `none` = nothing found; add coordinates by hand and set `ok`, or leave it. Re-running the lookup reuses the cache, so a second pass is quick. `--apply` skips places that already have coordinates and ends with `failed N` — if N > 0, run it again (see *one writer at a time* above). Splitting the flat Ancestry place strings into a Gramps hierarchy (town → county → state → country) is a separate, later step; the map does not need it.
 
 ## 8. Mark a media object public (Gramps Web)
 
