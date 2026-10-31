@@ -14,4 +14,4 @@ status: confirming
 
 `confirming` prints this banner under the title: "In process of confirming — details are still being verified against records." `proven` prints no banner. Change that one field when the notes are confirmed; the story stays on the site either way.
 
-The wording, citations, sources, and confidence labels (Proven, Possible, family claim, compiled source only) are the research notes, unchanged. The village caption in `stories.json` also names a local folder used while the notes were drafted (`/workspace/stories-photos`). That path is not a source. The public page leaves it off and keeps the credit that is: photos are from Wikimedia Commons, with the file name cited on each village.
+The wording, citations, sources, and confidence labels (Proven, Possible, family claim, compiled source only) are the research notes, unchanged. The village caption is: photos are from Wikimedia Commons, with the file name cited on each village.

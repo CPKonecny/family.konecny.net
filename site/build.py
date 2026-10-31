@@ -202,7 +202,7 @@ def md(text: str) -> str:
 
 # Hosts that appear as bare citations in the family-stories notes.
 _STORY_URL = re.compile(
-    r"(?:https?://)?(?:[A-Za-z0-9-]+\.)+(?:org|com|net|cz|info)(?:/[^\s]*)?",
+    r"(?:https?://)?(?:[A-Za-z0-9-]+\.)+(?:org|com|net|cz|info|eu)(?:/[^\s]*)?",
     re.IGNORECASE,
 )
 # Drafting note in the village caption. It names a local folder, not a source,
