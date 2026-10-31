@@ -6,7 +6,10 @@
     "I0219": "hold",
     "I0363": "hold"
   },
-  "deceased": {},
+  "deceased": {
+    "I0212": "Ethel Jensch - married 1917 (Karel, 31 Oct)",
+    "I0381": "Mary Weihler - born about 1854 (Karel, 31 Oct)"
+  },
   "exclude": {},
   "public_media": {},
   "withhold": {}
