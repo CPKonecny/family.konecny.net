@@ -5,7 +5,7 @@
   {{ body|md|safe }}
   <h2>The state of the research, in numbers</h2>
   <dl class="kinlist">
-    <div><dt>People</dt><dd>{{ stats.people_full }} published in full; {{ stats.people_living }} living people by name only</dd></div>
+    <div><dt>People</dt><dd>{{ stats.people_full + stats.people_living }} — {{ stats.people_full }} deceased, shown with their records; {{ stats.people_living }} living, by name and relationship only</dd></div>
     <div><dt>Facts</dt><dd>{{ rs.total }} — {{ rs.human }} reviewed by a person, {{ rs.ai }} AI-checked, {{ rs.un }} unreviewed{% if rs.needs %} ({{ rs.needs }} flagged for a look){% endif %}</dd></div>
     <div><dt>Citations</dt><dd>{{ stats.citations }} from {{ stats.sources }} sources — {{ cit_rev.get('human', 0) }} reviewed, {{ cit_rev.get('ai', 0) }} AI-checked, {{ cit_rev.get('un', 0) + cit_rev.get('needs', 0) }} unreviewed</dd></div>
     <div><dt>Images</dt><dd>{{ stats.media_public }} public, {{ stats.media_login }} behind the family login</dd></div>

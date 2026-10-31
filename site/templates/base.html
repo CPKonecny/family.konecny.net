@@ -21,7 +21,6 @@
     <a href="/people/">People</a>
     <a href="/places/">Places</a>
     <a href="/sources/">Sources</a>
-    <a href="/stories/"{% if nav == 'stories' %} aria-current="page"{% endif %}>Family stories</a>
     <a href="/questions/">Open questions</a>
     <a href="/about/">About</a>
   </nav>
@@ -33,7 +32,7 @@
 {% block body %}{% endblock %}
 </main>
 <footer class="foot">
-  <p>{{ cfg.site_name }} · built {{ now }} from the research database as of {{ meta.generated[:10] }} · {{ meta.counts_people.full }} people in full, {{ meta.counts_people.living }} living people by name only.</p>
+  <p>{{ cfg.site_name }} · built {{ now }} from the research database as of {{ meta.generated[:10] }} · {{ meta.counts_people.full + meta.counts_people.living }} people: {{ meta.counts_people.full }} with their records, {{ meta.counts_people.living }} living by name only.</p>
   <p>Review states are shown as they stand in the database: <span class="stamp human">reviewed</span> by a person, <span class="stamp ai">AI-checked</span> against its own citation, <span class="stamp un">unreviewed</span> not yet checked, <span class="stamp needs">needs a look</span> flagged by the checker. <a href="/about/">How this site works</a>.</p>
 </footer>
 <script src="/static/site.js" defer></script>

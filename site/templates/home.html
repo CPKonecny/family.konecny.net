@@ -27,19 +27,9 @@
 </section>
 {% endfor %}
 
-<section class="lines">
-  <div class="linegrid storyhome">
-    <a class="linecard c-neutral" href="/stories/">
-      <span class="band" aria-hidden="true"></span>
-      <span class="lt">Family stories</span>
-      <span class="ls">Soldiers, sea voyages, Czech villages, the work our people did, and the famous cousins we share ancestors with.</span>
-    </a>
-  </div>
-</section>
-
 <section class="stats">
   <dl>
-    <div><dt>People</dt><dd>{{ stats.people_full }}<small> in full · {{ stats.people_living }} living, by name</small></dd></div>
+    <div><dt>People</dt><dd>{{ stats.people_full + stats.people_living }}<small>{{ stats.people_full }} with their records · {{ stats.people_living }} living, name only</small></dd></div>
     <div><dt>Facts</dt><dd>{{ rs.total }}<small>{{ rs.human }} reviewed · {{ rs.ai }} AI-checked · {{ rs.un }} unreviewed</small></dd></div>
     <div><dt>Citations</dt><dd>{{ stats.citations }}<small> from {{ stats.sources }} sources</small></dd></div>
     <div><dt>Places</dt><dd>{{ stats.places }}</dd></div>
