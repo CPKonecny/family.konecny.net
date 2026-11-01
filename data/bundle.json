@@ -38816,6 +38816,49 @@
    ],
    "tier": "index",
    "url": "https://www.findagrave.com/memorial/173959295/ruth-oregan"
+  },
+  "C1242": {
+   "ancestry_record_id": "",
+   "change": 1793484002,
+   "cited_by": [
+    {
+     "id": "F0019",
+     "type": "family"
+    }
+   ],
+   "confidence": 4,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "104fc7c4dc6c6eab6632feab229f",
+   "id": "C1242",
+   "information": "primary",
+   "media": [
+    {
+     "ref": "O0191"
+    }
+   ],
+   "notes": [
+    "N1755",
+    "N1756"
+   ],
+   "page": "folio 14 (last)",
+   "proposal_file": "2026-10-31_1735_wood-franklin_F0019-cite-1866.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0176",
+   "source_type": "original",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "record",
+   "url": "https://numerique.banq.qc.ca/patrimoine/details/52327/3974017"
   }
  },
  "events": {
@@ -60130,180 +60173,6 @@
     "agent-validator"
    ],
    "type": "Residence"
-  },
-  "E0622": {
-   "attributes": [],
-   "change": 1793040994,
-   "citations": [],
-   "date": null,
-   "description": "212735658607:1030:208290233",
-   "families": [],
-   "flags": [],
-   "handle": "104ebd54b7014d799dae4fb13df",
-   "id": "E0622",
-   "media": [],
-   "notes": [],
-   "participants": [
-    {
-     "person": "I0152",
-     "role": "Primary"
-    }
-   ],
-   "place": null,
-   "provenance": [
-    "import-ancestry-2026-10-25"
-   ],
-   "review": "unreviewed",
-   "tags": [
-    "import-ancestry-2026-10-25",
-    "unreviewed"
-   ],
-   "type": "_AMTID"
-  },
-  "E0623": {
-   "attributes": [],
-   "change": 1793040994,
-   "citations": [],
-   "date": null,
-   "description": "",
-   "families": [],
-   "flags": [],
-   "handle": "104ebd54b7041f604bb83ab26e27",
-   "id": "E0623",
-   "media": [],
-   "notes": [],
-   "participants": [
-    {
-     "person": "I0152",
-     "role": "Primary"
-    }
-   ],
-   "place": "P0188",
-   "provenance": [
-    "import-ancestry-2026-10-25"
-   ],
-   "review": "unreviewed",
-   "tags": [
-    "import-ancestry-2026-10-25",
-    "unreviewed"
-   ],
-   "type": "Birth"
-  },
-  "E0624": {
-   "attributes": [],
-   "change": 1793040994,
-   "citations": [],
-   "date": null,
-   "description": "",
-   "families": [],
-   "flags": [],
-   "handle": "104ebd54b7076435af1a5c0e483",
-   "id": "E0624",
-   "media": [],
-   "notes": [],
-   "participants": [
-    {
-     "person": "I0152",
-     "role": "Primary"
-    }
-   ],
-   "place": null,
-   "provenance": [
-    "import-ancestry-2026-10-25"
-   ],
-   "review": "unreviewed",
-   "tags": [
-    "import-ancestry-2026-10-25",
-    "unreviewed"
-   ],
-   "type": "Death"
-  },
-  "E0625": {
-   "attributes": [],
-   "change": 1793040995,
-   "citations": [],
-   "date": null,
-   "description": "212735658682:1030:208290233",
-   "families": [],
-   "flags": [],
-   "handle": "104ebd54b70d1619ff62cd0d7c5",
-   "id": "E0625",
-   "media": [],
-   "notes": [],
-   "participants": [
-    {
-     "person": "I0153",
-     "role": "Primary"
-    }
-   ],
-   "place": null,
-   "provenance": [
-    "import-ancestry-2026-10-25"
-   ],
-   "review": "unreviewed",
-   "tags": [
-    "import-ancestry-2026-10-25",
-    "unreviewed"
-   ],
-   "type": "_AMTID"
-  },
-  "E0626": {
-   "attributes": [],
-   "change": 1793040995,
-   "citations": [],
-   "date": null,
-   "description": "",
-   "families": [],
-   "flags": [],
-   "handle": "104ebd54b7107e9bd7c8f9b3bab4",
-   "id": "E0626",
-   "media": [],
-   "notes": [],
-   "participants": [
-    {
-     "person": "I0153",
-     "role": "Primary"
-    }
-   ],
-   "place": "P0188",
-   "provenance": [
-    "import-ancestry-2026-10-25"
-   ],
-   "review": "unreviewed",
-   "tags": [
-    "import-ancestry-2026-10-25",
-    "unreviewed"
-   ],
-   "type": "Birth"
-  },
-  "E0627": {
-   "attributes": [],
-   "change": 1793040995,
-   "citations": [],
-   "date": null,
-   "description": "",
-   "families": [],
-   "flags": [],
-   "handle": "104ebd54b714de734da4c67a36c",
-   "id": "E0627",
-   "media": [],
-   "notes": [],
-   "participants": [
-    {
-     "person": "I0153",
-     "role": "Primary"
-    }
-   ],
-   "place": null,
-   "provenance": [
-    "import-ancestry-2026-10-25"
-   ],
-   "review": "unreviewed",
-   "tags": [
-    "import-ancestry-2026-10-25",
-    "unreviewed"
-   ],
-   "type": "Death"
   },
   "E0628": {
    "attributes": [],
@@ -90064,7 +89933,7 @@
   },
   "F0019": {
    "attributes": [],
-   "change": 1793481954,
+   "change": 1793484002,
    "children": [
     {
      "ref": "I0125"
@@ -90073,7 +89942,9 @@
      "ref": "I0031"
     }
    ],
-   "citations": [],
+   "citations": [
+    "C1242"
+   ],
    "events": [
     {
      "ref": "E1448",
@@ -90081,7 +89952,9 @@
     }
    ],
    "father": "I0038",
-   "flags": [],
+   "flags": [
+    "agent-proposed"
+   ],
    "handle": "104ebd54a6e8462219ff4f3d7241",
    "id": "F0019",
    "marriage": {
@@ -90103,13 +89976,17 @@
    "mother": "I0123",
    "notes": [],
    "provenance": [
+    "agent-karel",
+    "agent-proposed",
     "import-ancestry-2026-10-25"
    ],
    "review": "unreviewed",
    "status": "full",
    "tags": [
-    "import-ancestry-2026-10-25",
-    "unreviewed"
+    "agent-karel",
+    "agent-proposed",
+    "unreviewed",
+    "import-ancestry-2026-10-25"
    ],
    "type": "Married"
   },
@@ -92355,28 +92232,12 @@
    "type": "Married"
   },
   "F0078": {
-   "attributes": [],
-   "change": 1793040832,
    "children": [],
-   "citations": [],
-   "events": [],
    "father": "I0152",
-   "flags": [],
    "handle": "104ebd54b70941bee35fbded3eed",
    "id": "F0078",
-   "media": [],
    "mother": "I0153",
-   "notes": [],
-   "provenance": [
-    "import-ancestry-2026-10-25"
-   ],
-   "review": "unreviewed",
-   "status": "full",
-   "tags": [
-    "import-ancestry-2026-10-25",
-    "unreviewed"
-   ],
-   "type": "Unknown"
+   "status": "living"
   },
   "F0079": {
    "attributes": [],
@@ -102279,6 +102140,39 @@
     "agent-karel",
     "agent-proposed"
    ]
+  },
+  "O0191": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1242",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-10-27_0915_wood-franklin_parents-1866.jpg"
+   },
+   "checksum": "b937b04aecb8b4051785f682491bbe8d",
+   "citations": [],
+   "date": null,
+   "desc": "Granby St George's Anglican (CE502,S42), marriages 1866, folio 14 (last) — folio 14 (last)",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "104fc7c4d4c46edba6b908950248",
+   "id": "O0191",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0191",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ]
   }
  },
  "meta": {
@@ -102290,21 +102184,21 @@
    "very high"
   ],
   "counts": {
-   "citations": 1206,
-   "events": 1417,
+   "citations": 1207,
+   "events": 1411,
    "families": 172,
-   "media": 183,
+   "media": 184,
    "notes": 1258,
    "people": 385,
-   "places": 322,
+   "places": 321,
    "repositories": 20,
    "sources": 195
   },
   "counts_people": {
-   "full": 323,
-   "living": 62
+   "full": 321,
+   "living": 64
   },
-  "generated": "2026-10-31T21:26:59+00:00",
+  "generated": "2026-11-01T08:17:47+00:00",
   "generator": "gramps_export.py 0.3.0",
   "gramps_version": "6.0.8",
   "gramps_webapi_version": "3.17.0",
@@ -102328,7 +102222,7 @@
    "oral",
    "ai-draft"
   ],
-  "today": "2026-10-31",
+  "today": "2026-11-01",
   "tree": "Konecny"
  },
  "notes": {
@@ -104606,25 +104500,6 @@
    "text": "Added 13 Aug 2026 from the 1893 baptism of grandson Petr Pavel Konecny, Acta Publica / MZA Brno, matrika book 4021 (Brumov na Vlare), snimek 151: the child's father Jan Konecny, nadennik in Sv. Stepan, is named as \"son of Jan Konecny, servant at the manor court (pansky dvur) in Hluk, and Frantiska, daughter of Frantisek Sebak, cottager of Hluk.\" No birth or death dates are given in that entry, so none are recorded here. 14 Aug 2026: parents added from Stitna book 4740 s.18 (2 Jun 1868 marriage of son Jan): \"syn po Pavlovi Konečným, zemřelém služebném v panském dvoře ve Vlachovicích a jeho manželky Mariny Trchel z Lidečka.\" Their own birth/marriage/death pages not in hand; no dates entered.",
    "type": "Person Note"
   },
-  "N0162": {
-   "attached_to": [
-    {
-     "id": "I0140",
-     "type": "person"
-    }
-   ],
-   "change": 1793036993,
-   "flags": [],
-   "handle": "104ebd54b0e059554afe36c0774",
-   "html": "<p>Added 13 Aug 2026 from the 1893 baptism of grandson Petr Pavel Konecny, Acta Publica / MZA Brno, matrika book 4021 (Brumov na Vlare), snimek 151: the child&#x27;s father Jan Konecny is named as son of Jan Konecny, servant at the manor court (pansky dvur) in Hluk, and Frantiska, daughter of Frantisek Sebak, cottager (chalupnik) of Hluk. No dates given in that entry, so none are recorded here. She is NOT the same person as Mary Nedbal, who was unlinked from this line.</p><p>2026-08-13: MZA Brno Acta Publica book 4725 (Štítná N 1787-1856) snímek 100, fol. 196, house 137. Born 1 Dec 1834 as Franziska, marked unehelich; father Franz Sscheback/Šebák, legitimized per subsequens matrimonium (cross-ref Copulationum fol. 169). Mother Marina, daughter of Anton Miklas. Matches 1868 marriage book 4740 s.18 (age 33y 6m).</p><p>2026-08-13 night: WEDDING STILL OPEN. Do not lock František Šebák × Marina Miklas as 6 Feb 1837 book 4739 fol.69 — second read is other couples (Hubník × Holba etc.). The Franz + Marina Miklas crop is a birth/paternity note, not the wedding. Birth-page citation points to Copulationum fol. 169 / Fol. 66; neither found in book 4739. Neighbor-parish hunt running overnight.</p>",
-   "id": "N0162",
-   "preformatted": false,
-   "provenance": [],
-   "review": "unreviewed",
-   "tags": [],
-   "text": "Added 13 Aug 2026 from the 1893 baptism of grandson Petr Pavel Konecny, Acta Publica / MZA Brno, matrika book 4021 (Brumov na Vlare), snimek 151: the child's father Jan Konecny is named as son of Jan Konecny, servant at the manor court (pansky dvur) in Hluk, and Frantiska, daughter of Frantisek Sebak, cottager (chalupnik) of Hluk. No dates given in that entry, so none are recorded here. She is NOT the same person as Mary Nedbal, who was unlinked from this line.\n\n2026-08-13: MZA Brno Acta Publica book 4725 (Štítná N 1787-1856) snímek 100, fol. 196, house 137. Born 1 Dec 1834 as Franziska, marked unehelich; father Franz Sscheback/Šebák, legitimized per subsequens matrimonium (cross-ref Copulationum fol. 169). Mother Marina, daughter of Anton Miklas. Matches 1868 marriage book 4740 s.18 (age 33y 6m).\n\n2026-08-13 night: WEDDING STILL OPEN. Do not lock František Šebák × Marina Miklas as 6 Feb 1837 book 4739 fol.69 — second read is other couples (Hubník × Holba etc.). The Franz + Marina Miklas crop is a birth/paternity note, not the wedding. Birth-page citation points to Copulationum fol. 169 / Fol. 66; neither found in book 4739. Neighbor-parish hunt running overnight.",
-   "type": "Person Note"
-  },
   "N0166": {
    "attached_to": [
     {
@@ -104776,25 +104651,6 @@
    "tags": [],
    "text": "Image ID: radnice-ro-32_0901-n",
    "type": "Citation"
-  },
-  "N0178": {
-   "attached_to": [
-    {
-     "id": "I0147",
-     "type": "person"
-    }
-   ],
-   "change": 1793036993,
-   "flags": [],
-   "handle": "104ebd54b4832134e4b4fa2bd8c1",
-   "html": "<p>Research note (added 2026-08-12): Birthplace recorded here as &quot;Bohemia&quot; 1859, but his children&#x27;s events point to Moravia — son Peter b. 28 Jun 1893 Hovorany, Hodonin district, Jihomoravsky (South Moravian) region; son Joseph b. 1901 in Czech lands. Bohemia vs Moravia conflict left unresolved; keeping existing tree value rather than overwriting from unsourced member trees. Only hint currently available is a member family tree (Backus Family Tree), not accepted — needs official records (parish/church books for Hovorany, Milwaukee death record, naturalization) before changing birthplace or adding parents John Konecny/Mary Nedbal with confidence. Also confirm death place &quot;Milwaukee, WI&quot; with an official death index entry.</p><p>13 Aug 2026 UPDATE (Acta Publica, MZA Brno, book 4021, https://www.mza.cz/actapublica/matrika/detail/300): Son &quot;Petr Pavel&quot; Konecny born 28 Jun 1893, house 160, Svaty Stepan (osada of Bylnice), parish Brumov na Vlare (snimek 151); father listed as Jan Konecny, nadennik ve Sv. Stepani, son of Jan Konecny (servant, pansky dvur Hluk) and Frantiska (dau. of Frantisek Sebak, cottager of Hluk); mother Veronika, dau. of Jiri Kadlec (nadennik ve Sv. Stepani) and Marie (dau. of Jiri Kostka, pasekar ve Sv. Stepani). Second son Frantisek b. 20 Aug 1895, same house 160 (snimek 165), father then pomocnik v huti. So the family was in MORAVIA (Brumov-Bylnice), not Hovorany; Kostany/Teplitz were later glass-work residence. Hovorany Peter is a different man. Diacritics omitted due to input limits. 13 Aug 2026 CLEANUP: birth changed 1859 -&gt; abt 1867, Svaty Stepan/Bylnice, Moravia (age 46 on 14 May 1913 Kaiser Wilhelm der Grosse). Mary Nedbal UNLINKED as mother and the old John Konecny UNLINKED as father (leftover from wrong-man detour; both persons kept in tree, not merged). Parents now taken from son Petr Pavel&#x27;s 1893 baptism, MZA Brno book 4021 snimek 151: father Jan Konecny, servant at the manor court (pansky dvur) in Hluk; mother Frantiska, daughter of Frantisek Sebak, cottager of Hluk. No birth years</p><p>invented for them.</p><p>13 Aug 2026 GIVEN NAME: Parish and 1913 manifest use Jan. US records use John.</p><p>14 Aug 2026 research note (overnight negatives; do not hunt these MZA books again):<br>- His father Jan ~Dec 1832 is NOT in Stitna 4725, Vlachovice 4946, Brumov 4014, Valasske Klobouky 4822.<br>- Pavel Konecny x Marina Trchel marriage is NOT in Vlachovice 4959, Brumov 4024, or Valasske Klobouky 4846.<br>- Next book is Lidecko (ZA Opava), parked (bot wall).</p>",
-   "id": "N0178",
-   "preformatted": false,
-   "provenance": [],
-   "review": "unreviewed",
-   "tags": [],
-   "text": "Research note (added 2026-08-12): Birthplace recorded here as \"Bohemia\" 1859, but his children's events point to Moravia — son Peter b. 28 Jun 1893 Hovorany, Hodonin district, Jihomoravsky (South Moravian) region; son Joseph b. 1901 in Czech lands. Bohemia vs Moravia conflict left unresolved; keeping existing tree value rather than overwriting from unsourced member trees. Only hint currently available is a member family tree (Backus Family Tree), not accepted — needs official records (parish/church books for Hovorany, Milwaukee death record, naturalization) before changing birthplace or adding parents John Konecny/Mary Nedbal with confidence. Also confirm death place \"Milwaukee, WI\" with an official death index entry.\n\n13 Aug 2026 UPDATE (Acta Publica, MZA Brno, book 4021, https://www.mza.cz/actapublica/matrika/detail/300): Son \"Petr Pavel\" Konecny born 28 Jun 1893, house 160, Svaty Stepan (osada of Bylnice), parish Brumov na Vlare (snimek 151); father listed as Jan Konecny, nadennik ve Sv. Stepani, son of Jan Konecny (servant, pansky dvur Hluk) and Frantiska (dau. of Frantisek Sebak, cottager of Hluk); mother Veronika, dau. of Jiri Kadlec (nadennik ve Sv. Stepani) and Marie (dau. of Jiri Kostka, pasekar ve Sv. Stepani). Second son Frantisek b. 20 Aug 1895, same house 160 (snimek 165), father then pomocnik v huti. So the family was in MORAVIA (Brumov-Bylnice), not Hovorany; Kostany/Teplitz were later glass-work residence. Hovorany Peter is a different man. Diacritics omitted due to input limits. 13 Aug 2026 CLEANUP: birth changed 1859 -> abt 1867, Svaty Stepan/Bylnice, Moravia (age 46 on 14 May 1913 Kaiser Wilhelm der Grosse). Mary Nedbal UNLINKED as mother and the old John Konecny UNLINKED as father (leftover from wrong-man detour; both persons kept in tree, not merged). Parents now taken from son Petr Pavel's 1893 baptism, MZA Brno book 4021 snimek 151: father Jan Konecny, servant at the manor court (pansky dvur) in Hluk; mother Frantiska, daughter of Frantisek Sebak, cottager of Hluk. No birth years\n\ninvented for them.\n\n13 Aug 2026 GIVEN NAME: Parish and 1913 manifest use Jan. US records use John.\n\n14 Aug 2026 research note (overnight negatives; do not hunt these MZA books again):\n- His father Jan ~Dec 1832 is NOT in Stitna 4725, Vlachovice 4946, Brumov 4014, Valasske Klobouky 4822.\n- Pavel Konecny x Marina Trchel marriage is NOT in Vlachovice 4959, Brumov 4024, or Valasske Klobouky 4846.\n- Next book is Lidecko (ZA Opava), parked (bot wall).",
-   "type": "Person Note"
   },
   "N0180": {
    "attached_to": [
@@ -129613,6 +129469,44 @@
    "tags": [],
    "text": "2026-10-31 (karel): RESEARCH SUMMARY — FOUND: wife of Samuel Wood MPP, m. Brattleboro 3 Dec 1809, dau. Reuben Church × Elizabeth Whipple (AssNat Dict. des parlementaires — compiled); d. 2 Sep 1837 East Farnham, age 49 (Sherbrooke Gazette 23 Sep 1837, RootsWeb ET BMD index). Chart wife 'Abigail Philbrick' REJECTED. Sources: wood-family/PACKET-ABIGAIL-CHURCH.md; wood-family/PACKET-ABIGAIL-DEATH.md; wood-family/BARBER-OPEN-4SEP.md.\n\nTier: ai-draft",
    "type": "Research"
+  },
+  "N1755": {
+   "attached_to": [
+    {
+     "id": "C1242",
+     "type": "citation"
+    }
+   ],
+   "change": 1793484002,
+   "flags": [],
+   "handle": "104fc7c4cf691acb6c413f5f955b",
+   "html": "<p>Transcription (as written): Were married by Licence this fifth day of April Eighteen hundred &amp; Sixty six. Franklin Wood, Widower son of Samuel Wood &amp; Abigail Church his wife To Maria Anne daughter of John Spackman and Hannah Maria Hazeland his wife both parties of the Township of Granby. Witnesses T. Spackman, Thos Spackman. By me William Jones.</p>",
+   "id": "N1755",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Were married by Licence this fifth day of April Eighteen hundred & Sixty six. Franklin Wood, Widower son of Samuel Wood & Abigail Church his wife To Maria Anne daughter of John Spackman and Hannah Maria Hazeland his wife both parties of the Township of Granby. Witnesses T. Spackman, Thos Spackman. By me William Jones.",
+   "type": "Transcript"
+  },
+  "N1756": {
+   "attached_to": [
+    {
+     "id": "C1242",
+     "type": "citation"
+    }
+   ],
+   "change": 1793484002,
+   "flags": [],
+   "handle": "104fc7c4d1df60cde7346515d118",
+   "html": "<p>2026-10-31 (karel): Cite Franklin Wood&#x27;s (I0031) parent link in F0019 (Samuel Wood I0038 × Abigail Church I0123) with his 1866 remarriage record naming &#x27;Samuel Wood &amp; Abigail Church his wife&#x27;. Generation 8 → 9 of the Mayflower line. The same record is applied as a person citation (2026-10-27_0915_wood-franklin_parents-1866) but F0019 has no citations. add_family reuses F0019 (exact father+mother match) and adds the citation to the family; Franklin is already a child there, so no child is added. Image reused from applied/.</p>",
+   "id": "N1756",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-10-31 (karel): Cite Franklin Wood's (I0031) parent link in F0019 (Samuel Wood I0038 × Abigail Church I0123) with his 1866 remarriage record naming 'Samuel Wood & Abigail Church his wife'. Generation 8 → 9 of the Mayflower line. The same record is applied as a person citation (2026-10-27_0915_wood-franklin_parents-1866) but F0019 has no citations. add_family reuses F0019 (exact father+mother match) and adds the citation to the family; Franklin is already a child there, so no child is added. Image reused from applied/.",
+   "type": "Research"
   }
  },
  "people": {
@@ -131746,7 +131640,7 @@
     "type": "Birth",
     "year": 1865
    },
-   "change": 1793043715,
+   "change": 1793482475,
    "citations": [],
    "death": {
     "date": {
@@ -131832,7 +131726,7 @@
     "type": "Birth",
     "year": 1842
    },
-   "change": 1793043715,
+   "change": 1793482474,
    "citations": [],
    "death": {
     "date": {
@@ -141084,7 +140978,6 @@
     "type": "Birth Name"
    },
    "notes": [
-    "N0162",
     "N1713"
    ],
    "parents": [
@@ -141884,7 +141777,6 @@
     "type": "Birth Name"
    },
    "notes": [
-    "N0178",
     "N1714"
    ],
    "parents": [
@@ -142464,46 +142356,12 @@
    }
   },
   "I0152": {
-   "alt_names": [],
-   "attributes": [],
-   "birth": {
-    "date": null,
-    "event": "E0623",
-    "place": "P0188",
-    "type": "Birth",
-    "year": null
-   },
-   "change": 1793043716,
-   "citations": [],
-   "death": {
-    "date": null,
-    "event": "E0624",
-    "place": null,
-    "type": "Death",
-    "year": null
-   },
-   "events": [
-    {
-     "ref": "E0622",
-     "role": "Primary"
-    },
-    {
-     "ref": "E0623",
-     "role": "Primary"
-    },
-    {
-     "ref": "E0624",
-     "role": "Primary"
-    }
-   ],
    "families": [
     "F0078"
    ],
-   "flags": [],
    "gender": "M",
    "handle": "104ebd54b700574f070afc622a2f",
    "id": "I0152",
-   "media": [],
    "name": {
     "call": "",
     "display": "John Konecny",
@@ -142513,67 +142371,18 @@
     "sort": "Konecny, John",
     "suffix": "",
     "surname": "Konecny",
-    "title": "",
-    "type": "Birth Name"
+    "title": ""
    },
-   "notes": [],
    "parents": [],
-   "provenance": [
-    "import-ancestry-2026-10-25"
-   ],
-   "review": "unreviewed",
-   "status": "full",
-   "tags": [
-    "import-ancestry-2026-10-25",
-    "unreviewed"
-   ],
-   "urls": [],
-   "xref": {
-    "ancestry": "212735658607",
-    "rm_rin": "152"
-   }
+   "status": "living"
   },
   "I0153": {
-   "alt_names": [],
-   "attributes": [],
-   "birth": {
-    "date": null,
-    "event": "E0626",
-    "place": "P0188",
-    "type": "Birth",
-    "year": null
-   },
-   "change": 1793043725,
-   "citations": [],
-   "death": {
-    "date": null,
-    "event": "E0627",
-    "place": null,
-    "type": "Death",
-    "year": null
-   },
-   "events": [
-    {
-     "ref": "E0625",
-     "role": "Primary"
-    },
-    {
-     "ref": "E0626",
-     "role": "Primary"
-    },
-    {
-     "ref": "E0627",
-     "role": "Primary"
-    }
-   ],
    "families": [
     "F0078"
    ],
-   "flags": [],
    "gender": "F",
    "handle": "104ebd54b70c5824cdd2ff9ad6f3",
    "id": "I0153",
-   "media": [],
    "name": {
     "call": "",
     "display": "Mary Nedbal",
@@ -142583,25 +142392,10 @@
     "sort": "Nedbal, Mary",
     "suffix": "",
     "surname": "Nedbal",
-    "title": "",
-    "type": "Birth Name"
+    "title": ""
    },
-   "notes": [],
    "parents": [],
-   "provenance": [
-    "import-ancestry-2026-10-25"
-   ],
-   "review": "unreviewed",
-   "status": "full",
-   "tags": [
-    "import-ancestry-2026-10-25",
-    "unreviewed"
-   ],
-   "urls": [],
-   "xref": {
-    "ancestry": "212735658682",
-    "rm_rin": "153"
-   }
+   "status": "living"
   },
   "I0154": {
    "alt_names": [],
@@ -164431,33 +164225,6 @@
    "type": "Unknown",
    "urls": []
   },
-  "P0188": {
-   "alt_names": [],
-   "citations": [],
-   "code": "",
-   "display": "morava, Bohemia",
-   "enclosed_by": [],
-   "flags": [],
-   "handle": "104ebd54b705d07f2f28d140405",
-   "hierarchy": [
-    "P0188"
-   ],
-   "id": "P0188",
-   "lat": 49.359706,
-   "long": 17.30942,
-   "media": [],
-   "name": "morava, Bohemia",
-   "notes": [],
-   "provenance": [
-    "import-ancestry-2026-10-25"
-   ],
-   "review": "unreviewed",
-   "tags": [
-    "import-ancestry-2026-10-25"
-   ],
-   "type": "Unknown",
-   "urls": []
-  },
   "P0189": {
    "alt_names": [],
    "citations": [],
@@ -174043,7 +173810,8 @@
    "attributes": {},
    "author": "",
    "citations": [
-    "C1183"
+    "C1183",
+    "C1242"
    ],
    "flags": [
     "agent-proposed"
