@@ -38859,6 +38859,92 @@
    ],
    "tier": "record",
    "url": "https://numerique.banq.qc.ca/patrimoine/details/52327/3974017"
+  },
+  "C1243": {
+   "ancestry_record_id": "",
+   "change": 1793545203,
+   "cited_by": [
+    {
+     "id": "F0010",
+     "type": "family"
+    }
+   ],
+   "confidence": 4,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "104fec3f53a8421fe9105619c0a5",
+   "id": "C1243",
+   "information": "primary",
+   "media": [
+    {
+     "ref": "O0192"
+    }
+   ],
+   "notes": [
+    "N1757",
+    "N1758"
+   ],
+   "page": "pp. 50-51, will of Reuben Church, names 'Abigail Church the wife of Samuel Wood' as daughter",
+   "proposal_file": "2026-11-01_0941_church-abigail_F0010-cite-will.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0200",
+   "source_type": "original",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "record",
+   "url": ""
+  },
+  "C1244": {
+   "ancestry_record_id": "",
+   "change": 1793545204,
+   "cited_by": [
+    {
+     "id": "E1563",
+     "type": "event"
+    }
+   ],
+   "confidence": 4,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "104fec3f6c20757c0395b3084c81",
+   "id": "C1244",
+   "information": "primary",
+   "media": [
+    {
+     "ref": "O0193"
+    }
+   ],
+   "notes": [
+    "N1759",
+    "N1760"
+   ],
+   "page": "pp. 49-51, will of Reuben Church of Brattleborough, dated 21 Sep 1833, recorded 5 Nov 1834",
+   "proposal_file": "2026-11-01_0940_church-reuben_probate-1834.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0200",
+   "source_type": "original",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "record",
+   "url": ""
   }
  },
  "events": {
@@ -89270,6 +89356,49 @@
     "agent-proposed"
    ],
    "type": "Burial"
+  },
+  "E1563": {
+   "attributes": [],
+   "change": 1793545204,
+   "citations": [
+    "C1244"
+   ],
+   "date": {
+    "day": 5,
+    "iso": "1834-11-05",
+    "modifier": null,
+    "month": 11,
+    "quality": null,
+    "sort": 2391223,
+    "text": "5 November 1834",
+    "year": 1834
+   },
+   "description": "Will dated 21 Sep 1833; exhibited by executors Samuel Wood and John B. Morehouse, ordered recorded, Marlboro Probate District",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "104fec3f7760310faefe3ea06075",
+   "id": "E1563",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0018",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0123",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Probate"
   }
  },
  "families": {
@@ -89607,29 +89736,37 @@
   },
   "F0010": {
    "attributes": [],
-   "change": 1793040821,
+   "change": 1793545203,
    "children": [
     {
      "ref": "I0123"
     }
    ],
-   "citations": [],
+   "citations": [
+    "C1243"
+   ],
    "events": [],
    "father": "I0018",
-   "flags": [],
+   "flags": [
+    "agent-proposed"
+   ],
    "handle": "104ebd54a095166f9cd755f5a019",
    "id": "F0010",
    "media": [],
    "mother": "I0019",
    "notes": [],
    "provenance": [
+    "agent-karel",
+    "agent-proposed",
     "import-ancestry-2026-10-25"
    ],
    "review": "unreviewed",
    "status": "full",
    "tags": [
-    "import-ancestry-2026-10-25",
-    "unreviewed"
+    "agent-karel",
+    "unreviewed",
+    "agent-proposed",
+    "import-ancestry-2026-10-25"
    ],
    "type": "Unknown"
   },
@@ -102173,6 +102310,72 @@
     "agent-karel",
     "agent-proposed"
    ]
+  },
+  "O0192": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1243",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-01_0940_church-reuben_will-1833.jpg"
+   },
+   "checksum": "141f8a5f0f297c8304948366c1e8d789",
+   "citations": [],
+   "date": null,
+   "desc": "Vermont, U.S., Wills and Probate Records, 1749-1999 — Marlboro Probate District, vol. 13-14 — pp. 50-51, will of Reuben Church, names 'Abigail Church the wife of Samuel Wood' as daughter",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "104fec3f4a6d2792d3b9dc8f4463",
+   "id": "O0192",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0192",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ]
+  },
+  "O0193": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1244",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-01_0940_church-reuben_will-1833.jpg"
+   },
+   "checksum": "141f8a5f0f297c8304948366c1e8d789",
+   "citations": [],
+   "date": null,
+   "desc": "Vermont, U.S., Wills and Probate Records, 1749-1999 — Marlboro Probate District, vol. 13-14 — pp. 49-51, will of Reuben Church of Brattleborough, dated 21 Sep 1833, recorded 5 Nov 1834",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "104fec3f63e84f71a61ce1d9f2e3",
+   "id": "O0193",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0193",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ]
   }
  },
  "meta": {
@@ -102184,21 +102387,21 @@
    "very high"
   ],
   "counts": {
-   "citations": 1207,
-   "events": 1411,
+   "citations": 1209,
+   "events": 1412,
    "families": 172,
-   "media": 184,
-   "notes": 1258,
+   "media": 186,
+   "notes": 1262,
    "people": 385,
    "places": 321,
-   "repositories": 20,
-   "sources": 195
+   "repositories": 21,
+   "sources": 196
   },
   "counts_people": {
    "full": 321,
    "living": 64
   },
-  "generated": "2026-11-01T08:17:47+00:00",
+  "generated": "2026-11-02T08:17:46+00:00",
   "generator": "gramps_export.py 0.3.0",
   "gramps_version": "6.0.8",
   "gramps_webapi_version": "3.17.0",
@@ -102222,7 +102425,7 @@
    "oral",
    "ai-draft"
   ],
-  "today": "2026-11-01",
+  "today": "2026-11-02",
   "tree": "Konecny"
  },
  "notes": {
@@ -129507,6 +129710,82 @@
    "tags": [],
    "text": "2026-10-31 (karel): Cite Franklin Wood's (I0031) parent link in F0019 (Samuel Wood I0038 × Abigail Church I0123) with his 1866 remarriage record naming 'Samuel Wood & Abigail Church his wife'. Generation 8 → 9 of the Mayflower line. The same record is applied as a person citation (2026-10-27_0915_wood-franklin_parents-1866) but F0019 has no citations. add_family reuses F0019 (exact father+mother match) and adds the citation to the family; Franklin is already a child there, so no child is added. Image reused from applied/.",
    "type": "Research"
+  },
+  "N1757": {
+   "attached_to": [
+    {
+     "id": "C1243",
+     "type": "citation"
+    }
+   ],
+   "change": 1793545203,
+   "flags": [],
+   "handle": "104fec3f448f116999c14ec1f0c0",
+   "html": "<p>Transcription (as written): Will of Reuben Church of Brattleborough, Gentleman, dated 21 Sep 1833; exhibited by Samuel Wood and John B. Morehouse, executors, at the 5 Nov 1834 court and ordered recorded. &#x27;...my beloved son Alonzo Church, and my beloved daughters Elizabeth Church the wife of Simon Griggs, Abigail Church the wife of Samuel Wood, ... Rebecca Church the wife of John B. Morehouse ... I have nominated &amp; appointed Samuel Wood, the husband of my daughter Abigail Church, and John B. Morehouse, husband of my daughter Rebecca Church Executors&#x27;</p>",
+   "id": "N1757",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Will of Reuben Church of Brattleborough, Gentleman, dated 21 Sep 1833; exhibited by Samuel Wood and John B. Morehouse, executors, at the 5 Nov 1834 court and ordered recorded. '...my beloved son Alonzo Church, and my beloved daughters Elizabeth Church the wife of Simon Griggs, Abigail Church the wife of Samuel Wood, ... Rebecca Church the wife of John B. Morehouse ... I have nominated & appointed Samuel Wood, the husband of my daughter Abigail Church, and John B. Morehouse, husband of my daughter Rebecca Church Executors'",
+   "type": "Transcript"
+  },
+  "N1758": {
+   "attached_to": [
+    {
+     "id": "C1243",
+     "type": "citation"
+    }
+   ],
+   "change": 1793545203,
+   "flags": [],
+   "handle": "104fec3f47751131f3cd610ca8bd",
+   "html": "<p>2026-11-01 (karel): Cite Abigail Church&#x27;s (I0123) parent link in F0010 (Reuben Church I0018 x Elizabeth Whipple I0019) with her father&#x27;s 1833 will, which names &#x27;my beloved daughter ... Abigail Church the wife of Samuel Wood&#x27;. Father link now SOLID (record). Mother link (Elizabeth Whipple) stays STRONG compiled only: the will names no wife; this citation proves the father, not the mother. add_family reuses F0010 (exact father+mother match); Abigail is already a child. Ancestry 1 Nov 2026: same citation attached to Abigail&#x27;s Birth fact on tree 208290233.<br>Conflicts: [&quot;The will does not name a wife, so it does not prove Elizabeth Whipple as Abigail&#x27;s mother.&quot;]</p>",
+   "id": "N1758",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-01 (karel): Cite Abigail Church's (I0123) parent link in F0010 (Reuben Church I0018 x Elizabeth Whipple I0019) with her father's 1833 will, which names 'my beloved daughter ... Abigail Church the wife of Samuel Wood'. Father link now SOLID (record). Mother link (Elizabeth Whipple) stays STRONG compiled only: the will names no wife; this citation proves the father, not the mother. add_family reuses F0010 (exact father+mother match); Abigail is already a child. Ancestry 1 Nov 2026: same citation attached to Abigail's Birth fact on tree 208290233.\nConflicts: [\"The will does not name a wife, so it does not prove Elizabeth Whipple as Abigail's mother.\"]",
+   "type": "Research"
+  },
+  "N1759": {
+   "attached_to": [
+    {
+     "id": "C1244",
+     "type": "citation"
+    }
+   ],
+   "change": 1793545203,
+   "flags": [],
+   "handle": "104fec3f5daa1a22e90929e1d9b0",
+   "html": "<p>Transcription (as written): Will of Reuben Church of Brattleborough, Gentleman, dated 21 Sep 1833; exhibited by Samuel Wood and John B. Morehouse, executors, at the 5 Nov 1834 court and ordered recorded. &#x27;...my beloved son Alonzo Church, and my beloved daughters Elizabeth Church the wife of Simon Griggs, Abigail Church the wife of Samuel Wood, ... Rebecca Church the wife of John B. Morehouse ... I have nominated &amp; appointed Samuel Wood, the husband of my daughter Abigail Church, and John B. Morehouse, husband of my daughter Rebecca Church Executors&#x27;</p>",
+   "id": "N1759",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Will of Reuben Church of Brattleborough, Gentleman, dated 21 Sep 1833; exhibited by Samuel Wood and John B. Morehouse, executors, at the 5 Nov 1834 court and ordered recorded. '...my beloved son Alonzo Church, and my beloved daughters Elizabeth Church the wife of Simon Griggs, Abigail Church the wife of Samuel Wood, ... Rebecca Church the wife of John B. Morehouse ... I have nominated & appointed Samuel Wood, the husband of my daughter Abigail Church, and John B. Morehouse, husband of my daughter Rebecca Church Executors'",
+   "type": "Transcript"
+  },
+  "N1760": {
+   "attached_to": [
+    {
+     "id": "C1244",
+     "type": "citation"
+    }
+   ],
+   "change": 1793545203,
+   "flags": [],
+   "handle": "104fec3f60ac7ac7e25c41204b5e",
+   "html": "<p>2026-11-01 (karel): Ancestry 1 Nov 2026: new Probate fact 5 Nov 1834 Brattleboro added to Reuben Church 212801280628 on tree 208290233, cited to new source &#x27;Vermont, U.S., Wills and Probate Records, 1749-1999 — Marlboro Probate District, vol. 13-14&#x27;. Research: /workspace/wood-family/PACKET-REUBEN-WILL-WHIPPLE-31OCT.md (image-verified transcription of register pp. 49-51; image is p. 50-51). Will dated 21 Sep 1833 (image reads September; Alice Church 1949 says Dec.).<br>Conflicts: [&#x27;Alice M. Church (1949) gives the codicil date as 21 Dec; the register image reads 21 September 1833.&#x27;]</p>",
+   "id": "N1760",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-01 (karel): Ancestry 1 Nov 2026: new Probate fact 5 Nov 1834 Brattleboro added to Reuben Church 212801280628 on tree 208290233, cited to new source 'Vermont, U.S., Wills and Probate Records, 1749-1999 — Marlboro Probate District, vol. 13-14'. Research: /workspace/wood-family/PACKET-REUBEN-WILL-WHIPPLE-31OCT.md (image-verified transcription of register pp. 49-51; image is p. 50-51). Will dated 21 Sep 1833 (image reads September; Alice Church 1949 says Dec.).\nConflicts: ['Alice M. Church (1949) gives the codicil date as 21 Dec; the register image reads 21 September 1833.']",
+   "type": "Research"
   }
  },
  "people": {
@@ -130922,7 +131201,7 @@
     "type": "Birth",
     "year": 1757
    },
-   "change": 1793043706,
+   "change": 1793545204,
    "citations": [],
    "death": {
     "date": null,
@@ -130943,12 +131222,18 @@
     {
      "ref": "E0047",
      "role": "Primary"
+    },
+    {
+     "ref": "E1563",
+     "role": "Primary"
     }
    ],
    "families": [
     "F0010"
    ],
-   "flags": [],
+   "flags": [
+    "agent-proposed"
+   ],
    "gender": "M",
    "handle": "104ebd54a0886025b6f50f221545",
    "id": "I0018",
@@ -130970,13 +131255,17 @@
     "F0011"
    ],
    "provenance": [
+    "agent-karel",
+    "agent-proposed",
     "import-ancestry-2026-10-25"
    ],
    "review": "unreviewed",
    "status": "full",
    "tags": [
-    "import-ancestry-2026-10-25",
-    "unreviewed"
+    "agent-karel",
+    "unreviewed",
+    "agent-proposed",
+    "import-ancestry-2026-10-25"
    ],
    "urls": [],
    "xref": {
@@ -168286,6 +168575,14 @@
    "notes": [],
    "type": "Archive",
    "urls": []
+  },
+  "R0020": {
+   "handle": "104fec3f3dad509c7599a6a1f841",
+   "id": "R0020",
+   "name": "Ancestry.com (collection 9084), from Vermont probate court records",
+   "notes": [],
+   "type": "Archive",
+   "urls": []
   }
  },
  "sources": {
@@ -174613,6 +174910,40 @@
     "agent-proposed"
    ],
    "title": "Société d'histoire de la Haute-Yamaska, 'La toponymie de Granby' (entries Ottawa; Parc, avenue du)"
+  },
+  "S0200": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1243",
+    "C1244"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "104fec3f41297728634c4cc987d7",
+   "id": "S0200",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0020"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "Vermont, U.S., Wills and Probate Records, 1749-1999 — Marlboro Probate District, vol. 13-14"
   }
  }
 }
