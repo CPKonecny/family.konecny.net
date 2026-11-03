@@ -38945,6 +38945,178 @@
    ],
    "tier": "record",
    "url": ""
+  },
+  "C1245": {
+   "ancestry_record_id": "",
+   "change": 1793631602,
+   "cited_by": [
+    {
+     "id": "E0788",
+     "type": "event"
+    }
+   ],
+   "confidence": 4,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10501fbedbeb61024e830c7f8a86",
+   "id": "C1245",
+   "information": "primary",
+   "media": [
+    {
+     "ref": "O0194"
+    }
+   ],
+   "notes": [
+    "N1761",
+    "N1762"
+   ],
+   "page": "radnice-ro-29_2940-n (Mostiště, snímek 294, row 4)",
+   "proposal_file": "2026-11-02_0940_tauber-alois1872_birth-1872.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0189",
+   "source_type": "original",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "record",
+   "url": "https://www.portafontium.eu/iipimage/30067815/radnice-ro-29_2940-n"
+  },
+  "C1246": {
+   "ancestry_record_id": "",
+   "change": 1793631604,
+   "cited_by": [
+    {
+     "id": "E0790",
+     "type": "event"
+    }
+   ],
+   "confidence": 4,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10501fbf0d2615e8cc7906aa2b47",
+   "id": "C1246",
+   "information": "primary",
+   "media": [
+    {
+     "ref": "O0195"
+    }
+   ],
+   "notes": [
+    "N1763",
+    "N1764"
+   ],
+   "page": "RO20 snímek 361, row 1 (Mostiště, č. 148)",
+   "proposal_file": "2026-11-02_0941_tauber-alois1872_death-1872.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0188",
+   "source_type": "original",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "record",
+   "url": "https://www.portafontium.eu/iipimage/30067806/radnice-ro-20_3610-z"
+  },
+  "C1247": {
+   "ancestry_record_id": "",
+   "change": 1793631605,
+   "cited_by": [
+    {
+     "id": "E0796",
+     "type": "event"
+    }
+   ],
+   "confidence": 4,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10501fbf2b5d54ab446ca3a7a6e5",
+   "id": "C1247",
+   "information": "primary",
+   "media": [
+    {
+     "ref": "O0196"
+    }
+   ],
+   "notes": [
+    "N1765",
+    "N1766"
+   ],
+   "page": "radnice-ro-29_2960-n (Mostiště, snímek 296, row 6)",
+   "proposal_file": "2026-11-02_0942_tauber-alois1874_birth-1874.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0189",
+   "source_type": "original",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "record",
+   "url": "https://www.portafontium.eu/iipimage/30067815/radnice-ro-29_2960-n"
+  },
+  "C1248": {
+   "ancestry_record_id": "",
+   "change": 1793631605,
+   "cited_by": [
+    {
+     "id": "E0797",
+     "type": "event"
+    }
+   ],
+   "confidence": 4,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10501fbf4cd52ca01615ae5d822c",
+   "id": "C1248",
+   "information": "primary",
+   "media": [
+    {
+     "ref": "O0197"
+    }
+   ],
+   "notes": [
+    "N1767",
+    "N1768"
+   ],
+   "page": "RO20 snímek 361, row 9 (Mostiště, č. 60)",
+   "proposal_file": "2026-11-02_0943_tauber-alois1874_death-1874.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0188",
+   "source_type": "original",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "record",
+   "url": "https://www.portafontium.eu/iipimage/30067806/radnice-ro-20_3610-z"
   }
  },
  "events": {
@@ -65775,9 +65947,10 @@
   },
   "E0788": {
    "attributes": [],
-   "change": 1793221096,
+   "change": 1793631603,
    "citations": [
-    "C0805"
+    "C0805",
+    "C1245"
    ],
    "date": {
     "day": 11,
@@ -65789,9 +65962,11 @@
     "text": "11 February 1872",
     "year": 1872
    },
-   "description": "",
+   "description": "House 27; baptized 12 Feb 1872; RO29 snímek 294 row 4",
    "families": [],
-   "flags": [],
+   "flags": [
+    "agent-proposed"
+   ],
    "handle": "104ebd54bac3310059e705eae976",
    "id": "E0788",
    "media": [],
@@ -65804,6 +65979,8 @@
    ],
    "place": "P0177",
    "provenance": [
+    "agent-karel",
+    "agent-proposed",
     "agent-validator",
     "import-ancestry-2026-10-25"
    ],
@@ -65811,6 +65988,8 @@
    "tags": [
     "import-ancestry-2026-10-25",
     "ai-validated",
+    "agent-karel",
+    "agent-proposed",
     "agent-validator"
    ],
    "type": "Birth"
@@ -65864,9 +66043,10 @@
      "value": "Aged 9 months; pneumonia (zápal plic). Source: Radnice Roman Catholic parish registers (SOA Plzeň, Porta fontium); Detail: Radnice 20, deaths 1861–1888, Mostiště 1872–74 spread, row 1 (Alois d. 8 Nov 1872) and row 9 (Alois d. 12 Apr 1874), snímek 361; Imag"
     }
    ],
-   "change": 1793221105,
+   "change": 1793631604,
    "citations": [
-    "C0807"
+    "C0807",
+    "C1246"
    ],
    "date": {
     "day": 8,
@@ -65878,9 +66058,11 @@
     "text": "8 November 1872",
     "year": 1872
    },
-   "description": "",
+   "description": "Buried 10 Nov 1872 Chomle; age 9 months; pneumonia (zápal plic)",
    "families": [],
-   "flags": [],
+   "flags": [
+    "agent-proposed"
+   ],
    "handle": "104ebd54bad4218a2fe91f3bbaa3",
    "id": "E0790",
    "media": [],
@@ -65893,6 +66075,8 @@
    ],
    "place": "P0177",
    "provenance": [
+    "agent-karel",
+    "agent-proposed",
     "agent-validator",
     "import-ancestry-2026-10-25"
    ],
@@ -65900,6 +66084,8 @@
    "tags": [
     "import-ancestry-2026-10-25",
     "ai-validated",
+    "agent-karel",
+    "agent-proposed",
     "agent-validator"
    ],
    "type": "Death"
@@ -66077,9 +66263,10 @@
   },
   "E0796": {
    "attributes": [],
-   "change": 1793221122,
+   "change": 1793631605,
    "citations": [
-    "C0810"
+    "C0810",
+    "C1247"
    ],
    "date": {
     "day": 3,
@@ -66091,9 +66278,11 @@
     "text": "3 April 1874",
     "year": 1874
    },
-   "description": "",
+   "description": "House 27; baptized 3 Apr 1874 (Antonín Chvatkovský); RO29 snímek 296 row 6",
    "families": [],
-   "flags": [],
+   "flags": [
+    "agent-proposed"
+   ],
    "handle": "104ebd54bafaf50cf11ea78110a",
    "id": "E0796",
    "media": [],
@@ -66106,6 +66295,8 @@
    ],
    "place": "P0177",
    "provenance": [
+    "agent-karel",
+    "agent-proposed",
     "agent-validator",
     "import-ancestry-2026-10-25"
    ],
@@ -66113,6 +66304,8 @@
    "tags": [
     "import-ancestry-2026-10-25",
     "ai-validated",
+    "agent-karel",
+    "agent-proposed",
     "agent-validator"
    ],
    "type": "Birth"
@@ -66124,9 +66317,10 @@
      "value": "Aged 8 days; weakness (slabost). Source: Radnice Roman Catholic parish registers (SOA Plzeň, Porta fontium); Detail: Radnice 20, deaths 1861–1888, Mostiště 1872–74 spread, row 1 (Alois d. 8 Nov 1872) and row 9 (Alois d. 12 Apr 1874), snímek 361; Image: rad"
     }
    ],
-   "change": 1793221126,
+   "change": 1793631606,
    "citations": [
-    "C0811"
+    "C0811",
+    "C1248"
    ],
    "date": {
     "day": 12,
@@ -66138,9 +66332,11 @@
     "text": "12 April 1874",
     "year": 1874
    },
-   "description": "",
+   "description": "Buried 14 Apr 1874 Chomle; age 8 days; weakness (slabost)",
    "families": [],
-   "flags": [],
+   "flags": [
+    "agent-proposed"
+   ],
    "handle": "104ebd54bb02716ee079829256b3",
    "id": "E0797",
    "media": [],
@@ -66153,6 +66349,8 @@
    ],
    "place": "P0177",
    "provenance": [
+    "agent-karel",
+    "agent-proposed",
     "agent-validator",
     "import-ancestry-2026-10-25"
    ],
@@ -66160,6 +66358,8 @@
    "tags": [
     "import-ancestry-2026-10-25",
     "ai-validated",
+    "agent-karel",
+    "agent-proposed",
     "agent-validator"
    ],
    "type": "Death"
@@ -102376,6 +102576,138 @@
     "agent-karel",
     "agent-proposed"
    ]
+  },
+  "O0194": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1245",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-02_0940_tauber-alois1872_birth-1872.jpg"
+   },
+   "checksum": "1f0e359095b3e49baf1ce83c0eab8ab0",
+   "citations": [],
+   "date": null,
+   "desc": "Radnice Roman Catholic parish registers (SOA Plzeň, Porta fontium), RO29 births — radnice-ro-29_2940-n (Mostiště, snímek 294, row 4)",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10501fbece527a0bbbfc2658a1a4",
+   "id": "O0194",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0194",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ]
+  },
+  "O0195": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1246",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-02_0941_tauber-alois1872_death-1872.jpg"
+   },
+   "checksum": "9265955171d4d2234e9fb7ef5267ed94",
+   "citations": [],
+   "date": null,
+   "desc": "Radnice Roman Catholic parish registers (SOA Plzeň, Porta fontium), RO20 deaths — RO20 snímek 361, row 1 (Mostiště, č. 148)",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10501fbeffbe7fab00a46eca1c91",
+   "id": "O0195",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0195",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ]
+  },
+  "O0196": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1247",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-02_0942_tauber-alois1874_birth-1874.jpg"
+   },
+   "checksum": "dbc8866ad9a60d913698ebfaea216df4",
+   "citations": [],
+   "date": null,
+   "desc": "Radnice Roman Catholic parish registers (SOA Plzeň, Porta fontium), RO29 births — radnice-ro-29_2960-n (Mostiště, snímek 296, row 6)",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10501fbf238be4e7f3162d1f7a9",
+   "id": "O0196",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0196",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ]
+  },
+  "O0197": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1248",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-02_0943_tauber-alois1874_death-1874.jpg"
+   },
+   "checksum": "a5c8d29e49971e247b541aa64116d03d",
+   "citations": [],
+   "date": null,
+   "desc": "Radnice Roman Catholic parish registers (SOA Plzeň, Porta fontium), RO20 deaths — RO20 snímek 361, row 9 (Mostiště, č. 60)",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10501fbf3fa95b62fb6671ade9a9",
+   "id": "O0197",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0197",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ]
   }
  },
  "meta": {
@@ -102387,11 +102719,11 @@
    "very high"
   ],
   "counts": {
-   "citations": 1209,
+   "citations": 1213,
    "events": 1412,
    "families": 172,
-   "media": 186,
-   "notes": 1262,
+   "media": 190,
+   "notes": 1270,
    "people": 385,
    "places": 321,
    "repositories": 21,
@@ -102401,7 +102733,7 @@
    "full": 321,
    "living": 64
   },
-  "generated": "2026-11-02T08:17:46+00:00",
+  "generated": "2026-11-03T08:17:47+00:00",
   "generator": "gramps_export.py 0.3.0",
   "gramps_version": "6.0.8",
   "gramps_webapi_version": "3.17.0",
@@ -102425,7 +102757,7 @@
    "oral",
    "ai-draft"
   ],
-  "today": "2026-11-02",
+  "today": "2026-11-03",
   "tree": "Konecny"
  },
  "notes": {
@@ -129786,6 +130118,158 @@
    "tags": [],
    "text": "2026-11-01 (karel): Ancestry 1 Nov 2026: new Probate fact 5 Nov 1834 Brattleboro added to Reuben Church 212801280628 on tree 208290233, cited to new source 'Vermont, U.S., Wills and Probate Records, 1749-1999 — Marlboro Probate District, vol. 13-14'. Research: /workspace/wood-family/PACKET-REUBEN-WILL-WHIPPLE-31OCT.md (image-verified transcription of register pp. 49-51; image is p. 50-51). Will dated 21 Sep 1833 (image reads September; Alice Church 1949 says Dec.).\nConflicts: ['Alice M. Church (1949) gives the codicil date as 21 Dec; the register image reads 21 September 1833.']",
    "type": "Research"
+  },
+  "N1761": {
+   "attached_to": [
+    {
+     "id": "C1245",
+     "type": "citation"
+    }
+   ],
+   "change": 1793631602,
+   "flags": [],
+   "handle": "10501fbec62b6af3b852685b23a5",
+   "html": "<p>Transcription (as written): Alois, born 11 Feb 1872, baptized 12 Feb 1872, Moštice č.d. 27. Father Taubr Jan, havíř z Moštic č.d. 27, son of † Tomáš Taubr (havíř, Moštice 10) and Lidmila rozená Ocáskova (Moštice 6); mother Králova Barbora, dau. of Jan Král, rolník, Moštice 7, and Marie rozená Čermákova (Dvorec 246). Margin: † 8/11 72.</p>",
+   "id": "N1761",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Alois, born 11 Feb 1872, baptized 12 Feb 1872, Moštice č.d. 27. Father Taubr Jan, havíř z Moštic č.d. 27, son of † Tomáš Taubr (havíř, Moštice 10) and Lidmila rozená Ocáskova (Moštice 6); mother Králova Barbora, dau. of Jan Král, rolník, Moštice 7, and Marie rozená Čermákova (Dvorec 246). Margin: † 8/11 72.",
+   "type": "Transcript"
+  },
+  "N1762": {
+   "attached_to": [
+    {
+     "id": "C1245",
+     "type": "citation"
+    }
+   ],
+   "change": 1793631602,
+   "flags": [],
+   "handle": "10501fbeca955cf34d0de684f000",
+   "html": "<p>2026-11-02 (karel): Parish STEP 11 (1 Nov 2026, /workspace/radnice-tauber/REGISTER-ENTRIES.md): child of Jan Tauber 212735815392 × Barbora Králová 212806421374, SOLID; RO20 burial confirms RO29 margin. Ancestry 2 Nov 2026: fact cited on tree 208290233. Existing fact (date unchanged) got new Description and a new citation to the RO29/RO20 source; tree place entry &#x27;Mostiště, Rokycany, Bohemia&#x27; kept.<br>Conflicts: [&#x27;Godparents not transcribed (OPEN).&#x27;]</p>",
+   "id": "N1762",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-02 (karel): Parish STEP 11 (1 Nov 2026, /workspace/radnice-tauber/REGISTER-ENTRIES.md): child of Jan Tauber 212735815392 × Barbora Králová 212806421374, SOLID; RO20 burial confirms RO29 margin. Ancestry 2 Nov 2026: fact cited on tree 208290233. Existing fact (date unchanged) got new Description and a new citation to the RO29/RO20 source; tree place entry 'Mostiště, Rokycany, Bohemia' kept.\nConflicts: ['Godparents not transcribed (OPEN).']",
+   "type": "Research"
+  },
+  "N1763": {
+   "attached_to": [
+    {
+     "id": "C1246",
+     "type": "citation"
+    }
+   ],
+   "change": 1793631603,
+   "flags": [],
+   "handle": "10501fbef48d25d38c0d9b08191a",
+   "html": "<p>Transcription (as written): 1872 listopadu dne 8 / dne 10. Moštice č.d. 27 … Tauber Alois, syn Jana Taubra, havíře, a matky Barbory rozené Královy. Svobodný, 9 měsíců, Chomle, Zápal plic; Antonín Chvatkovský, kaplan. Confirms RO29 margin † 8/11 72.</p>",
+   "id": "N1763",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): 1872 listopadu dne 8 / dne 10. Moštice č.d. 27 … Tauber Alois, syn Jana Taubra, havíře, a matky Barbory rozené Královy. Svobodný, 9 měsíců, Chomle, Zápal plic; Antonín Chvatkovský, kaplan. Confirms RO29 margin † 8/11 72.",
+   "type": "Transcript"
+  },
+  "N1764": {
+   "attached_to": [
+    {
+     "id": "C1246",
+     "type": "citation"
+    }
+   ],
+   "change": 1793631603,
+   "flags": [],
+   "handle": "10501fbefa737eed8d95df1525e3",
+   "html": "<p>2026-11-02 (karel): Parish STEP 11 (1 Nov 2026, /workspace/radnice-tauber/REGISTER-ENTRIES.md): child of Jan Tauber 212735815392 × Barbora Králová 212806421374, SOLID; RO20 burial confirms RO29 margin. Ancestry 2 Nov 2026: fact cited on tree 208290233. Existing fact (date unchanged) got new Description and a new citation to the RO29/RO20 source; tree place entry &#x27;Mostiště, Rokycany, Bohemia&#x27; kept.</p>",
+   "id": "N1764",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-02 (karel): Parish STEP 11 (1 Nov 2026, /workspace/radnice-tauber/REGISTER-ENTRIES.md): child of Jan Tauber 212735815392 × Barbora Králová 212806421374, SOLID; RO20 burial confirms RO29 margin. Ancestry 2 Nov 2026: fact cited on tree 208290233. Existing fact (date unchanged) got new Description and a new citation to the RO29/RO20 source; tree place entry 'Mostiště, Rokycany, Bohemia' kept.",
+   "type": "Research"
+  },
+  "N1765": {
+   "attached_to": [
+    {
+     "id": "C1247",
+     "type": "citation"
+    }
+   ],
+   "change": 1793631604,
+   "flags": [],
+   "handle": "10501fbf1dd22734ef4ef905935c",
+   "html": "<p>Transcription (as written): Alois, born and baptized 3 Apr 1874, Moštice č.d. 27, priest Antonín Chvatkovský; parents Jan Taubr, havíř, and Barbora Králová (same parentage as the 1872 Alois row). Margin: † 12/4 74.</p>",
+   "id": "N1765",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Alois, born and baptized 3 Apr 1874, Moštice č.d. 27, priest Antonín Chvatkovský; parents Jan Taubr, havíř, and Barbora Králová (same parentage as the 1872 Alois row). Margin: † 12/4 74.",
+   "type": "Transcript"
+  },
+  "N1766": {
+   "attached_to": [
+    {
+     "id": "C1247",
+     "type": "citation"
+    }
+   ],
+   "change": 1793631604,
+   "flags": [],
+   "handle": "10501fbf20ac33cb6881f3503633",
+   "html": "<p>2026-11-02 (karel): Parish STEP 11 (1 Nov 2026, /workspace/radnice-tauber/REGISTER-ENTRIES.md): child of Jan Tauber 212735815392 × Barbora Králová 212806421374, SOLID; RO20 burial confirms RO29 margin. Ancestry 2 Nov 2026: fact cited on tree 208290233. Existing fact (date unchanged) got new Description and a new citation to the RO29/RO20 source; tree place entry &#x27;Mostiště, Rokycany, Bohemia&#x27; kept.<br>Conflicts: [&#x27;Godparents not transcribed (OPEN).&#x27;]</p>",
+   "id": "N1766",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-02 (karel): Parish STEP 11 (1 Nov 2026, /workspace/radnice-tauber/REGISTER-ENTRIES.md): child of Jan Tauber 212735815392 × Barbora Králová 212806421374, SOLID; RO20 burial confirms RO29 margin. Ancestry 2 Nov 2026: fact cited on tree 208290233. Existing fact (date unchanged) got new Description and a new citation to the RO29/RO20 source; tree place entry 'Mostiště, Rokycany, Bohemia' kept.\nConflicts: ['Godparents not transcribed (OPEN).']",
+   "type": "Research"
+  },
+  "N1767": {
+   "attached_to": [
+    {
+     "id": "C1248",
+     "type": "citation"
+    }
+   ],
+   "change": 1793631605,
+   "flags": [],
+   "handle": "10501fbf3a4529fd9ab47907fa06",
+   "html": "<p>Transcription (as written): 1874 dubna dne 12 / dne 14. Moštice č.d. 27 … Taubr Alois, syn Jana Taubra, havíře, a matky † Barbory Královy. 8 dní, Chomle, Slabost; Antonín Chvatkovský, kaplan. Confirms RO29 margin † 12/4 74.</p>",
+   "id": "N1767",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): 1874 dubna dne 12 / dne 14. Moštice č.d. 27 … Taubr Alois, syn Jana Taubra, havíře, a matky † Barbory Královy. 8 dní, Chomle, Slabost; Antonín Chvatkovský, kaplan. Confirms RO29 margin † 12/4 74.",
+   "type": "Transcript"
+  },
+  "N1768": {
+   "attached_to": [
+    {
+     "id": "C1248",
+     "type": "citation"
+    }
+   ],
+   "change": 1793631605,
+   "flags": [],
+   "handle": "10501fbf3cfe12509893e7aea6f5",
+   "html": "<p>2026-11-02 (karel): Parish STEP 11 (1 Nov 2026, /workspace/radnice-tauber/REGISTER-ENTRIES.md): child of Jan Tauber 212735815392 × Barbora Králová 212806421374, SOLID; RO20 burial confirms RO29 margin. Ancestry 2 Nov 2026: fact cited on tree 208290233. Existing fact (date unchanged) got new Description and a new citation to the RO29/RO20 source; tree place entry &#x27;Mostiště, Rokycany, Bohemia&#x27; kept.</p>",
+   "id": "N1768",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-02 (karel): Parish STEP 11 (1 Nov 2026, /workspace/radnice-tauber/REGISTER-ENTRIES.md): child of Jan Tauber 212735815392 × Barbora Králová 212806421374, SOLID; RO20 burial confirms RO29 margin. Ancestry 2 Nov 2026: fact cited on tree 208290233. Existing fact (date unchanged) got new Description and a new citation to the RO29/RO20 source; tree place entry 'Mostiště, Rokycany, Bohemia' kept.",
+   "type": "Research"
   }
  },
  "people": {
@@ -146076,7 +146560,7 @@
     "type": "Birth",
     "year": 1872
    },
-   "change": 1793043731,
+   "change": 1793631604,
    "citations": [],
    "death": {
     "date": {
@@ -146125,7 +146609,9 @@
     }
    ],
    "families": [],
-   "flags": [],
+   "flags": [
+    "agent-proposed"
+   ],
    "gender": "M",
    "handle": "104ebd54bac0207315e0727b46b3",
    "id": "I0192",
@@ -146147,13 +146633,17 @@
     "F0079"
    ],
    "provenance": [
+    "agent-karel",
+    "agent-proposed",
     "import-ancestry-2026-10-25"
    ],
    "review": "unreviewed",
    "status": "full",
    "tags": [
-    "import-ancestry-2026-10-25",
-    "unreviewed"
+    "agent-karel",
+    "agent-proposed",
+    "unreviewed",
+    "import-ancestry-2026-10-25"
    ],
    "urls": [],
    "xref": {
@@ -146180,7 +146670,7 @@
     "type": "Birth",
     "year": 1874
    },
-   "change": 1793043731,
+   "change": 1793631606,
    "citations": [],
    "death": {
     "date": {
@@ -146229,7 +146719,9 @@
     }
    ],
    "families": [],
-   "flags": [],
+   "flags": [
+    "agent-proposed"
+   ],
    "gender": "M",
    "handle": "104ebd54baee46480f3036677e27",
    "id": "I0193",
@@ -146251,13 +146743,17 @@
     "F0079"
    ],
    "provenance": [
+    "agent-karel",
+    "agent-proposed",
     "import-ancestry-2026-10-25"
    ],
    "review": "unreviewed",
    "status": "full",
    "tags": [
-    "import-ancestry-2026-10-25",
-    "unreviewed"
+    "agent-karel",
+    "agent-proposed",
+    "unreviewed",
+    "import-ancestry-2026-10-25"
    ],
    "urls": [],
    "xref": {
@@ -174511,7 +175007,9 @@
    "citations": [
     "C1209",
     "C1212",
-    "C1217"
+    "C1217",
+    "C1246",
+    "C1248"
    ],
    "flags": [
     "agent-proposed"
@@ -174545,7 +175043,9 @@
    "author": "",
    "citations": [
     "C1214",
-    "C1216"
+    "C1216",
+    "C1245",
+    "C1247"
    ],
    "flags": [
     "agent-proposed"
