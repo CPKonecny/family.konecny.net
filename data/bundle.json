@@ -102723,7 +102723,7 @@
    "events": 1412,
    "families": 172,
    "media": 190,
-   "notes": 1270,
+   "notes": 1271,
    "people": 385,
    "places": 321,
    "repositories": 21,
@@ -102733,7 +102733,7 @@
    "full": 321,
    "living": 64
   },
-  "generated": "2026-11-03T08:17:47+00:00",
+  "generated": "2026-11-04T08:17:46+00:00",
   "generator": "gramps_export.py 0.3.0",
   "gramps_version": "6.0.8",
   "gramps_webapi_version": "3.17.0",
@@ -102757,7 +102757,7 @@
    "oral",
    "ai-draft"
   ],
-  "today": "2026-11-03",
+  "today": "2026-11-04",
   "tree": "Konecny"
  },
  "notes": {
@@ -130270,6 +130270,25 @@
    "tags": [],
    "text": "2026-11-02 (karel): Parish STEP 11 (1 Nov 2026, /workspace/radnice-tauber/REGISTER-ENTRIES.md): child of Jan Tauber 212735815392 × Barbora Králová 212806421374, SOLID; RO20 burial confirms RO29 margin. Ancestry 2 Nov 2026: fact cited on tree 208290233. Existing fact (date unchanged) got new Description and a new citation to the RO29/RO20 source; tree place entry 'Mostiště, Rokycany, Bohemia' kept.",
    "type": "Research"
+  },
+  "N1769": {
+   "attached_to": [
+    {
+     "id": "I0054",
+     "type": "person"
+    }
+   ],
+   "change": 1793718002,
+   "flags": [],
+   "handle": "1050533e57ef3623ef4293ce646d",
+   "html": "<p>2026-11-03 (karel): RESEARCH SUMMARY (Lidečko 2514 N, read 2 Nov 2026) — ZA Opava, Sbírka matrik, Lidečko baptisms 1780–1810, inv. 2514 (VK IV 11), section N, scans s011–s015 (Jan 1787 – Nov 1789) and s027 (Jul 1795 – Jan 1796). SEARCHED, NO HIT: baptism of a Marina daughter of Johann Trchel. FOUND (collateral, LIKELY readings only because the Kurrent initial could be T or Ch): a Trchel family in Lidečko 1788–1795, fathers Joseph, Jakob and Franz, plus several Trchelowa mothers. Candidate only, not her: Marina, daughter of Joseph Trchel and Marina Martinkowa, bap. 25 [Jul] 1788, house 115 (father&#x27;s name does not match). The Mutter column gives only the mother&#x27;s married surname and given name. Still unread in N: s016–s026, s028, s029, s035–s053. Sources: /workspace/stitna-konecny/lidecko/2514 READ-2nov.md and GRAMPS-NOTE-2nov.txt.</p><p>Tier: ai-draft</p>",
+   "id": "N1769",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-03 (karel): RESEARCH SUMMARY (Lidečko 2514 N, read 2 Nov 2026) — ZA Opava, Sbírka matrik, Lidečko baptisms 1780–1810, inv. 2514 (VK IV 11), section N, scans s011–s015 (Jan 1787 – Nov 1789) and s027 (Jul 1795 – Jan 1796). SEARCHED, NO HIT: baptism of a Marina daughter of Johann Trchel. FOUND (collateral, LIKELY readings only because the Kurrent initial could be T or Ch): a Trchel family in Lidečko 1788–1795, fathers Joseph, Jakob and Franz, plus several Trchelowa mothers. Candidate only, not her: Marina, daughter of Joseph Trchel and Marina Martinkowa, bap. 25 [Jul] 1788, house 115 (father's name does not match). The Mutter column gives only the mother's married surname and given name. Still unread in N: s016–s026, s028, s029, s035–s053. Sources: /workspace/stitna-konecny/lidecko/2514 READ-2nov.md and GRAMPS-NOTE-2nov.txt.\n\nTier: ai-draft",
+   "type": "Research"
   }
  },
  "people": {
@@ -134952,7 +134971,7 @@
   "I0054": {
    "alt_names": [],
    "attributes": [],
-   "change": 1793478603,
+   "change": 1793718002,
    "citations": [],
    "death": {
     "date": null,
@@ -134998,7 +135017,8 @@
     "type": "Birth Name"
    },
    "notes": [
-    "N1704"
+    "N1704",
+    "N1769"
    ],
    "parents": [],
    "provenance": [
@@ -135009,10 +135029,10 @@
    "review": "unreviewed",
    "status": "full",
    "tags": [
-    "agent-proposed",
-    "unreviewed",
     "import-ancestry-2026-10-25",
-    "agent-karel"
+    "agent-proposed",
+    "agent-karel",
+    "unreviewed"
    ],
    "urls": [],
    "xref": {
