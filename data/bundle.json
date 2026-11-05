@@ -39117,6 +39117,84 @@
    ],
    "tier": "record",
    "url": "https://www.portafontium.eu/iipimage/30067806/radnice-ro-20_3610-z"
+  },
+  "C1249": {
+   "ancestry_record_id": "",
+   "change": 1793804403,
+   "cited_by": [
+    {
+     "id": "E1564",
+     "type": "event"
+    }
+   ],
+   "confidence": 2,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "105086be1351602f42784dc61843",
+   "id": "C1249",
+   "information": "secondary",
+   "media": [],
+   "notes": [
+    "N1770",
+    "N1771"
+   ],
+   "page": "Entry for Jane Louisa (Beckley) Herrick",
+   "proposal_file": "2026-11-04_0940_wood-alonzo_birth-1812-beckley.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0201",
+   "source_type": "compiled",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "compiled",
+   "url": "https://archive.org/details/descendantsofric00shep"
+  },
+  "C1250": {
+   "ancestry_record_id": "",
+   "change": 1793804403,
+   "cited_by": [
+    {
+     "id": "I0125",
+     "type": "person"
+    }
+   ],
+   "confidence": 2,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "105086be2bb518d8aa578fbbeb82",
+   "id": "C1250",
+   "information": "secondary",
+   "media": [],
+   "notes": [
+    "N1772",
+    "N1773"
+   ],
+   "page": "Entry for Jane Louisa (Beckley) Herrick",
+   "proposal_file": "2026-11-04_0941_wood-alonzo_death-1892-citation.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0201",
+   "source_type": "compiled",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "compiled",
+   "url": "https://archive.org/details/descendantsofric00shep"
   }
  },
  "events": {
@@ -89599,6 +89677,49 @@
     "agent-proposed"
    ],
    "type": "Probate"
+  },
+  "E1564": {
+   "attributes": [],
+   "change": 1793804403,
+   "citations": [
+    "C1249"
+   ],
+   "date": {
+    "day": 4,
+    "iso": "1812-07-04",
+    "modifier": null,
+    "month": 7,
+    "quality": null,
+    "sort": 2383064,
+    "text": "4 July 1812",
+    "year": 1812
+   },
+   "description": "Alternate birth from compiled Beckley genealogy ('Canada?' queried in source); tree also has 1811",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "105086be19721fda3c3ed0300eb",
+   "id": "E1564",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0125",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0282",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Birth"
   }
  },
  "families": {
@@ -102719,21 +102840,21 @@
    "very high"
   ],
   "counts": {
-   "citations": 1213,
-   "events": 1412,
+   "citations": 1215,
+   "events": 1413,
    "families": 172,
    "media": 190,
-   "notes": 1271,
+   "notes": 1276,
    "people": 385,
    "places": 321,
-   "repositories": 21,
-   "sources": 196
+   "repositories": 22,
+   "sources": 197
   },
   "counts_people": {
    "full": 321,
    "living": 64
   },
-  "generated": "2026-11-04T08:17:46+00:00",
+  "generated": "2026-11-05T08:17:47+00:00",
   "generator": "gramps_export.py 0.3.0",
   "gramps_version": "6.0.8",
   "gramps_webapi_version": "3.17.0",
@@ -102757,7 +102878,7 @@
    "oral",
    "ai-draft"
   ],
-  "today": "2026-11-04",
+  "today": "2026-11-05",
   "tree": "Konecny"
  },
  "notes": {
@@ -130289,6 +130410,101 @@
    "tags": [],
    "text": "2026-11-03 (karel): RESEARCH SUMMARY (Lidečko 2514 N, read 2 Nov 2026) — ZA Opava, Sbírka matrik, Lidečko baptisms 1780–1810, inv. 2514 (VK IV 11), section N, scans s011–s015 (Jan 1787 – Nov 1789) and s027 (Jul 1795 – Jan 1796). SEARCHED, NO HIT: baptism of a Marina daughter of Johann Trchel. FOUND (collateral, LIKELY readings only because the Kurrent initial could be T or Ch): a Trchel family in Lidečko 1788–1795, fathers Joseph, Jakob and Franz, plus several Trchelowa mothers. Candidate only, not her: Marina, daughter of Joseph Trchel and Marina Martinkowa, bap. 25 [Jul] 1788, house 115 (father's name does not match). The Mutter column gives only the mother's married surname and given name. Still unread in N: s016–s026, s028, s029, s035–s053. Sources: /workspace/stitna-konecny/lidecko/2514 READ-2nov.md and GRAMPS-NOTE-2nov.txt.\n\nTier: ai-draft",
    "type": "Research"
+  },
+  "N1770": {
+   "attached_to": [
+    {
+     "id": "C1249",
+     "type": "citation"
+    }
+   ],
+   "change": 1793804403,
+   "flags": [],
+   "handle": "105086be0e121c594015d3c1593d",
+   "html": "<p>Transcription (as written): m. 2nd Brattleboro Vt. June 2 1861 Alonzo Church Wood, s. Abigail Church &amp; Samuel Wood, b. Canada? July 4 1812; d. Chicago Ill. March 18 1892.</p>",
+   "id": "N1770",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): m. 2nd Brattleboro Vt. June 2 1861 Alonzo Church Wood, s. Abigail Church & Samuel Wood, b. Canada? July 4 1812; d. Chicago Ill. March 18 1892.",
+   "type": "Transcript"
+  },
+  "N1771": {
+   "attached_to": [
+    {
+     "id": "C1249",
+     "type": "citation"
+    }
+   ],
+   "change": 1793804403,
+   "flags": [],
+   "handle": "105086be109f7c01d10cb980636e",
+   "html": "<p>2026-11-04 (karel): Wood batch 11 (Woodside, 3 Nov 2026, /workspace/wood-family/PACKET-WOOD-BATCH11-03NOV.md), graded STRONG compiled. Ancestry 4 Nov 2026: cited on tree 208290233. Added as a new alternate Birth fact; existing Birth 1811 left unchanged.<br>Conflicts: [&#x27;Existing Birth 1811 differs from compiled 4 Jul 1812&#x27;]</p>",
+   "id": "N1771",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-04 (karel): Wood batch 11 (Woodside, 3 Nov 2026, /workspace/wood-family/PACKET-WOOD-BATCH11-03NOV.md), graded STRONG compiled. Ancestry 4 Nov 2026: cited on tree 208290233. Added as a new alternate Birth fact; existing Birth 1811 left unchanged.\nConflicts: ['Existing Birth 1811 differs from compiled 4 Jul 1812']",
+   "type": "Research"
+  },
+  "N1772": {
+   "attached_to": [
+    {
+     "id": "C1250",
+     "type": "citation"
+    }
+   ],
+   "change": 1793804403,
+   "flags": [],
+   "handle": "105086be25327e430879fc4de290",
+   "html": "<p>Transcription (as written): m. 2nd Brattleboro Vt. June 2 1861 Alonzo Church Wood, s. Abigail Church &amp; Samuel Wood, b. Canada? July 4 1812; d. Chicago Ill. March 18 1892.</p>",
+   "id": "N1772",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): m. 2nd Brattleboro Vt. June 2 1861 Alonzo Church Wood, s. Abigail Church & Samuel Wood, b. Canada? July 4 1812; d. Chicago Ill. March 18 1892.",
+   "type": "Transcript"
+  },
+  "N1773": {
+   "attached_to": [
+    {
+     "id": "C1250",
+     "type": "citation"
+    }
+   ],
+   "change": 1793804403,
+   "flags": [],
+   "handle": "105086be2825544c4f63721378e7",
+   "html": "<p>2026-11-04 (karel): Wood batch 11 (Woodside, 3 Nov 2026, /workspace/wood-family/PACKET-WOOD-BATCH11-03NOV.md), graded STRONG compiled. Ancestry 4 Nov 2026: cited on tree 208290233. Citation added to existing Death 1892 fact; date and place unchanged.</p>",
+   "id": "N1773",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-04 (karel): Wood batch 11 (Woodside, 3 Nov 2026, /workspace/wood-family/PACKET-WOOD-BATCH11-03NOV.md), graded STRONG compiled. Ancestry 4 Nov 2026: cited on tree 208290233. Citation added to existing Death 1892 fact; date and place unchanged.",
+   "type": "Research"
+  },
+  "N1774": {
+   "attached_to": [
+    {
+     "id": "I0125",
+     "type": "person"
+    }
+   ],
+   "change": 1793804404,
+   "flags": [],
+   "handle": "105086be380560ca491b10ca5843",
+   "html": "<p>2026-11-04 (karel): PROBABLE (compiled, not yet verified by a vital record): Sheppard, Descendants of Richard Beckley, names Alonzo Church Wood as son of Abigail Church and Samuel Wood, born Canada(?) 4 Jul 1812; married 2nd husband of Jane Louisa (Beckley) Herrick at Brattleboro, Vt., 2 Jun 1861; died Chicago, Ill., 18 Mar 1892. Next check: Vermont vital records, Brattleboro marriage 2 Jun 1861.</p><p>Tier: ai-draft</p>",
+   "id": "N1774",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-04 (karel): PROBABLE (compiled, not yet verified by a vital record): Sheppard, Descendants of Richard Beckley, names Alonzo Church Wood as son of Abigail Church and Samuel Wood, born Canada(?) 4 Jul 1812; married 2nd husband of Jane Louisa (Beckley) Herrick at Brattleboro, Vt., 2 Jun 1861; died Chicago, Ill., 18 Mar 1892. Next check: Vermont vital records, Brattleboro marriage 2 Jun 1861.\n\nTier: ai-draft",
+   "type": "Research"
   }
  },
  "people": {
@@ -140209,8 +140425,10 @@
     "type": "Birth",
     "year": 1811
    },
-   "change": 1793043740,
-   "citations": [],
+   "change": 1793804404,
+   "citations": [
+    "C1250"
+   ],
    "death": {
     "date": {
      "day": null,
@@ -140239,10 +140457,16 @@
     {
      "ref": "E0419",
      "role": "Primary"
+    },
+    {
+     "ref": "E1564",
+     "role": "Primary"
     }
    ],
    "families": [],
-   "flags": [],
+   "flags": [
+    "agent-proposed"
+   ],
    "gender": "M",
    "handle": "104ebd54acf56ab49db02177f378",
    "id": "I0125",
@@ -140262,18 +140486,24 @@
     "title": "",
     "type": "Birth Name"
    },
-   "notes": [],
+   "notes": [
+    "N1774"
+   ],
    "parents": [
     "F0019"
    ],
    "provenance": [
+    "agent-karel",
+    "agent-proposed",
     "import-ancestry-2026-10-25"
    ],
    "review": "unreviewed",
    "status": "full",
    "tags": [
+    "unreviewed",
     "import-ancestry-2026-10-25",
-    "unreviewed"
+    "agent-karel",
+    "agent-proposed"
    ],
    "urls": [],
    "xref": {
@@ -169099,6 +169329,14 @@
    "notes": [],
    "type": "Archive",
    "urls": []
+  },
+  "R0021": {
+   "handle": "105086be0643afbfc4607f8c65d",
+   "id": "R0021",
+   "name": "Internet Archive",
+   "notes": [],
+   "type": "Archive",
+   "urls": []
   }
  },
  "sources": {
@@ -175464,6 +175702,40 @@
     "agent-proposed"
    ],
    "title": "Vermont, U.S., Wills and Probate Records, 1749-1999 — Marlboro Probate District, vol. 13-14"
+  },
+  "S0201": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1249",
+    "C1250"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "105086be0ab3396d04fb7b802c9b",
+   "id": "S0201",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0021"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "Sheppard, Descendants of Richard Beckley (compiled genealogy; Internet Archive descendantsofric00shep)"
   }
  }
 }
