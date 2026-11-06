@@ -60510,93 +60510,6 @@
    ],
    "type": "Residence"
   },
-  "E0622": {
-   "attributes": [],
-   "change": 1793040994,
-   "citations": [],
-   "date": null,
-   "description": "212735658607:1030:208290233",
-   "families": [],
-   "flags": [],
-   "handle": "104ebd54b7014d799dae4fb13df",
-   "id": "E0622",
-   "media": [],
-   "notes": [],
-   "participants": [
-    {
-     "person": "I0152",
-     "role": "Primary"
-    }
-   ],
-   "place": null,
-   "provenance": [
-    "import-ancestry-2026-10-25"
-   ],
-   "review": "unreviewed",
-   "tags": [
-    "import-ancestry-2026-10-25",
-    "unreviewed"
-   ],
-   "type": "_AMTID"
-  },
-  "E0623": {
-   "attributes": [],
-   "change": 1793040994,
-   "citations": [],
-   "date": null,
-   "description": "",
-   "families": [],
-   "flags": [],
-   "handle": "104ebd54b7041f604bb83ab26e27",
-   "id": "E0623",
-   "media": [],
-   "notes": [],
-   "participants": [
-    {
-     "person": "I0152",
-     "role": "Primary"
-    }
-   ],
-   "place": "P0188",
-   "provenance": [
-    "import-ancestry-2026-10-25"
-   ],
-   "review": "unreviewed",
-   "tags": [
-    "import-ancestry-2026-10-25",
-    "unreviewed"
-   ],
-   "type": "Birth"
-  },
-  "E0624": {
-   "attributes": [],
-   "change": 1793040994,
-   "citations": [],
-   "date": null,
-   "description": "",
-   "families": [],
-   "flags": [],
-   "handle": "104ebd54b7076435af1a5c0e483",
-   "id": "E0624",
-   "media": [],
-   "notes": [],
-   "participants": [
-    {
-     "person": "I0152",
-     "role": "Primary"
-    }
-   ],
-   "place": null,
-   "provenance": [
-    "import-ancestry-2026-10-25"
-   ],
-   "review": "unreviewed",
-   "tags": [
-    "import-ancestry-2026-10-25",
-    "unreviewed"
-   ],
-   "type": "Death"
-  },
   "E0628": {
    "attributes": [],
    "change": 1793040995,
@@ -102928,20 +102841,20 @@
   ],
   "counts": {
    "citations": 1215,
-   "events": 1416,
+   "events": 1413,
    "families": 172,
    "media": 190,
    "notes": 1276,
    "people": 385,
-   "places": 322,
+   "places": 321,
    "repositories": 22,
    "sources": 197
   },
   "counts_people": {
-   "full": 322,
-   "living": 63
+   "full": 321,
+   "living": 64
   },
-  "generated": "2026-11-06T19:54:06+00:00",
+  "generated": "2026-11-06T21:25:16+00:00",
   "generator": "gramps_export.py 0.3.0",
   "gramps_version": "6.0.8",
   "gramps_webapi_version": "3.17.0",
@@ -143466,46 +143379,12 @@
    }
   },
   "I0152": {
-   "alt_names": [],
-   "attributes": [],
-   "birth": {
-    "date": null,
-    "event": "E0623",
-    "place": "P0188",
-    "type": "Birth",
-    "year": null
-   },
-   "change": 1793043716,
-   "citations": [],
-   "death": {
-    "date": null,
-    "event": "E0624",
-    "place": null,
-    "type": "Death",
-    "year": null
-   },
-   "events": [
-    {
-     "ref": "E0622",
-     "role": "Primary"
-    },
-    {
-     "ref": "E0623",
-     "role": "Primary"
-    },
-    {
-     "ref": "E0624",
-     "role": "Primary"
-    }
-   ],
    "families": [
     "F0078"
    ],
-   "flags": [],
    "gender": "M",
    "handle": "104ebd54b700574f070afc622a2f",
    "id": "I0152",
-   "media": [],
    "name": {
     "call": "",
     "display": "John Konecny",
@@ -143515,25 +143394,10 @@
     "sort": "Konecny, John",
     "suffix": "",
     "surname": "Konecny",
-    "title": "",
-    "type": "Birth Name"
+    "title": ""
    },
-   "notes": [],
    "parents": [],
-   "provenance": [
-    "import-ancestry-2026-10-25"
-   ],
-   "review": "unreviewed",
-   "status": "full",
-   "tags": [
-    "import-ancestry-2026-10-25",
-    "unreviewed"
-   ],
-   "urls": [],
-   "xref": {
-    "ancestry": "212735658607",
-    "rm_rin": "152"
-   }
+   "status": "living"
   },
   "I0153": {
    "families": [
@@ -165385,33 +165249,6 @@
    "long": -88.001492,
    "media": [],
    "name": "Holy Cross Cemetery, Milwaukee, Milwaukee, Wisconsin, USA",
-   "notes": [],
-   "provenance": [
-    "import-ancestry-2026-10-25"
-   ],
-   "review": "unreviewed",
-   "tags": [
-    "import-ancestry-2026-10-25"
-   ],
-   "type": "Unknown",
-   "urls": []
-  },
-  "P0188": {
-   "alt_names": [],
-   "citations": [],
-   "code": "",
-   "display": "morava, Bohemia",
-   "enclosed_by": [],
-   "flags": [],
-   "handle": "104ebd54b705d07f2f28d140405",
-   "hierarchy": [
-    "P0188"
-   ],
-   "id": "P0188",
-   "lat": 49.359706,
-   "long": 17.30942,
-   "media": [],
-   "name": "morava, Bohemia",
    "notes": [],
    "provenance": [
     "import-ancestry-2026-10-25"
