@@ -3266,195 +3266,6 @@
    ],
    "tier": null
   },
-  "C0106": {
-   "change": 1793041199,
-   "cited_by": [
-    {
-     "id": "I0029",
-     "type": "person"
-    }
-   ],
-   "confidence": 2,
-   "date": null,
-   "flags": [],
-   "handle": "104ebd54a30b42845e0066a72fdf",
-   "id": "C0106",
-   "media": [],
-   "notes": [],
-   "page": "",
-   "provenance": [
-    "import-ancestry-2026-10-25"
-   ],
-   "review": "unreviewed",
-   "source": "S0002",
-   "tags": [
-    "import-ancestry-2026-10-25",
-    "unreviewed"
-   ],
-   "tier": null
-  },
-  "C0107": {
-   "change": 1793041289,
-   "cited_by": [
-    {
-     "id": "I0029",
-     "type": "person"
-    }
-   ],
-   "confidence": 2,
-   "date": null,
-   "flags": [],
-   "handle": "104ebd54a30d7db6509daceedae7",
-   "id": "C0107",
-   "media": [],
-   "notes": [],
-   "page": "Illinois State Archive; Springfield, IL, USA; Illinois Statewide Death Index, Pre-1916; URL: https://apps.ilsos.gov//isavital/deathsrch.jsp",
-   "provenance": [
-    "import-ancestry-2026-10-25"
-   ],
-   "review": "unreviewed",
-   "source": "S0032",
-   "tags": [
-    "import-ancestry-2026-10-25",
-    "unreviewed"
-   ],
-   "tier": null
-  },
-  "C0108": {
-   "change": 1793041199,
-   "cited_by": [
-    {
-     "id": "E0096",
-     "type": "event"
-    }
-   ],
-   "confidence": 2,
-   "date": null,
-   "flags": [],
-   "handle": "104ebd54a3146864ff94d600cb8f",
-   "id": "C0108",
-   "media": [],
-   "notes": [],
-   "page": "",
-   "provenance": [
-    "import-ancestry-2026-10-25"
-   ],
-   "review": "unreviewed",
-   "source": "S0002",
-   "tags": [
-    "import-ancestry-2026-10-25",
-    "unreviewed"
-   ],
-   "tier": null
-  },
-  "C0109": {
-   "change": 1793041289,
-   "cited_by": [
-    {
-     "id": "E0096",
-     "type": "event"
-    }
-   ],
-   "confidence": 2,
-   "date": null,
-   "flags": [],
-   "handle": "104ebd54a316241c0b4c4ff002ca",
-   "id": "C0109",
-   "media": [],
-   "notes": [],
-   "page": "Illinois State Archive; Springfield, IL, USA; Illinois Statewide Death Index, Pre-1916; URL: https://apps.ilsos.gov//isavital/deathsrch.jsp",
-   "provenance": [
-    "import-ancestry-2026-10-25"
-   ],
-   "review": "unreviewed",
-   "source": "S0032",
-   "tags": [
-    "import-ancestry-2026-10-25",
-    "unreviewed"
-   ],
-   "tier": null
-  },
-  "C0110": {
-   "change": 1793041199,
-   "cited_by": [
-    {
-     "id": "E0097",
-     "type": "event"
-    }
-   ],
-   "confidence": 2,
-   "date": null,
-   "flags": [],
-   "handle": "104ebd54a31b1837c82dd9a0e897",
-   "id": "C0110",
-   "media": [],
-   "notes": [],
-   "page": "",
-   "provenance": [
-    "import-ancestry-2026-10-25"
-   ],
-   "review": "unreviewed",
-   "source": "S0002",
-   "tags": [
-    "import-ancestry-2026-10-25",
-    "unreviewed"
-   ],
-   "tier": null
-  },
-  "C0111": {
-   "change": 1793041290,
-   "cited_by": [
-    {
-     "id": "E0097",
-     "type": "event"
-    }
-   ],
-   "confidence": 2,
-   "date": null,
-   "flags": [],
-   "handle": "104ebd54a31d84f81221af4d9c4",
-   "id": "C0111",
-   "media": [],
-   "notes": [],
-   "page": "Illinois State Archive; Springfield, IL, USA; Illinois Statewide Death Index, Pre-1916; URL: https://apps.ilsos.gov//isavital/deathsrch.jsp",
-   "provenance": [
-    "import-ancestry-2026-10-25"
-   ],
-   "review": "unreviewed",
-   "source": "S0032",
-   "tags": [
-    "import-ancestry-2026-10-25",
-    "unreviewed"
-   ],
-   "tier": null
-  },
-  "C0112": {
-   "change": 1793041200,
-   "cited_by": [
-    {
-     "id": "E0098",
-     "type": "event"
-    }
-   ],
-   "confidence": 2,
-   "date": null,
-   "flags": [],
-   "handle": "104ebd54a3231bbfc9ab6b28bd6",
-   "id": "C0112",
-   "media": [],
-   "notes": [],
-   "page": "",
-   "provenance": [
-    "import-ancestry-2026-10-25"
-   ],
-   "review": "unreviewed",
-   "source": "S0002",
-   "tags": [
-    "import-ancestry-2026-10-25",
-    "unreviewed"
-   ],
-   "tier": null
-  },
   "C0113": {
    "change": 1793222541,
    "cited_by": [
@@ -42146,253 +41957,6 @@
     "unreviewed"
    ],
    "type": "Residence"
-  },
-  "E0092": {
-   "attributes": [],
-   "change": 1793040882,
-   "citations": [],
-   "date": null,
-   "description": "212735895102:1030:208290233",
-   "families": [],
-   "flags": [],
-   "handle": "104ebd54a2fe6129723f399b2802",
-   "id": "E0092",
-   "media": [],
-   "notes": [],
-   "participants": [
-    {
-     "person": "I0028",
-     "role": "Primary"
-    }
-   ],
-   "place": null,
-   "provenance": [
-    "import-ancestry-2026-10-25"
-   ],
-   "review": "unreviewed",
-   "tags": [
-    "import-ancestry-2026-10-25",
-    "unreviewed"
-   ],
-   "type": "_AMTID"
-  },
-  "E0093": {
-   "attributes": [],
-   "change": 1793040883,
-   "citations": [],
-   "date": {
-    "day": null,
-    "iso": "1865",
-    "modifier": null,
-    "month": null,
-    "quality": null,
-    "sort": 2402238,
-    "text": "1865",
-    "year": 1865
-   },
-   "description": "",
-   "families": [],
-   "flags": [],
-   "handle": "104ebd54a3016ddb36c516c68e8",
-   "id": "E0093",
-   "media": [],
-   "notes": [],
-   "participants": [
-    {
-     "person": "I0028",
-     "role": "Primary"
-    }
-   ],
-   "place": null,
-   "provenance": [
-    "import-ancestry-2026-10-25"
-   ],
-   "review": "unreviewed",
-   "tags": [
-    "import-ancestry-2026-10-25",
-    "unreviewed"
-   ],
-   "type": "Birth"
-  },
-  "E0094": {
-   "attributes": [],
-   "change": 1793040883,
-   "citations": [],
-   "date": {
-    "day": null,
-    "iso": "1911",
-    "modifier": null,
-    "month": null,
-    "quality": null,
-    "sort": 2419038,
-    "text": "1911",
-    "year": 1911
-   },
-   "description": "",
-   "families": [],
-   "flags": [],
-   "handle": "104ebd54a3035a363ca51c6e8b69",
-   "id": "E0094",
-   "media": [],
-   "notes": [],
-   "participants": [
-    {
-     "person": "I0028",
-     "role": "Primary"
-    }
-   ],
-   "place": null,
-   "provenance": [
-    "import-ancestry-2026-10-25"
-   ],
-   "review": "unreviewed",
-   "tags": [
-    "import-ancestry-2026-10-25",
-    "unreviewed"
-   ],
-   "type": "Death"
-  },
-  "E0095": {
-   "attributes": [],
-   "change": 1793040883,
-   "citations": [],
-   "date": null,
-   "description": "212735895103:1030:208290233",
-   "families": [],
-   "flags": [],
-   "handle": "104ebd54a30e401c12b9476781dd",
-   "id": "E0095",
-   "media": [],
-   "notes": [],
-   "participants": [
-    {
-     "person": "I0029",
-     "role": "Primary"
-    }
-   ],
-   "place": null,
-   "provenance": [
-    "import-ancestry-2026-10-25"
-   ],
-   "review": "unreviewed",
-   "tags": [
-    "import-ancestry-2026-10-25",
-    "unreviewed"
-   ],
-   "type": "_AMTID"
-  },
-  "E0096": {
-   "attributes": [],
-   "change": 1793040883,
-   "citations": [
-    "C0108",
-    "C0109"
-   ],
-   "date": {
-    "day": null,
-    "iso": "1842",
-    "modifier": null,
-    "month": null,
-    "quality": null,
-    "sort": 2393837,
-    "text": "1842",
-    "year": 1842
-   },
-   "description": "",
-   "families": [],
-   "flags": [],
-   "handle": "104ebd54a31155066b426957d885",
-   "id": "E0096",
-   "media": [],
-   "notes": [],
-   "participants": [
-    {
-     "person": "I0029",
-     "role": "Primary"
-    }
-   ],
-   "place": null,
-   "provenance": [
-    "import-ancestry-2026-10-25"
-   ],
-   "review": "unreviewed",
-   "tags": [
-    "import-ancestry-2026-10-25",
-    "unreviewed"
-   ],
-   "type": "Birth"
-  },
-  "E0097": {
-   "attributes": [],
-   "change": 1793040883,
-   "citations": [
-    "C0110",
-    "C0111"
-   ],
-   "date": {
-    "day": 26,
-    "iso": "1900-04-26",
-    "modifier": null,
-    "month": 4,
-    "quality": null,
-    "sort": 2415136,
-    "text": "26 April 1900",
-    "year": 1900
-   },
-   "description": "",
-   "families": [],
-   "flags": [],
-   "handle": "104ebd54a3184f8c4a51815d2e2c",
-   "id": "E0097",
-   "media": [],
-   "notes": [],
-   "participants": [
-    {
-     "person": "I0029",
-     "role": "Primary"
-    }
-   ],
-   "place": "P0032",
-   "provenance": [
-    "import-ancestry-2026-10-25"
-   ],
-   "review": "unreviewed",
-   "tags": [
-    "import-ancestry-2026-10-25",
-    "unreviewed"
-   ],
-   "type": "Death"
-  },
-  "E0098": {
-   "attributes": [],
-   "change": 1793040884,
-   "citations": [
-    "C0112"
-   ],
-   "date": null,
-   "description": "",
-   "families": [],
-   "flags": [],
-   "handle": "104ebd54a3204d82c9e586e088df",
-   "id": "E0098",
-   "media": [],
-   "notes": [],
-   "participants": [
-    {
-     "person": "I0029",
-     "role": "Primary"
-    }
-   ],
-   "place": "P0021",
-   "provenance": [
-    "import-ancestry-2026-10-25"
-   ],
-   "review": "unreviewed",
-   "tags": [
-    "import-ancestry-2026-10-25",
-    "unreviewed"
-   ],
-   "type": "Burial"
   },
   "E0099": {
    "attributes": [],
@@ -92689,14 +92253,6 @@
    ],
    "type": "Married"
   },
-  "F0078": {
-   "children": [],
-   "father": "I0152",
-   "handle": "104ebd54b70941bee35fbded3eed",
-   "id": "F0078",
-   "mother": "I0153",
-   "status": "living"
-  },
   "F0079": {
    "attributes": [],
    "change": 1793040850,
@@ -102840,21 +102396,21 @@
    "very high"
   ],
   "counts": {
-   "citations": 1215,
-   "events": 1413,
-   "families": 172,
+   "citations": 1208,
+   "events": 1406,
+   "families": 171,
    "media": 190,
-   "notes": 1276,
-   "people": 385,
+   "notes": 1286,
+   "people": 381,
    "places": 321,
    "repositories": 22,
-   "sources": 197
+   "sources": 196
   },
   "counts_people": {
-   "full": 321,
-   "living": 64
+   "full": 319,
+   "living": 62
   },
-  "generated": "2026-11-06T21:25:16+00:00",
+  "generated": "2026-11-06T23:22:22+00:00",
   "generator": "gramps_export.py 0.3.0",
   "gramps_version": "6.0.8",
   "gramps_webapi_version": "3.17.0",
@@ -105156,6 +104712,25 @@
    "text": "Added 13 Aug 2026 from the 1893 baptism of grandson Petr Pavel Konecny, Acta Publica / MZA Brno, matrika book 4021 (Brumov na Vlare), snimek 151: the child's father Jan Konecny, nadennik in Sv. Stepan, is named as \"son of Jan Konecny, servant at the manor court (pansky dvur) in Hluk, and Frantiska, daughter of Frantisek Sebak, cottager of Hluk.\" No birth or death dates are given in that entry, so none are recorded here. 14 Aug 2026: parents added from Stitna book 4740 s.18 (2 Jun 1868 marriage of son Jan): \"syn po Pavlovi Konečným, zemřelém služebném v panském dvoře ve Vlachovicích a jeho manželky Mariny Trchel z Lidečka.\" Their own birth/marriage/death pages not in hand; no dates entered.",
    "type": "Person Note"
   },
+  "N0162": {
+   "attached_to": [
+    {
+     "id": "I0140",
+     "type": "person"
+    }
+   ],
+   "change": 1793036993,
+   "flags": [],
+   "handle": "104ebd54b0e059554afe36c0774",
+   "html": "<p>Added 13 Aug 2026 from the 1893 baptism of grandson Petr Pavel Konecny, Acta Publica / MZA Brno, matrika book 4021 (Brumov na Vlare), snimek 151: the child&#x27;s father Jan Konecny is named as son of Jan Konecny, servant at the manor court (pansky dvur) in Hluk, and Frantiska, daughter of Frantisek Sebak, cottager (chalupnik) of Hluk. No dates given in that entry, so none are recorded here. She is NOT the same person as Mary Nedbal, who was unlinked from this line.</p><p>2026-08-13: MZA Brno Acta Publica book 4725 (Štítná N 1787-1856) snímek 100, fol. 196, house 137. Born 1 Dec 1834 as Franziska, marked unehelich; father Franz Sscheback/Šebák, legitimized per subsequens matrimonium (cross-ref Copulationum fol. 169). Mother Marina, daughter of Anton Miklas. Matches 1868 marriage book 4740 s.18 (age 33y 6m).</p><p>2026-08-13 night: WEDDING STILL OPEN. Do not lock František Šebák × Marina Miklas as 6 Feb 1837 book 4739 fol.69 — second read is other couples (Hubník × Holba etc.). The Franz + Marina Miklas crop is a birth/paternity note, not the wedding. Birth-page citation points to Copulationum fol. 169 / Fol. 66; neither found in book 4739. Neighbor-parish hunt running overnight.</p>",
+   "id": "N0162",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Added 13 Aug 2026 from the 1893 baptism of grandson Petr Pavel Konecny, Acta Publica / MZA Brno, matrika book 4021 (Brumov na Vlare), snimek 151: the child's father Jan Konecny is named as son of Jan Konecny, servant at the manor court (pansky dvur) in Hluk, and Frantiska, daughter of Frantisek Sebak, cottager (chalupnik) of Hluk. No dates given in that entry, so none are recorded here. She is NOT the same person as Mary Nedbal, who was unlinked from this line.\n\n2026-08-13: MZA Brno Acta Publica book 4725 (Štítná N 1787-1856) snímek 100, fol. 196, house 137. Born 1 Dec 1834 as Franziska, marked unehelich; father Franz Sscheback/Šebák, legitimized per subsequens matrimonium (cross-ref Copulationum fol. 169). Mother Marina, daughter of Anton Miklas. Matches 1868 marriage book 4740 s.18 (age 33y 6m).\n\n2026-08-13 night: WEDDING STILL OPEN. Do not lock František Šebák × Marina Miklas as 6 Feb 1837 book 4739 fol.69 — second read is other couples (Hubník × Holba etc.). The Franz + Marina Miklas crop is a birth/paternity note, not the wedding. Birth-page citation points to Copulationum fol. 169 / Fol. 66; neither found in book 4739. Neighbor-parish hunt running overnight.",
+   "type": "Person Note"
+  },
   "N0166": {
    "attached_to": [
     {
@@ -105307,6 +104882,25 @@
    "tags": [],
    "text": "Image ID: radnice-ro-32_0901-n",
    "type": "Citation"
+  },
+  "N0178": {
+   "attached_to": [
+    {
+     "id": "I0147",
+     "type": "person"
+    }
+   ],
+   "change": 1793036993,
+   "flags": [],
+   "handle": "104ebd54b4832134e4b4fa2bd8c1",
+   "html": "<p>Research note (added 2026-08-12): Birthplace recorded here as &quot;Bohemia&quot; 1859, but his children&#x27;s events point to Moravia — son Peter b. 28 Jun 1893 Hovorany, Hodonin district, Jihomoravsky (South Moravian) region; son Joseph b. 1901 in Czech lands. Bohemia vs Moravia conflict left unresolved; keeping existing tree value rather than overwriting from unsourced member trees. Only hint currently available is a member family tree (Backus Family Tree), not accepted — needs official records (parish/church books for Hovorany, Milwaukee death record, naturalization) before changing birthplace or adding parents John Konecny/Mary Nedbal with confidence. Also confirm death place &quot;Milwaukee, WI&quot; with an official death index entry.</p><p>13 Aug 2026 UPDATE (Acta Publica, MZA Brno, book 4021, https://www.mza.cz/actapublica/matrika/detail/300): Son &quot;Petr Pavel&quot; Konecny born 28 Jun 1893, house 160, Svaty Stepan (osada of Bylnice), parish Brumov na Vlare (snimek 151); father listed as Jan Konecny, nadennik ve Sv. Stepani, son of Jan Konecny (servant, pansky dvur Hluk) and Frantiska (dau. of Frantisek Sebak, cottager of Hluk); mother Veronika, dau. of Jiri Kadlec (nadennik ve Sv. Stepani) and Marie (dau. of Jiri Kostka, pasekar ve Sv. Stepani). Second son Frantisek b. 20 Aug 1895, same house 160 (snimek 165), father then pomocnik v huti. So the family was in MORAVIA (Brumov-Bylnice), not Hovorany; Kostany/Teplitz were later glass-work residence. Hovorany Peter is a different man. Diacritics omitted due to input limits. 13 Aug 2026 CLEANUP: birth changed 1859 -&gt; abt 1867, Svaty Stepan/Bylnice, Moravia (age 46 on 14 May 1913 Kaiser Wilhelm der Grosse). Mary Nedbal UNLINKED as mother and the old John Konecny UNLINKED as father (leftover from wrong-man detour; both persons kept in tree, not merged). Parents now taken from son Petr Pavel&#x27;s 1893 baptism, MZA Brno book 4021 snimek 151: father Jan Konecny, servant at the manor court (pansky dvur) in Hluk; mother Frantiska, daughter of Frantisek Sebak, cottager of Hluk. No birth years</p><p>invented for them.</p><p>13 Aug 2026 GIVEN NAME: Parish and 1913 manifest use Jan. US records use John.</p><p>14 Aug 2026 research note (overnight negatives; do not hunt these MZA books again):<br>- His father Jan ~Dec 1832 is NOT in Stitna 4725, Vlachovice 4946, Brumov 4014, Valasske Klobouky 4822.<br>- Pavel Konecny x Marina Trchel marriage is NOT in Vlachovice 4959, Brumov 4024, or Valasske Klobouky 4846.<br>- Next book is Lidecko (ZA Opava), parked (bot wall).</p>",
+   "id": "N0178",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Research note (added 2026-08-12): Birthplace recorded here as \"Bohemia\" 1859, but his children's events point to Moravia — son Peter b. 28 Jun 1893 Hovorany, Hodonin district, Jihomoravsky (South Moravian) region; son Joseph b. 1901 in Czech lands. Bohemia vs Moravia conflict left unresolved; keeping existing tree value rather than overwriting from unsourced member trees. Only hint currently available is a member family tree (Backus Family Tree), not accepted — needs official records (parish/church books for Hovorany, Milwaukee death record, naturalization) before changing birthplace or adding parents John Konecny/Mary Nedbal with confidence. Also confirm death place \"Milwaukee, WI\" with an official death index entry.\n\n13 Aug 2026 UPDATE (Acta Publica, MZA Brno, book 4021, https://www.mza.cz/actapublica/matrika/detail/300): Son \"Petr Pavel\" Konecny born 28 Jun 1893, house 160, Svaty Stepan (osada of Bylnice), parish Brumov na Vlare (snimek 151); father listed as Jan Konecny, nadennik ve Sv. Stepani, son of Jan Konecny (servant, pansky dvur Hluk) and Frantiska (dau. of Frantisek Sebak, cottager of Hluk); mother Veronika, dau. of Jiri Kadlec (nadennik ve Sv. Stepani) and Marie (dau. of Jiri Kostka, pasekar ve Sv. Stepani). Second son Frantisek b. 20 Aug 1895, same house 160 (snimek 165), father then pomocnik v huti. So the family was in MORAVIA (Brumov-Bylnice), not Hovorany; Kostany/Teplitz were later glass-work residence. Hovorany Peter is a different man. Diacritics omitted due to input limits. 13 Aug 2026 CLEANUP: birth changed 1859 -> abt 1867, Svaty Stepan/Bylnice, Moravia (age 46 on 14 May 1913 Kaiser Wilhelm der Grosse). Mary Nedbal UNLINKED as mother and the old John Konecny UNLINKED as father (leftover from wrong-man detour; both persons kept in tree, not merged). Parents now taken from son Petr Pavel's 1893 baptism, MZA Brno book 4021 snimek 151: father Jan Konecny, servant at the manor court (pansky dvur) in Hluk; mother Frantiska, daughter of Frantisek Sebak, cottager of Hluk. No birth years\n\ninvented for them.\n\n13 Aug 2026 GIVEN NAME: Parish and 1913 manifest use Jan. US records use John.\n\n14 Aug 2026 research note (overnight negatives; do not hunt these MZA books again):\n- His father Jan ~Dec 1832 is NOT in Stitna 4725, Vlachovice 4946, Brumov 4014, Valasske Klobouky 4822.\n- Pavel Konecny x Marina Trchel marriage is NOT in Vlachovice 4959, Brumov 4024, or Valasske Klobouky 4846.\n- Next book is Lidecko (ZA Opava), parked (bot wall).",
+   "type": "Person Note"
   },
   "N0180": {
    "attached_to": [
@@ -130505,6 +130099,158 @@
    "tags": [],
    "text": "2026-11-04 (karel): PROBABLE (compiled, not yet verified by a vital record): Sheppard, Descendants of Richard Beckley, names Alonzo Church Wood as son of Abigail Church and Samuel Wood, born Canada(?) 4 Jul 1812; married 2nd husband of Jane Louisa (Beckley) Herrick at Brattleboro, Vt., 2 Jun 1861; died Chicago, Ill., 18 Mar 1892. Next check: Vermont vital records, Brattleboro marriage 2 Jun 1861.\n\nTier: ai-draft",
    "type": "Research"
+  },
+  "N1775": {
+   "attached_to": [
+    {
+     "id": "I0038",
+     "type": "person"
+    }
+   ],
+   "change": 1794000602,
+   "flags": [],
+   "handle": "1050fbafa7244ff9093bd23f05d1",
+   "html": "<p>2026-11-06 (karel): PROBABLE (published Bible transcript; page images not yet viewed): Copeley, New Hampshire Family Records (1994) vol. 2 ~pp. 795–796, WOOD FAMILY RECORD, names Samuel b. 26 Jan 1787 as child of Philip Wood × Eunice Pierce (m. 13 Dec 1781), and Samuel Wood × Abigail Church m. 3 Dec 1809. Philip d. 16 Jul 1845; Eunice d. 13 Nov 1846 in transcript (stone: 13 Oct). Transcript Samuel d. 24 Jan 1878 is likely a misread of 1848 (Farnham burial 26 Jan 1848). Amos b. 1789 in this record is Samuel&#x27;s brother, not his son. Grade STRONG+ compiled; SOLID once page images viewed. IA https://archive.org/details/newhampshirefami0002cope</p><p>Tier: ai-draft</p>",
+   "id": "N1775",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-06 (karel): PROBABLE (published Bible transcript; page images not yet viewed): Copeley, New Hampshire Family Records (1994) vol. 2 ~pp. 795–796, WOOD FAMILY RECORD, names Samuel b. 26 Jan 1787 as child of Philip Wood × Eunice Pierce (m. 13 Dec 1781), and Samuel Wood × Abigail Church m. 3 Dec 1809. Philip d. 16 Jul 1845; Eunice d. 13 Nov 1846 in transcript (stone: 13 Oct). Transcript Samuel d. 24 Jan 1878 is likely a misread of 1848 (Farnham burial 26 Jan 1848). Amos b. 1789 in this record is Samuel's brother, not his son. Grade STRONG+ compiled; SOLID once page images viewed. IA https://archive.org/details/newhampshirefami0002cope\n\nTier: ai-draft",
+   "type": "Research"
+  },
+  "N1776": {
+   "attached_to": [
+    {
+     "id": "I0124",
+     "type": "person"
+    }
+   ],
+   "change": 1794000602,
+   "flags": [],
+   "handle": "1050fbafb05f23121739d5772834",
+   "html": "<p>2026-11-06 (karel): PROBABLE (published Bible transcript; page images not yet viewed): Copeley, New Hampshire Family Records (1994) vol. 2 ~pp. 795–796, WOOD FAMILY RECORD: Philip Wood b. 29 Apr 1756; m. Eunice Pierce 13 Dec 1781; d. 16 Jul 1845; son Samuel b. 26 Jan 1787 (among twelve children listed). Grade STRONG+ compiled; SOLID once page images viewed. IA https://archive.org/details/newhampshirefami0002cope</p><p>Tier: ai-draft</p>",
+   "id": "N1776",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-06 (karel): PROBABLE (published Bible transcript; page images not yet viewed): Copeley, New Hampshire Family Records (1994) vol. 2 ~pp. 795–796, WOOD FAMILY RECORD: Philip Wood b. 29 Apr 1756; m. Eunice Pierce 13 Dec 1781; d. 16 Jul 1845; son Samuel b. 26 Jan 1787 (among twelve children listed). Grade STRONG+ compiled; SOLID once page images viewed. IA https://archive.org/details/newhampshirefami0002cope\n\nTier: ai-draft",
+   "type": "Research"
+  },
+  "N1777": {
+   "attached_to": [
+    {
+     "id": "I0075",
+     "type": "person"
+    }
+   ],
+   "change": 1794000602,
+   "flags": [],
+   "handle": "1050fbafb9bc5c6b592a121b2d43",
+   "html": "<p>2026-11-06 (karel): PROBABLE (published Bible transcript; page images not yet viewed): Copeley, New Hampshire Family Records (1994) vol. 2 ~pp. 795–796, WOOD FAMILY RECORD: Eunice Pierce b. 31 Aug 1762; m. Philip Wood 13 Dec 1781; d. 13 Nov 1846 in transcript (Prospect Hill stone: 13 Oct 1846 — month conflict held; do not invent). Grade STRONG+ compiled; SOLID once page images viewed. IA https://archive.org/details/newhampshirefami0002cope</p><p>Tier: ai-draft</p>",
+   "id": "N1777",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-06 (karel): PROBABLE (published Bible transcript; page images not yet viewed): Copeley, New Hampshire Family Records (1994) vol. 2 ~pp. 795–796, WOOD FAMILY RECORD: Eunice Pierce b. 31 Aug 1762; m. Philip Wood 13 Dec 1781; d. 13 Nov 1846 in transcript (Prospect Hill stone: 13 Oct 1846 — month conflict held; do not invent). Grade STRONG+ compiled; SOLID once page images viewed. IA https://archive.org/details/newhampshirefami0002cope\n\nTier: ai-draft",
+   "type": "Research"
+  },
+  "N1778": {
+   "attached_to": [
+    {
+     "id": "I0038",
+     "type": "person"
+    }
+   ],
+   "change": 1794002402,
+   "flags": [],
+   "handle": "1050fcc256c92fdae03d296c5fe2",
+   "html": "<p>2026-11-06 (karel): PROBABLE (published Bible transcript; page images not yet viewed): Copeley, New Hampshire Family Records (1994) vol. 2 ~pp. 795–796, WOOD FAMILY RECORD, names Samuel b. 26 Jan 1787 as child of Philip Wood × Eunice Pierce (m. 13 Dec 1781), and Samuel Wood × Abigail Church m. 3 Dec 1809. Philip d. 16 Jul 1845; Eunice d. 13 Nov 1846 in transcript (stone: 13 Oct). Transcript Samuel d. 24 Jan 1878 is likely a misread of 1848 (Farnham burial 26 Jan 1848). Amos b. 1789 in this record is Samuel&#x27;s brother, not his son. Grade STRONG+ compiled; SOLID once page images viewed. IA https://archive.org/details/newhampshirefami0002cope</p><p>Tier: ai-draft</p>",
+   "id": "N1778",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-06 (karel): PROBABLE (published Bible transcript; page images not yet viewed): Copeley, New Hampshire Family Records (1994) vol. 2 ~pp. 795–796, WOOD FAMILY RECORD, names Samuel b. 26 Jan 1787 as child of Philip Wood × Eunice Pierce (m. 13 Dec 1781), and Samuel Wood × Abigail Church m. 3 Dec 1809. Philip d. 16 Jul 1845; Eunice d. 13 Nov 1846 in transcript (stone: 13 Oct). Transcript Samuel d. 24 Jan 1878 is likely a misread of 1848 (Farnham burial 26 Jan 1848). Amos b. 1789 in this record is Samuel's brother, not his son. Grade STRONG+ compiled; SOLID once page images viewed. IA https://archive.org/details/newhampshirefami0002cope\n\nTier: ai-draft",
+   "type": "Research"
+  },
+  "N1779": {
+   "attached_to": [
+    {
+     "id": "I0124",
+     "type": "person"
+    }
+   ],
+   "change": 1794002402,
+   "flags": [],
+   "handle": "1050fcc25fc97fa70dd4b78bddea",
+   "html": "<p>2026-11-06 (karel): PROBABLE (published Bible transcript; page images not yet viewed): Copeley, New Hampshire Family Records (1994) vol. 2 ~pp. 795–796, WOOD FAMILY RECORD: Philip Wood b. 29 Apr 1756; m. Eunice Pierce 13 Dec 1781; d. 16 Jul 1845; son Samuel b. 26 Jan 1787 (among twelve children listed). Grade STRONG+ compiled; SOLID once page images viewed. IA https://archive.org/details/newhampshirefami0002cope</p><p>Tier: ai-draft</p>",
+   "id": "N1779",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-06 (karel): PROBABLE (published Bible transcript; page images not yet viewed): Copeley, New Hampshire Family Records (1994) vol. 2 ~pp. 795–796, WOOD FAMILY RECORD: Philip Wood b. 29 Apr 1756; m. Eunice Pierce 13 Dec 1781; d. 16 Jul 1845; son Samuel b. 26 Jan 1787 (among twelve children listed). Grade STRONG+ compiled; SOLID once page images viewed. IA https://archive.org/details/newhampshirefami0002cope\n\nTier: ai-draft",
+   "type": "Research"
+  },
+  "N1780": {
+   "attached_to": [
+    {
+     "id": "I0075",
+     "type": "person"
+    }
+   ],
+   "change": 1794002402,
+   "flags": [],
+   "handle": "1050fcc269626b04d096cf674f84",
+   "html": "<p>2026-11-06 (karel): PROBABLE (published Bible transcript; page images not yet viewed): Copeley, New Hampshire Family Records (1994) vol. 2 ~pp. 795–796, WOOD FAMILY RECORD: Eunice Pierce b. 31 Aug 1762; m. Philip Wood 13 Dec 1781; d. 13 Nov 1846 in transcript (Prospect Hill stone: 13 Oct 1846 — month conflict held; do not invent). Grade STRONG+ compiled; SOLID once page images viewed. IA https://archive.org/details/newhampshirefami0002cope</p><p>Tier: ai-draft</p>",
+   "id": "N1780",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-06 (karel): PROBABLE (published Bible transcript; page images not yet viewed): Copeley, New Hampshire Family Records (1994) vol. 2 ~pp. 795–796, WOOD FAMILY RECORD: Eunice Pierce b. 31 Aug 1762; m. Philip Wood 13 Dec 1781; d. 13 Nov 1846 in transcript (Prospect Hill stone: 13 Oct 1846 — month conflict held; do not invent). Grade STRONG+ compiled; SOLID once page images viewed. IA https://archive.org/details/newhampshirefami0002cope\n\nTier: ai-draft",
+   "type": "Research"
+  },
+  "N1781": {
+   "attached_to": [
+    {
+     "id": "I0124",
+     "type": "person"
+    }
+   ],
+   "change": 1794002402,
+   "flags": [],
+   "handle": "1050fcc272c54871168a15299c09",
+   "html": "<p>2026-11-06 (karel): PROBABLE (clerk&#x27;s recorded will; married-daughter surnames uncertain): Vermont Wills &amp; Probate, Windham vol. 17–18, images 345–346 (pp. 101–102). Philip Wood late of Brattleboro; will 29 Mar 1842; proved/allowed 25 Aug 1845 (not the Ancestry-index probate date 29 Mar 1842). Children named in prior-distribution recital: Philip; Mary W. [Pottin/Potter?]; Samuel Wood; [Zerviana W. Harris?]; Elizabeth P. Briggs; Sarah W. [Gile?]; Eunice W. Burbee; Royal G. Wood (sole executor). Levi M. Wood &amp; wife Arvilla get life use of Constable, Franklin Co., NY farm, then Levi&#x27;s children. Wife mentioned without given name. Grade: SOLID for will/probate dates and Samuel as son; LEAD for uncertain married surnames. Transcript: /workspace/wood-family/PHILIP-WOOD-WILL-TRANSCRIPT-05NOV.md</p><p>Tier: ai-draft</p>",
+   "id": "N1781",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-06 (karel): PROBABLE (clerk's recorded will; married-daughter surnames uncertain): Vermont Wills & Probate, Windham vol. 17–18, images 345–346 (pp. 101–102). Philip Wood late of Brattleboro; will 29 Mar 1842; proved/allowed 25 Aug 1845 (not the Ancestry-index probate date 29 Mar 1842). Children named in prior-distribution recital: Philip; Mary W. [Pottin/Potter?]; Samuel Wood; [Zerviana W. Harris?]; Elizabeth P. Briggs; Sarah W. [Gile?]; Eunice W. Burbee; Royal G. Wood (sole executor). Levi M. Wood & wife Arvilla get life use of Constable, Franklin Co., NY farm, then Levi's children. Wife mentioned without given name. Grade: SOLID for will/probate dates and Samuel as son; LEAD for uncertain married surnames. Transcript: /workspace/wood-family/PHILIP-WOOD-WILL-TRANSCRIPT-05NOV.md\n\nTier: ai-draft",
+   "type": "Research"
+  },
+  "N1782": {
+   "attached_to": [
+    {
+     "id": "I0038",
+     "type": "person"
+    }
+   ],
+   "change": 1794002403,
+   "flags": [],
+   "handle": "1050fcc27ce74b9b09f6c0878a61",
+   "html": "<p>2026-11-06 (karel): PROBABLE: Named as son Samuel Wood in father Philip Wood&#x27;s will (Brattleboro, Windham Co., VT), dated 29 Mar 1842 and proved/allowed 25 Aug 1845 (Windham probate vol. 17–18, manuscript pp. 101–102; Ancestry coll. 9084 images 345–346). No residence is given for Samuel in the will; Farnham/Canada/Quebec do not appear. Supports Philip→Samuel parentage (STRONG→SOLID on this point alone when combined with Copeley compiled record). Do not invent a Constable NY residence for Samuel from Levi&#x27;s farm clause.</p><p>Tier: ai-draft</p>",
+   "id": "N1782",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-06 (karel): PROBABLE: Named as son Samuel Wood in father Philip Wood's will (Brattleboro, Windham Co., VT), dated 29 Mar 1842 and proved/allowed 25 Aug 1845 (Windham probate vol. 17–18, manuscript pp. 101–102; Ancestry coll. 9084 images 345–346). No residence is given for Samuel in the will; Farnham/Canada/Quebec do not appear. Supports Philip→Samuel parentage (STRONG→SOLID on this point alone when combined with Copeley compiled record). Do not invent a Constable NY residence for Samuel from Levi's farm clause.\n\nTier: ai-draft",
+   "type": "Research"
   }
  },
  "people": {
@@ -132629,186 +132375,6 @@
    ],
    "status": "living"
   },
-  "I0028": {
-   "alt_names": [],
-   "attributes": [],
-   "birth": {
-    "date": {
-     "day": null,
-     "iso": "1865",
-     "modifier": null,
-     "month": null,
-     "quality": null,
-     "sort": 2402238,
-     "text": "1865",
-     "year": 1865
-    },
-    "event": "E0093",
-    "place": null,
-    "type": "Birth",
-    "year": 1865
-   },
-   "change": 1793482475,
-   "citations": [],
-   "death": {
-    "date": {
-     "day": null,
-     "iso": "1911",
-     "modifier": null,
-     "month": null,
-     "quality": null,
-     "sort": 2419038,
-     "text": "1911",
-     "year": 1911
-    },
-    "event": "E0094",
-    "place": null,
-    "type": "Death",
-    "year": 1911
-   },
-   "events": [
-    {
-     "ref": "E0092",
-     "role": "Primary"
-    },
-    {
-     "ref": "E0093",
-     "role": "Primary"
-    },
-    {
-     "ref": "E0094",
-     "role": "Primary"
-    }
-   ],
-   "families": [],
-   "flags": [],
-   "gender": "F",
-   "handle": "104ebd54a2fd637a1ae2350b7ccc",
-   "id": "I0028",
-   "media": [],
-   "name": {
-    "call": "",
-    "display": "Matilda Konecny",
-    "first": "Matilda",
-    "nick": "",
-    "prefix": "",
-    "sort": "Konecny, Matilda",
-    "suffix": "",
-    "surname": "Konecny",
-    "title": "",
-    "type": "Birth Name"
-   },
-   "notes": [],
-   "parents": [],
-   "provenance": [
-    "import-ancestry-2026-10-25"
-   ],
-   "review": "unreviewed",
-   "status": "full",
-   "tags": [
-    "import-ancestry-2026-10-25",
-    "unreviewed"
-   ],
-   "urls": [],
-   "xref": {
-    "ancestry": "212735895102",
-    "rm_rin": "28"
-   }
-  },
-  "I0029": {
-   "alt_names": [],
-   "attributes": [],
-   "birth": {
-    "date": {
-     "day": null,
-     "iso": "1842",
-     "modifier": null,
-     "month": null,
-     "quality": null,
-     "sort": 2393837,
-     "text": "1842",
-     "year": 1842
-    },
-    "event": "E0096",
-    "place": null,
-    "type": "Birth",
-    "year": 1842
-   },
-   "change": 1793482474,
-   "citations": [],
-   "death": {
-    "date": {
-     "day": 26,
-     "iso": "1900-04-26",
-     "modifier": null,
-     "month": 4,
-     "quality": null,
-     "sort": 2415136,
-     "text": "26 April 1900",
-     "year": 1900
-    },
-    "event": "E0097",
-    "place": "P0032",
-    "type": "Death",
-    "year": 1900
-   },
-   "events": [
-    {
-     "ref": "E0095",
-     "role": "Primary"
-    },
-    {
-     "ref": "E0096",
-     "role": "Primary"
-    },
-    {
-     "ref": "E0097",
-     "role": "Primary"
-    },
-    {
-     "ref": "E0098",
-     "role": "Primary"
-    }
-   ],
-   "families": [],
-   "flags": [],
-   "gender": "M",
-   "handle": "104ebd54a3095e697050c8743a52",
-   "id": "I0029",
-   "media": [],
-   "name": {
-    "call": "",
-    "citations": [
-     "C0106",
-     "C0107"
-    ],
-    "display": "Jacob (Jakub) Konecny",
-    "first": "Jacob (Jakub)",
-    "nick": "",
-    "prefix": "",
-    "sort": "Konecny, Jacob (Jakub)",
-    "suffix": "",
-    "surname": "Konecny",
-    "title": "",
-    "type": "Birth Name"
-   },
-   "notes": [],
-   "parents": [],
-   "provenance": [
-    "import-ancestry-2026-10-25"
-   ],
-   "review": "unreviewed",
-   "status": "full",
-   "tags": [
-    "import-ancestry-2026-10-25",
-    "unreviewed"
-   ],
-   "urls": [],
-   "xref": {
-    "ancestry": "212735895103",
-    "rm_rin": "29"
-   }
-  },
   "I0030": {
    "alt_names": [],
    "attributes": [],
@@ -133783,7 +133349,7 @@
     "type": "Birth",
     "year": 1787
    },
-   "change": 1793481955,
+   "change": 1794002403,
    "citations": [],
    "death": {
     "date": {
@@ -133871,7 +133437,10 @@
    "notes": [
     "N0056",
     "N0845",
-    "N1701"
+    "N1701",
+    "N1775",
+    "N1778",
+    "N1782"
    ],
    "parents": [
     "F0040"
@@ -133884,10 +133453,10 @@
    "review": "unreviewed",
    "status": "full",
    "tags": [
+    "agent-karel",
     "agent-proposed",
     "unreviewed",
-    "import-ancestry-2026-10-25",
-    "agent-karel"
+    "import-ancestry-2026-10-25"
    ],
    "urls": [],
    "xref": {
@@ -136742,7 +136311,7 @@
      "value": "Chart / unconfirmed. Not a VR lock. NEEDS REVIEW — published AssNat/Cabot as Eunice Pierce; chart spelling Piquee (AKA only — do not lock Piquee). m. ~1781 WEAK no register — year in note only, do not invent marriage fact day. Do not create Deacon Jonathan"
     }
    ],
-   "change": 1793478605,
+   "change": 1794002402,
    "citations": [],
    "death": {
     "date": null,
@@ -136790,7 +136359,9 @@
    },
    "notes": [
     "N0112",
-    "N1710"
+    "N1710",
+    "N1777",
+    "N1780"
    ],
    "parents": [],
    "provenance": [
@@ -136801,10 +136372,10 @@
    "review": "unreviewed",
    "status": "full",
    "tags": [
+    "agent-karel",
     "agent-proposed",
     "unreviewed",
-    "import-ancestry-2026-10-25",
-    "agent-karel"
+    "import-ancestry-2026-10-25"
    ],
    "urls": [],
    "xref": {
@@ -140280,7 +139851,7 @@
     "type": "Birth",
     "year": 1756
    },
-   "change": 1793478603,
+   "change": 1794002403,
    "citations": [],
    "death": {
     "date": {
@@ -140382,7 +139953,10 @@
    "notes": [
     "N0130",
     "N0846",
-    "N1703"
+    "N1703",
+    "N1776",
+    "N1779",
+    "N1781"
    ],
    "parents": [
     "F0023"
@@ -140395,10 +139969,10 @@
    "review": "unreviewed",
    "status": "full",
    "tags": [
+    "agent-karel",
     "agent-proposed",
     "unreviewed",
-    "import-ancestry-2026-10-25",
-    "agent-karel"
+    "import-ancestry-2026-10-25"
    ],
    "urls": [],
    "xref": {
@@ -142001,6 +141575,7 @@
     "type": "Birth Name"
    },
    "notes": [
+    "N0162",
     "N1713"
    ],
    "parents": [
@@ -142800,6 +142375,7 @@
     "type": "Birth Name"
    },
    "notes": [
+    "N0178",
     "N1714"
    ],
    "parents": [
@@ -143377,48 +142953,6 @@
     "ancestry": "212735561763",
     "rm_rin": "151"
    }
-  },
-  "I0152": {
-   "families": [
-    "F0078"
-   ],
-   "gender": "M",
-   "handle": "104ebd54b700574f070afc622a2f",
-   "id": "I0152",
-   "name": {
-    "call": "",
-    "display": "John Konecny",
-    "first": "John",
-    "nick": "",
-    "prefix": "",
-    "sort": "Konecny, John",
-    "suffix": "",
-    "surname": "Konecny",
-    "title": ""
-   },
-   "parents": [],
-   "status": "living"
-  },
-  "I0153": {
-   "families": [
-    "F0078"
-   ],
-   "gender": "F",
-   "handle": "104ebd54b70c5824cdd2ff9ad6f3",
-   "id": "I0153",
-   "name": {
-    "call": "",
-    "display": "Mary Nedbal",
-    "first": "Mary",
-    "nick": "",
-    "prefix": "",
-    "sort": "Nedbal, Mary",
-    "suffix": "",
-    "surname": "Nedbal",
-    "title": ""
-   },
-   "parents": [],
-   "status": "living"
   },
   "I0154": {
    "alt_names": [],
@@ -169464,10 +168998,6 @@
     "C0082",
     "C0092",
     "C0097",
-    "C0106",
-    "C0108",
-    "C0110",
-    "C0112",
     "C0119",
     "C0126",
     "C0134",
@@ -170694,37 +170224,6 @@
     "import-ancestry-2026-10-25"
    ],
    "title": ", <I>Green Bay Press-Gazette (Newspapers.com) (N.p.: n.p., n.d.)."
-  },
-  "S0032": {
-   "abbrev": "Web: Illinois, U.S., Select Deaths Index, 1877-1916",
-   "attributes": {},
-   "author": "",
-   "citations": [
-    "C0107",
-    "C0109",
-    "C0111"
-   ],
-   "flags": [],
-   "handle": "104ebd54a30c18f0bfaf34300e6f",
-   "id": "S0032",
-   "media": [],
-   "notes": [],
-   "provenance": [
-    "import-ancestry-2026-10-25"
-   ],
-   "pubinfo": "",
-   "repositories": [
-    {
-     "call_number": "",
-     "media_type": "Book",
-     "ref": "R0001"
-    }
-   ],
-   "review": "unreviewed",
-   "tags": [
-    "import-ancestry-2026-10-25"
-   ],
-   "title": "Ancestry.com, Web: Illinois, U.S., Select Deaths Index, 1877-1916 (Lehi, UT, USA: Ancestry.com Operations, Inc., 2015)."
   },
   "S0033": {
    "abbrev": "North America, Family Histories, 1500-2000",
