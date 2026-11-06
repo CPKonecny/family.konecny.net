@@ -2,9 +2,8 @@
 """
 build.py — static site generator for family.konecny.net
 
-Reads data/bundle.json (written by export/gramps_export.py), site/config.json,
-the markdown in content/, and the hand-maintained pages in content/stories/,
-and writes a complete static site to _site/.
+Reads data/bundle.json (written by export/gramps_export.py), site/config.json and
+the markdown in content/, and writes a complete static site to _site/.
 No network, no database: everything the site shows is in the bundle.
 
     python3 site/build.py            # -> _site/
@@ -20,12 +19,9 @@ import json
 import os
 import re
 import shutil
-import struct
 import sys
-from urllib.parse import quote, urlsplit, urlunsplit
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
-from markupsafe import Markup
 
 try:
     import markdown as _markdown
@@ -198,125 +194,6 @@ def md(text: str) -> str:
     if in_list:
         out.append("</ul>")
     return "\n".join(out)
-
-
-# Hosts that appear as bare citations in the family-stories notes.
-_STORY_URL = re.compile(
-    r"(?:https?://)?(?:[A-Za-z0-9-]+\.)+(?:org|com|net|cz|info|eu)(?:/[^\s]*)?",
-    re.IGNORECASE,
-)
-# Drafting note in the village caption. It names a local folder, not a source,
-# so the public page keeps the Wikimedia credit and leaves the path off.
-_STORY_LOCAL_PATH = ", saved on the box at /workspace/stories-photos"
-
-
-def _story_href(display: str) -> str:
-    raw = display if display.startswith(("http://", "https://")) else "https://" + display
-    parts = urlsplit(raw)
-    return urlunsplit((
-        parts.scheme or "https",
-        parts.netloc,
-        quote(parts.path, safe="/%"),
-        quote(parts.query, safe="=&%"),
-        quote(parts.fragment, safe="/=&%"),
-    ))
-
-
-def story_html(text: str):
-    """Escape story text, apply the site's quotation marks, and link citation URLs.
-
-    The visible characters of each URL stay as written. A trailing period or
-    semicolon is left outside the link.
-    """
-    if not text:
-        return Markup("")
-    pieces = []
-    pos = 0
-    for match in _STORY_URL.finditer(text):
-        raw = match.group(0)
-        trimmed = raw.rstrip(".,;:")
-        if not trimmed or match.start() < pos:
-            continue
-        pieces.append(html.escape(typo(text[pos:match.start()])))
-        href = _story_href(trimmed)
-        pieces.append(f'<a href="{html.escape(href, quote=True)}">{html.escape(trimmed)}</a>')
-        pos = match.start() + len(trimmed)
-    pieces.append(html.escape(typo(text[pos:])))
-    return Markup("".join(pieces))
-
-
-def _jpeg_size(path: str):
-    try:
-        with open(path, "rb") as f:
-            if f.read(2) != b"\xff\xd8":
-                return None
-            while True:
-                marker = f.read(1)
-                if not marker:
-                    return None
-                if marker != b"\xff":
-                    continue
-                while marker == b"\xff":
-                    marker = f.read(1)
-                if marker in (b"\xc0", b"\xc1", b"\xc2"):
-                    f.read(3)
-                    height, width = struct.unpack(">HH", f.read(4))
-                    return width, height
-                seg = f.read(2)
-                if len(seg) < 2:
-                    return None
-                f.read(struct.unpack(">H", seg)[0] - 2)
-    except OSError:
-        return None
-
-
-def section_lede(sec: dict) -> str:
-    """A line for the index card, taken from the section's own first words."""
-    kind = sec.get("kind")
-    if kind == "entries" and sec.get("entries"):
-        return sec["entries"][0]["title"]
-    if kind == "table" and sec.get("rows"):
-        return sec["rows"][0][1]
-    if kind == "places" and sec.get("places"):
-        return sec["places"][0]["heading"]
-    if kind == "cousins":
-        text = (sec.get("callout") or {}).get("text") or ""
-        sentence = text.split(". ", 1)[0]
-        if sentence and not sentence.endswith("."):
-            sentence += "."
-        return sentence
-    return ""
-
-
-def load_stories(content_dir: str):
-    """Load every story in content/stories/.
-
-    `status` is display-only (`confirming` shows a banner, `proven` shows none).
-    A story is never skipped for being a draft or for still being confirmed.
-    """
-    path = os.path.join(content_dir, "stories", "stories.json")
-    if not os.path.exists(path):
-        return None
-    with open(path, encoding="utf-8") as f:
-        data = json.load(f)
-    photo_dir = os.path.join(content_dir, "stories", "photos")
-    for sec in data.get("sections", []):
-        caption = sec.get("caption") or ""
-        sec["caption_public"] = caption.replace(_STORY_LOCAL_PATH, "") if _STORY_LOCAL_PATH in caption else caption
-        sec["lede"] = section_lede(sec)
-        for place in sec.get("places") or []:
-            photo = place.get("photo")
-            if not photo:
-                continue
-            full = os.path.join(photo_dir, photo)
-            size = _jpeg_size(full) if os.path.exists(full) else None
-            if size:
-                place["width"], place["height"] = size
-            stem, ext = os.path.splitext(photo)
-            small = stem + "-800" + ext
-            if os.path.exists(os.path.join(photo_dir, small)):
-                place["photo_sm"] = small
-    return data
 
 
 # ----------------------------------------------------------------------------- #
@@ -665,10 +542,19 @@ def main(argv=None) -> int:
     env.filters["lifespan"] = lifespan
     env.filters["dots"] = conf_dots
     env.filters["md"] = md
-    env.filters["story"] = story_html
+    try:
+        from zoneinfo import ZoneInfo
+        tz = ZoneInfo(cfg.get("timezone", "America/New_York"))
+    except Exception:          # no tz database: fall back to UTC
+        tz = dt.timezone.utc
+    try:
+        exported = dt.datetime.fromisoformat(bundle["meta"]["generated"].replace("Z", "+00:00")).astimezone(tz)
+    except (KeyError, ValueError):
+        exported = dt.datetime.now(dt.timezone.utc).astimezone(tz)
     env.globals.update({
         "site": site, "cfg": cfg, "meta": bundle["meta"], "review_label": review_label,
         "now": dt.datetime.now(dt.timezone.utc).strftime("%-d %B %Y"),
+        "updated": exported.strftime("%-d %B %Y"), "updated_time": exported.strftime("%H:%M %Z"),
         "CONF_LABEL": CONF_LABEL, "TIER_LABEL": TIER_LABEL,
     })
 
@@ -817,28 +703,28 @@ def main(argv=None) -> int:
                   "media_login": sum(1 for m in site.media.values() if m["access"] == "login")})
     write("about/index.html", "about.html", body=content("about.md"), stats=stats, rs=rs, cit_rev=cit_rev, title="About this site")
     recent = sorted([p for p in site.people.values() if p["status"] == "full" and p.get("change")], key=lambda p: -p["change"])[:8]
+    ref = exported.timestamp()
+    windows = [("day", 1), ("week", 7), ("month", 30), ("year", 365)]
+
+    def touched(objs):
+        ts = [o.get("change") or 0 for o in objs]
+        return [sum(1 for t in ts if t >= ref - days * 86400) for _label, days in windows]
+
+    activity = [
+        {"label": "People", "counts": touched([p for p in site.people.values() if p["status"] == "full"])},
+        {"label": "Facts", "counts": touched([e for e in site.events.values() if site.kind(e) == "fact"])},
+        {"label": "Citations", "counts": touched(site.citations.values())},
+        {"label": "Notes", "counts": touched(site.notes.values())},
+    ]
+    activity_cols = [w[0] for w in windows]
     sides = []
     for sd in cfg.get("sides") or [{"key": None, "title": "", "subtitle": ""}]:
         ls = [l for l in lines if l.get("side") == sd["key"] or sd["key"] is None]
         if ls:
             sides.append({**sd, "lines": ls})
-    write("index.html", "home.html", sides=sides, lines=lines, stats=stats, rs=rs, recent=recent, body=content("home.md"), title=None)
+    write("index.html", "home.html", sides=sides, lines=lines, stats=stats, rs=rs, recent=recent, activity=activity,
+          activity_cols=activity_cols, body=content("home.md"), title=None)
     write("404.html", "404.html", title="Not found")
-
-    # Hand-maintained. The nightly export never writes content/stories/.
-    stories = load_stories(args.content)
-    if stories:
-        sections = stories.get("sections") or []
-        write("stories/index.html", "stories.html", stories=stories, section=None, title="Family stories", nav="stories")
-        for i, sec in enumerate(sections):
-            write(
-                f"stories/{sec['id']}/index.html", "stories.html", stories=stories, section=sec,
-                prev=sections[i - 1] if i else None, next=sections[i + 1] if i + 1 < len(sections) else None,
-                title=sec["heading"], nav="stories",
-            )
-        photo_src = os.path.join(args.content, "stories", "photos")
-        if os.path.isdir(photo_src):
-            shutil.copytree(photo_src, os.path.join(out, "stories", "photos"), dirs_exist_ok=True)
 
     # static, data, media, CNAME
     shutil.copytree(os.path.join(HERE, "static"), os.path.join(out, "static"))
