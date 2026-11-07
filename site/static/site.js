@@ -27,4 +27,8 @@
       if (empty) empty.hidden = shown > 0;
     });
   }
+  document.querySelectorAll('a.mail[data-u]').forEach(function (a) {
+    var addr = a.getAttribute('data-u') + '@' + a.getAttribute('data-d');
+    a.href = 'mailto:' + addr + '?subject=' + encodeURIComponent(a.getAttribute('data-s') || '');
+  });
 })();

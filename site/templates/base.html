@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>{% if title %}{{ title }} · {% endif %}{{ cfg.site_name }}</title>
 <meta name="description" content="{% block description %}{{ cfg.tagline }}{% endblock %}">
+{% block head %}{% endblock %}
 <meta name="robots" content="index,follow">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +22,7 @@
     <a href="/people/">People</a>
     <a href="/places/">Places</a>
     <a href="/sources/">Sources</a>
-    <a href="/questions/">Open questions</a>
+    <a href="/research/">Research</a>
     <a href="/about/">About</a>
   </nav>
   <div class="theme" role="group" aria-label="Theme">

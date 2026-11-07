@@ -34,12 +34,6 @@
     <div><dt>Citations</dt><dd>{{ stats.citations }}<small> from {{ stats.sources }} sources</small></dd></div>
     <div><dt>Places</dt><dd>{{ stats.places }}</dd></div>
   </dl>
-  <table class="activity">
-    <caption>Worked on in the last…</caption>
-    <thead><tr><th scope="col"><span class="vh">What</span></th>{% for c in activity_cols %}<th scope="col">{{ c }}</th>{% endfor %}</tr></thead>
-    <tbody>{% for r in activity %}<tr><th scope="row">{{ r.label }}</th>{% for n in r.counts %}<td>{{ n }}</td>{% endfor %}</tr>{% endfor %}</tbody>
-  </table>
-  <p class="activity-note">Counts of records edited or added in the research database, as of {{ updated }}, {{ updated_time }}. The site is rebuilt from it every night.</p>
 </section>
 
 <section class="howto">

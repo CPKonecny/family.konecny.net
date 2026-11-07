@@ -51,6 +51,7 @@ DEATH_LIKE = ("Death", "Burial", "Cremation")
 CROSSING_TYPES = ("Immigration", "Emigration", "Arrival", "Departure")
 # GEDCOM/Ancestry artefacts imported as events: never shown as life events
 HIDDEN_EVENT_TYPES = {"_AMTID", "_MTTAG", "_ORIG"}
+LINE_SHORT = {"konecny": "Konečný", "tauber": "Tauber", "wood": "Wood", "toepel": "Toepel", "hansen": "Hansen", "morris": "Morris", "all": ""}
 NOTE_EVENT_TYPES = {"research note", "spouse order research note"}   # shown as research notes
 NAME_EVENT_TYPES = {"aka"}                                             # shown with the names
 
@@ -677,18 +678,46 @@ def main(argv=None) -> int:
     src_rows = [{"source": s, "n": len(s.get("citations", []))} for s in sources_sorted]
     write("sources/index.html", "sources.html", rows=src_rows, title="Sources")
 
-    # open questions + about + home
-    oq = content("open-questions.md")
-    if oq and site.living_names:
-        kept = []
-        for para in oq.split("\n\n"):
-            low = para.lower()
-            if any(n in low for n in site.living_names):
-                site.warnings.append("open-questions.md: dropped a paragraph that names a living person")
+    # research board (content/research/board.json) — hand-maintained; living-name check as for the stories
+    board_path = os.path.join(args.content, "research", "board.json")
+    board = []
+    if os.path.exists(board_path):
+        with open(board_path, encoding="utf-8") as f:
+            raw_items = json.load(f).get("items", [])
+        line_title = {l["slug"]: l["title"] for l in cfg.get("lines", [])}
+        for it in raw_items:
+            text = " ".join(str(it.get(k) or "") for k in ("title", "summary", "detail", "ask")).lower()
+            if any(n in text for n in site.living_names):
+                site.warnings.append(f"board {it.get('id')}: dropped — names a living person")
                 continue
-            kept.append(para)
-        oq = "\n\n".join(kept)
-    write("questions/index.html", "questions.html", body=oq, title="Open questions")
+            it = dict(it)
+            it["people"] = [site.people[i] for i in it.get("people") or [] if i in site.people and site.people[i]["status"] == "full"]
+            it["line_title"] = line_title.get(it.get("line"), "")
+            it["line_short"] = LINE_SHORT.get(it.get("line"), "")
+            it["color"] = it.get("line") if it.get("line") in line_title else "neutral"
+            for k in ("since", "done"):
+                if it.get(k):
+                    try:
+                        it[k + "_txt"] = dt.date.fromisoformat(it[k]).strftime("%-d %b %Y")
+                    except ValueError:
+                        it[k + "_txt"] = it[k]
+            board.append(it)
+    by_status = collections.defaultdict(list)
+    for it in board:
+        by_status[it.get("status", "open")].append(it)
+    by_status["done"].sort(key=lambda x: x.get("done") or "", reverse=True)
+    asks = [it for it in board if it.get("ask") and it.get("status") != "done"]
+
+    # facts the checker flagged, by person (needs-human on the citation or the fact)
+    flagged = collections.defaultdict(list)
+    for p in site.people.values():
+        if p["status"] != "full":
+            continue
+        for f in site.facts_of(p):
+            if f["review"][0] == "needs" or any(r["review"][0] == "needs" for r in f["citations"]):
+                flagged[p["id"]].append(f["label"])
+    flagged_rows = sorted(({"person": site.people[pid], "facts": sorted(set(v))} for pid, v in flagged.items()),
+                          key=lambda r: (-len(r["facts"]), r["person"]["name"]["sort"]))
     facts_all = []
     stats = collections.Counter()
     for p in site.people.values():
@@ -722,8 +751,12 @@ def main(argv=None) -> int:
         ls = [l for l in lines if l.get("side") == sd["key"] or sd["key"] is None]
         if ls:
             sides.append({**sd, "lines": ls})
-    write("index.html", "home.html", sides=sides, lines=lines, stats=stats, rs=rs, recent=recent, activity=activity,
-          activity_cols=activity_cols, body=content("home.md"), title=None)
+    write("research/index.html", "research.html", board=by_status, asks=asks, flagged=flagged_rows,
+          flagged_total=sum(len(r["facts"]) for r in flagged_rows), activity=activity, activity_cols=activity_cols,
+          recent=recent, stats=stats, rs=rs, title="Research")
+    write("questions/index.html", "redirect.html", target="/research/", title="Research")
+    write("index.html", "home.html", sides=sides, lines=lines, stats=stats, rs=rs, recent=recent,
+          body=content("home.md"), title=None)
     write("404.html", "404.html", title="Not found")
 
     # static, data, media, CNAME

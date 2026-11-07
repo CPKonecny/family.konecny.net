@@ -97,6 +97,25 @@ a.p:hover { color: var(--thread, var(--link)); }
 .activity thead th { font-size: 0.66rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); font-weight: 400; }
 .activity tbody th { text-align: left; font-family: var(--text); font-weight: 400; }
 .activity-note { font-size: 0.85rem; color: var(--muted); margin: 8px 0 0; }
+/* research board */
+.bsec { margin-top: 28px; }
+.bgrid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+.bcard { position: relative; background: var(--card); border: 1px solid var(--rule); border-radius: 8px; padding: 12px 14px 12px 18px; overflow: hidden; }
+.bcard .band { position: absolute; left: 0; top: 0; bottom: 0; width: 6px; background: var(--thread, var(--t-neutral)); }
+.bcard h3 { font-family: var(--display); font-weight: 700; font-size: 1.1rem; letter-spacing: -0.015em; margin: 2px 0 6px; }
+.bcard p { margin: 0 0 8px; font-size: 0.95rem; }
+.bmeta { font-family: var(--mono); font-size: 0.66rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+.bid { color: var(--thread, var(--t-neutral)); font-weight: 700; }
+.bask { border-top: 1px dashed var(--rule); padding-top: 8px; }
+.bask b { font-family: var(--display); }
+.bpeople { font-size: 0.9rem; }
+.bdetail { font-size: 0.88rem; color: var(--muted); }
+.asks .bcard { background: color-mix(in srgb, var(--thread, var(--t-neutral)) 6%, var(--card)); }
+.done .bcard { opacity: 0.85; }
+.flist { list-style: none; margin: 8px 0 0; padding: 0; display: grid; gap: 4px; font-size: 0.95rem; }
+.research .stats { border-top: 1px solid var(--rule); padding-top: 14px; }
+.prose.research { max-width: 1000px; }
+.research .phead p.span, .research .bsec > p.muted { max-width: 68ch; }
 .howgrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; font-size: 0.97rem; }
 .howgrid b { font-family: var(--display); font-weight: 700; display: block; margin-bottom: 2px; }
 .plist { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; }

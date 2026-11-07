@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block head %}<meta http-equiv="refresh" content="0; url={{ target }}">{% endblock %}
+{% block body %}
+<article class="prose">
+  <p>This page has moved to <a href="{{ target }}">{{ target }}</a>.</p>
+</article>
+{% endblock %}

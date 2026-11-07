@@ -1,0 +1,254 @@
+{
+  "_readme": "The research board shown at /research/. See README.md in this folder for the rules. One entry per question or piece of work; keep ids stable; no living person's details.",
+  "items": [
+    {
+      "id": "R01",
+      "status": "now",
+      "line": "all",
+      "title": "Eight ancestors found in October still have to be entered",
+      "summary": "Jiří Taubr and Josefa Kosmanda, Josef Ocásek and Kateřina Balková, Hynek Vlček and Františka Mašková, Herman Benz and Anna Roesner were added to the Ancestry tree in late October with their records, but never reached the research database that this site is built from. They go in next, each with the record that supports them.",
+      "owner": "Karel",
+      "since": "2026-11-06"
+    },
+    {
+      "id": "R02",
+      "status": "now",
+      "line": "wood",
+      "title": "Who was Samuel Wood’s father?",
+      "summary": "Samuel Wood (1787–1848) crossed into Lower Canada and died at Farnham, Quebec. The family worksheet makes him the son of Philip Wood and Eunice Pierce of Rehoboth and Brattleboro, and Philip’s 1845 will does name a son Samuel. What is missing is a record tying the Samuel in the will to the Samuel of Farnham. This is the one link the Mayflower Society will ask about.",
+      "detail": "Targets, in order: Philip Wood’s estate file at the Vermont State Archives; Marlboro and Brattleboro deeds (a sale or power of attorney from Farnham would settle it); Farnham church and burial records naming a birthplace; the 1838 Quebec Almanack entry and Legislative Assembly papers for Samuel’s own statements of origin.",
+      "ask": "Does anyone hold Val Wood’s compiled Mayflower documentation, George S. Wood’s research papers, or the letters from Sarah Jenny Wood of Brattleboro that he worked from? Copies or scans of any of it would help.",
+      "owner": "Karel",
+      "people": [
+        "I0038"
+      ],
+      "since": "2026-10-31"
+    },
+    {
+      "id": "R03",
+      "status": "now",
+      "line": "wood",
+      "title": "Mayflower Society Lineage Match",
+      "summary": "The descent from John Howland and Elizabeth Tilley to the Wood family matches the Society-format worksheet in the 2019 Wood Reunion Book generation for generation. Franklin Wood and Virginia Wood Gaddis joined the District of Columbia Society in the 1970s, so their approved papers should already cover generations 1–11. A Lineage Match request to the Society will confirm that and say what proof it now wants for generations 7–8.",
+      "owner": "Chris",
+      "since": "2026-10-31"
+    },
+    {
+      "id": "R04",
+      "status": "now",
+      "line": "all",
+      "title": "Facts the automated checker flagged",
+      "summary": "In October every citation with a record image or transcription was checked against the facts it supports. Most passed; the ones marked “needs a look” on the site are being worked through by hand. Most are small differences (an age a year out, a spelling), a few are real conflicts between records. The list is further down this page.",
+      "owner": "Chris, with Karel’s triage",
+      "since": "2026-10-28"
+    },
+    {
+      "id": "R05",
+      "status": "next",
+      "line": "tauber",
+      "title": "The Radnice parish registers",
+      "summary": "Anna Tauber’s baptism (Mostiště, 15 September 1891) has been read from the register. Next are the marriages of her father Jan Taubr (1863 and 1874), his own baptism in 1842, the burials, and then the generation behind them: Tomáš Taubr and Lidmila Ocásková, Jan Nepomuk Král and Marie Čermáková, Tomáš Král and Kateřina Chvojková.",
+      "detail": "SOA Plzeň registers on Porta fontium: Radnice (RO) 32 for 1888–1906 is the birth volume; the marriage and burial volumes for the 1840s–1870s still to be identified. Cite each event by volume and image; the family sheets from the 4 October 2026 visit only as “family abstract”.",
+      "owner": "Karel",
+      "people": [
+        "I0146"
+      ]
+    },
+    {
+      "id": "R06",
+      "status": "next",
+      "line": "konecny",
+      "title": "Jan Konečný’s baptism, about December 1832",
+      "summary": "The 1868 marriage record gives his age as 35 years 6 months and names his parents, Pavel Konečný, a servant at the manor farm in Vlachovice, and Marina Trchel of Lidečko. His baptism has not been found yet; the Vlachovice books come first, then Lidečko, then Štítná and Brumov.",
+      "detail": "Two readings of where Jan’s parents were “of” — Štítná (Brumov marriages 4031 p. 41, 1892) against Hluk (1893 baptism, 4021 s. 151) — need the images re-read before any time goes into Hluk.",
+      "owner": "Karel"
+    },
+    {
+      "id": "R07",
+      "status": "next",
+      "line": "wood",
+      "title": "Mae Chill’s parents",
+      "summary": "Meta “Mae” Chill’s 1892 Lutheran baptism in Chicago names her parents, Albert Chill and Mathilde Luise Ottilie Bieging. That record is good enough to add them. Then: the 1900 and 1910 censuses, the Cook County marriage of Albert and Ottilie, Albert’s arrival and naturalization, their deaths and burials, and the church whose registers hold the generation before.",
+      "owner": "Karel",
+      "people": [
+        "I0024"
+      ]
+    },
+    {
+      "id": "R08",
+      "status": "next",
+      "line": "konecny",
+      "title": "Peter Konecny’s death: 26 or 28 February 1936",
+      "summary": "The database carries 28 February 1936, which is the burial. The Manitowoc Herald Times of 26 February 1936 reports that he died early that day at home, 1031 N. 18th Street. The date will be corrected to the newspaper; the certified Wisconsin death certificate still has to be ordered.",
+      "owner": "Karel",
+      "people": [
+        "I0145"
+      ]
+    },
+    {
+      "id": "R09",
+      "status": "open",
+      "line": "konecny",
+      "title": "Pavel Konečný and Marina Trchel",
+      "summary": "Jan’s parents. Their marriage (Lidečko or Vlachovice, roughly 1820–1832) would name both sets of grandparents and take the surname line one generation further back; Pavel’s burial at Vlachovice, before 1868, is the other record to find.",
+      "owner": "Karel"
+    },
+    {
+      "id": "R10",
+      "status": "open",
+      "line": "konecny",
+      "title": "The Kadlec and Kostka side of Svatý Štěpán",
+      "summary": "Veronika Kadlec’s father Jiří Kadlec (cottager at Svatý Štěpán 35) was the son of Josef Kadlec and Marie Král of Popov; her mother Marie Kostka descends from Jiří Kostka of Bylnice (born 1800) and Kateřina Bilnitza of Nedašov (born 1798), married 1824. Still wanted: Jiří Kadlec’s baptism, the Kadlec–Kostka marriage, and the Kostka and Bilnitza marriages of the 1790s.",
+      "owner": "Karel"
+    },
+    {
+      "id": "R11",
+      "status": "open",
+      "line": "konecny",
+      "title": "Jan Konecny and Veronika in Wisconsin",
+      "summary": "Peter’s parents followed him to America: Jan arrived in New York in May 1913, aged 46; Veronika was in Manitowoc in 1920. Neither death has been found. Wisconsin deaths before 1959 are not on Ancestry, so the route is Find a Grave, obituaries, city directories and the 1930 and 1940 censuses.",
+      "ask": "Does anyone remember, or have papers about, where Peter’s parents Jan and Veronika lived and died? A funeral card, a cemetery name or a date would be enough to start.",
+      "owner": "Karel"
+    },
+    {
+      "id": "R12",
+      "status": "open",
+      "line": "tauber",
+      "title": "The twelve children of Jan Tauber and Anna Králová",
+      "summary": "Family letters say nine of the twelve went to America and three stayed in Mostiště, Božena among them. The emigrants should be findable on the New York and Hamburg passenger lists and in the censuses; the aim is to add each sibling from records and work out where each settled.",
+      "ask": "Letters, addresses or photographs from the American Taubers and Taubrs — Manitowoc, Chicago or elsewhere — and anything that says which brother or sister went where.",
+      "owner": "Karel",
+      "people": [
+        "I0146"
+      ]
+    },
+    {
+      "id": "R13",
+      "status": "open",
+      "line": "wood",
+      "title": "George S. Wood’s mother",
+      "summary": "George (1858–1940) is linked to his father Franklin only. Franklin’s first wife Sarah Eliza Barber (married 1842, died 1863) is the only candidate; the Granby Anglican baptism or the 1861 Canada census household would confirm her.",
+      "owner": "Karel"
+    },
+    {
+      "id": "R14",
+      "status": "open",
+      "line": "wood",
+      "title": "Emilie Wagner and the Bentleys of Brooklyn",
+      "summary": "Emilie M. Wagner (1833–1917), wife of Norman S. Bentley, has no sources yet, nor do her parents Daniel Wagner and Mary Vandike. Further back, the Bentley and Seymour families of Saratoga and Hartford are unverified beyond the DAR lineage books.",
+      "owner": "Karel"
+    },
+    {
+      "id": "R15",
+      "status": "open",
+      "line": "wood",
+      "title": "Checking the colonial generations against the published volumes",
+      "summary": "Generations 7 to 13 of the Wood line, from Philip Wood back to Henry Wood of Plymouth and the Howlands, came from member trees. Each link is to be checked against the Mayflower Society’s published volumes, Torrey’s New England Marriages and the Great Migration series, and marked on the person as matching or broken.",
+      "owner": "Karel"
+    },
+    {
+      "id": "R16",
+      "status": "open",
+      "line": "wood",
+      "title": "Norman and Mae’s wedding: 1915 or 1916",
+      "summary": "The Cook County index says 16 June 1915; the family’s hand chart says 1916. The register copy settles it.",
+      "owner": "Karel",
+      "people": [
+        "I0023"
+      ]
+    },
+    {
+      "id": "R17",
+      "status": "open",
+      "line": "toepel",
+      "title": "Jody’s parents and the Toepel line",
+      "summary": "Dick (Richard?) Toepel (1925–2015) and Dorothy lived in Minnesota and later Arizona. The line has barely been researched: full names, dates and places, and Dorothy’s maiden name are the starting facts, and from Dorothy the family sheets lead to the Hansen and Jensen family of Albert Lea and Clarks Grove.",
+      "ask": "Dorothy’s maiden name, her parents’ names, and how she connects to the Hansens of Albert Lea. Any obituary, wedding announcement or family group sheet from the Toepel side.",
+      "owner": "family, then Karel"
+    },
+    {
+      "id": "R18",
+      "status": "open",
+      "line": "hansen",
+      "title": "The Hansens and Jensens, back to Denmark",
+      "summary": "The family sheets place the Hansen and Jensen family in Albert Lea and Clarks Grove, Minnesota, with roots in the Sæby district of Vendsyssel. The Danish church books are online; what is needed first is the emigrant generation’s names and dates as the family knows them.",
+      "ask": "Photographs, Danish letters, a family Bible or confirmation certificates from the Hansen or Jensen side.",
+      "owner": "family, then Karel"
+    },
+    {
+      "id": "R19",
+      "status": "open",
+      "line": "morris",
+      "title": "Jessica’s side",
+      "summary": "The Morris and Ward families have not been started. Once the starting facts are in hand they get their own lines on this site.",
+      "ask": "Names, dates and places for Jessica’s grandparents and anything known about the generations before them.",
+      "owner": "family, then Karel"
+    },
+    {
+      "id": "R20",
+      "status": "open",
+      "line": "konecny",
+      "title": "The letters from Radnice",
+      "summary": "In 2006 Jaroslava in Radnice wrote to the family and returned a photograph; letters from Ruda also existed. They are the source for much of what is known about the Czech cousins, and the originals should be scanned and kept with the research.",
+      "ask": "Who has the originals of the 2006 letters and the photograph? Does anyone still have letters from Ruda?",
+      "owner": "family"
+    },
+    {
+      "id": "R21",
+      "status": "stuck",
+      "line": "konecny",
+      "title": "The Šebák–Miklas wedding",
+      "summary": "František Šebák and Marina Miklas of Štítná married after February 1837 (their children were legitimised by the marriage), but the entry is not where the cross-reference points. The Štítná marriage book for 1837–1845 and the Brumov books are next; a false hit at folio 69 is recorded so nobody reads it twice.",
+      "owner": "Karel"
+    },
+    {
+      "id": "R22",
+      "status": "done",
+      "line": "konecny",
+      "title": "Peter Konecny’s birth village found",
+      "summary": "Svatý Štěpán, house 160, parish Brumov na Vláře — not Hovorany. The Hovorany man on the 1912 Galveston manifest was a different Petr Konečný; the Brumov register entry of 28 June 1893 names the parents.",
+      "done": "2026-08-14",
+      "people": [
+        "I0145"
+      ]
+    },
+    {
+      "id": "R23",
+      "status": "done",
+      "line": "all",
+      "title": "Every record image checked by machine",
+      "summary": "756 citations with an image or transcription were compared with the facts they support: 594 consistent, 159 flagged for a person to look at. Coordinates were added for 320 places so the maps can follow.",
+      "done": "2026-10-28"
+    },
+    {
+      "id": "R24",
+      "status": "done",
+      "line": "tauber",
+      "title": "Anna Tauber’s birthplace confirmed",
+      "summary": "Mostiště, house 7, 15 September 1891, in the Radnice register (written “Moštice” there). The register, not the family sheets, is now the source.",
+      "done": "2026-10-31",
+      "people": [
+        "I0146"
+      ]
+    },
+    {
+      "id": "R25",
+      "status": "done",
+      "line": "wood",
+      "title": "Franklin Wood’s mother settled",
+      "summary": "His 1866 marriage record calls him “son of Samuel Wood & Abigail Church his wife”. The hand chart’s Abigail Philbrick is out; the database now shows Samuel and Abigail Church as his parents.",
+      "done": "2026-10-31",
+      "people": [
+        "I0031"
+      ]
+    },
+    {
+      "id": "R26",
+      "status": "done",
+      "line": "all",
+      "title": "Family stories published; four placeholder entries parked",
+      "summary": "The stories section went live. Four entries that had no record connecting them to the family — leftovers of a theory the records disproved — were taken off the site and kept on file.",
+      "done": "2026-11-06"
+    }
+  ]
+}
