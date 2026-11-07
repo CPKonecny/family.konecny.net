@@ -2,8 +2,9 @@
 """
 build.py — static site generator for family.konecny.net
 
-Reads data/bundle.json (written by export/gramps_export.py), site/config.json and
-the markdown in content/, and writes a complete static site to _site/.
+Reads data/bundle.json (written by export/gramps_export.py), site/config.json,
+the markdown in content/, the research board in content/research/ and the
+hand-maintained pages in content/stories/, and writes a complete static site to _site/.
 No network, no database: everything the site shows is in the bundle.
 
     python3 site/build.py            # -> _site/
@@ -19,9 +20,13 @@ import json
 import os
 import re
 import shutil
+import struct
 import sys
+import unicodedata
+from urllib.parse import quote, urlsplit, urlunsplit
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
+from markupsafe import Markup
 
 try:
     import markdown as _markdown
@@ -93,6 +98,12 @@ def estimate_tier(title: str, has_image: bool):
 # ----------------------------------------------------------------------------- #
 # helpers exposed to templates
 # ----------------------------------------------------------------------------- #
+def fold(s: str) -> str:
+    """Diacritics folded, lower-cased: the key for sorting and grouping names so that
+    Konečný files with Konecny and Šebák under S, not after Z."""
+    return "".join(ch for ch in unicodedata.normalize("NFD", s or "") if not unicodedata.combining(ch)).lower()
+
+
 def typo(s: str) -> str:
     """Straight quotes -> typographic, in plain text only (never on HTML)."""
     if not s:
@@ -198,6 +209,128 @@ def md(text: str) -> str:
 
 
 # ----------------------------------------------------------------------------- #
+# family stories (content/stories/) — hand-maintained; the export never writes there
+# ----------------------------------------------------------------------------- #
+# Hosts that appear as bare citations in the family-stories notes.
+_STORY_URL = re.compile(
+    r"(?:https?://)?(?:[A-Za-z0-9-]+\.)+(?:org|com|net|cz|info|eu)(?:/[^\s]*)?",
+    re.IGNORECASE,
+)
+# Drafting note in the village caption. It names a local folder, not a source,
+# so the public page keeps the Wikimedia credit and leaves the path off.
+_STORY_LOCAL_PATH = ", saved on the box at /workspace/stories-photos"
+
+
+def _story_href(display: str) -> str:
+    raw = display if display.startswith(("http://", "https://")) else "https://" + display
+    parts = urlsplit(raw)
+    return urlunsplit((
+        parts.scheme or "https",
+        parts.netloc,
+        quote(parts.path, safe="/%"),
+        quote(parts.query, safe="=&%"),
+        quote(parts.fragment, safe="/=&%"),
+    ))
+
+
+def story_html(text: str):
+    """Escape story text, apply the site's quotation marks, and link citation URLs.
+
+    The visible characters of each URL stay as written. A trailing period or
+    semicolon is left outside the link.
+    """
+    if not text:
+        return Markup("")
+    pieces = []
+    pos = 0
+    for match in _STORY_URL.finditer(text):
+        raw = match.group(0)
+        trimmed = raw.rstrip(".,;:")
+        if not trimmed or match.start() < pos:
+            continue
+        pieces.append(html.escape(typo(text[pos:match.start()])))
+        href = _story_href(trimmed)
+        pieces.append(f'<a href="{html.escape(href, quote=True)}">{html.escape(trimmed)}</a>')
+        pos = match.start() + len(trimmed)
+    pieces.append(html.escape(typo(text[pos:])))
+    return Markup("".join(pieces))
+
+
+def _jpeg_size(path: str):
+    try:
+        with open(path, "rb") as f:
+            if f.read(2) != b"\xff\xd8":
+                return None
+            while True:
+                marker = f.read(1)
+                if not marker:
+                    return None
+                if marker != b"\xff":
+                    continue
+                while marker == b"\xff":
+                    marker = f.read(1)
+                if marker in (b"\xc0", b"\xc1", b"\xc2"):
+                    f.read(3)
+                    height, width = struct.unpack(">HH", f.read(4))
+                    return width, height
+                seg = f.read(2)
+                if len(seg) < 2:
+                    return None
+                f.read(struct.unpack(">H", seg)[0] - 2)
+    except OSError:
+        return None
+
+
+def section_lede(sec: dict) -> str:
+    """A line for the index card, taken from the section's own first words."""
+    kind = sec.get("kind")
+    if kind == "entries" and sec.get("entries"):
+        return sec["entries"][0]["title"]
+    if kind == "table" and sec.get("rows"):
+        return sec["rows"][0][1]
+    if kind == "places" and sec.get("places"):
+        return sec["places"][0]["heading"]
+    if kind == "cousins":
+        text = (sec.get("callout") or {}).get("text") or ""
+        sentence = text.split(". ", 1)[0]
+        if sentence and not sentence.endswith("."):
+            sentence += "."
+        return sentence
+    return ""
+
+
+def load_stories(content_dir: str):
+    """Load every story in content/stories/.
+
+    `status` is display-only (`confirming` shows a banner, `proven` shows none).
+    A story is never skipped for being a draft or for still being confirmed.
+    """
+    path = os.path.join(content_dir, "stories", "stories.json")
+    if not os.path.exists(path):
+        return None
+    with open(path, encoding="utf-8") as f:
+        data = json.load(f)
+    photo_dir = os.path.join(content_dir, "stories", "photos")
+    for sec in data.get("sections", []):
+        caption = sec.get("caption") or ""
+        sec["caption_public"] = caption.replace(_STORY_LOCAL_PATH, "") if _STORY_LOCAL_PATH in caption else caption
+        sec["lede"] = section_lede(sec)
+        for place in sec.get("places") or []:
+            photo = place.get("photo")
+            if not photo:
+                continue
+            full = os.path.join(photo_dir, photo)
+            size = _jpeg_size(full) if os.path.exists(full) else None
+            if size:
+                place["width"], place["height"] = size
+            stem, ext = os.path.splitext(photo)
+            small = stem + "-800" + ext
+            if os.path.exists(os.path.join(photo_dir, small)):
+                place["photo_sm"] = small
+    return data
+
+
+# ----------------------------------------------------------------------------- #
 # model
 # ----------------------------------------------------------------------------- #
 class Site:
@@ -268,10 +401,19 @@ class Site:
             return ""
         return pl["name"] if short else (pl.get("display") or pl["name"])
 
+    _HOUSE_PART = re.compile(r"^(house|čp\.?|č\.\s*p\.?|no\.?|nr\.?|#)?\s*\d+[a-z]?$", re.I)
+
     def town(self, pid) -> str:
-        """first part of a place name: 'Madison, Dane County, Wisconsin, USA' -> 'Madison'"""
+        """first part of a place name that is a settlement: 'Madison, Dane County, Wisconsin, USA' -> 'Madison';
+        'House 131, Svatý Štěpán, Moravia' -> 'Svatý Štěpán' (house numbers and bare numbers are skipped)"""
         name = self.place_name(pid, short=True)
-        return name.split(",")[0].strip() if name else ""
+        if not name:
+            return ""
+        parts = [x.strip() for x in name.split(",") if x.strip()]
+        for part in parts:
+            if not self._HOUSE_PART.match(part):
+                return part
+        return parts[0] if parts else ""
 
     def parents_of(self, p: dict) -> list[dict]:
         out = []
@@ -543,6 +685,8 @@ def main(argv=None) -> int:
     env.filters["lifespan"] = lifespan
     env.filters["dots"] = conf_dots
     env.filters["md"] = md
+    env.filters["story"] = story_html
+    env.filters["fold"] = fold
     try:
         from zoneinfo import ZoneInfo
         tz = ZoneInfo(cfg.get("timezone", "America/New_York"))
@@ -580,11 +724,35 @@ def main(argv=None) -> int:
 
     # lines
     lines = [ln for ln in (site.build_line(l) for l in cfg.get("lines", [])) if ln]
+    env.globals["lines"] = lines
+    # which lineage routes a person stands on: person id -> [{line, gen}] (for the person page's side panel)
+    line_members = collections.defaultdict(list)
     for ln in lines:
-        write(f"line/{ln['slug']}/index.html", "line.html", line=ln, title=ln["title"])
+        for st in ln["stations"]:
+            line_members[st["person"]["id"]].append({"line": ln, "gen": st["gen"]})
+    for ln in lines:
+        write(f"line/{ln['slug']}/index.html", "line.html", line=ln, title=ln["title"],
+              others=[x for x in lines if x["slug"] != ln["slug"]], nav="lines")
 
-    # people
-    people_sorted = sorted(site.people.values(), key=lambda p: (p["name"]["sort"].lower(), p["id"]))
+    # stories — hand-maintained pages; the nightly export never writes content/stories/
+    stories = load_stories(args.content)
+    if stories:
+        sections = stories.get("sections") or []
+        write("stories/index.html", "stories.html", stories=stories, section=None, title="Family stories", nav="stories")
+        for i, sec in enumerate(sections):
+            write(
+                f"stories/{sec['id']}/index.html", "stories.html", stories=stories, section=sec,
+                prev=sections[i - 1] if i else None, next=sections[i + 1] if i + 1 < len(sections) else None,
+                title=sec["heading"], nav="stories",
+            )
+        photo_src = os.path.join(args.content, "stories", "photos")
+        if os.path.isdir(photo_src):
+            shutil.copytree(photo_src, os.path.join(out, "stories", "photos"), dirs_exist_ok=True)
+    else:
+        site.warnings.append("content/stories/stories.json not found — no /stories/ pages")
+
+    # people — ordered with diacritics folded, so Konečný files with Konecny and Šebák under S
+    people_sorted = sorted(site.people.values(), key=lambda p: (fold(p["name"]["sort"]), p["name"]["sort"], p["id"]))
     for p in people_sorted:
         facts = site.facts_of(p) if p["status"] == "full" else []
         fams = []
@@ -597,10 +765,10 @@ def main(argv=None) -> int:
         parent_fams = [site.families[fid] for fid in p.get("parents", []) if fid in site.families]
         write(f"person/{p['id']}/index.html", "person.html", p=p, facts=facts, extras=site.extras_of(p) if p["status"] == "full" else {"notes": [], "names": []}, families=fams, parent_families=parent_fams,
               parents=site.parents_of(p), siblings=site.siblings_of(p), summary=site.review_summary(facts),
-              line_color=site.line_of(p), title=p["name"]["display"],
+              line_color=site.line_of(p), title=p["name"]["display"], on_lines=line_members.get(p["id"], []),
               notes=[site.notes[n] for n in p.get("notes", []) if n in site.notes],
               media=[site.media[m["ref"]] for m in p.get("media", []) if m["ref"] in site.media],
-              name_citations=site.ladder(p.get("name", {}).get("citations", [])))
+              name_citations=site.ladder(p.get("name", {}).get("citations", [])), nav="people")
 
     # families
     for f in site.families.values():
@@ -617,7 +785,7 @@ def main(argv=None) -> int:
         title = " & ".join(x["name"]["display"] for x in (father, mother) if x) or "Family"
         write(f"family/{f['id']}/index.html", "family.html", f=f, father=father, mother=mother, facts=facts,
               children=children, title=title, notes=[site.notes[n] for n in f.get("notes", []) if n in site.notes],
-              media=[site.media[m["ref"]] for m in f.get("media", []) if m["ref"] in site.media])
+              media=[site.media[m["ref"]] for m in f.get("media", []) if m["ref"] in site.media], nav="people")
 
     # citations
     for c in site.citations.values():
@@ -641,19 +809,19 @@ def main(argv=None) -> int:
         write(f"citation/{c['id']}/index.html", "citation.html", c=c, src=src, used=used, row=row,
               media=[site.media[m["ref"]] for m in c.get("media", []) if m["ref"] in site.media],
               notes=[site.notes[n] for n in c.get("notes", []) if n in site.notes],
-              title=(src["title"] if src else "Citation") + (f" — {c['page']}" if c.get("page") else ""))
+              title=(src["title"] if src else "Citation") + (f" — {c['page']}" if c.get("page") else ""), nav="sources")
 
     # sources
-    sources_sorted = sorted(site.sources.values(), key=lambda s: s["title"].lower())
+    sources_sorted = sorted(site.sources.values(), key=lambda s: (fold(s["title"]), s["title"]))
     for s in sources_sorted:
         cits = [site.citations[cid] for cid in s.get("citations", []) if cid in site.citations]
         cits.sort(key=lambda c: (c.get("page") or ""))
         repos = [(site.repositories.get(r["ref"]), r) for r in s.get("repositories", [])]
         write(f"source/{s['id']}/index.html", "source.html", s=s, citations=cits, repos=[x for x in repos if x[0]],
-              notes=[site.notes[n] for n in s.get("notes", []) if n in site.notes], title=s["title"])
+              notes=[site.notes[n] for n in s.get("notes", []) if n in site.notes], title=s["title"], nav="sources")
 
     # places
-    places_sorted = sorted(site.places.values(), key=lambda p: (p.get("display") or p["name"]).lower())
+    places_sorted = sorted(site.places.values(), key=lambda p: (fold(p.get("display") or p["name"]), p.get("display") or p["name"]))
     for pl in places_sorted:
         evs = [site.events[e] for e in site.place_events.get(pl["id"], [])]
         evs.sort(key=site.sort_key)
@@ -664,19 +832,22 @@ def main(argv=None) -> int:
             rows.append({"event": e, "label": EVENT_LABEL.get(e["type"], e["type"]), "people": who, "families": fams})
         chain = [site.places[x] for x in pl.get("hierarchy", []) if x in site.places]
         within = [q for q in site.places.values() if q.get("enclosed_by") and q["enclosed_by"][0]["ref"] == pl["id"]]
-        write(f"place/{pl['id']}/index.html", "place.html", pl=pl, rows=rows, chain=chain, within=sorted(within, key=lambda q: q["name"]),
-              title=pl.get("display") or pl["name"])
+        write(f"place/{pl['id']}/index.html", "place.html", pl=pl, rows=rows, chain=chain, within=sorted(within, key=lambda q: fold(q["name"])),
+              title=pl.get("display") or pl["name"], nav="places")
 
     # indexes
     by_letter = collections.OrderedDict()
     for p in people_sorted:
-        letter = (p["name"]["surname"] or p["name"]["display"] or "?")[:1].upper()
+        letter = fold(p["name"]["surname"] or p["name"]["display"] or "?")[:1].upper()
+        if not letter.isalpha():
+            letter = "?"
         by_letter.setdefault(letter, []).append(p)
-    write("people/index.html", "people.html", by_letter=by_letter, title="People", total=len(people_sorted))
+    write("people/index.html", "people.html", by_letter=by_letter, title="People", total=len(people_sorted),
+          living=sum(1 for p in people_sorted if p["status"] == "living"), nav="people")
     place_rows = [{"place": pl, "n": len(site.place_events.get(pl["id"], []))} for pl in places_sorted]
-    write("places/index.html", "places.html", rows=place_rows, title="Places")
+    write("places/index.html", "places.html", rows=place_rows, title="Places", nav="places")
     src_rows = [{"source": s, "n": len(s.get("citations", []))} for s in sources_sorted]
-    write("sources/index.html", "sources.html", rows=src_rows, title="Sources")
+    write("sources/index.html", "sources.html", rows=src_rows, title="Sources", nav="sources")
 
     # research board (content/research/board.json) — hand-maintained; living-name check as for the stories
     board_path = os.path.join(args.content, "research", "board.json")
@@ -730,7 +901,7 @@ def main(argv=None) -> int:
                   "events": len(site.events), "citations": len(site.citations), "sources": len(site.sources),
                   "places": len(site.places), "media_public": sum(1 for m in site.media.values() if m["access"] == "public"),
                   "media_login": sum(1 for m in site.media.values() if m["access"] == "login")})
-    write("about/index.html", "about.html", body=content("about.md"), stats=stats, rs=rs, cit_rev=cit_rev, title="About this site")
+    write("about/index.html", "about.html", body=content("about.md"), stats=stats, rs=rs, cit_rev=cit_rev, title="About this site", nav="about")
     recent = sorted([p for p in site.people.values() if p["status"] == "full" and p.get("change")], key=lambda p: -p["change"])[:8]
     ref = exported.timestamp()
     windows = [("day", 1), ("week", 7), ("month", 30), ("year", 365)]
@@ -753,10 +924,10 @@ def main(argv=None) -> int:
             sides.append({**sd, "lines": ls})
     write("research/index.html", "research.html", board=by_status, asks=asks, flagged=flagged_rows,
           flagged_total=sum(len(r["facts"]) for r in flagged_rows), activity=activity, activity_cols=activity_cols,
-          recent=recent, stats=stats, rs=rs, title="Research")
+          recent=recent, stats=stats, rs=rs, title="Research", nav="research")
     write("questions/index.html", "redirect.html", target="/research/", title="Research")
     write("index.html", "home.html", sides=sides, lines=lines, stats=stats, rs=rs, recent=recent,
-          body=content("home.md"), title=None)
+          stories=stories, asks=asks[:3], body=content("home.md"), title=None, nav="home")
     write("404.html", "404.html", title="Not found")
 
     # static, data, media, CNAME

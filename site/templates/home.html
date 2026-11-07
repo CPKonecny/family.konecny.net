@@ -7,6 +7,11 @@
   <h1 class="wordmark">Kone<i>č</i>ný<br>→ Konecny</h1>
   <p class="tagline">{{ cfg.tagline|typo }}</p>
   <div class="threads" aria-hidden="true">{% for l in lines %}<i class="c-{{ l.color }}"></i>{% endfor %}</div>
+  <form class="find" action="/people/" method="get" role="search">
+    <label class="vh" for="home-q">Find a person by name</label>
+    <input id="home-q" name="q" type="search" placeholder="Find a person — Konečný, Tauber, Wood …" autocomplete="off" spellcheck="false">
+    <button type="submit">Find</button>
+  </form>
 </section>
 
 {% if body %}<section class="prose intro">{{ body|md|safe }}</section>{% endif %}
@@ -27,14 +32,44 @@
 </section>
 {% endfor %}
 
+{% if stories %}
+<section class="lines storyhome">
+  <h2 class="sidehead"><a href="/stories/">Family stories</a> <small>{{ stories.summary.split('. ')[0]|story }}</small></h2>
+  <div class="linegrid">
+    {% for s in stories.sections %}
+    <a class="linecard storycard c-neutral" href="/stories/{{ s.id }}/">
+      <span class="band" aria-hidden="true"></span>
+      <span class="lt">{{ s.heading|story }}</span>
+      {% if s.lede %}<span class="ls">{{ s.lede|story }}</span>{% endif %}
+    </a>
+    {% endfor %}
+    <a class="linecard storycard more c-neutral" href="/stories/#still">
+      <span class="band" aria-hidden="true"></span>
+      <span class="lt">{{ stories.still.heading|story }}</span>
+      <span class="ls">{{ stories.still.entries|length }} things the records have not given up yet — and where we are looking.</span>
+    </a>
+  </div>
+</section>
+{% endif %}
+
 <section class="stats">
   <dl>
     <div><dt>People</dt><dd>{{ stats.people_full + stats.people_living }}<small>{{ stats.people_full }} with their records · {{ stats.people_living }} living, name only</small></dd></div>
     <div><dt>Facts</dt><dd>{{ rs.total }}<small>{{ rs.human }} reviewed · {{ rs.ai }} AI-checked · {{ rs.un }} unreviewed</small></dd></div>
     <div><dt>Citations</dt><dd>{{ stats.citations }}<small> from {{ stats.sources }} sources</small></dd></div>
-    <div><dt>Places</dt><dd>{{ stats.places }}</dd></div>
+    <div><dt>Places</dt><dd>{{ stats.places }}<small>every place the records name</small></dd></div>
   </dl>
 </section>
+
+{% if asks %}
+<section class="help">
+  <h2 class="eyebrow">Can you help?</h2>
+  <ul class="helplist">
+    {% for it in asks %}<li class="c-{{ it.color }}"><a href="/research/#{{ it.id }}">{{ it.title|typo }}</a> <span class="muted">— {{ it.ask|typo }}</span></li>{% endfor %}
+  </ul>
+  <p class="muted small">A photograph, a letter, a name or a date is enough to start. <a href="/research/">All open questions →</a></p>
+</section>
+{% endif %}
 
 <section class="howto">
   <h2 class="eyebrow">How to read a fact here</h2>
@@ -48,7 +83,7 @@
 {% if recent %}
 <section class="recent">
   <h2 class="eyebrow">Recently worked on</h2>
-  <ul class="plist">
+  <ul class="plist cols">
     {% for p in recent %}<li>{{ plink(p) }}</li>{% endfor %}
   </ul>
 </section>

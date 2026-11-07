@@ -6,10 +6,10 @@ The public family-history site, generated from a public-safe export of the Gramp
 export/      gramps_export.py (runs on the server), overrides.json, publish.sh, README (runbook)
 data/        bundle.json + report.md — written by the export, committed by the server, never by hand
 media/       public media files + thumbnails — same
-site/        build.py, config.json, templates/, static/ — the generator
-content/     about.md, open-questions.md, stories/ — hand-written (the export never writes here; see content/stories/README.md)
-tools/       log_to_open_questions.py — research log → content/open-questions.md
-.github/     Pages workflow: on every push to main, build _site/ and deploy
+site/        build.py, config.json, templates/, static/ (site.css, site.js, fonts/) — the generator
+content/     about.md, research/board.json, stories/ — hand-written (the export never writes here; see the READMEs there)
+tools/       checks and repairs run by hand or in the build (check_stories.py runs in the Pages workflow)
+.github/     Pages workflow: on every push to main, check the stories, build _site/ and deploy
 CNAME        family.konecny.net
 ```
 
@@ -29,10 +29,12 @@ Without `data/bundle.json` the build produces a placeholder site, so Pages and D
 
 ## What the site shows
 
-Everything on the person, family, place and source pages comes from `data/bundle.json` (schema in `Konecny_Site_Bundle_Schema`). Living people are name and relationships only; private objects never reach the bundle; record images from Ancestry/FamilySearch are linked to the family login, not copied; every fact shows its citations ranked by tier and its review state as tagged in Gramps. Family stories are the exception: hand-written pages in `content/stories/`, built with the rest of the site and never touched by the export.
+Everything on the person, family, place and source pages comes from `data/bundle.json` (schema in `Konecny_Site_Bundle_Schema`). Living people are name and relationships only; private objects never reach the bundle; record images from Ancestry/FamilySearch are linked to the family login, not copied; every fact shows its citations ranked by tier and its review state as tagged in Gramps. Two sections are hand-written and never touched by the export: the family stories in `content/stories/` and the research board in `content/research/board.json` (the `/research/` page; the flagged-facts list and activity counts on that page are generated). The build drops any story or board text that names a living person in full.
+
+The three typefaces (Bricolage Grotesque, Source Serif 4, IBM Plex Mono — all SIL Open Font License) are served from `site/static/fonts/`; the site makes no third-party requests.
 
 ## Roadmap
 
-- **v0** (this): lineage routes, person and family pages with evidence ladders, citation and source pages with transcriptions, places, open questions, about.
+- **v0** (this): lineage routes, person and family pages with evidence ladders, citation and source pages with transcriptions, places, family stories, the research board, about.
 - **v1**: migration map with a time slider (after the geocoding backfill into Gramps), lifespan timeline against world events.
 - **v2**: how-are-we-related path finder in the browser, rooted-at-me entry links, name and place evolution, period map overlays.

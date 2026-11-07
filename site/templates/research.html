@@ -16,8 +16,19 @@
   <header class="phead"><p class="eyebrow">Research</p><h1>Where the research stands</h1>
   <p class="span muted">What is being worked on, what comes next, what is still open, and where the family can help. Updated {{ updated }}; the lists below are kept by hand, the counts come from the research database.</p></header>
 
+  <nav class="jumps row" aria-label="Sections">
+    {% if asks %}<a href="#help">Can you help?</a>{% endif %}
+    {% if board.now %}<a href="#now">Now</a>{% endif %}
+    {% if board.next %}<a href="#next">Up next</a>{% endif %}
+    {% if board.open %}<a href="#open">Open</a>{% endif %}
+    {% if board.stuck %}<a href="#stuck">Stuck</a>{% endif %}
+    <a href="#flagged">Flagged</a>
+    <a href="#activity">Activity</a>
+    {% if board.done %}<a href="#settled">Settled</a>{% endif %}
+  </nav>
+
   {% if asks %}
-  <section class="bsec asks">
+  <section class="bsec asks" id="help">
     <h2 class="eyebrow">Can you help?</h2>
     <p class="muted">Things a relative may know or have that the records don’t. A photograph, a letter, a name or a date is enough to start; write to Chris and mention the code.</p>
     <div class="bgrid">{% for it in asks %}{{ card(it, show_status=True, anchor=False) }}{% endfor %}</div>
@@ -25,34 +36,34 @@
   {% endif %}
 
   {% if board.now %}
-  <section class="bsec">
+  <section class="bsec" id="now">
     <h2 class="eyebrow">Working on now</h2>
     <div class="bgrid">{% for it in board.now %}{{ card(it) }}{% endfor %}</div>
   </section>
   {% endif %}
 
   {% if board.next %}
-  <section class="bsec">
+  <section class="bsec" id="next">
     <h2 class="eyebrow">Up next</h2>
     <div class="bgrid">{% for it in board.next %}{{ card(it) }}{% endfor %}</div>
   </section>
   {% endif %}
 
   {% if board.open %}
-  <section class="bsec">
+  <section class="bsec" id="open">
     <h2 class="eyebrow">Open questions</h2>
     <div class="bgrid">{% for it in board.open %}{{ card(it) }}{% endfor %}</div>
   </section>
   {% endif %}
 
   {% if board.stuck %}
-  <section class="bsec">
+  <section class="bsec" id="stuck">
     <h2 class="eyebrow">Stuck</h2>
     <div class="bgrid">{% for it in board.stuck %}{{ card(it) }}{% endfor %}</div>
   </section>
   {% endif %}
 
-  <section class="bsec">
+  <section class="bsec" id="flagged">
     <h2 class="eyebrow">Flagged by the checker</h2>
     {% if flagged %}
     <p class="muted">{{ flagged_total }} facts on {{ flagged|length }} people carry a <span class="stamp needs">needs a look</span> stamp: the automated check found something that does not line up with the record. Most are small; each is cleared by a person. Open the person to see which facts.</p>
@@ -60,7 +71,7 @@
     {% else %}<p class="muted">Nothing is flagged at the moment.</p>{% endif %}
   </section>
 
-  <section class="bsec stats">
+  <section class="bsec stats" id="activity">
     <h2 class="eyebrow">Activity</h2>
     <table class="activity">
       <caption>Worked on in the last…</caption>
@@ -72,7 +83,7 @@
   </section>
 
   {% if board.done %}
-  <section class="bsec done">
+  <section class="bsec done" id="settled">
     <h2 class="eyebrow">Settled recently</h2>
     <div class="bgrid">{% for it in board.done[:10] %}{{ card(it) }}{% endfor %}</div>
   </section>

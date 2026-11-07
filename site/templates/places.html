@@ -3,7 +3,7 @@
 {% block body %}
 <article class="index">
   <header class="phead"><p class="eyebrow">Index · {{ rows|length }} places</p><h1>Places</h1>
-  <p class="span muted">Events per place. The migration map with a time slider comes in the next version, once the places have coordinates.</p></header>
+  <p class="span muted">Every place a published event happened, with the number of events there. Places are shown as the records name them; the migration map comes in the next version.</p></header>
   <ul class="plist cols">
     {% for r in rows %}<li>{{ placelink(r.place) }} <span class="muted">{{ r.n }}</span></li>{% endfor %}
   </ul>

@@ -27,7 +27,7 @@ Most citations imported from Ancestry do not carry a tier yet. Until a reviewer 
 
 Beside the tier sits the confidence the researcher assigned (one to four dots) and the review state: **reviewed** means a person checked the fact against its source; **AI-checked** means an automated checker read the fact and its citation and found no conflict; **unreviewed** means nobody has looked yet; **needs a look** means the checker flagged a conflict or could not read the record. Most of the tree was imported from Ancestry in October 2026 and starts unreviewed. The site will say so for as long as that is true.
 
-When sources disagree, the fact shows the reading the research currently keeps, and the conflicting readings are in the notes on the citations. The open-questions page lists what is still unsettled.
+When sources disagree, the fact shows the reading the research currently keeps, and the conflicting readings are in the notes on the citations. The [research page](/research/) lists what is being worked on, what is still unsettled, and where a relative could help.
 
 ## Where the data lives
 

@@ -1,21 +1,22 @@
 {% extends "base.html" %}
 {% from "_macros.html" import plink %}
 {% block body %}
-<article class="index">
+<article class="index people">
   <header class="phead">
-    <p class="eyebrow">Index · {{ total }} people</p>
+    <p class="eyebrow">Index · {{ total }} people · {{ total - living }} with their records · {{ living }} living, name only</p>
     <h1>People</h1>
-    <p class="span"><label class="search"><span class="vh">Filter by name</span><input type="search" id="people-filter" placeholder="Filter by name — Konečný, Tauber, Wood …" autocomplete="off"></label></p>
+    <p class="span"><label class="search"><span class="vh">Filter by name</span><input type="search" id="people-filter" placeholder="Filter by name — Konečný, Tauber, Wood …" autocomplete="off" spellcheck="false"></label> <span class="muted small" id="filter-count" aria-live="polite"></span></p>
+    <p class="span muted small">Ordered by surname with the diacritics folded, so Konečný files with Konecny; the underline colour is the person’s lineage. Living relatives are listed by name only.</p>
   </header>
   <nav class="letters" aria-label="By surname initial">{% for L in by_letter %}<a href="#L{{ L }}">{{ L }}</a>{% endfor %}</nav>
   {% for L, people in by_letter.items() %}
   <section class="letter" id="L{{ L }}">
     <h2>{{ L }}</h2>
-    <ul class="plist" data-filter-list>
-      {% for p in people %}<li data-k="{{ p.name.display|lower }} {{ p.name.sort|lower }}">{{ plink(p) }}{% if p.status == 'full' and p.birth and p.birth.place %} <span class="muted">· {{ site.place_name(p.birth.place, true) }}</span>{% endif %}</li>{% endfor %}
+    <ul class="plist cols" data-filter-list>
+      {% for p in people %}<li data-k="{{ p.name.display|fold }} {{ p.name.sort|fold }}">{{ plink(p) }}{% if p.status == 'full' and p.birth and p.birth.place %} <span class="muted">· {{ site.town(p.birth.place) }}</span>{% endif %}</li>{% endfor %}
     </ul>
   </section>
   {% endfor %}
-  <p class="muted" id="filter-empty" hidden>Nobody matches.</p>
+  <p class="muted" id="filter-empty" hidden>Nobody matches. Living relatives are listed by name only, and people marked private in the research database are not on this site.</p>
 </article>
 {% endblock %}

@@ -4,7 +4,7 @@
 {% block body %}
 <article class="line c-{{ line.color }}">
   <header class="linehead">
-    <p class="eyebrow">Lineage · {{ line.generations }} generations</p>
+    <p class="eyebrow"><a href="/">Lineages</a> · {{ line.generations }} generations</p>
     <h1>{{ line.title }}</h1>
     <p class="sub">{{ line.subtitle|typo }}</p>
   </header>
@@ -13,9 +13,12 @@
     {% for s in line.stations %}
     {% set p = s.person %}
     {% if s.crossing %}
-    <li class="sea"><span class="lbl">{{ s.crossing.label }}{% if s.crossing.date and s.crossing.date.text %} · {{ s.crossing.date.text }}{% endif %}{% if s.crossing.description %} · {{ s.crossing.description|typo }}{% endif %}</span></li>
+    <li class="sea">
+      <span class="lbl">{{ s.crossing.label }}{% if s.crossing.date and s.crossing.date.text %} · {{ s.crossing.date.text }}{% endif %}{% if s.crossing.place %} · {{ site.town(s.crossing.place.id) }}{% endif %}</span>
+      {% if s.crossing.description %}<span class="seanote">{{ s.crossing.description|typo }}</span>{% endif %}
+    </li>
     {% endif %}
-    <li class="station{% if p.status != 'full' %} living{% endif %}">
+    <li class="station{% if p.status != 'full' %} living{% endif %}" id="g{{ s.gen }}">
       <span class="gen">{{ s.gen }}</span>
       <div class="st">
         <div class="nm">{{ plink(p, false) }}{% if s.spouse %} <span class="sp">× {{ plink(s.spouse, false) }}</span>{% endif %}</div>
@@ -30,6 +33,21 @@
     </li>
     {% endfor %}
   </ol>
-  <p class="linefoot">Branches are collapsed to a sibling count on each station; open a person to see the whole family.</p>
+  <p class="linefoot">Each station is one generation, labelled with the birthplace; the dashed gap is an ocean crossing. Branches are collapsed to a sibling count — open a person to see the whole family.</p>
+
+  {% if others %}
+  <section class="lines otherlines">
+    <h2 class="eyebrow">The other lines</h2>
+    <div class="linegrid">
+      {% for l in others %}
+      <a class="linecard c-{{ l.color }}" href="/line/{{ l.slug }}/">
+        <span class="band" aria-hidden="true"></span>
+        <span class="lt">{{ l.title }}</span>
+        <span class="lm">{{ l.generations }} generations · back to {{ l.stations[-1].person.name.display }}</span>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
 </article>
 {% endblock %}

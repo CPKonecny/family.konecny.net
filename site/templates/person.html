@@ -2,11 +2,12 @@
 {% from "_macros.html" import plink, placelink, datetext, stamp, fact, ladder, notecard, mediacard, summarybar %}
 {% block description %}{{ p.name.display }}{% if p.status == 'full' %}, {{ p|lifespan }}{% if p.birth and p.birth.place %}, born {{ site.place_name(p.birth.place) }}{% endif %}{% endif %}.{% endblock %}
 {% block body %}
+{% set full = p.status == 'full' %}
 <article class="person c-{{ line_color }}">
   <header class="phead">
-    <p class="eyebrow">{% if p.status == 'full' %}{{ p.name.surname }}{% else %}Living{% endif %} · {{ p.id }}</p>
+    <p class="eyebrow">{% if full %}{{ p.name.surname }}{% else %}Living{% endif %} · {{ p.id }}</p>
     <h1>{{ p.name.display }}</h1>
-    {% if p.status == 'full' %}
+    {% if full %}
     {% if p.alt_names or extras.names %}<p class="aka">also {% for a in p.alt_names %}{{ a.display }}{% if a.type and a.type != 'Birth Name' %} <small>({{ a.type|lower }})</small>{% endif %}{% if not loop.last or extras.names %}, {% endif %}{% endfor %}{% for a in extras.names %}{{ a.text|typo }}{% if not loop.last %}, {% endif %}{% endfor %}</p>{% endif %}
     <p class="span">
       <b>{{ p|lifespan }}</b>
@@ -19,14 +20,37 @@
     {% endif %}
   </header>
 
-  <section class="kin">
+  <aside class="pside" aria-label="On this page">
+    {% if on_lines %}
+    <div class="sidebox lineage">
+      <p class="eyebrow">Lineage</p>
+      {% for m in on_lines %}
+      <a class="linetag c-{{ m.line.color }}" href="/line/{{ m.line.slug }}/#g{{ m.gen }}"><span class="band" aria-hidden="true"></span><span class="lt">{{ m.line.title|replace('The ', '')|replace(', back to the Mayflower', '') }} <small>generation {{ m.gen }} of {{ m.line.generations }}</small></span></a>
+      {% endfor %}
+    </div>
+    {% endif %}
+    {% if full %}
+    <nav class="sidebox jumps" aria-label="Sections">
+      <p class="eyebrow">On this page</p>
+      <a href="#family">Family</a>
+      <a href="#life">Life, with the evidence{% if summary.total %} <small>{{ summary.total }}</small>{% endif %}</a>
+      {% if p.attributes %}<a href="#details">Other details</a>{% endif %}
+      {% if notes or extras.notes %}<a href="#notes">Notes <small>{{ notes|length + extras.notes|length }}</small></a>{% endif %}
+      {% if media %}<a href="#images">Images <small>{{ media|length }}</small></a>{% endif %}
+      <a href="#record">Research database</a>
+    </nav>
+    {% endif %}
+  </aside>
+
+  <div class="pbody">
+  <section class="kin" id="family">
     <h2>Family</h2>
     <dl class="kinlist">
       {% if parents %}<div><dt>Parents</dt><dd>{% for q in parents %}{{ plink(q) }}{% if not loop.last %} · {% endif %}{% endfor %}{% for f in parent_families %} <a class="famlink" href="/family/{{ f.id }}/">family</a>{% endfor %}</dd></div>{% endif %}
       {% if siblings %}<div><dt>Siblings</dt><dd>{% for q in siblings %}{{ plink(q) }}{% if not loop.last %} · {% endif %}{% endfor %}</dd></div>{% endif %}
       {% for fm in families %}
       <div><dt>{% if fm.spouse %}Married{% else %}Family{% endif %}</dt>
-        <dd>{% if fm.spouse %}{{ plink(fm.spouse) }}{% endif %}{% if fm.family.status == 'full' and fm.family.marriage and fm.family.marriage.date %} <span class="yrs">m. {{ fm.family.marriage.date.text }}{% if fm.family.marriage.place %}, {{ site.place_name(fm.family.marriage.place, true) }}{% endif %}</span>{% endif %}
+        <dd>{% if fm.spouse %}{{ plink(fm.spouse) }}{% endif %}{% if fm.family.status == 'full' and fm.family.marriage and fm.family.marriage.date %} <span class="yrs">m. {{ fm.family.marriage.date.text }}{% if fm.family.marriage.place %}, {{ site.town(fm.family.marriage.place) }}{% endif %}</span>{% endif %}
           <a class="famlink" href="/family/{{ fm.family.id }}/">family</a>
           {% if fm.children %}<div class="kids">Children: {% for c in fm.children %}{{ plink(c) }}{% if not loop.last %} · {% endif %}{% endfor %}</div>{% endif %}
         </dd></div>
@@ -35,8 +59,8 @@
     </dl>
   </section>
 
-  {% if p.status == 'full' %}
-  <section class="timeline">
+  {% if full %}
+  <section class="timeline" id="life">
     <h2>Life, with the evidence</h2>
     {% if name_citations %}
     <details class="ev namecit"><summary>Name · {{ name_citations|length }} source{{ 's' if name_citations|length != 1 }}</summary>{{ ladder(name_citations) }}</details>
@@ -51,14 +75,14 @@
   </section>
 
   {% if p.attributes %}
-  <section class="attrs">
+  <section class="attrs" id="details">
     <h2>Other details</h2>
     <dl class="kinlist">{% for a in p.attributes %}<div><dt>{{ a.type }}</dt><dd>{{ a.value|typo }}</dd></div>{% endfor %}</dl>
   </section>
   {% endif %}
 
   {% if notes or extras.notes %}
-  <section class="notes">
+  <section class="notes" id="notes">
     <h2>Notes</h2>
     {% for n in extras.notes %}
     <div class="note">
@@ -72,15 +96,16 @@
   {% endif %}
 
   {% if media %}
-  <section class="gallery">
+  <section class="gallery" id="images">
     <h2>Images</h2>
     <div class="mediarow">{% for m in media %}{{ mediacard(m) }}{% endfor %}</div>
   </section>
   {% endif %}
 
-  <footer class="pfoot">
+  <footer class="pfoot" id="record">
     <p>Research database: <a href="{{ cfg.private_site }}/person/{{ p.id }}" rel="noopener">{{ p.id }}</a> (family login){% if p.xref and p.xref.ancestry %} · Ancestry tree person {{ p.xref.ancestry }}{% endif %}{% if p.provenance %} · from {{ p.provenance|join(', ') }}{% endif %}</p>
   </footer>
   {% endif %}
+  </div>
 </article>
 {% endblock %}
