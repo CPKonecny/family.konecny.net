@@ -37236,9 +37236,7 @@
     }
    ],
    "notes": [
-    "N0836",
-    "N0837",
-    "N1485"
+    "N0837"
    ],
    "page": "Tauber index page 16; SSN 318-18-9849",
    "proposal_file": "2026-10-27_1712_tauber-irene_numident-1914.json",
@@ -37319,8 +37317,7 @@
    ],
    "notes": [
     "N0841",
-    "N0842",
-    "N1487"
+    "N0842"
    ],
    "page": "radnice-ro-31_2370-o (Mostiště section)",
    "proposal_file": "2026-10-27_0945_tauber-anezka_marr-1901.json",
@@ -37362,8 +37359,7 @@
    ],
    "notes": [
     "N0843",
-    "N0844",
-    "N1488"
+    "N0844"
    ],
    "page": "radnice-ro-31_2370-o (Mostiště section)",
    "proposal_file": "2026-10-27_0945_tauber-anezka_marr-1901.json",
@@ -39006,6 +39002,678 @@
    ],
    "tier": "compiled",
    "url": "https://archive.org/details/descendantsofric00shep"
+  },
+  "C1253": {
+   "ancestry_record_id": "",
+   "change": 1794063604,
+   "cited_by": [
+    {
+     "id": "I0387",
+     "type": "person"
+    }
+   ],
+   "confidence": 4,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051213d19fa68f0afccdf820762",
+   "id": "C1253",
+   "information": "primary",
+   "media": [
+    {
+     "ref": "O0200"
+    }
+   ],
+   "notes": [
+    "N1787",
+    "N1788"
+   ],
+   "page": "radnice-ro-13_2670-o",
+   "proposal_file": "2026-11-07_0942_taubr-jiri_add-person.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0179",
+   "source_type": "original",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "record",
+   "url": "https://www.portafontium.eu/iipimage/30067799/radnice-ro-13_2670-o"
+  },
+  "C1254": {
+   "ancestry_record_id": "",
+   "change": 1794063605,
+   "cited_by": [
+    {
+     "id": "I0388",
+     "type": "person"
+    }
+   ],
+   "confidence": 4,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051213d3dcaa46a36dcd2faca7",
+   "id": "C1254",
+   "information": "primary",
+   "media": [
+    {
+     "ref": "O0201"
+    }
+   ],
+   "notes": [
+    "N1789",
+    "N1790"
+   ],
+   "page": "radnice-ro-13_2670-o",
+   "proposal_file": "2026-11-07_0943_josefa_wife-of-jiri-taubr_add-person.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0179",
+   "source_type": "original",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "record",
+   "url": "https://www.portafontium.eu/iipimage/30067799/radnice-ro-13_2670-o"
+  },
+  "C1255": {
+   "ancestry_record_id": "",
+   "change": 1794063606,
+   "cited_by": [
+    {
+     "id": "I0389",
+     "type": "person"
+    }
+   ],
+   "confidence": 4,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051213d6a3846e25e114bed51ea",
+   "id": "C1255",
+   "information": "primary",
+   "media": [
+    {
+     "ref": "O0202"
+    }
+   ],
+   "notes": [
+    "N1791",
+    "N1792"
+   ],
+   "page": "radnice-ro-13_2670-o",
+   "proposal_file": "2026-11-07_0944_ocasek-josef_add-person.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0179",
+   "source_type": "original",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "record",
+   "url": "https://www.portafontium.eu/iipimage/30067799/radnice-ro-13_2670-o"
+  },
+  "C1256": {
+   "ancestry_record_id": "",
+   "change": 1794063607,
+   "cited_by": [
+    {
+     "id": "I0390",
+     "type": "person"
+    }
+   ],
+   "confidence": 4,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051213d820e5bc648529139da2b",
+   "id": "C1256",
+   "information": "primary",
+   "media": [
+    {
+     "ref": "O0203"
+    }
+   ],
+   "notes": [
+    "N1793",
+    "N1794"
+   ],
+   "page": "radnice-ro-13_2670-o",
+   "proposal_file": "2026-11-07_0945_balkova-katerina_add-person.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0179",
+   "source_type": "original",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "record",
+   "url": "https://www.portafontium.eu/iipimage/30067799/radnice-ro-13_2670-o"
+  },
+  "C1260": {
+   "ancestry_record_id": "",
+   "change": 1794063610,
+   "cited_by": [
+    {
+     "id": "F0180",
+     "type": "family"
+    }
+   ],
+   "confidence": 4,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051213e052b1c7c1678f8d13de5",
+   "id": "C1260",
+   "information": "primary",
+   "media": [
+    {
+     "ref": "O0205"
+    }
+   ],
+   "notes": [
+    "N1801",
+    "N1802"
+   ],
+   "page": "radnice-ro-13_2670-o",
+   "proposal_file": "2026-11-07_0951_taubr-jiri_x_josefa_add-family.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0179",
+   "source_type": "original",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "record",
+   "url": "https://www.portafontium.eu/iipimage/30067799/radnice-ro-13_2670-o"
+  },
+  "C1261": {
+   "ancestry_record_id": "",
+   "change": 1794063611,
+   "cited_by": [
+    {
+     "id": "F0181",
+     "type": "family"
+    }
+   ],
+   "confidence": 4,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051213e30a35811ea6cbc6e0bfa",
+   "id": "C1261",
+   "information": "primary",
+   "media": [
+    {
+     "ref": "O0206"
+    }
+   ],
+   "notes": [
+    "N1803",
+    "N1804"
+   ],
+   "page": "radnice-ro-13_2670-o",
+   "proposal_file": "2026-11-07_0952_ocasek-josef_x_balkova_add-family.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0179",
+   "source_type": "original",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "record",
+   "url": "https://www.portafontium.eu/iipimage/30067799/radnice-ro-13_2670-o"
+  },
+  "C1263": {
+   "ancestry_record_id": "1158747",
+   "change": 1794063613,
+   "cited_by": [
+    {
+     "id": "E0415",
+     "type": "event"
+    }
+   ],
+   "confidence": 4,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051213e749c1c5836eb4d0991cd",
+   "id": "C1263",
+   "information": "primary",
+   "media": [
+    {
+     "ref": "O0207"
+    }
+   ],
+   "notes": [
+    "N1807",
+    "N1808"
+   ],
+   "page": "images 345–346 (manuscript pp. 101–102), Philip Wood of Brattleboro; will 29 Mar 1842; allowed 25 Aug 1845",
+   "proposal_file": "2026-11-07_095044_wood-philip_probate-1845-refile.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0202",
+   "source_type": "original",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "record",
+   "url": "https://www.ancestry.com/imageviewer/collections/9084/images/007714780_00345?pid=1158747"
+  },
+  "C1265": {
+   "ancestry_record_id": "",
+   "change": 1794065404,
+   "cited_by": [
+    {
+     "id": "E1566",
+     "type": "event"
+    },
+    {
+     "id": "I0394",
+     "type": "person"
+    }
+   ],
+   "confidence": 4,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051224fb74e7047b0a6597026ac",
+   "id": "C1265",
+   "information": "primary",
+   "media": [
+    {
+     "ref": "O0209"
+    }
+   ],
+   "notes": [],
+   "page": "1 Apr 1950; ED 36-48B, sheet 1, lines 5–9",
+   "proposal_file": "2026-11-07_100159_03_emma-wacek_add-person.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0203",
+   "source_type": "original",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "record",
+   "url": "https://nara-1950-census.s3.us-east-2.amazonaws.com/1950census/43290879-Wisconsin/43290879-Wisconsin-230426/43290879-Wisconsin-230426-0008.jpg"
+  },
+  "C1266": {
+   "ancestry_record_id": "",
+   "change": 1794065405,
+   "cited_by": [
+    {
+     "id": "E1567",
+     "type": "event"
+    },
+    {
+     "id": "I0395",
+     "type": "person"
+    }
+   ],
+   "confidence": 4,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051224fe25c13e4fd22444dc243",
+   "id": "C1266",
+   "information": "primary",
+   "media": [
+    {
+     "ref": "O0210"
+    }
+   ],
+   "notes": [
+    "N1813",
+    "N1814"
+   ],
+   "page": "1 Apr 1950; Manitowoc ED 36-48B, sheet 1, lines 5–7",
+   "proposal_file": "2026-11-07_102205_01_joseph-lodl_add-person.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0203",
+   "source_type": "original",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "record",
+   "url": "https://nara-1950-census.s3.us-east-2.amazonaws.com/1950census/43290879-Wisconsin/43290879-Wisconsin-230426/43290879-Wisconsin-230426-0008.jpg"
+  },
+  "C1267": {
+   "ancestry_record_id": "",
+   "change": 1794065406,
+   "cited_by": [
+    {
+     "id": "E1568",
+     "type": "event"
+    },
+    {
+     "id": "I0396",
+     "type": "person"
+    }
+   ],
+   "confidence": 4,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "105122500a7038caeb2c195bde8a",
+   "id": "C1267",
+   "information": "primary",
+   "media": [
+    {
+     "ref": "O0211"
+    }
+   ],
+   "notes": [
+    "N1815",
+    "N1816"
+   ],
+   "page": "1 Apr 1950; Manitowoc ED 36-48B, sheet 1, lines 5–7",
+   "proposal_file": "2026-11-07_102205_02_howard-lodl_add-person.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0203",
+   "source_type": "original",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "record",
+   "url": "https://nara-1950-census.s3.us-east-2.amazonaws.com/1950census/43290879-Wisconsin/43290879-Wisconsin-230426/43290879-Wisconsin-230426-0008.jpg"
+  },
+  "C1269": {
+   "ancestry_record_id": "",
+   "change": 1794065408,
+   "cited_by": [
+    {
+     "id": "F0184",
+     "type": "family"
+    }
+   ],
+   "confidence": 4,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10512250601a1e37da3b64d284ab",
+   "id": "C1269",
+   "information": "primary",
+   "media": [
+    {
+     "ref": "O0213"
+    }
+   ],
+   "notes": [
+    "N1819",
+    "N1820"
+   ],
+   "page": "1 Apr 1950; Manitowoc ED 36-48B, sheet 1, lines 5–7",
+   "proposal_file": "2026-11-07_102205_03_lodl_add-family.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0203",
+   "source_type": "original",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "record",
+   "url": "https://nara-1950-census.s3.us-east-2.amazonaws.com/1950census/43290879-Wisconsin/43290879-Wisconsin-230426/43290879-Wisconsin-230426-0008.jpg"
+  },
+  "C1270": {
+   "ancestry_record_id": "",
+   "change": 1794065410,
+   "cited_by": [
+    {
+     "id": "E1569",
+     "type": "event"
+    }
+   ],
+   "confidence": 2,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10512250916323bc2aa8b2f6217",
+   "id": "C1270",
+   "information": "secondary",
+   "media": [],
+   "notes": [
+    "N1821"
+   ],
+   "page": "Joseph H. Lodl 1896–1966; shared stone Emma W. 1892–1980",
+   "proposal_file": "2026-11-07_102205_04_joseph-death.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0204",
+   "source_type": "index",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "index",
+   "url": "https://www.2manitowoc.com/33L.html"
+  },
+  "C1271": {
+   "ancestry_record_id": "",
+   "change": 1794065410,
+   "cited_by": [
+    {
+     "id": "E1570",
+     "type": "event"
+    }
+   ],
+   "confidence": 2,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10512250a7b65d9392a1a615f6bb",
+   "id": "C1271",
+   "information": "secondary",
+   "media": [],
+   "notes": [
+    "N1822"
+   ],
+   "page": "Howard E. Lodl, plot C-14-2, 1924–2002",
+   "proposal_file": "2026-11-07_102205_05_howard-death.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0205",
+   "source_type": "index",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "index",
+   "url": "https://www.2manitowoc.com/89DL.html"
+  },
+  "C1272": {
+   "ancestry_record_id": "",
+   "change": 1794065411,
+   "cited_by": [
+    {
+     "id": "E1571",
+     "type": "event"
+    }
+   ],
+   "confidence": 2,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10512250ba653ce726df73cf7c45",
+   "id": "C1272",
+   "information": "secondary",
+   "media": [],
+   "notes": [
+    "N1823"
+   ],
+   "page": "Howard E. Lodl, plot C-14-2, 1924–2002",
+   "proposal_file": "2026-11-07_102205_06_howard-alternate-birth.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0205",
+   "source_type": "index",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "index",
+   "url": "https://www.2manitowoc.com/89DL.html"
+  },
+  "C1273": {
+   "ancestry_record_id": "",
+   "change": 1794065411,
+   "cited_by": [
+    {
+     "id": "E1572",
+     "type": "event"
+    }
+   ],
+   "confidence": 2,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10512250d2a23e7bb4578e751b59",
+   "id": "C1273",
+   "information": "secondary",
+   "media": [],
+   "notes": [
+    "N1824"
+   ],
+   "page": "18 Jun 1980, p. 3; birth 24 Oct 1892 Manitowoc County; death 18 Jun 1980 Manitowoc County",
+   "proposal_file": "2026-11-07_102205_07_emma-alternate-birth.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0206",
+   "source_type": "index",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "index",
+   "url": "https://www.findagrave.com/memorial/134260045/emma-w-lodl"
+  },
+  "C1274": {
+   "ancestry_record_id": "",
+   "change": 1794065412,
+   "cited_by": [
+    {
+     "id": "E1573",
+     "type": "event"
+    }
+   ],
+   "confidence": 2,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10512250e6e9557d8effba05dc8",
+   "id": "C1274",
+   "information": "secondary",
+   "media": [],
+   "notes": [
+    "N1825"
+   ],
+   "page": "18 Jun 1980, p. 3; birth 24 Oct 1892 Manitowoc County; death 18 Jun 1980 Manitowoc County",
+   "proposal_file": "2026-11-07_102205_08_emma-death.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0206",
+   "source_type": "index",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "index",
+   "url": "https://www.findagrave.com/memorial/134260045/emma-w-lodl"
   }
  },
  "events": {
@@ -52583,9 +53251,10 @@
   },
   "E0415": {
    "attributes": [],
-   "change": 1793219371,
+   "change": 1794063613,
    "citations": [
-    "C0366"
+    "C0366",
+    "C1263"
    ],
    "date": {
     "day": 25,
@@ -52597,9 +53266,11 @@
     "text": "25 August 1845",
     "year": 1845
    },
-   "description": "",
+   "description": "Will dated 29 Mar 1842; proved/allowed 25 Aug 1845; Royal G. Wood sole executor; names children including Samuel Wood; Constable NY farm life estate to Levi M. Wood & Arvilla",
    "families": [],
-   "flags": [],
+   "flags": [
+    "agent-proposed"
+   ],
    "handle": "104ebd54acd56939496f2bb5ff53",
    "id": "E0415",
    "media": [],
@@ -52612,14 +53283,18 @@
    ],
    "place": "P0123",
    "provenance": [
+    "agent-karel",
+    "agent-proposed",
     "agent-validator",
     "import-ancestry-2026-10-25"
    ],
    "review": "ai",
    "tags": [
+    "agent-karel",
     "import-ancestry-2026-10-25",
     "ai-validated",
-    "agent-validator"
+    "agent-validator",
+    "agent-proposed"
    ],
    "type": "Probate"
   },
@@ -89284,6 +89959,350 @@
     "agent-proposed"
    ],
    "type": "Birth"
+  },
+  "E1566": {
+   "attributes": [],
+   "change": 1794065404,
+   "citations": [
+    "C1265"
+   ],
+   "date": {
+    "day": null,
+    "iso": "1894",
+    "modifier": "about",
+    "month": null,
+    "quality": null,
+    "sort": 2412830,
+    "text": "about 1894",
+    "year": 1894
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051224fc04e63e8532ab88f76ee",
+   "id": "E1566",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0394",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0089",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Birth"
+  },
+  "E1567": {
+   "attributes": [],
+   "change": 1794065405,
+   "citations": [
+    "C1266"
+   ],
+   "date": {
+    "day": null,
+    "iso": "1896",
+    "modifier": "about",
+    "month": null,
+    "quality": null,
+    "sort": 2413560,
+    "text": "about 1896",
+    "year": 1896
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051224fea8a7cb539973abeee91",
+   "id": "E1567",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0395",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0089",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Birth"
+  },
+  "E1568": {
+   "attributes": [],
+   "change": 1794065406,
+   "citations": [
+    "C1267"
+   ],
+   "date": {
+    "day": null,
+    "iso": "1925",
+    "modifier": "about",
+    "month": null,
+    "quality": null,
+    "sort": 2424152,
+    "text": "about 1925",
+    "year": 1925
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "105122500f294501577f92cc7f98",
+   "id": "E1568",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0396",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0089",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Birth"
+  },
+  "E1569": {
+   "attributes": [],
+   "change": 1794065410,
+   "citations": [
+    "C1270"
+   ],
+   "date": {
+    "day": null,
+    "iso": "1966",
+    "modifier": null,
+    "month": null,
+    "quality": null,
+    "sort": 2439127,
+    "text": "1966",
+    "year": 1966
+   },
+   "description": "Source precision preserved; year-only remains year-only.",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051225095fe6084598f805f97f4",
+   "id": "E1569",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0395",
+     "role": "Primary"
+    }
+   ],
+   "place": null,
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Death"
+  },
+  "E1570": {
+   "attributes": [],
+   "change": 1794065410,
+   "citations": [
+    "C1271"
+   ],
+   "date": {
+    "day": null,
+    "iso": "2002",
+    "modifier": null,
+    "month": null,
+    "quality": null,
+    "sort": 2452276,
+    "text": "2002",
+    "year": 2002
+   },
+   "description": "Source precision preserved; year-only remains year-only.",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10512250acea6d59fa2f534cda2c",
+   "id": "E1570",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0396",
+     "role": "Primary"
+    }
+   ],
+   "place": null,
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Death"
+  },
+  "E1571": {
+   "attributes": [],
+   "change": 1794065411,
+   "citations": [
+    "C1272"
+   ],
+   "date": {
+    "day": null,
+    "iso": "1924",
+    "modifier": null,
+    "month": null,
+    "quality": null,
+    "sort": 2423786,
+    "text": "1924",
+    "year": 1924
+   },
+   "description": "Alternate conflicting source-supported birth; preserve original census birth.",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10512250bedb4206144158748c09",
+   "id": "E1571",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0396",
+     "role": "Primary"
+    }
+   ],
+   "place": null,
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Birth"
+  },
+  "E1572": {
+   "attributes": [],
+   "change": 1794065411,
+   "citations": [
+    "C1273"
+   ],
+   "date": {
+    "day": 24,
+    "iso": "1892-10-24",
+    "modifier": null,
+    "month": 10,
+    "quality": null,
+    "sort": 2412396,
+    "text": "24 October 1892",
+    "year": 1892
+   },
+   "description": "Alternate conflicting source-supported birth; preserve original census birth.",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10512250da0731e2dd160cf6a2f2",
+   "id": "E1572",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0394",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0171",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Birth"
+  },
+  "E1573": {
+   "attributes": [],
+   "change": 1794065412,
+   "citations": [
+    "C1274"
+   ],
+   "date": {
+    "day": 18,
+    "iso": "1980-06-18",
+    "modifier": null,
+    "month": 6,
+    "quality": null,
+    "sort": 2444409,
+    "text": "18 June 1980",
+    "year": 1980
+   },
+   "description": "Source precision preserved; year-only remains year-only.",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10512250eb4e1321dd9ead015cae",
+   "id": "E1573",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0394",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0171",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Death"
   }
  },
  "families": {
@@ -95340,6 +96359,144 @@
    "tags": [
     "agent-karel",
     "agent-proposed"
+   ],
+   "type": "Married"
+  },
+  "F0179": {
+   "children": [
+    {
+     "ref": "I0378"
+    }
+   ],
+   "father": "I0385",
+   "handle": "1051213cedb17763b3bcb48e9d1c",
+   "id": "F0179",
+   "mother": "I0386",
+   "status": "living"
+  },
+  "F0180": {
+   "attributes": [],
+   "change": 1794063611,
+   "children": [
+    {
+     "ref": "I0185"
+    }
+   ],
+   "citations": [
+    "C1260"
+   ],
+   "events": [],
+   "father": "I0387",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051213d4d9848e77dc92da9fc76",
+   "id": "F0180",
+   "media": [],
+   "mother": "I0388",
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Married"
+  },
+  "F0181": {
+   "attributes": [],
+   "change": 1794063612,
+   "children": [
+    {
+     "ref": "I0186"
+    }
+   ],
+   "citations": [
+    "C1261"
+   ],
+   "events": [],
+   "father": "I0389",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051213d8da45fee1ef65d3dc3c1",
+   "id": "F0181",
+   "media": [],
+   "mother": "I0390",
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Married"
+  },
+  "F0182": {
+   "children": [
+    {
+     "ref": "I0226"
+    }
+   ],
+   "father": "I0391",
+   "handle": "1051213dc34f23e61132d171949c",
+   "id": "F0182",
+   "mother": "I0392",
+   "status": "living"
+  },
+  "F0183": {
+   "children": [
+    {
+     "ref": "I0238"
+    },
+    {
+     "ref": "I0394"
+    }
+   ],
+   "father": "I0393",
+   "handle": "105122502c3263363e934c0a8c01",
+   "id": "F0183",
+   "mother": null,
+   "status": "living"
+  },
+  "F0184": {
+   "attributes": [],
+   "change": 1794065409,
+   "children": [
+    {
+     "ref": "I0396"
+    }
+   ],
+   "citations": [
+    "C1269"
+   ],
+   "events": [],
+   "father": "I0395",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051225065a71af7188c02246c63",
+   "id": "F0184",
+   "media": [],
+   "mother": "I0394",
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-proposed",
+    "agent-karel"
    ],
    "type": "Married"
   }
@@ -102385,6 +103542,369 @@
     "agent-karel",
     "agent-proposed"
    ]
+  },
+  "O0200": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1253",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-07_0942_taubr-jiri_add-person.jpg"
+   },
+   "checksum": "f1174ef9016e966a8d54fb9067a54fa5",
+   "citations": [],
+   "date": null,
+   "desc": "Radnice Roman Catholic parish registers (SOA Plzeň, Porta fontium), RO13 marriages — radnice-ro-13_2670-o",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051213d0b725492e6acf78b8d31",
+   "id": "O0200",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0200",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ]
+  },
+  "O0201": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1254",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-07_0943_josefa_wife-of-jiri-taubr_add-person.jpg"
+   },
+   "checksum": "f1174ef9016e966a8d54fb9067a54fa5",
+   "citations": [],
+   "date": null,
+   "desc": "Radnice Roman Catholic parish registers (SOA Plzeň, Porta fontium), RO13 marriages — radnice-ro-13_2670-o",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051213d314f408dfd225a875d96",
+   "id": "O0201",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0201",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ]
+  },
+  "O0202": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1255",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-07_0944_ocasek-josef_add-person.jpg"
+   },
+   "checksum": "f1174ef9016e966a8d54fb9067a54fa5",
+   "citations": [],
+   "date": null,
+   "desc": "Radnice Roman Catholic parish registers (SOA Plzeň, Porta fontium), RO13 marriages — radnice-ro-13_2670-o",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051213d62f57eec0b1bf3158322",
+   "id": "O0202",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0202",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ]
+  },
+  "O0203": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1256",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-07_0945_balkova-katerina_add-person.jpg"
+   },
+   "checksum": "f1174ef9016e966a8d54fb9067a54fa5",
+   "citations": [],
+   "date": null,
+   "desc": "Radnice Roman Catholic parish registers (SOA Plzeň, Porta fontium), RO13 marriages — radnice-ro-13_2670-o",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051213d7a572a92ed3fa937e443",
+   "id": "O0203",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0203",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ]
+  },
+  "O0205": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1260",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-07_0951_taubr-jiri_x_josefa_add-family.jpg"
+   },
+   "checksum": "f1174ef9016e966a8d54fb9067a54fa5",
+   "citations": [],
+   "date": null,
+   "desc": "Radnice Roman Catholic parish registers (SOA Plzeň, Porta fontium), RO13 marriages — radnice-ro-13_2670-o",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051213dfdb944f81bf503bbd640",
+   "id": "O0205",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0205",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ]
+  },
+  "O0206": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1261",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-07_0952_ocasek-josef_x_balkova_add-family.jpg"
+   },
+   "checksum": "f1174ef9016e966a8d54fb9067a54fa5",
+   "citations": [],
+   "date": null,
+   "desc": "Radnice Roman Catholic parish registers (SOA Plzeň, Porta fontium), RO13 marriages — radnice-ro-13_2670-o",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051213e23fd551b6f2c8f2d8bc7",
+   "id": "O0206",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0206",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ]
+  },
+  "O0207": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1263",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-06_0940_wood-philip_will-1845.jpg"
+   },
+   "checksum": "e1d03b5fdc25ee6c447acf1cfd3425db",
+   "citations": [],
+   "date": null,
+   "desc": "Vermont, U.S., Wills and Probate Records, 1749-1999 — Windham / Marlboro Probate District, vol. 17–18 (1843–1847) — images 345–346 (manuscript pp. 101–102), Philip Wood of Brattleboro; will 29 Mar 1842; allowed 25 Aug 1845",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051213e6c4b70e6a6a76698d90b",
+   "id": "O0207",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0207",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ]
+  },
+  "O0209": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1265",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-07_100159_wacek-1950.jpg"
+   },
+   "checksum": "11ac0cce292191e24316b3c14d57e363",
+   "citations": [],
+   "date": null,
+   "desc": "1950 United States Federal Census, Manitowoc, Wisconsin — 1 Apr 1950; ED 36-48B, sheet 1, lines 5–9",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051224fae992b0c5987a469838e",
+   "id": "O0209",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0209",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-proposed",
+    "agent-karel"
+   ]
+  },
+  "O0210": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1266",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-07_100159_wacek-1950.jpg"
+   },
+   "checksum": "11ac0cce292191e24316b3c14d57e363",
+   "citations": [],
+   "date": null,
+   "desc": "1950 United States Federal Census, Manitowoc, Wisconsin — 1 Apr 1950; Manitowoc ED 36-48B, sheet 1, lines 5–7",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051224fd7327d66ccfc207b9add",
+   "id": "O0210",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0210",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-proposed",
+    "agent-karel"
+   ]
+  },
+  "O0211": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1267",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-07_100159_wacek-1950.jpg"
+   },
+   "checksum": "11ac0cce292191e24316b3c14d57e363",
+   "citations": [],
+   "date": null,
+   "desc": "1950 United States Federal Census, Manitowoc, Wisconsin — 1 Apr 1950; Manitowoc ED 36-48B, sheet 1, lines 5–7",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "105122500246236179740f815d7",
+   "id": "O0211",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0211",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-proposed",
+    "agent-karel"
+   ]
+  },
+  "O0213": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1269",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-07_100159_wacek-1950.jpg"
+   },
+   "checksum": "11ac0cce292191e24316b3c14d57e363",
+   "citations": [],
+   "date": null,
+   "desc": "1950 United States Federal Census, Manitowoc, Wisconsin — 1 Apr 1950; Manitowoc ED 36-48B, sheet 1, lines 5–7",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051225057e9656656f4e2f95443",
+   "id": "O0213",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0213",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-proposed",
+    "agent-karel"
+   ]
   }
  },
  "meta": {
@@ -102396,21 +103916,21 @@
    "very high"
   ],
   "counts": {
-   "citations": 1208,
-   "events": 1406,
-   "families": 171,
-   "media": 190,
-   "notes": 1286,
-   "people": 381,
+   "citations": 1224,
+   "events": 1414,
+   "families": 177,
+   "media": 201,
+   "notes": 1306,
+   "people": 393,
    "places": 321,
-   "repositories": 22,
-   "sources": 196
+   "repositories": 24,
+   "sources": 201
   },
   "counts_people": {
-   "full": 319,
-   "living": 62
+   "full": 326,
+   "living": 67
   },
-  "generated": "2026-11-07T08:16:02+00:00",
+  "generated": "2026-11-08T08:17:47+00:00",
   "generator": "gramps_export.py 0.3.0",
   "gramps_version": "6.0.8",
   "gramps_webapi_version": "3.17.0",
@@ -102434,7 +103954,7 @@
    "oral",
    "ai-draft"
   ],
-  "today": "2026-11-07",
+  "today": "2026-11-08",
   "tree": "Konecny"
  },
  "notes": {
@@ -109272,25 +110792,6 @@
    "text": "2026-10-27 (karel): Annie US solid-A. Ancestry ON 27 Oct: Birth 15 Apr 1938 Chicago + Death 17 Aug 2016 Moultrie GA with Moultrie Observer cite; Research Note survivors. Already child of Alois 212806948495 × Irene 212806948717 — no relink. Not a family event — no spouse field. Image is rendered text capture (live page JS-only; HTML snapshot rendered blank).",
    "type": "Research"
   },
-  "N0804": {
-   "attached_to": [
-    {
-     "id": "I0226",
-     "type": "person"
-    }
-   ],
-   "change": 1793481367,
-   "flags": [],
-   "handle": "104ef8b72b212154301e5912fb8b",
-   "html": "<p>2026-10-27 (karel): CREATE parents of Irene Benz: father Herman Benz, mother Anna Roesner (no dates). Source: SSA NUMIDENT (via SortedByName) for Irene b. 18 Feb 1914 Chicago. Herman first name from NUMIDENT index only — VERIFY (Herman/Hermann) against 1914 Chicago birth or 1920/1930 census before locking.</p>",
-   "id": "N0804",
-   "preformatted": false,
-   "provenance": [],
-   "review": "unreviewed",
-   "tags": [],
-   "text": "2026-10-27 (karel): CREATE parents of Irene Benz: father Herman Benz, mother Anna Roesner (no dates). Source: SSA NUMIDENT (via SortedByName) for Irene b. 18 Feb 1914 Chicago. Herman first name from NUMIDENT index only — VERIFY (Herman/Hermann) against 1914 Chicago birth or 1920/1930 census before locking.",
-   "type": "Research"
-  },
   "N0805": {
    "attached_to": [
     {
@@ -109766,25 +111267,6 @@
    "text": "2026-10-27 (karel): Toepel Round 10 SOLID death. Ancestry pid 212807149623 (Dorothy 212799248666 father). Death 31 Oct 1954 Freeborn already ON with MNHS cite (cite text still says PROBABLE — left unchanged; research note now SOLID). Gallery MNHS screenshot ON. Potential parents Carl/Charles × Inger not accepted. Not a family event — no spouse field. | Re-filed 27 Oct 17:10 (supersedes 0930): index tier capped at confidence 2 per applier rule.",
    "type": "Research"
   },
-  "N0836": {
-   "attached_to": [
-    {
-     "id": "C1202",
-     "type": "citation"
-    }
-   ],
-   "change": 1793136848,
-   "flags": [],
-   "handle": "104ef8d9426d23018b243fda7449",
-   "html": "<p>Transcription (as written): TAUBER, IRENE, also known as IRENE BENZ TAUBER and IRENE BENZ, was born 18 February 1914 in CHICAGO, Illinois, daughter of HERMAN BENZ (father) and ANNA ROESNER, was assigned Social Security number 318-18-9849 (indicating Illinois), is listed as a U.S. citizen, and died 3 November 1993, while residing in Zip Code 33884-2640. The Social Security field office at LAKELAND FL received the claim 11 November 1975.</p>",
-   "id": "N0836",
-   "preformatted": false,
-   "provenance": [],
-   "review": "unreviewed",
-   "tags": [],
-   "text": "Transcription (as written): TAUBER, IRENE, also known as IRENE BENZ TAUBER and IRENE BENZ, was born 18 February 1914 in CHICAGO, Illinois, daughter of HERMAN BENZ (father) and ANNA ROESNER, was assigned Social Security number 318-18-9849 (indicating Illinois), is listed as a U.S. citizen, and died 3 November 1993, while residing in Zip Code 33884-2640. The Social Security field office at LAKELAND FL received the claim 11 November 1975.",
-   "type": "Transcript"
-  },
   "N0837": {
    "attached_to": [
     {
@@ -109840,25 +111322,6 @@
    "review": "unreviewed",
    "tags": [],
    "text": "2026-10-27 (karel): Charles CREATE ON Ancestry 27 Oct (pid 212811655300) per Chris 'fill fan with review flags'. Death fact SOLID-ish (MNHS index + obit); birth year conflicted. Formal Ancestry source records may still be finishing; fact/description ON. | Re-filed 27 Oct 17:14 (supersedes 1240): index tier capped at confidence 2 per applier rule.\nConflicts: ['Birth year 1865 (Tribune) vs 1867 (Ancestry hint 10 Sep 1867).']",
-   "type": "Research"
-  },
-  "N0840": {
-   "attached_to": [
-    {
-     "id": "I0378",
-     "type": "person"
-    }
-   ],
-   "change": 1793481368,
-   "flags": [],
-   "handle": "104ef8d98d453edb3a27916ff722",
-   "html": "<p>2026-10-27 (karel): Groom-parent clause LOCK (Parish dual-crop, RO31 2370-o): František Vlček, horník na Svinné č. 23 — nar. v Kamenci — syn Hynka Vlčka, domkáře na Svinné č. 23 — a matky Františky, rozené Maškovy z Kamence č. 17. Ancestry CREATE 27 Oct 2026: father Hynek Vlček 212811641660; mother Františka Mašková 212811641717 (no dates). Anežka 212806421666 Research Note corrects false RO30 1901 přepis (Antonie×Bejček 1916 spill). Do not treat Hynek as Jan.</p>",
-   "id": "N0840",
-   "preformatted": false,
-   "provenance": [],
-   "review": "unreviewed",
-   "tags": [],
-   "text": "2026-10-27 (karel): Groom-parent clause LOCK (Parish dual-crop, RO31 2370-o): František Vlček, horník na Svinné č. 23 — nar. v Kamenci — syn Hynka Vlčka, domkáře na Svinné č. 23 — a matky Františky, rozené Maškovy z Kamence č. 17. Ancestry CREATE 27 Oct 2026: father Hynek Vlček 212811641660; mother Františka Mašková 212811641717 (no dates). Anežka 212806421666 Research Note corrects false RO30 1901 přepis (Antonie×Bejček 1916 spill). Do not treat Hynek as Jan.",
    "type": "Research"
   },
   "N0841": {
@@ -123977,29 +125440,6 @@
    "text": "Validator (claude-opus-5-5, 2026-10-28): consistent, confidence 3/4, tier record.\nThe image is the Radnice death register and shows an entry dated October 28 for house no. 10: 'Kateřina manželka Tomáše Tauber', Kateřina, wife of Tomáš Tauber. This matches the claimed name, day, month and house. The visible crop does not show the year, age, burial date, cause of death, or the readable village name, so those parts of the claim rest on the transcript. Check them against the full page at pag. 233. The roughly five-year age discrepancy with the 1830 marriage record should also be resolved from the full entry.\nMatches: Header 'Gméno Zemřelého' marks this as a death register page; Date column reads 'October 28.' with 'zem:' (zemřela, died), matching 28 October; House number column reads 10, matching house 10; Name column reads 'Kateřina manželka Tomáše Tauber', i.e. Kateřina, wife of Tomáš Tauber; Tauber is a variant of Taubr; Wife of Tomáš fits the research note that he was a widower by June 1841\nLimits: The crop shows only the top of the entry; the year 1840 is not visible on this image; Age 42, burial on 29 Oct 1840 and cause Leberverhärtung are not visible in the crop; The second line, likely the village or house detail, is cut off and cannot be read, so Mostiště and Liblín cannot be confirmed from the image; The claim gives the place as Mostiště but the note says house 10 Liblín; which village house 10 belongs to needs checking on the full page; Maiden name and parents are not shown; the transcript marks them as needing review; The age conflict with the 1830 marriage (27, born about 1803, vs 42 at death, born about 1798) cannot be judged from this crop",
    "type": "Research"
   },
-  "N1485": {
-   "attached_to": [
-    {
-     "id": "C1202",
-     "type": "citation"
-    }
-   ],
-   "change": 1793222316,
-   "flags": [],
-   "handle": "104f2bcaa7394f0249ff753338c",
-   "html": "<p>Validator (claude-sonnet-5-5, 2026-10-28): supports, confidence 2/4, tier index.<br>The transcription states birth on 18 February 1914 in Chicago, Illinois, for Irene Tauber, aka Irene Benz and Irene Benz Tauber. This matches the claim&#x27;s date and place directly. The county is only implied, and the record is an index tier source, so confidence is capped at 2 per the stated rule.<br>Matches: Birth date 18 February 1914 is stated explicitly; Birth place Chicago, Illinois matches the claim; Name variants IRENE BENZ and IRENE BENZ TAUBER are listed as aka, so Irene Benz is covered; Death 3 November 1993 and Zip 33884-2640 match the research note; Parents are named as Herman Benz and Anna Roesner, consistent with a maiden name of Benz; The SSN 318-18-9849 is an Illinois-issued number, which fits a Chicago birth<br>Limits: Derivative index page (SortedByName.com transcription of the SSA NUMIDENT), not an image of the original application; The record gives only &#x27;Chicago, Illinois&#x27;, so the county (Cook) is not stated; The ZIP code does not name a death place; Cypress Gardens/Winter Haven, Polk FL is inferred from the zip and is not stated in the record; Nothing in the record links this Irene to the specific person in the tree beyond the name, birth date and parents; the claim does not give parents to check against; The page is a rendered clip, not a scan of the original record</p>",
-   "id": "N1485",
-   "preformatted": false,
-   "provenance": [
-    "agent-validator"
-   ],
-   "review": "unreviewed",
-   "tags": [
-    "agent-validator"
-   ],
-   "text": "Validator (claude-sonnet-5-5, 2026-10-28): supports, confidence 2/4, tier index.\nThe transcription states birth on 18 February 1914 in Chicago, Illinois, for Irene Tauber, aka Irene Benz and Irene Benz Tauber. This matches the claim's date and place directly. The county is only implied, and the record is an index tier source, so confidence is capped at 2 per the stated rule.\nMatches: Birth date 18 February 1914 is stated explicitly; Birth place Chicago, Illinois matches the claim; Name variants IRENE BENZ and IRENE BENZ TAUBER are listed as aka, so Irene Benz is covered; Death 3 November 1993 and Zip 33884-2640 match the research note; Parents are named as Herman Benz and Anna Roesner, consistent with a maiden name of Benz; The SSN 318-18-9849 is an Illinois-issued number, which fits a Chicago birth\nLimits: Derivative index page (SortedByName.com transcription of the SSA NUMIDENT), not an image of the original application; The record gives only 'Chicago, Illinois', so the county (Cook) is not stated; The ZIP code does not name a death place; Cypress Gardens/Winter Haven, Polk FL is inferred from the zip and is not stated in the record; Nothing in the record links this Irene to the specific person in the tree beyond the name, birth date and parents; the claim does not give parents to check against; The page is a rendered clip, not a scan of the original record",
-   "type": "Research"
-  },
   "N1486": {
    "attached_to": [
     {
@@ -124021,52 +125461,6 @@
     "agent-validator"
    ],
    "text": "Validator (claude-sonnet-5-5, 2026-10-28): consistent, confidence 2/4, tier index.\nThe index transcription gives Hansen, Charles C. (Carl), died 4 Nov 1947 in Freeborn County, certificate 1947-MN-004558. This matches the claimed date and the county of Albert Lea. As an index entry with no image, it cannot confirm the town or the full middle name, so it is consistent rather than fully supporting.\nMatches: Name Charles C. (Carl) Hansen matches the claimed Charles Christian Hansen; Death date 4 Nov 1947 matches the claim; Freeborn County matches Albert Lea, Freeborn, Minnesota (county level); Certificate number 1947-MN-004558 matches the one cited in the claim\nLimits: Index entry only, with no image of the certificate; Transcription gives only the county, not Albert Lea specifically; Middle name Christian is not shown, only the initial C.; The index does not settle the birth-year conflict (1865 vs 1867); the claim is a death claim, so this is a gap rather than a contradiction; The index does not give parents, spouse or age, so identity rests on name, date and county",
-   "type": "Research"
-  },
-  "N1487": {
-   "attached_to": [
-    {
-     "id": "C1204",
-     "type": "citation"
-    }
-   ],
-   "change": 1793222335,
-   "flags": [],
-   "handle": "104f2bcda7e33c44f64ee30c40da",
-   "html": "<p>Validator (claude-opus-5-5, 2026-10-28): supports, confidence 4/4, tier record.<br>The second entry on the page records the marriage on 28 October 1901 of František Vlček, miner of Svinná 23 and born in Kamenec, and Anežka Taubrová of Moštice 27. The bride&#x27;s parents are given as Jan Taubr, miner of Moštice 27, and Anna née Králová of Moštice 7. Her birth date of 13 January 1881 in the age column matches the claimed 1881. The names, date, residences and parents all agree with the claim and the transcription. Radnice as the place comes from the source citation rather than from the visible page.<br>Matches: Second entry on the page (fol. 238): year 1901, month října (October), day 28; Groom: Vlček František, horník (miner) at Svinná č. 23, born in Kamenec, son of Catholic parents Hynek Vlček, cottager at Svinná 23, and Františka née Mašínová of Kamenec; Bride: Taubrová Anežka, born in Moštice, residence Moštice č. 27; Bride&#x27;s parents: Jan Taubr, miner of Moštice 27, and Anna née Králová of Moštice 7; Bride&#x27;s birth date in the age column reads 13/1 1881, matching the claimed birth year 1881; Officiant Václav Dvořák, farář; the right page notes the father&#x27;s consent to the marriage, signed by Jan Taubr (otec)<br>Limits: The parish name is not visible in the cropped page. Radnice as the place rests on the source citation (Radnice RO31), not on wording in the entry.; The entry does not name the specific church building. Moštice and Svinná appear to belong to this parish.; The citation calls the section &#x27;Mostiště&#x27; while the record reads Moštice. This looks like a labelling variant, not a conflict.; The record cannot settle the later US identity question mentioned in the claim note.</p>",
-   "id": "N1487",
-   "preformatted": false,
-   "provenance": [
-    "agent-validator"
-   ],
-   "review": "unreviewed",
-   "tags": [
-    "agent-validator"
-   ],
-   "text": "Validator (claude-opus-5-5, 2026-10-28): supports, confidence 4/4, tier record.\nThe second entry on the page records the marriage on 28 October 1901 of František Vlček, miner of Svinná 23 and born in Kamenec, and Anežka Taubrová of Moštice 27. The bride's parents are given as Jan Taubr, miner of Moštice 27, and Anna née Králová of Moštice 7. Her birth date of 13 January 1881 in the age column matches the claimed 1881. The names, date, residences and parents all agree with the claim and the transcription. Radnice as the place comes from the source citation rather than from the visible page.\nMatches: Second entry on the page (fol. 238): year 1901, month října (October), day 28; Groom: Vlček František, horník (miner) at Svinná č. 23, born in Kamenec, son of Catholic parents Hynek Vlček, cottager at Svinná 23, and Františka née Mašínová of Kamenec; Bride: Taubrová Anežka, born in Moštice, residence Moštice č. 27; Bride's parents: Jan Taubr, miner of Moštice 27, and Anna née Králová of Moštice 7; Bride's birth date in the age column reads 13/1 1881, matching the claimed birth year 1881; Officiant Václav Dvořák, farář; the right page notes the father's consent to the marriage, signed by Jan Taubr (otec)\nLimits: The parish name is not visible in the cropped page. Radnice as the place rests on the source citation (Radnice RO31), not on wording in the entry.; The entry does not name the specific church building. Moštice and Svinná appear to belong to this parish.; The citation calls the section 'Mostiště' while the record reads Moštice. This looks like a labelling variant, not a conflict.; The record cannot settle the later US identity question mentioned in the claim note.",
-   "type": "Research"
-  },
-  "N1488": {
-   "attached_to": [
-    {
-     "id": "C1205",
-     "type": "citation"
-    }
-   ],
-   "change": 1793222351,
-   "flags": [],
-   "handle": "104f2bd003ad24f8a160f09e7991",
-   "html": "<p>Validator (claude-opus-5-5, 2026-10-28): supports, confidence 4/4, tier record.<br>The second entry, dated 28 October 1901, records the marriage of František Vlček, miner of Svinná 23 born in Kamenec, to Anežka Taubrová, born in Moštice and living at Moštice 27. Her parents are Jan Taubr, miner of Moštice 27, and Anna née Králová of Moštice 7. Her birth date of 13 January 1881 agrees with the claimed birth year, and the names match the claim as Czech forms (Taubrová/Tauber). The parish name is not written on this page, so Radnice as the place depends on the register identification. This record cannot address the US identity questions raised in the claim&#x27;s notes.<br>Matches: Second entry on the page is dated 1901, října (October) 28, with priest Václav Dvořák, farář; Groom: Vlček František, horník (miner) at Svinná č. 23, born in Kamenec, son of Hynek Vlček, domkář of Svinná 23; Bride: Taubrová Anežka, born in Moštice, residing at Moštice č. 27; Bride&#x27;s father is Jan Taubr, horník (miner) of Moštice č. 27; her mother is Anna née Králová of Moštice č. 7; Bride&#x27;s birth date in the age column reads 13/1 1881, matching the claimed birth year 1881; Groom&#x27;s birth date reads 18/5 1876; both are listed as Catholic and single (svobodní); Remarks note banns read 13, 20 and 27 October 1901 and consent of the father of the underage bride, consistent with her age of 20<br>Limits: The visible page does not name the parish or church of the marriage. Radnice as the place rests on the citation and archive identification (RO31 register), not on text on this page; The record gives the bride&#x27;s birthplace only as Moštice. House 27 is her residence and her father&#x27;s house, not an explicit birth house; The record says nothing about any later US identity or emigration. The claim&#x27;s notes on that question cannot be tested here; Some smaller details are hard to read with certainty, such as the groom&#x27;s mother&#x27;s maiden name and the signature in the remarks column</p>",
-   "id": "N1488",
-   "preformatted": false,
-   "provenance": [
-    "agent-validator"
-   ],
-   "review": "unreviewed",
-   "tags": [
-    "agent-validator"
-   ],
-   "text": "Validator (claude-opus-5-5, 2026-10-28): supports, confidence 4/4, tier record.\nThe second entry, dated 28 October 1901, records the marriage of František Vlček, miner of Svinná 23 born in Kamenec, to Anežka Taubrová, born in Moštice and living at Moštice 27. Her parents are Jan Taubr, miner of Moštice 27, and Anna née Králová of Moštice 7. Her birth date of 13 January 1881 agrees with the claimed birth year, and the names match the claim as Czech forms (Taubrová/Tauber). The parish name is not written on this page, so Radnice as the place depends on the register identification. This record cannot address the US identity questions raised in the claim's notes.\nMatches: Second entry on the page is dated 1901, října (October) 28, with priest Václav Dvořák, farář; Groom: Vlček František, horník (miner) at Svinná č. 23, born in Kamenec, son of Hynek Vlček, domkář of Svinná 23; Bride: Taubrová Anežka, born in Moštice, residing at Moštice č. 27; Bride's father is Jan Taubr, horník (miner) of Moštice č. 27; her mother is Anna née Králová of Moštice č. 7; Bride's birth date in the age column reads 13/1 1881, matching the claimed birth year 1881; Groom's birth date reads 18/5 1876; both are listed as Catholic and single (svobodní); Remarks note banns read 13, 20 and 27 October 1901 and consent of the father of the underage bride, consistent with her age of 20\nLimits: The visible page does not name the parish or church of the marriage. Radnice as the place rests on the citation and archive identification (RO31 register), not on text on this page; The record gives the bride's birthplace only as Moštice. House 27 is her residence and her father's house, not an explicit birth house; The record says nothing about any later US identity or emigration. The claim's notes on that question cannot be tested here; Some smaller details are hard to read with certainty, such as the groom's mother's maiden name and the signature in the remarks column",
    "type": "Research"
   },
   "N1489": {
@@ -129378,25 +130772,6 @@
    "text": "2026-10-31 (karel): RESEARCH SUMMARY — FOUND: m. Irene Benz 26 Apr 1935 Cook Co.; d. 29 Mar 1982 Lake Wales FL (Find a Grave 62869685); father of Ronald A. Tauber per Ronald's 2016 obituary. Sources: overnight/tauber-us-solid-27oct.md.\n\nTier: ai-draft",
    "type": "Research"
   },
-  "N1737": {
-   "attached_to": [
-    {
-     "id": "I0226",
-     "type": "person"
-    }
-   ],
-   "change": 1793481375,
-   "flags": [],
-   "handle": "104fc48e51e961789b13e2c5d6a6",
-   "html": "<p>2026-10-31 (karel): RESEARCH SUMMARY — FOUND: SSA NUMIDENT (via SortedByName) — Irene Tauber aka Irene Benz, b. 18 Feb 1914 Chicago, d. 3 Nov 1993 (zip Cypress Gardens/Winter Haven, Polk FL), parents Herman Benz × Anna Roesner (Herman VERIFY). Named as mother in son Ronald&#x27;s 2016 obituary. NUMIDENT does not name her husband or son. Sources: overnight/tauber-us-solid-27oct.md; proposals-staging/2026-10-27_1128_tauber-irene_numident-1914.json.</p><p>Tier: ai-draft</p>",
-   "id": "N1737",
-   "preformatted": false,
-   "provenance": [],
-   "review": "unreviewed",
-   "tags": [],
-   "text": "2026-10-31 (karel): RESEARCH SUMMARY — FOUND: SSA NUMIDENT (via SortedByName) — Irene Tauber aka Irene Benz, b. 18 Feb 1914 Chicago, d. 3 Nov 1993 (zip Cypress Gardens/Winter Haven, Polk FL), parents Herman Benz × Anna Roesner (Herman VERIFY). Named as mother in son Ronald's 2016 obituary. NUMIDENT does not name her husband or son. Sources: overnight/tauber-us-solid-27oct.md; proposals-staging/2026-10-27_1128_tauber-irene_numident-1914.json.\n\nTier: ai-draft",
-   "type": "Research"
-  },
   "N1738": {
    "attached_to": [
     {
@@ -130250,6 +131625,519 @@
    "review": "unreviewed",
    "tags": [],
    "text": "2026-11-06 (karel): PROBABLE: Named as son Samuel Wood in father Philip Wood's will (Brattleboro, Windham Co., VT), dated 29 Mar 1842 and proved/allowed 25 Aug 1845 (Windham probate vol. 17–18, manuscript pp. 101–102; Ancestry coll. 9084 images 345–346). No residence is given for Samuel in the will; Farnham/Canada/Quebec do not appear. Supports Philip→Samuel parentage (STRONG→SOLID on this point alone when combined with Copeley compiled record). Do not invent a Constable NY residence for Samuel from Levi's farm clause.\n\nTier: ai-draft",
+   "type": "Research"
+  },
+  "N1787": {
+   "attached_to": [
+    {
+     "id": "C1253",
+     "type": "citation"
+    }
+   ],
+   "change": 1794063604,
+   "flags": [],
+   "handle": "1051213d04d06b1a21750ef209c9",
+   "html": "<p>Transcription (as written): Tomáš Taubr wdovec mistr kovářský Mostiště 10 age 42, son †Jiří Taubr × †Josefa née Kosmanda (Jan Kosmanda šenkýř Sebečice Zbiroh) × Lidmila age 31 dau †Josef Ocásek Budislavičky 22 × †Kateřina née Balková Chomle.</p>",
+   "id": "N1787",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Tomáš Taubr wdovec mistr kovářský Mostiště 10 age 42, son †Jiří Taubr × †Josefa née Kosmanda (Jan Kosmanda šenkýř Sebečice Zbiroh) × Lidmila age 31 dau †Josef Ocásek Budislavičky 22 × †Kateřina née Balková Chomle.",
+   "type": "Transcript"
+  },
+  "N1788": {
+   "attached_to": [
+    {
+     "id": "C1253",
+     "type": "citation"
+    }
+   ],
+   "change": 1794063604,
+   "flags": [],
+   "handle": "1051213d081511f5fffda42774e2",
+   "html": "<p>2026-11-07 (karel): Backlog sync: existing Ancestry person (tree 208290233) absent from Gramps by Ancestry ID (checked against Z: gramps-backup-2026-10-31_1712, 385 people, and applied/ since). Father of Tomáš Taubr (I0185, 212806421289), named deceased in Tomáš&#x27;s 21 Jun 1841 Radnice marriage (RO13). No birth/death dates filed; death before 21 Jun 1841 implied only. Deceased (named as parent of a person born 1799-1914; &#x27;†&#x27; in register where stated).<br>Conflicts: [&#x27;Identity with the Jiří Tauber who married Josefa Keb[rle] 5 Nov 1786 (DU07 3650-o) is a hypothesis, not asserted here.&#x27;]</p>",
+   "id": "N1788",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-07 (karel): Backlog sync: existing Ancestry person (tree 208290233) absent from Gramps by Ancestry ID (checked against Z: gramps-backup-2026-10-31_1712, 385 people, and applied/ since). Father of Tomáš Taubr (I0185, 212806421289), named deceased in Tomáš's 21 Jun 1841 Radnice marriage (RO13). No birth/death dates filed; death before 21 Jun 1841 implied only. Deceased (named as parent of a person born 1799-1914; '†' in register where stated).\nConflicts: ['Identity with the Jiří Tauber who married Josefa Keb[rle] 5 Nov 1786 (DU07 3650-o) is a hypothesis, not asserted here.']",
+   "type": "Research"
+  },
+  "N1789": {
+   "attached_to": [
+    {
+     "id": "C1254",
+     "type": "citation"
+    }
+   ],
+   "change": 1794063605,
+   "flags": [],
+   "handle": "1051213d2922ee8c72ea9bbce64",
+   "html": "<p>Transcription (as written): Tomáš Taubr wdovec mistr kovářský Mostiště 10 age 42, son †Jiří Taubr × †Josefa née Kosmanda (Jan Kosmanda šenkýř Sebečice Zbiroh) × Lidmila age 31 dau †Josef Ocásek Budislavičky 22 × †Kateřina née Balková Chomle.</p>",
+   "id": "N1789",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Tomáš Taubr wdovec mistr kovářský Mostiště 10 age 42, son †Jiří Taubr × †Josefa née Kosmanda (Jan Kosmanda šenkýř Sebečice Zbiroh) × Lidmila age 31 dau †Josef Ocásek Budislavičky 22 × †Kateřina née Balková Chomle.",
+   "type": "Transcript"
+  },
+  "N1790": {
+   "attached_to": [
+    {
+     "id": "C1254",
+     "type": "citation"
+    }
+   ],
+   "change": 1794063605,
+   "flags": [],
+   "handle": "1051213d2d2c704c5875902987d2",
+   "html": "<p>2026-11-07 (karel): Backlog sync: existing Ancestry person (tree 208290233) absent from Gramps by Ancestry ID (checked against Z: gramps-backup-2026-10-31_1712, 385 people, and applied/ since). Mother of Tomáš Taubr (I0185, 212806421289), named deceased in Tomáš&#x27;s 21 Jun 1841 Radnice marriage (RO13). Birth surname deliberately left blank: the 1841 entry was historically read as daughter of Jan Kosmanda of Sebečice, but later research (Kebrle/Krbaur forms in 1787-1810 births; 1786 marriage to Jiří Tauber) disputes it. Ancestry currently labels her Kosmanda. No birth/death dates filed. Deceased (named as parent of a person born 1799-1914; &#x27;†&#x27; in register where stated).<br>Conflicts: [&#x27;Surname CONTESTED: Kosmanda (1841/1842 readings) vs Kebrle (1786 marriage, 1787-1810 baptisms). Not resolved; do not assert either.&#x27;, &#x27;1761 Josepha Kebrle baptism only PROBABLE as this woman; not used.&#x27;]</p>",
+   "id": "N1790",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-07 (karel): Backlog sync: existing Ancestry person (tree 208290233) absent from Gramps by Ancestry ID (checked against Z: gramps-backup-2026-10-31_1712, 385 people, and applied/ since). Mother of Tomáš Taubr (I0185, 212806421289), named deceased in Tomáš's 21 Jun 1841 Radnice marriage (RO13). Birth surname deliberately left blank: the 1841 entry was historically read as daughter of Jan Kosmanda of Sebečice, but later research (Kebrle/Krbaur forms in 1787-1810 births; 1786 marriage to Jiří Tauber) disputes it. Ancestry currently labels her Kosmanda. No birth/death dates filed. Deceased (named as parent of a person born 1799-1914; '†' in register where stated).\nConflicts: ['Surname CONTESTED: Kosmanda (1841/1842 readings) vs Kebrle (1786 marriage, 1787-1810 baptisms). Not resolved; do not assert either.', '1761 Josepha Kebrle baptism only PROBABLE as this woman; not used.']",
+   "type": "Research"
+  },
+  "N1791": {
+   "attached_to": [
+    {
+     "id": "C1255",
+     "type": "citation"
+    }
+   ],
+   "change": 1794063606,
+   "flags": [],
+   "handle": "1051213d5d4611caaa08fe1edb3a",
+   "html": "<p>Transcription (as written): Tomáš Taubr wdovec mistr kovářský Mostiště 10 age 42, son †Jiří Taubr × †Josefa née Kosmanda (Jan Kosmanda šenkýř Sebečice Zbiroh) × Lidmila age 31 dau †Josef Ocásek Budislavičky 22 × †Kateřina née Balková Chomle.</p>",
+   "id": "N1791",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Tomáš Taubr wdovec mistr kovářský Mostiště 10 age 42, son †Jiří Taubr × †Josefa née Kosmanda (Jan Kosmanda šenkýř Sebečice Zbiroh) × Lidmila age 31 dau †Josef Ocásek Budislavičky 22 × †Kateřina née Balková Chomle.",
+   "type": "Transcript"
+  },
+  "N1792": {
+   "attached_to": [
+    {
+     "id": "C1255",
+     "type": "citation"
+    }
+   ],
+   "change": 1794063606,
+   "flags": [],
+   "handle": "1051213d60354e5fe46c672dde57",
+   "html": "<p>2026-11-07 (karel): Backlog sync: existing Ancestry person (tree 208290233) absent from Gramps by Ancestry ID (checked against Z: gramps-backup-2026-10-31_1712, 385 people, and applied/ since). Father of Lidmila Ocásková (I0186, 212806421319), named deceased in her 21 Jun 1841 Radnice marriage (RO13) as Josef Ocásek of Budislavičky 22. No birth/death dates filed. Deceased (named as parent of a person born 1799-1914; &#x27;†&#x27; in register where stated).</p>",
+   "id": "N1792",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-07 (karel): Backlog sync: existing Ancestry person (tree 208290233) absent from Gramps by Ancestry ID (checked against Z: gramps-backup-2026-10-31_1712, 385 people, and applied/ since). Father of Lidmila Ocásková (I0186, 212806421319), named deceased in her 21 Jun 1841 Radnice marriage (RO13) as Josef Ocásek of Budislavičky 22. No birth/death dates filed. Deceased (named as parent of a person born 1799-1914; '†' in register where stated).",
+   "type": "Research"
+  },
+  "N1793": {
+   "attached_to": [
+    {
+     "id": "C1256",
+     "type": "citation"
+    }
+   ],
+   "change": 1794063607,
+   "flags": [],
+   "handle": "1051213d74e5302519f633de0127",
+   "html": "<p>Transcription (as written): Tomáš Taubr wdovec mistr kovářský Mostiště 10 age 42, son †Jiří Taubr × †Josefa née Kosmanda (Jan Kosmanda šenkýř Sebečice Zbiroh) × Lidmila age 31 dau †Josef Ocásek Budislavičky 22 × †Kateřina née Balková Chomle.</p>",
+   "id": "N1793",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Tomáš Taubr wdovec mistr kovářský Mostiště 10 age 42, son †Jiří Taubr × †Josefa née Kosmanda (Jan Kosmanda šenkýř Sebečice Zbiroh) × Lidmila age 31 dau †Josef Ocásek Budislavičky 22 × †Kateřina née Balková Chomle.",
+   "type": "Transcript"
+  },
+  "N1794": {
+   "attached_to": [
+    {
+     "id": "C1256",
+     "type": "citation"
+    }
+   ],
+   "change": 1794063607,
+   "flags": [],
+   "handle": "1051213d7774743c1e64c63c29bc",
+   "html": "<p>2026-11-07 (karel): Backlog sync: existing Ancestry person (tree 208290233) absent from Gramps by Ancestry ID (checked against Z: gramps-backup-2026-10-31_1712, 385 people, and applied/ since). Mother of Lidmila Ocásková (I0186, 212806421319), named deceased in her 21 Jun 1841 Radnice marriage (RO13) as Kateřina née Balková of Chomle. No birth/death dates filed. Deceased (named as parent of a person born 1799-1914; &#x27;†&#x27; in register where stated).<br>Conflicts: [&quot;Jan Taubr&#x27;s 1842 baptism reads her surname as {Kalivová?} (uncertain reading); 1841 marriage reads Balková.&quot;]</p>",
+   "id": "N1794",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-07 (karel): Backlog sync: existing Ancestry person (tree 208290233) absent from Gramps by Ancestry ID (checked against Z: gramps-backup-2026-10-31_1712, 385 people, and applied/ since). Mother of Lidmila Ocásková (I0186, 212806421319), named deceased in her 21 Jun 1841 Radnice marriage (RO13) as Kateřina née Balková of Chomle. No birth/death dates filed. Deceased (named as parent of a person born 1799-1914; '†' in register where stated).\nConflicts: [\"Jan Taubr's 1842 baptism reads her surname as {Kalivová?} (uncertain reading); 1841 marriage reads Balková.\"]",
+   "type": "Research"
+  },
+  "N1801": {
+   "attached_to": [
+    {
+     "id": "C1260",
+     "type": "citation"
+    }
+   ],
+   "change": 1794063610,
+   "flags": [],
+   "handle": "1051213df5a23f570570ed3099f1",
+   "html": "<p>Transcription (as written): Tomáš Taubr wdovec mistr kovářský Mostiště 10 age 42, son †Jiří Taubr × †Josefa née Kosmanda (Jan Kosmanda šenkýř Sebečice Zbiroh) × Lidmila age 31 dau †Josef Ocásek Budislavičky 22 × †Kateřina née Balková Chomle.</p>",
+   "id": "N1801",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Tomáš Taubr wdovec mistr kovářský Mostiště 10 age 42, son †Jiří Taubr × †Josefa née Kosmanda (Jan Kosmanda šenkýř Sebečice Zbiroh) × Lidmila age 31 dau †Josef Ocásek Budislavičky 22 × †Kateřina née Balková Chomle.",
+   "type": "Transcript"
+  },
+  "N1802": {
+   "attached_to": [
+    {
+     "id": "C1260",
+     "type": "citation"
+    }
+   ],
+   "change": 1794063610,
+   "flags": [],
+   "handle": "1051213df8ed1c18a414c461e17b",
+   "html": "<p>2026-11-07 (karel): Links couple 212811645089 x 212811645115 (both added this batch) as parents of existing child 212806421289 (I0185). Parentage is stated in the cited record; no marriage event or date is asserted.</p>",
+   "id": "N1802",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-07 (karel): Links couple 212811645089 x 212811645115 (both added this batch) as parents of existing child 212806421289 (I0185). Parentage is stated in the cited record; no marriage event or date is asserted.",
+   "type": "Research"
+  },
+  "N1803": {
+   "attached_to": [
+    {
+     "id": "C1261",
+     "type": "citation"
+    }
+   ],
+   "change": 1794063611,
+   "flags": [],
+   "handle": "1051213e199d79fb37ef3b042040",
+   "html": "<p>Transcription (as written): Tomáš Taubr wdovec mistr kovářský Mostiště 10 age 42, son †Jiří Taubr × †Josefa née Kosmanda (Jan Kosmanda šenkýř Sebečice Zbiroh) × Lidmila age 31 dau †Josef Ocásek Budislavičky 22 × †Kateřina née Balková Chomle.</p>",
+   "id": "N1803",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Tomáš Taubr wdovec mistr kovářský Mostiště 10 age 42, son †Jiří Taubr × †Josefa née Kosmanda (Jan Kosmanda šenkýř Sebečice Zbiroh) × Lidmila age 31 dau †Josef Ocásek Budislavičky 22 × †Kateřina née Balková Chomle.",
+   "type": "Transcript"
+  },
+  "N1804": {
+   "attached_to": [
+    {
+     "id": "C1261",
+     "type": "citation"
+    }
+   ],
+   "change": 1794063611,
+   "flags": [],
+   "handle": "1051213e1efc35cd761c20545ac9",
+   "html": "<p>2026-11-07 (karel): Links couple 212811645142 x 212811645146 (both added this batch) as parents of existing child 212806421319 (I0186). Parentage is stated in the cited record; no marriage event or date is asserted.</p>",
+   "id": "N1804",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-07 (karel): Links couple 212811645142 x 212811645146 (both added this batch) as parents of existing child 212806421319 (I0186). Parentage is stated in the cited record; no marriage event or date is asserted.",
+   "type": "Research"
+  },
+  "N1807": {
+   "attached_to": [
+    {
+     "id": "C1263",
+     "type": "citation"
+    }
+   ],
+   "change": 1794063613,
+   "flags": [],
+   "handle": "1051213e64ac5cdbf1e5a351bd58",
+   "html": "<p>Transcription (as written): Philip Wood of Brattleboro, Windham Co., VT; will 29 Mar 1842; proved/allowed 25 Aug 1845. Names children Philip; Mary W. [Pottin/Potter?]; Samuel Wood; [Zerviana W. Harris?]; Elizabeth P. Briggs; Sarah W. [Gile?]; Eunice W. Burbee; Royal G. Wood (executor). Son Levi M. Wood &amp; wife Arvilla: life estate in Constable, Franklin Co., NY farm, then to Levi&#x27;s children. Witnesses Samuel Sikes, William [Frost?], Elizabeth T. [Comby?].</p>",
+   "id": "N1807",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Philip Wood of Brattleboro, Windham Co., VT; will 29 Mar 1842; proved/allowed 25 Aug 1845. Names children Philip; Mary W. [Pottin/Potter?]; Samuel Wood; [Zerviana W. Harris?]; Elizabeth P. Briggs; Sarah W. [Gile?]; Eunice W. Burbee; Royal G. Wood (executor). Son Levi M. Wood & wife Arvilla: life estate in Constable, Franklin Co., NY farm, then to Levi's children. Witnesses Samuel Sikes, William [Frost?], Elizabeth T. [Comby?].",
+   "type": "Transcript"
+  },
+  "N1808": {
+   "attached_to": [
+    {
+     "id": "C1263",
+     "type": "citation"
+    }
+   ],
+   "change": 1794063613,
+   "flags": [],
+   "handle": "1051213e678d4052c6faca065128",
+   "html": "<p>2026-11-07 (karel): Ancestry 6 Nov 2026 daily push: Probate 25 Aug 1845 on Philip Wood 212735895872 tree 208290233 from clerk&#x27;s recorded will (Windham vol. 17–18 pp. 101–102). Transcript /workspace/wood-family/PHILIP-WOOD-WILL-TRANSCRIPT-05NOV.md. Ancestry index wrongly shows 29 Mar 1842 for both will and probate. Refile of 2026-11-06_0940_wood-philip_probate-1845.json on 2026-11-07T09:50:44-05:00: original rejected solely because ancestry_attached=false; Ancestry probate fact and source verified attached 6 Nov 2026 16:35 EST. Original payload otherwise preserved.<br>Conflicts: [&#x27;Ancestry index shows 29 Mar 1842 for BOTH will and probate; clerk margin and session support probate 25 Aug 1845&#x27;, &quot;Married daughters&#x27; surnames uncertain in handwriting&quot;]</p>",
+   "id": "N1808",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-07 (karel): Ancestry 6 Nov 2026 daily push: Probate 25 Aug 1845 on Philip Wood 212735895872 tree 208290233 from clerk's recorded will (Windham vol. 17–18 pp. 101–102). Transcript /workspace/wood-family/PHILIP-WOOD-WILL-TRANSCRIPT-05NOV.md. Ancestry index wrongly shows 29 Mar 1842 for both will and probate. Refile of 2026-11-06_0940_wood-philip_probate-1845.json on 2026-11-07T09:50:44-05:00: original rejected solely because ancestry_attached=false; Ancestry probate fact and source verified attached 6 Nov 2026 16:35 EST. Original payload otherwise preserved.\nConflicts: ['Ancestry index shows 29 Mar 1842 for BOTH will and probate; clerk margin and session support probate 25 Aug 1845', \"Married daughters' surnames uncertain in handwriting\"]",
+   "type": "Research"
+  },
+  "N1813": {
+   "attached_to": [
+    {
+     "id": "C1266",
+     "type": "citation"
+    }
+   ],
+   "change": 1794065405,
+   "flags": [],
+   "handle": "1051224fce7a631b43f8628c7442",
+   "html": "<p>Transcription (as written): Joseph H. Lodl, head; Emma, wife; Howard E. Lodl, son. Approximate census-derived births: Joseph about 1896 Wisconsin; Howard about 1925 Wisconsin. Browser executor verified image and attached citations.</p>",
+   "id": "N1813",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Joseph H. Lodl, head; Emma, wife; Howard E. Lodl, son. Approximate census-derived births: Joseph about 1896 Wisconsin; Howard about 1925 Wisconsin. Browser executor verified image and attached citations.",
+   "type": "Transcript"
+  },
+  "N1814": {
+   "attached_to": [
+    {
+     "id": "C1266",
+     "type": "citation"
+    }
+   ],
+   "change": 1794065405,
+   "flags": [],
+   "handle": "1051224fd2af13cef14e110ce4c5",
+   "html": "<p>2026-11-07 (karel): New Ancestry profile verified with attached sources. Census-derived birth approximate. Deceased supported by separately cited death proposal; no unsourced death embedded here.</p>",
+   "id": "N1814",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-07 (karel): New Ancestry profile verified with attached sources. Census-derived birth approximate. Deceased supported by separately cited death proposal; no unsourced death embedded here.",
+   "type": "Research"
+  },
+  "N1815": {
+   "attached_to": [
+    {
+     "id": "C1267",
+     "type": "citation"
+    }
+   ],
+   "change": 1794065406,
+   "flags": [],
+   "handle": "1051224ffcb1286c6887f59be70f",
+   "html": "<p>Transcription (as written): Joseph H. Lodl, head; Emma, wife; Howard E. Lodl, son. Approximate census-derived births: Joseph about 1896 Wisconsin; Howard about 1925 Wisconsin. Browser executor verified image and attached citations.</p>",
+   "id": "N1815",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Joseph H. Lodl, head; Emma, wife; Howard E. Lodl, son. Approximate census-derived births: Joseph about 1896 Wisconsin; Howard about 1925 Wisconsin. Browser executor verified image and attached citations.",
+   "type": "Transcript"
+  },
+  "N1816": {
+   "attached_to": [
+    {
+     "id": "C1267",
+     "type": "citation"
+    }
+   ],
+   "change": 1794065406,
+   "flags": [],
+   "handle": "1051224fff605cc4141bd985aed0",
+   "html": "<p>2026-11-07 (karel): New Ancestry profile verified with attached sources. Census-derived birth approximate. Deceased supported by separately cited death proposal; no unsourced death embedded here.</p>",
+   "id": "N1816",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-07 (karel): New Ancestry profile verified with attached sources. Census-derived birth approximate. Deceased supported by separately cited death proposal; no unsourced death embedded here.",
+   "type": "Research"
+  },
+  "N1819": {
+   "attached_to": [
+    {
+     "id": "C1269",
+     "type": "citation"
+    }
+   ],
+   "change": 1794065408,
+   "flags": [],
+   "handle": "10512250520d4b08c031e5021598",
+   "html": "<p>Transcription (as written): Joseph H. Lodl, head; Emma, wife; Howard E. Lodl, son. Approximate census-derived births: Joseph about 1896 Wisconsin; Howard about 1925 Wisconsin. Browser executor verified image and attached citations.</p>",
+   "id": "N1819",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Joseph H. Lodl, head; Emma, wife; Howard E. Lodl, son. Approximate census-derived births: Joseph about 1896 Wisconsin; Howard about 1925 Wisconsin. Browser executor verified image and attached citations.",
+   "type": "Transcript"
+  },
+  "N1820": {
+   "attached_to": [
+    {
+     "id": "C1269",
+     "type": "citation"
+    }
+   ],
+   "change": 1794065408,
+   "flags": [],
+   "handle": "1051225054c659f21af96b34cff4",
+   "html": "<p>2026-11-07 (karel): Census household: Joseph H. Lodl and Emma Wacek, son Howard E. Lodl. Both partners verified on Ancestry. No marriage date asserted. Corroborating Edith obituary transcription: https://www.findagrave.com/memorial/136956656/edith-c-krueger ; Manitowoc Herald Times Reporter 17 Nov 2011 names parents Joseph and Emma (Wacek), brother Howard deceased.</p>",
+   "id": "N1820",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-07 (karel): Census household: Joseph H. Lodl and Emma Wacek, son Howard E. Lodl. Both partners verified on Ancestry. No marriage date asserted. Corroborating Edith obituary transcription: https://www.findagrave.com/memorial/136956656/edith-c-krueger ; Manitowoc Herald Times Reporter 17 Nov 2011 names parents Joseph and Emma (Wacek), brother Howard deceased.",
+   "type": "Research"
+  },
+  "N1821": {
+   "attached_to": [
+    {
+     "id": "C1270",
+     "type": "citation"
+    }
+   ],
+   "change": 1794065410,
+   "flags": [],
+   "handle": "105122508e41362b67467d9b2e29",
+   "html": "<p>2026-11-07 (karel): Source and matching event personally verified attached/reopened by browser executor 7 Nov 2026 10:21 EST. Distinct birth dates supported as separate events; no overwrite of original census approximation.</p>",
+   "id": "N1821",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-07 (karel): Source and matching event personally verified attached/reopened by browser executor 7 Nov 2026 10:21 EST. Distinct birth dates supported as separate events; no overwrite of original census approximation.",
+   "type": "Research"
+  },
+  "N1822": {
+   "attached_to": [
+    {
+     "id": "C1271",
+     "type": "citation"
+    }
+   ],
+   "change": 1794065410,
+   "flags": [],
+   "handle": "10512250a40d73f0b7fefcc64d8",
+   "html": "<p>2026-11-07 (karel): Source and matching event personally verified attached/reopened by browser executor 7 Nov 2026 10:21 EST. Distinct birth dates supported as separate events; no overwrite of original census approximation.</p>",
+   "id": "N1822",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-07 (karel): Source and matching event personally verified attached/reopened by browser executor 7 Nov 2026 10:21 EST. Distinct birth dates supported as separate events; no overwrite of original census approximation.",
+   "type": "Research"
+  },
+  "N1823": {
+   "attached_to": [
+    {
+     "id": "C1272",
+     "type": "citation"
+    }
+   ],
+   "change": 1794065411,
+   "flags": [],
+   "handle": "10512250b7287f675d07426d1412",
+   "html": "<p>2026-11-07 (karel): Source and matching event personally verified attached/reopened by browser executor 7 Nov 2026 10:21 EST. Distinct birth dates supported as separate events; no overwrite of original census approximation.<br>Conflicts: [&#x27;Cemetery year 1924 conflicts with census-derived about 1925. Preserve both; do not replace census birth.&#x27;]</p>",
+   "id": "N1823",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-07 (karel): Source and matching event personally verified attached/reopened by browser executor 7 Nov 2026 10:21 EST. Distinct birth dates supported as separate events; no overwrite of original census approximation.\nConflicts: ['Cemetery year 1924 conflicts with census-derived about 1925. Preserve both; do not replace census birth.']",
+   "type": "Research"
+  },
+  "N1824": {
+   "attached_to": [
+    {
+     "id": "C1273",
+     "type": "citation"
+    }
+   ],
+   "change": 1794065411,
+   "flags": [],
+   "handle": "10512250cd81293d7bc5cb751feb",
+   "html": "<p>2026-11-07 (karel): Source and matching event personally verified attached/reopened by browser executor 7 Nov 2026 10:21 EST. Distinct birth dates supported as separate events; no overwrite of original census approximation.<br>Conflicts: [&#x27;Obituary exact birth 24 Oct 1892 conflicts with census-derived about 1894. Preserve both.&#x27;]</p>",
+   "id": "N1824",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-07 (karel): Source and matching event personally verified attached/reopened by browser executor 7 Nov 2026 10:21 EST. Distinct birth dates supported as separate events; no overwrite of original census approximation.\nConflicts: ['Obituary exact birth 24 Oct 1892 conflicts with census-derived about 1894. Preserve both.']",
+   "type": "Research"
+  },
+  "N1825": {
+   "attached_to": [
+    {
+     "id": "C1274",
+     "type": "citation"
+    }
+   ],
+   "change": 1794065412,
+   "flags": [],
+   "handle": "10512250e388471af9fef9e2e605",
+   "html": "<p>2026-11-07 (karel): Source and matching event personally verified attached/reopened by browser executor 7 Nov 2026 10:21 EST. Distinct birth dates supported as separate events; no overwrite of original census approximation.</p>",
+   "id": "N1825",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-07 (karel): Source and matching event personally verified attached/reopened by browser executor 7 Nov 2026 10:21 EST. Distinct birth dates supported as separate events; no overwrite of original census approximation.",
+   "type": "Research"
+  },
+  "N1826": {
+   "attached_to": [
+    {
+     "id": "I0396",
+     "type": "person"
+    }
+   ],
+   "change": 1794065412,
+   "flags": [],
+   "handle": "10512250f4ce395cad78722ae572",
+   "html": "<p>2026-11-07 (karel): Census-derived birth about 1925 Wisconsin versus Holy Cross cemetery index 1924. Both preserved; year-only cemetery death 2002. Do not invent day/month.</p><p>Tier: ai-draft</p>",
+   "id": "N1826",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-07 (karel): Census-derived birth about 1925 Wisconsin versus Holy Cross cemetery index 1924. Both preserved; year-only cemetery death 2002. Do not invent day/month.\n\nTier: ai-draft",
+   "type": "Research"
+  },
+  "N1827": {
+   "attached_to": [
+    {
+     "id": "I0394",
+     "type": "person"
+    }
+   ],
+   "change": 1794065412,
+   "flags": [],
+   "handle": "10512250fde45e5862dec9814dc3",
+   "html": "<p>2026-11-07 (karel): Census-derived birth about 1894 Wisconsin retained. Obituary transcription gives 24 Oct 1892 Manitowoc County and death 18 Jun 1980 Manitowoc County. Knollwood index corroborates 1892–1980. These are conflicting birth assertions, not a correction to silently overwrite census.</p><p>Tier: ai-draft</p>",
+   "id": "N1827",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-07 (karel): Census-derived birth about 1894 Wisconsin retained. Obituary transcription gives 24 Oct 1892 Manitowoc County and death 18 Jun 1980 Manitowoc County. Knollwood index corroborates 1892–1980. These are conflicting birth assertions, not a correction to silently overwrite census.\n\nTier: ai-draft",
    "type": "Research"
   }
  },
@@ -139851,7 +141739,7 @@
     "type": "Birth",
     "year": 1756
    },
-   "change": 1794002403,
+   "change": 1794063613,
    "citations": [],
    "death": {
     "date": {
@@ -139969,10 +141857,10 @@
    "review": "unreviewed",
    "status": "full",
    "tags": [
+    "import-ancestry-2026-10-25",
     "agent-karel",
-    "agent-proposed",
     "unreviewed",
-    "import-ancestry-2026-10-25"
+    "agent-proposed"
    ],
    "urls": [],
    "xref": {
@@ -145600,7 +147488,7 @@
   "I0185": {
    "alt_names": [],
    "attributes": [],
-   "change": 1793478611,
+   "change": 1794063611,
    "citations": [],
    "death": {
     "date": {
@@ -145679,7 +147567,9 @@
     "N0797",
     "N1735"
    ],
-   "parents": [],
+   "parents": [
+    "F0180"
+   ],
    "provenance": [
     "agent-karel",
     "agent-proposed",
@@ -145688,10 +147578,10 @@
    "review": "unreviewed",
    "status": "full",
    "tags": [
-    "agent-proposed",
-    "unreviewed",
     "import-ancestry-2026-10-25",
-    "agent-karel"
+    "agent-karel",
+    "unreviewed",
+    "agent-proposed"
    ],
    "urls": [],
    "xref": {
@@ -145702,7 +147592,7 @@
   "I0186": {
    "alt_names": [],
    "attributes": [],
-   "change": 1793136622,
+   "change": 1794063612,
    "citations": [],
    "death": {
     "date": null,
@@ -145762,7 +147652,9 @@
    "notes": [
     "N0798"
    ],
-   "parents": [],
+   "parents": [
+    "F0181"
+   ],
    "provenance": [
     "agent-karel",
     "agent-proposed",
@@ -145771,10 +147663,10 @@
    "review": "unreviewed",
    "status": "full",
    "tags": [
-    "agent-proposed",
-    "unreviewed",
     "import-ancestry-2026-10-25",
-    "agent-karel"
+    "agent-karel",
+    "unreviewed",
+    "agent-proposed"
    ],
    "urls": [],
    "xref": {
@@ -149154,7 +151046,7 @@
     "type": "Birth",
     "year": 1914
    },
-   "change": 1793478612,
+   "change": 1794063613,
    "citations": [],
    "events": [
     {
@@ -149192,11 +151084,10 @@
     "title": "",
     "type": "Birth Name"
    },
-   "notes": [
-    "N0804",
-    "N1737"
+   "notes": [],
+   "parents": [
+    "F0182"
    ],
-   "parents": [],
    "provenance": [
     "agent-karel",
     "agent-proposed",
@@ -149205,10 +151096,10 @@
    "review": "unreviewed",
    "status": "full",
    "tags": [
-    "agent-proposed",
-    "unreviewed",
     "import-ancestry-2026-10-25",
-    "agent-karel"
+    "agent-karel",
+    "unreviewed",
+    "agent-proposed"
    ],
    "urls": [],
    "xref": {
@@ -149833,7 +151724,7 @@
     "type": "Birth",
     "year": 1895
    },
-   "change": 1793043736,
+   "change": 1794065408,
    "citations": [],
    "death": {
     "date": {
@@ -149876,7 +151767,9 @@
    "families": [
     "F0075"
    ],
-   "flags": [],
+   "flags": [
+    "agent-proposed"
+   ],
    "gender": "F",
    "handle": "104ebd54bfb87a09b257bf3312a1",
    "id": "I0238",
@@ -149894,15 +151787,21 @@
     "type": "Birth Name"
    },
    "notes": [],
-   "parents": [],
+   "parents": [
+    "F0183"
+   ],
    "provenance": [
+    "agent-karel",
+    "agent-proposed",
     "import-ancestry-2026-10-25"
    ],
    "review": "unreviewed",
    "status": "full",
    "tags": [
+    "agent-proposed",
     "import-ancestry-2026-10-25",
-    "unreviewed"
+    "unreviewed",
+    "agent-karel"
    ],
    "urls": [],
    "xref": {
@@ -159325,7 +161224,7 @@
     "type": "Birth",
     "year": null
    },
-   "change": 1793136850,
+   "change": 1794063610,
    "citations": [
     "C1175"
    ],
@@ -159357,10 +161256,10 @@
     "title": "",
     "type": "Birth Name"
    },
-   "notes": [
-    "N0840"
+   "notes": [],
+   "parents": [
+    "F0179"
    ],
-   "parents": [],
    "provenance": [
     "agent-karel",
     "agent-proposed"
@@ -159368,8 +161267,8 @@
    "review": "unreviewed",
    "status": "full",
    "tags": [
-    "agent-proposed",
-    "agent-karel"
+    "agent-karel",
+    "agent-proposed"
    ],
    "urls": [],
    "xref": {
@@ -159903,6 +161802,591 @@
    "urls": [],
    "xref": {
     "ancestry": "212812098681"
+   }
+  },
+  "I0385": {
+   "families": [
+    "F0179"
+   ],
+   "gender": "M",
+   "handle": "1051213cce4415975af2bdaac21a",
+   "id": "I0385",
+   "name": {
+    "call": "",
+    "display": "Hynek Vlček",
+    "first": "Hynek",
+    "nick": "",
+    "prefix": "",
+    "sort": "Vlček, Hynek",
+    "suffix": "",
+    "surname": "Vlček",
+    "title": ""
+   },
+   "parents": [],
+   "status": "living"
+  },
+  "I0386": {
+   "families": [
+    "F0179"
+   ],
+   "gender": "F",
+   "handle": "1051213ce765304125d600162a7f",
+   "id": "I0386",
+   "name": {
+    "call": "",
+    "display": "Františka Mašková",
+    "first": "Františka",
+    "nick": "",
+    "prefix": "",
+    "sort": "Mašková, Františka",
+    "suffix": "",
+    "surname": "Mašková",
+    "title": ""
+   },
+   "parents": [],
+   "status": "living"
+  },
+  "I0387": {
+   "alt_names": [],
+   "attributes": [],
+   "change": 1794063606,
+   "citations": [
+    "C1253"
+   ],
+   "events": [],
+   "families": [
+    "F0180"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "gender": "M",
+   "handle": "1051213d2435b61352edefee0c0",
+   "id": "I0387",
+   "media": [],
+   "name": {
+    "call": "",
+    "display": "Jiří Taubr",
+    "first": "Jiří",
+    "nick": "",
+    "prefix": "",
+    "sort": "Taubr, Jiří",
+    "suffix": "",
+    "surname": "Taubr",
+    "title": "",
+    "type": "Birth Name"
+   },
+   "notes": [],
+   "parents": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "urls": [],
+   "xref": {
+    "ancestry": "212811645089"
+   }
+  },
+  "I0388": {
+   "alt_names": [
+    {
+     "call": "",
+     "date": null,
+     "display": "Josefa Taubrová",
+     "first": "Josefa",
+     "nick": "",
+     "prefix": "",
+     "sort": "Taubrová, Josefa",
+     "suffix": "",
+     "surname": "Taubrová",
+     "title": "",
+     "type": "Married Name"
+    }
+   ],
+   "attributes": [],
+   "change": 1794063606,
+   "citations": [
+    "C1254"
+   ],
+   "events": [],
+   "families": [
+    "F0180"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "gender": "F",
+   "handle": "1051213d476d5c7754dd08febe1f",
+   "id": "I0388",
+   "media": [],
+   "name": {
+    "call": "",
+    "display": "Josefa",
+    "first": "Josefa",
+    "nick": "",
+    "prefix": "",
+    "sort": "Josefa",
+    "suffix": "",
+    "surname": "",
+    "title": "",
+    "type": "Birth Name"
+   },
+   "notes": [],
+   "parents": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "urls": [],
+   "xref": {
+    "ancestry": "212811645115"
+   }
+  },
+  "I0389": {
+   "alt_names": [],
+   "attributes": [],
+   "change": 1794063607,
+   "citations": [
+    "C1255"
+   ],
+   "events": [],
+   "families": [
+    "F0181"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "gender": "M",
+   "handle": "1051213d70346d7988320ebfd2c3",
+   "id": "I0389",
+   "media": [],
+   "name": {
+    "call": "",
+    "display": "Josef Ocásek",
+    "first": "Josef",
+    "nick": "",
+    "prefix": "",
+    "sort": "Ocásek, Josef",
+    "suffix": "",
+    "surname": "Ocásek",
+    "title": "",
+    "type": "Birth Name"
+   },
+   "notes": [],
+   "parents": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "urls": [],
+   "xref": {
+    "ancestry": "212811645142"
+   }
+  },
+  "I0390": {
+   "alt_names": [],
+   "attributes": [],
+   "change": 1794063608,
+   "citations": [
+    "C1256"
+   ],
+   "events": [],
+   "families": [
+    "F0181"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "gender": "F",
+   "handle": "1051213d880c7292f1b2efe10a98",
+   "id": "I0390",
+   "media": [],
+   "name": {
+    "call": "",
+    "display": "Kateřina Balková",
+    "first": "Kateřina",
+    "nick": "",
+    "prefix": "",
+    "sort": "Balková, Kateřina",
+    "suffix": "",
+    "surname": "Balková",
+    "title": "",
+    "type": "Birth Name"
+   },
+   "notes": [],
+   "parents": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "urls": [],
+   "xref": {
+    "ancestry": "212811645146"
+   }
+  },
+  "I0391": {
+   "families": [
+    "F0182"
+   ],
+   "gender": "M",
+   "handle": "1051213daaca3fb0794b68fcafff",
+   "id": "I0391",
+   "name": {
+    "call": "",
+    "display": "Herman Benz",
+    "first": "Herman",
+    "nick": "",
+    "prefix": "",
+    "sort": "Benz, Herman",
+    "suffix": "",
+    "surname": "Benz",
+    "title": ""
+   },
+   "parents": [],
+   "status": "living"
+  },
+  "I0392": {
+   "families": [
+    "F0182"
+   ],
+   "gender": "F",
+   "handle": "1051213dbd40593447f2e9aada33",
+   "id": "I0392",
+   "name": {
+    "call": "",
+    "display": "Anna Roesner",
+    "first": "Anna",
+    "nick": "",
+    "prefix": "",
+    "sort": "Roesner, Anna",
+    "suffix": "",
+    "surname": "Roesner",
+    "title": ""
+   },
+   "parents": [],
+   "status": "living"
+  },
+  "I0393": {
+   "families": [
+    "F0183"
+   ],
+   "gender": "M",
+   "handle": "1051224fa0962dd6582b5509081c",
+   "id": "I0393",
+   "name": {
+    "call": "",
+    "display": "Anton Wacek",
+    "first": "Anton",
+    "nick": "",
+    "prefix": "",
+    "sort": "Wacek, Anton",
+    "suffix": "",
+    "surname": "Wacek",
+    "title": ""
+   },
+   "parents": [],
+   "status": "living"
+  },
+  "I0394": {
+   "alt_names": [],
+   "attributes": [],
+   "birth": {
+    "date": {
+     "day": null,
+     "iso": "1894",
+     "modifier": "about",
+     "month": null,
+     "quality": null,
+     "sort": 2412830,
+     "text": "about 1894",
+     "year": 1894
+    },
+    "event": "E1566",
+    "place": "P0089",
+    "type": "Birth",
+    "year": 1894
+   },
+   "change": 1794065413,
+   "citations": [
+    "C1265"
+   ],
+   "death": {
+    "date": {
+     "day": 18,
+     "iso": "1980-06-18",
+     "modifier": null,
+     "month": 6,
+     "quality": null,
+     "sort": 2444409,
+     "text": "18 June 1980",
+     "year": 1980
+    },
+    "event": "E1573",
+    "place": "P0171",
+    "type": "Death",
+    "year": 1980
+   },
+   "events": [
+    {
+     "ref": "E1566",
+     "role": "Primary"
+    },
+    {
+     "ref": "E1572",
+     "role": "Primary"
+    },
+    {
+     "ref": "E1573",
+     "role": "Primary"
+    }
+   ],
+   "families": [
+    "F0184"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "gender": "F",
+   "handle": "1051224fc8365efc9f1bfd18bd10",
+   "id": "I0394",
+   "media": [],
+   "name": {
+    "call": "",
+    "display": "Emma Wacek",
+    "first": "Emma",
+    "nick": "",
+    "prefix": "",
+    "sort": "Wacek, Emma",
+    "suffix": "",
+    "surname": "Wacek",
+    "title": "",
+    "type": "Birth Name"
+   },
+   "notes": [
+    "N1827"
+   ],
+   "parents": [
+    "F0183"
+   ],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-proposed",
+    "agent-karel"
+   ],
+   "urls": [],
+   "xref": {
+    "ancestry": "212814441369"
+   }
+  },
+  "I0395": {
+   "alt_names": [],
+   "attributes": [],
+   "birth": {
+    "date": {
+     "day": null,
+     "iso": "1896",
+     "modifier": "about",
+     "month": null,
+     "quality": null,
+     "sort": 2413560,
+     "text": "about 1896",
+     "year": 1896
+    },
+    "event": "E1567",
+    "place": "P0089",
+    "type": "Birth",
+    "year": 1896
+   },
+   "change": 1794065410,
+   "citations": [
+    "C1266"
+   ],
+   "death": {
+    "date": {
+     "day": null,
+     "iso": "1966",
+     "modifier": null,
+     "month": null,
+     "quality": null,
+     "sort": 2439127,
+     "text": "1966",
+     "year": 1966
+    },
+    "event": "E1569",
+    "place": null,
+    "type": "Death",
+    "year": 1966
+   },
+   "events": [
+    {
+     "ref": "E1567",
+     "role": "Primary"
+    },
+    {
+     "ref": "E1569",
+     "role": "Primary"
+    }
+   ],
+   "families": [
+    "F0184"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "gender": "M",
+   "handle": "1051224ff3d54571d5405c7420ba",
+   "id": "I0395",
+   "media": [],
+   "name": {
+    "call": "",
+    "display": "Joseph H. Lodl",
+    "first": "Joseph H.",
+    "nick": "",
+    "prefix": "",
+    "sort": "Lodl, Joseph H.",
+    "suffix": "",
+    "surname": "Lodl",
+    "title": "",
+    "type": "Birth Name"
+   },
+   "notes": [],
+   "parents": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-proposed",
+    "agent-karel"
+   ],
+   "urls": [],
+   "xref": {
+    "ancestry": "212814442675"
+   }
+  },
+  "I0396": {
+   "alt_names": [],
+   "attributes": [],
+   "birth": {
+    "date": {
+     "day": null,
+     "iso": "1925",
+     "modifier": "about",
+     "month": null,
+     "quality": null,
+     "sort": 2424152,
+     "text": "about 1925",
+     "year": 1925
+    },
+    "event": "E1568",
+    "place": "P0089",
+    "type": "Birth",
+    "year": 1925
+   },
+   "change": 1794065412,
+   "citations": [
+    "C1267"
+   ],
+   "death": {
+    "date": {
+     "day": null,
+     "iso": "2002",
+     "modifier": null,
+     "month": null,
+     "quality": null,
+     "sort": 2452276,
+     "text": "2002",
+     "year": 2002
+    },
+    "event": "E1570",
+    "place": null,
+    "type": "Death",
+    "year": 2002
+   },
+   "events": [
+    {
+     "ref": "E1568",
+     "role": "Primary"
+    },
+    {
+     "ref": "E1570",
+     "role": "Primary"
+    },
+    {
+     "ref": "E1571",
+     "role": "Primary"
+    }
+   ],
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "gender": "M",
+   "handle": "1051225014f964f06474e50e45f3",
+   "id": "I0396",
+   "media": [],
+   "name": {
+    "call": "",
+    "display": "Howard E. Lodl",
+    "first": "Howard E.",
+    "nick": "",
+    "prefix": "",
+    "sort": "Lodl, Howard E.",
+    "suffix": "",
+    "surname": "Lodl",
+    "title": "",
+    "type": "Birth Name"
+   },
+   "notes": [
+    "N1826"
+   ],
+   "parents": [
+    "F0184"
+   ],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-proposed",
+    "agent-karel"
+   ],
+   "urls": [],
+   "xref": {
+    "ancestry": "212814443046"
    }
   }
  },
@@ -168871,6 +171355,22 @@
    "notes": [],
    "type": "Archive",
    "urls": []
+  },
+  "R0022": {
+   "handle": "1051224f8039aa59d9010ab0a80",
+   "id": "R0022",
+   "name": "National Archives and Records Administration",
+   "notes": [],
+   "type": "Archive",
+   "urls": []
+  },
+  "R0023": {
+   "handle": "105122508721e0d9953040a5f99",
+   "id": "R0023",
+   "name": "Online cemetery index / obituary transcription",
+   "notes": [],
+   "type": "Archive",
+   "urls": []
   }
  },
  "sources": {
@@ -174461,7 +176961,13 @@
    "author": "",
    "citations": [
     "C1186",
-    "C1191"
+    "C1191",
+    "C1253",
+    "C1254",
+    "C1255",
+    "C1256",
+    "C1260",
+    "C1261"
    ],
    "flags": [
     "agent-proposed"
@@ -175235,6 +177741,176 @@
     "agent-proposed"
    ],
    "title": "Sheppard, Descendants of Richard Beckley (compiled genealogy; Internet Archive descendantsofric00shep)"
+  },
+  "S0202": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1263"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051213e60ef7e4d0baa6c5814b1",
+   "id": "S0202",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0020"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "Vermont, U.S., Wills and Probate Records, 1749-1999 — Windham / Marlboro Probate District, vol. 17–18 (1843–1847)"
+  },
+  "S0203": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1265",
+    "C1266",
+    "C1267",
+    "C1269"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051224f837121fa7b488ba84c85",
+   "id": "S0203",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0022"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "1950 United States Federal Census, Manitowoc, Wisconsin"
+  },
+  "S0204": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1270"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "105122508ab7298ca8cd5b29a563",
+   "id": "S0204",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0023"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "Knollwood Memorial Gardens cemetery index"
+  },
+  "S0205": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1271",
+    "C1272"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10512250a06e336bd7c68b287dc3",
+   "id": "S0205",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0023"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "Holy Cross cemetery index"
+  },
+  "S0206": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1273",
+    "C1274"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10512250c8ecc64658c8d34fa5c",
+   "id": "S0206",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0023"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "Emma W. Lodl obituary transcription, Herald Times Reporter"
   }
  }
 }
