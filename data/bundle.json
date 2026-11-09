@@ -39674,6 +39674,322 @@
    ],
    "tier": "index",
    "url": "https://www.findagrave.com/memorial/134260045/emma-w-lodl"
+  },
+  "C1275": {
+   "ancestry_record_id": "",
+   "change": 1794151802,
+   "cited_by": [
+    {
+     "id": "E1574",
+     "type": "event"
+    },
+    {
+     "id": "E1575",
+     "type": "event"
+    },
+    {
+     "id": "I0397",
+     "type": "person"
+    }
+   ],
+   "confidence": 3,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "105155cef9e434f699521b7dc60a",
+   "id": "C1275",
+   "information": "secondary",
+   "media": [],
+   "notes": [
+    "N1828",
+    "N1829"
+   ],
+   "page": "Evergreen Cemetery #44 KAN obituaries, entry karlgeorge",
+   "proposal_file": "2026-11-08_100001_karl-george_add-person.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0207",
+   "source_type": "derivative",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "compiled",
+   "url": "https://www.2manitowoc.com/44Kanobit.html#karlgeorge"
+  },
+  "C1276": {
+   "ancestry_record_id": "",
+   "change": 1794151803,
+   "cited_by": [
+    {
+     "id": "E1576",
+     "type": "event"
+    },
+    {
+     "id": "E1577",
+     "type": "event"
+    },
+    {
+     "id": "I0398",
+     "type": "person"
+    }
+   ],
+   "confidence": 3,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "105155cf22b927e3028307d883d7",
+   "id": "C1276",
+   "information": "secondary",
+   "media": [],
+   "notes": [
+    "N1830",
+    "N1831"
+   ],
+   "page": "Evergreen Cemetery #44 KAN obituaries, entry karlpauline",
+   "proposal_file": "2026-11-08_100002_kowalski-pauline_add-person.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0208",
+   "source_type": "derivative",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "compiled",
+   "url": "https://www.2manitowoc.com/44Kanobit.html#karlpauline"
+  },
+  "C1277": {
+   "ancestry_record_id": "",
+   "change": 1794151804,
+   "cited_by": [
+    {
+     "id": "E1578",
+     "type": "event"
+    },
+    {
+     "id": "E1579",
+     "type": "event"
+    },
+    {
+     "id": "I0399",
+     "type": "person"
+    }
+   ],
+   "confidence": 3,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "105155cf522c7a490815ca90847",
+   "id": "C1277",
+   "information": "secondary",
+   "media": [],
+   "notes": [
+    "N1832",
+    "N1833"
+   ],
+   "page": "Evergreen Cemetery #44 FEI obituaries, entry ferdoncharlotte",
+   "proposal_file": "2026-11-08_100003_karl-charlotte_add-person.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0209",
+   "source_type": "derivative",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "compiled",
+   "url": "https://www.2manitowoc.com/44Feiobit.html#ferdoncharlotte"
+  },
+  "C1278": {
+   "ancestry_record_id": "",
+   "change": 1794151805,
+   "cited_by": [
+    {
+     "id": "E1580",
+     "type": "event"
+    },
+    {
+     "id": "E1581",
+     "type": "event"
+    },
+    {
+     "id": "I0400",
+     "type": "person"
+    }
+   ],
+   "confidence": 3,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "105155cf7bbaafeb775c703557",
+   "id": "C1278",
+   "information": "secondary",
+   "media": [],
+   "notes": [
+    "N1834",
+    "N1835"
+   ],
+   "page": "Evergreen Cemetery #44 KOM obituaries, entry konecnylydia",
+   "proposal_file": "2026-11-08_100004_prohaska-lydia_add-person.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0210",
+   "source_type": "derivative",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "compiled",
+   "url": "https://www.2manitowoc.com/44Komobit.html#konecnylydia"
+  },
+  "C1280": {
+   "ancestry_record_id": "",
+   "change": 1794151807,
+   "cited_by": [
+    {
+     "id": "E1583",
+     "type": "event"
+    },
+    {
+     "id": "E1584",
+     "type": "event"
+    },
+    {
+     "id": "I0402",
+     "type": "person"
+    }
+   ],
+   "confidence": 3,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "105155cfc0803fc715cd8fb75903",
+   "id": "C1280",
+   "information": "secondary",
+   "media": [],
+   "notes": [
+    "N1838"
+   ],
+   "page": "Evergreen Cemetery #44 KLEM obituaries, entry klimentella",
+   "proposal_file": "2026-11-08_100501_wacek-ella_add-person.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0211",
+   "source_type": "derivative",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "compiled",
+   "url": "https://www.2manitowoc.com/44Klemobit.html#klimentella"
+  },
+  "C1281": {
+   "ancestry_record_id": "",
+   "change": 1794151808,
+   "cited_by": [
+    {
+     "id": "F0186",
+     "type": "family"
+    }
+   ],
+   "confidence": 3,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "105155cff2362d468cc33ceac40b",
+   "id": "C1281",
+   "information": "secondary",
+   "media": [],
+   "notes": [
+    "N1840",
+    "N1841"
+   ],
+   "page": "Evergreen Cemetery #44 KAN obituaries, entry karlgeorge",
+   "proposal_file": "2026-11-08_100010_karl-george_x_kowalski_add-family.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0207",
+   "source_type": "derivative",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "compiled",
+   "url": "https://www.2manitowoc.com/44Kanobit.html#karlgeorge"
+  },
+  "C1282": {
+   "ancestry_record_id": "",
+   "change": 1794151810,
+   "cited_by": [
+    {
+     "id": "F0187",
+     "type": "family"
+    }
+   ],
+   "confidence": 4,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "105155d037cf535cec51c77107f1",
+   "id": "C1282",
+   "information": "primary",
+   "media": [
+    {
+     "ref": "O0215"
+    }
+   ],
+   "notes": [
+    "N1842",
+    "N1843"
+   ],
+   "page": "1950; ED 36-48B, sheet 7, lines 10–12; 1842 Rankin St.",
+   "proposal_file": "2026-11-08_100011_konecny-frank_x_prohaska_add-family.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0212",
+   "source_type": "original",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "record",
+   "url": "https://nara-1950-census.s3.us-east-2.amazonaws.com/1950census/43290879-Wisconsin/43290879-Wisconsin-230426/43290879-Wisconsin-230426-0008.jpg"
   }
  },
  "events": {
@@ -90303,6 +90619,436 @@
     "agent-proposed"
    ],
    "type": "Death"
+  },
+  "E1574": {
+   "attributes": [],
+   "change": 1794151802,
+   "citations": [
+    "C1275"
+   ],
+   "date": {
+    "day": 14,
+    "iso": "1897-08-14",
+    "modifier": null,
+    "month": 8,
+    "quality": null,
+    "sort": 2414151,
+    "text": "14 August 1897",
+    "year": 1897
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "105155cf043b35345e2557cd7c35",
+   "id": "E1574",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0397",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0332",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Birth"
+  },
+  "E1575": {
+   "attributes": [],
+   "change": 1794151802,
+   "citations": [
+    "C1275"
+   ],
+   "date": {
+    "day": 15,
+    "iso": "1979-04-15",
+    "modifier": null,
+    "month": 4,
+    "quality": null,
+    "sort": 2443979,
+    "text": "15 April 1979",
+    "year": 1979
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "105155cf087d2016341b9eac2692",
+   "id": "E1575",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0397",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0030",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Death"
+  },
+  "E1576": {
+   "attributes": [],
+   "change": 1794151803,
+   "citations": [
+    "C1276"
+   ],
+   "date": {
+    "day": 25,
+    "iso": "1898-06-25",
+    "modifier": null,
+    "month": 6,
+    "quality": null,
+    "sort": 2414466,
+    "text": "25 June 1898",
+    "year": 1898
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "105155cf2bda515c06959df2f73d",
+   "id": "E1576",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0398",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0332",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Birth"
+  },
+  "E1577": {
+   "attributes": [],
+   "change": 1794151803,
+   "citations": [
+    "C1276"
+   ],
+   "date": {
+    "day": 11,
+    "iso": "1989-08-11",
+    "modifier": null,
+    "month": 8,
+    "quality": null,
+    "sort": 2447750,
+    "text": "11 August 1989",
+    "year": 1989
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "105155cf30413914c495cc57542c",
+   "id": "E1577",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0398",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0030",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Death"
+  },
+  "E1578": {
+   "attributes": [],
+   "change": 1794151804,
+   "citations": [
+    "C1277"
+   ],
+   "date": {
+    "day": 29,
+    "iso": "1925-04-29",
+    "modifier": null,
+    "month": 4,
+    "quality": null,
+    "sort": 2424270,
+    "text": "29 April 1925",
+    "year": 1925
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "105155cf59e3435c473c2b9ee0b5",
+   "id": "E1578",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0399",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0332",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Birth"
+  },
+  "E1579": {
+   "attributes": [],
+   "change": 1794151804,
+   "citations": [
+    "C1277"
+   ],
+   "date": {
+    "day": 21,
+    "iso": "2007-11-21",
+    "modifier": null,
+    "month": 11,
+    "quality": null,
+    "sort": 2454426,
+    "text": "21 November 2007",
+    "year": 2007
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "105155cf60f079993384de34c521",
+   "id": "E1579",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0399",
+     "role": "Primary"
+    }
+   ],
+   "place": null,
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Death"
+  },
+  "E1580": {
+   "attributes": [],
+   "change": 1794151805,
+   "citations": [
+    "C1278"
+   ],
+   "date": {
+    "day": 23,
+    "iso": "1895-05-23",
+    "modifier": null,
+    "month": 5,
+    "quality": null,
+    "sort": 2413337,
+    "text": "23 May 1895",
+    "year": 1895
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "105155cf84a025eae1cb1a614ab8",
+   "id": "E1580",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0400",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0333",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Birth"
+  },
+  "E1581": {
+   "attributes": [],
+   "change": 1794151805,
+   "citations": [
+    "C1278"
+   ],
+   "date": {
+    "day": 6,
+    "iso": "1959-07-06",
+    "modifier": null,
+    "month": 7,
+    "quality": null,
+    "sort": 2436756,
+    "text": "6 July 1959",
+    "year": 1959
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "105155cf890454bb7fe45ddb5250",
+   "id": "E1581",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0400",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0030",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Death"
+  },
+  "E1583": {
+   "attributes": [],
+   "change": 1794151807,
+   "citations": [
+    "C1280"
+   ],
+   "date": {
+    "day": 6,
+    "iso": "1900-02-06",
+    "modifier": null,
+    "month": 2,
+    "quality": null,
+    "sort": 2415057,
+    "text": "6 February 1900",
+    "year": 1900
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "105155cfc53e476fb89c6e8dde3e",
+   "id": "E1583",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0402",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0030",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Birth"
+  },
+  "E1584": {
+   "attributes": [],
+   "change": 1794151807,
+   "citations": [
+    "C1280"
+   ],
+   "date": {
+    "day": 13,
+    "iso": "1967-06-13",
+    "modifier": null,
+    "month": 6,
+    "quality": null,
+    "sort": 2439655,
+    "text": "13 June 1967",
+    "year": 1967
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "105155cfc96124c638a8e9a13847",
+   "id": "E1584",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0402",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0030",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Death"
   }
  },
  "families": {
@@ -96497,6 +97243,83 @@
    "tags": [
     "agent-proposed",
     "agent-karel"
+   ],
+   "type": "Married"
+  },
+  "F0185": {
+   "children": [
+    {
+     "ref": "I0402"
+    }
+   ],
+   "father": "I0393",
+   "handle": "105155cfd58918fb1fe3bcdb498d",
+   "id": "F0185",
+   "mother": null,
+   "status": "living"
+  },
+  "F0186": {
+   "attributes": [],
+   "change": 1794151809,
+   "children": [
+    {
+     "ref": "I0302"
+    },
+    {
+     "ref": "I0399"
+    }
+   ],
+   "citations": [
+    "C1281"
+   ],
+   "events": [],
+   "father": "I0397",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "105155cff73576fba77be2916259",
+   "id": "F0186",
+   "media": [],
+   "mother": "I0398",
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Married"
+  },
+  "F0187": {
+   "attributes": [],
+   "change": 1794151811,
+   "children": [],
+   "citations": [
+    "C1282"
+   ],
+   "events": [],
+   "father": "I0149",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "105155d03d4056860e5a3ee5d7f2",
+   "id": "F0187",
+   "media": [],
+   "mother": "I0400",
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
    ],
    "type": "Married"
   }
@@ -103905,6 +104728,39 @@
     "agent-proposed",
     "agent-karel"
    ]
+  },
+  "O0215": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1282",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-08_100011_konecny-frank_x_prohaska_1950-sheet7.jpg"
+   },
+   "checksum": "5336bfa5f0815e862b104c18c29cf8ec",
+   "citations": [],
+   "date": null,
+   "desc": "1950 United States Federal Census, Manitowoc, Manitowoc County, Wisconsin — 1950; ED 36-48B, sheet 7, lines 10–12; 1842 Rankin St.",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "105155d02fed3b225a44c790a9c9",
+   "id": "O0215",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0215",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ]
   }
  },
  "meta": {
@@ -103916,21 +104772,21 @@
    "very high"
   ],
   "counts": {
-   "citations": 1224,
-   "events": 1414,
-   "families": 177,
-   "media": 201,
-   "notes": 1306,
-   "people": 393,
-   "places": 321,
-   "repositories": 24,
-   "sources": 201
+   "citations": 1231,
+   "events": 1424,
+   "families": 180,
+   "media": 202,
+   "notes": 1328,
+   "people": 399,
+   "places": 323,
+   "repositories": 25,
+   "sources": 207
   },
   "counts_people": {
-   "full": 326,
-   "living": 67
+   "full": 331,
+   "living": 68
   },
-  "generated": "2026-11-08T08:17:47+00:00",
+  "generated": "2026-11-09T08:17:47+00:00",
   "generator": "gramps_export.py 0.3.0",
   "gramps_version": "6.0.8",
   "gramps_webapi_version": "3.17.0",
@@ -103954,7 +104810,7 @@
    "oral",
    "ai-draft"
   ],
-  "today": "2026-11-08",
+  "today": "2026-11-09",
   "tree": "Konecny"
  },
  "notes": {
@@ -132139,6 +132995,424 @@
    "tags": [],
    "text": "2026-11-07 (karel): Census-derived birth about 1894 Wisconsin retained. Obituary transcription gives 24 Oct 1892 Manitowoc County and death 18 Jun 1980 Manitowoc County. Knollwood index corroborates 1892–1980. These are conflicting birth assertions, not a correction to silently overwrite census.\n\nTier: ai-draft",
    "type": "Research"
+  },
+  "N1828": {
+   "attached_to": [
+    {
+     "id": "C1275",
+     "type": "citation"
+    }
+   ],
+   "change": 1794151802,
+   "flags": [],
+   "handle": "105155cef4c63dd038943b0e0799",
+   "html": "<p>Transcription (as written): Mr. Karl was born Aug. 14, 1897, in Kewaunee, son of the late Charles and Mary Juza Karl. ... June 26, 1917, he married Pauline Kowalski in Kewaunee. Survivors include four daughters and sons-in-law, Caroline and Daniel Langenkamp, Gertrude and Edward Konecny, ... Died Sunday [15 Apr 1979] at Park Lawn Home, Manitowoc.</p>",
+   "id": "N1828",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Mr. Karl was born Aug. 14, 1897, in Kewaunee, son of the late Charles and Mary Juza Karl. ... June 26, 1917, he married Pauline Kowalski in Kewaunee. Survivors include four daughters and sons-in-law, Caroline and Daniel Langenkamp, Gertrude and Edward Konecny, ... Died Sunday [15 Apr 1979] at Park Lawn Home, Manitowoc.",
+   "type": "Transcript"
+  },
+  "N1829": {
+   "attached_to": [
+    {
+     "id": "C1275",
+     "type": "citation"
+    }
+   ],
+   "change": 1794151802,
+   "flags": [],
+   "handle": "105155cef72f5aed9fe003cbde2c",
+   "html": "<p>2026-11-08 (karel): New Ancestry profile 212814968024 created 8 Nov 2026 as father of existing Gertrude Irene Karl (212806949554, I0302), wife of Edward G. Konecny. Obituary states birth date/place and names daughter Gertrude and son-in-law Edward Konecny. Death 15 Apr 1979 (Sunday) at Manitowoc per obituary and wife&#x27;s obituary. Parents Charles Karl and Mary Juza are a lead for later, not filed. Source verified attached on Ancestry (person-level citation with URL and transcription) by browser executor 8 Nov 2026. Obituary is a 2manitowoc.com transcription, so tier compiled, not an original newspaper image.</p>",
+   "id": "N1829",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-08 (karel): New Ancestry profile 212814968024 created 8 Nov 2026 as father of existing Gertrude Irene Karl (212806949554, I0302), wife of Edward G. Konecny. Obituary states birth date/place and names daughter Gertrude and son-in-law Edward Konecny. Death 15 Apr 1979 (Sunday) at Manitowoc per obituary and wife's obituary. Parents Charles Karl and Mary Juza are a lead for later, not filed. Source verified attached on Ancestry (person-level citation with URL and transcription) by browser executor 8 Nov 2026. Obituary is a 2manitowoc.com transcription, so tier compiled, not an original newspaper image.",
+   "type": "Research"
+  },
+  "N1830": {
+   "attached_to": [
+    {
+     "id": "C1276",
+     "type": "citation"
+    }
+   ],
+   "change": 1794151803,
+   "flags": [],
+   "handle": "105155cf186c207f4e04052e3f0e",
+   "html": "<p>Transcription (as written): The former Pauline A. Kowalski was born June 25, 1898 at Kewaunee, daughter of the late Frank and Lottie Ratajczyk Kowalski. She married George F. Karl on June 26, 1917 at Kewaunee. ... died Friday noon, August 11, 1989 [Shady Lane Home, Manitowoc]. Survivors: four daughters ... Gertrude and Edward Konecny ...</p>",
+   "id": "N1830",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): The former Pauline A. Kowalski was born June 25, 1898 at Kewaunee, daughter of the late Frank and Lottie Ratajczyk Kowalski. She married George F. Karl on June 26, 1917 at Kewaunee. ... died Friday noon, August 11, 1989 [Shady Lane Home, Manitowoc]. Survivors: four daughters ... Gertrude and Edward Konecny ...",
+   "type": "Transcript"
+  },
+  "N1831": {
+   "attached_to": [
+    {
+     "id": "C1276",
+     "type": "citation"
+    }
+   ],
+   "change": 1794151803,
+   "flags": [],
+   "handle": "105155cf1d281dfed802f41d0a2b",
+   "html": "<p>2026-11-08 (karel): New Ancestry profile 212814977135 created 8 Nov 2026 as mother of Gertrude Irene Karl (212806949554, I0302) and wife of George F. Karl (212814968024). Birth date from obituary; Evergreen gravestone index reads 23 Jun 1898, a conflict kept for a note, obituary date filed. Parents Frank Kowalski and Lottie Ratajczyk are a lead, not filed. Source verified attached on Ancestry (person-level citation with URL and transcription) by browser executor 8 Nov 2026. Obituary is a 2manitowoc.com transcription, so tier compiled, not an original newspaper image.</p>",
+   "id": "N1831",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-08 (karel): New Ancestry profile 212814977135 created 8 Nov 2026 as mother of Gertrude Irene Karl (212806949554, I0302) and wife of George F. Karl (212814968024). Birth date from obituary; Evergreen gravestone index reads 23 Jun 1898, a conflict kept for a note, obituary date filed. Parents Frank Kowalski and Lottie Ratajczyk are a lead, not filed. Source verified attached on Ancestry (person-level citation with URL and transcription) by browser executor 8 Nov 2026. Obituary is a 2manitowoc.com transcription, so tier compiled, not an original newspaper image.",
+   "type": "Research"
+  },
+  "N1832": {
+   "attached_to": [
+    {
+     "id": "C1277",
+     "type": "citation"
+    }
+   ],
+   "change": 1794151804,
+   "flags": [],
+   "handle": "105155cf473424d208c210b71fba",
+   "html": "<p>Transcription (as written): Charlotte was born on April 29, 1925, in Kewaunee, daughter of the late George and Pauline (Kowalski) Karl ... entered eternal life on Wednesday morning, Nov. 21, 2007. ... preceded in death by ... sisters ... Caroline (Daniel) Langenkamp; Gertrude (Edward) Konecny.</p>",
+   "id": "N1832",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Charlotte was born on April 29, 1925, in Kewaunee, daughter of the late George and Pauline (Kowalski) Karl ... entered eternal life on Wednesday morning, Nov. 21, 2007. ... preceded in death by ... sisters ... Caroline (Daniel) Langenkamp; Gertrude (Edward) Konecny.",
+   "type": "Transcript"
+  },
+  "N1833": {
+   "attached_to": [
+    {
+     "id": "C1277",
+     "type": "citation"
+    }
+   ],
+   "change": 1794151804,
+   "flags": [],
+   "handle": "105155cf4c6a606b99d98f35956e",
+   "html": "<p>2026-11-08 (karel): New Ancestry profile 212814977212 created 8 Nov 2026 as daughter of George F. Karl and Pauline Kowalski, sister of Gertrude Irene Karl (I0302). Death place not stated in obituary, left blank. Gravestone index misprint &#x27;Nov 31, 2007&#x27; not used. Married surname Ferdon per obituary (married Glenn Ferdon 27 Dec 1947); husband not added. Source verified attached on Ancestry (person-level citation with URL and transcription) by browser executor 8 Nov 2026. Obituary is a 2manitowoc.com transcription, so tier compiled, not an original newspaper image.</p>",
+   "id": "N1833",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-08 (karel): New Ancestry profile 212814977212 created 8 Nov 2026 as daughter of George F. Karl and Pauline Kowalski, sister of Gertrude Irene Karl (I0302). Death place not stated in obituary, left blank. Gravestone index misprint 'Nov 31, 2007' not used. Married surname Ferdon per obituary (married Glenn Ferdon 27 Dec 1947); husband not added. Source verified attached on Ancestry (person-level citation with URL and transcription) by browser executor 8 Nov 2026. Obituary is a 2manitowoc.com transcription, so tier compiled, not an original newspaper image.",
+   "type": "Research"
+  },
+  "N1834": {
+   "attached_to": [
+    {
+     "id": "C1278",
+     "type": "citation"
+    }
+   ],
+   "change": 1794151805,
+   "flags": [],
+   "handle": "105155cf75a65d67faffb194d7b7",
+   "html": "<p>Transcription (as written): Mrs. Konecny, nee Lydia Prohaska, was born May 23, 1895, at Milwaukee, daughter of the late John and Anna Kolar Prohaska. She was married to Frank Konecny June 6, 1947, at Manitowoc. ... three stepsons, Edward, John and Louis. [d. 07-06-1959/age 64 yrs./wife of Frank Konecny]</p>",
+   "id": "N1834",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Mrs. Konecny, nee Lydia Prohaska, was born May 23, 1895, at Milwaukee, daughter of the late John and Anna Kolar Prohaska. She was married to Frank Konecny June 6, 1947, at Manitowoc. ... three stepsons, Edward, John and Louis. [d. 07-06-1959/age 64 yrs./wife of Frank Konecny]",
+   "type": "Transcript"
+  },
+  "N1835": {
+   "attached_to": [
+    {
+     "id": "C1278",
+     "type": "citation"
+    }
+   ],
+   "change": 1794151805,
+   "flags": [],
+   "handle": "105155cf78812d8ce714a7d9f841",
+   "html": "<p>2026-11-08 (karel): New Ancestry profile 212814977451 created 8 Nov 2026 as second wife of Frank (Frantisek) Konecny 212735561761 (I0149), brother of Peter. Link to this Frank is supported by the 1950 census household (filed with the family proposal) listing Frank, wife Lydia and son Louis at 1842 Rankin St. Her mother&#x27;s maiden name Kolar is a surname coincidence with Peter&#x27;s mother&#x27;s later name, not a connection. Frank&#x27;s 1976 obituary omits her; noted as a conflict for later. Source verified attached on Ancestry (person-level citation with URL and transcription) by browser executor 8 Nov 2026. Obituary is a 2manitowoc.com transcription, so tier compiled, not an original newspaper image.</p>",
+   "id": "N1835",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-08 (karel): New Ancestry profile 212814977451 created 8 Nov 2026 as second wife of Frank (Frantisek) Konecny 212735561761 (I0149), brother of Peter. Link to this Frank is supported by the 1950 census household (filed with the family proposal) listing Frank, wife Lydia and son Louis at 1842 Rankin St. Her mother's maiden name Kolar is a surname coincidence with Peter's mother's later name, not a connection. Frank's 1976 obituary omits her; noted as a conflict for later. Source verified attached on Ancestry (person-level citation with URL and transcription) by browser executor 8 Nov 2026. Obituary is a 2manitowoc.com transcription, so tier compiled, not an original newspaper image.",
+   "type": "Research"
+  },
+  "N1838": {
+   "attached_to": [
+    {
+     "id": "C1280",
+     "type": "citation"
+    }
+   ],
+   "change": 1794151807,
+   "flags": [],
+   "handle": "105155cfba2b4385324a3aeaff1e",
+   "html": "<p>Transcription (as written): Mrs. Kliment, the former Ella Wacek, was born Feb. 6, 1900, at Manitowoc, daughter of the late Anton and Annie Suchomel Wacek. ... married to Mr. Kliment April 22, 1924, at Manitowoc. [d. 06-13-1967/age 67 yrs./wife of John Kliment] Died at Holy Family Hospital, Manitowoc.</p>",
+   "id": "N1838",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Mrs. Kliment, the former Ella Wacek, was born Feb. 6, 1900, at Manitowoc, daughter of the late Anton and Annie Suchomel Wacek. ... married to Mr. Kliment April 22, 1924, at Manitowoc. [d. 06-13-1967/age 67 yrs./wife of John Kliment] Died at Holy Family Hospital, Manitowoc.",
+   "type": "Transcript"
+  },
+  "N1840": {
+   "attached_to": [
+    {
+     "id": "C1281",
+     "type": "citation"
+    }
+   ],
+   "change": 1794151808,
+   "flags": [],
+   "handle": "105155cfeba078f46cbd3cafa701",
+   "html": "<p>Transcription (as written): Mr. Karl was born Aug. 14, 1897, in Kewaunee, son of the late Charles and Mary Juza Karl. ... June 26, 1917, he married Pauline Kowalski in Kewaunee. Survivors include four daughters and sons-in-law, Caroline and Daniel Langenkamp, Gertrude and Edward Konecny, ... Died Sunday [15 Apr 1979] at Park Lawn Home, Manitowoc.</p>",
+   "id": "N1840",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Mr. Karl was born Aug. 14, 1897, in Kewaunee, son of the late Charles and Mary Juza Karl. ... June 26, 1917, he married Pauline Kowalski in Kewaunee. Survivors include four daughters and sons-in-law, Caroline and Daniel Langenkamp, Gertrude and Edward Konecny, ... Died Sunday [15 Apr 1979] at Park Lawn Home, Manitowoc.",
+   "type": "Transcript"
+  },
+  "N1841": {
+   "attached_to": [
+    {
+     "id": "C1281",
+     "type": "citation"
+    }
+   ],
+   "change": 1794151808,
+   "flags": [],
+   "handle": "105155cfeedf2779e3126dcc1dd",
+   "html": "<p>2026-11-08 (karel): George F. Karl 212814968024 and Pauline A. Kowalski 212814977135, parents of existing Gertrude Irene Karl 212806949554 (I0302) and new Charlotte G. Karl 212814977212. Both parents&#x27; obituaries name the marriage (26 Jun 1917, Kewaunee) and daughters; Charlotte&#x27;s obituary names both parents and sister Gertrude. No marriage event filed in this proposal. Source verified attached on Ancestry (person-level citation with URL and transcription) by browser executor 8 Nov 2026. Obituary is a 2manitowoc.com transcription, so tier compiled, not an original newspaper image.</p>",
+   "id": "N1841",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-08 (karel): George F. Karl 212814968024 and Pauline A. Kowalski 212814977135, parents of existing Gertrude Irene Karl 212806949554 (I0302) and new Charlotte G. Karl 212814977212. Both parents' obituaries name the marriage (26 Jun 1917, Kewaunee) and daughters; Charlotte's obituary names both parents and sister Gertrude. No marriage event filed in this proposal. Source verified attached on Ancestry (person-level citation with URL and transcription) by browser executor 8 Nov 2026. Obituary is a 2manitowoc.com transcription, so tier compiled, not an original newspaper image.",
+   "type": "Research"
+  },
+  "N1842": {
+   "attached_to": [
+    {
+     "id": "C1282",
+     "type": "citation"
+    }
+   ],
+   "change": 1794151810,
+   "flags": [],
+   "handle": "105155d0297f68d3d645779c8898",
+   "html": "<p>Transcription (as written): Konecny Frank, Head, W M 54, married, Czecho Slovakia; Lydia, wife, W F 54, married, Wis.; Louis, son, W M 26, married, Wis.</p>",
+   "id": "N1842",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Konecny Frank, Head, W M 54, married, Czecho Slovakia; Lydia, wife, W F 54, married, Wis.; Louis, son, W M 26, married, Wis.",
+   "type": "Transcript"
+  },
+  "N1843": {
+   "attached_to": [
+    {
+     "id": "C1282",
+     "type": "citation"
+    }
+   ],
+   "change": 1794151810,
+   "flags": [],
+   "handle": "105155d02c8a876cc9d609bad88",
+   "html": "<p>2026-11-08 (karel): Frank Konecny 212735561761 (I0149) and Lydia Prohaska 212814977451. Census lists Lydia as wife of head Frank with Frank&#x27;s son Louis (I0304), tying her to this Frank; her obituary gives marriage 6 Jun 1947, Manitowoc. No children linked: Louis, Edward and John are stepsons from Frank&#x27;s marriage to Lillian Wacek. No marriage event filed in this proposal. Census citation attached on Ancestry to Lydia by browser executor 8 Nov 2026. Source verified attached on Ancestry (person-level citation with URL and transcription) by browser executor 8 Nov 2026. Image is the full NARA sheet at the same URL as the attached Ancestry citation.</p>",
+   "id": "N1843",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-08 (karel): Frank Konecny 212735561761 (I0149) and Lydia Prohaska 212814977451. Census lists Lydia as wife of head Frank with Frank's son Louis (I0304), tying her to this Frank; her obituary gives marriage 6 Jun 1947, Manitowoc. No children linked: Louis, Edward and John are stepsons from Frank's marriage to Lillian Wacek. No marriage event filed in this proposal. Census citation attached on Ancestry to Lydia by browser executor 8 Nov 2026. Source verified attached on Ancestry (person-level citation with URL and transcription) by browser executor 8 Nov 2026. Image is the full NARA sheet at the same URL as the attached Ancestry citation.",
+   "type": "Research"
+  },
+  "N1845": {
+   "attached_to": [
+    {
+     "id": "I0023",
+     "type": "person"
+    }
+   ],
+   "change": 1794178802,
+   "flags": [],
+   "handle": "105165e6de27635443cde106b965",
+   "html": "<p>2026-11-08 (karel): Family book transcription (verbatim text layer, reflowed; no translation). Source: Wood Family Genealogy, updated for the Wood Family Reunion, July 2019, Two Rivers, Wisconsin (Beth Moorcones, designer and editor), printed page 1 (PDF page 1). Compiled family-submitted text as of 2019; statements are the book&#x27;s claims, not verified facts.</p><p>WOOD FAMILY<br>GENEALOGY<br>Upda<br>Wood ted for th<br>e<br>Famil<br>y Reu<br>nion<br>July<br>2019<br>Two R<br>ivers,<br>Wisco<br>nsin<br>1</p><p>Tier: compiled</p>",
+   "id": "N1845",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-08 (karel): Family book transcription (verbatim text layer, reflowed; no translation). Source: Wood Family Genealogy, updated for the Wood Family Reunion, July 2019, Two Rivers, Wisconsin (Beth Moorcones, designer and editor), printed page 1 (PDF page 1). Compiled family-submitted text as of 2019; statements are the book's claims, not verified facts.\n\nWOOD FAMILY\nGENEALOGY\nUpda\nWood ted for th\ne\nFamil\ny Reu\nnion\nJuly\n2019\nTwo R\nivers,\nWisco\nnsin\n1\n\nTier: compiled",
+   "type": "Transcript"
+  },
+  "N1846": {
+   "attached_to": [
+    {
+     "id": "I0023",
+     "type": "person"
+    }
+   ],
+   "change": 1794178802,
+   "flags": [],
+   "handle": "105165e6e80a5cdb5c2e9a90514d",
+   "html": "<p>2026-11-08 (karel): Corrected transcription of Wood Family Genealogy (2019), printed page 1; supersedes earlier transcription (filed as 2026-11-08_book-p01_I0023_add-note.json, which remains; this correction is additive).<br>Family book transcription (verbatim text layer, reflowed; no translation). Source: Wood Family Genealogy, updated for the Wood Family Reunion, July 2019, Two Rivers, Wisconsin (Beth Moorcones, designer and editor), printed page 1 (PDF page 1). Compiled family-submitted text as of 2019; statements are the book&#x27;s claims, not verified facts.</p><p>WOOD FAMILY<br>GENEALOGY<br>Updated for the<br>Wood Family Reunion<br>July 2019<br>Two Rivers, Wisconsin<br>[cover photos: three uncaptioned vintage portraits (a woman, a child, a man in military uniform); no identification given in the book]<br>1</p><p>Tier: compiled</p>",
+   "id": "N1846",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-08 (karel): Corrected transcription of Wood Family Genealogy (2019), printed page 1; supersedes earlier transcription (filed as 2026-11-08_book-p01_I0023_add-note.json, which remains; this correction is additive).\nFamily book transcription (verbatim text layer, reflowed; no translation). Source: Wood Family Genealogy, updated for the Wood Family Reunion, July 2019, Two Rivers, Wisconsin (Beth Moorcones, designer and editor), printed page 1 (PDF page 1). Compiled family-submitted text as of 2019; statements are the book's claims, not verified facts.\n\nWOOD FAMILY\nGENEALOGY\nUpdated for the\nWood Family Reunion\nJuly 2019\nTwo Rivers, Wisconsin\n[cover photos: three uncaptioned vintage portraits (a woman, a child, a man in military uniform); no identification given in the book]\n1\n\nTier: compiled",
+   "type": "Transcript"
+  },
+  "N1847": {
+   "attached_to": [
+    {
+     "id": "I0023",
+     "type": "person"
+    }
+   ],
+   "change": 1794178802,
+   "flags": [],
+   "handle": "105165e6f2684a6b727a51a84826",
+   "html": "<p>2026-11-08 (karel): Family book transcription (verbatim text layer, reflowed; no translation). Source: Wood Family Genealogy, updated for the Wood Family Reunion, July 2019, Two Rivers, Wisconsin (Beth Moorcones, designer and editor), printed page 2 (PDF page 2). Compiled family-submitted text as of 2019; statements are the book&#x27;s claims, not verified facts.</p><p>Reunion 2019 location<br>NESHOTAH BEACH PARK<br>A beautiful sand beach on Lake Michigan with areas for swimming,<br>volleyball, and launching jet skis and kayaks. Neshotah also has<br>a softball field, volleyball and basketball courts, playgrounds, the<br>Rawley Point bike trail, horseshoe pits, four shelters, and picnic areas<br>with tables and grills.<br>Neshotah Beach is also known for their national kite flying contests<br>which are really worth watching. They have also had national beach<br>volleyball contests there due to the proper sand and nice beach.<br>The Beach House is home to a bathhouse/changing area, restrooms<br>and a concession stand. Shelters in the park can be rented for private<br>parties and picnics.<br>By way of<br>INTRODUCTION TO THIS BOOK<br>This volume is prepared in anticipation of the 2019 Wood Family Reunion in<br>Two Rivers, Wisconsin. It is intended to introduce attendees to members of<br>the extended family they’ve never met or met only a few times as children.<br>This serves as an update to the 1994 Family Genealogy prepared by Katherine<br>Wood Taylor and Virginia Wood Gaddis. The 1994 Genealogy, provided in a green<br>binder, compiled information on several branches of the Wood family line, to<br>include the Bentley, Wagner, Bell, and Seymour families. A brief description of the<br>Mayflower connection was also included. The green binder was disseminated to<br>Wood family members at the Wood Family Reunion in 1994.<br>For the purpose of this update, Generation 1 refers to the first generation of<br>the Wood family’s ancestors in the New World. Members of this generation are<br>Henry Wood, John Howland and Elizabeth Tilley, original settlers of Plymouth,<br>Massachusetts.<br>This publication updates the Wood Family Genealogy beginning with the<br>11th generation, Norman Bentley Wood and Mae Chill Wood.<br>Please note: The contents of this book include personal information<br>and should be kept in a secure place to deter identity theft.<br>2</p><p>Tier: compiled</p>",
+   "id": "N1847",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-08 (karel): Family book transcription (verbatim text layer, reflowed; no translation). Source: Wood Family Genealogy, updated for the Wood Family Reunion, July 2019, Two Rivers, Wisconsin (Beth Moorcones, designer and editor), printed page 2 (PDF page 2). Compiled family-submitted text as of 2019; statements are the book's claims, not verified facts.\n\nReunion 2019 location\nNESHOTAH BEACH PARK\nA beautiful sand beach on Lake Michigan with areas for swimming,\nvolleyball, and launching jet skis and kayaks. Neshotah also has\na softball field, volleyball and basketball courts, playgrounds, the\nRawley Point bike trail, horseshoe pits, four shelters, and picnic areas\nwith tables and grills.\nNeshotah Beach is also known for their national kite flying contests\nwhich are really worth watching. They have also had national beach\nvolleyball contests there due to the proper sand and nice beach.\nThe Beach House is home to a bathhouse/changing area, restrooms\nand a concession stand. Shelters in the park can be rented for private\nparties and picnics.\nBy way of\nINTRODUCTION TO THIS BOOK\nThis volume is prepared in anticipation of the 2019 Wood Family Reunion in\nTwo Rivers, Wisconsin. It is intended to introduce attendees to members of\nthe extended family they’ve never met or met only a few times as children.\nThis serves as an update to the 1994 Family Genealogy prepared by Katherine\nWood Taylor and Virginia Wood Gaddis. The 1994 Genealogy, provided in a green\nbinder, compiled information on several branches of the Wood family line, to\ninclude the Bentley, Wagner, Bell, and Seymour families. A brief description of the\nMayflower connection was also included. The green binder was disseminated to\nWood family members at the Wood Family Reunion in 1994.\nFor the purpose of this update, Generation 1 refers to the first generation of\nthe Wood family’s ancestors in the New World. Members of this generation are\nHenry Wood, John Howland and Elizabeth Tilley, original settlers of Plymouth,\nMassachusetts.\nThis publication updates the Wood Family Genealogy beginning with the\n11th generation, Norman Bentley Wood and Mae Chill Wood.\nPlease note: The contents of this book include personal information\nand should be kept in a secure place to deter identity theft.\n2\n\nTier: compiled",
+   "type": "Transcript"
+  },
+  "N1848": {
+   "attached_to": [
+    {
+     "id": "I0023",
+     "type": "person"
+    }
+   ],
+   "change": 1794178803,
+   "flags": [],
+   "handle": "105165e6fc52365954a431ccddfb",
+   "html": "<p>2026-11-08 (karel): Family book transcription (verbatim text layer, reflowed; no translation). Source: Wood Family Genealogy, updated for the Wood Family Reunion, July 2019, Two Rivers, Wisconsin (Beth Moorcones, designer and editor), printed page 3 (PDF page 2). Compiled book content as of 2019, not verified genealogical fact. Non-family reunion-context page (reprinted street map); placed on Norman Bentley Wood as the book&#x27;s Generation 11 anchor, for book completeness only, not a biographical fact about him. The map itself is an image; its street labels are not transcribed.</p><p>Street map<br>TWO RIVERS<br>[map image: Two Rivers street map; street and place labels not transcribed: generic geographic map unrelated to specific family facts; small print not legible at available resolution]<br>Reprinted from the Manitowoc/Two Rivers Official 2019 Visitors Guide<br>3</p><p>Tier: compiled</p>",
+   "id": "N1848",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-08 (karel): Family book transcription (verbatim text layer, reflowed; no translation). Source: Wood Family Genealogy, updated for the Wood Family Reunion, July 2019, Two Rivers, Wisconsin (Beth Moorcones, designer and editor), printed page 3 (PDF page 2). Compiled book content as of 2019, not verified genealogical fact. Non-family reunion-context page (reprinted street map); placed on Norman Bentley Wood as the book's Generation 11 anchor, for book completeness only, not a biographical fact about him. The map itself is an image; its street labels are not transcribed.\n\nStreet map\nTWO RIVERS\n[map image: Two Rivers street map; street and place labels not transcribed: generic geographic map unrelated to specific family facts; small print not legible at available resolution]\nReprinted from the Manitowoc/Two Rivers Official 2019 Visitors Guide\n3\n\nTier: compiled",
+   "type": "Transcript"
+  },
+  "N1873": {
+   "attached_to": [
+    {
+     "id": "I0023",
+     "type": "person"
+    }
+   ],
+   "change": 1794178809,
+   "flags": [],
+   "handle": "105165e7f4ea6f521eb309b80e53",
+   "html": "<p>2026-11-08 (karel): Family book transcription (verbatim text layer, reflowed; no translation). Source: Wood Family Genealogy, updated for the Wood Family Reunion, July 2019, Two Rivers, Wisconsin (Beth Moorcones, designer and editor), printed page 25 (PDF page 13). Compiled book content as of 2019, not verified genealogical fact. Non-family article reprinted in the book (Two Rivers local history); placed on Norman Bentley Wood as the book&#x27;s Generation 11 anchor for book completeness only, not a biographical fact about him.</p><p>The great debate over the<br>ORIGIN OF THE ICE CREAM SUNDAE<br>Who made the first true ice cream sundae,<br>and who came up with that unique name?<br>Those are questions that food aficionados<br>have been wrestling with for more than a<br>century.<br>The earliest claim belongs to Two Rivers,<br>Wisconsin. On a summer Sunday in 1881, soda<br>fountain owner Ed Berners, at the request of<br>a vacationing customer, reportedly poured<br>chocolate syrup over a bowl of vanilla ice<br>cream. Berners said in later interviews that he<br>didn’t think the concoction would taste good,<br>since soda was the common accompaniment<br>to ice cream at the time. Luckily for Berners,<br>he was dead wrong.<br>He began serving it every Sunday thereafter<br>for a nickel. He also mixed in other<br>ingredients, like bananas, nuts, raspberry<br>sauce, and puffed rice, cooking up creations<br>with colorful names like the Jennie Flip and<br>the Flora Dora. Because of the significance<br>of the last day of the week, Berners called<br>his chocolate and ice cream treat a “Sunday,”<br>later changing the name to “sundae” at the<br>suggestion of a customer.<br>Residents of Two Rivers are fiercely proud of<br>their contribution to America’s dessert menus.<br>The town’s visitors center houses a working<br>replica of Berners’s soda fountain, where you<br>can stop in for your own Two Rivers sundae.<br>There’s also a plaque and various references<br>throughout the town naming it the “official”<br>birthplace of the ice cream sundae.<br>In the meantime, officials in Ithaca, New<br>York claim that on Sunday, April 3, 1892, the<br>Reverend John Scott of the local Unitarian<br>Church dropped by the Platt &amp; Colt Pharmacy<br>after services to enjoy a bowl of ice cream<br>with the shop’s owner, Chester Platt. Instead<br>of the usual unadorned scoops of vanilla, Platt<br>decided to add cherry syrup and a candied<br>cherry to each serving of ice cream. Platt<br>named his creation the “Cherry Sunday” in<br>honor of the day and his most holy company.<br>He advertised the dish in the local newspaper,<br>and soon after introduced a chocolate and a</p><p>strawberry Sunday. He eventually changed<br>the name of his dish to “sundae” to avoid<br>offending the good reverend and the church.<br>Folks in Ithaca believe their story trumps<br>Two Rivers’ for one big reason: evidence.<br>Several years ago, a pair of intrepid local high<br>schoolers rooted around in the town archives<br>and came up with a solid paper trail. This<br>includes the 1892 newspaper advertisement<br>(believed to have been placed the day<br>after Platt first served his Cherry Sunday),<br>a newspaper article about Platt’s Sundays,<br>a letter from the shop’s clerk, and a store<br>ledger proving Platt had all the ingredients<br>necessary.<br>Two Rivers stands by its story, despite Ithaca’s<br>seemingly foolproof case. Their argument:<br>Just because they lack hard evidence doesn’t<br>mean it didn’t happen. With both sides<br>firmly dug in, a civic (albeit good-humored)<br>spat has developed between the towns. Each<br>has bought an ad in the other’s newspaper<br>stating its case. Officials have written letters<br>back and forth over the years. Both towns’<br>websites tell their side while also taking<br>shots at the other. Two Rivers even issued<br>a cease-and-desist order to Ithaca<br>regarding their sundae story.<br>Residents, meanwhile, are<br>quick to sound off about their<br>respective first-ness.<br>“Everybody knows Two Rivers<br>invented it,” one resident told The<br>New York Times back in 2006. “That’s<br>why we’re all so fat here. We eat a lot of<br>them.”<br>By Jeff Wells<br>Edited for space, full article on<br>Mentalfloss.com, July 20, 2016</p><p>The Two Rivers Visitors Center, located<br>in the historic Washington House,<br>features a working Berners’s Ice Cream<br>Parlor. Open 11am- 8pm daily.</p><p>25</p><p>Tier: compiled</p>",
+   "id": "N1873",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-08 (karel): Family book transcription (verbatim text layer, reflowed; no translation). Source: Wood Family Genealogy, updated for the Wood Family Reunion, July 2019, Two Rivers, Wisconsin (Beth Moorcones, designer and editor), printed page 25 (PDF page 13). Compiled book content as of 2019, not verified genealogical fact. Non-family article reprinted in the book (Two Rivers local history); placed on Norman Bentley Wood as the book's Generation 11 anchor for book completeness only, not a biographical fact about him.\n\nThe great debate over the\nORIGIN OF THE ICE CREAM SUNDAE\nWho made the first true ice cream sundae,\nand who came up with that unique name?\nThose are questions that food aficionados\nhave been wrestling with for more than a\ncentury.\nThe earliest claim belongs to Two Rivers,\nWisconsin. On a summer Sunday in 1881, soda\nfountain owner Ed Berners, at the request of\na vacationing customer, reportedly poured\nchocolate syrup over a bowl of vanilla ice\ncream. Berners said in later interviews that he\ndidn’t think the concoction would taste good,\nsince soda was the common accompaniment\nto ice cream at the time. Luckily for Berners,\nhe was dead wrong.\nHe began serving it every Sunday thereafter\nfor a nickel. He also mixed in other\ningredients, like bananas, nuts, raspberry\nsauce, and puffed rice, cooking up creations\nwith colorful names like the Jennie Flip and\nthe Flora Dora. Because of the significance\nof the last day of the week, Berners called\nhis chocolate and ice cream treat a “Sunday,”\nlater changing the name to “sundae” at the\nsuggestion of a customer.\nResidents of Two Rivers are fiercely proud of\ntheir contribution to America’s dessert menus.\nThe town’s visitors center houses a working\nreplica of Berners’s soda fountain, where you\ncan stop in for your own Two Rivers sundae.\nThere’s also a plaque and various references\nthroughout the town naming it the “official”\nbirthplace of the ice cream sundae.\nIn the meantime, officials in Ithaca, New\nYork claim that on Sunday, April 3, 1892, the\nReverend John Scott of the local Unitarian\nChurch dropped by the Platt & Colt Pharmacy\nafter services to enjoy a bowl of ice cream\nwith the shop’s owner, Chester Platt. Instead\nof the usual unadorned scoops of vanilla, Platt\ndecided to add cherry syrup and a candied\ncherry to each serving of ice cream. Platt\nnamed his creation the “Cherry Sunday” in\nhonor of the day and his most holy company.\nHe advertised the dish in the local newspaper,\nand soon after introduced a chocolate and a\n\nstrawberry Sunday. He eventually changed\nthe name of his dish to “sundae” to avoid\noffending the good reverend and the church.\nFolks in Ithaca believe their story trumps\nTwo Rivers’ for one big reason: evidence.\nSeveral years ago, a pair of intrepid local high\nschoolers rooted around in the town archives\nand came up with a solid paper trail. This\nincludes the 1892 newspaper advertisement\n(believed to have been placed the day\nafter Platt first served his Cherry Sunday),\na newspaper article about Platt’s Sundays,\na letter from the shop’s clerk, and a store\nledger proving Platt had all the ingredients\nnecessary.\nTwo Rivers stands by its story, despite Ithaca’s\nseemingly foolproof case. Their argument:\nJust because they lack hard evidence doesn’t\nmean it didn’t happen. With both sides\nfirmly dug in, a civic (albeit good-humored)\nspat has developed between the towns. Each\nhas bought an ad in the other’s newspaper\nstating its case. Officials have written letters\nback and forth over the years. Both towns’\nwebsites tell their side while also taking\nshots at the other. Two Rivers even issued\na cease-and-desist order to Ithaca\nregarding their sundae story.\nResidents, meanwhile, are\nquick to sound off about their\nrespective first-ness.\n“Everybody knows Two Rivers\ninvented it,” one resident told The\nNew York Times back in 2006. “That’s\nwhy we’re all so fat here. We eat a lot of\nthem.”\nBy Jeff Wells\nEdited for space, full article on\nMentalfloss.com, July 20, 2016\n\nThe Two Rivers Visitors Center, located\nin the historic Washington House,\nfeatures a working Berners’s Ice Cream\nParlor. Open 11am- 8pm daily.\n\n25\n\nTier: compiled",
+   "type": "Transcript"
+  },
+  "N1891": {
+   "attached_to": [
+    {
+     "id": "I0023",
+     "type": "person"
+    }
+   ],
+   "change": 1794178814,
+   "flags": [],
+   "handle": "105165e8b83b119c5b1a580d01a1",
+   "html": "<p>2026-11-08 (karel): Family book transcription (verbatim text layer, reflowed; no translation). Source: Wood Family Genealogy, updated for the Wood Family Reunion, July 2019, Two Rivers, Wisconsin (Beth Moorcones, designer and editor), printed page 43 (PDF page 22). Compiled book content as of 2019, not verified genealogical fact. Non-family visitors-guide reprint. The article is a scanned image (no text layer); body transcribed by reading the page image at 160 dpi; two small photo captions read at low resolution are marked [unclear]. Placed on Norman Bentley Wood as book anchor, for completeness only.</p><p>Places of interest<br>LIGHTHOUSES<br>MANITOWOC TWO RIVERS<br>Lighthouses<br>[caption] Manitowoc Breakwater Lighthouse<br>Lighthouses have seen their importance for navigation decline while at the same time the public interest in these historic structures has grown. Steeped with history and architecturally beautiful, lighthouses are some of the most popular attractions on Lake Michigan. Our area is proud to be home to three historic lighthouses.<br>Rawley Point Light, at Point Beach State Forest, is among the brightest signals on the Great Lakes rising 113 feet above the water. It was named after Peter Rawley, one of the first settlers in Manitowoc County, located five miles north of Two Rivers on County Road O. Tours are not available, however great views can be seen from a trail at Point Beach State Forest.<br>Constructed in 1839 the Manitowoc Breakwater Light was the first light to mark the harbor entrance. In 2010 the lighthouse was purchased with the new owner painting and restoring the exterior of the lighthouse in 2018. The light is located at the end of the breakwater on the north side of the harbor next to the Manitowoc Marina. The Breakwater Light makes for a nice stroll on a summer day, and is a favorite place to take photos.<br>Built in 1886, Two Rivers North Pierhead was relocated in 1975 from its original position (the end of the Two Rivers harbor breakwater). Displayed now at Rogers Street Fishing Village in Two Rivers, the light is the only example of a wood pierhead light surviving on the Upper Great Lakes.<br>[caption] Two Rivers North Pierhead at Rogers Street Fishing Village<br>[caption, small print, partly unclear] Manitowoc Breakwater Light ... Manitowoc Marina<br>[caption, unclear] Rawley Point Light at Point Beach State Forest<br>Reprinted from the Manitowoc/Two Rivers Official 2019 Visitors Guide<br>43</p><p>Tier: compiled</p>",
+   "id": "N1891",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-08 (karel): Family book transcription (verbatim text layer, reflowed; no translation). Source: Wood Family Genealogy, updated for the Wood Family Reunion, July 2019, Two Rivers, Wisconsin (Beth Moorcones, designer and editor), printed page 43 (PDF page 22). Compiled book content as of 2019, not verified genealogical fact. Non-family visitors-guide reprint. The article is a scanned image (no text layer); body transcribed by reading the page image at 160 dpi; two small photo captions read at low resolution are marked [unclear]. Placed on Norman Bentley Wood as book anchor, for completeness only.\n\nPlaces of interest\nLIGHTHOUSES\nMANITOWOC TWO RIVERS\nLighthouses\n[caption] Manitowoc Breakwater Lighthouse\nLighthouses have seen their importance for navigation decline while at the same time the public interest in these historic structures has grown. Steeped with history and architecturally beautiful, lighthouses are some of the most popular attractions on Lake Michigan. Our area is proud to be home to three historic lighthouses.\nRawley Point Light, at Point Beach State Forest, is among the brightest signals on the Great Lakes rising 113 feet above the water. It was named after Peter Rawley, one of the first settlers in Manitowoc County, located five miles north of Two Rivers on County Road O. Tours are not available, however great views can be seen from a trail at Point Beach State Forest.\nConstructed in 1839 the Manitowoc Breakwater Light was the first light to mark the harbor entrance. In 2010 the lighthouse was purchased with the new owner painting and restoring the exterior of the lighthouse in 2018. The light is located at the end of the breakwater on the north side of the harbor next to the Manitowoc Marina. The Breakwater Light makes for a nice stroll on a summer day, and is a favorite place to take photos.\nBuilt in 1886, Two Rivers North Pierhead was relocated in 1975 from its original position (the end of the Two Rivers harbor breakwater). Displayed now at Rogers Street Fishing Village in Two Rivers, the light is the only example of a wood pierhead light surviving on the Upper Great Lakes.\n[caption] Two Rivers North Pierhead at Rogers Street Fishing Village\n[caption, small print, partly unclear] Manitowoc Breakwater Light ... Manitowoc Marina\n[caption, unclear] Rawley Point Light at Point Beach State Forest\nReprinted from the Manitowoc/Two Rivers Official 2019 Visitors Guide\n43\n\nTier: compiled",
+   "type": "Transcript"
+  },
+  "N1897": {
+   "attached_to": [
+    {
+     "id": "I0038",
+     "type": "person"
+    }
+   ],
+   "change": 1794178816,
+   "flags": [],
+   "handle": "105165e8f41c3a5d94648bf1a31b",
+   "html": "<p>2026-11-08 (karel): Family book transcription (verbatim text layer, reflowed; no translation). Source: Wood Family Genealogy, updated for the Wood Family Reunion, July 2019, Two Rivers, Wisconsin (Beth Moorcones, designer and editor), printed page 49 (PDF page 25). Compiled family-submitted text as of 2019; statements are the book&#x27;s claims, not verified facts. Contains claims flagged unproven (Mayflower chain; Samuel Wood&#x27;s paternity).</p><p>First Generation: Name of your Mayflower Pilgrim Ancestors: John Howland and Elizabeth Tilley<br>(2) Daughter: __ Hope Howland________________Married: ___John Chipman<br>(3) Daughter: __ Hope Chipman _______________ Married: ___John Huckens<br>(4) Daughter: __ Hope Huckens________________ Married: ___Thomas Nelson<br>(5) Daughter: __ Hannah Nelson _______________ Married: ___Jabez Wood*1<br>(6) Son:_______ Jabez Wood__________________ Married: ___Joanna Short<br>(7) Son:_______ Philip Wood*2 _________________Married: ___Eunice Pierce<br>(8) Son: _______ Samuel Wood*3________________ Married: ___Abigail Church<br>(9) Son: _______ Franklin Wood ________________ Married: ___Sarah Eliza Barber<br>(10) Son: ______ George S. Wood_______________ Married: ___Mary Wagner Bentley<br>(11) Son: ______ Norman Bentley Wood__________Married: ___Mae Chill<br>Notes<br>*1. Jabez Wood is the son of David Wood, the son of Henry<br>Wood. Henry Wood (sometimes called Henry Atwood)<br>was an early member of the Plymouth Colony, arriving<br>in 1641 or thereabouts. Three of four brothers settled<br>in the Plymouth Colony; they were John, Henry, and<br>Stephen Wood.<br>*2. Philip Wood was a Revolutionary soldier, marched<br>from Rehobeth, Mass, in Capt Bullock’s Company<br>at the Rhode Island Alarm, 1776.<br>*3. Samuel Wood moved to Farnham in Quebec<br>Provence, Canada. He owned a farm, became a<br>Justice of the Peace and served in the Legislative<br>Assembly of Lower Canada. He died and is buried in<br>Canada. Original documentation verifying Samuel<br>Wood’s paternity is still being sought.<br>Built in the 1950s, the Mayflower II is a modern recreation of that<br>vessel and a powerful symbol of the American immigrant dream.<br>In late December it arrived in Mystic Seaport, from its home port in<br>Plymouth—where it is operated by the Plimoth Plantation—for the<br>first step in a multiphase restoration project that will continue off<br>and on for the next four years until 2020 —the 400th anniversary<br>of the Mayflower voyage.<br>49</p><p>Tier: compiled</p>",
+   "id": "N1897",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-08 (karel): Family book transcription (verbatim text layer, reflowed; no translation). Source: Wood Family Genealogy, updated for the Wood Family Reunion, July 2019, Two Rivers, Wisconsin (Beth Moorcones, designer and editor), printed page 49 (PDF page 25). Compiled family-submitted text as of 2019; statements are the book's claims, not verified facts. Contains claims flagged unproven (Mayflower chain; Samuel Wood's paternity).\n\nFirst Generation: Name of your Mayflower Pilgrim Ancestors: John Howland and Elizabeth Tilley\n(2) Daughter: __ Hope Howland________________Married: ___John Chipman\n(3) Daughter: __ Hope Chipman _______________ Married: ___John Huckens\n(4) Daughter: __ Hope Huckens________________ Married: ___Thomas Nelson\n(5) Daughter: __ Hannah Nelson _______________ Married: ___Jabez Wood*1\n(6) Son:_______ Jabez Wood__________________ Married: ___Joanna Short\n(7) Son:_______ Philip Wood*2 _________________Married: ___Eunice Pierce\n(8) Son: _______ Samuel Wood*3________________ Married: ___Abigail Church\n(9) Son: _______ Franklin Wood ________________ Married: ___Sarah Eliza Barber\n(10) Son: ______ George S. Wood_______________ Married: ___Mary Wagner Bentley\n(11) Son: ______ Norman Bentley Wood__________Married: ___Mae Chill\nNotes\n*1. Jabez Wood is the son of David Wood, the son of Henry\nWood. Henry Wood (sometimes called Henry Atwood)\nwas an early member of the Plymouth Colony, arriving\nin 1641 or thereabouts. Three of four brothers settled\nin the Plymouth Colony; they were John, Henry, and\nStephen Wood.\n*2. Philip Wood was a Revolutionary soldier, marched\nfrom Rehobeth, Mass, in Capt Bullock’s Company\nat the Rhode Island Alarm, 1776.\n*3. Samuel Wood moved to Farnham in Quebec\nProvence, Canada. He owned a farm, became a\nJustice of the Peace and served in the Legislative\nAssembly of Lower Canada. He died and is buried in\nCanada. Original documentation verifying Samuel\nWood’s paternity is still being sought.\nBuilt in the 1950s, the Mayflower II is a modern recreation of that\nvessel and a powerful symbol of the American immigrant dream.\nIn late December it arrived in Mystic Seaport, from its home port in\nPlymouth—where it is operated by the Plimoth Plantation—for the\nfirst step in a multiphase restoration project that will continue off\nand on for the next four years until 2020 —the 400th anniversary\nof the Mayflower voyage.\n49\n\nTier: compiled",
+   "type": "Transcript"
+  },
+  "N1916": {
+   "attached_to": [
+    {
+     "id": "I0023",
+     "type": "person"
+    }
+   ],
+   "change": 1794178821,
+   "flags": [],
+   "handle": "105165e9b504197499c37cdd6483",
+   "html": "<p>2026-11-08 (karel): Family book transcription (verbatim text layer, reflowed; no translation). Source: Wood Family Genealogy, updated for the Wood Family Reunion, July 2019, Two Rivers, Wisconsin (Beth Moorcones, designer and editor), printed page 65 (PDF page 33). Compiled family-submitted text as of 2019; statements are the book&#x27;s claims, not verified facts.</p><p>Our connections with the past...<br>HAMILTON MANUFACTURING CO.<br>The Wood family has a personal connection with the old Hamilton<br>Manufacturing Company – Norman Bentley Wood worked there as<br>a salesman, starting in 1937, and family lore has it that he modeled<br>for advertisements while employed there. The following account of<br>the company’s history was found on “Andrew T’s Archives” (https://<br>www.flickr.com/photos/andrew-turnbull/sets/72157632395470336/)<br>along with photos of the old plant. The catalog pages reproduced<br>here are available for viewing at http://www.telephonearchive.com/<br>dmworkshop/assets/pdfs/hamilton_1905_catalog.pdf.<br>The Hamilton company was founded by James Edward Hamilton<br>in 1880 as a producer of wood products; specifically wood<br>type. Wood type was ideal for newspaper and poster headlines<br>requiring large sizes of lettering that were impractical to produce<br>in lead. Though the technology was eventually obsolesced by<br>phototypesetting, the plant produced wood type as late as the<br>1980s.<br>To diversify, the firm expanded early on into the manufacture of<br>type cabinets, then dental cabinets, drafting tables, and laboratory<br>furniture. It also expanded into appliances, introducing the first<br>mass-produced automatic clothes dryer in 1938. At one point the<br>dryer business was so predominant that the factory produced not<br>only Hamilton appliances, but dryers under license for other brands<br>as well...and the company maintained a payroll of thousands with<br>a status of being the economic backbone of the area.<br>If the first half of the 20th century was a story of more and more,<br>however, the second half and beyond was a story of less and less.<br>Squeezed by larger manufacturers, Hamilton sold the appliance<br>business in 1968 and was acquired by American Hospital Supply<br>the same year. With several more bouts of downsizing and asset<br>sales in tow, the company was sold to Charles Barancik in 1982, Fisher<br>Scientific in 1993, and Thermo Electron in 2006. With each change,<br>the Two Rivers factories became an ever smaller cog in a bigger<br>and bigger corporate wheel...and the news in late 2011 that the<br>factories would ultimately close was the sad but seemingly inevitable<br>culmination of that.<br>After the last employee turned out the lights in September 2012,<br>all that was left in Hamilton’s 1920s-vintage downtown plant<br>was the Hamilton Wood Type Museum...a unique exhibition of<br>over 1.5 million pieces of type as well as functional printing and<br>manufacturing equipment housed in a portion of the original factory<br>floor. Unfortunately, with no one left to maintain the roof over their<br>heads, the museum closed after a final open house on December<br>29th...leaving a staff of volunteers to pack up and move every single<br>thing within to a different site.<br>The Hamilton Wood Type Museum lives on...see next page!<br>65</p><p>Tier: compiled</p>",
+   "id": "N1916",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-08 (karel): Family book transcription (verbatim text layer, reflowed; no translation). Source: Wood Family Genealogy, updated for the Wood Family Reunion, July 2019, Two Rivers, Wisconsin (Beth Moorcones, designer and editor), printed page 65 (PDF page 33). Compiled family-submitted text as of 2019; statements are the book's claims, not verified facts.\n\nOur connections with the past...\nHAMILTON MANUFACTURING CO.\nThe Wood family has a personal connection with the old Hamilton\nManufacturing Company – Norman Bentley Wood worked there as\na salesman, starting in 1937, and family lore has it that he modeled\nfor advertisements while employed there. The following account of\nthe company’s history was found on “Andrew T’s Archives” (https://\nwww.flickr.com/photos/andrew-turnbull/sets/72157632395470336/)\nalong with photos of the old plant. The catalog pages reproduced\nhere are available for viewing at http://www.telephonearchive.com/\ndmworkshop/assets/pdfs/hamilton_1905_catalog.pdf.\nThe Hamilton company was founded by James Edward Hamilton\nin 1880 as a producer of wood products; specifically wood\ntype. Wood type was ideal for newspaper and poster headlines\nrequiring large sizes of lettering that were impractical to produce\nin lead. Though the technology was eventually obsolesced by\nphototypesetting, the plant produced wood type as late as the\n1980s.\nTo diversify, the firm expanded early on into the manufacture of\ntype cabinets, then dental cabinets, drafting tables, and laboratory\nfurniture. It also expanded into appliances, introducing the first\nmass-produced automatic clothes dryer in 1938. At one point the\ndryer business was so predominant that the factory produced not\nonly Hamilton appliances, but dryers under license for other brands\nas well...and the company maintained a payroll of thousands with\na status of being the economic backbone of the area.\nIf the first half of the 20th century was a story of more and more,\nhowever, the second half and beyond was a story of less and less.\nSqueezed by larger manufacturers, Hamilton sold the appliance\nbusiness in 1968 and was acquired by American Hospital Supply\nthe same year. With several more bouts of downsizing and asset\nsales in tow, the company was sold to Charles Barancik in 1982, Fisher\nScientific in 1993, and Thermo Electron in 2006. With each change,\nthe Two Rivers factories became an ever smaller cog in a bigger\nand bigger corporate wheel...and the news in late 2011 that the\nfactories would ultimately close was the sad but seemingly inevitable\nculmination of that.\nAfter the last employee turned out the lights in September 2012,\nall that was left in Hamilton’s 1920s-vintage downtown plant\nwas the Hamilton Wood Type Museum...a unique exhibition of\nover 1.5 million pieces of type as well as functional printing and\nmanufacturing equipment housed in a portion of the original factory\nfloor. Unfortunately, with no one left to maintain the roof over their\nheads, the museum closed after a final open house on December\n29th...leaving a staff of volunteers to pack up and move every single\nthing within to a different site.\nThe Hamilton Wood Type Museum lives on...see next page!\n65\n\nTier: compiled",
+   "type": "Transcript"
+  },
+  "N1917": {
+   "attached_to": [
+    {
+     "id": "I0023",
+     "type": "person"
+    }
+   ],
+   "change": 1794178821,
+   "flags": [],
+   "handle": "105165e9bef6484e63bf76e2b617",
+   "html": "<p>2026-11-08 (karel): Family book transcription (verbatim text layer, reflowed; no translation). Source: Wood Family Genealogy, updated for the Wood Family Reunion, July 2019, Two Rivers, Wisconsin (Beth Moorcones, designer and editor), printed page 66 (PDF page 34). Compiled book content as of 2019, not verified genealogical fact. Non-family visitor information page; placed on Norman Bentley Wood because the book ties the family to Hamilton Manufacturing (p.65: he worked there as a salesman from 1937). Context only, not a biographical fact.</p><p>Places of interest<br>HAMILTON WOOD TYPE MUSEUM<br>This is the source. Hamilton Manufacturing was America’s<br>largest and longest wood type maker. We have the world’s<br>greatest collection of type and the tools to use it. You can<br>tour over 40,000 square feet of printing history from slabs<br>of rough-cut maple to row upon row of exquisite type.<br>We show the process, the machines, the presses and the<br>product. As a working museum, you can see a pantograph<br>that cut the type 100 years ago. On workshop days,<br>watch new printers pulling proofs or sign up for a unique<br>experience. Wander the gallery to view new or traditional<br>posters by artists near and far. Take a tour or visit Hamilton<br>Dry Goods, the museum store, filled with prints and<br>products often made by museum staff. Visit, learn, print,<br>repeat.</p><p>HOURS<br>May 1- October 31<br>Sunday..............................................................1pm-5pm<br>Monday. ..................................................................closed<br>Tuesday- Saturday. .....................................10am-5pm</p><p>1816 10th Street, Two Rivers, WI 54241<br>(920) 794-6272<br>www.woodtype.org</p><p>ADMISSION<br>General Admission. .....................................................$5<br>Children 12 &amp; under....................................................$3<br>Senior Citizens 65 &amp; older.........................................$3<br>Military Veterans. .........................................................$3</p><p>TOURS<br>Whether guided by a museum affiliate or browsing at your own<br>pace, a visit to Hamilton is sure to leave you with a wealth of wood<br>type knowledge. Self-guided tours may be taken any time during<br>regular business hours.<br>Guided museum tours are offered daily at 1pm. Learn about<br>historic and decorative wood type from one of the world’s largest<br>collections, take a journey through the machines and tools that<br>were used to manufacture wood type, and see working pressrooms<br>where we teach and continue to produce letterpress printed<br>pieces.<br>For more information, please call (920) 794-6272 or email info@<br>woodtype.org.</p><p>66</p><p>Tier: compiled</p>",
+   "id": "N1917",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-08 (karel): Family book transcription (verbatim text layer, reflowed; no translation). Source: Wood Family Genealogy, updated for the Wood Family Reunion, July 2019, Two Rivers, Wisconsin (Beth Moorcones, designer and editor), printed page 66 (PDF page 34). Compiled book content as of 2019, not verified genealogical fact. Non-family visitor information page; placed on Norman Bentley Wood because the book ties the family to Hamilton Manufacturing (p.65: he worked there as a salesman from 1937). Context only, not a biographical fact.\n\nPlaces of interest\nHAMILTON WOOD TYPE MUSEUM\nThis is the source. Hamilton Manufacturing was America’s\nlargest and longest wood type maker. We have the world’s\ngreatest collection of type and the tools to use it. You can\ntour over 40,000 square feet of printing history from slabs\nof rough-cut maple to row upon row of exquisite type.\nWe show the process, the machines, the presses and the\nproduct. As a working museum, you can see a pantograph\nthat cut the type 100 years ago. On workshop days,\nwatch new printers pulling proofs or sign up for a unique\nexperience. Wander the gallery to view new or traditional\nposters by artists near and far. Take a tour or visit Hamilton\nDry Goods, the museum store, filled with prints and\nproducts often made by museum staff. Visit, learn, print,\nrepeat.\n\nHOURS\nMay 1- October 31\nSunday..............................................................1pm-5pm\nMonday. ..................................................................closed\nTuesday- Saturday. .....................................10am-5pm\n\n1816 10th Street, Two Rivers, WI 54241\n(920) 794-6272\nwww.woodtype.org\n\nADMISSION\nGeneral Admission. .....................................................$5\nChildren 12 & under....................................................$3\nSenior Citizens 65 & older.........................................$3\nMilitary Veterans. .........................................................$3\n\nTOURS\nWhether guided by a museum affiliate or browsing at your own\npace, a visit to Hamilton is sure to leave you with a wealth of wood\ntype knowledge. Self-guided tours may be taken any time during\nregular business hours.\nGuided museum tours are offered daily at 1pm. Learn about\nhistoric and decorative wood type from one of the world’s largest\ncollections, take a journey through the machines and tools that\nwere used to manufacture wood type, and see working pressrooms\nwhere we teach and continue to produce letterpress printed\npieces.\nFor more information, please call (920) 794-6272 or email info@\nwoodtype.org.\n\n66\n\nTier: compiled",
+   "type": "Transcript"
   }
  },
  "people": {
@@ -132161,7 +133435,7 @@
     "type": "Birth",
     "year": 1955
    },
-   "change": 1793478612,
+   "change": 1794178815,
    "citations": [
     "C1172"
    ],
@@ -133829,7 +135103,7 @@
     "type": "Birth",
     "year": 1889
    },
-   "change": 1793043738,
+   "change": 1794178821,
    "citations": [],
    "death": {
     "date": {
@@ -133896,7 +135170,9 @@
    "families": [
     "F0013"
    ],
-   "flags": [],
+   "flags": [
+    "agent-proposed"
+   ],
    "gender": "M",
    "handle": "104ebd54a0bc1cfc25a47f8c8e1e",
    "id": "I0023",
@@ -133931,19 +135207,31 @@
     "type": "Birth Name"
    },
    "notes": [
-    "N0005"
+    "N0005",
+    "N1845",
+    "N1846",
+    "N1847",
+    "N1848",
+    "N1873",
+    "N1891",
+    "N1916",
+    "N1917"
    ],
    "parents": [
     "F0014"
    ],
    "provenance": [
+    "agent-karel",
+    "agent-proposed",
     "import-ancestry-2026-10-25"
    ],
    "review": "unreviewed",
    "status": "full",
    "tags": [
-    "import-ancestry-2026-10-25",
-    "unreviewed"
+    "unreviewed",
+    "agent-karel",
+    "agent-proposed",
+    "import-ancestry-2026-10-25"
    ],
    "urls": [],
    "xref": {
@@ -135237,7 +136525,7 @@
     "type": "Birth",
     "year": 1787
    },
-   "change": 1794002403,
+   "change": 1794178816,
    "citations": [],
    "death": {
     "date": {
@@ -135328,7 +136616,8 @@
     "N1701",
     "N1775",
     "N1778",
-    "N1782"
+    "N1782",
+    "N1897"
    ],
    "parents": [
     "F0040"
@@ -135341,9 +136630,9 @@
    "review": "unreviewed",
    "status": "full",
    "tags": [
+    "unreviewed",
     "agent-karel",
     "agent-proposed",
-    "unreviewed",
     "import-ancestry-2026-10-25"
    ],
    "urls": [],
@@ -136834,7 +138123,7 @@
     "type": "Birth",
     "year": 1921
    },
-   "change": 1793043739,
+   "change": 1794178807,
    "citations": [],
    "death": {
     "date": {
@@ -136873,7 +138162,9 @@
    "families": [
     "F0029"
    ],
-   "flags": [],
+   "flags": [
+    "agent-proposed"
+   ],
    "gender": "M",
    "handle": "104ebd54a8253298978d3b56c37",
    "id": "I0056",
@@ -136895,13 +138186,17 @@
     "F0013"
    ],
    "provenance": [
+    "agent-karel",
+    "agent-proposed",
     "import-ancestry-2026-10-25"
    ],
    "review": "unreviewed",
    "status": "full",
    "tags": [
-    "import-ancestry-2026-10-25",
-    "unreviewed"
+    "unreviewed",
+    "agent-karel",
+    "agent-proposed",
+    "import-ancestry-2026-10-25"
    ],
    "urls": [],
    "xref": {
@@ -137022,7 +138317,7 @@
     "type": "Birth",
     "year": 1927
    },
-   "change": 1793043734,
+   "change": 1794178817,
    "citations": [],
    "death": {
     "date": {
@@ -137065,7 +138360,9 @@
    "families": [
     "F0031"
    ],
-   "flags": [],
+   "flags": [
+    "agent-proposed"
+   ],
    "gender": "F",
    "handle": "104ebd54a8562dd993b057f02a15",
    "id": "I0058",
@@ -137089,13 +138386,17 @@
     "F0013"
    ],
    "provenance": [
+    "agent-karel",
+    "agent-proposed",
     "import-ancestry-2026-10-25"
    ],
    "review": "unreviewed",
    "status": "full",
    "tags": [
-    "import-ancestry-2026-10-25",
-    "unreviewed"
+    "unreviewed",
+    "agent-karel",
+    "agent-proposed",
+    "import-ancestry-2026-10-25"
    ],
    "urls": [],
    "xref": {
@@ -137122,7 +138423,7 @@
     "type": "Birth",
     "year": 1930
    },
-   "change": 1793473209,
+   "change": 1794178820,
    "citations": [],
    "death": {
     "date": null,
@@ -137193,10 +138494,10 @@
    "review": "unreviewed",
    "status": "full",
    "tags": [
-    "agent-karel",
-    "import-ancestry-2026-10-25",
     "unreviewed",
-    "agent-proposed"
+    "agent-karel",
+    "agent-proposed",
+    "import-ancestry-2026-10-25"
    ],
    "urls": [],
    "xref": {
@@ -137207,7 +138508,7 @@
   "I0060": {
    "alt_names": [],
    "attributes": [],
-   "change": 1793043710,
+   "change": 1794178810,
    "citations": [],
    "death": {
     "date": null,
@@ -137237,7 +138538,9 @@
    "families": [
     "F0033"
    ],
-   "flags": [],
+   "flags": [
+    "agent-proposed"
+   ],
    "gender": "F",
    "handle": "104ebd54a87c21fa5886660ab6a8",
    "id": "I0060",
@@ -137261,13 +138564,17 @@
     "F0013"
    ],
    "provenance": [
+    "agent-karel",
+    "agent-proposed",
     "import-ancestry-2026-10-25"
    ],
    "review": "unreviewed",
    "status": "full",
    "tags": [
-    "import-ancestry-2026-10-25",
-    "unreviewed"
+    "unreviewed",
+    "agent-karel",
+    "agent-proposed",
+    "import-ancestry-2026-10-25"
    ],
    "urls": [],
    "xref": {
@@ -143553,7 +144860,7 @@
     "type": "Birth",
     "year": 1924
    },
-   "change": 1793043716,
+   "change": 1794178814,
    "citations": [],
    "death": {
     "date": {
@@ -143613,7 +144920,9 @@
     "F0070",
     "F0071"
    ],
-   "flags": [],
+   "flags": [
+    "agent-proposed"
+   ],
    "gender": "M",
    "handle": "104ebd54b15b30405216f89b590b",
    "id": "I0143",
@@ -143645,13 +144954,17 @@
     "F0072"
    ],
    "provenance": [
+    "agent-karel",
+    "agent-proposed",
     "import-ancestry-2026-10-25"
    ],
    "review": "unreviewed",
    "status": "full",
    "tags": [
-    "import-ancestry-2026-10-25",
-    "unreviewed"
+    "unreviewed",
+    "agent-karel",
+    "agent-proposed",
+    "import-ancestry-2026-10-25"
    ],
    "urls": [],
    "xref": {
@@ -143678,7 +144991,7 @@
     "type": "Birth",
     "year": 1925
    },
-   "change": 1793043741,
+   "change": 1794178811,
    "citations": [],
    "death": {
     "date": {
@@ -143737,7 +145050,9 @@
    "families": [
     "F0071"
    ],
-   "flags": [],
+   "flags": [
+    "agent-proposed"
+   ],
    "gender": "F",
    "handle": "104ebd54b1d5706f742012241f84",
    "id": "I0144",
@@ -143766,13 +145081,17 @@
     "F0013"
    ],
    "provenance": [
+    "agent-karel",
+    "agent-proposed",
     "import-ancestry-2026-10-25"
    ],
    "review": "unreviewed",
    "status": "full",
    "tags": [
-    "import-ancestry-2026-10-25",
-    "unreviewed"
+    "unreviewed",
+    "agent-karel",
+    "agent-proposed",
+    "import-ancestry-2026-10-25"
    ],
    "urls": [],
    "xref": {
@@ -144413,7 +145732,7 @@
     "type": "Birth",
     "year": 1895
    },
-   "change": 1793043716,
+   "change": 1794151810,
    "citations": [],
    "death": {
     "date": {
@@ -144499,9 +145818,12 @@
    ],
    "families": [
     "F0074",
-    "F0075"
+    "F0075",
+    "F0187"
    ],
-   "flags": [],
+   "flags": [
+    "agent-proposed"
+   ],
    "gender": "M",
    "handle": "104ebd54b4e3265e1c7b1b6a229d",
    "id": "I0149",
@@ -144534,13 +145856,17 @@
     "F0073"
    ],
    "provenance": [
+    "agent-karel",
+    "agent-proposed",
     "import-ancestry-2026-10-25"
    ],
    "review": "unreviewed",
    "status": "full",
    "tags": [
-    "import-ancestry-2026-10-25",
-    "unreviewed"
+    "unreviewed",
+    "agent-proposed",
+    "agent-karel",
+    "import-ancestry-2026-10-25"
    ],
    "urls": [],
    "xref": {
@@ -156766,7 +158092,7 @@
     "type": "Birth",
     "year": 1920
    },
-   "change": 1793043714,
+   "change": 1794151809,
    "citations": [],
    "death": {
     "date": {
@@ -156805,7 +158131,9 @@
    "families": [
     "F0113"
    ],
-   "flags": [],
+   "flags": [
+    "agent-proposed"
+   ],
    "gender": "F",
    "handle": "104ebd54c594cf91a3d5249ecca",
    "id": "I0302",
@@ -156823,15 +158151,21 @@
     "type": "Birth Name"
    },
    "notes": [],
-   "parents": [],
+   "parents": [
+    "F0186"
+   ],
    "provenance": [
+    "agent-karel",
+    "agent-proposed",
     "import-ancestry-2026-10-25"
    ],
    "review": "unreviewed",
    "status": "full",
    "tags": [
-    "import-ancestry-2026-10-25",
-    "unreviewed"
+    "unreviewed",
+    "agent-proposed",
+    "agent-karel",
+    "import-ancestry-2026-10-25"
    ],
    "urls": [],
    "xref": {
@@ -162092,7 +163426,8 @@
   },
   "I0393": {
    "families": [
-    "F0183"
+    "F0183",
+    "F0185"
    ],
    "gender": "M",
    "handle": "1051224fa0962dd6582b5509081c",
@@ -162387,6 +163722,521 @@
    "urls": [],
    "xref": {
     "ancestry": "212814443046"
+   }
+  },
+  "I0397": {
+   "alt_names": [],
+   "attributes": [],
+   "birth": {
+    "date": {
+     "day": 14,
+     "iso": "1897-08-14",
+     "modifier": null,
+     "month": 8,
+     "quality": null,
+     "sort": 2414151,
+     "text": "14 August 1897",
+     "year": 1897
+    },
+    "event": "E1574",
+    "place": "P0332",
+    "type": "Birth",
+    "year": 1897
+   },
+   "change": 1794151809,
+   "citations": [
+    "C1275"
+   ],
+   "death": {
+    "date": {
+     "day": 15,
+     "iso": "1979-04-15",
+     "modifier": null,
+     "month": 4,
+     "quality": null,
+     "sort": 2443979,
+     "text": "15 April 1979",
+     "year": 1979
+    },
+    "event": "E1575",
+    "place": "P0030",
+    "type": "Death",
+    "year": 1979
+   },
+   "events": [
+    {
+     "ref": "E1574",
+     "role": "Primary"
+    },
+    {
+     "ref": "E1575",
+     "role": "Primary"
+    }
+   ],
+   "families": [
+    "F0186"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "gender": "M",
+   "handle": "105155cf0e86e36d1ffd27ec13d",
+   "id": "I0397",
+   "media": [],
+   "name": {
+    "call": "",
+    "display": "George F. Karl",
+    "first": "George F.",
+    "nick": "",
+    "prefix": "",
+    "sort": "Karl, George F.",
+    "suffix": "",
+    "surname": "Karl",
+    "title": "",
+    "type": "Birth Name"
+   },
+   "notes": [],
+   "parents": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "urls": [],
+   "xref": {
+    "ancestry": "212814968024"
+   }
+  },
+  "I0398": {
+   "alt_names": [
+    {
+     "call": "",
+     "date": null,
+     "display": "Pauline A. Karl",
+     "first": "Pauline A.",
+     "nick": "",
+     "prefix": "",
+     "sort": "Karl, Pauline A.",
+     "suffix": "",
+     "surname": "Karl",
+     "title": "",
+     "type": "Married Name"
+    }
+   ],
+   "attributes": [],
+   "birth": {
+    "date": {
+     "day": 25,
+     "iso": "1898-06-25",
+     "modifier": null,
+     "month": 6,
+     "quality": null,
+     "sort": 2414466,
+     "text": "25 June 1898",
+     "year": 1898
+    },
+    "event": "E1576",
+    "place": "P0332",
+    "type": "Birth",
+    "year": 1898
+   },
+   "change": 1794151809,
+   "citations": [
+    "C1276"
+   ],
+   "death": {
+    "date": {
+     "day": 11,
+     "iso": "1989-08-11",
+     "modifier": null,
+     "month": 8,
+     "quality": null,
+     "sort": 2447750,
+     "text": "11 August 1989",
+     "year": 1989
+    },
+    "event": "E1577",
+    "place": "P0030",
+    "type": "Death",
+    "year": 1989
+   },
+   "events": [
+    {
+     "ref": "E1576",
+     "role": "Primary"
+    },
+    {
+     "ref": "E1577",
+     "role": "Primary"
+    }
+   ],
+   "families": [
+    "F0186"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "gender": "F",
+   "handle": "105155cf369449c3dc2a26b84ff3",
+   "id": "I0398",
+   "media": [],
+   "name": {
+    "call": "",
+    "display": "Pauline A. Kowalski",
+    "first": "Pauline A.",
+    "nick": "",
+    "prefix": "",
+    "sort": "Kowalski, Pauline A.",
+    "suffix": "",
+    "surname": "Kowalski",
+    "title": "",
+    "type": "Birth Name"
+   },
+   "notes": [],
+   "parents": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "urls": [],
+   "xref": {
+    "ancestry": "212814977135"
+   }
+  },
+  "I0399": {
+   "alt_names": [
+    {
+     "call": "",
+     "date": null,
+     "display": "Charlotte G. Ferdon",
+     "first": "Charlotte G.",
+     "nick": "",
+     "prefix": "",
+     "sort": "Ferdon, Charlotte G.",
+     "suffix": "",
+     "surname": "Ferdon",
+     "title": "",
+     "type": "Married Name"
+    }
+   ],
+   "attributes": [],
+   "birth": {
+    "date": {
+     "day": 29,
+     "iso": "1925-04-29",
+     "modifier": null,
+     "month": 4,
+     "quality": null,
+     "sort": 2424270,
+     "text": "29 April 1925",
+     "year": 1925
+    },
+    "event": "E1578",
+    "place": "P0332",
+    "type": "Birth",
+    "year": 1925
+   },
+   "change": 1794151809,
+   "citations": [
+    "C1277"
+   ],
+   "death": {
+    "date": {
+     "day": 21,
+     "iso": "2007-11-21",
+     "modifier": null,
+     "month": 11,
+     "quality": null,
+     "sort": 2454426,
+     "text": "21 November 2007",
+     "year": 2007
+    },
+    "event": "E1579",
+    "place": null,
+    "type": "Death",
+    "year": 2007
+   },
+   "events": [
+    {
+     "ref": "E1578",
+     "role": "Primary"
+    },
+    {
+     "ref": "E1579",
+     "role": "Primary"
+    }
+   ],
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "gender": "F",
+   "handle": "105155cf68f733fa7cb69675cb51",
+   "id": "I0399",
+   "media": [],
+   "name": {
+    "call": "",
+    "display": "Charlotte G. Karl",
+    "first": "Charlotte G.",
+    "nick": "",
+    "prefix": "",
+    "sort": "Karl, Charlotte G.",
+    "suffix": "",
+    "surname": "Karl",
+    "title": "",
+    "type": "Birth Name"
+   },
+   "notes": [],
+   "parents": [
+    "F0186"
+   ],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "urls": [],
+   "xref": {
+    "ancestry": "212814977212"
+   }
+  },
+  "I0400": {
+   "alt_names": [
+    {
+     "call": "",
+     "date": null,
+     "display": "Lydia Konecny",
+     "first": "Lydia",
+     "nick": "",
+     "prefix": "",
+     "sort": "Konecny, Lydia",
+     "suffix": "",
+     "surname": "Konecny",
+     "title": "",
+     "type": "Married Name"
+    }
+   ],
+   "attributes": [],
+   "birth": {
+    "date": {
+     "day": 23,
+     "iso": "1895-05-23",
+     "modifier": null,
+     "month": 5,
+     "quality": null,
+     "sort": 2413337,
+     "text": "23 May 1895",
+     "year": 1895
+    },
+    "event": "E1580",
+    "place": "P0333",
+    "type": "Birth",
+    "year": 1895
+   },
+   "change": 1794151811,
+   "citations": [
+    "C1278"
+   ],
+   "death": {
+    "date": {
+     "day": 6,
+     "iso": "1959-07-06",
+     "modifier": null,
+     "month": 7,
+     "quality": null,
+     "sort": 2436756,
+     "text": "6 July 1959",
+     "year": 1959
+    },
+    "event": "E1581",
+    "place": "P0030",
+    "type": "Death",
+    "year": 1959
+   },
+   "events": [
+    {
+     "ref": "E1580",
+     "role": "Primary"
+    },
+    {
+     "ref": "E1581",
+     "role": "Primary"
+    }
+   ],
+   "families": [
+    "F0187"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "gender": "F",
+   "handle": "105155cf8e82649372a4166fac76",
+   "id": "I0400",
+   "media": [],
+   "name": {
+    "call": "",
+    "display": "Lydia Prohaska",
+    "first": "Lydia",
+    "nick": "",
+    "prefix": "",
+    "sort": "Prohaska, Lydia",
+    "suffix": "",
+    "surname": "Prohaska",
+    "title": "",
+    "type": "Birth Name"
+   },
+   "notes": [],
+   "parents": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "urls": [],
+   "xref": {
+    "ancestry": "212814977451"
+   }
+  },
+  "I0401": {
+   "families": [],
+   "gender": "F",
+   "handle": "105155cfb0db109388f75b25aa5",
+   "id": "I0401",
+   "name": {
+    "call": "",
+    "display": "Anna",
+    "first": "Anna",
+    "nick": "",
+    "prefix": "",
+    "sort": "Anna",
+    "suffix": "",
+    "surname": "",
+    "title": ""
+   },
+   "parents": [],
+   "status": "living"
+  },
+  "I0402": {
+   "alt_names": [
+    {
+     "call": "",
+     "date": null,
+     "display": "Ella Kliment",
+     "first": "Ella",
+     "nick": "",
+     "prefix": "",
+     "sort": "Kliment, Ella",
+     "suffix": "",
+     "surname": "Kliment",
+     "title": "",
+     "type": "Married Name"
+    }
+   ],
+   "attributes": [],
+   "birth": {
+    "date": {
+     "day": 6,
+     "iso": "1900-02-06",
+     "modifier": null,
+     "month": 2,
+     "quality": null,
+     "sort": 2415057,
+     "text": "6 February 1900",
+     "year": 1900
+    },
+    "event": "E1583",
+    "place": "P0030",
+    "type": "Birth",
+    "year": 1900
+   },
+   "change": 1794151808,
+   "citations": [
+    "C1280"
+   ],
+   "death": {
+    "date": {
+     "day": 13,
+     "iso": "1967-06-13",
+     "modifier": null,
+     "month": 6,
+     "quality": null,
+     "sort": 2439655,
+     "text": "13 June 1967",
+     "year": 1967
+    },
+    "event": "E1584",
+    "place": "P0030",
+    "type": "Death",
+    "year": 1967
+   },
+   "events": [
+    {
+     "ref": "E1583",
+     "role": "Primary"
+    },
+    {
+     "ref": "E1584",
+     "role": "Primary"
+    }
+   ],
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "gender": "F",
+   "handle": "105155cfcf143bc4b8dbc9c0e1fd",
+   "id": "I0402",
+   "media": [],
+   "name": {
+    "call": "",
+    "display": "Ella Wacek",
+    "first": "Ella",
+    "nick": "",
+    "prefix": "",
+    "sort": "Wacek, Ella",
+    "suffix": "",
+    "surname": "Wacek",
+    "title": "",
+    "type": "Birth Name"
+   },
+   "notes": [],
+   "parents": [
+    "F0185"
+   ],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "urls": [],
+   "xref": {
+    "ancestry": "212814977714"
    }
   }
  },
@@ -171177,6 +173027,70 @@
    ],
    "type": "Unknown",
    "urls": []
+  },
+  "P0332": {
+   "alt_names": [],
+   "citations": [],
+   "code": "",
+   "display": "Kewaunee, Wisconsin, USA",
+   "enclosed_by": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "105155cf00034837397b40c4f1cc",
+   "hierarchy": [
+    "P0332"
+   ],
+   "id": "P0332",
+   "lat": null,
+   "long": null,
+   "media": [],
+   "name": "Kewaunee, Wisconsin, USA",
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed",
+    "needs-place"
+   ],
+   "type": "Unknown",
+   "urls": []
+  },
+  "P0333": {
+   "alt_names": [],
+   "citations": [],
+   "code": "",
+   "display": "Milwaukee, Wisconsin, USA",
+   "enclosed_by": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "105155cf80aa39508cd73f4605d4",
+   "hierarchy": [
+    "P0333"
+   ],
+   "id": "P0333",
+   "lat": null,
+   "long": null,
+   "media": [],
+   "name": "Milwaukee, Wisconsin, USA",
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed",
+    "needs-place"
+   ],
+   "type": "Unknown",
+   "urls": []
   }
  },
  "repositories": {
@@ -171368,6 +173282,14 @@
    "handle": "105122508721e0d9953040a5f99",
    "id": "R0023",
    "name": "Online cemetery index / obituary transcription",
+   "notes": [],
+   "type": "Archive",
+   "urls": []
+  },
+  "R0024": {
+   "handle": "105155ceecbf4ae6a6e66d82ce52",
+   "id": "R0024",
+   "name": "2manitowoc.com (Evergreen Cemetery obituary transcriptions)",
    "notes": [],
    "type": "Archive",
    "urls": []
@@ -177911,6 +179833,205 @@
     "agent-proposed"
    ],
    "title": "Emma W. Lodl obituary transcription, Herald Times Reporter"
+  },
+  "S0207": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1275",
+    "C1281"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "105155cef121115b2892d1785237",
+   "id": "S0207",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0024"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "George F. Karl obituary, Herald Times Reporter (Manitowoc), 16 Apr 1979, p. 3"
+  },
+  "S0208": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1276"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "105155cf145b7d6644249046100b",
+   "id": "S0208",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0024"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "Pauline A. Karl obituary, Manitowoc Herald Times, 13 Aug 1989, p. B10"
+  },
+  "S0209": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1277"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "105155cf40182d9c0a79eb78be0c",
+   "id": "S0209",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0024"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "Charlotte G. Ferdon obituary, Herald Times Reporter (Manitowoc), 22 Nov 2007"
+  },
+  "S0210": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1278"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "105155cf72152d2952d6e6610c88",
+   "id": "S0210",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0024"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "Lydia Konecny obituary, Manitowoc Herald Times, 7 Jul 1959, p. 13"
+  },
+  "S0211": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1280"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "105155cfb6ef286a2ceee7eedc72",
+   "id": "S0211",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0024"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "Ella Kliment obituary, Manitowoc Herald Times, 14 Jun 1967, p. 22"
+  },
+  "S0212": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1282"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "105155d0260123dd46e86ee261de",
+   "id": "S0212",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0022"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "1950 United States Federal Census, Manitowoc, Manitowoc County, Wisconsin"
   }
  }
 }
