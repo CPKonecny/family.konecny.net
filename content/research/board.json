@@ -369,6 +369,56 @@
         "I0301"
       ],
       "since": "2026-11-09"
+    },
+    {
+      "id": "R31",
+      "status": "next",
+      "line": "tauber",
+      "title": "Anna Tauber’s ship and arrival date",
+      "summary": "Anna married Peter in Chicago on 22 February 1919 and was born at Mostiště in 1891, so she must have arrived in the United States between those years. No passenger list has been found yet. The next search is the Ellis Island and Baltimore arrival lists for 1905–1919 under Tauber and related spellings.",
+      "detail": "Birth is settled (Radnice RO32, Mostiště house 27, 15 September 1891). The 1919 Chicago marriage is already on her profile. Search windows: New York (Ellis Island / Castle Garden successors) and Baltimore passenger lists, 1905–1919. Moved here from the retired Family stories “Still looking for” list on 9 November 2026; this is researcher work, not a family ask.",
+      "owner": "researcher",
+      "people": [
+        "I0146"
+      ],
+      "since": "2026-11-09"
+    },
+    {
+      "id": "R32",
+      "status": "next",
+      "line": "all",
+      "title": "Missing WWI and WWII draft cards",
+      "summary": "Several draft cards named on the Family stories military page are still unpulled: for the Toepel and Hansen men, and for Norman Wood. Free-site searches were blocked earlier. Pulling those cards would fill the military stories note and support the Toepel and Wood lines.",
+      "detail": "Targets from the military stories after-note: Dick Toepel (1925–2015) WWII service; Oscar Toepel’s draft cards; Richard O. Toepel’s draft card; Ervin Hansen’s WWI card; Norman Wood’s WWI draft card. A later Wood generation’s WWII card is also still open and should be checked only against deceased men. Prefer Ancestry or Fold3 when free sites are blocked. Moved from the retired stories “Still looking for” list on 9 November 2026; researcher work, not a family ask.",
+      "owner": "researcher",
+      "people": [
+        "I0023"
+      ],
+      "since": "2026-11-09"
+    },
+    {
+      "id": "R33",
+      "status": "next",
+      "line": "wood",
+      "title": "Norman B. Wood’s Army service record",
+      "summary": "Colonel Norman Bentley Wood’s stone at Forest View Cemetery, Two Rivers, already records U.S. Army service in both world wars (6 November 1889 – 10 September 1950). His official service file has not been ordered. The file is held by NARA in St. Louis and would confirm ranks, units and dates beyond the stone.",
+      "detail": "Cemetery source already cited on the military stories page (2manitowoc.com/89CS.html). NARA St. Louis holds Official Military Personnel Files for Army officers of this period. Moved from the retired stories “Still looking for” list on 9 November 2026; researcher records request, not a family ask.",
+      "owner": "researcher",
+      "people": [
+        "I0023"
+      ],
+      "since": "2026-11-09"
+    },
+    {
+      "id": "R34",
+      "status": "open",
+      "line": "all",
+      "title": "O’Regan family story (Louisville)",
+      "summary": "Nothing has been filed yet for the O’Regan line connected with Louisville. A short family story, a funeral card, or a named record for a deceased O’Regan would give the research board a place to start. Morris work stays on its own card (R19).",
+      "detail": "Split out from the old stories list item that bundled O’Regan with Morris. Morris asks remain on R19. No living-person details.",
+      "ask": "Does anyone have a funeral card, obituary, letter or short story for a deceased O’Regan of Louisville that we could file?",
+      "owner": "family",
+      "since": "2026-11-09"
     }
   ]
 }
