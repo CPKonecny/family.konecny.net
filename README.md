@@ -8,19 +8,24 @@ data/        bundle.json + report.md — written by the export, committed by the
 media/       public media files + thumbnails — same
 site/        build.py, config.json, templates/, static/ (site.css, site.js, fonts/) — the generator
 content/     about.md, research/board.json, stories/ — hand-written (the export never writes here; see the READMEs there)
-tools/       checks and repairs run by hand or in the build (check_stories.py runs in the Pages workflow)
-.github/     Pages workflow: on every push to main, check the stories, build _site/ and deploy
+tools/       checks and repairs run by hand or in the build (check_stories.py runs in both workflows; apply_update.py pulls a code update from a git bundle)
+.github/     pages.yml: on every push to main, check the stories, build _site/ and deploy; check.yml: build every pull request
 CNAME        family.konecny.net
 ```
 
 ## Who changes what
 
-- **Claude** owns everything that is code: `site/`, `export/`, `tools/`, `.github/`, `site/config.json`. Changes arrive as zips Chris applies on the server, or as a PR Chris merges.
+- **Claude** owns everything that is code: `site/`, `export/`, `tools/`, `.github/`, `site/config.json`. Changes arrive as commits: a git bundle Chris pulls on the server (`python3 tools/apply_update.py <name>`), or a PR Chris merges.
 - **Karel** owns research content: `content/stories/` and `content/research/board.json`, by pull request to `main`, content files only. A PR that touches anything outside `content/` is sent back; if content needs a template change, the PR description says so and Claude makes it first.
 - **The server** owns `data/` and `media/`: written by the nightly export, never by hand.
 - **Chris** merges PRs and approves anything that changes what the site shows about a person.
 
-`.github/CODEOWNERS` records the same split.
+`.github/CODEOWNERS` records the same split, and `.github/workflows/check.yml` enforces it: every pull request is built as it would be after merging and shows a tick or a cross; a pull request from a `cursor/` branch fails if it touches anything outside `content/`, and any pull request fails if a research card would be hidden for naming a living person.
+
+Two working rules:
+
+- **One content pull request at a time, against `main`.** No stacking. If the previous one is still open, push to its branch instead of opening another on top of it.
+- **Code changes start from the current `main`.** Clone or fetch first, whoever you are — this thread, another Claude session, anyone — and deliver commits (a bundle or a pull request), never loose files copied over the server's clone. On 6 November 2026 an update unzipped over newer files took the Family stories pages down until they were restored the next day. `tools/apply_update.py` merges a bundle with git, so other people's changes are kept or the clash is reported, and nothing is overwritten silently.
 
 ## Build locally
 
