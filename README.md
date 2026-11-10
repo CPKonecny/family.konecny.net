@@ -13,6 +13,15 @@ tools/       checks and repairs run by hand or in the build (check_stories.py ru
 CNAME        family.konecny.net
 ```
 
+## Who changes what
+
+- **Claude** owns everything that is code: `site/`, `export/`, `tools/`, `.github/`, `site/config.json`. Changes arrive as zips Chris applies on the server, or as a PR Chris merges.
+- **Karel** owns research content: `content/stories/` and `content/research/board.json`, by pull request to `main`, content files only. A PR that touches anything outside `content/` is sent back; if content needs a template change, the PR description says so and Claude makes it first.
+- **The server** owns `data/` and `media/`: written by the nightly export, never by hand.
+- **Chris** merges PRs and approves anything that changes what the site shows about a person.
+
+`.github/CODEOWNERS` records the same split.
+
 ## Build locally
 
 ```

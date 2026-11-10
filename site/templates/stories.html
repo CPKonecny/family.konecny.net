@@ -27,6 +27,7 @@
     {% endfor %}
   </div>
 
+  {% if stories.still and stories.still.entries %}
   <h2 id="still">{{ stories.still.heading|story }}</h2>
   {% if stories.still.status == "confirming" %}<p class="status-banner" role="status">{{ confirming_banner }}</p>{% endif %}
   <ul class="storyrows">
@@ -37,6 +38,10 @@
     </li>
     {% endfor %}
   </ul>
+  {% else %}
+  <h2 id="still">Still looking for</h2>
+  <p>What the research has not settled yet, and where the family can help, is kept on the <a href="/research/">research page</a>.</p>
+  {% endif %}
 
   <h2>{{ stories.further.heading|story }}</h2>
   <ul class="morelinks">
