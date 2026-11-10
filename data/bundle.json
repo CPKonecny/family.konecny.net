@@ -39990,6 +39990,358 @@
    ],
    "tier": "record",
    "url": "https://nara-1950-census.s3.us-east-2.amazonaws.com/1950census/43290879-Wisconsin/43290879-Wisconsin-230426/43290879-Wisconsin-230426-0008.jpg"
+  },
+  "C1283": {
+   "ancestry_record_id": "",
+   "change": 1794236403,
+   "cited_by": [
+    {
+     "id": "E1585",
+     "type": "event"
+    },
+    {
+     "id": "E1586",
+     "type": "event"
+    },
+    {
+     "id": "I0403",
+     "type": "person"
+    }
+   ],
+   "confidence": 3,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051883c05a7784d65d89569306c",
+   "id": "C1283",
+   "information": "secondary",
+   "media": [],
+   "notes": [
+    "N1919",
+    "N1920"
+   ],
+   "page": "Evergreen Cemetery #44 KLEM obituaries, entry klimentjohn",
+   "proposal_file": "2026-11-09_095501_kliment-john_add-person.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0213",
+   "source_type": "derivative",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "compiled",
+   "url": "https://www.2manitowoc.com/44Klemobit.html#klimentjohn"
+  },
+  "C1284": {
+   "ancestry_record_id": "",
+   "change": 1794236403,
+   "cited_by": [
+    {
+     "id": "E1587",
+     "type": "event"
+    },
+    {
+     "id": "E1588",
+     "type": "event"
+    },
+    {
+     "id": "I0404",
+     "type": "person"
+    }
+   ],
+   "confidence": 3,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051883c2adf4885ed2f582e674e",
+   "id": "C1284",
+   "information": "secondary",
+   "media": [],
+   "notes": [
+    "N1921",
+    "N1922"
+   ],
+   "page": "Evergreen Cemetery #44 JAH obituaries, entry jentschfelix1974",
+   "proposal_file": "2026-11-09_095502_jentsch-felix_add-person.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0214",
+   "source_type": "derivative",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "compiled",
+   "url": "https://www.2manitowoc.com/44Jahobit.html#jentschfelix1974"
+  },
+  "C1285": {
+   "ancestry_record_id": "",
+   "change": 1794236405,
+   "cited_by": [
+    {
+     "id": "E1589",
+     "type": "event"
+    },
+    {
+     "id": "E1590",
+     "type": "event"
+    },
+    {
+     "id": "I0405",
+     "type": "person"
+    }
+   ],
+   "confidence": 3,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051883c535f5e8b38364c27e92",
+   "id": "C1285",
+   "information": "secondary",
+   "media": [],
+   "notes": [
+    "N1923",
+    "N1924"
+   ],
+   "page": "Evergreen Cemetery #44 JAH obituaries, entry jentschanna1967",
+   "proposal_file": "2026-11-09_095503_nemetz-anna_add-person.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0215",
+   "source_type": "derivative",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "compiled",
+   "url": "https://www.2manitowoc.com/44Jahobit.html#jentschanna1967"
+  },
+  "C1286": {
+   "ancestry_record_id": "",
+   "change": 1794236406,
+   "cited_by": [
+    {
+     "id": "E1591",
+     "type": "event"
+    },
+    {
+     "id": "E1592",
+     "type": "event"
+    },
+    {
+     "id": "I0406",
+     "type": "person"
+    }
+   ],
+   "confidence": 3,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051883c7ec1774b11368c691e50",
+   "id": "C1286",
+   "information": "secondary",
+   "media": [],
+   "notes": [
+    "N1925",
+    "N1926"
+   ],
+   "page": "Evergreen Cemetery #44 JAH obituaries, entry jentschernest",
+   "proposal_file": "2026-11-09_095504_jentsch-ernest_add-person.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0216",
+   "source_type": "derivative",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "compiled",
+   "url": "https://www.2manitowoc.com/44Jahobit.html#jentschernest"
+  },
+  "C1287": {
+   "ancestry_record_id": "",
+   "change": 1794236407,
+   "cited_by": [
+    {
+     "id": "E1593",
+     "type": "event"
+    },
+    {
+     "id": "E1594",
+     "type": "event"
+    },
+    {
+     "id": "I0407",
+     "type": "person"
+    }
+   ],
+   "confidence": 2,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051883cb5d82c4fec8a4fc43a47",
+   "id": "C1287",
+   "information": "secondary",
+   "media": [],
+   "notes": [
+    "N1927",
+    "N1928"
+   ],
+   "page": "Evergreen Cemetery #44 L index, lot Y-6-6",
+   "proposal_file": "2026-11-09_095505_karl-caroline_add-person.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0217",
+   "source_type": "derivative",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "index",
+   "url": "https://www.2manitowoc.com/44L.html"
+  },
+  "C1288": {
+   "ancestry_record_id": "",
+   "change": 1794236408,
+   "cited_by": [
+    {
+     "id": "F0189",
+     "type": "family"
+    }
+   ],
+   "confidence": 3,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051883cd36b16cc4684541312f5",
+   "id": "C1288",
+   "information": "secondary",
+   "media": [],
+   "notes": [
+    "N1929",
+    "N1930"
+   ],
+   "page": "Evergreen Cemetery #44 KLEM obituaries, entry klimentjohn",
+   "proposal_file": "2026-11-09_095510_kliment-john_x_wacek-ella_add-family.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0213",
+   "source_type": "derivative",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "compiled",
+   "url": "https://www.2manitowoc.com/44Klemobit.html#klimentjohn"
+  },
+  "C1289": {
+   "ancestry_record_id": "",
+   "change": 1794236409,
+   "cited_by": [
+    {
+     "id": "F0190",
+     "type": "family"
+    }
+   ],
+   "confidence": 3,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051883cf47d228a3e78a17ea4b0",
+   "id": "C1289",
+   "information": "secondary",
+   "media": [],
+   "notes": [
+    "N1931",
+    "N1932"
+   ],
+   "page": "Evergreen Cemetery #44 JAH obituaries, entry jentschanna1967",
+   "proposal_file": "2026-11-09_095511_jentsch-felix_x_nemetz-anna_add-family.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0215",
+   "source_type": "derivative",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "compiled",
+   "url": "https://www.2manitowoc.com/44Jahobit.html#jentschanna1967"
+  },
+  "C1290": {
+   "ancestry_record_id": "",
+   "change": 1794236410,
+   "cited_by": [
+    {
+     "id": "I0407",
+     "type": "person"
+    }
+   ],
+   "confidence": 3,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051883d24b5554115c5e754b547",
+   "id": "C1290",
+   "information": "secondary",
+   "media": [],
+   "notes": [
+    "N1933",
+    "N1934"
+   ],
+   "page": "Evergreen Cemetery #44 LAN obituaries, entry langenkampcaroline",
+   "proposal_file": "2026-11-09_095506_karl-caroline_obit-citation.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0218",
+   "source_type": "derivative",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "compiled",
+   "url": "https://www.2manitowoc.com/44Lanobit.html#langenkampcaroline"
   }
  },
  "events": {
@@ -91049,6 +91401,436 @@
     "agent-proposed"
    ],
    "type": "Death"
+  },
+  "E1585": {
+   "attributes": [],
+   "change": 1794236403,
+   "citations": [
+    "C1283"
+   ],
+   "date": {
+    "day": 19,
+    "iso": "1900-03-19",
+    "modifier": null,
+    "month": 3,
+    "quality": null,
+    "sort": 2415098,
+    "text": "19 March 1900",
+    "year": 1900
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051883c0fab5555b06ae2b61586",
+   "id": "E1585",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0403",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0334",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Birth"
+  },
+  "E1586": {
+   "attributes": [],
+   "change": 1794236403,
+   "citations": [
+    "C1283"
+   ],
+   "date": {
+    "day": 14,
+    "iso": "1981-11-14",
+    "modifier": null,
+    "month": 11,
+    "quality": null,
+    "sort": 2444923,
+    "text": "14 November 1981",
+    "year": 1981
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051883c13e2532ef8e528e9f1fb",
+   "id": "E1586",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0403",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0030",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Death"
+  },
+  "E1587": {
+   "attributes": [],
+   "change": 1794236404,
+   "citations": [
+    "C1284"
+   ],
+   "date": {
+    "day": 15,
+    "iso": "1886-07-15",
+    "modifier": null,
+    "month": 7,
+    "quality": null,
+    "sort": 2410103,
+    "text": "15 July 1886",
+    "year": 1886
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051883c321056a72ec1f97a1e92",
+   "id": "E1587",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0404",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0030",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Birth"
+  },
+  "E1588": {
+   "attributes": [],
+   "change": 1794236404,
+   "citations": [
+    "C1284"
+   ],
+   "date": {
+    "day": 22,
+    "iso": "1974-11-22",
+    "modifier": null,
+    "month": 11,
+    "quality": null,
+    "sort": 2442374,
+    "text": "22 November 1974",
+    "year": 1974
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051883c395a27c9796c40f0e6a5",
+   "id": "E1588",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0404",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0030",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Death"
+  },
+  "E1589": {
+   "attributes": [],
+   "change": 1794236405,
+   "citations": [
+    "C1285"
+   ],
+   "date": {
+    "day": 25,
+    "iso": "1889-05-25",
+    "modifier": null,
+    "month": 5,
+    "quality": null,
+    "sort": 2411148,
+    "text": "25 May 1889",
+    "year": 1889
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051883c5c1bd88012b8d799f5e",
+   "id": "E1589",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0405",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0335",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Birth"
+  },
+  "E1590": {
+   "attributes": [],
+   "change": 1794236405,
+   "citations": [
+    "C1285"
+   ],
+   "date": {
+    "day": 20,
+    "iso": "1967-07-20",
+    "modifier": null,
+    "month": 7,
+    "quality": null,
+    "sort": 2439692,
+    "text": "20 July 1967",
+    "year": 1967
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051883c60f46060a2adaa4b6718",
+   "id": "E1590",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0405",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0030",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Death"
+  },
+  "E1591": {
+   "attributes": [],
+   "change": 1794236406,
+   "citations": [
+    "C1286"
+   ],
+   "date": {
+    "day": 25,
+    "iso": "1910-09-25",
+    "modifier": null,
+    "month": 9,
+    "quality": null,
+    "sort": 2418940,
+    "text": "25 September 1910",
+    "year": 1910
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051883c83e7122de4f3939de39",
+   "id": "E1591",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0406",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0030",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Birth"
+  },
+  "E1592": {
+   "attributes": [],
+   "change": 1794236406,
+   "citations": [
+    "C1286"
+   ],
+   "date": {
+    "day": 7,
+    "iso": "1987-05-07",
+    "modifier": null,
+    "month": 5,
+    "quality": null,
+    "sort": 2446923,
+    "text": "7 May 1987",
+    "year": 1987
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051883c87fe8c743d5433b618c",
+   "id": "E1592",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0406",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0016",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Death"
+  },
+  "E1593": {
+   "attributes": [],
+   "change": 1794236407,
+   "citations": [
+    "C1287"
+   ],
+   "date": {
+    "day": 6,
+    "iso": "1919-04-06",
+    "modifier": null,
+    "month": 4,
+    "quality": null,
+    "sort": 2422055,
+    "text": "6 April 1919",
+    "year": 1919
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051883cbb20679f49fa0cf8adb6",
+   "id": "E1593",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0407",
+     "role": "Primary"
+    }
+   ],
+   "place": null,
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Birth"
+  },
+  "E1594": {
+   "attributes": [],
+   "change": 1794236407,
+   "citations": [
+    "C1287"
+   ],
+   "date": {
+    "day": 13,
+    "iso": "2006-12-13",
+    "modifier": null,
+    "month": 12,
+    "quality": null,
+    "sort": 2454083,
+    "text": "13 December 2006",
+    "year": 2006
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051883cc2dad3bf7801fccc515",
+   "id": "E1594",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0407",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0336",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Death"
   }
  },
  "families": {
@@ -97320,6 +98102,99 @@
    "tags": [
     "agent-karel",
     "agent-proposed"
+   ],
+   "type": "Married"
+  },
+  "F0188": {
+   "attributes": [],
+   "change": 1794236407,
+   "children": [
+    {
+     "ref": "I0406"
+    }
+   ],
+   "citations": [],
+   "events": [],
+   "father": "I0404",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051883c9493ddd1b38e6fedd4b",
+   "id": "F0188",
+   "media": [],
+   "mother": null,
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-proposed",
+    "agent-karel"
+   ],
+   "type": "Unknown"
+  },
+  "F0189": {
+   "attributes": [],
+   "change": 1794236408,
+   "children": [],
+   "citations": [
+    "C1288"
+   ],
+   "events": [],
+   "father": "I0403",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051883cd8b06c820c772c06b9c8",
+   "id": "F0189",
+   "media": [],
+   "mother": "I0402",
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-proposed",
+    "agent-karel"
+   ],
+   "type": "Married"
+  },
+  "F0190": {
+   "attributes": [],
+   "change": 1794236409,
+   "children": [
+    {
+     "ref": "I0303"
+    }
+   ],
+   "citations": [
+    "C1289"
+   ],
+   "events": [],
+   "father": "I0404",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051883cf9a3254408055549cba7",
+   "id": "F0190",
+   "media": [],
+   "mother": "I0405",
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-proposed",
+    "agent-karel"
    ],
    "type": "Married"
   }
@@ -104772,21 +105647,21 @@
    "very high"
   ],
   "counts": {
-   "citations": 1231,
-   "events": 1424,
-   "families": 180,
+   "citations": 1239,
+   "events": 1434,
+   "families": 183,
    "media": 202,
-   "notes": 1328,
-   "people": 399,
-   "places": 323,
-   "repositories": 25,
-   "sources": 207
+   "notes": 1344,
+   "people": 404,
+   "places": 326,
+   "repositories": 26,
+   "sources": 213
   },
   "counts_people": {
-   "full": 331,
+   "full": 336,
    "living": 68
   },
-  "generated": "2026-11-09T08:17:47+00:00",
+  "generated": "2026-11-10T08:17:47+00:00",
   "generator": "gramps_export.py 0.3.0",
   "gramps_version": "6.0.8",
   "gramps_webapi_version": "3.17.0",
@@ -104810,7 +105685,7 @@
    "oral",
    "ai-draft"
   ],
-  "today": "2026-11-09",
+  "today": "2026-11-10",
   "tree": "Konecny"
  },
  "notes": {
@@ -133413,6 +134288,310 @@
    "tags": [],
    "text": "2026-11-08 (karel): Family book transcription (verbatim text layer, reflowed; no translation). Source: Wood Family Genealogy, updated for the Wood Family Reunion, July 2019, Two Rivers, Wisconsin (Beth Moorcones, designer and editor), printed page 66 (PDF page 34). Compiled book content as of 2019, not verified genealogical fact. Non-family visitor information page; placed on Norman Bentley Wood because the book ties the family to Hamilton Manufacturing (p.65: he worked there as a salesman from 1937). Context only, not a biographical fact.\n\nPlaces of interest\nHAMILTON WOOD TYPE MUSEUM\nThis is the source. Hamilton Manufacturing was America’s\nlargest and longest wood type maker. We have the world’s\ngreatest collection of type and the tools to use it. You can\ntour over 40,000 square feet of printing history from slabs\nof rough-cut maple to row upon row of exquisite type.\nWe show the process, the machines, the presses and the\nproduct. As a working museum, you can see a pantograph\nthat cut the type 100 years ago. On workshop days,\nwatch new printers pulling proofs or sign up for a unique\nexperience. Wander the gallery to view new or traditional\nposters by artists near and far. Take a tour or visit Hamilton\nDry Goods, the museum store, filled with prints and\nproducts often made by museum staff. Visit, learn, print,\nrepeat.\n\nHOURS\nMay 1- October 31\nSunday..............................................................1pm-5pm\nMonday. ..................................................................closed\nTuesday- Saturday. .....................................10am-5pm\n\n1816 10th Street, Two Rivers, WI 54241\n(920) 794-6272\nwww.woodtype.org\n\nADMISSION\nGeneral Admission. .....................................................$5\nChildren 12 & under....................................................$3\nSenior Citizens 65 & older.........................................$3\nMilitary Veterans. .........................................................$3\n\nTOURS\nWhether guided by a museum affiliate or browsing at your own\npace, a visit to Hamilton is sure to leave you with a wealth of wood\ntype knowledge. Self-guided tours may be taken any time during\nregular business hours.\nGuided museum tours are offered daily at 1pm. Learn about\nhistoric and decorative wood type from one of the world’s largest\ncollections, take a journey through the machines and tools that\nwere used to manufacture wood type, and see working pressrooms\nwhere we teach and continue to produce letterpress printed\npieces.\nFor more information, please call (920) 794-6272 or email info@\nwoodtype.org.\n\n66\n\nTier: compiled",
    "type": "Transcript"
+  },
+  "N1919": {
+   "attached_to": [
+    {
+     "id": "C1283",
+     "type": "citation"
+    }
+   ],
+   "change": 1794236402,
+   "flags": [],
+   "handle": "1051883bfee21a43adf161d33e6e",
+   "html": "<p>Transcription (as written): John Kliment, 81, of 2008 Wollmer St., formerly of 1827 New York Ave., Manitowoc, died Saturday morning, Nov. 14, at Holy Family Hospital, Manitowoc. ... Mr. Kliment was born March 19, 1900, in the Town of Gibson, son of the late Joseph and Frances Kraycarek Kliment. ... He married Ella Wacek, April 22, 1924, at Manitowoc. She preceded him in death in 1967.</p>",
+   "id": "N1919",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): John Kliment, 81, of 2008 Wollmer St., formerly of 1827 New York Ave., Manitowoc, died Saturday morning, Nov. 14, at Holy Family Hospital, Manitowoc. ... Mr. Kliment was born March 19, 1900, in the Town of Gibson, son of the late Joseph and Frances Kraycarek Kliment. ... He married Ella Wacek, April 22, 1924, at Manitowoc. She preceded him in death in 1967.",
+   "type": "Transcript"
+  },
+  "N1920": {
+   "attached_to": [
+    {
+     "id": "C1283",
+     "type": "citation"
+    }
+   ],
+   "change": 1794236402,
+   "flags": [],
+   "handle": "1051883c02901ab04b4d3d806b6e",
+   "html": "<p>2026-11-09 (karel): New Ancestry profile 212815084449 created 9 Nov 2026 as husband of Ella Wacek 212814977714 (Gramps I0402). Obituary states birth date/place, death 14 Nov 1981 at Holy Family Hospital, Manitowoc, and marriage to Ella 22 Apr 1924 at Manitowoc; Ella&#x27;s 1967 obituary independently gives the same marriage date. Parents Joseph Kliment and Frances Kraycarek are a lead, not filed. Relations omitted here; the spouse link is in the companion add_family proposal. Source verified attached on Ancestry (person-level citation with URL and transcription, confirmed under Other sources on the Facts page) by browser executor 9 Nov 2026. Obituary is a 2manitowoc.com transcription, so tier compiled, not an original newspaper image.</p>",
+   "id": "N1920",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-09 (karel): New Ancestry profile 212815084449 created 9 Nov 2026 as husband of Ella Wacek 212814977714 (Gramps I0402). Obituary states birth date/place, death 14 Nov 1981 at Holy Family Hospital, Manitowoc, and marriage to Ella 22 Apr 1924 at Manitowoc; Ella's 1967 obituary independently gives the same marriage date. Parents Joseph Kliment and Frances Kraycarek are a lead, not filed. Relations omitted here; the spouse link is in the companion add_family proposal. Source verified attached on Ancestry (person-level citation with URL and transcription, confirmed under Other sources on the Facts page) by browser executor 9 Nov 2026. Obituary is a 2manitowoc.com transcription, so tier compiled, not an original newspaper image.",
+   "type": "Research"
+  },
+  "N1921": {
+   "attached_to": [
+    {
+     "id": "C1284",
+     "type": "citation"
+    }
+   ],
+   "change": 1794236403,
+   "flags": [],
+   "handle": "1051883c22b44aaed6658dc05813",
+   "html": "<p>Transcription (as written): Felix H. Jentsch, 88, of 1114 Waldo Blvd, Manitowoc, died Friday afternoon at home. ... Mr. Jentsch was born July 15, 1886, at Manitowoc, son of the late Frank and Anna Lodl Jentsch. He married Anna Platka and later Anna Nemetz who preceded him in death July 20, 1967. ... Survivors include a son, Ernest, of Manitowoc, three daughters, ... Mrs. Russell (Gladys) Raduenz ... [d. 11-22-1974/age 88 yrs.] (15 Jul 1886/Nov 1974/SSDI)</p>",
+   "id": "N1921",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Felix H. Jentsch, 88, of 1114 Waldo Blvd, Manitowoc, died Friday afternoon at home. ... Mr. Jentsch was born July 15, 1886, at Manitowoc, son of the late Frank and Anna Lodl Jentsch. He married Anna Platka and later Anna Nemetz who preceded him in death July 20, 1967. ... Survivors include a son, Ernest, of Manitowoc, three daughters, ... Mrs. Russell (Gladys) Raduenz ... [d. 11-22-1974/age 88 yrs.] (15 Jul 1886/Nov 1974/SSDI)",
+   "type": "Transcript"
+  },
+  "N1922": {
+   "attached_to": [
+    {
+     "id": "C1284",
+     "type": "citation"
+    }
+   ],
+   "change": 1794236403,
+   "flags": [],
+   "handle": "1051883c25db13e374cd14da636e",
+   "html": "<p>2026-11-09 (karel): New Ancestry profile 212815084816 created 9 Nov 2026 as father of existing Gladys M. Jentsch 212806949650 (I0303), wife of John F. Konecny (I0301). His obituary names daughter Gladys; Anna Nemetz&#x27;s 1967 obituary names daughter Mrs. John (Gladys) Konecny; Gladys&#x27;s 2007 obituary names parents Felix and Anna Nemetz Jentsch. Death 22 Nov 1974 per site bracket (died Friday; 22 Nov 1974 was a Friday). Parents Frank Jentsch and Anna Lodl are a lead only; any tie of Anna Lodl to the Joseph H. Lodl family is NOT stated by a source and is not proposed. First wife Anna Platka not added. Source verified attached on Ancestry (person-level citation with URL and transcription, confirmed under Other sources on the Facts page) by browser executor 9 Nov 2026. Obituary is a 2manitowoc.com transcription, so tier compiled, not an original newspaper image.</p>",
+   "id": "N1922",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-09 (karel): New Ancestry profile 212815084816 created 9 Nov 2026 as father of existing Gladys M. Jentsch 212806949650 (I0303), wife of John F. Konecny (I0301). His obituary names daughter Gladys; Anna Nemetz's 1967 obituary names daughter Mrs. John (Gladys) Konecny; Gladys's 2007 obituary names parents Felix and Anna Nemetz Jentsch. Death 22 Nov 1974 per site bracket (died Friday; 22 Nov 1974 was a Friday). Parents Frank Jentsch and Anna Lodl are a lead only; any tie of Anna Lodl to the Joseph H. Lodl family is NOT stated by a source and is not proposed. First wife Anna Platka not added. Source verified attached on Ancestry (person-level citation with URL and transcription, confirmed under Other sources on the Facts page) by browser executor 9 Nov 2026. Obituary is a 2manitowoc.com transcription, so tier compiled, not an original newspaper image.",
+   "type": "Research"
+  },
+  "N1923": {
+   "attached_to": [
+    {
+     "id": "C1285",
+     "type": "citation"
+    }
+   ],
+   "change": 1794236404,
+   "flags": [],
+   "handle": "1051883c4b95366987bee3add1b5",
+   "html": "<p>Transcription (as written): Mrs. Felix Jentsch, 78, of 1114 Waldo Blvd., Manitowoc, died Thursday afternoon at Holy Family Hospital, Manitowoc ... Mrs. Jentsch, the former Anna Nemetz, was born May 25, 1889 at Stangelville, Kewaunee County, daughter of the late John and Antonette Burde Nemetz. She was married to Felix Jentsch at Manitowoc ... Survivors include her husband; two daughters, Mrs. John (Gladys) Konecny and ...; a step-daughter ...; a step-son, Ernst Jentsch ... [d. 07-20-1967/age 78 yrs./wife of Felix Jentsch]</p>",
+   "id": "N1923",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Mrs. Felix Jentsch, 78, of 1114 Waldo Blvd., Manitowoc, died Thursday afternoon at Holy Family Hospital, Manitowoc ... Mrs. Jentsch, the former Anna Nemetz, was born May 25, 1889 at Stangelville, Kewaunee County, daughter of the late John and Antonette Burde Nemetz. She was married to Felix Jentsch at Manitowoc ... Survivors include her husband; two daughters, Mrs. John (Gladys) Konecny and ...; a step-daughter ...; a step-son, Ernst Jentsch ... [d. 07-20-1967/age 78 yrs./wife of Felix Jentsch]",
+   "type": "Transcript"
+  },
+  "N1924": {
+   "attached_to": [
+    {
+     "id": "C1285",
+     "type": "citation"
+    }
+   ],
+   "change": 1794236404,
+   "flags": [],
+   "handle": "1051883c4f7c2c8d3779e22e1f4f",
+   "html": "<p>2026-11-09 (karel): New Ancestry profile 212815084928 created 9 Nov 2026 as mother of existing Gladys M. Jentsch 212806949650 (I0303) and wife of Felix H. Jentsch 212815084816. Obituary names daughter Mrs. John (Gladys) Konecny and calls Ernst a step-son. Parents John Nemetz and Antonette Burde are a lead, not filed. No marriage date stated; none filed. Source verified attached on Ancestry (person-level citation with URL and transcription, confirmed under Other sources on the Facts page) by browser executor 9 Nov 2026. Obituary is a 2manitowoc.com transcription, so tier compiled, not an original newspaper image.</p>",
+   "id": "N1924",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-09 (karel): New Ancestry profile 212815084928 created 9 Nov 2026 as mother of existing Gladys M. Jentsch 212806949650 (I0303) and wife of Felix H. Jentsch 212815084816. Obituary names daughter Mrs. John (Gladys) Konecny and calls Ernst a step-son. Parents John Nemetz and Antonette Burde are a lead, not filed. No marriage date stated; none filed. Source verified attached on Ancestry (person-level citation with URL and transcription, confirmed under Other sources on the Facts page) by browser executor 9 Nov 2026. Obituary is a 2manitowoc.com transcription, so tier compiled, not an original newspaper image.",
+   "type": "Research"
+  },
+  "N1925": {
+   "attached_to": [
+    {
+     "id": "C1286",
+     "type": "citation"
+    }
+   ],
+   "change": 1794236405,
+   "flags": [],
+   "handle": "1051883c765b6c28bc0dec7fca42",
+   "html": "<p>Transcription (as written): Ernest M. Jentsch, 76, who resided with his sister ... of 1732 24th St., Two Rivers, died Thursday evening, May 7, 1987 at the residence ... Mr. Jentsch was born September 25, 1910 at Manitowoc, son of the late Felix and Anna Thomas Jentsch. ... Survivors include three sisters, ... Mrs. Gladys Raduenz of Manitowoc ...</p>",
+   "id": "N1925",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Ernest M. Jentsch, 76, who resided with his sister ... of 1732 24th St., Two Rivers, died Thursday evening, May 7, 1987 at the residence ... Mr. Jentsch was born September 25, 1910 at Manitowoc, son of the late Felix and Anna Thomas Jentsch. ... Survivors include three sisters, ... Mrs. Gladys Raduenz of Manitowoc ...",
+   "type": "Transcript"
+  },
+  "N1926": {
+   "attached_to": [
+    {
+     "id": "C1286",
+     "type": "citation"
+    }
+   ],
+   "change": 1794236406,
+   "flags": [],
+   "handle": "1051883c7b4116cc700f3cb8d95e",
+   "html": "<p>2026-11-09 (karel): New Ancestry profile 212815086022 created 9 Nov 2026 as son of Felix H. Jentsch 212815084816 and half-brother of Gladys M. Jentsch (I0303). Felix&#x27;s 1974 obituary names son Ernest; Anna Nemetz&#x27;s 1967 obituary calls him her step-son, so she is NOT his mother. relations names father only ON PURPOSE: do NOT put Ernest in the Felix x Anna Nemetz family (companion proposal 095511); he belongs in a separate Felix family with mother unknown. Ancestry likewise has father only. Source verified attached on Ancestry (person-level citation with URL and transcription, confirmed under Other sources on the Facts page) by browser executor 9 Nov 2026. Obituary is a 2manitowoc.com transcription, so tier compiled, not an original newspaper image.<br>Conflicts: [&quot;Mother unresolved: Ernest&#x27;s obituary says &#x27;Felix and Anna Thomas Jentsch&#x27;; Felix&#x27;s obituary says Felix married Anna Platka and later Anna Nemetz. Thomas vs Platka not settled; no mother filed.&quot;]</p>",
+   "id": "N1926",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-09 (karel): New Ancestry profile 212815086022 created 9 Nov 2026 as son of Felix H. Jentsch 212815084816 and half-brother of Gladys M. Jentsch (I0303). Felix's 1974 obituary names son Ernest; Anna Nemetz's 1967 obituary calls him her step-son, so she is NOT his mother. relations names father only ON PURPOSE: do NOT put Ernest in the Felix x Anna Nemetz family (companion proposal 095511); he belongs in a separate Felix family with mother unknown. Ancestry likewise has father only. Source verified attached on Ancestry (person-level citation with URL and transcription, confirmed under Other sources on the Facts page) by browser executor 9 Nov 2026. Obituary is a 2manitowoc.com transcription, so tier compiled, not an original newspaper image.\nConflicts: [\"Mother unresolved: Ernest's obituary says 'Felix and Anna Thomas Jentsch'; Felix's obituary says Felix married Anna Platka and later Anna Nemetz. Thomas vs Platka not settled; no mother filed.\"]",
+   "type": "Research"
+  },
+  "N1927": {
+   "attached_to": [
+    {
+     "id": "C1287",
+     "type": "citation"
+    }
+   ],
+   "change": 1794236407,
+   "flags": [],
+   "handle": "1051883cafdd255c9ad8e9fd3550",
+   "html": "<p>Transcription (as written): [Y-6-6]- Caroline M. Langenkamp /Apr 6, 1919/Dec 13, 2006 Tombstone</p>",
+   "id": "N1927",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): [Y-6-6]- Caroline M. Langenkamp /Apr 6, 1919/Dec 13, 2006 Tombstone",
+   "type": "Transcript"
+  },
+  "N1928": {
+   "attached_to": [
+    {
+     "id": "C1287",
+     "type": "citation"
+    }
+   ],
+   "change": 1794236407,
+   "flags": [],
+   "handle": "1051883cb2a76df6e39cc5c3e2e4",
+   "html": "<p>2026-11-09 (karel): New Ancestry profile 212815086130 created 9 Nov 2026 as daughter of George F. Karl 212814968024 (I0397) and Pauline A. Kowalski 212814977135 (I0398), sister of Gertrude Irene Karl (I0302) and Charlotte (I0399). Birth date rests only on the tombstone index (tier index, confidence 2); her obituary gives no birth date (age 87 at death is consistent). Parentage and death are stated by her obituary, filed as companion add_citation 095506. Married surname Langenkamp (married Daniel J. Langenkamp 18 Dec 1945); husband not added. Relations deliberately OMITTED: please link her by hand as a child in the EXISTING family F0186 (George x Pauline). Filing parent relations would create a duplicate family, as happened on 8 Nov when Ella (I0402) went into a new F0185 instead of Anton&#x27;s F0183. Both citations verified attached on Ancestry by browser executor 9 Nov 2026.</p>",
+   "id": "N1928",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-09 (karel): New Ancestry profile 212815086130 created 9 Nov 2026 as daughter of George F. Karl 212814968024 (I0397) and Pauline A. Kowalski 212814977135 (I0398), sister of Gertrude Irene Karl (I0302) and Charlotte (I0399). Birth date rests only on the tombstone index (tier index, confidence 2); her obituary gives no birth date (age 87 at death is consistent). Parentage and death are stated by her obituary, filed as companion add_citation 095506. Married surname Langenkamp (married Daniel J. Langenkamp 18 Dec 1945); husband not added. Relations deliberately OMITTED: please link her by hand as a child in the EXISTING family F0186 (George x Pauline). Filing parent relations would create a duplicate family, as happened on 8 Nov when Ella (I0402) went into a new F0185 instead of Anton's F0183. Both citations verified attached on Ancestry by browser executor 9 Nov 2026.",
+   "type": "Research"
+  },
+  "N1929": {
+   "attached_to": [
+    {
+     "id": "C1288",
+     "type": "citation"
+    }
+   ],
+   "change": 1794236408,
+   "flags": [],
+   "handle": "1051883ccdbe278b4b000d39fbeb",
+   "html": "<p>Transcription (as written): John Kliment, 81, of 2008 Wollmer St., formerly of 1827 New York Ave., Manitowoc, died Saturday morning, Nov. 14, at Holy Family Hospital, Manitowoc. ... Mr. Kliment was born March 19, 1900, in the Town of Gibson, son of the late Joseph and Frances Kraycarek Kliment. ... He married Ella Wacek, April 22, 1924, at Manitowoc. She preceded him in death in 1967.</p>",
+   "id": "N1929",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): John Kliment, 81, of 2008 Wollmer St., formerly of 1827 New York Ave., Manitowoc, died Saturday morning, Nov. 14, at Holy Family Hospital, Manitowoc. ... Mr. Kliment was born March 19, 1900, in the Town of Gibson, son of the late Joseph and Frances Kraycarek Kliment. ... He married Ella Wacek, April 22, 1924, at Manitowoc. She preceded him in death in 1967.",
+   "type": "Transcript"
+  },
+  "N1930": {
+   "attached_to": [
+    {
+     "id": "C1288",
+     "type": "citation"
+    }
+   ],
+   "change": 1794236408,
+   "flags": [],
+   "handle": "1051883cd0521de44557ec42b955",
+   "html": "<p>2026-11-09 (karel): John Kliment 212815084449 and Ella Wacek 212814977714 (I0402). Marriage 22 Apr 1924, Manitowoc, stated by both obituaries; not filed as an event here (Ancestry spouse form had no marriage field). No children linked: son is deceased but not yet added. Source verified attached on Ancestry (person-level citation with URL and transcription, confirmed under Other sources on the Facts page) by browser executor 9 Nov 2026. Obituary is a 2manitowoc.com transcription, so tier compiled, not an original newspaper image.</p>",
+   "id": "N1930",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-09 (karel): John Kliment 212815084449 and Ella Wacek 212814977714 (I0402). Marriage 22 Apr 1924, Manitowoc, stated by both obituaries; not filed as an event here (Ancestry spouse form had no marriage field). No children linked: son is deceased but not yet added. Source verified attached on Ancestry (person-level citation with URL and transcription, confirmed under Other sources on the Facts page) by browser executor 9 Nov 2026. Obituary is a 2manitowoc.com transcription, so tier compiled, not an original newspaper image.",
+   "type": "Research"
+  },
+  "N1931": {
+   "attached_to": [
+    {
+     "id": "C1289",
+     "type": "citation"
+    }
+   ],
+   "change": 1794236408,
+   "flags": [],
+   "handle": "1051883ced1862ab8aa5a7a1eb6a",
+   "html": "<p>Transcription (as written): Mrs. Felix Jentsch, 78, of 1114 Waldo Blvd., Manitowoc, died Thursday afternoon at Holy Family Hospital, Manitowoc ... Mrs. Jentsch, the former Anna Nemetz, was born May 25, 1889 at Stangelville, Kewaunee County, daughter of the late John and Antonette Burde Nemetz. She was married to Felix Jentsch at Manitowoc ... Survivors include her husband; two daughters, Mrs. John (Gladys) Konecny and ...; a step-daughter ...; a step-son, Ernst Jentsch ... [d. 07-20-1967/age 78 yrs./wife of Felix Jentsch]</p>",
+   "id": "N1931",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Mrs. Felix Jentsch, 78, of 1114 Waldo Blvd., Manitowoc, died Thursday afternoon at Holy Family Hospital, Manitowoc ... Mrs. Jentsch, the former Anna Nemetz, was born May 25, 1889 at Stangelville, Kewaunee County, daughter of the late John and Antonette Burde Nemetz. She was married to Felix Jentsch at Manitowoc ... Survivors include her husband; two daughters, Mrs. John (Gladys) Konecny and ...; a step-daughter ...; a step-son, Ernst Jentsch ... [d. 07-20-1967/age 78 yrs./wife of Felix Jentsch]",
+   "type": "Transcript"
+  },
+  "N1932": {
+   "attached_to": [
+    {
+     "id": "C1289",
+     "type": "citation"
+    }
+   ],
+   "change": 1794236409,
+   "flags": [],
+   "handle": "1051883cf0a22855f4168c74aa6e",
+   "html": "<p>2026-11-09 (karel): Felix H. Jentsch 212815084816 and Anna Nemetz 212815084928, parents of existing Gladys M. Jentsch 212806949650 (I0303). Only Gladys is linked. Ernest M. Jentsch 212815086022 must NOT be added to this family (Anna was his stepmother). No marriage date stated; none filed. Source verified attached on Ancestry (person-level citation with URL and transcription, confirmed under Other sources on the Facts page) by browser executor 9 Nov 2026. Obituary is a 2manitowoc.com transcription, so tier compiled, not an original newspaper image.</p>",
+   "id": "N1932",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-09 (karel): Felix H. Jentsch 212815084816 and Anna Nemetz 212815084928, parents of existing Gladys M. Jentsch 212806949650 (I0303). Only Gladys is linked. Ernest M. Jentsch 212815086022 must NOT be added to this family (Anna was his stepmother). No marriage date stated; none filed. Source verified attached on Ancestry (person-level citation with URL and transcription, confirmed under Other sources on the Facts page) by browser executor 9 Nov 2026. Obituary is a 2manitowoc.com transcription, so tier compiled, not an original newspaper image.",
+   "type": "Research"
+  },
+  "N1933": {
+   "attached_to": [
+    {
+     "id": "C1290",
+     "type": "citation"
+    }
+   ],
+   "change": 1794236410,
+   "flags": [],
+   "handle": "1051883d1e2424b6426479e92913",
+   "html": "<p>Transcription (as written): Caroline M. Langenkamp, age 87, died Dec. 13, 2006, following a lingering illness, at St. Camillus Health Care Center in Wauwatosa ... Caroline was born to George and Pauline Karl. ... She married Daniel J. Langenkamp on December 18, 1945. ... preceded in death by her husband: Daniel J. Langenkamp; her parents: George and Pauline Karl; one sister: Gertrude Konecny</p>",
+   "id": "N1933",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Caroline M. Langenkamp, age 87, died Dec. 13, 2006, following a lingering illness, at St. Camillus Health Care Center in Wauwatosa ... Caroline was born to George and Pauline Karl. ... She married Daniel J. Langenkamp on December 18, 1945. ... preceded in death by her husband: Daniel J. Langenkamp; her parents: George and Pauline Karl; one sister: Gertrude Konecny",
+   "type": "Transcript"
+  },
+  "N1934": {
+   "attached_to": [
+    {
+     "id": "C1290",
+     "type": "citation"
+    }
+   ],
+   "change": 1794236410,
+   "flags": [],
+   "handle": "1051883d216f5be8ce8317c404e6",
+   "html": "<p>2026-11-09 (karel): Companion to 095505 (apply after it). Obituary supports death date/place and parentage. Verified attached on Ancestry by browser executor 9 Nov 2026. Obituary is a 2manitowoc.com transcription, so tier compiled, not an original newspaper image.</p>",
+   "id": "N1934",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-09 (karel): Companion to 095505 (apply after it). Obituary supports death date/place and parentage. Verified attached on Ancestry by browser executor 9 Nov 2026. Obituary is a 2manitowoc.com transcription, so tier compiled, not an original newspaper image.",
+   "type": "Research"
   }
  },
  "people": {
@@ -158192,7 +159371,7 @@
     "type": "Birth",
     "year": 1922
    },
-   "change": 1793043713,
+   "change": 1794236410,
    "citations": [],
    "death": {
     "date": {
@@ -158235,7 +159414,9 @@
    "families": [
     "F0134"
    ],
-   "flags": [],
+   "flags": [
+    "agent-proposed"
+   ],
    "gender": "F",
    "handle": "104ebd54c5af3ba54f41319a85be",
    "id": "I0303",
@@ -158253,15 +159434,21 @@
     "type": "Birth Name"
    },
    "notes": [],
-   "parents": [],
+   "parents": [
+    "F0190"
+   ],
    "provenance": [
+    "agent-karel",
+    "agent-proposed",
     "import-ancestry-2026-10-25"
    ],
    "review": "unreviewed",
    "status": "full",
    "tags": [
+    "agent-proposed",
     "import-ancestry-2026-10-25",
-    "unreviewed"
+    "unreviewed",
+    "agent-karel"
    ],
    "urls": [],
    "xref": {
@@ -164170,7 +165357,7 @@
     "type": "Birth",
     "year": 1900
    },
-   "change": 1794151808,
+   "change": 1794236408,
    "citations": [
     "C1280"
    ],
@@ -164200,7 +165387,9 @@
      "role": "Primary"
     }
    ],
-   "families": [],
+   "families": [
+    "F0189"
+   ],
    "flags": [
     "agent-proposed"
    ],
@@ -164231,12 +165420,480 @@
    "review": "unreviewed",
    "status": "full",
    "tags": [
-    "agent-karel",
-    "agent-proposed"
+    "agent-proposed",
+    "agent-karel"
    ],
    "urls": [],
    "xref": {
     "ancestry": "212814977714"
+   }
+  },
+  "I0403": {
+   "alt_names": [],
+   "attributes": [],
+   "birth": {
+    "date": {
+     "day": 19,
+     "iso": "1900-03-19",
+     "modifier": null,
+     "month": 3,
+     "quality": null,
+     "sort": 2415098,
+     "text": "19 March 1900",
+     "year": 1900
+    },
+    "event": "E1585",
+    "place": "P0334",
+    "type": "Birth",
+    "year": 1900
+   },
+   "change": 1794236408,
+   "citations": [
+    "C1283"
+   ],
+   "death": {
+    "date": {
+     "day": 14,
+     "iso": "1981-11-14",
+     "modifier": null,
+     "month": 11,
+     "quality": null,
+     "sort": 2444923,
+     "text": "14 November 1981",
+     "year": 1981
+    },
+    "event": "E1586",
+    "place": "P0030",
+    "type": "Death",
+    "year": 1981
+   },
+   "events": [
+    {
+     "ref": "E1585",
+     "role": "Primary"
+    },
+    {
+     "ref": "E1586",
+     "role": "Primary"
+    }
+   ],
+   "families": [
+    "F0189"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "gender": "M",
+   "handle": "1051883c1960ffd489e034b6895",
+   "id": "I0403",
+   "media": [],
+   "name": {
+    "call": "",
+    "display": "John Kliment",
+    "first": "John",
+    "nick": "",
+    "prefix": "",
+    "sort": "Kliment, John",
+    "suffix": "",
+    "surname": "Kliment",
+    "title": "",
+    "type": "Birth Name"
+   },
+   "notes": [],
+   "parents": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-proposed",
+    "agent-karel"
+   ],
+   "urls": [],
+   "xref": {
+    "ancestry": "212815084449"
+   }
+  },
+  "I0404": {
+   "alt_names": [],
+   "attributes": [],
+   "birth": {
+    "date": {
+     "day": 15,
+     "iso": "1886-07-15",
+     "modifier": null,
+     "month": 7,
+     "quality": null,
+     "sort": 2410103,
+     "text": "15 July 1886",
+     "year": 1886
+    },
+    "event": "E1587",
+    "place": "P0030",
+    "type": "Birth",
+    "year": 1886
+   },
+   "change": 1794236409,
+   "citations": [
+    "C1284"
+   ],
+   "death": {
+    "date": {
+     "day": 22,
+     "iso": "1974-11-22",
+     "modifier": null,
+     "month": 11,
+     "quality": null,
+     "sort": 2442374,
+     "text": "22 November 1974",
+     "year": 1974
+    },
+    "event": "E1588",
+    "place": "P0030",
+    "type": "Death",
+    "year": 1974
+   },
+   "events": [
+    {
+     "ref": "E1587",
+     "role": "Primary"
+    },
+    {
+     "ref": "E1588",
+     "role": "Primary"
+    }
+   ],
+   "families": [
+    "F0188",
+    "F0190"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "gender": "M",
+   "handle": "1051883c3f6910aa6cd98ab916ab",
+   "id": "I0404",
+   "media": [],
+   "name": {
+    "call": "",
+    "display": "Felix H. Jentsch",
+    "first": "Felix H.",
+    "nick": "",
+    "prefix": "",
+    "sort": "Jentsch, Felix H.",
+    "suffix": "",
+    "surname": "Jentsch",
+    "title": "",
+    "type": "Birth Name"
+   },
+   "notes": [],
+   "parents": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-proposed",
+    "agent-karel"
+   ],
+   "urls": [],
+   "xref": {
+    "ancestry": "212815084816"
+   }
+  },
+  "I0405": {
+   "alt_names": [
+    {
+     "call": "",
+     "date": null,
+     "display": "Anna Jentsch",
+     "first": "Anna",
+     "nick": "",
+     "prefix": "",
+     "sort": "Jentsch, Anna",
+     "suffix": "",
+     "surname": "Jentsch",
+     "title": "",
+     "type": "Married Name"
+    }
+   ],
+   "attributes": [],
+   "birth": {
+    "date": {
+     "day": 25,
+     "iso": "1889-05-25",
+     "modifier": null,
+     "month": 5,
+     "quality": null,
+     "sort": 2411148,
+     "text": "25 May 1889",
+     "year": 1889
+    },
+    "event": "E1589",
+    "place": "P0335",
+    "type": "Birth",
+    "year": 1889
+   },
+   "change": 1794236409,
+   "citations": [
+    "C1285"
+   ],
+   "death": {
+    "date": {
+     "day": 20,
+     "iso": "1967-07-20",
+     "modifier": null,
+     "month": 7,
+     "quality": null,
+     "sort": 2439692,
+     "text": "20 July 1967",
+     "year": 1967
+    },
+    "event": "E1590",
+    "place": "P0030",
+    "type": "Death",
+    "year": 1967
+   },
+   "events": [
+    {
+     "ref": "E1589",
+     "role": "Primary"
+    },
+    {
+     "ref": "E1590",
+     "role": "Primary"
+    }
+   ],
+   "families": [
+    "F0190"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "gender": "F",
+   "handle": "1051883c687a3bfcdbbb39ddd4b7",
+   "id": "I0405",
+   "media": [],
+   "name": {
+    "call": "",
+    "display": "Anna Nemetz",
+    "first": "Anna",
+    "nick": "",
+    "prefix": "",
+    "sort": "Nemetz, Anna",
+    "suffix": "",
+    "surname": "Nemetz",
+    "title": "",
+    "type": "Birth Name"
+   },
+   "notes": [],
+   "parents": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-proposed",
+    "agent-karel"
+   ],
+   "urls": [],
+   "xref": {
+    "ancestry": "212815084928"
+   }
+  },
+  "I0406": {
+   "alt_names": [],
+   "attributes": [],
+   "birth": {
+    "date": {
+     "day": 25,
+     "iso": "1910-09-25",
+     "modifier": null,
+     "month": 9,
+     "quality": null,
+     "sort": 2418940,
+     "text": "25 September 1910",
+     "year": 1910
+    },
+    "event": "E1591",
+    "place": "P0030",
+    "type": "Birth",
+    "year": 1910
+   },
+   "change": 1794236407,
+   "citations": [
+    "C1286"
+   ],
+   "death": {
+    "date": {
+     "day": 7,
+     "iso": "1987-05-07",
+     "modifier": null,
+     "month": 5,
+     "quality": null,
+     "sort": 2446923,
+     "text": "7 May 1987",
+     "year": 1987
+    },
+    "event": "E1592",
+    "place": "P0016",
+    "type": "Death",
+    "year": 1987
+   },
+   "events": [
+    {
+     "ref": "E1591",
+     "role": "Primary"
+    },
+    {
+     "ref": "E1592",
+     "role": "Primary"
+    }
+   ],
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "gender": "M",
+   "handle": "1051883c8dc51b99c82ef226be35",
+   "id": "I0406",
+   "media": [],
+   "name": {
+    "call": "",
+    "display": "Ernest M. Jentsch",
+    "first": "Ernest M.",
+    "nick": "",
+    "prefix": "",
+    "sort": "Jentsch, Ernest M.",
+    "suffix": "",
+    "surname": "Jentsch",
+    "title": "",
+    "type": "Birth Name"
+   },
+   "notes": [],
+   "parents": [
+    "F0188"
+   ],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-proposed",
+    "agent-karel"
+   ],
+   "urls": [],
+   "xref": {
+    "ancestry": "212815086022"
+   }
+  },
+  "I0407": {
+   "alt_names": [
+    {
+     "call": "",
+     "date": null,
+     "display": "Caroline M. Langenkamp",
+     "first": "Caroline M.",
+     "nick": "",
+     "prefix": "",
+     "sort": "Langenkamp, Caroline M.",
+     "suffix": "",
+     "surname": "Langenkamp",
+     "title": "",
+     "type": "Married Name"
+    }
+   ],
+   "attributes": [],
+   "birth": {
+    "date": {
+     "day": 6,
+     "iso": "1919-04-06",
+     "modifier": null,
+     "month": 4,
+     "quality": null,
+     "sort": 2422055,
+     "text": "6 April 1919",
+     "year": 1919
+    },
+    "event": "E1593",
+    "place": null,
+    "type": "Birth",
+    "year": 1919
+   },
+   "change": 1794236410,
+   "citations": [
+    "C1287",
+    "C1290"
+   ],
+   "death": {
+    "date": {
+     "day": 13,
+     "iso": "2006-12-13",
+     "modifier": null,
+     "month": 12,
+     "quality": null,
+     "sort": 2454083,
+     "text": "13 December 2006",
+     "year": 2006
+    },
+    "event": "E1594",
+    "place": "P0336",
+    "type": "Death",
+    "year": 2006
+   },
+   "events": [
+    {
+     "ref": "E1593",
+     "role": "Primary"
+    },
+    {
+     "ref": "E1594",
+     "role": "Primary"
+    }
+   ],
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "gender": "F",
+   "handle": "1051883cc8747924ef48023bac51",
+   "id": "I0407",
+   "media": [],
+   "name": {
+    "call": "",
+    "display": "Caroline M. Karl",
+    "first": "Caroline M.",
+    "nick": "",
+    "prefix": "",
+    "sort": "Karl, Caroline M.",
+    "suffix": "",
+    "surname": "Karl",
+    "title": "",
+    "type": "Birth Name"
+   },
+   "notes": [],
+   "parents": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-proposed",
+    "agent-karel"
+   ],
+   "urls": [],
+   "xref": {
+    "ancestry": "212815086130"
    }
   }
  },
@@ -173091,6 +174748,102 @@
    ],
    "type": "Unknown",
    "urls": []
+  },
+  "P0334": {
+   "alt_names": [],
+   "citations": [],
+   "code": "",
+   "display": "Town of Gibson, Manitowoc, Wisconsin, USA",
+   "enclosed_by": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051883c0afe76c69db3f0919460",
+   "hierarchy": [
+    "P0334"
+   ],
+   "id": "P0334",
+   "lat": null,
+   "long": null,
+   "media": [],
+   "name": "Town of Gibson, Manitowoc, Wisconsin, USA",
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed",
+    "needs-place"
+   ],
+   "type": "Unknown",
+   "urls": []
+  },
+  "P0335": {
+   "alt_names": [],
+   "citations": [],
+   "code": "",
+   "display": "Stangelville, Kewaunee, Wisconsin, USA",
+   "enclosed_by": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051883c583c456fcd2b569a7086",
+   "hierarchy": [
+    "P0335"
+   ],
+   "id": "P0335",
+   "lat": null,
+   "long": null,
+   "media": [],
+   "name": "Stangelville, Kewaunee, Wisconsin, USA",
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed",
+    "needs-place"
+   ],
+   "type": "Unknown",
+   "urls": []
+  },
+  "P0336": {
+   "alt_names": [],
+   "citations": [],
+   "code": "",
+   "display": "Wauwatosa, Milwaukee, Wisconsin, USA",
+   "enclosed_by": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051883cbf495fab43962806b9a7",
+   "hierarchy": [
+    "P0336"
+   ],
+   "id": "P0336",
+   "lat": null,
+   "long": null,
+   "media": [],
+   "name": "Wauwatosa, Milwaukee, Wisconsin, USA",
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed",
+    "needs-place"
+   ],
+   "type": "Unknown",
+   "urls": []
   }
  },
  "repositories": {
@@ -173290,6 +175043,14 @@
    "handle": "105155ceecbf4ae6a6e66d82ce52",
    "id": "R0024",
    "name": "2manitowoc.com (Evergreen Cemetery obituary transcriptions)",
+   "notes": [],
+   "type": "Archive",
+   "urls": []
+  },
+  "R0025": {
+   "handle": "1051883ca91f653d721f6881e228",
+   "id": "R0025",
+   "name": "2manitowoc.com (Evergreen Cemetery tombstone index)",
    "notes": [],
    "type": "Archive",
    "urls": []
@@ -180032,6 +181793,206 @@
     "agent-proposed"
    ],
    "title": "1950 United States Federal Census, Manitowoc, Manitowoc County, Wisconsin"
+  },
+  "S0213": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1283",
+    "C1288"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051883bfa2a12420d9989c0c380",
+   "id": "S0213",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0024"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "John Kliment obituary, Herald Times Reporter (Manitowoc), 15 Nov 1981, p. 3"
+  },
+  "S0214": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1284"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051883c1f2127dadf1842129340",
+   "id": "S0214",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0024"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "Felix H. Jentsch obituary, Herald Times Reporter (Manitowoc), 23 Nov 1974, p. 12"
+  },
+  "S0215": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1285",
+    "C1289"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051883c461c58c163b6f2c70fdb",
+   "id": "S0215",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0024"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "Anna Jentsch obituary, Manitowoc Herald Times, 21 Jul 1967, p. 8"
+  },
+  "S0216": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1286"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051883c701131ca3455266ba587",
+   "id": "S0216",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0024"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "Ernest M. Jentsch obituary, Manitowoc Herald Times, 8 May 1987, p. 15"
+  },
+  "S0217": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1287"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051883cac893496a35a8a7ffed7",
+   "id": "S0217",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0025"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "Evergreen Cemetery (Manitowoc) tombstone index, L surnames"
+  },
+  "S0218": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1290"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051883d1aba4563d0261caf90cd",
+   "id": "S0218",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0024"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "Caroline M. Langenkamp obituary, Herald Times Reporter (Manitowoc), 15 Dec 2006, p. A3"
   }
  }
 }
