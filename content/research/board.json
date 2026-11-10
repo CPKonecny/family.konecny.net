@@ -54,7 +54,7 @@
     },
     {
       "id": "R05",
-      "status": "now",
+      "status": "next",
       "line": "tauber",
       "title": "The Radnice parish registers",
       "summary": "Jan Taubr’s 1842 baptism, both marriages in 1863 and 1874, and many of the children’s baptisms and burials have been read in the Radnice registers. The records correct several dates on the family sheets and name the earlier generations. Still open are the eleven-versus-twelve count of the children, and some disputed identities in the generation before.",
@@ -79,7 +79,7 @@
     },
     {
       "id": "R07",
-      "status": "now",
+      "status": "next",
       "line": "wood",
       "title": "Mae Chill’s parents and origins",
       "summary": "Mae’s 1892 Lutheran baptism in Chicago names Albert Chill and Mathilde Luise Ottilie Bieging, and both parents are already in the tree. Census households and their Cook County marriage have been researched as well. Still open are their origins and arrival, their burials, and any death claim the records do not yet support.",
@@ -132,7 +132,7 @@
     },
     {
       "id": "R11",
-      "status": "now",
+      "status": "open",
       "line": "konecny",
       "title": "Jan Konecny and Veronika in Wisconsin",
       "summary": "Veronika was in Manitowoc in 1920. A 1950 Milwaukee household in the name Veronica Kolar is a strong later lead, and a 1936 obituary mentions Mrs. Frank Kolar, but a remarriage and a death identity are not proved. Jan arrived in New York in May 1913, before Peter in August 1913, and Jan’s death has not been found.",
@@ -146,7 +146,7 @@
     },
     {
       "id": "R12",
-      "status": "now",
+      "status": "open",
       "line": "tauber",
       "title": "Jan Tauber’s children: the family list and migration routes",
       "summary": "The Czech visit papers already give a twelve-child family list and the account of nine emigrants. Later parish research has identified eleven baptisms for Jan Taubr and Anna Králová. Records trace Anna to Chicago and Wisconsin, Václav to Chicago, and Josef and Antonín to Illinois; the proposed Bokr and Bouska matches remain probable.",
@@ -172,7 +172,7 @@
     },
     {
       "id": "R14",
-      "status": "now",
+      "status": "open",
       "line": "wood",
       "title": "Emilie Wagner and the Bentleys of Brooklyn",
       "summary": "Emilie M. Wagner, wife of Norman S. Bentley, has published marriage evidence, a newspaper notice and a cemetery entry. The open questions are her mother’s identity and the earlier Bentley parentage, not a lack of sources altogether. Published Bentley and Seymour citations already exist, so those generations are not only a lineage-book claim.",
@@ -181,7 +181,7 @@
     },
     {
       "id": "R15",
-      "status": "now",
+      "status": "open",
       "line": "wood",
       "title": "Checking the colonial generations against the published volumes",
       "summary": "Many colonial links now have citations in published records or genealogies. The links that are still weak need to be listed apart from the ones those books support. Support in print is not the same as approval by the Mayflower Society.",
@@ -231,7 +231,7 @@
     },
     {
       "id": "R19",
-      "status": "now",
+      "status": "open",
       "line": "morris",
       "title": "Earlier Morris and Ward generations",
       "summary": "Research has begun in obituaries, newspapers and marriage indexes. Some proposed relationships are still leads. No parentage is treated as settled without a record.",
@@ -311,7 +311,7 @@
     },
     {
       "id": "R27",
-      "status": "now",
+      "status": "open",
       "line": "konecny",
       "title": "The Wacek and Lodl family",
       "summary": "Census and obituary records support a Wacek and Lodl family anchored to Lillian G. Wacek, Frank Konecny’s first wife. Her parents are Anton, born in Bohemia, and Anna, whose maiden name three obituaries give as Suchomel; her sisters are Emma (Mrs. Joseph Lodl) and Ella (Mrs. John Kliment), and Howard E. Lodl is Emma’s son. Everyone filed so far is now in the research database, and Emma, Joseph, Howard and Ella have their own pages on the site. Ella’s husband, John Kliment (1900–1981), was added to the online tree on 9 November 2026 with his obituary attached, and is filed for the research database, waiting to be applied.",
@@ -328,7 +328,7 @@
     },
     {
       "id": "R28",
-      "status": "now",
+      "status": "open",
       "line": "konecny",
       "title": "Gertrude Karl’s parents and sister",
       "summary": "Gertrude Irene Karl, the wife of Edward G. Konecny, is already on this site. Obituaries name her parents, George F. Karl and Pauline A. Kowalski, who married at Kewaunee, Wisconsin, on 26 June 1917, and her sister Charlotte G. Karl. All three were added to the research database on 8 November 2026 and have their own pages on the site since the 9 November rebuild. Her sister Caroline M. (Karl) Langenkamp (1919–2006) was added to the online tree on 9 November 2026 with her obituary and gravestone listing attached, and is filed for the research database, waiting to be applied.",
@@ -344,7 +344,7 @@
     },
     {
       "id": "R29",
-      "status": "now",
+      "status": "open",
       "line": "konecny",
       "title": "Frank Konecny’s second marriage",
       "summary": "Frank Konecny, Peter’s brother, married Lydia Prohaska at Manitowoc on 6 June 1947, after the death of his first wife, Lillian Wacek. Lydia was born in Milwaukee on 23 May 1895 and died at Manitowoc on 6 July 1959. She was added to the research database on 8 November 2026 and has her own page on the site since the 9 November rebuild.",
@@ -358,7 +358,7 @@
     },
     {
       "id": "R30",
-      "status": "now",
+      "status": "open",
       "line": "konecny",
       "title": "Gladys Jentsch’s parents and half-brother",
       "summary": "Gladys M. Jentsch, the wife of John F. Konecny, is already on this site. Obituaries name her parents as Felix H. Jentsch (1886–1974) and Anna Nemetz (1889–1967), and a half-brother, Ernest M. Jentsch (1910–1987). Ernest’s mother is not settled: his own obituary names her as Anna Thomas, while Felix is also recorded as having married an Anna Platka. Felix (1886–1974), Anna (Nemetz) (1889–1967) and Ernest (1910–1987) were added to the online tree on 9 November 2026 with their obituaries attached, and are filed for the research database, waiting to be applied. Ernest’s mother is left blank until the Thomas-or-Platka question is settled.",
@@ -367,6 +367,63 @@
       "people": [
         "I0303",
         "I0301"
+      ],
+      "since": "2026-11-09"
+    },
+    {
+      "id": "R31",
+      "status": "open",
+      "line": "tauber",
+      "title": "Anna Tauber’s ship and arrival date",
+      "summary": "Anna Tauber was born at Mostiště on 15 September 1891 and later married Peter. The research database records the marriage as 22 February 1919 in Cook County, Illinois. No passenger list for her arrival has been found, so the ship and the date she entered the United States are still missing.",
+      "detail": "The birth is in Radnice RO32, Mostiště house 27, 15 September 1891 (Porta fontium image radnice-ro-32_0901-n). Search the Ellis Island and Baltimore passenger lists, 1905–1919, under Tauber and related spellings.",
+      "owner": "Karel",
+      "people": [
+        "I0146"
+      ],
+      "since": "2026-11-09"
+    },
+    {
+      "id": "R32",
+      "status": "next",
+      "line": "all",
+      "title": "Missing WWI and WWII draft cards",
+      "summary": "Peter’s and William Gust Chill’s First World War draft cards, and William’s Second World War card, are already in hand. Still missing are the cards for Richard Oscar Toepel (1925–2015), known as Dick, and for his father Oscar M. Toepel (1882–1963); for Ervin William Hansen (about 1899–1954); and for Norman Bentley Wood (1889–1950). A later Wood, born 10 January 1921 and deceased 27 February 2013, also has a Second World War service question that has not been settled from a card.",
+      "detail": "Search Ancestry or Fold3 for WWI (NARA M1509) and WWII draft registrations. Richard Oscar and Dick are the same man; there is not a separate Richard O. Toepel to look up. Identify the 1921 Wood man by those dates so he is not confused with anyone else of the same name.",
+      "owner": "Karel",
+      "people": [
+        "I0023",
+        "I0072",
+        "I0350",
+        "I0352",
+        "I0056"
+      ],
+      "since": "2026-11-09"
+    },
+    {
+      "id": "R33",
+      "status": "open",
+      "line": "wood",
+      "title": "Norman B. Wood’s Army service record",
+      "summary": "Colonel Norman Bentley Wood’s stone at Forest View Cemetery, Two Rivers, already records U.S. Army service in both world wars (6 November 1889 – 10 September 1950). His official Army service file has not been read. That file would confirm ranks, units and dates beyond what the stone shows.",
+      "detail": "The cemetery entry is already cited on the military stories page (2manitowoc.com/89CS.html). Official Military Personnel Files for Army officers of this period are held by NARA in St. Louis.",
+      "owner": "Karel",
+      "people": [
+        "I0023"
+      ],
+      "since": "2026-11-09"
+    },
+    {
+      "id": "R34",
+      "status": "open",
+      "line": "all",
+      "title": "O’Regan family story (Louisville)",
+      "summary": "The O’Regan line connected with Louisville still has no family story or papers on this site. A short account, a funeral card, or a named record for a deceased O’Regan would give the research a place to start. Earlier Morris questions stay on their own card (R19).",
+      "detail": "John Francis Xavier O’Regan (1904–1978) is already in the research database. No story or compiled note for this line has been added yet.",
+      "ask": "Does anyone have a funeral card, obituary, letter or short story for a deceased O’Regan of Louisville that we could add?",
+      "owner": "family",
+      "people": [
+        "I0382"
       ],
       "since": "2026-11-09"
     }
