@@ -1,0 +1,52 @@
+name: Check a pull request
+
+# Builds the site as it would be after merging, so a pull request shows a green tick or a red cross
+# before anyone merges it. Nothing is deployed from here; pages.yml does that on push to main.
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: check-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2          # the merge commit and its two parents: main, and the pull request
+
+      - name: Research and story pull requests change content/ only
+        if: startsWith(github.head_ref, 'cursor/')
+        run: |
+          bad=$(git diff --name-only HEAD^1 HEAD | grep -v '^content/' || true)
+          if [ -n "$bad" ]; then
+            echo "This pull request changes files outside content/:"
+            echo "$bad"
+            echo "Site code (site/, export/, tools/, .github/) is changed by Claude, not in a content pull request."
+            echo "See README.md, 'Who changes what'."
+            exit 1
+          fi
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r site/requirements.txt
+
+      - name: Stories name no living person
+        run: python3 tools/check_stories.py
+
+      - name: The site builds, and no research card is hidden
+        run: |
+          set -o pipefail
+          python3 site/build.py | tee build.log
+          if grep -q '^warning: board .*dropped' build.log; then
+            echo "A research-board card names a living person in full, so the site would hide it."
+            echo "Reword it: first name and relationship only."
+            exit 1
+          fi
