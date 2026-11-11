@@ -6,8 +6,8 @@
       "status": "now",
       "line": "all",
       "title": "October ancestors: database reconciliation",
-      "summary": "Eight ancestor profiles from the October research were filed for the research database with the citations that support them. They are Jiří Taubr; Josefa, whose maiden name is disputed and not settled; Josef Ocásek and Kateřina Balková; Hynek Vlček and Františka Mašková; and Herman Benz and Anna Roesner. A fresh export was not available, so the filing is pending verification and is not reported as applied.",
-      "detail": "The last known check found these filings pending rather than applied. No later export was available for this update, so earlier queue totals are not repeated as the current state. Josefa is not given the maiden name Kosmanda as a settled fact.",
+      "summary": "Eight ancestor profiles from the October research, with the citations that support them, and four family links for them reached the research database on 7 November 2026. They are Jiří Taubr; Josefa, whose maiden name is disputed and not settled; Josef Ocásek and Kateřina Balková; Hynek Vlček and Františka Mašková; and Herman Benz and Anna Roesner. What remains is a fresh database export to compare every profile against the online tree.",
+      "detail": "All twelve filings for these profiles and family links are recorded as applied on 7 November 2026. No database export newer than 31 October was available on 8 November, so a profile-by-profile comparison with the online tree has not yet been made and no tree totals are claimed here. Josefa is not given the maiden name Kosmanda as a settled fact; earlier register readings point to a different surname, and that question stays open.",
       "owner": "researcher",
       "since": "2026-11-06"
     },
@@ -194,7 +194,7 @@
       "title": "Earlier Morris and Ward generations",
       "summary": "Research has begun in obituaries, newspapers and marriage indexes. Some proposed relationships are still leads. No parentage is treated as settled without a record.",
       "detail": "Index entries that give dates only, without a readable obituary, are not treated as an unread full account waiting to be fetched. Further documentary corroboration is still needed.",
-      "ask": "Historic family records about deceased Morris or Ward relatives would help test the remaining leads.",
+      "ask": "An obituary, funeral card or family Bible page for a deceased Morris or Ward grandparent that names that person’s parents or birthplace would help test the remaining leads.",
       "owner": "researcher"
     },
     {
@@ -271,13 +271,39 @@
       "status": "now",
       "line": "konecny",
       "title": "The Wacek and Lodl family",
-      "summary": "Census, obituary and cemetery records were filed on 7 November 2026 for five deceased relatives, anchored to Lillian G. Wacek, who is already on this site. Anton Wacek, born about 1867 in Bohemia, and Anna, maiden name unknown, born about 1871 in Wisconsin, are filed as Lillian’s parents, and Emma Wacek as their daughter. Joseph H. Lodl, born about 1896 in Wisconsin and died in 1966, is filed as Emma’s husband, and Howard E. Lodl, died in 2002, as their son. The filings are pending verification that the research database received them.",
-      "detail": "Lillian’s 1946 obituary names her parents as Mr. and Mrs. Anton Wacek and her sister as Mrs. Joseph Lodl. The 1950 census lists Joseph Lodl with wife Emma, son Howard, and parents-in-law Anton and Anna Wacek; together these records support the family links. Emma’s birth conflicts: a census gives about 1894 in Wisconsin, and an obituary gives 24 October 1892. Her death in the filings is 18 June 1980. Howard’s birth conflicts as well: a census gives about 1925 and a cemetery record gives 1924, and his death year is 2002. No death date was filed for Anton or Anna, and no marriage date was filed, so none is stated. Profiles, family links, events and notes of the two birth conflicts were added and cited; application to the database is not confirmed.",
+      "summary": "Census and obituary records support a Wacek and Lodl family anchored to Lillian G. Wacek, who is already on this site. Anton Wacek, born in Bohemia, and his wife Anna are Lillian’s parents; their daughters Emma (Mrs. Joseph Lodl) and Ella (Mrs. John Kliment) are her sisters, and Howard E. Lodl is Emma’s son. Three obituaries give Anna’s maiden name as Suchomel. Most of the family is now in the research database; Anna was filed again and Ella filed for the first time on 8 November, and both are waiting to be applied.",
+      "detail": "Lillian’s 1946 obituary names her parents as Mr. and Mrs. Anton Wacek and her sisters as Mrs. Joseph Lodl and Mrs. John Kliment. The 1950 Manitowoc census, enumeration district 36-48B, sheet 7 (earlier filings said sheet 1 in error), lists Joseph Lodl with wife Emma, son Howard, and parents-in-law Anton and Anna Wacek. Anton’s 1953 obituary gives his birth as 30 May 1866 at a place printed as Milnik, Czechoslovakia, and Anna’s 1951 obituary says she was born Anna Suchomel at Kossuth, Wisconsin, in 1871; these are recorded as research notes until the obituaries are attached in the online tree. Ella was born 6 February 1900 at Manitowoc and died 13 June 1967, from her obituary. Emma’s birth conflicts (census about 1894, obituary 24 October 1892), as does Howard’s (census about 1925, cemetery 1924). Anton, Emma, Joseph and Howard were applied on 7 November; Anna’s first filing was turned back because no surname was given, and she has been refiled with her married name. In the database Anton’s family still needs Anna set as the mother.",
       "owner": "researcher",
       "people": [
         "I0238"
       ],
       "since": "2026-11-07"
+    },
+    {
+      "id": "R28",
+      "status": "now",
+      "line": "konecny",
+      "title": "Gertrude Karl’s parents and sister",
+      "summary": "Gertrude Irene Karl, the wife of Edward G. Konecny, is already on this site. Obituaries name her parents, George F. Karl and Pauline A. Kowalski, who married at Kewaunee, Wisconsin, on 26 June 1917, and her sister Charlotte G. Karl. All three were added to the online tree on 8 November 2026 and filed for the research database, where they are waiting to be applied.",
+      "detail": "George F. Karl was born 14 August 1897 at Kewaunee and died 15 April 1979 at Manitowoc (Herald Times Reporter, 16 April 1979, page 3). Pauline A. Kowalski was born 25 June 1898 at Kewaunee and died 11 August 1989 at Manitowoc (Manitowoc Herald Times, 13 August 1989, page B10); the cemetery stone listing reads 23 June 1898, a conflict to note. Charlotte was born 29 April 1925 at Kewaunee and died 21 November 2007 (Herald Times Reporter, 22 November 2007); the stone listing’s 31 November is a misprint. All three obituaries are read from 2manitowoc.com transcriptions, not newspaper images. George’s parents, Charles Karl and Mary Juza, and Pauline’s, Frank Kowalski and Lottie Ratajczyk, are leads for later.",
+      "owner": "researcher",
+      "people": [
+        "I0302"
+      ],
+      "since": "2026-11-08"
+    },
+    {
+      "id": "R29",
+      "status": "now",
+      "line": "konecny",
+      "title": "Frank Konecny’s second marriage",
+      "summary": "Frank Konecny, Peter’s brother, married Lydia Prohaska at Manitowoc on 6 June 1947, after the death of his first wife, Lillian Wacek. Lydia was born in Milwaukee on 23 May 1895 and died at Manitowoc on 6 July 1959. She was added to the online tree on 8 November 2026 and filed for the research database, where she is waiting to be applied.",
+      "detail": "Lydia’s obituary (Manitowoc Herald Times, 7 July 1959, page 13, 2manitowoc.com transcription) gives her birth, the 1947 marriage and three stepsons, Edward, John and Louis. The 1950 Manitowoc census, enumeration district 36-48B, sheet 7, lines 10–12, lists Frank, his wife Lydia and his son Louis at 1842 Rankin Street; that household is what ties her to this Frank. Frank’s own 1976 obituary does not mention her, which is noted as a conflict. Her mother’s maiden name, Kolar, is not taken as a connection to the Kolar name that appears in Peter’s family; it is treated as a coincidence of surname.",
+      "owner": "researcher",
+      "people": [
+        "I0149"
+      ],
+      "since": "2026-11-08"
     }
   ]
 }
