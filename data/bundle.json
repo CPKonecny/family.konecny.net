@@ -40342,6 +40342,241 @@
    ],
    "tier": "compiled",
    "url": "https://www.2manitowoc.com/44Lanobit.html#langenkampcaroline"
+  },
+  "C1291": {
+   "ancestry_record_id": "",
+   "change": 1794324602,
+   "cited_by": [
+    {
+     "id": "E1595",
+     "type": "event"
+    },
+    {
+     "id": "E1596",
+     "type": "event"
+    },
+    {
+     "id": "I0408",
+     "type": "person"
+    }
+   ],
+   "confidence": 2,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051bcce31024023394060848cff",
+   "id": "C1291",
+   "information": "secondary",
+   "media": [],
+   "notes": [
+    "N1935",
+    "N1936"
+   ],
+   "page": "Certificate 1969-MN-002412",
+   "proposal_file": "2026-11-10_102601_toepel-alfred_add-person.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0219",
+   "source_type": "derivative",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "index",
+   "url": "https://www.mnhs.org/search/people"
+  },
+  "C1292": {
+   "ancestry_record_id": "",
+   "change": 1794324603,
+   "cited_by": [
+    {
+     "id": "E1597",
+     "type": "event"
+    },
+    {
+     "id": "E1598",
+     "type": "event"
+    },
+    {
+     "id": "I0409",
+     "type": "person"
+    }
+   ],
+   "confidence": 2,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051bcce5bf23cc203eb9599c1a4",
+   "id": "C1292",
+   "information": "secondary",
+   "media": [],
+   "notes": [
+    "N1937",
+    "N1938"
+   ],
+   "page": "Certificate 1979-MN-023964",
+   "proposal_file": "2026-11-10_102603_hansen-edna_add-person.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0220",
+   "source_type": "derivative",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "index",
+   "url": "https://www.mnhs.org/search/people"
+  },
+  "C1293": {
+   "ancestry_record_id": "",
+   "change": 1794324604,
+   "cited_by": [
+    {
+     "id": "E1599",
+     "type": "event"
+    },
+    {
+     "id": "E1600",
+     "type": "event"
+    },
+    {
+     "id": "I0410",
+     "type": "person"
+    }
+   ],
+   "confidence": 2,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051bcce86a742476f5847af8129",
+   "id": "C1293",
+   "information": "secondary",
+   "media": [],
+   "notes": [
+    "N1939",
+    "N1940"
+   ],
+   "page": "Certificate 1985-MN-009314",
+   "proposal_file": "2026-11-10_102606_hansen-florence_add-person.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0221",
+   "source_type": "derivative",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "index",
+   "url": "https://www.mnhs.org/search/people"
+  },
+  "C1294": {
+   "ancestry_record_id": "",
+   "change": 1794324605,
+   "cited_by": [
+    {
+     "id": "E1601",
+     "type": "event"
+    },
+    {
+     "id": "E1602",
+     "type": "event"
+    },
+    {
+     "id": "I0411",
+     "type": "person"
+    }
+   ],
+   "confidence": 2,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051bcceb0e628d860bc4f866b5f",
+   "id": "C1294",
+   "information": "secondary",
+   "media": [],
+   "notes": [
+    "N1941",
+    "N1942"
+   ],
+   "page": "Certificate 1996-MN-022919",
+   "proposal_file": "2026-11-10_102612_anderson-ina_add-person.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0222",
+   "source_type": "derivative",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "index",
+   "url": "https://www.mnhs.org/search/people"
+  },
+  "C1295": {
+   "ancestry_record_id": "",
+   "change": 1794324606,
+   "cited_by": [
+    {
+     "id": "E1603",
+     "type": "event"
+    },
+    {
+     "id": "E1604",
+     "type": "event"
+    },
+    {
+     "id": "I0412",
+     "type": "person"
+    }
+   ],
+   "confidence": 2,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051bcced3932d3d61bc24171270",
+   "id": "C1295",
+   "information": "secondary",
+   "media": [],
+   "notes": [
+    "N1943",
+    "N1944"
+   ],
+   "page": "Certificate 1952-MN-004399",
+   "proposal_file": "2026-11-10_102615_anderson-ada_add-person.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0223",
+   "source_type": "derivative",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "index",
+   "url": "https://www.mnhs.org/search/people"
   }
  },
  "events": {
@@ -91831,6 +92066,436 @@
     "agent-proposed"
    ],
    "type": "Death"
+  },
+  "E1595": {
+   "attributes": [],
+   "change": 1794324602,
+   "citations": [
+    "C1291"
+   ],
+   "date": {
+    "day": 1,
+    "iso": "1888-01-01",
+    "modifier": null,
+    "month": 1,
+    "quality": null,
+    "sort": 2410638,
+    "text": "1 January 1888",
+    "year": 1888
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051bcce3baf74078d1cada6d11d",
+   "id": "E1595",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0408",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0337",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Birth"
+  },
+  "E1596": {
+   "attributes": [],
+   "change": 1794324602,
+   "citations": [
+    "C1291"
+   ],
+   "date": {
+    "day": 25,
+    "iso": "1969-01-25",
+    "modifier": null,
+    "month": 1,
+    "quality": null,
+    "sort": 2440247,
+    "text": "25 January 1969",
+    "year": 1969
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051bcce43c95d7298bf11c6bd7d",
+   "id": "E1596",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0408",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0338",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Death"
+  },
+  "E1597": {
+   "attributes": [],
+   "change": 1794324603,
+   "citations": [
+    "C1292"
+   ],
+   "date": {
+    "day": 6,
+    "iso": "1889-04-06",
+    "modifier": null,
+    "month": 4,
+    "quality": null,
+    "sort": 2411099,
+    "text": "6 April 1889",
+    "year": 1889
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051bcce616453f5b61b28455f71",
+   "id": "E1597",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0409",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0091",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Birth"
+  },
+  "E1598": {
+   "attributes": [],
+   "change": 1794324603,
+   "citations": [
+    "C1292"
+   ],
+   "date": {
+    "day": 25,
+    "iso": "1979-09-25",
+    "modifier": null,
+    "month": 9,
+    "quality": null,
+    "sort": 2444142,
+    "text": "25 September 1979",
+    "year": 1979
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051bcce67efe9ad79b8362f6c6",
+   "id": "E1598",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0409",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0091",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Death"
+  },
+  "E1599": {
+   "attributes": [],
+   "change": 1794324604,
+   "citations": [
+    "C1293"
+   ],
+   "date": {
+    "day": 20,
+    "iso": "1908-04-20",
+    "modifier": null,
+    "month": 4,
+    "quality": null,
+    "sort": 2418052,
+    "text": "20 April 1908",
+    "year": 1908
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051bcce8da26d54bda4f7734a0b",
+   "id": "E1599",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0410",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0091",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Birth"
+  },
+  "E1600": {
+   "attributes": [],
+   "change": 1794324605,
+   "citations": [
+    "C1293"
+   ],
+   "date": {
+    "day": 5,
+    "iso": "1985-04-05",
+    "modifier": null,
+    "month": 4,
+    "quality": null,
+    "sort": 2446161,
+    "text": "5 April 1985",
+    "year": 1985
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051bcce951573b8538f6714df2e",
+   "id": "E1600",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0410",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0091",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Death"
+  },
+  "E1601": {
+   "attributes": [],
+   "change": 1794324605,
+   "citations": [
+    "C1294"
+   ],
+   "date": {
+    "day": 4,
+    "iso": "1907-07-04",
+    "modifier": null,
+    "month": 7,
+    "quality": null,
+    "sort": 2417761,
+    "text": "4 July 1907",
+    "year": 1907
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051bcceb5667d2af9c4155ebd39",
+   "id": "E1601",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0411",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0285",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Birth"
+  },
+  "E1602": {
+   "attributes": [],
+   "change": 1794324606,
+   "citations": [
+    "C1294"
+   ],
+   "date": {
+    "day": 6,
+    "iso": "1996-08-06",
+    "modifier": null,
+    "month": 8,
+    "quality": null,
+    "sort": 2450302,
+    "text": "6 August 1996",
+    "year": 1996
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051bccebd98148979cf28d5fa38",
+   "id": "E1602",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0411",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0339",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Death"
+  },
+  "E1603": {
+   "attributes": [],
+   "change": 1794324606,
+   "citations": [
+    "C1295"
+   ],
+   "date": {
+    "day": 12,
+    "iso": "1896-03-12",
+    "modifier": null,
+    "month": 3,
+    "quality": null,
+    "sort": 2413631,
+    "text": "12 March 1896",
+    "year": 1896
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051bcced7ec4b9a9929345f422",
+   "id": "E1603",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0412",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0283",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Birth"
+  },
+  "E1604": {
+   "attributes": [],
+   "change": 1794324606,
+   "citations": [
+    "C1295"
+   ],
+   "date": {
+    "day": 26,
+    "iso": "1952-03-26",
+    "modifier": null,
+    "month": 3,
+    "quality": null,
+    "sort": 2434098,
+    "text": "26 March 1952",
+    "year": 1952
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051bccedc2c69921bce81a517bc",
+   "id": "E1604",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0412",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0285",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Death"
   }
  },
  "families": {
@@ -105647,21 +106312,21 @@
    "very high"
   ],
   "counts": {
-   "citations": 1239,
-   "events": 1434,
+   "citations": 1244,
+   "events": 1444,
    "families": 183,
    "media": 202,
-   "notes": 1344,
-   "people": 404,
-   "places": 326,
-   "repositories": 26,
-   "sources": 213
+   "notes": 1354,
+   "people": 409,
+   "places": 329,
+   "repositories": 27,
+   "sources": 218
   },
   "counts_people": {
-   "full": 336,
+   "full": 341,
    "living": 68
   },
-  "generated": "2026-11-10T08:17:47+00:00",
+  "generated": "2026-11-11T08:17:47+00:00",
   "generator": "gramps_export.py 0.3.0",
   "gramps_version": "6.0.8",
   "gramps_webapi_version": "3.17.0",
@@ -105685,7 +106350,7 @@
    "oral",
    "ai-draft"
   ],
-  "today": "2026-11-10",
+  "today": "2026-11-11",
   "tree": "Konecny"
  },
  "notes": {
@@ -134591,6 +135256,196 @@
    "review": "unreviewed",
    "tags": [],
    "text": "2026-11-09 (karel): Companion to 095505 (apply after it). Obituary supports death date/place and parentage. Verified attached on Ancestry by browser executor 9 Nov 2026. Obituary is a 2manitowoc.com transcription, so tier compiled, not an original newspaper image.",
+   "type": "Research"
+  },
+  "N1935": {
+   "attached_to": [
+    {
+     "id": "C1291",
+     "type": "citation"
+    }
+   ],
+   "change": 1794324602,
+   "flags": [],
+   "handle": "1051bcce2bde50a54c5baed6892c",
+   "html": "<p>Transcription (as written): Toepel, Alfred Louis | death 1969-01-25 | Hennepin County | birth Jan 1 1888 | birthplace OUT OF STATE | mother&#x27;s maiden name WEIHLER | certificate 1969-MN-002412</p>",
+   "id": "N1935",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Toepel, Alfred Louis | death 1969-01-25 | Hennepin County | birth Jan 1 1888 | birthplace OUT OF STATE | mother's maiden name WEIHLER | certificate 1969-MN-002412",
+   "type": "Transcript"
+  },
+  "N1936": {
+   "attached_to": [
+    {
+     "id": "C1291",
+     "type": "citation"
+    }
+   ],
+   "change": 1794324602,
+   "flags": [],
+   "handle": "1051bcce2e4e575bedded0ff3db8",
+   "html": "<p>2026-11-10 (karel): Alfred Louis Toepel, deceased brother of Oscar M. Toepel (I0350 / 212807148588, Chris&#x27;s great-grandfather on the Toepel line, father of Richard Oscar &#x27;Dick&#x27; Toepel) and son of Mary (Weihler) Toepel (I0381 / 212811650336). Relationship is stated by the 1900 Ashland census (Alfred, Jan 1888, age 12, son in the household of widowed head Mary Toepel that also lists Oscar, Apr 1882, as son); the death index independently gives mother&#x27;s maiden name WEIHLER and the same birth date 1 Jan 1888, matching the maiden name already established for Mary on 27 Oct. Birth place Ashland County, Wisconsin is from Find a Grave only (census: Wisconsin). Burial Lakewood Cemetery, Minneapolis, Section 10 Lot 3D Grave 12 (Find a Grave 125138452). Father (Louis Toepel) is still a HOLD/LEAD and is NOT proposed. Relations omitted on purpose: link via the add_family proposal 100010 (mother only) after checking whether Oscar already sits in a family with Mary on Ancestry; do not create a second family. Ancestry profile 212815367550 created 10 November 2026 on tree 208290233, linked to mother Mary Weihler 212811650336 only (no father). The Minnesota death-index image (certificate 1969-MN-002412) is verified attached in the gallery.<br>Conflicts: [&#x27;Father not named by any record: Louis Toepel (1847-1898) remains a LEAD. Do not enter a father.&#x27;, &#x27;Birth place Ashland County WI rests on Find a Grave; census gives only Wisconsin.&#x27;, &#x27;Birth day/month rests on the death index (derivative); the census gives Jan 1888 only. They agree.&#x27;]</p>",
+   "id": "N1936",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-10 (karel): Alfred Louis Toepel, deceased brother of Oscar M. Toepel (I0350 / 212807148588, Chris's great-grandfather on the Toepel line, father of Richard Oscar 'Dick' Toepel) and son of Mary (Weihler) Toepel (I0381 / 212811650336). Relationship is stated by the 1900 Ashland census (Alfred, Jan 1888, age 12, son in the household of widowed head Mary Toepel that also lists Oscar, Apr 1882, as son); the death index independently gives mother's maiden name WEIHLER and the same birth date 1 Jan 1888, matching the maiden name already established for Mary on 27 Oct. Birth place Ashland County, Wisconsin is from Find a Grave only (census: Wisconsin). Burial Lakewood Cemetery, Minneapolis, Section 10 Lot 3D Grave 12 (Find a Grave 125138452). Father (Louis Toepel) is still a HOLD/LEAD and is NOT proposed. Relations omitted on purpose: link via the add_family proposal 100010 (mother only) after checking whether Oscar already sits in a family with Mary on Ancestry; do not create a second family. Ancestry profile 212815367550 created 10 November 2026 on tree 208290233, linked to mother Mary Weihler 212811650336 only (no father). The Minnesota death-index image (certificate 1969-MN-002412) is verified attached in the gallery.\nConflicts: ['Father not named by any record: Louis Toepel (1847-1898) remains a LEAD. Do not enter a father.', 'Birth place Ashland County WI rests on Find a Grave; census gives only Wisconsin.', 'Birth day/month rests on the death index (derivative); the census gives Jan 1888 only. They agree.']",
+   "type": "Research"
+  },
+  "N1937": {
+   "attached_to": [
+    {
+     "id": "C1292",
+     "type": "citation"
+    }
+   ],
+   "change": 1794324603,
+   "flags": [],
+   "handle": "1051bcce552a6b8676beed43a9a6",
+   "html": "<p>Transcription (as written): Shinofield, Edna L. | death 1979-09-25 | Freeborn County | birth Apr 6 1889 | birthplace MINNESOTA | mother&#x27;s maiden name JENSEN | certificate 1979-MN-023964</p>",
+   "id": "N1937",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Shinofield, Edna L. | death 1979-09-25 | Freeborn County | birth Apr 6 1889 | birthplace MINNESOTA | mother's maiden name JENSEN | certificate 1979-MN-023964",
+   "type": "Transcript"
+  },
+  "N1938": {
+   "attached_to": [
+    {
+     "id": "C1292",
+     "type": "citation"
+    }
+   ],
+   "change": 1794324603,
+   "flags": [],
+   "handle": "1051bcce582a33c9bf3d8358c662",
+   "html": "<p>2026-11-10 (karel): Edna Luella (Hansen) Shinofield, deceased daughter of Charles C. Hansen (I0377 / 212811655300) and Inger Marie (Jensen) Hansen (I0379 / 212811655323). Relationship stated three ways: the 1900 census lists Edna L., Apr 1889, as daughter in the household of Charles C. and Mary J. Hansen (105 N. First Ave, Albert Lea); the 1930 census lists Shinofield, Edna L., 39, widowed, daughter, in Charles&#x27;s household; the 4 Nov 1947 Albert Lea Tribune obituary of Charles lists &#x27;Mrs. Edna Shinafield&#x27; among his daughters. The death index gives mother&#x27;s maiden name JENSEN and birth 6 Apr 1889 (census: Apr 1889, age 11 in June 1900). Husband Thomas Voris Shinofield (1886-1916, m. 1910) and daughters Shirley and Edna Elizabeth appear only on Find a Grave and are NOT proposed. Burial Graceland Cemetery, Albert Lea (Find a Grave 193806856). Relations omitted on purpose: link via add_family 100011 into the existing Charles x Inger family (F0176 in Gramps) and do not add Ervin W. Hansen I0352 as a child there (his parentage is still a LEAD). Ancestry profile 212815368044 created 10 November 2026 on tree 208290233 as a daughter of Charles C. Hansen 212811655300 and Inger Marie Jensen 212811655323. The Minnesota death-index image (certificate 1979-MN-023964) is verified attached in the gallery.<br>Conflicts: [&quot;1900 census names the wife &#x27;Mary J.&#x27; (b. Jan 1868, Denmark); the 1947 obituary names the wife Inger Marie Jensen and the 1930 census &#x27;Marie&#x27;. Treated as the same woman (Inger Marie, I0379, d. 3 Mar 1944); the death index mother&#x27;s maiden name JENSEN agrees.&quot;, &#x27;Surname spelling: Shinofield (census 1930, MN index, Find a Grave) vs Shinafield (1947 obituary).&#x27;, &#x27;Birth day/month rests on the death index and Find a Grave (derivative); the census gives Apr 1889 only.&#x27;]</p>",
+   "id": "N1938",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-10 (karel): Edna Luella (Hansen) Shinofield, deceased daughter of Charles C. Hansen (I0377 / 212811655300) and Inger Marie (Jensen) Hansen (I0379 / 212811655323). Relationship stated three ways: the 1900 census lists Edna L., Apr 1889, as daughter in the household of Charles C. and Mary J. Hansen (105 N. First Ave, Albert Lea); the 1930 census lists Shinofield, Edna L., 39, widowed, daughter, in Charles's household; the 4 Nov 1947 Albert Lea Tribune obituary of Charles lists 'Mrs. Edna Shinafield' among his daughters. The death index gives mother's maiden name JENSEN and birth 6 Apr 1889 (census: Apr 1889, age 11 in June 1900). Husband Thomas Voris Shinofield (1886-1916, m. 1910) and daughters Shirley and Edna Elizabeth appear only on Find a Grave and are NOT proposed. Burial Graceland Cemetery, Albert Lea (Find a Grave 193806856). Relations omitted on purpose: link via add_family 100011 into the existing Charles x Inger family (F0176 in Gramps) and do not add Ervin W. Hansen I0352 as a child there (his parentage is still a LEAD). Ancestry profile 212815368044 created 10 November 2026 on tree 208290233 as a daughter of Charles C. Hansen 212811655300 and Inger Marie Jensen 212811655323. The Minnesota death-index image (certificate 1979-MN-023964) is verified attached in the gallery.\nConflicts: [\"1900 census names the wife 'Mary J.' (b. Jan 1868, Denmark); the 1947 obituary names the wife Inger Marie Jensen and the 1930 census 'Marie'. Treated as the same woman (Inger Marie, I0379, d. 3 Mar 1944); the death index mother's maiden name JENSEN agrees.\", 'Surname spelling: Shinofield (census 1930, MN index, Find a Grave) vs Shinafield (1947 obituary).', 'Birth day/month rests on the death index and Find a Grave (derivative); the census gives Apr 1889 only.']",
+   "type": "Research"
+  },
+  "N1939": {
+   "attached_to": [
+    {
+     "id": "C1293",
+     "type": "citation"
+    }
+   ],
+   "change": 1794324604,
+   "flags": [],
+   "handle": "1051bcce7d304d5eee80eafd5fd6",
+   "html": "<p>Transcription (as written): Adair, Flreonce [sic] M. | death 1985-04-05 | Freeborn County | birth Apr 20 1908 | birthplace MINNESOTA | mother&#x27;s maiden name JENSEN | certificate 1985-MN-009314</p>",
+   "id": "N1939",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Adair, Flreonce [sic] M. | death 1985-04-05 | Freeborn County | birth Apr 20 1908 | birthplace MINNESOTA | mother's maiden name JENSEN | certificate 1985-MN-009314",
+   "type": "Transcript"
+  },
+  "N1940": {
+   "attached_to": [
+    {
+     "id": "C1293",
+     "type": "citation"
+    }
+   ],
+   "change": 1794324604,
+   "flags": [],
+   "handle": "1051bcce821114d4cbcfe95951e5",
+   "html": "<p>2026-11-10 (karel): Florence Marie (Hansen) Adair, deceased daughter of Charles C. Hansen (I0377 / 212811655300) and Inger Marie (Jensen) Hansen (I0379 / 212811655323). Relationship stated by the 4 Nov 1947 Albert Lea Tribune obituary of Charles (&#x27;Mrs. Floyd (Florence) Adair, Albert Lea&#x27; among three daughters) and by the 1930 census (Florence, daughter, 21, in Charles&#x27;s household). The death index (first name misspelled &#x27;Flreonce&#x27; in the index itself) gives birth 20 Apr 1908, death 5 Apr 1985 in Freeborn County and mother&#x27;s maiden name JENSEN. Find a Grave 266062982 adds birth place Albert Lea, husband Floyd Charles &#x27;Shorty&#x27; Adair (1902-1990, m. 1938), burial Graceland Cemetery, Albert Lea; husband and son are NOT proposed. Relations omitted on purpose: link via add_family 100011. Ancestry profile 212815368078 created 10 November 2026 on tree 208290233 as a daughter of Charles C. Hansen 212811655300 and Inger Marie Jensen 212811655323. The Minnesota death-index image (certificate 1985-MN-009314) is verified attached in the gallery.<br>Conflicts: [&#x27;Death date: index and Find a Grave say 5 Apr 1985; a Social Security Death Index listing (locateancestors.com) shows 1 Apr 1985. The certificate index is used.&#x27;, &#x27;The 1930 census gives only the first name Florence (no surname on the line); she is identified by position as a daughter in the household and by the 1947 obituary.&#x27;, &#x27;1930 census age 21 implies birth about 1908-09, consistent with 20 Apr 1908.&#x27;]</p>",
+   "id": "N1940",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-10 (karel): Florence Marie (Hansen) Adair, deceased daughter of Charles C. Hansen (I0377 / 212811655300) and Inger Marie (Jensen) Hansen (I0379 / 212811655323). Relationship stated by the 4 Nov 1947 Albert Lea Tribune obituary of Charles ('Mrs. Floyd (Florence) Adair, Albert Lea' among three daughters) and by the 1930 census (Florence, daughter, 21, in Charles's household). The death index (first name misspelled 'Flreonce' in the index itself) gives birth 20 Apr 1908, death 5 Apr 1985 in Freeborn County and mother's maiden name JENSEN. Find a Grave 266062982 adds birth place Albert Lea, husband Floyd Charles 'Shorty' Adair (1902-1990, m. 1938), burial Graceland Cemetery, Albert Lea; husband and son are NOT proposed. Relations omitted on purpose: link via add_family 100011. Ancestry profile 212815368078 created 10 November 2026 on tree 208290233 as a daughter of Charles C. Hansen 212811655300 and Inger Marie Jensen 212811655323. The Minnesota death-index image (certificate 1985-MN-009314) is verified attached in the gallery.\nConflicts: ['Death date: index and Find a Grave say 5 Apr 1985; a Social Security Death Index listing (locateancestors.com) shows 1 Apr 1985. The certificate index is used.', 'The 1930 census gives only the first name Florence (no surname on the line); she is identified by position as a daughter in the household and by the 1947 obituary.', '1930 census age 21 implies birth about 1908-09, consistent with 20 Apr 1908.']",
+   "type": "Research"
+  },
+  "N1941": {
+   "attached_to": [
+    {
+     "id": "C1294",
+     "type": "citation"
+    }
+   ],
+   "change": 1794324605,
+   "flags": [],
+   "handle": "1051bcceaa8040df38fed0a1d0fa",
+   "html": "<p>Transcription (as written): Sodergren, Ina J. | death 1996-08-06 | Ramsey County | birth Jul 4 1907 | birthplace MINNESOTA | mother&#x27;s maiden name INGERVOLDSON [sic] | certificate 1996-MN-022919</p>",
+   "id": "N1941",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Sodergren, Ina J. | death 1996-08-06 | Ramsey County | birth Jul 4 1907 | birthplace MINNESOTA | mother's maiden name INGERVOLDSON [sic] | certificate 1996-MN-022919",
+   "type": "Transcript"
+  },
+  "N1942": {
+   "attached_to": [
+    {
+     "id": "C1294",
+     "type": "citation"
+    }
+   ],
+   "change": 1794324605,
+   "flags": [],
+   "handle": "1051bcceadb051355802130d7c87",
+   "html": "<p>2026-11-10 (karel): Ina Jonette (Anderson) Sodergren, deceased sister of Edith Marvyl (Anderson) Hansen (I0353 / 212807149647, Chris&#x27;s maternal great-grandmother, wife of Ervin W. Hansen I0352) and daughter of William Johan Anderson (I0357 / 212810880936) and Mary Anna Ingvaldson (I0358 / 212810880956). Relationship stated by the 1910 census (Bancroft Twp, Freeborn Co.): Ina J., daughter, age 2, in the household of William J. and Mary A. Anderson that also lists Edith M., age 11. The death index gives mother&#x27;s maiden name INGERVOLDSON (a spelling of Ingvaldson), birth 4 Jul 1907 and death 6 Aug 1996 in Ramsey County. Find a Grave 199195695: born Freeborn County, burial Elmhurst Cemetery, St. Paul; husband Vernon Alfred Sodergren (1907-1988), not proposed. Relations omitted on purpose: link via add_family 100013 into the existing William x Mary Anna family (F0156 in Gramps, which already has Edith). Ancestry profile 212815368678 was already on tree 208290233 from an earlier session; re-verified 10 November 2026 as a daughter of William Johan Anderson 212810880936 and Mary Anna Ingvaldson 212810880956. The Minnesota death-index image (certificate 1996-MN-022919) and the 1910 census image are verified attached in the gallery.<br>Conflicts: [&quot;Mother&#x27;s maiden name is spelled INGERVOLDSON in the index; Gramps has Ingvaldson. Same person by position and by every other child&#x27;s index entries (Edith&#x27;s index row says INGVALDSON).&quot;, &quot;Find a Grave lists Stella (b. 1910) as a half-sibling; the 1910 sheet lists Mary A. as wife of William J. (she &#x27;M1&#x27;, he &#x27;M2&#x27;). Not relevant to Ina, who is a full sibling of Edith per Find a Grave and the census.&quot;]</p>",
+   "id": "N1942",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-10 (karel): Ina Jonette (Anderson) Sodergren, deceased sister of Edith Marvyl (Anderson) Hansen (I0353 / 212807149647, Chris's maternal great-grandmother, wife of Ervin W. Hansen I0352) and daughter of William Johan Anderson (I0357 / 212810880936) and Mary Anna Ingvaldson (I0358 / 212810880956). Relationship stated by the 1910 census (Bancroft Twp, Freeborn Co.): Ina J., daughter, age 2, in the household of William J. and Mary A. Anderson that also lists Edith M., age 11. The death index gives mother's maiden name INGERVOLDSON (a spelling of Ingvaldson), birth 4 Jul 1907 and death 6 Aug 1996 in Ramsey County. Find a Grave 199195695: born Freeborn County, burial Elmhurst Cemetery, St. Paul; husband Vernon Alfred Sodergren (1907-1988), not proposed. Relations omitted on purpose: link via add_family 100013 into the existing William x Mary Anna family (F0156 in Gramps, which already has Edith). Ancestry profile 212815368678 was already on tree 208290233 from an earlier session; re-verified 10 November 2026 as a daughter of William Johan Anderson 212810880936 and Mary Anna Ingvaldson 212810880956. The Minnesota death-index image (certificate 1996-MN-022919) and the 1910 census image are verified attached in the gallery.\nConflicts: [\"Mother's maiden name is spelled INGERVOLDSON in the index; Gramps has Ingvaldson. Same person by position and by every other child's index entries (Edith's index row says INGVALDSON).\", \"Find a Grave lists Stella (b. 1910) as a half-sibling; the 1910 sheet lists Mary A. as wife of William J. (she 'M1', he 'M2'). Not relevant to Ina, who is a full sibling of Edith per Find a Grave and the census.\"]",
+   "type": "Research"
+  },
+  "N1943": {
+   "attached_to": [
+    {
+     "id": "C1295",
+     "type": "citation"
+    }
+   ],
+   "change": 1794324606,
+   "flags": [],
+   "handle": "1051bccecd09930297c42f8b4c7",
+   "html": "<p>Transcription (as written): Horan, Ada C. | death 1952-03-26 | Freeborn County | certificate 1952-MN-004399 (index row has no birth date, birthplace or mother&#x27;s maiden name)</p>",
+   "id": "N1943",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Horan, Ada C. | death 1952-03-26 | Freeborn County | certificate 1952-MN-004399 (index row has no birth date, birthplace or mother's maiden name)",
+   "type": "Transcript"
+  },
+  "N1944": {
+   "attached_to": [
+    {
+     "id": "C1295",
+     "type": "citation"
+    }
+   ],
+   "change": 1794324606,
+   "flags": [],
+   "handle": "1051bcced00d68485d59c19c3f04",
+   "html": "<p>2026-11-10 (karel): Ada Caroline (Anderson) Hoium Horan, deceased sister of Edith Marvyl (Anderson) Hansen (I0353 / 212807149647) and daughter of William Johan Anderson (I0357 / 212810880936) and Mary Anna Ingvaldson (I0358 / 212810880956). Relationship stated by the 1910 census (Ada C., daughter, age 14, same household as Edith M., 11). Birth date 12 Mar 1896 and death 26 Mar 1952 are on Find a Grave 140407529 (burial Lakewood Cemetery, Albert Lea, Block 5; husband Bennett A. Hoium 1891-1944); the death date matches the Minnesota death index row for &#x27;Ada C. Horan&#x27;, 26 Mar 1952, Freeborn County, certificate 1952-MN-004399, which carries no birth date. The 1910 age of 14 is consistent with 1896. Weakest of the five: the birth day/month is from Find a Grave only (tier compiled, confidence 1-2). Spouses and daughter Arline are NOT proposed. Relations omitted on purpose: link via add_family 100013. Ancestry profile 212815368792 was already on tree 208290233 from an earlier session; re-verified 10 November 2026 as a daughter of William Johan Anderson 212810880936 and Mary Anna Ingvaldson 212810880956. The Minnesota death-index image (certificate 1952-MN-004399) and the 1910 census image are verified attached in the gallery. A duplicate Lakewood burial fact on Ancestry was left as found. The Find a Grave birth citation has no image and is filed separately with ancestry_attached false.<br>Conflicts: [&#x27;Birth day/month 12 Mar 1896 comes from Find a Grave only; the census gives age 14 (April 1910), consistent with 1896. Treat birth as secondary-only.&#x27;, &quot;Surname at death &#x27;Horan&#x27; (second marriage); first husband Bennett A. Hoium, whose index row is certificate 1944-MN-004382 (Freeborn, 11 Dec 1944). The link of &#x27;Ada C. Horan&#x27; to this Ada rests on Find a Grave naming her as Ada Caroline Anderson Hoium Horan with the same death date and the same county.&quot;]</p>",
+   "id": "N1944",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-10 (karel): Ada Caroline (Anderson) Hoium Horan, deceased sister of Edith Marvyl (Anderson) Hansen (I0353 / 212807149647) and daughter of William Johan Anderson (I0357 / 212810880936) and Mary Anna Ingvaldson (I0358 / 212810880956). Relationship stated by the 1910 census (Ada C., daughter, age 14, same household as Edith M., 11). Birth date 12 Mar 1896 and death 26 Mar 1952 are on Find a Grave 140407529 (burial Lakewood Cemetery, Albert Lea, Block 5; husband Bennett A. Hoium 1891-1944); the death date matches the Minnesota death index row for 'Ada C. Horan', 26 Mar 1952, Freeborn County, certificate 1952-MN-004399, which carries no birth date. The 1910 age of 14 is consistent with 1896. Weakest of the five: the birth day/month is from Find a Grave only (tier compiled, confidence 1-2). Spouses and daughter Arline are NOT proposed. Relations omitted on purpose: link via add_family 100013. Ancestry profile 212815368792 was already on tree 208290233 from an earlier session; re-verified 10 November 2026 as a daughter of William Johan Anderson 212810880936 and Mary Anna Ingvaldson 212810880956. The Minnesota death-index image (certificate 1952-MN-004399) and the 1910 census image are verified attached in the gallery. A duplicate Lakewood burial fact on Ancestry was left as found. The Find a Grave birth citation has no image and is filed separately with ancestry_attached false.\nConflicts: ['Birth day/month 12 Mar 1896 comes from Find a Grave only; the census gives age 14 (April 1910), consistent with 1896. Treat birth as secondary-only.', \"Surname at death 'Horan' (second marriage); first husband Bennett A. Hoium, whose index row is certificate 1944-MN-004382 (Freeborn, 11 Dec 1944). The link of 'Ada C. Horan' to this Ada rests on Find a Grave naming her as Ada Caroline Anderson Hoium Horan with the same death date and the same county.\"]",
    "type": "Research"
   }
  },
@@ -165895,6 +166750,492 @@
    "xref": {
     "ancestry": "212815086130"
    }
+  },
+  "I0408": {
+   "alt_names": [],
+   "attributes": [],
+   "birth": {
+    "date": {
+     "day": 1,
+     "iso": "1888-01-01",
+     "modifier": null,
+     "month": 1,
+     "quality": null,
+     "sort": 2410638,
+     "text": "1 January 1888",
+     "year": 1888
+    },
+    "event": "E1595",
+    "place": "P0337",
+    "type": "Birth",
+    "year": 1888
+   },
+   "change": 1794324603,
+   "citations": [
+    "C1291"
+   ],
+   "death": {
+    "date": {
+     "day": 25,
+     "iso": "1969-01-25",
+     "modifier": null,
+     "month": 1,
+     "quality": null,
+     "sort": 2440247,
+     "text": "25 January 1969",
+     "year": 1969
+    },
+    "event": "E1596",
+    "place": "P0338",
+    "type": "Death",
+    "year": 1969
+   },
+   "events": [
+    {
+     "ref": "E1595",
+     "role": "Primary"
+    },
+    {
+     "ref": "E1596",
+     "role": "Primary"
+    }
+   ],
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "gender": "M",
+   "handle": "1051bcce497c60112f559864116b",
+   "id": "I0408",
+   "media": [],
+   "name": {
+    "call": "",
+    "display": "Alfred Louis Toepel",
+    "first": "Alfred Louis",
+    "nick": "",
+    "prefix": "",
+    "sort": "Toepel, Alfred Louis",
+    "suffix": "",
+    "surname": "Toepel",
+    "title": "",
+    "type": "Birth Name"
+   },
+   "notes": [],
+   "parents": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "urls": [],
+   "xref": {
+    "ancestry": "212815367550"
+   }
+  },
+  "I0409": {
+   "alt_names": [
+    {
+     "call": "",
+     "date": null,
+     "display": "Edna Luella Shinofield",
+     "first": "Edna Luella",
+     "nick": "",
+     "prefix": "",
+     "sort": "Shinofield, Edna Luella",
+     "suffix": "",
+     "surname": "Shinofield",
+     "title": "",
+     "type": "Married Name"
+    }
+   ],
+   "attributes": [],
+   "birth": {
+    "date": {
+     "day": 6,
+     "iso": "1889-04-06",
+     "modifier": null,
+     "month": 4,
+     "quality": null,
+     "sort": 2411099,
+     "text": "6 April 1889",
+     "year": 1889
+    },
+    "event": "E1597",
+    "place": "P0091",
+    "type": "Birth",
+    "year": 1889
+   },
+   "change": 1794324604,
+   "citations": [
+    "C1292"
+   ],
+   "death": {
+    "date": {
+     "day": 25,
+     "iso": "1979-09-25",
+     "modifier": null,
+     "month": 9,
+     "quality": null,
+     "sort": 2444142,
+     "text": "25 September 1979",
+     "year": 1979
+    },
+    "event": "E1598",
+    "place": "P0091",
+    "type": "Death",
+    "year": 1979
+   },
+   "events": [
+    {
+     "ref": "E1597",
+     "role": "Primary"
+    },
+    {
+     "ref": "E1598",
+     "role": "Primary"
+    }
+   ],
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "gender": "F",
+   "handle": "1051bcce70b1291d572e00d42110",
+   "id": "I0409",
+   "media": [],
+   "name": {
+    "call": "",
+    "display": "Edna Luella Hansen",
+    "first": "Edna Luella",
+    "nick": "",
+    "prefix": "",
+    "sort": "Hansen, Edna Luella",
+    "suffix": "",
+    "surname": "Hansen",
+    "title": "",
+    "type": "Birth Name"
+   },
+   "notes": [],
+   "parents": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "urls": [],
+   "xref": {
+    "ancestry": "212815368044"
+   }
+  },
+  "I0410": {
+   "alt_names": [
+    {
+     "call": "",
+     "date": null,
+     "display": "Florence Marie Adair",
+     "first": "Florence Marie",
+     "nick": "",
+     "prefix": "",
+     "sort": "Adair, Florence Marie",
+     "suffix": "",
+     "surname": "Adair",
+     "title": "",
+     "type": "Married Name"
+    }
+   ],
+   "attributes": [],
+   "birth": {
+    "date": {
+     "day": 20,
+     "iso": "1908-04-20",
+     "modifier": null,
+     "month": 4,
+     "quality": null,
+     "sort": 2418052,
+     "text": "20 April 1908",
+     "year": 1908
+    },
+    "event": "E1599",
+    "place": "P0091",
+    "type": "Birth",
+    "year": 1908
+   },
+   "change": 1794324605,
+   "citations": [
+    "C1293"
+   ],
+   "death": {
+    "date": {
+     "day": 5,
+     "iso": "1985-04-05",
+     "modifier": null,
+     "month": 4,
+     "quality": null,
+     "sort": 2446161,
+     "text": "5 April 1985",
+     "year": 1985
+    },
+    "event": "E1600",
+    "place": "P0091",
+    "type": "Death",
+    "year": 1985
+   },
+   "events": [
+    {
+     "ref": "E1599",
+     "role": "Primary"
+    },
+    {
+     "ref": "E1600",
+     "role": "Primary"
+    }
+   ],
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "gender": "F",
+   "handle": "1051bcce9dea18666109c23e0ae1",
+   "id": "I0410",
+   "media": [],
+   "name": {
+    "call": "",
+    "display": "Florence Marie Hansen",
+    "first": "Florence Marie",
+    "nick": "",
+    "prefix": "",
+    "sort": "Hansen, Florence Marie",
+    "suffix": "",
+    "surname": "Hansen",
+    "title": "",
+    "type": "Birth Name"
+   },
+   "notes": [],
+   "parents": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "urls": [],
+   "xref": {
+    "ancestry": "212815368078"
+   }
+  },
+  "I0411": {
+   "alt_names": [
+    {
+     "call": "",
+     "date": null,
+     "display": "Ina Jonette Sodergren",
+     "first": "Ina Jonette",
+     "nick": "",
+     "prefix": "",
+     "sort": "Sodergren, Ina Jonette",
+     "suffix": "",
+     "surname": "Sodergren",
+     "title": "",
+     "type": "Married Name"
+    }
+   ],
+   "attributes": [],
+   "birth": {
+    "date": {
+     "day": 4,
+     "iso": "1907-07-04",
+     "modifier": null,
+     "month": 7,
+     "quality": null,
+     "sort": 2417761,
+     "text": "4 July 1907",
+     "year": 1907
+    },
+    "event": "E1601",
+    "place": "P0285",
+    "type": "Birth",
+    "year": 1907
+   },
+   "change": 1794324606,
+   "citations": [
+    "C1294"
+   ],
+   "death": {
+    "date": {
+     "day": 6,
+     "iso": "1996-08-06",
+     "modifier": null,
+     "month": 8,
+     "quality": null,
+     "sort": 2450302,
+     "text": "6 August 1996",
+     "year": 1996
+    },
+    "event": "E1602",
+    "place": "P0339",
+    "type": "Death",
+    "year": 1996
+   },
+   "events": [
+    {
+     "ref": "E1601",
+     "role": "Primary"
+    },
+    {
+     "ref": "E1602",
+     "role": "Primary"
+    }
+   ],
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "gender": "F",
+   "handle": "1051bccec373fe5e2a8d9ce6310",
+   "id": "I0411",
+   "media": [],
+   "name": {
+    "call": "",
+    "display": "Ina Jonette Anderson",
+    "first": "Ina Jonette",
+    "nick": "",
+    "prefix": "",
+    "sort": "Anderson, Ina Jonette",
+    "suffix": "",
+    "surname": "Anderson",
+    "title": "",
+    "type": "Birth Name"
+   },
+   "notes": [],
+   "parents": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "urls": [],
+   "xref": {
+    "ancestry": "212815368678"
+   }
+  },
+  "I0412": {
+   "alt_names": [
+    {
+     "call": "",
+     "date": null,
+     "display": "Ada Caroline Horan",
+     "first": "Ada Caroline",
+     "nick": "",
+     "prefix": "",
+     "sort": "Horan, Ada Caroline",
+     "suffix": "",
+     "surname": "Horan",
+     "title": "",
+     "type": "Married Name"
+    }
+   ],
+   "attributes": [],
+   "birth": {
+    "date": {
+     "day": 12,
+     "iso": "1896-03-12",
+     "modifier": null,
+     "month": 3,
+     "quality": null,
+     "sort": 2413631,
+     "text": "12 March 1896",
+     "year": 1896
+    },
+    "event": "E1603",
+    "place": "P0283",
+    "type": "Birth",
+    "year": 1896
+   },
+   "change": 1794324607,
+   "citations": [
+    "C1295"
+   ],
+   "death": {
+    "date": {
+     "day": 26,
+     "iso": "1952-03-26",
+     "modifier": null,
+     "month": 3,
+     "quality": null,
+     "sort": 2434098,
+     "text": "26 March 1952",
+     "year": 1952
+    },
+    "event": "E1604",
+    "place": "P0285",
+    "type": "Death",
+    "year": 1952
+   },
+   "events": [
+    {
+     "ref": "E1603",
+     "role": "Primary"
+    },
+    {
+     "ref": "E1604",
+     "role": "Primary"
+    }
+   ],
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "gender": "F",
+   "handle": "1051bccee1dc70f85dd6b3db57f9",
+   "id": "I0412",
+   "media": [],
+   "name": {
+    "call": "",
+    "display": "Ada Caroline Anderson",
+    "first": "Ada Caroline",
+    "nick": "",
+    "prefix": "",
+    "sort": "Anderson, Ada Caroline",
+    "suffix": "",
+    "surname": "Anderson",
+    "title": "",
+    "type": "Birth Name"
+   },
+   "notes": [],
+   "parents": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "urls": [],
+   "xref": {
+    "ancestry": "212815368792"
+   }
   }
  },
  "places": {
@@ -174844,6 +176185,102 @@
    ],
    "type": "Unknown",
    "urls": []
+  },
+  "P0337": {
+   "alt_names": [],
+   "citations": [],
+   "code": "",
+   "display": "Ashland County, Wisconsin, USA",
+   "enclosed_by": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051bcce36df2579ecb63b420889",
+   "hierarchy": [
+    "P0337"
+   ],
+   "id": "P0337",
+   "lat": null,
+   "long": null,
+   "media": [],
+   "name": "Ashland County, Wisconsin, USA",
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed",
+    "needs-place"
+   ],
+   "type": "Unknown",
+   "urls": []
+  },
+  "P0338": {
+   "alt_names": [],
+   "citations": [],
+   "code": "",
+   "display": "Hennepin County, Minnesota, USA",
+   "enclosed_by": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051bcce3ff254f0b9b5bfb9e29e",
+   "hierarchy": [
+    "P0338"
+   ],
+   "id": "P0338",
+   "lat": null,
+   "long": null,
+   "media": [],
+   "name": "Hennepin County, Minnesota, USA",
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed",
+    "needs-place"
+   ],
+   "type": "Unknown",
+   "urls": []
+  },
+  "P0339": {
+   "alt_names": [],
+   "citations": [],
+   "code": "",
+   "display": "Ramsey County, Minnesota, USA",
+   "enclosed_by": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051bcceb9e63c8d1a72132d48c9",
+   "hierarchy": [
+    "P0339"
+   ],
+   "id": "P0339",
+   "lat": null,
+   "long": null,
+   "media": [],
+   "name": "Ramsey County, Minnesota, USA",
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed",
+    "needs-place"
+   ],
+   "type": "Unknown",
+   "urls": []
   }
  },
  "repositories": {
@@ -175051,6 +176488,14 @@
    "handle": "1051883ca91f653d721f6881e228",
    "id": "R0025",
    "name": "2manitowoc.com (Evergreen Cemetery tombstone index)",
+   "notes": [],
+   "type": "Archive",
+   "urls": []
+  },
+  "R0026": {
+   "handle": "1051bcce245a3b22eb22fa90a747",
+   "id": "R0026",
+   "name": "Minnesota Historical Society, People Records Search (public death records index)",
    "notes": [],
    "type": "Archive",
    "urls": []
@@ -181993,6 +183438,171 @@
     "agent-proposed"
    ],
    "title": "Caroline M. Langenkamp obituary, Herald Times Reporter (Manitowoc), 15 Dec 2006, p. A3"
+  },
+  "S0219": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1291"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051bcce28166e62f1367aa49615",
+   "id": "S0219",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0026"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "Minnesota death index, 1904-2001: Alfred Louis Toepel, certificate 1969-MN-002412"
+  },
+  "S0220": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1292"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051bcce5023342121ac1ee1b8a4",
+   "id": "S0220",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0026"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "Minnesota death index, 1904-2001: Edna L. Shinofield, certificate 1979-MN-023964"
+  },
+  "S0221": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1293"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051bcce777d42c895ea2160d93",
+   "id": "S0221",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0026"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "Minnesota death index, 1904-2001: Flreonce [sic] M. Adair, certificate 1985-MN-009314"
+  },
+  "S0222": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1294"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051bccea4e534aaaeda77687c9d",
+   "id": "S0222",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0026"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "Minnesota death index, 1904-2001: Ina J. Sodergren, certificate 1996-MN-022919"
+  },
+  "S0223": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1295"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051bccec96b35ff0713ca9b2044",
+   "id": "S0223",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0026"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "Minnesota death index, 1904-2001: Ada C. Horan, certificate 1952-MN-004399"
   }
  }
 }
