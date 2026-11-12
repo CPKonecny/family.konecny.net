@@ -40577,6 +40577,393 @@
    ],
    "tier": "index",
    "url": "https://www.mnhs.org/search/people"
+  },
+  "C1298": {
+   "ancestry_record_id": "",
+   "change": 1794409203,
+   "cited_by": [
+    {
+     "id": "F0191",
+     "type": "family"
+    }
+   ],
+   "confidence": 3,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051ef3b3b126932d9d84432d5f4",
+   "id": "C1298",
+   "information": "secondary",
+   "media": [
+    {
+     "ref": "O0218"
+    }
+   ],
+   "notes": [
+    "N1949",
+    "N1950"
+   ],
+   "page": "T623 roll 1777, ED 3, sheet 6A, lines 10-16; IA 12thcensusofpopu1777unit leaf n306",
+   "proposal_file": "2026-11-11_091007_toepel-alfred_x_mary-weihler_add-family-refile.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0224",
+   "source_type": "original",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "record",
+   "url": "https://archive.org/details/12thcensusofpopu1777unit/page/n306"
+  },
+  "C1299": {
+   "ancestry_record_id": "",
+   "change": 1794409204,
+   "cited_by": [
+    {
+     "id": "F0156",
+     "type": "family"
+    }
+   ],
+   "confidence": 3,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051ef3b7ed8bb2e1c30f43b9f6",
+   "id": "C1299",
+   "information": "secondary",
+   "media": [
+    {
+     "ref": "O0219"
+    }
+   ],
+   "notes": [
+    "N1951",
+    "N1952"
+   ],
+   "page": "T624 roll 695, Bancroft Twp, SD 1, ED 44, sheet 2B, dwelling/family 33/33; IA 13thcensus1910po695unit image n1009",
+   "proposal_file": "2026-11-11_091008_anderson-william_x_ingvaldson_add-family-refile.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0225",
+   "source_type": "original",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "record",
+   "url": "https://archive.org/details/13thcensus1910po695unit/page/n1009"
+  },
+  "C1300": {
+   "ancestry_record_id": "",
+   "change": 1794409206,
+   "cited_by": [
+    {
+     "id": "F0176",
+     "type": "family"
+    }
+   ],
+   "confidence": 3,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051ef3bb68774b9db4e0384e329",
+   "id": "C1300",
+   "information": "secondary",
+   "media": [
+    {
+     "ref": "O0220"
+    }
+   ],
+   "notes": [
+    "N1953",
+    "N1954"
+   ],
+   "page": "T626 roll 1087, Albert Lea Ward 2, ED 24-2, 105 First Ave N, dwelling 66, family 72; IA minnesotacensus00reel1087 images n37-n38",
+   "proposal_file": "2026-11-11_091009_hansen-charles_x_inger_add-family-refile.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0226",
+   "source_type": "original",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "record",
+   "url": "https://archive.org/details/minnesotacensus00reel1087/page/n38"
+  },
+  "C1301": {
+   "ancestry_record_id": "",
+   "change": 1794409207,
+   "cited_by": [
+    {
+     "id": "I0408",
+     "type": "person"
+    }
+   ],
+   "confidence": 3,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051ef3be3a32d6b068e3b2814a9",
+   "id": "C1301",
+   "information": "secondary",
+   "media": [
+    {
+     "ref": "O0221"
+    }
+   ],
+   "notes": [
+    "N1955",
+    "N1956"
+   ],
+   "page": "T623 roll 1777, ED 3, sheet 6A, Third Street, lines 10-16 (Mary Toepel household); IA 12thcensusofpopu1777unit leaf n306",
+   "proposal_file": "2026-11-11_091001_toepel-alfred_census-1900-citation-refile.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0224",
+   "source_type": "original",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "record",
+   "url": "https://archive.org/details/12thcensusofpopu1777unit/page/n306"
+  },
+  "C1302": {
+   "ancestry_record_id": "",
+   "change": 1794409208,
+   "cited_by": [
+    {
+     "id": "I0409",
+     "type": "person"
+    }
+   ],
+   "confidence": 3,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051ef3c02a250a60a676e05f89f",
+   "id": "C1302",
+   "information": "secondary",
+   "media": [
+    {
+     "ref": "O0222"
+    }
+   ],
+   "notes": [
+    "N1957",
+    "N1958"
+   ],
+   "page": "T623 roll 764, Albert Lea, N. First Ave W, house 105, dwelling 139, family 154, lines 48-50; IA 12thcensusofpopu764unit leaf n15 (continues n16)",
+   "proposal_file": "2026-11-11_091002_hansen-edna_census-1900-citation-refile.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0227",
+   "source_type": "original",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "record",
+   "url": "https://archive.org/details/12thcensusofpopu764unit/page/n15"
+  },
+  "C1303": {
+   "ancestry_record_id": "",
+   "change": 1794409208,
+   "cited_by": [
+    {
+     "id": "I0409",
+     "type": "person"
+    }
+   ],
+   "confidence": 3,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051ef3c1ad038cddcc4d4129802",
+   "id": "C1303",
+   "information": "secondary",
+   "media": [
+    {
+     "ref": "O0223"
+    }
+   ],
+   "notes": [
+    "N1959",
+    "N1960"
+   ],
+   "page": "T626 roll 1087, Albert Lea Ward 2, ED 24-2, 105 First Ave N, dwelling 66, family 72; IA minnesotacensus00reel1087 images n37-n38",
+   "proposal_file": "2026-11-11_091003_hansen-edna_census-1930-citation-refile.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0226",
+   "source_type": "original",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "record",
+   "url": "https://archive.org/details/minnesotacensus00reel1087/page/n38"
+  },
+  "C1304": {
+   "ancestry_record_id": "",
+   "change": 1794409209,
+   "cited_by": [
+    {
+     "id": "I0410",
+     "type": "person"
+    }
+   ],
+   "confidence": 3,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051ef3c32501d4874c93bd5d62e",
+   "id": "C1304",
+   "information": "secondary",
+   "media": [
+    {
+     "ref": "O0224"
+    }
+   ],
+   "notes": [
+    "N1961",
+    "N1962"
+   ],
+   "page": "T626 roll 1087, Albert Lea Ward 2, ED 24-2, 105 First Ave N, dwelling 66, family 72; IA minnesotacensus00reel1087 images n37-n38",
+   "proposal_file": "2026-11-11_091004_hansen-florence_census-1930-citation-refile.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0226",
+   "source_type": "original",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "record",
+   "url": "https://archive.org/details/minnesotacensus00reel1087/page/n38"
+  },
+  "C1305": {
+   "ancestry_record_id": "",
+   "change": 1794409210,
+   "cited_by": [
+    {
+     "id": "I0411",
+     "type": "person"
+    }
+   ],
+   "confidence": 3,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051ef3c49f3649e9bef676dd13f",
+   "id": "C1305",
+   "information": "secondary",
+   "media": [
+    {
+     "ref": "O0225"
+    }
+   ],
+   "notes": [
+    "N1963",
+    "N1964"
+   ],
+   "page": "T624 roll 695, Bancroft Twp, SD 1, ED 44, sheet 2B, dwelling/family 33/33; IA 13thcensus1910po695unit image n1009",
+   "proposal_file": "2026-11-11_091005_anderson-ina_census-1910-citation-refile.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0225",
+   "source_type": "original",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "record",
+   "url": "https://archive.org/details/13thcensus1910po695unit/page/n1009"
+  },
+  "C1306": {
+   "ancestry_record_id": "",
+   "change": 1794409210,
+   "cited_by": [
+    {
+     "id": "I0412",
+     "type": "person"
+    }
+   ],
+   "confidence": 3,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051ef3c639a6c3f10c1b70fdd5a",
+   "id": "C1306",
+   "information": "secondary",
+   "media": [
+    {
+     "ref": "O0226"
+    }
+   ],
+   "notes": [
+    "N1965",
+    "N1966"
+   ],
+   "page": "T624 roll 695, Bancroft Twp, SD 1, ED 44, sheet 2B, dwelling/family 33/33; IA 13thcensus1910po695unit image n1009",
+   "proposal_file": "2026-11-11_091006_anderson-ada_census-1910-citation-refile.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0225",
+   "source_type": "original",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "record",
+   "url": "https://archive.org/details/13thcensus1910po695unit/page/n1009"
   }
  },
  "events": {
@@ -97996,13 +98383,21 @@
   },
   "F0156": {
    "attributes": [],
-   "change": 1793040812,
+   "change": 1794409205,
    "children": [
     {
      "ref": "I0353"
+    },
+    {
+     "ref": "I0411"
+    },
+    {
+     "ref": "I0412"
     }
    ],
-   "citations": [],
+   "citations": [
+    "C1299"
+   ],
    "events": [
     {
      "ref": "E1513",
@@ -98010,7 +98405,9 @@
     }
    ],
    "father": "I0357",
-   "flags": [],
+   "flags": [
+    "agent-proposed"
+   ],
    "handle": "104ebd54c8a6487540a0453b512d",
    "id": "F0156",
    "marriage": {
@@ -98032,13 +98429,17 @@
    "mother": "I0358",
    "notes": [],
    "provenance": [
+    "agent-karel",
+    "agent-proposed",
     "import-ancestry-2026-10-25"
    ],
    "review": "unreviewed",
    "status": "full",
    "tags": [
+    "unreviewed",
     "import-ancestry-2026-10-25",
-    "unreviewed"
+    "agent-proposed",
+    "agent-karel"
    ],
    "type": "Married"
   },
@@ -98436,9 +98837,18 @@
   },
   "F0176": {
    "attributes": [],
-   "change": 1793136843,
-   "children": [],
-   "citations": [],
+   "change": 1794409206,
+   "children": [
+    {
+     "ref": "I0409"
+    },
+    {
+     "ref": "I0410"
+    }
+   ],
+   "citations": [
+    "C1300"
+   ],
    "events": [
     {
      "ref": "E1535",
@@ -98862,6 +99272,42 @@
     "agent-karel"
    ],
    "type": "Married"
+  },
+  "F0191": {
+   "attributes": [],
+   "change": 1794409204,
+   "children": [
+    {
+     "ref": "I0408"
+    },
+    {
+     "ref": "I0350"
+    }
+   ],
+   "citations": [
+    "C1298"
+   ],
+   "events": [],
+   "father": null,
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051ef3b408e1059974e898e4aad",
+   "id": "F0191",
+   "media": [],
+   "mother": "I0381",
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-proposed",
+    "agent-karel"
+   ],
+   "type": "Unknown"
   }
  },
  "media": {
@@ -106301,6 +106747,303 @@
     "agent-karel",
     "agent-proposed"
    ]
+  },
+  "O0218": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1298",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-11_091007_toepel-alfred_x_mary-weihler_add-family-refile.jpg"
+   },
+   "checksum": "43757ffd1cce3dc8dd3b81996051fe8a",
+   "citations": [],
+   "date": null,
+   "desc": "1900 United States Census, Population Schedule, Wisconsin, Ashland County, Ashland City, ED 3, sheet 6A, NARA T623 roll 1777 — T623 roll 1777, ED 3, sheet 6A, lines 10-16; IA 12thcensusofpopu1777unit leaf n306",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051ef3b338d19f34fb46b706aa1",
+   "id": "O0218",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0218",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-proposed",
+    "agent-karel"
+   ]
+  },
+  "O0219": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1299",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-11_091008_anderson-william_x_ingvaldson_add-family-refile.jpg"
+   },
+   "checksum": "190826089cca570c57b9f2d4593c36ec",
+   "citations": [],
+   "date": null,
+   "desc": "1910 United States Census, Population Schedule, Minnesota, Freeborn County, Bancroft Township, ED 44, sheet 2B, NARA T624 roll 695 — T624 roll 695, Bancroft Twp, SD 1, ED 44, sheet 2B, dwelling/family 33/33; IA 13thcensus1910po695unit image n1009",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051ef3b76fe2e3da950860db3ee",
+   "id": "O0219",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0219",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-proposed",
+    "agent-karel"
+   ]
+  },
+  "O0220": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1300",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-11_091009_hansen-charles_x_inger_add-family-refile.jpg"
+   },
+   "checksum": "ff4fb662373404837de2bb88428a3725",
+   "citations": [],
+   "date": null,
+   "desc": "1930 United States Census, Population Schedule, Minnesota, Freeborn County, Albert Lea city, Ward 2, ED 24-2, NARA T626 roll 1087 — T626 roll 1087, Albert Lea Ward 2, ED 24-2, 105 First Ave N, dwelling 66, family 72; IA minnesotacensus00reel1087 images n37-n38",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051ef3bae6c7b13a91dffd894d",
+   "id": "O0220",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0220",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-proposed",
+    "agent-karel"
+   ]
+  },
+  "O0221": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1301",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-11_091001_toepel-alfred_census-1900-citation-refile.jpg"
+   },
+   "checksum": "43757ffd1cce3dc8dd3b81996051fe8a",
+   "citations": [],
+   "date": null,
+   "desc": "1900 United States Census, Population Schedule, Wisconsin, Ashland County, Ashland City, ED 3, sheet 6A, NARA T623 roll 1777 — T623 roll 1777, ED 3, sheet 6A, Third Street, lines 10-16 (Mary Toepel household); IA 12thcensusofpopu1777unit leaf n306",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051ef3bdc1f10b98c4eed2b2028",
+   "id": "O0221",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0221",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-proposed",
+    "agent-karel"
+   ]
+  },
+  "O0222": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1302",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-11_091002_hansen-edna_census-1900-citation-refile.jpg"
+   },
+   "checksum": "3b867eee1785e351fe013a8f5d38c8f8",
+   "citations": [],
+   "date": null,
+   "desc": "1900 United States Census, Population Schedule, Minnesota, Freeborn County, Albert Lea, NARA T623 roll 764 — T623 roll 764, Albert Lea, N. First Ave W, house 105, dwelling 139, family 154, lines 48-50; IA 12thcensusofpopu764unit leaf n15 (continues n16)",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051ef3bfaeb1a733c056d8ec1ff",
+   "id": "O0222",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0222",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-proposed",
+    "agent-karel"
+   ]
+  },
+  "O0223": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1303",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-11_091003_hansen-edna_census-1930-citation-refile.jpg"
+   },
+   "checksum": "ff4fb662373404837de2bb88428a3725",
+   "citations": [],
+   "date": null,
+   "desc": "1930 United States Census, Population Schedule, Minnesota, Freeborn County, Albert Lea city, Ward 2, ED 24-2, NARA T626 roll 1087 — T626 roll 1087, Albert Lea Ward 2, ED 24-2, 105 First Ave N, dwelling 66, family 72; IA minnesotacensus00reel1087 images n37-n38",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051ef3c12303dbcba75a72d73a",
+   "id": "O0223",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0223",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-proposed",
+    "agent-karel"
+   ]
+  },
+  "O0224": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1304",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-11_091004_hansen-florence_census-1930-citation-refile.jpg"
+   },
+   "checksum": "ff4fb662373404837de2bb88428a3725",
+   "citations": [],
+   "date": null,
+   "desc": "1930 United States Census, Population Schedule, Minnesota, Freeborn County, Albert Lea city, Ward 2, ED 24-2, NARA T626 roll 1087 — T626 roll 1087, Albert Lea Ward 2, ED 24-2, 105 First Ave N, dwelling 66, family 72; IA minnesotacensus00reel1087 images n37-n38",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051ef3c2aff3208c1747102a5c1",
+   "id": "O0224",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0224",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-proposed",
+    "agent-karel"
+   ]
+  },
+  "O0225": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1305",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-11_091005_anderson-ina_census-1910-citation-refile.jpg"
+   },
+   "checksum": "190826089cca570c57b9f2d4593c36ec",
+   "citations": [],
+   "date": null,
+   "desc": "1910 United States Census, Population Schedule, Minnesota, Freeborn County, Bancroft Township, ED 44, sheet 2B, NARA T624 roll 695 — T624 roll 695, Bancroft Twp, SD 1, ED 44, sheet 2B, dwelling/family 33/33; IA 13thcensus1910po695unit image n1009",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051ef3c429c369ba2d8131e153d",
+   "id": "O0225",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0225",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-proposed",
+    "agent-karel"
+   ]
+  },
+  "O0226": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1306",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-11_091006_anderson-ada_census-1910-citation-refile.jpg"
+   },
+   "checksum": "190826089cca570c57b9f2d4593c36ec",
+   "citations": [],
+   "date": null,
+   "desc": "1910 United States Census, Population Schedule, Minnesota, Freeborn County, Bancroft Township, ED 44, sheet 2B, NARA T624 roll 695 — T624 roll 695, Bancroft Twp, SD 1, ED 44, sheet 2B, dwelling/family 33/33; IA 13thcensus1910po695unit image n1009",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051ef3c5c537bc1bdfd28612a30",
+   "id": "O0226",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0226",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-proposed",
+    "agent-karel"
+   ]
   }
  },
  "meta": {
@@ -106312,21 +107055,21 @@
    "very high"
   ],
   "counts": {
-   "citations": 1244,
+   "citations": 1253,
    "events": 1444,
-   "families": 183,
-   "media": 202,
-   "notes": 1354,
+   "families": 184,
+   "media": 211,
+   "notes": 1372,
    "people": 409,
    "places": 329,
    "repositories": 27,
-   "sources": 218
+   "sources": 222
   },
   "counts_people": {
    "full": 341,
    "living": 68
   },
-  "generated": "2026-11-11T08:17:47+00:00",
+  "generated": "2026-11-12T08:16:55+00:00",
   "generator": "gramps_export.py 0.3.0",
   "gramps_version": "6.0.8",
   "gramps_webapi_version": "3.17.0",
@@ -106350,7 +107093,7 @@
    "oral",
    "ai-draft"
   ],
-  "today": "2026-11-11",
+  "today": "2026-11-12",
   "tree": "Konecny"
  },
  "notes": {
@@ -135447,6 +136190,348 @@
    "tags": [],
    "text": "2026-11-10 (karel): Ada Caroline (Anderson) Hoium Horan, deceased sister of Edith Marvyl (Anderson) Hansen (I0353 / 212807149647) and daughter of William Johan Anderson (I0357 / 212810880936) and Mary Anna Ingvaldson (I0358 / 212810880956). Relationship stated by the 1910 census (Ada C., daughter, age 14, same household as Edith M., 11). Birth date 12 Mar 1896 and death 26 Mar 1952 are on Find a Grave 140407529 (burial Lakewood Cemetery, Albert Lea, Block 5; husband Bennett A. Hoium 1891-1944); the death date matches the Minnesota death index row for 'Ada C. Horan', 26 Mar 1952, Freeborn County, certificate 1952-MN-004399, which carries no birth date. The 1910 age of 14 is consistent with 1896. Weakest of the five: the birth day/month is from Find a Grave only (tier compiled, confidence 1-2). Spouses and daughter Arline are NOT proposed. Relations omitted on purpose: link via add_family 100013. Ancestry profile 212815368792 was already on tree 208290233 from an earlier session; re-verified 10 November 2026 as a daughter of William Johan Anderson 212810880936 and Mary Anna Ingvaldson 212810880956. The Minnesota death-index image (certificate 1952-MN-004399) and the 1910 census image are verified attached in the gallery. A duplicate Lakewood burial fact on Ancestry was left as found. The Find a Grave birth citation has no image and is filed separately with ancestry_attached false.\nConflicts: ['Birth day/month 12 Mar 1896 comes from Find a Grave only; the census gives age 14 (April 1910), consistent with 1896. Treat birth as secondary-only.', \"Surname at death 'Horan' (second marriage); first husband Bennett A. Hoium, whose index row is certificate 1944-MN-004382 (Freeborn, 11 Dec 1944). The link of 'Ada C. Horan' to this Ada rests on Find a Grave naming her as Ada Caroline Anderson Hoium Horan with the same death date and the same county.\"]",
    "type": "Research"
+  },
+  "N1949": {
+   "attached_to": [
+    {
+     "id": "C1298",
+     "type": "citation"
+    }
+   ],
+   "change": 1794409202,
+   "flags": [],
+   "handle": "1051ef3b2c91c2021a0806b052d",
+   "html": "<p>Transcription (as written): L10 Toepel, Mary, Head, W F, Jun 1854, 45, Wd, mother of 7 / 5 living. L13 Oscar, Son, Apr 1882, 18. L15 Alfred, Son, Jan 1888, 12. L16 Weihler, George, Brother, Jul 1857, 42.</p>",
+   "id": "N1949",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): L10 Toepel, Mary, Head, W F, Jun 1854, 45, Wd, mother of 7 / 5 living. L13 Oscar, Son, Apr 1882, 18. L15 Alfred, Son, Jan 1888, 12. L16 Weihler, George, Brother, Jul 1857, 42.",
+   "type": "Transcript"
+  },
+  "N1950": {
+   "attached_to": [
+    {
+     "id": "C1298",
+     "type": "citation"
+    }
+   ],
+   "change": 1794409202,
+   "flags": [],
+   "handle": "1051ef3b2f86c35b0c49b1d731e",
+   "html": "<p>2026-11-11 (karel): Mother Mary (Weihler) Toepel 212811650336 (I0381) with children Oscar M. Toepel 212807148588 (I0350) and Alfred Louis Toepel (new). NO father: Louis Toepel (1847-1898) is a LEAD only (Miles v. Mutual Reserve 108 Wis. 421; Mount Hope Cemetery stones). Before filing, check Ancestry: if Oscar already has parents there (even mother only), add Alfred to THAT family; do not create a duplicate. Other children in this household (Mollie, Clara, Lilian) are not added here; see the queue. Alfred&#x27;s Ancestry profile is 212815367550; the 1900 census image used as this family&#x27;s citation is verified attached in his gallery. Before applying, confirm Oscar is not already in a second family with Mary; add Alfred to the existing mother-only family if one is already there. REFILE 11 Nov 2026 of 2026-11-10_100010_toepel-alfred_x_mary-weihler_add-family.json, rejected 10 Nov 2026 with reason &quot;tier &#x27;record&#x27; requires an image&quot;. Only change: the census sheet image (1900_ashland-ed3-sheet6A_mary-toepel-household_full.jpg, copied as 2026-11-11_091007_toepel-alfred_x_mary-weihler_add-family-refile.jpg) is now included; content otherwise unchanged.<br>Conflicts: [&#x27;Father unnamed by any record (LEAD only).&#x27;]</p>",
+   "id": "N1950",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-11 (karel): Mother Mary (Weihler) Toepel 212811650336 (I0381) with children Oscar M. Toepel 212807148588 (I0350) and Alfred Louis Toepel (new). NO father: Louis Toepel (1847-1898) is a LEAD only (Miles v. Mutual Reserve 108 Wis. 421; Mount Hope Cemetery stones). Before filing, check Ancestry: if Oscar already has parents there (even mother only), add Alfred to THAT family; do not create a duplicate. Other children in this household (Mollie, Clara, Lilian) are not added here; see the queue. Alfred's Ancestry profile is 212815367550; the 1900 census image used as this family's citation is verified attached in his gallery. Before applying, confirm Oscar is not already in a second family with Mary; add Alfred to the existing mother-only family if one is already there. REFILE 11 Nov 2026 of 2026-11-10_100010_toepel-alfred_x_mary-weihler_add-family.json, rejected 10 Nov 2026 with reason \"tier 'record' requires an image\". Only change: the census sheet image (1900_ashland-ed3-sheet6A_mary-toepel-household_full.jpg, copied as 2026-11-11_091007_toepel-alfred_x_mary-weihler_add-family-refile.jpg) is now included; content otherwise unchanged.\nConflicts: ['Father unnamed by any record (LEAD only).']",
+   "type": "Research"
+  },
+  "N1951": {
+   "attached_to": [
+    {
+     "id": "C1299",
+     "type": "citation"
+    }
+   ],
+   "change": 1794409204,
+   "flags": [],
+   "handle": "1051ef3b712c7cf3b19ccba097",
+   "html": "<p>Transcription (as written): Anderson, William J., Head, M W 40, M2 15, parents&#x27; birthplaces Norway / Norway (own birthplace not read). Mary A., Wife, F W 34, M1 15, 7 born / 7 living. Henry M., Son, 9. Walter M., Son, 6. Ada C., Daughter, 14. Edith M., Daughter, 11. Ina J., Daughter, 2. Stella, Daughter. Marvel, Daughter, 7/12.</p>",
+   "id": "N1951",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Anderson, William J., Head, M W 40, M2 15, parents' birthplaces Norway / Norway (own birthplace not read). Mary A., Wife, F W 34, M1 15, 7 born / 7 living. Henry M., Son, 9. Walter M., Son, 6. Ada C., Daughter, 14. Edith M., Daughter, 11. Ina J., Daughter, 2. Stella, Daughter. Marvel, Daughter, 7/12.",
+   "type": "Transcript"
+  },
+  "N1952": {
+   "attached_to": [
+    {
+     "id": "C1299",
+     "type": "citation"
+    }
+   ],
+   "change": 1794409204,
+   "flags": [],
+   "handle": "1051ef3b74184002fe4330815fb1",
+   "html": "<p>2026-11-11 (karel): Father William Johan Anderson 212810880936 (I0357) and mother Mary Anna Ingvaldson 212810880956 (I0358), existing couple (F0156 in Gramps, child Edith only). New children: Ina Jonette (100012) and Ada Caroline (100015); Edith Marvyl 212807149647 (I0353) is already their child. The 1910 census lists all three in one household. Not proposed: Henry, Walter, Marvyl, half-sister Stella (no sourced birth or conflict, see packet). Children&#x27;s Ancestry profiles are Ina 212815368678, Ada 212815368792, and existing Edith 212807149647 (already a child of F0156). The 1910 census image used as this family&#x27;s citation is verified attached in Ina&#x27;s and Ada&#x27;s galleries. Add Ina and Ada to the existing William x Mary Anna family; do not create a duplicate. REFILE 11 Nov 2026 of 2026-11-10_100013_anderson-william_x_ingvaldson_add-family.json, rejected 10 Nov 2026 with reason &quot;tier &#x27;record&#x27; requires an image&quot;. Only change: the census sheet image (1910_bancroft-twp_n1009_anderson-household_full.jpg, copied as 2026-11-11_091008_anderson-william_x_ingvaldson_add-family-refile.jpg) is now included; content otherwise unchanged.<br>Conflicts: [&#x27;Marvel in the 1910 household is aged 7/12 in April 1910 against Find a Grave Sep 1910: Marvyl not proposed.&#x27;, &quot;Mary A. is listed as &#x27;M1&#x27; and William J. as &#x27;M2&#x27; (second marriage for him); Find a Grave gives Stella as a half-sibling.&quot;]</p>",
+   "id": "N1952",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-11 (karel): Father William Johan Anderson 212810880936 (I0357) and mother Mary Anna Ingvaldson 212810880956 (I0358), existing couple (F0156 in Gramps, child Edith only). New children: Ina Jonette (100012) and Ada Caroline (100015); Edith Marvyl 212807149647 (I0353) is already their child. The 1910 census lists all three in one household. Not proposed: Henry, Walter, Marvyl, half-sister Stella (no sourced birth or conflict, see packet). Children's Ancestry profiles are Ina 212815368678, Ada 212815368792, and existing Edith 212807149647 (already a child of F0156). The 1910 census image used as this family's citation is verified attached in Ina's and Ada's galleries. Add Ina and Ada to the existing William x Mary Anna family; do not create a duplicate. REFILE 11 Nov 2026 of 2026-11-10_100013_anderson-william_x_ingvaldson_add-family.json, rejected 10 Nov 2026 with reason \"tier 'record' requires an image\". Only change: the census sheet image (1910_bancroft-twp_n1009_anderson-household_full.jpg, copied as 2026-11-11_091008_anderson-william_x_ingvaldson_add-family-refile.jpg) is now included; content otherwise unchanged.\nConflicts: ['Marvel in the 1910 household is aged 7/12 in April 1910 against Find a Grave Sep 1910: Marvyl not proposed.', \"Mary A. is listed as 'M1' and William J. as 'M2' (second marriage for him); Find a Grave gives Stella as a half-sibling.\"]",
+   "type": "Research"
+  },
+  "N1953": {
+   "attached_to": [
+    {
+     "id": "C1300",
+     "type": "citation"
+    }
+   ],
+   "change": 1794409205,
+   "flags": [],
+   "handle": "1051ef3ba87c2aa569714f7b93e5",
+   "html": "<p>Transcription (as written): Hansen, Charles C, Head, 62 (may read 64), M, b. Denmark. Hansen, Marie, Wife, 62, M, b. Denmark. Shinofield, Edna L., Daughter, F W, 39, Wd, b. Minnesota. Hansen, Clara, Daughter, 24, S. Florence, Daughter, 21, S, b. Minnesota. Shinofield, Shirley, Granddaughter, 16.</p>",
+   "id": "N1953",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Hansen, Charles C, Head, 62 (may read 64), M, b. Denmark. Hansen, Marie, Wife, 62, M, b. Denmark. Shinofield, Edna L., Daughter, F W, 39, Wd, b. Minnesota. Hansen, Clara, Daughter, 24, S. Florence, Daughter, 21, S, b. Minnesota. Shinofield, Shirley, Granddaughter, 16.",
+   "type": "Transcript"
+  },
+  "N1954": {
+   "attached_to": [
+    {
+     "id": "C1300",
+     "type": "citation"
+    }
+   ],
+   "change": 1794409206,
+   "flags": [],
+   "handle": "1051ef3bab83733d27d423a600d4",
+   "html": "<p>2026-11-11 (karel): Father Charles Christian Hansen 212811655300 (I0377) and mother Inger Marie Jensen 212811655323 (I0379), existing couple (F0176, no children in Gramps). Children to add: Edna Luella 212815368044 and Florence Marie 212815368078 (both already in Gramps from 10 Nov add_person). The 1930 Albert Lea census lists Charles C. Hansen, head; Marie, wife; Edna L. Shinofield, daughter; Florence, daughter, in one household; this census image was verified attached in Edna&#x27;s and Florence&#x27;s Ancestry galleries on 10 Nov 2026. REFILE 11 Nov 2026 of 2026-11-10_100011_hansen-charles_x_inger_add-family.json, rejected 10 Nov 2026 (&#x27;ancestry_attached must be true&#x27;): the unattached 1947 obituary abstract is replaced as citation by the attached 1930 census. No marriage event proposed. DO NOT add Ervin W. Hansen (I0352 / 212807149623) as a child: still a LEAD. Add the children to the existing family F0176; do not create a duplicate.<br>Conflicts: [&#x27;1930 census gives the wife as Marie; the 1947 obituary gives her full name Inger Marie Jensen and the 1900 census Mary J. Same woman, name forms differ.&#x27;, &#x27;Head Charles C. is on image n37; wife and daughters continue on image n38 (attached).&#x27;]</p>",
+   "id": "N1954",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-11 (karel): Father Charles Christian Hansen 212811655300 (I0377) and mother Inger Marie Jensen 212811655323 (I0379), existing couple (F0176, no children in Gramps). Children to add: Edna Luella 212815368044 and Florence Marie 212815368078 (both already in Gramps from 10 Nov add_person). The 1930 Albert Lea census lists Charles C. Hansen, head; Marie, wife; Edna L. Shinofield, daughter; Florence, daughter, in one household; this census image was verified attached in Edna's and Florence's Ancestry galleries on 10 Nov 2026. REFILE 11 Nov 2026 of 2026-11-10_100011_hansen-charles_x_inger_add-family.json, rejected 10 Nov 2026 ('ancestry_attached must be true'): the unattached 1947 obituary abstract is replaced as citation by the attached 1930 census. No marriage event proposed. DO NOT add Ervin W. Hansen (I0352 / 212807149623) as a child: still a LEAD. Add the children to the existing family F0176; do not create a duplicate.\nConflicts: ['1930 census gives the wife as Marie; the 1947 obituary gives her full name Inger Marie Jensen and the 1900 census Mary J. Same woman, name forms differ.', 'Head Charles C. is on image n37; wife and daughters continue on image n38 (attached).']",
+   "type": "Research"
+  },
+  "N1955": {
+   "attached_to": [
+    {
+     "id": "C1301",
+     "type": "citation"
+    }
+   ],
+   "change": 1794409207,
+   "flags": [],
+   "handle": "1051ef3bd5ef1174dd7c8373797",
+   "html": "<p>Transcription (as written): L10 Toepel, Mary, Head, W F, Jun 1854, 45, Wd, mother of 7 / 5 living, b. Wisconsin, father Germany, mother Germany. L11 Mollie, Dau, May 1878, 22. L12 Clara, Dau, Oct 1879, 20. L13 Oscar, Son, M, Apr 1882, 18, Bank Collector. L14 Lilian, Dau, Oct 1883, 16. L15 Alfred, Son, M, Jan 1888, 12, S, Wisconsin / Germany / Germany, At School. L16 Weihler, George, Brother, W M, Jul 1857, 42, S.</p>",
+   "id": "N1955",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): L10 Toepel, Mary, Head, W F, Jun 1854, 45, Wd, mother of 7 / 5 living, b. Wisconsin, father Germany, mother Germany. L11 Mollie, Dau, May 1878, 22. L12 Clara, Dau, Oct 1879, 20. L13 Oscar, Son, M, Apr 1882, 18, Bank Collector. L14 Lilian, Dau, Oct 1883, 16. L15 Alfred, Son, M, Jan 1888, 12, S, Wisconsin / Germany / Germany, At School. L16 Weihler, George, Brother, W M, Jul 1857, 42, S.",
+   "type": "Transcript"
+  },
+  "N1956": {
+   "attached_to": [
+    {
+     "id": "C1301",
+     "type": "citation"
+    }
+   ],
+   "change": 1794409207,
+   "flags": [],
+   "handle": "1051ef3bd8b8304a3efc496af066",
+   "html": "<p>2026-11-11 (karel): Companion to 100001 (apply after it). Record-tier relationship evidence: Alfred listed as son of Mary Toepel, in the same household as Oscar. Image: images/1900_ashland-ed3-sheet6A_*. Ancestry profile 212815367550; the 1900 census image is verified attached in the gallery. REFILE 11 Nov 2026 of 2026-11-10_100002_toepel-alfred_census-1900-citation.json, rejected 10 Nov 2026 with reason &quot;tier &#x27;record&#x27; requires an image&quot;. Only change: the census sheet image (1900_ashland-ed3-sheet6A_mary-toepel-household_full.jpg, copied as 2026-11-11_091001_toepel-alfred_census-1900-citation-refile.jpg) is now included; content otherwise unchanged.</p>",
+   "id": "N1956",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-11 (karel): Companion to 100001 (apply after it). Record-tier relationship evidence: Alfred listed as son of Mary Toepel, in the same household as Oscar. Image: images/1900_ashland-ed3-sheet6A_*. Ancestry profile 212815367550; the 1900 census image is verified attached in the gallery. REFILE 11 Nov 2026 of 2026-11-10_100002_toepel-alfred_census-1900-citation.json, rejected 10 Nov 2026 with reason \"tier 'record' requires an image\". Only change: the census sheet image (1900_ashland-ed3-sheet6A_mary-toepel-household_full.jpg, copied as 2026-11-11_091001_toepel-alfred_census-1900-citation-refile.jpg) is now included; content otherwise unchanged.",
+   "type": "Research"
+  },
+  "N1957": {
+   "attached_to": [
+    {
+     "id": "C1302",
+     "type": "citation"
+    }
+   ],
+   "change": 1794409207,
+   "flags": [],
+   "handle": "1051ef3bf4b41f91d24eca5ee774",
+   "html": "<p>Transcription (as written): L48 Hansen, Charles C., Head, W M, Sept 1867, 32, M 12, b. Denmark. L49 Mary J., Wife, W F, Jan 1868, 32, M 12, 5 children born / 4 living, b. Denmark. L50 Edna L., Daughter, W F, Apr 1889, 11, S, b. Minnesota.</p>",
+   "id": "N1957",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): L48 Hansen, Charles C., Head, W M, Sept 1867, 32, M 12, b. Denmark. L49 Mary J., Wife, W F, Jan 1868, 32, M 12, 5 children born / 4 living, b. Denmark. L50 Edna L., Daughter, W F, Apr 1889, 11, S, b. Minnesota.",
+   "type": "Transcript"
+  },
+  "N1958": {
+   "attached_to": [
+    {
+     "id": "C1302",
+     "type": "citation"
+    }
+   ],
+   "change": 1794409207,
+   "flags": [],
+   "handle": "1051ef3bf75b2c8b23861c39e006",
+   "html": "<p>2026-11-11 (karel): Companion to 100003 (apply after it). Record-tier relationship evidence to Charles C. Hansen. Image: images/1900_albert-lea-twp_*. ED and sheet number were not read today; cite the archive.org image n15. Ancestry profile 212815368044; the 1900 census image is verified attached in the gallery. REFILE 11 Nov 2026 of 2026-11-10_100004_hansen-edna_census-1900-citation.json, rejected 10 Nov 2026 with reason &quot;tier &#x27;record&#x27; requires an image&quot;. Only change: the census sheet image (1900_albert-lea-twp_n15_full.jpg, copied as 2026-11-11_091002_hansen-edna_census-1900-citation-refile.jpg) is now included; content otherwise unchanged.<br>Conflicts: [&quot;Wife listed as &#x27;Mary J.&#x27;, not Inger Marie (see 100003).&quot;]</p>",
+   "id": "N1958",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-11 (karel): Companion to 100003 (apply after it). Record-tier relationship evidence to Charles C. Hansen. Image: images/1900_albert-lea-twp_*. ED and sheet number were not read today; cite the archive.org image n15. Ancestry profile 212815368044; the 1900 census image is verified attached in the gallery. REFILE 11 Nov 2026 of 2026-11-10_100004_hansen-edna_census-1900-citation.json, rejected 10 Nov 2026 with reason \"tier 'record' requires an image\". Only change: the census sheet image (1900_albert-lea-twp_n15_full.jpg, copied as 2026-11-11_091002_hansen-edna_census-1900-citation-refile.jpg) is now included; content otherwise unchanged.\nConflicts: [\"Wife listed as 'Mary J.', not Inger Marie (see 100003).\"]",
+   "type": "Research"
+  },
+  "N1959": {
+   "attached_to": [
+    {
+     "id": "C1303",
+     "type": "citation"
+    }
+   ],
+   "change": 1794409208,
+   "flags": [],
+   "handle": "1051ef3c0c987c568117a0617e76",
+   "html": "<p>Transcription (as written): Hansen, Charles C, Head, 62 (may read 64), M, b. Denmark. Hansen, Marie, Wife, 62, M, b. Denmark. Shinofield, Edna L., Daughter, F W, 39, Wd, b. Minnesota. Hansen, Clara, Daughter, 24, S. Florence, Daughter, 21, S, b. Minnesota. Shinofield, Shirley, Granddaughter, 16.</p>",
+   "id": "N1959",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Hansen, Charles C, Head, 62 (may read 64), M, b. Denmark. Hansen, Marie, Wife, 62, M, b. Denmark. Shinofield, Edna L., Daughter, F W, 39, Wd, b. Minnesota. Hansen, Clara, Daughter, 24, S. Florence, Daughter, 21, S, b. Minnesota. Shinofield, Shirley, Granddaughter, 16.",
+   "type": "Transcript"
+  },
+  "N1960": {
+   "attached_to": [
+    {
+     "id": "C1303",
+     "type": "citation"
+    }
+   ],
+   "change": 1794409208,
+   "flags": [],
+   "handle": "1051ef3c0f6d26997b3d4db136a9",
+   "html": "<p>2026-11-11 (karel): Companion to 100003. Record-tier relationship evidence; same sheet also supports Florence (100006 / 100007). Images: images/1930_albert-lea_n37_* and n38_*. Ancestry profile 212815368044; the 1930 census image is verified attached in the gallery. REFILE 11 Nov 2026 of 2026-11-10_100005_hansen-edna_census-1930-citation.json, rejected 10 Nov 2026 with reason &quot;tier &#x27;record&#x27; requires an image&quot;. Only change: the census sheet image (1930_albert-lea_n38_page.jpg, copied as 2026-11-11_091003_hansen-edna_census-1930-citation-refile.jpg) is now included; content otherwise unchanged.<br>Conflicts: [&quot;Charles&#x27;s age is hard to read (62 or 64).&quot;]</p>",
+   "id": "N1960",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-11 (karel): Companion to 100003. Record-tier relationship evidence; same sheet also supports Florence (100006 / 100007). Images: images/1930_albert-lea_n37_* and n38_*. Ancestry profile 212815368044; the 1930 census image is verified attached in the gallery. REFILE 11 Nov 2026 of 2026-11-10_100005_hansen-edna_census-1930-citation.json, rejected 10 Nov 2026 with reason \"tier 'record' requires an image\". Only change: the census sheet image (1930_albert-lea_n38_page.jpg, copied as 2026-11-11_091003_hansen-edna_census-1930-citation-refile.jpg) is now included; content otherwise unchanged.\nConflicts: [\"Charles's age is hard to read (62 or 64).\"]",
+   "type": "Research"
+  },
+  "N1961": {
+   "attached_to": [
+    {
+     "id": "C1304",
+     "type": "citation"
+    }
+   ],
+   "change": 1794409209,
+   "flags": [],
+   "handle": "1051ef3c24cb75836a958b6b4b26",
+   "html": "<p>Transcription (as written): Hansen, Charles C, Head, 62 (may read 64), M, b. Denmark. Hansen, Marie, Wife, 62, M, b. Denmark. Shinofield, Edna L., Daughter, F W, 39, Wd, b. Minnesota. Hansen, Clara, Daughter, 24, S. Florence, Daughter, 21, S, b. Minnesota. Shinofield, Shirley, Granddaughter, 16.</p>",
+   "id": "N1961",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Hansen, Charles C, Head, 62 (may read 64), M, b. Denmark. Hansen, Marie, Wife, 62, M, b. Denmark. Shinofield, Edna L., Daughter, F W, 39, Wd, b. Minnesota. Hansen, Clara, Daughter, 24, S. Florence, Daughter, 21, S, b. Minnesota. Shinofield, Shirley, Granddaughter, 16.",
+   "type": "Transcript"
+  },
+  "N1962": {
+   "attached_to": [
+    {
+     "id": "C1304",
+     "type": "citation"
+    }
+   ],
+   "change": 1794409209,
+   "flags": [],
+   "handle": "1051ef3c27cc5fe204c3b2ab94e0",
+   "html": "<p>2026-11-11 (karel): Companion to 100006. Record-tier relationship evidence (the same sheet as 100005). Images: images/1930_albert-lea_n38_*. Ancestry profile 212815368078; the 1930 census image is verified attached in the gallery. REFILE 11 Nov 2026 of 2026-11-10_100007_hansen-florence_census-1930-citation.json, rejected 10 Nov 2026 with reason &quot;tier &#x27;record&#x27; requires an image&quot;. Only change: the census sheet image (1930_albert-lea_n38_page.jpg, copied as 2026-11-11_091004_hansen-florence_census-1930-citation-refile.jpg) is now included; content otherwise unchanged.<br>Conflicts: [&quot;Surname not written on Florence&#x27;s line (ditto under Hansen).&quot;]</p>",
+   "id": "N1962",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-11 (karel): Companion to 100006. Record-tier relationship evidence (the same sheet as 100005). Images: images/1930_albert-lea_n38_*. Ancestry profile 212815368078; the 1930 census image is verified attached in the gallery. REFILE 11 Nov 2026 of 2026-11-10_100007_hansen-florence_census-1930-citation.json, rejected 10 Nov 2026 with reason \"tier 'record' requires an image\". Only change: the census sheet image (1930_albert-lea_n38_page.jpg, copied as 2026-11-11_091004_hansen-florence_census-1930-citation-refile.jpg) is now included; content otherwise unchanged.\nConflicts: [\"Surname not written on Florence's line (ditto under Hansen).\"]",
+   "type": "Research"
+  },
+  "N1963": {
+   "attached_to": [
+    {
+     "id": "C1305",
+     "type": "citation"
+    }
+   ],
+   "change": 1794409209,
+   "flags": [],
+   "handle": "1051ef3c3c8032e75d9287c34d8f",
+   "html": "<p>Transcription (as written): Anderson, William J., Head, M W 40, M2 15, parents&#x27; birthplaces Norway / Norway (own birthplace not read). Mary A., Wife, F W 34, M1 15, 7 born / 7 living. Henry M., Son, 9. Walter M., Son, 6. Ada C., Daughter, 14. Edith M., Daughter, 11. Ina J., Daughter, 2. Stella, Daughter. Marvel, Daughter, 7/12.</p>",
+   "id": "N1963",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Anderson, William J., Head, M W 40, M2 15, parents' birthplaces Norway / Norway (own birthplace not read). Mary A., Wife, F W 34, M1 15, 7 born / 7 living. Henry M., Son, 9. Walter M., Son, 6. Ada C., Daughter, 14. Edith M., Daughter, 11. Ina J., Daughter, 2. Stella, Daughter. Marvel, Daughter, 7/12.",
+   "type": "Transcript"
+  },
+  "N1964": {
+   "attached_to": [
+    {
+     "id": "C1305",
+     "type": "citation"
+    }
+   ],
+   "change": 1794409209,
+   "flags": [],
+   "handle": "1051ef3c3fc252782fd153262a0d",
+   "html": "<p>2026-11-11 (karel): Companion to 100012. Record-tier relationship evidence; the same sheet supports Ada (100016). Image: images/1910_bancroft-twp_n1009_*. Ancestry profile 212815368678; the 1910 census image is verified attached in the gallery. REFILE 11 Nov 2026 of 2026-11-10_100014_anderson-ina_census-1910-citation.json, rejected 10 Nov 2026 with reason &quot;tier &#x27;record&#x27; requires an image&quot;. Only change: the census sheet image (1910_bancroft-twp_n1009_anderson-household_full.jpg, copied as 2026-11-11_091005_anderson-ina_census-1910-citation-refile.jpg) is now included; content otherwise unchanged.<br>Conflicts: [&#x27;Marvel is aged 7/12 on a sheet enumerated in April 1910, but Find a Grave gives Marvyl b. 5 Sep 1910: unresolved, so Marvyl is not proposed.&#x27;]</p>",
+   "id": "N1964",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-11 (karel): Companion to 100012. Record-tier relationship evidence; the same sheet supports Ada (100016). Image: images/1910_bancroft-twp_n1009_*. Ancestry profile 212815368678; the 1910 census image is verified attached in the gallery. REFILE 11 Nov 2026 of 2026-11-10_100014_anderson-ina_census-1910-citation.json, rejected 10 Nov 2026 with reason \"tier 'record' requires an image\". Only change: the census sheet image (1910_bancroft-twp_n1009_anderson-household_full.jpg, copied as 2026-11-11_091005_anderson-ina_census-1910-citation-refile.jpg) is now included; content otherwise unchanged.\nConflicts: ['Marvel is aged 7/12 on a sheet enumerated in April 1910, but Find a Grave gives Marvyl b. 5 Sep 1910: unresolved, so Marvyl is not proposed.']",
+   "type": "Research"
+  },
+  "N1965": {
+   "attached_to": [
+    {
+     "id": "C1306",
+     "type": "citation"
+    }
+   ],
+   "change": 1794409210,
+   "flags": [],
+   "handle": "1051ef3c550662b590441927debc",
+   "html": "<p>Transcription (as written): Anderson, William J., Head, M W 40, M2 15, parents&#x27; birthplaces Norway / Norway (own birthplace not read). Mary A., Wife, F W 34, M1 15, 7 born / 7 living. Henry M., Son, 9. Walter M., Son, 6. Ada C., Daughter, 14. Edith M., Daughter, 11. Ina J., Daughter, 2. Stella, Daughter. Marvel, Daughter, 7/12.</p>",
+   "id": "N1965",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Anderson, William J., Head, M W 40, M2 15, parents' birthplaces Norway / Norway (own birthplace not read). Mary A., Wife, F W 34, M1 15, 7 born / 7 living. Henry M., Son, 9. Walter M., Son, 6. Ada C., Daughter, 14. Edith M., Daughter, 11. Ina J., Daughter, 2. Stella, Daughter. Marvel, Daughter, 7/12.",
+   "type": "Transcript"
+  },
+  "N1966": {
+   "attached_to": [
+    {
+     "id": "C1306",
+     "type": "citation"
+    }
+   ],
+   "change": 1794409210,
+   "flags": [],
+   "handle": "1051ef3c585d7c1cd35c103de69c",
+   "html": "<p>2026-11-11 (karel): Companion to 100015. Record-tier relationship evidence. Image: images/1910_bancroft-twp_n1009_*. Ancestry profile 212815368792; the 1910 census image is verified attached in the gallery. REFILE 11 Nov 2026 of 2026-11-10_100016_anderson-ada_census-1910-citation.json, rejected 10 Nov 2026 with reason &quot;tier &#x27;record&#x27; requires an image&quot;. Only change: the census sheet image (1910_bancroft-twp_n1009_anderson-household_full.jpg, copied as 2026-11-11_091006_anderson-ada_census-1910-citation-refile.jpg) is now included; content otherwise unchanged.<br>Conflicts: [&quot;Same Marvel age conflict as 100014 (not Ada&#x27;s).&quot;]</p>",
+   "id": "N1966",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-11 (karel): Companion to 100015. Record-tier relationship evidence. Image: images/1910_bancroft-twp_n1009_*. Ancestry profile 212815368792; the 1910 census image is verified attached in the gallery. REFILE 11 Nov 2026 of 2026-11-10_100016_anderson-ada_census-1910-citation.json, rejected 10 Nov 2026 with reason \"tier 'record' requires an image\". Only change: the census sheet image (1910_bancroft-twp_n1009_anderson-household_full.jpg, copied as 2026-11-11_091006_anderson-ada_census-1910-citation-refile.jpg) is now included; content otherwise unchanged.\nConflicts: [\"Same Marvel age conflict as 100014 (not Ada's).\"]",
+   "type": "Research"
   }
  },
  "people": {
@@ -162800,7 +163885,7 @@
     "type": "Birth",
     "year": 1882
    },
-   "change": 1793478604,
+   "change": 1794409204,
    "citations": [],
    "death": {
     "date": {
@@ -162891,7 +163976,9 @@
     "N0823",
     "N1707"
    ],
-   "parents": [],
+   "parents": [
+    "F0191"
+   ],
    "provenance": [
     "agent-karel",
     "agent-proposed",
@@ -162900,9 +163987,9 @@
    "review": "unreviewed",
    "status": "full",
    "tags": [
-    "agent-proposed",
     "unreviewed",
     "import-ancestry-2026-10-25",
+    "agent-proposed",
     "agent-karel"
    ],
    "urls": [],
@@ -164842,12 +165929,14 @@
     }
    ],
    "attributes": [],
-   "change": 1793478604,
+   "change": 1794409203,
    "citations": [
     "C1178"
    ],
    "events": [],
-   "families": [],
+   "families": [
+    "F0191"
+   ],
    "flags": [
     "agent-proposed"
    ],
@@ -166770,9 +167859,10 @@
     "type": "Birth",
     "year": 1888
    },
-   "change": 1794324603,
+   "change": 1794409207,
    "citations": [
-    "C1291"
+    "C1291",
+    "C1301"
    ],
    "death": {
     "date": {
@@ -166821,7 +167911,9 @@
     "type": "Birth Name"
    },
    "notes": [],
-   "parents": [],
+   "parents": [
+    "F0191"
+   ],
    "provenance": [
     "agent-karel",
     "agent-proposed"
@@ -166829,8 +167921,8 @@
    "review": "unreviewed",
    "status": "full",
    "tags": [
-    "agent-karel",
-    "agent-proposed"
+    "agent-proposed",
+    "agent-karel"
    ],
    "urls": [],
    "xref": {
@@ -166870,9 +167962,11 @@
     "type": "Birth",
     "year": 1889
    },
-   "change": 1794324604,
+   "change": 1794409209,
    "citations": [
-    "C1292"
+    "C1292",
+    "C1302",
+    "C1303"
    ],
    "death": {
     "date": {
@@ -166921,7 +168015,9 @@
     "type": "Birth Name"
    },
    "notes": [],
-   "parents": [],
+   "parents": [
+    "F0176"
+   ],
    "provenance": [
     "agent-karel",
     "agent-proposed"
@@ -166929,8 +168025,8 @@
    "review": "unreviewed",
    "status": "full",
    "tags": [
-    "agent-karel",
-    "agent-proposed"
+    "agent-proposed",
+    "agent-karel"
    ],
    "urls": [],
    "xref": {
@@ -166970,9 +168066,10 @@
     "type": "Birth",
     "year": 1908
    },
-   "change": 1794324605,
+   "change": 1794409209,
    "citations": [
-    "C1293"
+    "C1293",
+    "C1304"
    ],
    "death": {
     "date": {
@@ -167021,7 +168118,9 @@
     "type": "Birth Name"
    },
    "notes": [],
-   "parents": [],
+   "parents": [
+    "F0176"
+   ],
    "provenance": [
     "agent-karel",
     "agent-proposed"
@@ -167029,8 +168128,8 @@
    "review": "unreviewed",
    "status": "full",
    "tags": [
-    "agent-karel",
-    "agent-proposed"
+    "agent-proposed",
+    "agent-karel"
    ],
    "urls": [],
    "xref": {
@@ -167070,9 +168169,10 @@
     "type": "Birth",
     "year": 1907
    },
-   "change": 1794324606,
+   "change": 1794409210,
    "citations": [
-    "C1294"
+    "C1294",
+    "C1305"
    ],
    "death": {
     "date": {
@@ -167121,7 +168221,9 @@
     "type": "Birth Name"
    },
    "notes": [],
-   "parents": [],
+   "parents": [
+    "F0156"
+   ],
    "provenance": [
     "agent-karel",
     "agent-proposed"
@@ -167129,8 +168231,8 @@
    "review": "unreviewed",
    "status": "full",
    "tags": [
-    "agent-karel",
-    "agent-proposed"
+    "agent-proposed",
+    "agent-karel"
    ],
    "urls": [],
    "xref": {
@@ -167170,9 +168272,10 @@
     "type": "Birth",
     "year": 1896
    },
-   "change": 1794324607,
+   "change": 1794409210,
    "citations": [
-    "C1295"
+    "C1295",
+    "C1306"
    ],
    "death": {
     "date": {
@@ -167221,7 +168324,9 @@
     "type": "Birth Name"
    },
    "notes": [],
-   "parents": [],
+   "parents": [
+    "F0156"
+   ],
    "provenance": [
     "agent-karel",
     "agent-proposed"
@@ -167229,8 +168334,8 @@
    "review": "unreviewed",
    "status": "full",
    "tags": [
-    "agent-karel",
-    "agent-proposed"
+    "agent-proposed",
+    "agent-karel"
    ],
    "urls": [],
    "xref": {
@@ -183603,6 +184708,143 @@
     "agent-proposed"
    ],
    "title": "Minnesota death index, 1904-2001: Ada C. Horan, certificate 1952-MN-004399"
+  },
+  "S0224": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1298",
+    "C1301"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051ef3b28e76247ee494ceaba25",
+   "id": "S0224",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0009"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "1900 United States Census, Population Schedule, Wisconsin, Ashland County, Ashland City, ED 3, sheet 6A, NARA T623 roll 1777"
+  },
+  "S0225": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1299",
+    "C1305",
+    "C1306"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051ef3b6cfa1b35c2f98e422fb8",
+   "id": "S0225",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0009"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "1910 United States Census, Population Schedule, Minnesota, Freeborn County, Bancroft Township, ED 44, sheet 2B, NARA T624 roll 695"
+  },
+  "S0226": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1300",
+    "C1303",
+    "C1304"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051ef3ba419752ca078ccbfaab3",
+   "id": "S0226",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0009"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "1930 United States Census, Population Schedule, Minnesota, Freeborn County, Albert Lea city, Ward 2, ED 24-2, NARA T626 roll 1087"
+  },
+  "S0227": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1302"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051ef3bf13b4c2f6f61cf484cae",
+   "id": "S0227",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0009"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "1900 United States Census, Population Schedule, Minnesota, Freeborn County, Albert Lea, NARA T623 roll 764"
   }
  }
 }
