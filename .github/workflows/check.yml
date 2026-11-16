@@ -38,6 +38,11 @@ jobs:
           python-version: "3.12"
       - run: pip install -r site/requirements.txt
 
+      - name: The applier's own tests (it writes to the research database)
+        run: |
+          pip install requests
+          python3 tools/test_apply_proposals.py
+
       - name: Stories name no living person
         run: python3 tools/check_stories.py
 

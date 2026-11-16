@@ -19,6 +19,7 @@ CNAME        family.konecny.net
 - **Karel** owns research content: `content/stories/` and `content/research/board.json`, by pull request to `main`, content files only. A PR that touches anything outside `content/` is sent back; if content needs a template change, the PR description says so and Claude makes it first.
 - **The server** owns `data/` and `media/`: written by the nightly export, never by hand.
 - **Chris** merges PRs and approves anything that changes what the site shows about a person.
+- **The research database (Gramps) is changed only through proposal files.** A researcher files a proposal; `tools/apply_proposals.py` (the applier, installed on the server with `tools/install_applier.py`) checks and applies it. The file format is in `tools/PROPOSALS.md`. Changes to records already in the tree, and anything about living, recent or private people, wait in `held/` until Chris approves them from the applier's own description of what they do. Nobody edits Gramps by hand except Chris.
 
 `.github/CODEOWNERS` records the same split, and `.github/workflows/check.yml` enforces it: every pull request is built as it would be after merging and shows a tick or a cross; a pull request from a `cursor/` branch fails if it touches anything outside `content/`, and any pull request fails if a research card would be hidden for naming a living person.
 
