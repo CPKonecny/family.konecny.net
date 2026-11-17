@@ -9825,7 +9825,7 @@
    "change": 1793041309,
    "cited_by": [
     {
-     "id": "E0285",
+     "id": "E1548",
      "type": "event"
     }
    ],
@@ -34016,7 +34016,7 @@
    "change": 1793041380,
    "cited_by": [
     {
-     "id": "E1390",
+     "id": "E1526",
      "type": "event"
     }
    ],
@@ -34043,7 +34043,7 @@
    "change": 1793222121,
    "cited_by": [
     {
-     "id": "E1390",
+     "id": "E1526",
      "type": "event"
     }
    ],
@@ -37383,11 +37383,11 @@
    "change": 1793222355,
    "cited_by": [
     {
-     "id": "E1539",
+     "id": "E1543",
      "type": "event"
     },
     {
-     "id": "E1540",
+     "id": "E1544",
      "type": "event"
     },
     {
@@ -37430,11 +37430,11 @@
    "change": 1793222361,
    "cited_by": [
     {
-     "id": "E1541",
+     "id": "E1545",
      "type": "event"
     },
     {
-     "id": "E1542",
+     "id": "E1546",
      "type": "event"
     },
     {
@@ -38102,7 +38102,7 @@
    "change": 1793473203,
    "cited_by": [
     {
-     "id": "E1550",
+     "id": "E1551",
      "type": "event"
     },
     {
@@ -40964,6 +40964,578 @@
    ],
    "tier": "record",
    "url": "https://archive.org/details/13thcensus1910po695unit/page/n1009"
+  },
+  "C1307": {
+   "ancestry_record_id": "",
+   "change": 1794846602,
+   "cited_by": [
+    {
+     "id": "E1605",
+     "type": "event"
+    },
+    {
+     "id": "E1606",
+     "type": "event"
+    },
+    {
+     "id": "I0413",
+     "type": "person"
+    }
+   ],
+   "confidence": 2,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1052f3f117bd27b249951280523c",
+   "id": "C1307",
+   "information": "secondary",
+   "media": [
+    {
+     "ref": "O0227"
+    }
+   ],
+   "notes": [
+    "N1967",
+    "N1968"
+   ],
+   "page": "Certificate 1946-MN-018386",
+   "proposal_file": "2026-11-12_100001_everest-mabel_add-person.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0228",
+   "source_type": "derivative",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "index",
+   "url": "https://www.mnhs.org/search/people"
+  },
+  "C1308": {
+   "ancestry_record_id": "",
+   "change": 1794846604,
+   "cited_by": [
+    {
+     "id": "E1607",
+     "type": "event"
+    },
+    {
+     "id": "E1608",
+     "type": "event"
+    },
+    {
+     "id": "I0414",
+     "type": "person"
+    }
+   ],
+   "confidence": 2,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1052f3f14e963af2625dad36eda8",
+   "id": "C1308",
+   "information": "secondary",
+   "media": [
+    {
+     "ref": "O0228"
+    }
+   ],
+   "notes": [
+    "N1969",
+    "N1970"
+   ],
+   "page": "Obituary of June Elizabeth Pratt, retrieved 10 Nov 2026",
+   "proposal_file": "2026-11-12_100003_toepel-june_add-person.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0229",
+   "source_type": "derivative",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "compiled",
+   "url": "https://www.bonnerupfuneralservice.com/obituaries/june-pratt"
+  },
+  "C1309": {
+   "ancestry_record_id": "",
+   "change": 1794846605,
+   "cited_by": [
+    {
+     "id": "E1609",
+     "type": "event"
+    },
+    {
+     "id": "E1610",
+     "type": "event"
+    },
+    {
+     "id": "I0415",
+     "type": "person"
+    }
+   ],
+   "confidence": 2,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1052f3f184a05e840c4f25dee026",
+   "id": "C1309",
+   "information": "secondary",
+   "media": [
+    {
+     "ref": "O0229"
+    }
+   ],
+   "notes": [
+    "N1971",
+    "N1972"
+   ],
+   "page": "Certificate 1995-MN-029008",
+   "proposal_file": "2026-11-12_100004_toepel-james_add-person.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0230",
+   "source_type": "derivative",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "index",
+   "url": "https://www.mnhs.org/search/people"
+  },
+  "C1310": {
+   "ancestry_record_id": "",
+   "change": 1794846606,
+   "cited_by": [
+    {
+     "id": "E1611",
+     "type": "event"
+    },
+    {
+     "id": "E1612",
+     "type": "event"
+    },
+    {
+     "id": "I0416",
+     "type": "person"
+    }
+   ],
+   "confidence": 2,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1052f3f1aed0391bf6f799b5f574",
+   "id": "C1310",
+   "information": "secondary",
+   "media": [
+    {
+     "ref": "O0230"
+    }
+   ],
+   "notes": [
+    "N1973",
+    "N1974"
+   ],
+   "page": "Certificate 1962-MN-005051",
+   "proposal_file": "2026-11-12_100006_toepel-clara_add-person.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0231",
+   "source_type": "derivative",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "index",
+   "url": "https://www.mnhs.org/search/people"
+  },
+  "C1311": {
+   "ancestry_record_id": "",
+   "change": 1794846607,
+   "cited_by": [
+    {
+     "id": "E1613",
+     "type": "event"
+    },
+    {
+     "id": "E1614",
+     "type": "event"
+    },
+    {
+     "id": "I0417",
+     "type": "person"
+    }
+   ],
+   "confidence": 2,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1052f3f1d8e27408a0e455c196db",
+   "id": "C1311",
+   "information": "secondary",
+   "media": [
+    {
+     "ref": "O0231"
+    }
+   ],
+   "notes": [
+    "N1975",
+    "N1976"
+   ],
+   "page": "Find a Grave memorial 152091950, Evergreen Cemetery, Manitowoc; retrieved 12 Nov 2026",
+   "proposal_file": "2026-11-12_100008_ferdon-glenn_add-person.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0232",
+   "source_type": "derivative",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "compiled",
+   "url": "https://www.findagrave.com/memorial/152091950/glenn-chester-ferdon"
+  },
+  "C1312": {
+   "ancestry_record_id": "",
+   "change": 1794846608,
+   "cited_by": [
+    {
+     "id": "E1615",
+     "type": "event"
+    },
+    {
+     "id": "E1616",
+     "type": "event"
+    },
+    {
+     "id": "I0418",
+     "type": "person"
+    }
+   ],
+   "confidence": 2,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1052f3f206d8710e90180efa3826",
+   "id": "C1312",
+   "information": "secondary",
+   "media": [
+    {
+     "ref": "O0232"
+    }
+   ],
+   "notes": [
+    "N1977",
+    "N1978"
+   ],
+   "page": "Langenkamp, page 1 (index_1.html); retrieved 13 Nov 2026",
+   "proposal_file": "2026-11-13_100001_langenkamp-daniel_add-person.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0233",
+   "source_type": "derivative",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "index",
+   "url": "https://sortedbyname.com/letter_l/langenkamp/index_1.html"
+  },
+  "C1313": {
+   "ancestry_record_id": "",
+   "change": 1794846609,
+   "cited_by": [
+    {
+     "id": "F0192",
+     "type": "family"
+    }
+   ],
+   "confidence": 2,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1052f3f227e2471469b987b03549",
+   "id": "C1313",
+   "information": "secondary",
+   "media": [
+    {
+     "ref": "O0233"
+    }
+   ],
+   "notes": [
+    "N1979",
+    "N1980"
+   ],
+   "page": "Certificate 1995-MN-029008",
+   "proposal_file": "2026-11-12_100005_toepel-alfred_x_everest-mabel_add-family.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0230",
+   "source_type": "derivative",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "index",
+   "url": "https://www.mnhs.org/search/people"
+  },
+  "C1314": {
+   "ancestry_record_id": "",
+   "change": 1794846611,
+   "cited_by": [
+    {
+     "id": "F0193",
+     "type": "family"
+    }
+   ],
+   "confidence": 2,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1052f3f26c085e043036ec797368",
+   "id": "C1314",
+   "information": "secondary",
+   "media": [
+    {
+     "ref": "O0234"
+    }
+   ],
+   "notes": [
+    "N1981",
+    "N1982"
+   ],
+   "page": "Find a Grave memorial 152091950; retrieved 12 Nov 2026",
+   "proposal_file": "2026-11-12_100009_ferdon-glenn_x_karl-charlotte_add-family.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0232",
+   "source_type": "derivative",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "compiled",
+   "url": "https://www.findagrave.com/memorial/152091950/glenn-chester-ferdon"
+  },
+  "C1315": {
+   "ancestry_record_id": "",
+   "change": 1794846612,
+   "cited_by": [
+    {
+     "id": "F0194",
+     "type": "family"
+    }
+   ],
+   "confidence": 2,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1052f3f2988434fe927b27ff8ae7",
+   "id": "C1315",
+   "information": "secondary",
+   "media": [
+    {
+     "ref": "O0235"
+    }
+   ],
+   "notes": [
+    "N1983",
+    "N1984"
+   ],
+   "page": "Langenkamp, page 1 (index_1.html); retrieved 13 Nov 2026",
+   "proposal_file": "2026-11-13_100002_langenkamp-daniel_x_karl-caroline_add-family.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0233",
+   "source_type": "derivative",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "index",
+   "url": "https://sortedbyname.com/letter_l/langenkamp/index_1.html"
+  },
+  "C1316": {
+   "ancestry_record_id": "",
+   "change": 1794846613,
+   "cited_by": [
+    {
+     "id": "I0413",
+     "type": "person"
+    }
+   ],
+   "confidence": 2,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1052f3f2c3825197a5ff33744dac",
+   "id": "C1316",
+   "information": "secondary",
+   "media": [
+    {
+     "ref": "O0236"
+    }
+   ],
+   "notes": [
+    "N1985",
+    "N1986"
+   ],
+   "page": "Obituary of June Elizabeth Pratt, retrieved 10 Nov 2026",
+   "proposal_file": "2026-11-12_100002_everest-mabel_obit-june-2012-citation.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0229",
+   "source_type": "derivative",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "compiled",
+   "url": "https://www.bonnerupfuneralservice.com/obituaries/june-pratt"
+  },
+  "C1317": {
+   "ancestry_record_id": "",
+   "change": 1794846614,
+   "cited_by": [
+    {
+     "id": "I0416",
+     "type": "person"
+    }
+   ],
+   "confidence": 3,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1052f3f2e2972ac15ffe03430c7e",
+   "id": "C1317",
+   "information": "secondary",
+   "media": [
+    {
+     "ref": "O0237"
+    }
+   ],
+   "notes": [
+    "N1987",
+    "N1988"
+   ],
+   "page": "T623 roll 1777, ED 3, sheet 6A, Third Street, lines 10-16 (Mary Toepel household); IA 12thcensusofpopu1777unit leaf n306",
+   "proposal_file": "2026-11-12_100007_toepel-clara_census-1900-citation.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0224",
+   "source_type": "original",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "record",
+   "url": "https://archive.org/details/12thcensusofpopu1777unit/page/n306"
+  },
+  "C1318": {
+   "ancestry_record_id": "",
+   "change": 1794864602,
+   "cited_by": [
+    {
+     "id": "E1617",
+     "type": "event"
+    },
+    {
+     "id": "E1618",
+     "type": "event"
+    },
+    {
+     "id": "I0419",
+     "type": "person"
+    }
+   ],
+   "confidence": 2,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1052feabb11943c6cf47e3c13480",
+   "id": "C1318",
+   "information": "secondary",
+   "media": [
+    {
+     "ref": "O0238"
+    }
+   ],
+   "notes": [
+    "N1989",
+    "N1990"
+   ],
+   "page": "pp.45, 58 (printed; PDF pages 23, 30)",
+   "proposal_file": "2026-11-16_155000_wood-norman-iii_add-person.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0234",
+   "source_type": "derivative",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "compiled",
+   "url": ""
   }
  },
  "events": {
@@ -49043,35 +49615,6 @@
    ],
    "type": "Residence"
   },
-  "E0240": {
-   "attributes": [],
-   "change": 1793040915,
-   "citations": [],
-   "date": null,
-   "description": "",
-   "families": [],
-   "flags": [],
-   "handle": "104ebd54a8775633556135bd99d6",
-   "id": "E0240",
-   "media": [],
-   "notes": [],
-   "participants": [
-    {
-     "person": "I0059",
-     "role": "Primary"
-    }
-   ],
-   "place": null,
-   "provenance": [
-    "import-ancestry-2026-10-25"
-   ],
-   "review": "unreviewed",
-   "tags": [
-    "import-ancestry-2026-10-25",
-    "unreviewed"
-   ],
-   "type": "Death"
-  },
   "E0241": {
    "attributes": [],
    "change": 1793040915,
@@ -50306,75 +50849,6 @@
    ],
    "type": "_AMTID"
   },
-  "E0285": {
-   "attributes": [],
-   "change": 1793040925,
-   "citations": [
-    "C0321"
-   ],
-   "date": {
-    "day": null,
-    "iso": "1898",
-    "modifier": null,
-    "month": null,
-    "quality": null,
-    "sort": 2414291,
-    "text": "1898",
-    "year": 1898
-   },
-   "description": "",
-   "families": [],
-   "flags": [],
-   "handle": "104ebd54a98d6346dc72a879a049",
-   "id": "E0285",
-   "media": [],
-   "notes": [],
-   "participants": [
-    {
-     "person": "I0074",
-     "role": "Primary"
-    }
-   ],
-   "place": "P0076",
-   "provenance": [
-    "import-ancestry-2026-10-25"
-   ],
-   "review": "unreviewed",
-   "tags": [
-    "import-ancestry-2026-10-25",
-    "unreviewed"
-   ],
-   "type": "Birth"
-  },
-  "E0286": {
-   "attributes": [],
-   "change": 1793040925,
-   "citations": [],
-   "date": null,
-   "description": "",
-   "families": [],
-   "flags": [],
-   "handle": "104ebd54a994615a0f7fdc55a03e",
-   "id": "E0286",
-   "media": [],
-   "notes": [],
-   "participants": [
-    {
-     "person": "I0074",
-     "role": "Primary"
-    }
-   ],
-   "place": null,
-   "provenance": [
-    "import-ancestry-2026-10-25"
-   ],
-   "review": "unreviewed",
-   "tags": [
-    "import-ancestry-2026-10-25",
-    "unreviewed"
-   ],
-   "type": "Death"
-  },
   "E0287": {
    "attributes": [],
    "change": 1793040925,
@@ -50464,7 +50938,7 @@
   },
   "E0290": {
    "attributes": [],
-   "change": 1793040926,
+   "change": 1794885375,
    "citations": [
     "C0325"
    ],
@@ -50480,11 +50954,15 @@
    },
    "description": "",
    "families": [],
-   "flags": [],
+   "flags": [
+    "agent-proposed"
+   ],
    "handle": "104ebd54a9b31daed80a052a1d78",
    "id": "E0290",
    "media": [],
-   "notes": [],
+   "notes": [
+    "N1992"
+   ],
    "participants": [
     {
      "person": "I0076",
@@ -50493,50 +50971,16 @@
    ],
    "place": "P0096",
    "provenance": [
+    "agent-karel",
+    "agent-proposed",
     "import-ancestry-2026-10-25"
    ],
    "review": "unreviewed",
    "tags": [
     "import-ancestry-2026-10-25",
-    "unreviewed"
-   ],
-   "type": "Birth"
-  },
-  "E0291": {
-   "attributes": [],
-   "change": 1793040926,
-   "citations": [],
-   "date": {
-    "day": 1,
-    "iso": "1691-07-01",
-    "modifier": null,
-    "month": 7,
-    "quality": null,
-    "sort": 2338867,
-    "text": "1 July 1691",
-    "year": 1691
-   },
-   "description": "",
-   "families": [],
-   "flags": [],
-   "handle": "104ebd54a9b93184061b0b0a47c2",
-   "id": "E0291",
-   "media": [],
-   "notes": [],
-   "participants": [
-    {
-     "person": "I0076",
-     "role": "Primary"
-    }
-   ],
-   "place": "P0097",
-   "provenance": [
-    "import-ancestry-2026-10-25"
-   ],
-   "review": "unreviewed",
-   "tags": [
-    "import-ancestry-2026-10-25",
-    "unreviewed"
+    "unreviewed",
+    "agent-karel",
+    "agent-proposed"
    ],
    "type": "Birth"
   },
@@ -71125,35 +71569,6 @@
    ],
    "type": "Spouse Order Research Note"
   },
-  "E0889": {
-   "attributes": [],
-   "change": 1793041052,
-   "citations": [],
-   "date": null,
-   "description": "",
-   "families": [],
-   "flags": [],
-   "handle": "104ebd54bd83def510d60764d79",
-   "id": "E0889",
-   "media": [],
-   "notes": [],
-   "participants": [
-    {
-     "person": "I0211",
-     "role": "Primary"
-    }
-   ],
-   "place": null,
-   "provenance": [
-    "import-ancestry-2026-10-25"
-   ],
-   "review": "unreviewed",
-   "tags": [
-    "import-ancestry-2026-10-25",
-    "unreviewed"
-   ],
-   "type": "Death"
-  },
   "E0890": {
    "attributes": [],
    "change": 1793041052,
@@ -85516,49 +85931,6 @@
    ],
    "type": "Birth"
   },
-  "E1390": {
-   "attributes": [],
-   "change": 1793222122,
-   "citations": [
-    "C1099",
-    "C1100"
-   ],
-   "date": {
-    "day": null,
-    "iso": "2008",
-    "modifier": null,
-    "month": null,
-    "quality": null,
-    "sort": 2454467,
-    "text": "2008",
-    "year": 2008
-   },
-   "description": "",
-   "families": [],
-   "flags": [],
-   "handle": "104ebd54c8be7a81e58be4d0bedf",
-   "id": "E1390",
-   "media": [],
-   "notes": [],
-   "participants": [
-    {
-     "person": "I0354",
-     "role": "Primary"
-    }
-   ],
-   "place": null,
-   "provenance": [
-    "agent-validator",
-    "import-ancestry-2026-10-25"
-   ],
-   "review": "ai",
-   "tags": [
-    "import-ancestry-2026-10-25",
-    "ai-validated",
-    "agent-validator"
-   ],
-   "type": "Death"
-  },
   "E1391": {
    "attributes": [],
    "change": 1793041164,
@@ -89657,9 +90029,11 @@
   },
   "E1526": {
    "attributes": [],
-   "change": 1793222251,
+   "change": 1794885377,
    "citations": [
-    "C1184"
+    "C1184",
+    "C1099",
+    "C1100"
    ],
    "date": {
     "day": 28,
@@ -89673,7 +90047,9 @@
    },
    "description": "Formerly of Green Bay WI; d. Mesa AZ after cancer. GBPG 7 Sep 2008 names parents Dick and Dorothy Toepel Mesa Ariz; sisters Jodi (Pete) Konecny Nashville Tenn and Beth (Mark) Dressel Pequot Lake Minn; brother Dave (Stephanie) Toepel Mesa; daughter Alyssa Appleton / Ann Green Bay. Ancestry Death date refined from year-only 2008 to 28 Aug 2008; gallery clip ON; research note 2026-10-27 ON. Same image+note also attached to sister Jody Susan Toepel 212735838801 (living: name/relationship/town only).",
    "families": [],
-   "flags": [],
+   "flags": [
+    "agent-proposed"
+   ],
    "handle": "104ef8b6412a6f2525a786f5077d",
    "id": "E1526",
    "media": [],
@@ -89687,13 +90063,17 @@
    "place": "P0312",
    "provenance": [
     "agent-karel",
-    "agent-validator"
+    "agent-proposed",
+    "agent-validator",
+    "import-ancestry-2026-10-25"
    ],
    "review": "ai",
    "tags": [
     "agent-karel",
     "ai-validated",
-    "agent-validator"
+    "agent-validator",
+    "agent-proposed",
+    "import-ancestry-2026-10-25"
    ],
    "type": "Death"
   },
@@ -90155,179 +90535,12 @@
    ],
    "type": "Marriage"
   },
-  "E1539": {
-   "attributes": [],
-   "change": 1793222356,
-   "citations": [
-    "C1206"
-   ],
-   "date": {
-    "day": 30,
-    "iso": "1904-07-30",
-    "modifier": null,
-    "month": 7,
-    "quality": null,
-    "sort": 2416692,
-    "text": "30 July 1904",
-    "year": 1904
-   },
-   "description": "",
-   "families": [],
-   "flags": [],
-   "handle": "104f1d2e31c54c03a407490fbb5b",
-   "id": "E1539",
-   "media": [],
-   "notes": [],
-   "participants": [
-    {
-     "person": "I0382",
-     "role": "Primary"
-    }
-   ],
-   "place": null,
-   "provenance": [
-    "agent-karel",
-    "agent-validator"
-   ],
-   "review": "ai",
-   "tags": [
-    "agent-karel",
-    "ai-validated",
-    "agent-validator"
-   ],
-   "type": "Birth"
-  },
-  "E1540": {
-   "attributes": [],
-   "change": 1793222356,
-   "citations": [
-    "C1206"
-   ],
-   "date": {
-    "day": 16,
-    "iso": "1978-05-16",
-    "modifier": null,
-    "month": 5,
-    "quality": null,
-    "sort": 2443645,
-    "text": "16 May 1978",
-    "year": 1978
-   },
-   "description": "",
-   "families": [],
-   "flags": [],
-   "handle": "104f1d2e35cd564fa92c06c0ebb6",
-   "id": "E1540",
-   "media": [],
-   "notes": [],
-   "participants": [
-    {
-     "person": "I0382",
-     "role": "Primary"
-    }
-   ],
-   "place": "P0288",
-   "provenance": [
-    "agent-karel",
-    "agent-validator"
-   ],
-   "review": "ai",
-   "tags": [
-    "agent-karel",
-    "ai-validated",
-    "agent-validator"
-   ],
-   "type": "Death"
-  },
-  "E1541": {
-   "attributes": [],
-   "change": 1793222361,
-   "citations": [
-    "C1207"
-   ],
-   "date": {
-    "day": 9,
-    "iso": "1915-06-09",
-    "modifier": null,
-    "month": 6,
-    "quality": null,
-    "sort": 2420658,
-    "text": "9 June 1915",
-    "year": 1915
-   },
-   "description": "",
-   "families": [],
-   "flags": [],
-   "handle": "104f1d2e57ea69eba4b5024e7e10",
-   "id": "E1541",
-   "media": [],
-   "notes": [],
-   "participants": [
-    {
-     "person": "I0383",
-     "role": "Primary"
-    }
-   ],
-   "place": "P0320",
-   "provenance": [
-    "agent-karel",
-    "agent-validator"
-   ],
-   "review": "ai",
-   "tags": [
-    "agent-karel",
-    "ai-validated",
-    "agent-validator"
-   ],
-   "type": "Birth"
-  },
-  "E1542": {
-   "attributes": [],
-   "change": 1793222361,
-   "citations": [
-    "C1207"
-   ],
-   "date": {
-    "day": 4,
-    "iso": "2007-08-04",
-    "modifier": null,
-    "month": 8,
-    "quality": null,
-    "sort": 2454317,
-    "text": "4 August 2007",
-    "year": 2007
-   },
-   "description": "",
-   "families": [],
-   "flags": [],
-   "handle": "104f1d2e5bb84e0c12a6a0640d47",
-   "id": "E1542",
-   "media": [],
-   "notes": [],
-   "participants": [
-    {
-     "person": "I0383",
-     "role": "Primary"
-    }
-   ],
-   "place": null,
-   "provenance": [
-    "agent-karel",
-    "agent-validator"
-   ],
-   "review": "ai",
-   "tags": [
-    "agent-karel",
-    "ai-validated",
-    "agent-validator"
-   ],
-   "type": "Death"
-  },
   "E1543": {
    "attributes": [],
-   "change": 1793222451,
+   "change": 1794885378,
    "citations": [
-    "C1219"
+    "C1219",
+    "C1206"
    ],
    "date": {
     "day": 30,
@@ -90341,7 +90554,9 @@
    },
    "description": "FG 209824876: b. 30 Jul 1904; place not stated. SSDI age 73 at 16 May 1978 consistent.",
    "families": [],
-   "flags": [],
+   "flags": [
+    "agent-proposed"
+   ],
    "handle": "104f1d2fc1c37d640202b56f8253",
    "id": "E1543",
    "media": [],
@@ -90355,21 +90570,24 @@
    "place": null,
    "provenance": [
     "agent-karel",
+    "agent-proposed",
     "agent-validator"
    ],
    "review": "ai",
    "tags": [
     "agent-karel",
     "ai-validated",
-    "agent-validator"
+    "agent-validator",
+    "agent-proposed"
    ],
    "type": "Birth"
   },
   "E1544": {
    "attributes": [],
-   "change": 1793222456,
+   "change": 1794885378,
    "citations": [
-    "C1220"
+    "C1220",
+    "C1206"
    ],
    "date": {
     "day": 16,
@@ -90383,7 +90601,9 @@
    },
    "description": "SSDI: OREGAN, JOHN F. of Jefferson County, Kentucky died 16 May 1978 at age 73. Burial Calvary Cemetery, Louisville (FG) — note only.",
    "families": [],
-   "flags": [],
+   "flags": [
+    "agent-proposed"
+   ],
    "handle": "104f1d2fdd1a7aab487892507c0",
    "id": "E1544",
    "media": [],
@@ -90397,21 +90617,24 @@
    "place": "P0288",
    "provenance": [
     "agent-karel",
+    "agent-proposed",
     "agent-validator"
    ],
    "review": "ai",
    "tags": [
     "agent-karel",
     "ai-validated",
-    "agent-validator"
+    "agent-validator",
+    "agent-proposed"
    ],
    "type": "Death"
   },
   "E1545": {
    "attributes": [],
-   "change": 1793222464,
+   "change": 1794885379,
    "citations": [
-    "C1221"
+    "C1221",
+    "C1207"
    ],
    "date": {
     "day": 9,
@@ -90426,6 +90649,7 @@
    "description": "NUMIDENT: b. 9 Jun 1915 Louisville, KY; parents Albert B Charlton × Ernestine Werst (not added). NEEDS REVIEW vs FG header 1914.",
    "families": [],
    "flags": [
+    "agent-proposed",
     "needs-human"
    ],
    "handle": "104f1d2ff18c7f658f7fe12c13e6",
@@ -90441,21 +90665,25 @@
    "place": "P0320",
    "provenance": [
     "agent-karel",
+    "agent-proposed",
     "agent-validator"
    ],
-   "review": "unreviewed",
+   "review": "ai",
    "tags": [
     "agent-karel",
     "needs-human",
-    "agent-validator"
+    "agent-validator",
+    "agent-proposed",
+    "ai-validated"
    ],
    "type": "Birth"
   },
   "E1546": {
    "attributes": [],
-   "change": 1793222468,
+   "change": 1794885380,
    "citations": [
-    "C1222"
+    "C1222",
+    "C1207"
    ],
    "date": {
     "day": 4,
@@ -90470,6 +90698,7 @@
    "description": "NUMIDENT/FG: d. 4 Aug 2007; place not stated.",
    "families": [],
    "flags": [
+    "agent-proposed",
     "needs-human"
    ],
    "handle": "104f1d300a875399996dab25eb6a",
@@ -90485,19 +90714,22 @@
    "place": null,
    "provenance": [
     "agent-karel",
+    "agent-proposed",
     "agent-validator"
    ],
-   "review": "unreviewed",
+   "review": "ai",
    "tags": [
     "agent-karel",
     "needs-human",
-    "agent-validator"
+    "agent-validator",
+    "agent-proposed",
+    "ai-validated"
    ],
    "type": "Death"
   },
   "E1547": {
    "attributes": [],
-   "change": 1793222481,
+   "change": 1794885377,
    "citations": [
     "C1224"
    ],
@@ -90513,7 +90745,9 @@
    },
    "description": "Port Charlotte Daily Herald News 30 Dec 1974 p.3; FG 76793428; DMF Dec 1974 SSN 339-01-1966.",
    "families": [],
-   "flags": [],
+   "flags": [
+    "agent-proposed"
+   ],
    "handle": "104f24b0f84830886faf009c2f05",
    "id": "E1547",
    "media": [],
@@ -90527,21 +90761,27 @@
    "place": "P0322",
    "provenance": [
     "agent-karel",
-    "agent-validator"
+    "agent-proposed",
+    "agent-validator",
+    "import-ancestry-2026-10-25"
    ],
    "review": "ai",
    "tags": [
     "agent-karel",
     "ai-validated",
-    "agent-validator"
+    "agent-validator",
+    "agent-proposed",
+    "import-ancestry-2026-10-25",
+    "unreviewed"
    ],
    "type": "Death"
   },
   "E1548": {
    "attributes": [],
-   "change": 1793307604,
+   "change": 1794885376,
    "citations": [
-    "C1225"
+    "C1225",
+    "C0321"
    ],
    "date": {
     "day": 4,
@@ -90561,7 +90801,9 @@
    "handle": "104f5ea093ae29c88a952de48cf2",
    "id": "E1548",
    "media": [],
-   "notes": [],
+   "notes": [
+    "N1993"
+   ],
    "participants": [
     {
      "person": "I0074",
@@ -90571,18 +90813,21 @@
    "place": "P0323",
    "provenance": [
     "agent-karel",
-    "agent-proposed"
+    "agent-proposed",
+    "import-ancestry-2026-10-25"
    ],
    "review": "unreviewed",
    "tags": [
     "agent-karel",
-    "agent-proposed"
+    "agent-proposed",
+    "import-ancestry-2026-10-25",
+    "unreviewed"
    ],
    "type": "Birth"
   },
   "E1549": {
    "attributes": [],
-   "change": 1793307605,
+   "change": 1794885376,
    "citations": [
     "C1226"
    ],
@@ -90614,63 +90859,24 @@
    "place": "P0323",
    "provenance": [
     "agent-karel",
-    "agent-proposed"
+    "agent-proposed",
+    "import-ancestry-2026-10-25"
    ],
    "review": "unreviewed",
    "tags": [
     "agent-karel",
-    "agent-proposed"
+    "agent-proposed",
+    "import-ancestry-2026-10-25",
+    "unreviewed"
    ],
    "type": "Death"
   },
-  "E1550": {
-   "attributes": [],
-   "change": 1793473203,
-   "citations": [
-    "C1228"
-   ],
-   "date": {
-    "day": 27,
-    "iso": "1870-02-27",
-    "modifier": null,
-    "month": 2,
-    "quality": null,
-    "sort": 2404121,
-    "text": "27 February 1870",
-    "year": 1870
-   },
-   "description": "",
-   "families": [],
-   "flags": [
-    "agent-proposed"
-   ],
-   "handle": "104fc15501497ad41b4f59e74912",
-   "id": "E1550",
-   "media": [],
-   "notes": [],
-   "participants": [
-    {
-     "person": "I0384",
-     "role": "Primary"
-    }
-   ],
-   "place": "P0324",
-   "provenance": [
-    "agent-karel",
-    "agent-proposed"
-   ],
-   "review": "unreviewed",
-   "tags": [
-    "agent-karel",
-    "agent-proposed"
-   ],
-   "type": "Birth"
-  },
   "E1551": {
    "attributes": [],
-   "change": 1793473204,
+   "change": 1794885380,
    "citations": [
-    "C1229"
+    "C1229",
+    "C1228"
    ],
    "date": {
     "day": 27,
@@ -90840,7 +91046,7 @@
   },
   "E1555": {
    "attributes": [],
-   "change": 1793473208,
+   "change": 1794885374,
    "citations": [
     "C1234"
    ],
@@ -90872,12 +91078,15 @@
    "place": "P0327",
    "provenance": [
     "agent-karel",
-    "agent-proposed"
+    "agent-proposed",
+    "import-ancestry-2026-10-25"
    ],
    "review": "unreviewed",
    "tags": [
     "agent-karel",
-    "agent-proposed"
+    "agent-proposed",
+    "import-ancestry-2026-10-25",
+    "unreviewed"
    ],
    "type": "Death"
   },
@@ -92883,6 +93092,608 @@
     "agent-proposed"
    ],
    "type": "Death"
+  },
+  "E1605": {
+   "attributes": [],
+   "change": 1794846602,
+   "citations": [
+    "C1307"
+   ],
+   "date": {
+    "day": null,
+    "iso": "1893",
+    "modifier": "about",
+    "month": null,
+    "quality": null,
+    "sort": 2412465,
+    "text": "about 1893",
+    "year": 1893
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1052f3f120cb54b1e1652acb7b69",
+   "id": "E1605",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0413",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0340",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Birth"
+  },
+  "E1606": {
+   "attributes": [],
+   "change": 1794846602,
+   "citations": [
+    "C1307"
+   ],
+   "date": {
+    "day": 16,
+    "iso": "1946-01-16",
+    "modifier": null,
+    "month": 1,
+    "quality": null,
+    "sort": 2431837,
+    "text": "16 January 1946",
+    "year": 1946
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1052f3f124f11ca46e3598d1b44d",
+   "id": "E1606",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0413",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0338",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Death"
+  },
+  "E1607": {
+   "attributes": [],
+   "change": 1794846604,
+   "citations": [
+    "C1308"
+   ],
+   "date": {
+    "day": 19,
+    "iso": "1918-06-19",
+    "modifier": null,
+    "month": 6,
+    "quality": null,
+    "sort": 2421764,
+    "text": "19 June 1918",
+    "year": 1918
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1052f3f1562c33430fb0a5a42ff6",
+   "id": "E1607",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0414",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0090",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Birth"
+  },
+  "E1608": {
+   "attributes": [],
+   "change": 1794846604,
+   "citations": [
+    "C1308"
+   ],
+   "date": {
+    "day": 13,
+    "iso": "2012-02-13",
+    "modifier": null,
+    "month": 2,
+    "quality": null,
+    "sort": 2455971,
+    "text": "13 February 2012",
+    "year": 2012
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1052f3f15cdf6334c19a7061cd3c",
+   "id": "E1608",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0414",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0091",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Death"
+  },
+  "E1609": {
+   "attributes": [],
+   "change": 1794846605,
+   "citations": [
+    "C1309"
+   ],
+   "date": {
+    "day": 30,
+    "iso": "1922-04-30",
+    "modifier": null,
+    "month": 4,
+    "quality": null,
+    "sort": 2423175,
+    "text": "30 April 1922",
+    "year": 1922
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1052f3f1896f3da2d86962fdc5a5",
+   "id": "E1609",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0415",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0283",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Birth"
+  },
+  "E1610": {
+   "attributes": [],
+   "change": 1794846605,
+   "citations": [
+    "C1309"
+   ],
+   "date": {
+    "day": 14,
+    "iso": "1995-10-14",
+    "modifier": null,
+    "month": 10,
+    "quality": null,
+    "sort": 2450005,
+    "text": "14 October 1995",
+    "year": 1995
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1052f3f191e146b217e0726a13ca",
+   "id": "E1610",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0415",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0341",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Death"
+  },
+  "E1611": {
+   "attributes": [],
+   "change": 1794846606,
+   "citations": [
+    "C1310"
+   ],
+   "date": {
+    "day": 9,
+    "iso": "1879-10-09",
+    "modifier": null,
+    "month": 10,
+    "quality": null,
+    "sort": 2407632,
+    "text": "9 October 1879",
+    "year": 1879
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1052f3f1b3606c29291f24d08e5c",
+   "id": "E1611",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0416",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0089",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Birth"
+  },
+  "E1612": {
+   "attributes": [],
+   "change": 1794846606,
+   "citations": [
+    "C1310"
+   ],
+   "date": {
+    "day": 17,
+    "iso": "1962-12-17",
+    "modifier": null,
+    "month": 12,
+    "quality": null,
+    "sort": 2438016,
+    "text": "17 December 1962",
+    "year": 1962
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1052f3f1b7a02da90bd9fe9be8f",
+   "id": "E1612",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0416",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0285",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Death"
+  },
+  "E1613": {
+   "attributes": [],
+   "change": 1794846607,
+   "citations": [
+    "C1311"
+   ],
+   "date": {
+    "day": 5,
+    "iso": "1923-08-05",
+    "modifier": null,
+    "month": 8,
+    "quality": null,
+    "sort": 2423637,
+    "text": "5 August 1923",
+    "year": 1923
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1052f3f1dd4538aa73c891c90aed",
+   "id": "E1613",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0417",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0158",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Birth"
+  },
+  "E1614": {
+   "attributes": [],
+   "change": 1794846607,
+   "citations": [
+    "C1311"
+   ],
+   "date": {
+    "day": 8,
+    "iso": "2015-09-08",
+    "modifier": null,
+    "month": 9,
+    "quality": null,
+    "sort": 2457274,
+    "text": "8 September 2015",
+    "year": 2015
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1052f3f1e12275f7a783771d2347",
+   "id": "E1614",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0417",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0158",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Death"
+  },
+  "E1615": {
+   "attributes": [],
+   "change": 1794846608,
+   "citations": [
+    "C1312"
+   ],
+   "date": {
+    "day": 23,
+    "iso": "1918-08-23",
+    "modifier": null,
+    "month": 8,
+    "quality": null,
+    "sort": 2421829,
+    "text": "23 August 1918",
+    "year": 1918
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1052f3f20be811171c4f22860cd9",
+   "id": "E1615",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0418",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0089",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Birth"
+  },
+  "E1616": {
+   "attributes": [],
+   "change": 1794846609,
+   "citations": [
+    "C1312"
+   ],
+   "date": {
+    "day": 25,
+    "iso": "1986-07-25",
+    "modifier": null,
+    "month": 7,
+    "quality": null,
+    "sort": 2446637,
+    "text": "25 July 1986",
+    "year": 1986
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1052f3f210231a2e4f670478d5fe",
+   "id": "E1616",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0418",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0158",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Death"
+  },
+  "E1617": {
+   "attributes": [],
+   "change": 1794864602,
+   "citations": [
+    "C1318"
+   ],
+   "date": {
+    "day": 15,
+    "iso": "1958-05-15",
+    "modifier": null,
+    "month": 5,
+    "quality": null,
+    "sort": 2436339,
+    "text": "15 May 1958",
+    "year": 1958
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1052feabb5ce42bfba7c4f7d05e5",
+   "id": "E1617",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0419",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0333",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Birth"
+  },
+  "E1618": {
+   "attributes": [],
+   "change": 1794864603,
+   "citations": [
+    "C1318"
+   ],
+   "date": {
+    "day": 31,
+    "iso": "2018-05-31",
+    "modifier": null,
+    "month": 5,
+    "quality": null,
+    "sort": 2458270,
+    "text": "31 May 2018",
+    "year": 2018
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1052feabbf287cdf083b088759c9",
+   "id": "E1618",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0419",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0342",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Death"
   }
  },
  "families": {
@@ -93435,10 +94246,10 @@
      "ref": "I0062"
     }
    ],
-   "father": "I0027",
+   "father": "I0141",
    "handle": "104ebd54a2f7299da669eb79c6b6",
    "id": "F0016",
-   "mother": "I0141",
+   "mother": "I0027",
    "status": "living"
   },
   "F0017": {
@@ -99062,6 +99873,9 @@
     },
     {
      "ref": "I0394"
+    },
+    {
+     "ref": "I0402"
     }
    ],
    "father": "I0393",
@@ -99102,18 +99916,6 @@
     "agent-karel"
    ],
    "type": "Married"
-  },
-  "F0185": {
-   "children": [
-    {
-     "ref": "I0402"
-    }
-   ],
-   "father": "I0393",
-   "handle": "105155cfd58918fb1fe3bcdb498d",
-   "id": "F0185",
-   "mother": null,
-   "status": "living"
   },
   "F0186": {
    "attributes": [],
@@ -99308,6 +100110,100 @@
     "agent-karel"
    ],
    "type": "Unknown"
+  },
+  "F0192": {
+   "attributes": [],
+   "change": 1794846610,
+   "children": [
+    {
+     "ref": "I0414"
+    },
+    {
+     "ref": "I0415"
+    }
+   ],
+   "citations": [
+    "C1313"
+   ],
+   "events": [],
+   "father": "I0408",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1052f3f22cfa770dce11bf0bdb27",
+   "id": "F0192",
+   "media": [],
+   "mother": "I0413",
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-proposed",
+    "agent-karel"
+   ],
+   "type": "Married"
+  },
+  "F0193": {
+   "attributes": [],
+   "change": 1794846612,
+   "children": [],
+   "citations": [
+    "C1314"
+   ],
+   "events": [],
+   "father": "I0417",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1052f3f272a52d8f0c99670bd9e",
+   "id": "F0193",
+   "media": [],
+   "mother": "I0399",
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-proposed",
+    "agent-karel"
+   ],
+   "type": "Married"
+  },
+  "F0194": {
+   "attributes": [],
+   "change": 1794846613,
+   "children": [],
+   "citations": [
+    "C1315"
+   ],
+   "events": [],
+   "father": "I0418",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1052f3f29e343e490cf3e5f6da2c",
+   "id": "F0194",
+   "media": [],
+   "mother": "I0407",
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-proposed",
+    "agent-karel"
+   ],
+   "type": "Married"
   }
  },
  "media": {
@@ -107044,6 +107940,402 @@
     "agent-proposed",
     "agent-karel"
    ]
+  },
+  "O0227": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1307",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-12_100001_everest-mabel_add-person.png"
+   },
+   "checksum": "382d6886c0eee05f0ceb6d221ee11314",
+   "citations": [],
+   "date": null,
+   "desc": "Minnesota death index, 1904-2001: Mabel Everet Toepel, certificate 1946-MN-018386 — Certificate 1946-MN-018386",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1052f3f10dab442ca46b88110d96",
+   "id": "O0227",
+   "mime": "image/png",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0227",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-proposed",
+    "agent-karel"
+   ]
+  },
+  "O0228": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1308",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-12_100003_toepel-june_add-person.png"
+   },
+   "checksum": "8a246ec6b9d11d1218f775edb7bd8aa9",
+   "citations": [],
+   "date": null,
+   "desc": "June Elizabeth Pratt obituary, Bonnerup Funeral Service, Albert Lea, Minnesota, 2012 — Obituary of June Elizabeth Pratt, retrieved 10 Nov 2026",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1052f3f143d952bbfb4fcf40d1a3",
+   "id": "O0228",
+   "mime": "image/png",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0228",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-proposed",
+    "agent-karel"
+   ]
+  },
+  "O0229": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1309",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-12_100004_toepel-james_add-person.png"
+   },
+   "checksum": "febfd63b77c66796b341ca348a98d82f",
+   "citations": [],
+   "date": null,
+   "desc": "Minnesota death index, 1904-2001: James Everest Toepel, certificate 1995-MN-029008 — Certificate 1995-MN-029008",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1052f3f17872c44623815da0e5b",
+   "id": "O0229",
+   "mime": "image/png",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0229",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-proposed",
+    "agent-karel"
+   ]
+  },
+  "O0230": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1310",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-12_100006_toepel-clara_add-person.png"
+   },
+   "checksum": "9ccb9c75cc013dd873d4d8047e7879cb",
+   "citations": [],
+   "date": null,
+   "desc": "Minnesota death index, 1904-2001: Clara Zetterholm, certificate 1962-MN-005051 — Certificate 1962-MN-005051",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1052f3f1a6361c4a08673be83d8f",
+   "id": "O0230",
+   "mime": "image/png",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0230",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-proposed",
+    "agent-karel"
+   ]
+  },
+  "O0231": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1311",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-12_100008_ferdon-glenn_add-person.png"
+   },
+   "checksum": "ff6965052155a602be5c8cb30538fc28",
+   "citations": [],
+   "date": null,
+   "desc": "Glenn C. Ferdon obituary, Manitowoc Herald Times Reporter, 10-11 Sept 2015 (Pfeffer Funeral Home) — Find a Grave memorial 152091950, Evergreen Cemetery, Manitowoc; retrieved 12 Nov 2026",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1052f3f1d0f173a3502c51b3b4fe",
+   "id": "O0231",
+   "mime": "image/png",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0231",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-proposed",
+    "agent-karel"
+   ]
+  },
+  "O0232": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1312",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-13_100001_langenkamp-daniel_add-person.png"
+   },
+   "checksum": "e7ff0e6a0168424cde6bf5f96e52e9b1",
+   "citations": [],
+   "date": null,
+   "desc": "Social Security Death Master File and VA BIRLS death file, as transcribed by SortedByName.com: Daniel James Langenkamp — Langenkamp, page 1 (index_1.html); retrieved 13 Nov 2026",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1052f3f1fe363ace971633c6d0a6",
+   "id": "O0232",
+   "mime": "image/png",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0232",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-proposed",
+    "agent-karel"
+   ]
+  },
+  "O0233": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1313",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-12_100005_toepel-alfred_x_everest-mabel_add-family.png"
+   },
+   "checksum": "febfd63b77c66796b341ca348a98d82f",
+   "citations": [],
+   "date": null,
+   "desc": "Minnesota death index, 1904-2001: James Everest Toepel, certificate 1995-MN-029008 — Certificate 1995-MN-029008",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1052f3f21ff1688eece8c1111671",
+   "id": "O0233",
+   "mime": "image/png",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0233",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-proposed",
+    "agent-karel"
+   ]
+  },
+  "O0234": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1314",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-12_100009_ferdon-glenn_x_karl-charlotte_add-family.png"
+   },
+   "checksum": "ff6965052155a602be5c8cb30538fc28",
+   "citations": [],
+   "date": null,
+   "desc": "Glenn C. Ferdon obituary, Manitowoc Herald Times Reporter, 10-11 Sept 2015 (Pfeffer Funeral Home) — Find a Grave memorial 152091950; retrieved 12 Nov 2026",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1052f3f26222113802eea44999",
+   "id": "O0234",
+   "mime": "image/png",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0234",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-proposed",
+    "agent-karel"
+   ]
+  },
+  "O0235": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1315",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-13_100002_langenkamp-daniel_x_karl-caroline_add-family.png"
+   },
+   "checksum": "e7ff0e6a0168424cde6bf5f96e52e9b1",
+   "citations": [],
+   "date": null,
+   "desc": "Social Security Death Master File and VA BIRLS death file, as transcribed by SortedByName.com: Daniel James Langenkamp — Langenkamp, page 1 (index_1.html); retrieved 13 Nov 2026",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1052f3f2908950fc3a4ce05636b6",
+   "id": "O0235",
+   "mime": "image/png",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0235",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-proposed",
+    "agent-karel"
+   ]
+  },
+  "O0236": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1316",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-12_100002_everest-mabel_obit-june-2012-citation.png"
+   },
+   "checksum": "8a246ec6b9d11d1218f775edb7bd8aa9",
+   "citations": [],
+   "date": null,
+   "desc": "June Elizabeth Pratt obituary, Bonnerup Funeral Service, Albert Lea, Minnesota, 2012 — Obituary of June Elizabeth Pratt, retrieved 10 Nov 2026",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1052f3f2b9fa1f847b85609d16f9",
+   "id": "O0236",
+   "mime": "image/png",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0236",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-proposed",
+    "agent-karel"
+   ]
+  },
+  "O0237": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1317",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-12_100007_toepel-clara_census-1900-citation.png"
+   },
+   "checksum": "215560ff17bc375d8678d1ce990f7486",
+   "citations": [],
+   "date": null,
+   "desc": "1900 United States Census, Population Schedule, Wisconsin, Ashland County, Ashland City, ED 3, sheet 6A, NARA T623 roll 1777 — T623 roll 1777, ED 3, sheet 6A, Third Street, lines 10-16 (Mary Toepel household); IA 12thcensusofpopu1777unit leaf n306",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1052f3f2d9176ae4a612bd5724d4",
+   "id": "O0237",
+   "mime": "image/png",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0237",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-proposed",
+    "agent-karel"
+   ]
+  },
+  "O0238": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1318",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-16_155000_wood-norman-iii_add-person.png"
+   },
+   "checksum": "955deb11def0d07460c61b95b70c7852",
+   "citations": [],
+   "date": null,
+   "desc": "Wood Family Genealogy, Updated for the Wood Family Reunion, July 2019, Two Rivers, Wisconsin — pp.45, 58 (printed; PDF pages 23, 30)",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1052feaba8c3a2587c0d5ac6ce1",
+   "id": "O0238",
+   "mime": "image/png",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0238",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ]
   }
  },
  "meta": {
@@ -107055,21 +108347,21 @@
    "very high"
   ],
   "counts": {
-   "citations": 1253,
-   "events": 1444,
-   "families": 184,
-   "media": 211,
-   "notes": 1372,
-   "people": 409,
-   "places": 329,
-   "repositories": 27,
-   "sources": 222
+   "citations": 1265,
+   "events": 1447,
+   "families": 186,
+   "media": 223,
+   "notes": 1399,
+   "people": 416,
+   "places": 332,
+   "repositories": 31,
+   "sources": 229
   },
   "counts_people": {
-   "full": 341,
+   "full": 348,
    "living": 68
   },
-  "generated": "2026-11-16T08:16:59+00:00",
+  "generated": "2026-11-17T08:16:55+00:00",
   "generator": "gramps_export.py 0.3.0",
   "gramps_version": "6.0.8",
   "gramps_webapi_version": "3.17.0",
@@ -107093,7 +108385,7 @@
    "oral",
    "ai-draft"
   ],
-  "today": "2026-11-16",
+  "today": "2026-11-17",
   "tree": "Konecny"
  },
  "notes": {
@@ -136532,6 +137824,519 @@
    "tags": [],
    "text": "2026-11-11 (karel): Companion to 100015. Record-tier relationship evidence. Image: images/1910_bancroft-twp_n1009_*. Ancestry profile 212815368792; the 1910 census image is verified attached in the gallery. REFILE 11 Nov 2026 of 2026-11-10_100016_anderson-ada_census-1910-citation.json, rejected 10 Nov 2026 with reason \"tier 'record' requires an image\". Only change: the census sheet image (1910_bancroft-twp_n1009_anderson-household_full.jpg, copied as 2026-11-11_091006_anderson-ada_census-1910-citation-refile.jpg) is now included; content otherwise unchanged.\nConflicts: [\"Same Marvel age conflict as 100014 (not Ada's).\"]",
    "type": "Research"
+  },
+  "N1967": {
+   "attached_to": [
+    {
+     "id": "C1307",
+     "type": "citation"
+    }
+   ],
+   "change": 1794846602,
+   "flags": [],
+   "handle": "1052f3f108a4497a896e399a6441",
+   "html": "<p>Transcription (as written): Toepel, Mabel Everet | death 1946-01-16 | Hennepin County | birth (blank) | mother&#x27;s maiden name (blank) | certificate 1946-MN-018386</p>",
+   "id": "N1967",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Toepel, Mabel Everet | death 1946-01-16 | Hennepin County | birth (blank) | mother's maiden name (blank) | certificate 1946-MN-018386",
+   "type": "Transcript"
+  },
+  "N1968": {
+   "attached_to": [
+    {
+     "id": "C1307",
+     "type": "citation"
+    }
+   ],
+   "change": 1794846602,
+   "flags": [],
+   "handle": "1052f3f10b4b4612643b94717ec2",
+   "html": "<p>2026-11-16 (karel): Mabel (Everest) Toepel, deceased wife of Alfred Louis Toepel (I0408 / 212815367550; Alfred is the brother of Oscar M. Toepel I0350, both sons of Mary Weihler I0381 in F0191). The marriage is not a record: it rests on the 1930 census (Mabel E Toepel, 37, wife of head Alfred L Toepel, 42) and on her daughter June&#x27;s 2012 obituary (&#x27;the daughter of Alfred and Mabel(Everest) Toepel&#x27;). Birth year 1893 and birthplace Gloversville, Fulton County, New York come from Find a Grave (Lakewood Cemetery, Minneapolis); the 1930 census age 37 agrees with about 1893, so the birth is entered as about 1893, not as an exact year. Death 16 Jan 1946, Hennepin County from the death index (name indexed &#x27;Mabel Everet Toepel&#x27;). 1930 US census, Minneapolis, Hennepin Co., Minnesota, ED 0261 (Ancestry image 57/88): Alfred L Toepel 42 head; Mabel E Toepel 37 wife; June E Toepel 11 daughter; James E Toepel 7 son. Attached on Ancestry 12 Nov 2026 to Alfred, Mabel, June and James; no image filed with this proposal, so it is cited in the reasoning only. Ancestry profile 212815726200 on tree 208290233 created 12 Nov 2026; the evidence image named in this citation was uploaded to the person&#x27;s Ancestry gallery and re-checked.<br>Conflicts: [&quot;Birth: only a year (Find a Grave 1893; 1930 census age 37 = about 1892-1893). Entered as &#x27;about 1893&#x27;.&quot;, &quot;Index spells the middle name &#x27;Everet&#x27;; June&#x27;s obituary, James&#x27;s death index and Find a Grave give Everest.&quot;]</p>",
+   "id": "N1968",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-16 (karel): Mabel (Everest) Toepel, deceased wife of Alfred Louis Toepel (I0408 / 212815367550; Alfred is the brother of Oscar M. Toepel I0350, both sons of Mary Weihler I0381 in F0191). The marriage is not a record: it rests on the 1930 census (Mabel E Toepel, 37, wife of head Alfred L Toepel, 42) and on her daughter June's 2012 obituary ('the daughter of Alfred and Mabel(Everest) Toepel'). Birth year 1893 and birthplace Gloversville, Fulton County, New York come from Find a Grave (Lakewood Cemetery, Minneapolis); the 1930 census age 37 agrees with about 1893, so the birth is entered as about 1893, not as an exact year. Death 16 Jan 1946, Hennepin County from the death index (name indexed 'Mabel Everet Toepel'). 1930 US census, Minneapolis, Hennepin Co., Minnesota, ED 0261 (Ancestry image 57/88): Alfred L Toepel 42 head; Mabel E Toepel 37 wife; June E Toepel 11 daughter; James E Toepel 7 son. Attached on Ancestry 12 Nov 2026 to Alfred, Mabel, June and James; no image filed with this proposal, so it is cited in the reasoning only. Ancestry profile 212815726200 on tree 208290233 created 12 Nov 2026; the evidence image named in this citation was uploaded to the person's Ancestry gallery and re-checked.\nConflicts: [\"Birth: only a year (Find a Grave 1893; 1930 census age 37 = about 1892-1893). Entered as 'about 1893'.\", \"Index spells the middle name 'Everet'; June's obituary, James's death index and Find a Grave give Everest.\"]",
+   "type": "Research"
+  },
+  "N1969": {
+   "attached_to": [
+    {
+     "id": "C1308",
+     "type": "citation"
+    }
+   ],
+   "change": 1794846603,
+   "flags": [],
+   "handle": "1052f3f13dc6564fd2691c577899",
+   "html": "<p>Transcription (as written): Memorial Services for June Elizabeth Pratt, of Albert Lea [...] June died on Monday, February 13, 2012 at Thorne Crest Retirement Community at the age of 93. She was born on June 19, 1918, in Minneapolis, Minnesota, the daughter of Alfred and Mabel(Everest) Toepel. [...] June was married to Marshall Sidney Pratt on December 20, 1941, in Bessemer, Michigan</p>",
+   "id": "N1969",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Memorial Services for June Elizabeth Pratt, of Albert Lea [...] June died on Monday, February 13, 2012 at Thorne Crest Retirement Community at the age of 93. She was born on June 19, 1918, in Minneapolis, Minnesota, the daughter of Alfred and Mabel(Everest) Toepel. [...] June was married to Marshall Sidney Pratt on December 20, 1941, in Bessemer, Michigan",
+   "type": "Transcript"
+  },
+  "N1970": {
+   "attached_to": [
+    {
+     "id": "C1308",
+     "type": "citation"
+    }
+   ],
+   "change": 1794846603,
+   "flags": [],
+   "handle": "1052f3f1410677b7427bea4dcfc0",
+   "html": "<p>2026-11-16 (karel): June Elizabeth (Toepel) Pratt, deceased daughter of Alfred Louis Toepel (I0408 / 212815367550) and Mabel Everest (new, 100001). Her obituary states birth 19 June 1918 at Minneapolis and parents Alfred and Mabel (Everest) Toepel, and death 13 Feb 2012 at Thorne Crest, Albert Lea, aged 93. The 1930 census lists June E Toepel, 11, daughter, in Alfred&#x27;s household. Husband Marshall Sidney Pratt (m. 20 Dec 1941, Bessemer, Michigan) is not proposed. Survivors in the obituary are omitted on purpose (living). 1930 US census, Minneapolis, Hennepin Co., Minnesota, ED 0261 (Ancestry image 57/88): Alfred L Toepel 42 head; Mabel E Toepel 37 wife; June E Toepel 11 daughter; James E Toepel 7 son. Attached on Ancestry 12 Nov 2026 to Alfred, Mabel, June and James; no image filed with this proposal, so it is cited in the reasoning only. Ancestry profile 212815726386 on tree 208290233 created 12 Nov 2026; the evidence image named in this citation was uploaded to the person&#x27;s Ancestry gallery and re-checked.<br>Conflicts: [&#x27;Birth date and place from an online funeral-home obituary (compiled), not a birth record.&#x27;]</p>",
+   "id": "N1970",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-16 (karel): June Elizabeth (Toepel) Pratt, deceased daughter of Alfred Louis Toepel (I0408 / 212815367550) and Mabel Everest (new, 100001). Her obituary states birth 19 June 1918 at Minneapolis and parents Alfred and Mabel (Everest) Toepel, and death 13 Feb 2012 at Thorne Crest, Albert Lea, aged 93. The 1930 census lists June E Toepel, 11, daughter, in Alfred's household. Husband Marshall Sidney Pratt (m. 20 Dec 1941, Bessemer, Michigan) is not proposed. Survivors in the obituary are omitted on purpose (living). 1930 US census, Minneapolis, Hennepin Co., Minnesota, ED 0261 (Ancestry image 57/88): Alfred L Toepel 42 head; Mabel E Toepel 37 wife; June E Toepel 11 daughter; James E Toepel 7 son. Attached on Ancestry 12 Nov 2026 to Alfred, Mabel, June and James; no image filed with this proposal, so it is cited in the reasoning only. Ancestry profile 212815726386 on tree 208290233 created 12 Nov 2026; the evidence image named in this citation was uploaded to the person's Ancestry gallery and re-checked.\nConflicts: ['Birth date and place from an online funeral-home obituary (compiled), not a birth record.']",
+   "type": "Research"
+  },
+  "N1971": {
+   "attached_to": [
+    {
+     "id": "C1309",
+     "type": "citation"
+    }
+   ],
+   "change": 1794846604,
+   "flags": [],
+   "handle": "1052f3f170215fd114733091fee9",
+   "html": "<p>Transcription (as written): Toepel, James Everest | death 1995-10-14 | Olmsted County | birth Apr 30 1922 | birthplace MINNESOTA | mother&#x27;s maiden name EVEREST | certificate 1995-MN-029008</p>",
+   "id": "N1971",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Toepel, James Everest | death 1995-10-14 | Olmsted County | birth Apr 30 1922 | birthplace MINNESOTA | mother's maiden name EVEREST | certificate 1995-MN-029008",
+   "type": "Transcript"
+  },
+  "N1972": {
+   "attached_to": [
+    {
+     "id": "C1309",
+     "type": "citation"
+    }
+   ],
+   "change": 1794846605,
+   "flags": [],
+   "handle": "1052f3f174a9537532d1caf022da",
+   "html": "<p>2026-11-16 (karel): James Everest Toepel, deceased son of Alfred Louis Toepel (I0408 / 212815367550) and Mabel Everest (new, 100001). The death index gives birth 30 Apr 1922, Minnesota, and mother&#x27;s maiden name EVEREST; the 1930 census lists James E Toepel, 7, son, in Alfred&#x27;s household. Find a Grave (Lakewood Cemetery, Minneapolis) gives birth at Minneapolis and death at Rochester, Olmsted County, and quotes his 1942 draft card naming Alfred L Toepel; the draft card itself is not attached. Wife and children are not proposed. 1930 US census, Minneapolis, Hennepin Co., Minnesota, ED 0261 (Ancestry image 57/88): Alfred L Toepel 42 head; Mabel E Toepel 37 wife; June E Toepel 11 daughter; James E Toepel 7 son. Attached on Ancestry 12 Nov 2026 to Alfred, Mabel, June and James; no image filed with this proposal, so it is cited in the reasoning only. Ancestry profile 212815726334 on tree 208290233 created 12 Nov 2026; the evidence image named in this citation was uploaded to the person&#x27;s Ancestry gallery and re-checked.</p>",
+   "id": "N1972",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-16 (karel): James Everest Toepel, deceased son of Alfred Louis Toepel (I0408 / 212815367550) and Mabel Everest (new, 100001). The death index gives birth 30 Apr 1922, Minnesota, and mother's maiden name EVEREST; the 1930 census lists James E Toepel, 7, son, in Alfred's household. Find a Grave (Lakewood Cemetery, Minneapolis) gives birth at Minneapolis and death at Rochester, Olmsted County, and quotes his 1942 draft card naming Alfred L Toepel; the draft card itself is not attached. Wife and children are not proposed. 1930 US census, Minneapolis, Hennepin Co., Minnesota, ED 0261 (Ancestry image 57/88): Alfred L Toepel 42 head; Mabel E Toepel 37 wife; June E Toepel 11 daughter; James E Toepel 7 son. Attached on Ancestry 12 Nov 2026 to Alfred, Mabel, June and James; no image filed with this proposal, so it is cited in the reasoning only. Ancestry profile 212815726334 on tree 208290233 created 12 Nov 2026; the evidence image named in this citation was uploaded to the person's Ancestry gallery and re-checked.",
+   "type": "Research"
+  },
+  "N1973": {
+   "attached_to": [
+    {
+     "id": "C1310",
+     "type": "citation"
+    }
+   ],
+   "change": 1794846606,
+   "flags": [],
+   "handle": "1052f3f1a06a3a65fdd0ec7672f8",
+   "html": "<p>Transcription (as written): Zetterholm, Clara | death 1962-12-17 | Freeborn County | birth Oct 9 1879 | birthplace OUT OF STATE | mother&#x27;s maiden name WEIHLER | certificate 1962-MN-005051</p>",
+   "id": "N1973",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Zetterholm, Clara | death 1962-12-17 | Freeborn County | birth Oct 9 1879 | birthplace OUT OF STATE | mother's maiden name WEIHLER | certificate 1962-MN-005051",
+   "type": "Transcript"
+  },
+  "N1974": {
+   "attached_to": [
+    {
+     "id": "C1310",
+     "type": "citation"
+    }
+   ],
+   "change": 1794846606,
+   "flags": [],
+   "handle": "1052f3f1a34c76ac0ce2868f33a5",
+   "html": "<p>2026-11-16 (karel): Clara (Toepel) Zetterholm, deceased daughter of Mary (Weihler) Toepel (I0381 / 212811650336) and sister of Oscar M. Toepel (I0350) and Alfred Louis Toepel (I0408). The 1900 census of Ashland, Wisconsin lists Clara, daughter, born Oct 1879, age 20, in widowed Mary Toepel&#x27;s household with Oscar and Alfred. The Minnesota death index for Clara Zetterholm (Freeborn County, 17 Dec 1962) gives birth 9 Oct 1879 and mother&#x27;s maiden name WEIHLER, so it matches that Clara by birth month and year and by her mother&#x27;s maiden name. June (Toepel) Pratt&#x27;s 2012 obituary calls &#x27;Clara and Alfred Zetterholm&#x27; her special aunt and uncle. No record yet states &#x27;Clara Toepel&#x27; married Zetterholm in so many words; husband Gustaf Alfred Zetterholm is not proposed. LINK: Mary already has a mother-only family F0191 (children Alfred I0408, Oscar I0350), so no add_family is filed; Clara is on the hand-link queue as a daughter in F0191. Ancestry profile 212815727974 on tree 208290233 created 12 Nov 2026; the evidence image named in this citation was uploaded to the person&#x27;s Ancestry gallery and re-checked.<br>Conflicts: [&quot;Identity of Clara Zetterholm with the 1900 Clara Toepel rests on matching birth month/year and mother&#x27;s maiden name; no marriage record found.&quot;, &#x27;Not the same woman as Clara Bertha Amelia Toepel (1884-1934, Manitowoc).&#x27;]</p>",
+   "id": "N1974",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-16 (karel): Clara (Toepel) Zetterholm, deceased daughter of Mary (Weihler) Toepel (I0381 / 212811650336) and sister of Oscar M. Toepel (I0350) and Alfred Louis Toepel (I0408). The 1900 census of Ashland, Wisconsin lists Clara, daughter, born Oct 1879, age 20, in widowed Mary Toepel's household with Oscar and Alfred. The Minnesota death index for Clara Zetterholm (Freeborn County, 17 Dec 1962) gives birth 9 Oct 1879 and mother's maiden name WEIHLER, so it matches that Clara by birth month and year and by her mother's maiden name. June (Toepel) Pratt's 2012 obituary calls 'Clara and Alfred Zetterholm' her special aunt and uncle. No record yet states 'Clara Toepel' married Zetterholm in so many words; husband Gustaf Alfred Zetterholm is not proposed. LINK: Mary already has a mother-only family F0191 (children Alfred I0408, Oscar I0350), so no add_family is filed; Clara is on the hand-link queue as a daughter in F0191. Ancestry profile 212815727974 on tree 208290233 created 12 Nov 2026; the evidence image named in this citation was uploaded to the person's Ancestry gallery and re-checked.\nConflicts: [\"Identity of Clara Zetterholm with the 1900 Clara Toepel rests on matching birth month/year and mother's maiden name; no marriage record found.\", 'Not the same woman as Clara Bertha Amelia Toepel (1884-1934, Manitowoc).']",
+   "type": "Research"
+  },
+  "N1975": {
+   "attached_to": [
+    {
+     "id": "C1311",
+     "type": "citation"
+    }
+   ],
+   "change": 1794846607,
+   "flags": [],
+   "handle": "1052f3f1cb344dfff35dd1bb460f",
+   "html": "<p>Transcription (as written): Glenn C. Ferdon, age 92, of 2201 Richmond Avenue, Manitowoc, died Tuesday afternoon, September 8, 2015 at St. Mary&#x27;s Next Step, Manitowoc. He was born on August 5, 1923 in Manitowoc, son of the late Chester and Ella (Laabs) Ferdon. [...] On December 27, 1947 he married the former Charlotte G. Karl at Holy Innocents Catholic Church, Manitowoc. She preceded him in death on November 21, 2007. [...] burial at Evergreen Cemetery, Manitowoc.</p>",
+   "id": "N1975",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Glenn C. Ferdon, age 92, of 2201 Richmond Avenue, Manitowoc, died Tuesday afternoon, September 8, 2015 at St. Mary's Next Step, Manitowoc. He was born on August 5, 1923 in Manitowoc, son of the late Chester and Ella (Laabs) Ferdon. [...] On December 27, 1947 he married the former Charlotte G. Karl at Holy Innocents Catholic Church, Manitowoc. She preceded him in death on November 21, 2007. [...] burial at Evergreen Cemetery, Manitowoc.",
+   "type": "Transcript"
+  },
+  "N1976": {
+   "attached_to": [
+    {
+     "id": "C1311",
+     "type": "citation"
+    }
+   ],
+   "change": 1794846607,
+   "flags": [],
+   "handle": "1052f3f1ce4b686da7d555e3f979",
+   "html": "<p>2026-11-16 (karel): Glenn Chester Ferdon, deceased husband of Charlotte G. Karl (I0399 / 212814977212; Charlotte is a sister of Gertrude Irene Karl I0302, wife of Edward G. Konecny). His obituary gives birth 5 Aug 1923 at Manitowoc, parents Chester and Ella (Laabs) Ferdon, marriage to Charlotte G. Karl 27 Dec 1947 at Holy Innocents Catholic Church, Manitowoc, and death 8 Sep 2015 at Manitowoc. Charlotte&#x27;s own 2007 obituary (already cited on I0399) says she married Glenn Ferdon. Parents and children are not proposed; survivors in the obituary are omitted on purpose (living). Ancestry profile 212815728145 on tree 208290233 created 12 Nov 2026; the evidence image named in this citation was uploaded to the person&#x27;s Ancestry gallery and re-checked.<br>Conflicts: [&#x27;Obituary text read from the Find a Grave transcription, not the newspaper image (compiled tier).&#x27;]</p>",
+   "id": "N1976",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-16 (karel): Glenn Chester Ferdon, deceased husband of Charlotte G. Karl (I0399 / 212814977212; Charlotte is a sister of Gertrude Irene Karl I0302, wife of Edward G. Konecny). His obituary gives birth 5 Aug 1923 at Manitowoc, parents Chester and Ella (Laabs) Ferdon, marriage to Charlotte G. Karl 27 Dec 1947 at Holy Innocents Catholic Church, Manitowoc, and death 8 Sep 2015 at Manitowoc. Charlotte's own 2007 obituary (already cited on I0399) says she married Glenn Ferdon. Parents and children are not proposed; survivors in the obituary are omitted on purpose (living). Ancestry profile 212815728145 on tree 208290233 created 12 Nov 2026; the evidence image named in this citation was uploaded to the person's Ancestry gallery and re-checked.\nConflicts: ['Obituary text read from the Find a Grave transcription, not the newspaper image (compiled tier).']",
+   "type": "Research"
+  },
+  "N1977": {
+   "attached_to": [
+    {
+     "id": "C1312",
+     "type": "citation"
+    }
+   ],
+   "change": 1794846608,
+   "flags": [],
+   "handle": "1052f3f1f80f518b9a6ed809fd81",
+   "html": "<p>Transcription (as written): LANGENKAMP, DANIEL 1,2 , Social Security number 392-03-7858 (indicating Wisconsin), was born 23 August 1918 1,2 , and died in July 1986 1,2 , Death residence: Wisconsin 2 , Zip Code 54220 2 . Sources: 1. Death Master File through 30 May 2013 2. Death Master File through 5 March 2010 Check the Source file | LANGENKAMP, DANIEL JAMES (Social Security number 392-03-7858) was born 23 August 1918, entered the United States Army 29 December 1942, was released 25 November 1945, and he died 25 July 1986. Click the SOURCE FILE link to learn how to get the whole record! How cool is that? Check the Source file</p>",
+   "id": "N1977",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): LANGENKAMP, DANIEL 1,2 , Social Security number 392-03-7858 (indicating Wisconsin), was born 23 August 1918 1,2 , and died in July 1986 1,2 , Death residence: Wisconsin 2 , Zip Code 54220 2 . Sources: 1. Death Master File through 30 May 2013 2. Death Master File through 5 March 2010 Check the Source file | LANGENKAMP, DANIEL JAMES (Social Security number 392-03-7858) was born 23 August 1918, entered the United States Army 29 December 1942, was released 25 November 1945, and he died 25 July 1986. Click the SOURCE FILE link to learn how to get the whole record! How cool is that? Check the Source file",
+   "type": "Transcript"
+  },
+  "N1978": {
+   "attached_to": [
+    {
+     "id": "C1312",
+     "type": "citation"
+    }
+   ],
+   "change": 1794846608,
+   "flags": [],
+   "handle": "1052f3f1fb534d3021e6ef73b8ed",
+   "html": "<p>2026-11-16 (karel): Daniel James Langenkamp, deceased husband of Caroline M. Karl (I0407 / 212815086130; Caroline is a daughter of George F. Karl I0397 and Pauline A. Kowalski I0398 and a sister of Gertrude Irene Karl I0302, wife of Edward G. Konecny I0240). Birth 23 Aug 1918 and death 25 Jul 1986 from the Social Security Death Master File and the VA BIRLS file as transcribed by SortedByName (same SSN in both; Death Master File gives last residence ZIP 54220, Manitowoc). Death place Manitowoc and birth state Wisconsin from Find a Grave memorial 95211952 (Evergreen Cemetery, Manitowoc, plot Y-6-6-5, spouse Caroline Mary Karl Langenkamp). Relationship: Caroline&#x27;s 2006 obituary (already cited on I0407) says she married Daniel J. Langenkamp on 18 Dec 1945 and was preceded in death by her husband Daniel J. Langenkamp. Ancestry profile 212815865931 on tree 208290233 created 13 Nov 2026; the index transcript image named in this citation is in his Ancestry gallery.<br>Conflicts: [&#x27;Birth and death dates are from derivative indexes (tier index); birthplace Wisconsin and death place Manitowoc from Find a Grave.&#x27;]</p>",
+   "id": "N1978",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-16 (karel): Daniel James Langenkamp, deceased husband of Caroline M. Karl (I0407 / 212815086130; Caroline is a daughter of George F. Karl I0397 and Pauline A. Kowalski I0398 and a sister of Gertrude Irene Karl I0302, wife of Edward G. Konecny I0240). Birth 23 Aug 1918 and death 25 Jul 1986 from the Social Security Death Master File and the VA BIRLS file as transcribed by SortedByName (same SSN in both; Death Master File gives last residence ZIP 54220, Manitowoc). Death place Manitowoc and birth state Wisconsin from Find a Grave memorial 95211952 (Evergreen Cemetery, Manitowoc, plot Y-6-6-5, spouse Caroline Mary Karl Langenkamp). Relationship: Caroline's 2006 obituary (already cited on I0407) says she married Daniel J. Langenkamp on 18 Dec 1945 and was preceded in death by her husband Daniel J. Langenkamp. Ancestry profile 212815865931 on tree 208290233 created 13 Nov 2026; the index transcript image named in this citation is in his Ancestry gallery.\nConflicts: ['Birth and death dates are from derivative indexes (tier index); birthplace Wisconsin and death place Manitowoc from Find a Grave.']",
+   "type": "Research"
+  },
+  "N1979": {
+   "attached_to": [
+    {
+     "id": "C1313",
+     "type": "citation"
+    }
+   ],
+   "change": 1794846609,
+   "flags": [],
+   "handle": "1052f3f21aeb1583e06e46a8894a",
+   "html": "<p>Transcription (as written): Toepel, James Everest | death 1995-10-14 | Olmsted County | birth Apr 30 1922 | birthplace MINNESOTA | mother&#x27;s maiden name EVEREST | certificate 1995-MN-029008</p>",
+   "id": "N1979",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Toepel, James Everest | death 1995-10-14 | Olmsted County | birth Apr 30 1922 | birthplace MINNESOTA | mother's maiden name EVEREST | certificate 1995-MN-029008",
+   "type": "Transcript"
+  },
+  "N1980": {
+   "attached_to": [
+    {
+     "id": "C1313",
+     "type": "citation"
+    }
+   ],
+   "change": 1794846609,
+   "flags": [],
+   "handle": "1052f3f21d47471773c95a151d8c",
+   "html": "<p>2026-11-16 (karel): New couple Alfred Louis Toepel 212815367550 (I0408) x Mabel Everest 212815726200 (new), with children June 212815726386 and James 212815726334. Checked the 12 Nov 2026 export: Alfred I0408 has no family as a partner (&#x27;families&#x27;: []), so this is a new family, not a link to an existing one. Relationship evidence: 1930 census household (wife Mabel 37, daughter June 11, son James 7), June&#x27;s 2012 obituary (daughter of Alfred and Mabel (Everest) Toepel), James&#x27;s death index (mother&#x27;s maiden name EVEREST). No marriage date is known; none entered. Alfred&#x27;s other wife (Juanita Sweet) is not proposed.</p>",
+   "id": "N1980",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-16 (karel): New couple Alfred Louis Toepel 212815367550 (I0408) x Mabel Everest 212815726200 (new), with children June 212815726386 and James 212815726334. Checked the 12 Nov 2026 export: Alfred I0408 has no family as a partner ('families': []), so this is a new family, not a link to an existing one. Relationship evidence: 1930 census household (wife Mabel 37, daughter June 11, son James 7), June's 2012 obituary (daughter of Alfred and Mabel (Everest) Toepel), James's death index (mother's maiden name EVEREST). No marriage date is known; none entered. Alfred's other wife (Juanita Sweet) is not proposed.",
+   "type": "Research"
+  },
+  "N1981": {
+   "attached_to": [
+    {
+     "id": "C1314",
+     "type": "citation"
+    }
+   ],
+   "change": 1794846610,
+   "flags": [],
+   "handle": "1052f3f25ba214988093714f2d20",
+   "html": "<p>Transcription (as written): Glenn C. Ferdon, age 92, of 2201 Richmond Avenue, Manitowoc, died Tuesday afternoon, September 8, 2015 at St. Mary&#x27;s Next Step, Manitowoc. He was born on August 5, 1923 in Manitowoc, son of the late Chester and Ella (Laabs) Ferdon. [...] On December 27, 1947 he married the former Charlotte G. Karl at Holy Innocents Catholic Church, Manitowoc. She preceded him in death on November 21, 2007. [...] burial at Evergreen Cemetery, Manitowoc.</p>",
+   "id": "N1981",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Glenn C. Ferdon, age 92, of 2201 Richmond Avenue, Manitowoc, died Tuesday afternoon, September 8, 2015 at St. Mary's Next Step, Manitowoc. He was born on August 5, 1923 in Manitowoc, son of the late Chester and Ella (Laabs) Ferdon. [...] On December 27, 1947 he married the former Charlotte G. Karl at Holy Innocents Catholic Church, Manitowoc. She preceded him in death on November 21, 2007. [...] burial at Evergreen Cemetery, Manitowoc.",
+   "type": "Transcript"
+  },
+  "N1982": {
+   "attached_to": [
+    {
+     "id": "C1314",
+     "type": "citation"
+    }
+   ],
+   "change": 1794846611,
+   "flags": [],
+   "handle": "1052f3f25f4044afb97387087484",
+   "html": "<p>2026-11-16 (karel): New couple Glenn Chester Ferdon 212815728145 (new, 100008) x Charlotte G. Karl 212814977212 (I0399). Checked the 12 Nov 2026 export: Charlotte I0399 has no family as a partner (&#x27;families&#x27;: []), so this is a new family. Marriage 27 Dec 1947, Holy Innocents Catholic Church, Manitowoc, as stated in Glenn&#x27;s obituary (not entered as a field here, because no filed proposal has carried a marriage event before; it needs a family event when that operation exists). Children not proposed (living).</p>",
+   "id": "N1982",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-16 (karel): New couple Glenn Chester Ferdon 212815728145 (new, 100008) x Charlotte G. Karl 212814977212 (I0399). Checked the 12 Nov 2026 export: Charlotte I0399 has no family as a partner ('families': []), so this is a new family. Marriage 27 Dec 1947, Holy Innocents Catholic Church, Manitowoc, as stated in Glenn's obituary (not entered as a field here, because no filed proposal has carried a marriage event before; it needs a family event when that operation exists). Children not proposed (living).",
+   "type": "Research"
+  },
+  "N1983": {
+   "attached_to": [
+    {
+     "id": "C1315",
+     "type": "citation"
+    }
+   ],
+   "change": 1794846612,
+   "flags": [],
+   "handle": "1052f3f28a54602788f5d929418c",
+   "html": "<p>Transcription (as written): LANGENKAMP, DANIEL 1,2 , Social Security number 392-03-7858 (indicating Wisconsin), was born 23 August 1918 1,2 , and died in July 1986 1,2 , Death residence: Wisconsin 2 , Zip Code 54220 2 . Sources: 1. Death Master File through 30 May 2013 2. Death Master File through 5 March 2010 Check the Source file | LANGENKAMP, DANIEL JAMES (Social Security number 392-03-7858) was born 23 August 1918, entered the United States Army 29 December 1942, was released 25 November 1945, and he died 25 July 1986. Click the SOURCE FILE link to learn how to get the whole record! How cool is that? Check the Source file</p>",
+   "id": "N1983",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): LANGENKAMP, DANIEL 1,2 , Social Security number 392-03-7858 (indicating Wisconsin), was born 23 August 1918 1,2 , and died in July 1986 1,2 , Death residence: Wisconsin 2 , Zip Code 54220 2 . Sources: 1. Death Master File through 30 May 2013 2. Death Master File through 5 March 2010 Check the Source file | LANGENKAMP, DANIEL JAMES (Social Security number 392-03-7858) was born 23 August 1918, entered the United States Army 29 December 1942, was released 25 November 1945, and he died 25 July 1986. Click the SOURCE FILE link to learn how to get the whole record! How cool is that? Check the Source file",
+   "type": "Transcript"
+  },
+  "N1984": {
+   "attached_to": [
+    {
+     "id": "C1315",
+     "type": "citation"
+    }
+   ],
+   "change": 1794846612,
+   "flags": [],
+   "handle": "1052f3f28d9d57ed01d88acd0d08",
+   "html": "<p>2026-11-16 (karel): New couple Daniel James Langenkamp 212815865931 (new, 100001) x Caroline M. Karl 212815086130 (I0407). Checked the 13 Nov 2026 export: Caroline I0407 has no family as a partner, so this is a new family, not a link to an existing one. Relationship evidence: Caroline&#x27;s 2006 obituary (&#x27;She married Daniel J. Langenkamp on December 18, 1945&#x27;). Marriage date stated in the obituary only; not entered as a field. No children proposed. Caroline&#x27;s own missing parent link (daughter in F0186) stays on the hand-link queue.</p>",
+   "id": "N1984",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-16 (karel): New couple Daniel James Langenkamp 212815865931 (new, 100001) x Caroline M. Karl 212815086130 (I0407). Checked the 13 Nov 2026 export: Caroline I0407 has no family as a partner, so this is a new family, not a link to an existing one. Relationship evidence: Caroline's 2006 obituary ('She married Daniel J. Langenkamp on December 18, 1945'). Marriage date stated in the obituary only; not entered as a field. No children proposed. Caroline's own missing parent link (daughter in F0186) stays on the hand-link queue.",
+   "type": "Research"
+  },
+  "N1985": {
+   "attached_to": [
+    {
+     "id": "C1316",
+     "type": "citation"
+    }
+   ],
+   "change": 1794846613,
+   "flags": [],
+   "handle": "1052f3f2b46167be131437cd6d3f",
+   "html": "<p>Transcription (as written): Memorial Services for June Elizabeth Pratt, of Albert Lea [...] June died on Monday, February 13, 2012 at Thorne Crest Retirement Community at the age of 93. She was born on June 19, 1918, in Minneapolis, Minnesota, the daughter of Alfred and Mabel(Everest) Toepel. [...] June was married to Marshall Sidney Pratt on December 20, 1941, in Bessemer, Michigan</p>",
+   "id": "N1985",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Memorial Services for June Elizabeth Pratt, of Albert Lea [...] June died on Monday, February 13, 2012 at Thorne Crest Retirement Community at the age of 93. She was born on June 19, 1918, in Minneapolis, Minnesota, the daughter of Alfred and Mabel(Everest) Toepel. [...] June was married to Marshall Sidney Pratt on December 20, 1941, in Bessemer, Michigan",
+   "type": "Transcript"
+  },
+  "N1986": {
+   "attached_to": [
+    {
+     "id": "C1316",
+     "type": "citation"
+    }
+   ],
+   "change": 1794846613,
+   "flags": [],
+   "handle": "1052f3f2b74f42dfc89d02ce1b11",
+   "html": "<p>2026-11-16 (karel): Companion to 100001; obituary excerpt image is in Mabel&#x27;s Ancestry gallery.</p>",
+   "id": "N1986",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-16 (karel): Companion to 100001; obituary excerpt image is in Mabel's Ancestry gallery.",
+   "type": "Research"
+  },
+  "N1987": {
+   "attached_to": [
+    {
+     "id": "C1317",
+     "type": "citation"
+    }
+   ],
+   "change": 1794846613,
+   "flags": [],
+   "handle": "1052f3f2d0ee329c56933a714d84",
+   "html": "<p>Transcription (as written): L10 Toepel, Mary, Head, W F, Jun 1854, 45, Wd, mother of 7 / 5 living. L11 Mollie, Dau, May 1878, 22. L12 Clara, Dau, Oct 1879, 20, school teacher. L13 Oscar, Son, M, Apr 1882, 18. L14 Lilian, Dau, Oct 1883, 16. L15 Alfred, Son, M, Jan 1888, 12. L16 Weihler, George, Brother, Jul 1857, 42.</p>",
+   "id": "N1987",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): L10 Toepel, Mary, Head, W F, Jun 1854, 45, Wd, mother of 7 / 5 living. L11 Mollie, Dau, May 1878, 22. L12 Clara, Dau, Oct 1879, 20, school teacher. L13 Oscar, Son, M, Apr 1882, 18. L14 Lilian, Dau, Oct 1883, 16. L15 Alfred, Son, M, Jan 1888, 12. L16 Weihler, George, Brother, Jul 1857, 42.",
+   "type": "Transcript"
+  },
+  "N1988": {
+   "attached_to": [
+    {
+     "id": "C1317",
+     "type": "citation"
+    }
+   ],
+   "change": 1794846614,
+   "flags": [],
+   "handle": "1052f3f2d4af680b83fd672ed25b",
+   "html": "<p>2026-11-16 (karel): Companion to 100006 (apply after it). Record-tier evidence that Clara was Mary&#x27;s daughter; the census crop is in Clara&#x27;s Ancestry gallery.</p>",
+   "id": "N1988",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-16 (karel): Companion to 100006 (apply after it). Record-tier evidence that Clara was Mary's daughter; the census crop is in Clara's Ancestry gallery.",
+   "type": "Research"
+  },
+  "N1989": {
+   "attached_to": [
+    {
+     "id": "C1318",
+     "type": "citation"
+    }
+   ],
+   "change": 1794864602,
+   "flags": [],
+   "handle": "1052feaba23838d7fc935e4bfd63",
+   "html": "<p>Transcription (as written): p.45 In Memoriam: &quot;Norman Bentley Wood, III / May 15, 1958 - May 31, 2018.&quot; p.58: &quot;Norm was the son of Norman Bentley Wood Jr. and JoAnn LaMotte (Wood), born on May 15, 1958 in Milwaukee, Wisconsin.&quot; p.58 also states that he died &quot;in Dunnellon, Florida on May 30, 2018&quot; and was &quot;at the early age of 60.&quot;</p>",
+   "id": "N1989",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): p.45 In Memoriam: \"Norman Bentley Wood, III / May 15, 1958 - May 31, 2018.\" p.58: \"Norm was the son of Norman Bentley Wood Jr. and JoAnn LaMotte (Wood), born on May 15, 1958 in Milwaukee, Wisconsin.\" p.58 also states that he died \"in Dunnellon, Florida on May 30, 2018\" and was \"at the early age of 60.\"",
+   "type": "Transcript"
+  },
+  "N1990": {
+   "attached_to": [
+    {
+     "id": "C1318",
+     "type": "citation"
+    }
+   ],
+   "change": 1794864602,
+   "flags": [],
+   "handle": "1052feaba5335bf5b2934d31912a",
+   "html": "<p>2026-11-16 (karel): Norman Bentley Wood III (book person B49), deceased son of Norman B. Wood Jr. I0059 (Ancestry 212795068190) and JoAnn I0364 (Ancestry 212811346080). Chris approved adding him on 16 Nov 2026. Created on Ancestry 16 Nov 2026 as person 212816622947 in tree 208290233, child of that couple (https://www.ancestry.com/family-tree/person/tree/208290233/person/212816622947/facts). Birth and death facts on Ancestry cite this book (pp.45, 58). The Ancestry gallery has image wood-book-p45-23, a rendered spread of printed pp.44-45 (PDF page 23). This proposal&#x27;s evidence image is a high-resolution crop of printed p.45 (right half of PDF page 23 at 300 dpi) plus tight p.58 excerpts of the birth sentence and the 30 May death sentence (left half of PDF page 30); both pages were re-checked on 16 Nov 2026 and the p.45 memorial line is visible. Facts copied from the page images of the July 2019 Wood Family Genealogy, printed pp.45 and 58: Male; birth 15 May 1958 (both pages; birthplace Milwaukee, Wisconsin on p.58 only); death 31 May 2018 as the primary date (p.45 memorial). Public-ok (deceased). The 16 Nov 2026 site export (family.konecny.net data/bundle.json, generated 2026-11-16T08:16:59Z / 3:16 AM ET, GitHub commit 4fea567) has no person named Wood III, no birth 15 May 1958, and no child of F0032. F0032 already exists as I0059 x I0364 (marriage 16 Dec 1955 in that export), so this draft does NOT include add_family and does NOT use a relations block. Current add_person filings (e.g. Clara Toepel 2026-11-12_100006) do not attach a child to an existing family; June and James were linked only because they were listed in a new add_family for a couple that did not yet have one. After this add_person is applied, link him as a Birth son in F0032 via the hand-link queue. Suffix III is printed in the book (&quot;Norman Bentley Wood, III&quot;); the Nov 12-13 add_person schema has no suffix field, so first_name is Norman Bentley and surname is Wood — suffix III was set on Ancestry and should be set in Gramps when linking. Do not add living spouses or children. Companion C02 research note is 2026-11-16_155001_wood-norman-iii_c02-death-note.json, which targets this same Ancestry ID.<br>Conflicts: [&#x27;C02: book p.45 In Memoriam gives death 31 May 2018; book p.58 biographical sketch gives death 30 May 2018 in Dunnellon, Florida, at age 60. Primary death date in this proposal is 31 May 2018 from p.45. Keep both; do not resolve. Death place Dunnellon, Florida is printed only on p.58 (the 30 May account).&#x27;, &quot;A free web check on 16 Nov 2026 found no 2018 obituary of Norman B. Wood III himself, and no Find a Grave or FamilySearch record stating 30 vs 31 May. His father&#x27;s obituary (Legacy / Milwaukee Journal Sentinel, published 23 Sep 2018) says he is &#x27;preceded in death by son Norman B III,&#x27; which only supports death before 20 Sep 2018 and does not resolve C02.&quot;]</p>",
+   "id": "N1990",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-16 (karel): Norman Bentley Wood III (book person B49), deceased son of Norman B. Wood Jr. I0059 (Ancestry 212795068190) and JoAnn I0364 (Ancestry 212811346080). Chris approved adding him on 16 Nov 2026. Created on Ancestry 16 Nov 2026 as person 212816622947 in tree 208290233, child of that couple (https://www.ancestry.com/family-tree/person/tree/208290233/person/212816622947/facts). Birth and death facts on Ancestry cite this book (pp.45, 58). The Ancestry gallery has image wood-book-p45-23, a rendered spread of printed pp.44-45 (PDF page 23). This proposal's evidence image is a high-resolution crop of printed p.45 (right half of PDF page 23 at 300 dpi) plus tight p.58 excerpts of the birth sentence and the 30 May death sentence (left half of PDF page 30); both pages were re-checked on 16 Nov 2026 and the p.45 memorial line is visible. Facts copied from the page images of the July 2019 Wood Family Genealogy, printed pp.45 and 58: Male; birth 15 May 1958 (both pages; birthplace Milwaukee, Wisconsin on p.58 only); death 31 May 2018 as the primary date (p.45 memorial). Public-ok (deceased). The 16 Nov 2026 site export (family.konecny.net data/bundle.json, generated 2026-11-16T08:16:59Z / 3:16 AM ET, GitHub commit 4fea567) has no person named Wood III, no birth 15 May 1958, and no child of F0032. F0032 already exists as I0059 x I0364 (marriage 16 Dec 1955 in that export), so this draft does NOT include add_family and does NOT use a relations block. Current add_person filings (e.g. Clara Toepel 2026-11-12_100006) do not attach a child to an existing family; June and James were linked only because they were listed in a new add_family for a couple that did not yet have one. After this add_person is applied, link him as a Birth son in F0032 via the hand-link queue. Suffix III is printed in the book (\"Norman Bentley Wood, III\"); the Nov 12-13 add_person schema has no suffix field, so first_name is Norman Bentley and surname is Wood — suffix III was set on Ancestry and should be set in Gramps when linking. Do not add living spouses or children. Companion C02 research note is 2026-11-16_155001_wood-norman-iii_c02-death-note.json, which targets this same Ancestry ID.\nConflicts: ['C02: book p.45 In Memoriam gives death 31 May 2018; book p.58 biographical sketch gives death 30 May 2018 in Dunnellon, Florida, at age 60. Primary death date in this proposal is 31 May 2018 from p.45. Keep both; do not resolve. Death place Dunnellon, Florida is printed only on p.58 (the 30 May account).', \"A free web check on 16 Nov 2026 found no 2018 obituary of Norman B. Wood III himself, and no Find a Grave or FamilySearch record stating 30 vs 31 May. His father's obituary (Legacy / Milwaukee Journal Sentinel, published 23 Sep 2018) says he is 'preceded in death by son Norman B III,' which only supports death before 20 Sep 2018 and does not resolve C02.\"]",
+   "type": "Research"
+  },
+  "N1991": {
+   "attached_to": [
+    {
+     "id": "I0419",
+     "type": "person"
+    }
+   ],
+   "change": 1794864603,
+   "flags": [],
+   "handle": "1052feabcd6c410714463eb945",
+   "html": "<p>2026-11-16 (karel): Research note, 16 Nov 2026 (C02 — keep both, do not resolve). The Wood Family Genealogy, Updated for the Wood Family Reunion, July 2019, Two Rivers, Wisconsin (Beth Moorcones, ed.), gives two death dates for Norman Bentley Wood III. Printed page 45 (In Memoriam) lists: &quot;Norman Bentley Wood, III / May 15, 1958 - May 31, 2018.&quot; Printed page 58 (his biographical sketch) says he died &quot;in Dunnellon, Florida on May 30, 2018&quot; and was &quot;at the early age of 60.&quot; Birth on both pages is 15 May 1958; page 58 also gives the birthplace Milwaukee, Wisconsin, and names his parents as Norman Bentley Wood Jr. and JoAnn LaMotte (Wood). The primary death date entered is 31 May 2018 from the p.45 memorial list. The p.58 date, and the Dunnellon, Florida place (printed only in the p.58 account), are preserved here and are not being discarded. A free web check on 16 Nov 2026 did not find a 2018 obituary of Norman B. Wood III himself, nor a Find a Grave or FamilySearch record that states 30 vs 31 May. His father&#x27;s obituary (Norman B. Wood, Milwaukee Journal Sentinel / Legacy, published 23 September 2018, https://www.legacy.com/us/obituaries/jsonline/name/norman-wood-obituary?id=3330147) says he is &quot;preceded in death by son Norman B III,&quot; which supports that Norman III died before 20 September 2018 but does not give the day and does not resolve C02.</p><p>Tier: compiled</p>",
+   "id": "N1991",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-16 (karel): Research note, 16 Nov 2026 (C02 — keep both, do not resolve). The Wood Family Genealogy, Updated for the Wood Family Reunion, July 2019, Two Rivers, Wisconsin (Beth Moorcones, ed.), gives two death dates for Norman Bentley Wood III. Printed page 45 (In Memoriam) lists: \"Norman Bentley Wood, III / May 15, 1958 - May 31, 2018.\" Printed page 58 (his biographical sketch) says he died \"in Dunnellon, Florida on May 30, 2018\" and was \"at the early age of 60.\" Birth on both pages is 15 May 1958; page 58 also gives the birthplace Milwaukee, Wisconsin, and names his parents as Norman Bentley Wood Jr. and JoAnn LaMotte (Wood). The primary death date entered is 31 May 2018 from the p.45 memorial list. The p.58 date, and the Dunnellon, Florida place (printed only in the p.58 account), are preserved here and are not being discarded. A free web check on 16 Nov 2026 did not find a 2018 obituary of Norman B. Wood III himself, nor a Find a Grave or FamilySearch record that states 30 vs 31 May. His father's obituary (Norman B. Wood, Milwaukee Journal Sentinel / Legacy, published 23 September 2018, https://www.legacy.com/us/obituaries/jsonline/name/norman-wood-obituary?id=3330147) says he is \"preceded in death by son Norman B III,\" which supports that Norman III died before 20 September 2018 but does not give the day and does not resolve C02.\n\nTier: compiled",
+   "type": "Research"
+  },
+  "N1992": {
+   "attached_to": [
+    {
+     "id": "E0290",
+     "type": "event"
+    }
+   ],
+   "change": 1794885374,
+   "flags": [],
+   "handle": "10530b0d3f02341f8eb5e0907bc0",
+   "html": "<p>2026-11-16 (karel): a second Birth record (E0291) was merged into this one. It said: place Middleborough, Plymouth, Massachusetts, USA. Jabez Wood I0076 has Birth E0290 (1 July 1691, place P0096 &#x27;Middleborough, Plymouth, Massachusetts&#x27;, 1 citation) and Birth E0291 (1 July 1691, place P0097 &#x27;Middleborough, Plymouth, Massachusetts, USA&#x27;, no citation), per the 16 Nov 2026 export and tools/check_tree.py. Same date and same town under two place records, hence allow_different. Keep E0290.</p>",
+   "id": "N1992",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-16 (karel): a second Birth record (E0291) was merged into this one. It said: place Middleborough, Plymouth, Massachusetts, USA. Jabez Wood I0076 has Birth E0290 (1 July 1691, place P0096 'Middleborough, Plymouth, Massachusetts', 1 citation) and Birth E0291 (1 July 1691, place P0097 'Middleborough, Plymouth, Massachusetts, USA', no citation), per the 16 Nov 2026 export and tools/check_tree.py. Same date and same town under two place records, hence allow_different. Keep E0290.",
+   "type": "Research"
+  },
+  "N1993": {
+   "attached_to": [
+    {
+     "id": "E1548",
+     "type": "event"
+    }
+   ],
+   "change": 1794885376,
+   "flags": [],
+   "handle": "10530b0d70af4af8c7992c884df5",
+   "html": "<p>2026-11-16 (karel): a second Birth record (E0285) was merged into this one. It said: place Svatý Štěpán. Josef Methoděj Konečný I0074: Birth E0285 &#x27;1898&#x27;, place P0076 &#x27;Svatý Štěpán&#x27;, 1 citation; Birth E1548 &#x27;4 July 1898&#x27;, place P0323 &#x27;Svatý Štěpán, Brumov-Bylnice, Zlín, Moravia&#x27;, 1 citation (its description says it refines E0285). A year beside the full date in that year; the two place records are the same village, the second fuller, hence allow_different. Keep E1548. Listed by tools/check_tree.py on the 16 Nov 2026 export (data/bundle.json at repo commit dc5dc3b) as merge_event.</p>",
+   "id": "N1993",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-16 (karel): a second Birth record (E0285) was merged into this one. It said: place Svatý Štěpán. Josef Methoděj Konečný I0074: Birth E0285 '1898', place P0076 'Svatý Štěpán', 1 citation; Birth E1548 '4 July 1898', place P0323 'Svatý Štěpán, Brumov-Bylnice, Zlín, Moravia', 1 citation (its description says it refines E0285). A year beside the full date in that year; the two place records are the same village, the second fuller, hence allow_different. Keep E1548. Listed by tools/check_tree.py on the 16 Nov 2026 export (data/bundle.json at repo commit dc5dc3b) as merge_event.",
+   "type": "Research"
   }
  },
  "people": {
@@ -138651,7 +140456,7 @@
    "families": [
     "F0016"
    ],
-   "gender": "M",
+   "gender": "F",
    "handle": "104ebd54a2e81bcd4b177430edb3",
    "id": "I0027",
    "name": {
@@ -141542,14 +143347,23 @@
     "type": "Birth",
     "year": 1930
    },
-   "change": 1794178820,
+   "change": 1794885374,
    "citations": [],
    "death": {
-    "date": null,
-    "event": "E0240",
-    "place": null,
+    "date": {
+     "day": 20,
+     "iso": "2018-09-20",
+     "modifier": null,
+     "month": 9,
+     "quality": null,
+     "sort": 2458382,
+     "text": "20 September 2018",
+     "year": 2018
+    },
+    "event": "E1555",
+    "place": "P0327",
     "type": "Death",
-    "year": null
+    "year": 2018
    },
    "events": [
     {
@@ -141562,10 +143376,6 @@
     },
     {
      "ref": "E0239",
-     "role": "Primary"
-    },
-    {
-     "ref": "E0240",
      "role": "Primary"
     },
     {
@@ -142521,42 +144331,43 @@
    "attributes": [],
    "birth": {
     "date": {
-     "day": null,
-     "iso": "1898",
+     "day": 4,
+     "iso": "1898-07-04",
      "modifier": null,
-     "month": null,
+     "month": 7,
      "quality": null,
-     "sort": 2414291,
-     "text": "1898",
+     "sort": 2414475,
+     "text": "4 July 1898",
      "year": 1898
     },
-    "event": "E0285",
-    "place": "P0076",
+    "event": "E1548",
+    "place": "P0323",
     "type": "Birth",
     "year": 1898
    },
-   "change": 1793307607,
+   "change": 1794885376,
    "citations": [
     "C0320"
    ],
    "death": {
-    "date": null,
-    "event": "E0286",
-    "place": null,
+    "date": {
+     "day": 25,
+     "iso": "1900-02-25",
+     "modifier": null,
+     "month": 2,
+     "quality": null,
+     "sort": 2415076,
+     "text": "25 February 1900",
+     "year": 1900
+    },
+    "event": "E1549",
+    "place": "P0323",
     "type": "Death",
-    "year": null
+    "year": 1900
    },
    "events": [
     {
      "ref": "E0284",
-     "role": "Primary"
-    },
-    {
-     "ref": "E0285",
-     "role": "Primary"
-    },
-    {
-     "ref": "E0286",
      "role": "Primary"
     },
     {
@@ -142716,7 +144527,7 @@
     "type": "Birth",
     "year": 1691
    },
-   "change": 1793043740,
+   "change": 1794885375,
    "citations": [],
    "death": {
     "date": null,
@@ -142732,10 +144543,6 @@
     },
     {
      "ref": "E0290",
-     "role": "Primary"
-    },
-    {
-     "ref": "E0291",
      "role": "Primary"
     },
     {
@@ -147918,7 +149725,7 @@
    "families": [
     "F0016"
    ],
-   "gender": "U",
+   "gender": "M",
    "handle": "104ebd54b0f85aabf0790470b60a",
    "id": "I0141",
    "name": {
@@ -154404,16 +156211,25 @@
     "type": "Birth",
     "year": 1899
    },
-   "change": 1793478611,
+   "change": 1794885377,
    "citations": [
     "C1223"
    ],
    "death": {
-    "date": null,
-    "event": "E0889",
-    "place": null,
+    "date": {
+     "day": 28,
+     "iso": "1974-12-28",
+     "modifier": null,
+     "month": 12,
+     "quality": null,
+     "sort": 2442410,
+     "text": "28 December 1974",
+     "year": 1974
+    },
+    "event": "E1547",
+    "place": "P0322",
     "type": "Death",
-    "year": null
+    "year": 1974
    },
    "events": [
     {
@@ -154426,10 +156242,6 @@
     },
     {
      "ref": "E0888",
-     "role": "Primary"
-    },
-    {
-     "ref": "E0889",
      "role": "Primary"
     },
     {
@@ -164338,21 +166150,21 @@
     "type": "Birth",
     "year": 1949
    },
-   "change": 1793136618,
+   "change": 1794885377,
    "citations": [],
    "death": {
     "date": {
-     "day": null,
-     "iso": "2008",
+     "day": 28,
+     "iso": "2008-08-28",
      "modifier": null,
-     "month": null,
+     "month": 8,
      "quality": null,
-     "sort": 2454467,
-     "text": "2008",
+     "sort": 2454707,
+     "text": "28 August 2008",
      "year": 2008
     },
-    "event": "E1390",
-    "place": null,
+    "event": "E1526",
+    "place": "P0312",
     "type": "Death",
     "year": 2008
    },
@@ -164363,10 +166175,6 @@
     },
     {
      "ref": "E1389",
-     "role": "Primary"
-    },
-    {
-     "ref": "E1390",
      "role": "Primary"
     },
     {
@@ -165991,12 +167799,12 @@
      "text": "30 July 1904",
      "year": 1904
     },
-    "event": "E1539",
+    "event": "E1543",
     "place": null,
     "type": "Birth",
     "year": 1904
    },
-   "change": 1793475003,
+   "change": 1794885378,
    "citations": [
     "C1206"
    ],
@@ -166011,20 +167819,12 @@
      "text": "16 May 1978",
      "year": 1978
     },
-    "event": "E1540",
+    "event": "E1544",
     "place": "P0288",
     "type": "Death",
     "year": 1978
    },
    "events": [
-    {
-     "ref": "E1539",
-     "role": "Primary"
-    },
-    {
-     "ref": "E1540",
-     "role": "Primary"
-    },
     {
      "ref": "E1543",
      "role": "Primary"
@@ -166105,12 +167905,12 @@
      "text": "9 June 1915",
      "year": 1915
     },
-    "event": "E1541",
+    "event": "E1545",
     "place": "P0320",
     "type": "Birth",
     "year": 1915
    },
-   "change": 1793475003,
+   "change": 1794885380,
    "citations": [
     "C1207"
    ],
@@ -166125,20 +167925,12 @@
      "text": "4 August 2007",
      "year": 2007
     },
-    "event": "E1542",
+    "event": "E1546",
     "place": null,
     "type": "Death",
     "year": 2007
    },
    "events": [
-    {
-     "ref": "E1541",
-     "role": "Primary"
-    },
-    {
-     "ref": "E1542",
-     "role": "Primary"
-    },
     {
      "ref": "E1545",
      "role": "Primary"
@@ -166205,20 +167997,16 @@
      "text": "27 February 1870",
      "year": 1870
     },
-    "event": "E1550",
+    "event": "E1551",
     "place": "P0324",
     "type": "Birth",
     "year": 1870
    },
-   "change": 1793473206,
+   "change": 1794885380,
    "citations": [
     "C1228"
    ],
    "events": [
-    {
-     "ref": "E1550",
-     "role": "Primary"
-    },
     {
      "ref": "E1551",
      "role": "Primary"
@@ -166557,8 +168345,7 @@
   },
   "I0393": {
    "families": [
-    "F0183",
-    "F0185"
+    "F0183"
    ],
    "gender": "M",
    "handle": "1051224fa0962dd6582b5509081c",
@@ -167078,7 +168865,7 @@
     "type": "Birth",
     "year": 1925
    },
-   "change": 1794151809,
+   "change": 1794846611,
    "citations": [
     "C1277"
    ],
@@ -167108,7 +168895,9 @@
      "role": "Primary"
     }
    ],
-   "families": [],
+   "families": [
+    "F0193"
+   ],
    "flags": [
     "agent-proposed"
    ],
@@ -167139,8 +168928,8 @@
    "review": "unreviewed",
    "status": "full",
    "tags": [
-    "agent-karel",
-    "agent-proposed"
+    "agent-proposed",
+    "agent-karel"
    ],
    "urls": [],
    "xref": {
@@ -167301,7 +169090,7 @@
     "type": "Birth",
     "year": 1900
    },
-   "change": 1794236408,
+   "change": 1794885372,
    "citations": [
     "C1280"
    ],
@@ -167355,7 +169144,7 @@
    },
    "notes": [],
    "parents": [
-    "F0185"
+    "F0183"
    ],
    "provenance": [
     "agent-karel",
@@ -167772,7 +169561,7 @@
     "type": "Birth",
     "year": 1919
    },
-   "change": 1794236410,
+   "change": 1794846613,
    "citations": [
     "C1287",
     "C1290"
@@ -167803,7 +169592,9 @@
      "role": "Primary"
     }
    ],
-   "families": [],
+   "families": [
+    "F0194"
+   ],
    "flags": [
     "agent-proposed"
    ],
@@ -167859,7 +169650,7 @@
     "type": "Birth",
     "year": 1888
    },
-   "change": 1794409207,
+   "change": 1794846609,
    "citations": [
     "C1291",
     "C1301"
@@ -167890,7 +169681,9 @@
      "role": "Primary"
     }
    ],
-   "families": [],
+   "families": [
+    "F0192"
+   ],
    "flags": [
     "agent-proposed"
    ],
@@ -168340,6 +170133,664 @@
    "urls": [],
    "xref": {
     "ancestry": "212815368792"
+   }
+  },
+  "I0413": {
+   "alt_names": [
+    {
+     "call": "",
+     "date": null,
+     "display": "Mabel Toepel",
+     "first": "Mabel",
+     "nick": "",
+     "prefix": "",
+     "sort": "Toepel, Mabel",
+     "suffix": "",
+     "surname": "Toepel",
+     "title": "",
+     "type": "Married Name"
+    }
+   ],
+   "attributes": [],
+   "birth": {
+    "date": {
+     "day": null,
+     "iso": "1893",
+     "modifier": "about",
+     "month": null,
+     "quality": null,
+     "sort": 2412465,
+     "text": "about 1893",
+     "year": 1893
+    },
+    "event": "E1605",
+    "place": "P0340",
+    "type": "Birth",
+    "year": 1893
+   },
+   "change": 1794846613,
+   "citations": [
+    "C1307",
+    "C1316"
+   ],
+   "death": {
+    "date": {
+     "day": 16,
+     "iso": "1946-01-16",
+     "modifier": null,
+     "month": 1,
+     "quality": null,
+     "sort": 2431837,
+     "text": "16 January 1946",
+     "year": 1946
+    },
+    "event": "E1606",
+    "place": "P0338",
+    "type": "Death",
+    "year": 1946
+   },
+   "events": [
+    {
+     "ref": "E1605",
+     "role": "Primary"
+    },
+    {
+     "ref": "E1606",
+     "role": "Primary"
+    }
+   ],
+   "families": [
+    "F0192"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "gender": "F",
+   "handle": "1052f3f12b14323861463aa0de8b",
+   "id": "I0413",
+   "media": [],
+   "name": {
+    "call": "",
+    "display": "Mabel Everest",
+    "first": "Mabel",
+    "nick": "",
+    "prefix": "",
+    "sort": "Everest, Mabel",
+    "suffix": "",
+    "surname": "Everest",
+    "title": "",
+    "type": "Birth Name"
+   },
+   "notes": [],
+   "parents": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-proposed",
+    "agent-karel"
+   ],
+   "urls": [],
+   "xref": {
+    "ancestry": "212815726200"
+   }
+  },
+  "I0414": {
+   "alt_names": [
+    {
+     "call": "",
+     "date": null,
+     "display": "June Elizabeth Pratt",
+     "first": "June Elizabeth",
+     "nick": "",
+     "prefix": "",
+     "sort": "Pratt, June Elizabeth",
+     "suffix": "",
+     "surname": "Pratt",
+     "title": "",
+     "type": "Married Name"
+    }
+   ],
+   "attributes": [],
+   "birth": {
+    "date": {
+     "day": 19,
+     "iso": "1918-06-19",
+     "modifier": null,
+     "month": 6,
+     "quality": null,
+     "sort": 2421764,
+     "text": "19 June 1918",
+     "year": 1918
+    },
+    "event": "E1607",
+    "place": "P0090",
+    "type": "Birth",
+    "year": 1918
+   },
+   "change": 1794846610,
+   "citations": [
+    "C1308"
+   ],
+   "death": {
+    "date": {
+     "day": 13,
+     "iso": "2012-02-13",
+     "modifier": null,
+     "month": 2,
+     "quality": null,
+     "sort": 2455971,
+     "text": "13 February 2012",
+     "year": 2012
+    },
+    "event": "E1608",
+    "place": "P0091",
+    "type": "Death",
+    "year": 2012
+   },
+   "events": [
+    {
+     "ref": "E1607",
+     "role": "Primary"
+    },
+    {
+     "ref": "E1608",
+     "role": "Primary"
+    }
+   ],
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "gender": "F",
+   "handle": "1052f3f164234ae2caf7809cd334",
+   "id": "I0414",
+   "media": [],
+   "name": {
+    "call": "",
+    "display": "June Elizabeth Toepel",
+    "first": "June Elizabeth",
+    "nick": "",
+    "prefix": "",
+    "sort": "Toepel, June Elizabeth",
+    "suffix": "",
+    "surname": "Toepel",
+    "title": "",
+    "type": "Birth Name"
+   },
+   "notes": [],
+   "parents": [
+    "F0192"
+   ],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-proposed",
+    "agent-karel"
+   ],
+   "urls": [],
+   "xref": {
+    "ancestry": "212815726386"
+   }
+  },
+  "I0415": {
+   "alt_names": [],
+   "attributes": [],
+   "birth": {
+    "date": {
+     "day": 30,
+     "iso": "1922-04-30",
+     "modifier": null,
+     "month": 4,
+     "quality": null,
+     "sort": 2423175,
+     "text": "30 April 1922",
+     "year": 1922
+    },
+    "event": "E1609",
+    "place": "P0283",
+    "type": "Birth",
+    "year": 1922
+   },
+   "change": 1794846610,
+   "citations": [
+    "C1309"
+   ],
+   "death": {
+    "date": {
+     "day": 14,
+     "iso": "1995-10-14",
+     "modifier": null,
+     "month": 10,
+     "quality": null,
+     "sort": 2450005,
+     "text": "14 October 1995",
+     "year": 1995
+    },
+    "event": "E1610",
+    "place": "P0341",
+    "type": "Death",
+    "year": 1995
+   },
+   "events": [
+    {
+     "ref": "E1609",
+     "role": "Primary"
+    },
+    {
+     "ref": "E1610",
+     "role": "Primary"
+    }
+   ],
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "gender": "M",
+   "handle": "1052f3f197a545d0bd117efc6091",
+   "id": "I0415",
+   "media": [],
+   "name": {
+    "call": "",
+    "display": "James Everest Toepel",
+    "first": "James Everest",
+    "nick": "",
+    "prefix": "",
+    "sort": "Toepel, James Everest",
+    "suffix": "",
+    "surname": "Toepel",
+    "title": "",
+    "type": "Birth Name"
+   },
+   "notes": [],
+   "parents": [
+    "F0192"
+   ],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-proposed",
+    "agent-karel"
+   ],
+   "urls": [],
+   "xref": {
+    "ancestry": "212815726334"
+   }
+  },
+  "I0416": {
+   "alt_names": [
+    {
+     "call": "",
+     "date": null,
+     "display": "Clara Zetterholm",
+     "first": "Clara",
+     "nick": "",
+     "prefix": "",
+     "sort": "Zetterholm, Clara",
+     "suffix": "",
+     "surname": "Zetterholm",
+     "title": "",
+     "type": "Married Name"
+    }
+   ],
+   "attributes": [],
+   "birth": {
+    "date": {
+     "day": 9,
+     "iso": "1879-10-09",
+     "modifier": null,
+     "month": 10,
+     "quality": null,
+     "sort": 2407632,
+     "text": "9 October 1879",
+     "year": 1879
+    },
+    "event": "E1611",
+    "place": "P0089",
+    "type": "Birth",
+    "year": 1879
+   },
+   "change": 1794846614,
+   "citations": [
+    "C1310",
+    "C1317"
+   ],
+   "death": {
+    "date": {
+     "day": 17,
+     "iso": "1962-12-17",
+     "modifier": null,
+     "month": 12,
+     "quality": null,
+     "sort": 2438016,
+     "text": "17 December 1962",
+     "year": 1962
+    },
+    "event": "E1612",
+    "place": "P0285",
+    "type": "Death",
+    "year": 1962
+   },
+   "events": [
+    {
+     "ref": "E1611",
+     "role": "Primary"
+    },
+    {
+     "ref": "E1612",
+     "role": "Primary"
+    }
+   ],
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "gender": "F",
+   "handle": "1052f3f1bde03e88b6fc688be844",
+   "id": "I0416",
+   "media": [],
+   "name": {
+    "call": "",
+    "display": "Clara Toepel",
+    "first": "Clara",
+    "nick": "",
+    "prefix": "",
+    "sort": "Toepel, Clara",
+    "suffix": "",
+    "surname": "Toepel",
+    "title": "",
+    "type": "Birth Name"
+   },
+   "notes": [],
+   "parents": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-proposed",
+    "agent-karel"
+   ],
+   "urls": [],
+   "xref": {
+    "ancestry": "212815727974"
+   }
+  },
+  "I0417": {
+   "alt_names": [],
+   "attributes": [],
+   "birth": {
+    "date": {
+     "day": 5,
+     "iso": "1923-08-05",
+     "modifier": null,
+     "month": 8,
+     "quality": null,
+     "sort": 2423637,
+     "text": "5 August 1923",
+     "year": 1923
+    },
+    "event": "E1613",
+    "place": "P0158",
+    "type": "Birth",
+    "year": 1923
+   },
+   "change": 1794846611,
+   "citations": [
+    "C1311"
+   ],
+   "death": {
+    "date": {
+     "day": 8,
+     "iso": "2015-09-08",
+     "modifier": null,
+     "month": 9,
+     "quality": null,
+     "sort": 2457274,
+     "text": "8 September 2015",
+     "year": 2015
+    },
+    "event": "E1614",
+    "place": "P0158",
+    "type": "Death",
+    "year": 2015
+   },
+   "events": [
+    {
+     "ref": "E1613",
+     "role": "Primary"
+    },
+    {
+     "ref": "E1614",
+     "role": "Primary"
+    }
+   ],
+   "families": [
+    "F0193"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "gender": "M",
+   "handle": "1052f3f1e6a15a63fa14610a0a99",
+   "id": "I0417",
+   "media": [],
+   "name": {
+    "call": "",
+    "display": "Glenn Chester Ferdon",
+    "first": "Glenn Chester",
+    "nick": "",
+    "prefix": "",
+    "sort": "Ferdon, Glenn Chester",
+    "suffix": "",
+    "surname": "Ferdon",
+    "title": "",
+    "type": "Birth Name"
+   },
+   "notes": [],
+   "parents": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-proposed",
+    "agent-karel"
+   ],
+   "urls": [],
+   "xref": {
+    "ancestry": "212815728145"
+   }
+  },
+  "I0418": {
+   "alt_names": [],
+   "attributes": [],
+   "birth": {
+    "date": {
+     "day": 23,
+     "iso": "1918-08-23",
+     "modifier": null,
+     "month": 8,
+     "quality": null,
+     "sort": 2421829,
+     "text": "23 August 1918",
+     "year": 1918
+    },
+    "event": "E1615",
+    "place": "P0089",
+    "type": "Birth",
+    "year": 1918
+   },
+   "change": 1794846612,
+   "citations": [
+    "C1312"
+   ],
+   "death": {
+    "date": {
+     "day": 25,
+     "iso": "1986-07-25",
+     "modifier": null,
+     "month": 7,
+     "quality": null,
+     "sort": 2446637,
+     "text": "25 July 1986",
+     "year": 1986
+    },
+    "event": "E1616",
+    "place": "P0158",
+    "type": "Death",
+    "year": 1986
+   },
+   "events": [
+    {
+     "ref": "E1615",
+     "role": "Primary"
+    },
+    {
+     "ref": "E1616",
+     "role": "Primary"
+    }
+   ],
+   "families": [
+    "F0194"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "gender": "M",
+   "handle": "1052f3f215874e073210cba3fd77",
+   "id": "I0418",
+   "media": [],
+   "name": {
+    "call": "",
+    "display": "Daniel James Langenkamp",
+    "first": "Daniel James",
+    "nick": "",
+    "prefix": "",
+    "sort": "Langenkamp, Daniel James",
+    "suffix": "",
+    "surname": "Langenkamp",
+    "title": "",
+    "type": "Birth Name"
+   },
+   "notes": [],
+   "parents": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-proposed",
+    "agent-karel"
+   ],
+   "urls": [],
+   "xref": {
+    "ancestry": "212815865931"
+   }
+  },
+  "I0419": {
+   "alt_names": [],
+   "attributes": [],
+   "birth": {
+    "date": {
+     "day": 15,
+     "iso": "1958-05-15",
+     "modifier": null,
+     "month": 5,
+     "quality": null,
+     "sort": 2436339,
+     "text": "15 May 1958",
+     "year": 1958
+    },
+    "event": "E1617",
+    "place": "P0333",
+    "type": "Birth",
+    "year": 1958
+   },
+   "change": 1794864603,
+   "citations": [
+    "C1318"
+   ],
+   "death": {
+    "date": {
+     "day": 31,
+     "iso": "2018-05-31",
+     "modifier": null,
+     "month": 5,
+     "quality": null,
+     "sort": 2458270,
+     "text": "31 May 2018",
+     "year": 2018
+    },
+    "event": "E1618",
+    "place": "P0342",
+    "type": "Death",
+    "year": 2018
+   },
+   "events": [
+    {
+     "ref": "E1617",
+     "role": "Primary"
+    },
+    {
+     "ref": "E1618",
+     "role": "Primary"
+    }
+   ],
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "gender": "M",
+   "handle": "1052feabc5c71b8a25ad558a6424",
+   "id": "I0419",
+   "media": [],
+   "name": {
+    "call": "",
+    "display": "Norman Bentley Wood",
+    "first": "Norman Bentley",
+    "nick": "",
+    "prefix": "",
+    "sort": "Wood, Norman Bentley",
+    "suffix": "",
+    "surname": "Wood",
+    "title": "",
+    "type": "Birth Name"
+   },
+   "notes": [
+    "N1991"
+   ],
+   "parents": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "urls": [],
+   "xref": {
+    "ancestry": "212816622947"
    }
   }
  },
@@ -177386,6 +179837,102 @@
    ],
    "type": "Unknown",
    "urls": []
+  },
+  "P0340": {
+   "alt_names": [],
+   "citations": [],
+   "code": "",
+   "display": "Gloversville, Fulton, New York, USA",
+   "enclosed_by": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1052f3f11cde5d3107f6754a2985",
+   "hierarchy": [
+    "P0340"
+   ],
+   "id": "P0340",
+   "lat": null,
+   "long": null,
+   "media": [],
+   "name": "Gloversville, Fulton, New York, USA",
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed",
+    "needs-place"
+   ],
+   "type": "Unknown",
+   "urls": []
+  },
+  "P0341": {
+   "alt_names": [],
+   "citations": [],
+   "code": "",
+   "display": "Olmsted County, Minnesota, USA",
+   "enclosed_by": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1052f3f18e20751aea2e44d756e2",
+   "hierarchy": [
+    "P0341"
+   ],
+   "id": "P0341",
+   "lat": null,
+   "long": null,
+   "media": [],
+   "name": "Olmsted County, Minnesota, USA",
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed",
+    "needs-place"
+   ],
+   "type": "Unknown",
+   "urls": []
+  },
+  "P0342": {
+   "alt_names": [],
+   "citations": [],
+   "code": "",
+   "display": "Dunnellon, Florida, USA",
+   "enclosed_by": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1052feabbaeb55ec4b91d1da2f13",
+   "hierarchy": [
+    "P0342"
+   ],
+   "id": "P0342",
+   "lat": null,
+   "long": null,
+   "media": [],
+   "name": "Dunnellon, Florida, USA",
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed",
+    "needs-place"
+   ],
+   "type": "Unknown",
+   "urls": []
   }
  },
  "repositories": {
@@ -177601,6 +180148,38 @@
    "handle": "1051bcce245a3b22eb22fa90a747",
    "id": "R0026",
    "name": "Minnesota Historical Society, People Records Search (public death records index)",
+   "notes": [],
+   "type": "Archive",
+   "urls": []
+  },
+  "R0027": {
+   "handle": "1052f3f134535dbf7f004d36c573",
+   "id": "R0027",
+   "name": "Bonnerup Funeral Service (online obituary)",
+   "notes": [],
+   "type": "Archive",
+   "urls": []
+  },
+  "R0028": {
+   "handle": "1052f3f1c38aef11212610ca38e",
+   "id": "R0028",
+   "name": "Find a Grave memorial 152091950 (transcription of the published obituary)",
+   "notes": [],
+   "type": "Archive",
+   "urls": []
+  },
+  "R0029": {
+   "handle": "1052f3f1ec742895cb742a9bd64b",
+   "id": "R0029",
+   "name": "SortedByName.com (public-file transcriptions)",
+   "notes": [],
+   "type": "Archive",
+   "urls": []
+  },
+  "R0030": {
+   "handle": "1052feab9b2372d24152bbc97c12",
+   "id": "R0030",
+   "name": "Privately compiled family book, 2019",
    "notes": [],
    "type": "Archive",
    "urls": []
@@ -184715,7 +187294,8 @@
    "author": "",
    "citations": [
     "C1298",
-    "C1301"
+    "C1301",
+    "C1317"
    ],
    "flags": [
     "agent-proposed"
@@ -184845,6 +187425,241 @@
     "agent-proposed"
    ],
    "title": "1900 United States Census, Population Schedule, Minnesota, Freeborn County, Albert Lea, NARA T623 roll 764"
+  },
+  "S0228": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1307"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1052f3f104ab1cb9239593ad3e4b",
+   "id": "S0228",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0026"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "Minnesota death index, 1904-2001: Mabel Everet Toepel, certificate 1946-MN-018386"
+  },
+  "S0229": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1308",
+    "C1316"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1052f3f138ea3d216f0a7e6eb2ca",
+   "id": "S0229",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0027"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "June Elizabeth Pratt obituary, Bonnerup Funeral Service, Albert Lea, Minnesota, 2012"
+  },
+  "S0230": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1309",
+    "C1313"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1052f3f16b835f9d05458af83f72",
+   "id": "S0230",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0026"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "Minnesota death index, 1904-2001: James Everest Toepel, certificate 1995-MN-029008"
+  },
+  "S0231": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1310"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1052f3f19d3d1c6ffa9bc8af7c2e",
+   "id": "S0231",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0026"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "Minnesota death index, 1904-2001: Clara Zetterholm, certificate 1962-MN-005051"
+  },
+  "S0232": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1311",
+    "C1314"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1052f3f1c74f36976e5b2aedaa69",
+   "id": "S0232",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0028"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "Glenn C. Ferdon obituary, Manitowoc Herald Times Reporter, 10-11 Sept 2015 (Pfeffer Funeral Home)"
+  },
+  "S0233": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1312",
+    "C1315"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1052f3f1f41153ba6e695b0d6b96",
+   "id": "S0233",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0029"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "Social Security Death Master File and VA BIRLS death file, as transcribed by SortedByName.com: Daniel James Langenkamp"
+  },
+  "S0234": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "Beth Moorcones, ed.",
+   "citations": [
+    "C1318"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1052feab9ee55f0a7ee946b01701",
+   "id": "S0234",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0030"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "Wood Family Genealogy, Updated for the Wood Family Reunion, July 2019, Two Rivers, Wisconsin"
   }
  }
 }
