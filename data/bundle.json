@@ -41536,6 +41536,56 @@
    ],
    "tier": "compiled",
    "url": ""
+  },
+  "C1319": {
+   "ancestry_record_id": "63553004",
+   "change": 1795014003,
+   "cited_by": [
+    {
+     "id": "E1619",
+     "type": "event"
+    },
+    {
+     "id": "E1620",
+     "type": "event"
+    },
+    {
+     "id": "I0420",
+     "type": "person"
+    }
+   ],
+   "confidence": 4,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "105357b86fe2140ec3503d0fd53",
+   "id": "C1319",
+   "information": "primary",
+   "media": [
+    {
+     "ref": "O0239"
+    }
+   ],
+   "notes": [
+    "N1994"
+   ],
+   "page": "T623 roll 1797, ED 74, sheet 12B (Supervisor's District 3), North 10th Street, house no. 532, family 260, lines 71-76 (Anton Wacek household)",
+   "proposal_file": "2026-11-18_094800_wacek-edward_add-person.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0235",
+   "source_type": "original",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "record",
+   "url": "https://www.ancestry.com/search/collections/7602/records/63553004"
   }
  },
  "events": {
@@ -93694,6 +93744,92 @@
     "agent-proposed"
    ],
    "type": "Death"
+  },
+  "E1619": {
+   "attributes": [],
+   "change": 1795014003,
+   "citations": [
+    "C1319"
+   ],
+   "date": {
+    "day": null,
+    "iso": "1890-01",
+    "modifier": null,
+    "month": 1,
+    "quality": null,
+    "sort": 2411369,
+    "text": "January 1890",
+    "year": 1890
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "105357b875022eeb03b0c1aa20bd",
+   "id": "E1619",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0420",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0053",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Birth"
+  },
+  "E1620": {
+   "attributes": [],
+   "change": 1795014003,
+   "citations": [
+    "C1319"
+   ],
+   "date": {
+    "day": 17,
+    "iso": "1960-10-17",
+    "modifier": null,
+    "month": 10,
+    "quality": null,
+    "sort": 2437225,
+    "text": "17 October 1960",
+    "year": 1960
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "105357b87ae233eeb55508e07046",
+   "id": "E1620",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0420",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0015",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Death"
   }
  },
  "families": {
@@ -99876,6 +100012,9 @@
     },
     {
      "ref": "I0402"
+    },
+    {
+     "ref": "I0420"
     }
    ],
    "father": "I0393",
@@ -108336,6 +108475,39 @@
     "agent-karel",
     "agent-proposed"
    ]
+  },
+  "O0239": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1319",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-18_094800_wacek-edward_census-1900.jpg"
+   },
+   "checksum": "46a2dfd9699241219605ff08761ab2e3",
+   "citations": [],
+   "date": null,
+   "desc": "1900 United States Census, Population Schedule, Wisconsin, Manitowoc County, Manitowoc City, Ward 4, ED 74, sheet 12B, NARA T623 roll 1797 — T623 roll 1797, ED 74, sheet 12B (Supervisor's District 3), North 10th Street, house no. 532, family 260, lines 71-76 (Anton Wacek household)",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "105357b868426e7745d48e7cb47a",
+   "id": "O0239",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0239",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ]
   }
  },
  "meta": {
@@ -108347,21 +108519,21 @@
    "very high"
   ],
   "counts": {
-   "citations": 1265,
-   "events": 1447,
+   "citations": 1266,
+   "events": 1449,
    "families": 186,
-   "media": 223,
-   "notes": 1399,
-   "people": 416,
+   "media": 224,
+   "notes": 1400,
+   "people": 417,
    "places": 332,
-   "repositories": 31,
-   "sources": 229
+   "repositories": 32,
+   "sources": 230
   },
   "counts_people": {
-   "full": 348,
+   "full": 349,
    "living": 68
   },
-  "generated": "2026-11-18T08:16:55+00:00",
+  "generated": "2026-11-19T08:16:55+00:00",
   "generator": "gramps_export.py 0.3.0",
   "gramps_version": "6.0.8",
   "gramps_webapi_version": "3.17.0",
@@ -108385,7 +108557,7 @@
    "oral",
    "ai-draft"
   ],
-  "today": "2026-11-18",
+  "today": "2026-11-19",
   "tree": "Konecny"
  },
  "notes": {
@@ -138337,6 +138509,25 @@
    "tags": [],
    "text": "2026-11-16 (karel): a second Birth record (E0285) was merged into this one. It said: place Svatý Štěpán. Josef Methoděj Konečný I0074: Birth E0285 '1898', place P0076 'Svatý Štěpán', 1 citation; Birth E1548 '4 July 1898', place P0323 'Svatý Štěpán, Brumov-Bylnice, Zlín, Moravia', 1 citation (its description says it refines E0285). A year beside the full date in that year; the two place records are the same village, the second fuller, hence allow_different. Keep E1548. Listed by tools/check_tree.py on the 16 Nov 2026 export (data/bundle.json at repo commit dc5dc3b) as merge_event.",
    "type": "Research"
+  },
+  "N1994": {
+   "attached_to": [
+    {
+     "id": "C1319",
+     "type": "citation"
+    }
+   ],
+   "change": 1795014003,
+   "flags": [],
+   "handle": "105357b85f9a175daa293806a3f1",
+   "html": "<p>Transcription (as written): Enumerated 15 June 1900, Manitowoc City, Ward 4, Wisconsin, ED 74, sheet 12B. North 10th Street, house no. 532, family 260. Line 71: Wacek, Anton, Head, W M, May 1866, 34, M, 11, Bohemia, Bohemia, Bohemia. Line 72: —— Anna, Wife, W F, July 1871, 28, M, 11, mother of 4 children, 4 living, Wisconsin, Bohemia, Bohemia. Line 73: —— Edward, Son, W M, Jan 1890, 10, S, Wisconsin, Bohemia, Wisconsin. Line 74: —— Emma, Daughter, W F, Oct 1891, 8, S, Wisconsin, Bohemia, Wisconsin. Line 75: —— Lillie, Daughter, W F, Mar 1893, 6, S, Wisconsin, Bohemia, Wisconsin. Line 76: —— Ella, Daughter, W F, Feb 1900, 3/12, S, Wisconsin, Bohemia, Wisconsin.</p>",
+   "id": "N1994",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Enumerated 15 June 1900, Manitowoc City, Ward 4, Wisconsin, ED 74, sheet 12B. North 10th Street, house no. 532, family 260. Line 71: Wacek, Anton, Head, W M, May 1866, 34, M, 11, Bohemia, Bohemia, Bohemia. Line 72: —— Anna, Wife, W F, July 1871, 28, M, 11, mother of 4 children, 4 living, Wisconsin, Bohemia, Bohemia. Line 73: —— Edward, Son, W M, Jan 1890, 10, S, Wisconsin, Bohemia, Wisconsin. Line 74: —— Emma, Daughter, W F, Oct 1891, 8, S, Wisconsin, Bohemia, Wisconsin. Line 75: —— Lillie, Daughter, W F, Mar 1893, 6, S, Wisconsin, Bohemia, Wisconsin. Line 76: —— Ella, Daughter, W F, Feb 1900, 3/12, S, Wisconsin, Bohemia, Wisconsin.",
+   "type": "Transcript"
   }
  },
  "people": {
@@ -170792,6 +170983,94 @@
    "xref": {
     "ancestry": "212816622947"
    }
+  },
+  "I0420": {
+   "alt_names": [],
+   "attributes": [],
+   "birth": {
+    "date": {
+     "day": null,
+     "iso": "1890-01",
+     "modifier": null,
+     "month": 1,
+     "quality": null,
+     "sort": 2411369,
+     "text": "January 1890",
+     "year": 1890
+    },
+    "event": "E1619",
+    "place": "P0053",
+    "type": "Birth",
+    "year": 1890
+   },
+   "change": 1795014004,
+   "citations": [
+    "C1319"
+   ],
+   "death": {
+    "date": {
+     "day": 17,
+     "iso": "1960-10-17",
+     "modifier": null,
+     "month": 10,
+     "quality": null,
+     "sort": 2437225,
+     "text": "17 October 1960",
+     "year": 1960
+    },
+    "event": "E1620",
+    "place": "P0015",
+    "type": "Death",
+    "year": 1960
+   },
+   "events": [
+    {
+     "ref": "E1619",
+     "role": "Primary"
+    },
+    {
+     "ref": "E1620",
+     "role": "Primary"
+    }
+   ],
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "gender": "M",
+   "handle": "105357b88064557c4459c1cfe28e",
+   "id": "I0420",
+   "media": [],
+   "name": {
+    "call": "",
+    "display": "Edward A. Wacek",
+    "first": "Edward A.",
+    "nick": "",
+    "prefix": "",
+    "sort": "Wacek, Edward A.",
+    "suffix": "",
+    "surname": "Wacek",
+    "title": "",
+    "type": "Birth Name"
+   },
+   "notes": [],
+   "parents": [
+    "F0183"
+   ],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "urls": [],
+   "xref": {
+    "ancestry": "212817191191"
+   }
   }
  },
  "places": {
@@ -180183,6 +180462,14 @@
    "notes": [],
    "type": "Archive",
    "urls": []
+  },
+  "R0031": {
+   "handle": "105357b8570b7c3f8bfcff170314",
+   "id": "R0031",
+   "name": "National Archives and Records Administration (NARA); page image at 2manitowoc.com",
+   "notes": [],
+   "type": "Archive",
+   "urls": []
   }
  },
  "sources": {
@@ -187660,6 +187947,39 @@
     "agent-proposed"
    ],
    "title": "Wood Family Genealogy, Updated for the Wood Family Reunion, July 2019, Two Rivers, Wisconsin"
+  },
+  "S0235": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1319"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "105357b85b0d483fe6011f473cb1",
+   "id": "S0235",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0031"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "1900 United States Census, Population Schedule, Wisconsin, Manitowoc County, Manitowoc City, Ward 4, ED 74, sheet 12B, NARA T623 roll 1797"
   }
  }
 }
