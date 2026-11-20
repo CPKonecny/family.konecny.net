@@ -108533,7 +108533,7 @@
    "full": 349,
    "living": 68
   },
-  "generated": "2026-11-19T08:16:55+00:00",
+  "generated": "2026-11-20T08:16:54+00:00",
   "generator": "gramps_export.py 0.3.0",
   "gramps_version": "6.0.8",
   "gramps_webapi_version": "3.17.0",
@@ -108557,7 +108557,7 @@
    "oral",
    "ai-draft"
   ],
-  "today": "2026-11-19",
+  "today": "2026-11-20",
   "tree": "Konecny"
  },
  "notes": {
