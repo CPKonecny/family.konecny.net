@@ -41586,6 +41586,62 @@
    ],
    "tier": "record",
    "url": "https://www.ancestry.com/search/collections/7602/records/63553004"
+  },
+  "C1320": {
+   "ancestry_record_id": "",
+   "change": 1795186803,
+   "cited_by": [
+    {
+     "id": "E1621",
+     "type": "event"
+    },
+    {
+     "id": "E1622",
+     "type": "event"
+    },
+    {
+     "id": "I0421",
+     "type": "person"
+    }
+   ],
+   "confidence": 2,
+   "date": {
+    "day": 16,
+    "iso": "1975-06-16",
+    "modifier": null,
+    "month": 6,
+    "quality": null,
+    "sort": 2442580,
+    "text": "16 June 1975",
+    "year": 1975
+   },
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1053beb794721bcd6b57336fcdaf",
+   "id": "C1320",
+   "information": "primary",
+   "media": [],
+   "notes": [
+    "N1996",
+    "N1997"
+   ],
+   "page": "Herald Times Reporter, Monday, June 16, 1975, p. 3; Find a Grave memorial 111849813",
+   "proposal_file": "2026-11-20_100000_mertens-carrie_add-person.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0236",
+   "source_type": "derivative",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "index",
+   "url": "https://www.findagrave.com/memorial/111849813"
   }
  },
  "events": {
@@ -93830,6 +93886,92 @@
     "agent-proposed"
    ],
    "type": "Death"
+  },
+  "E1621": {
+   "attributes": [],
+   "change": 1795186803,
+   "citations": [
+    "C1320"
+   ],
+   "date": {
+    "day": 18,
+    "iso": "1891-08-18",
+    "modifier": null,
+    "month": 8,
+    "quality": null,
+    "sort": 2411963,
+    "text": "18 August 1891",
+    "year": 1891
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1053beb799cc52479e6ff5316049",
+   "id": "E1621",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0421",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0015",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Birth"
+  },
+  "E1622": {
+   "attributes": [],
+   "change": 1795186803,
+   "citations": [
+    "C1320"
+   ],
+   "date": {
+    "day": null,
+    "iso": "1975-06",
+    "modifier": null,
+    "month": 6,
+    "quality": null,
+    "sort": 2442565,
+    "text": "June 1975",
+    "year": 1975
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1053beb7a09b35e0d6778e616e81",
+   "id": "E1622",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0421",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0015",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Death"
   }
  },
  "families": {
@@ -100341,6 +100483,33 @@
    "tags": [
     "agent-proposed",
     "agent-karel"
+   ],
+   "type": "Married"
+  },
+  "F0195": {
+   "attributes": [],
+   "change": 1795186803,
+   "children": [],
+   "citations": [],
+   "events": [],
+   "father": "I0420",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1053beb7ade9bda10113b9d82b4",
+   "id": "F0195",
+   "media": [],
+   "mother": "I0421",
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
    ],
    "type": "Married"
   }
@@ -108519,21 +108688,21 @@
    "very high"
   ],
   "counts": {
-   "citations": 1266,
-   "events": 1449,
-   "families": 186,
+   "citations": 1267,
+   "events": 1451,
+   "families": 187,
    "media": 224,
-   "notes": 1400,
-   "people": 417,
+   "notes": 1402,
+   "people": 418,
    "places": 332,
-   "repositories": 32,
-   "sources": 230
+   "repositories": 33,
+   "sources": 231
   },
   "counts_people": {
-   "full": 349,
+   "full": 350,
    "living": 68
   },
-  "generated": "2026-11-20T08:16:54+00:00",
+  "generated": "2026-11-21T08:16:56+00:00",
   "generator": "gramps_export.py 0.3.0",
   "gramps_version": "6.0.8",
   "gramps_webapi_version": "3.17.0",
@@ -108557,7 +108726,7 @@
    "oral",
    "ai-draft"
   ],
-  "today": "2026-11-20",
+  "today": "2026-11-21",
   "tree": "Konecny"
  },
  "notes": {
@@ -138528,6 +138697,44 @@
    "tags": [],
    "text": "Transcription (as written): Enumerated 15 June 1900, Manitowoc City, Ward 4, Wisconsin, ED 74, sheet 12B. North 10th Street, house no. 532, family 260. Line 71: Wacek, Anton, Head, W M, May 1866, 34, M, 11, Bohemia, Bohemia, Bohemia. Line 72: —— Anna, Wife, W F, July 1871, 28, M, 11, mother of 4 children, 4 living, Wisconsin, Bohemia, Bohemia. Line 73: —— Edward, Son, W M, Jan 1890, 10, S, Wisconsin, Bohemia, Wisconsin. Line 74: —— Emma, Daughter, W F, Oct 1891, 8, S, Wisconsin, Bohemia, Wisconsin. Line 75: —— Lillie, Daughter, W F, Mar 1893, 6, S, Wisconsin, Bohemia, Wisconsin. Line 76: —— Ella, Daughter, W F, Feb 1900, 3/12, S, Wisconsin, Bohemia, Wisconsin.",
    "type": "Transcript"
+  },
+  "N1996": {
+   "attached_to": [
+    {
+     "id": "C1320",
+     "type": "citation"
+    }
+   ],
+   "change": 1795186803,
+   "flags": [],
+   "handle": "1053beb78e965253549582ee43c2",
+   "html": "<p>Transcription (as written): Mrs. Carrie Wacek, 83, of Hamilton Memorial Home, Two Rivers, died Saturday afternoon at the home. ... Mrs. Wacek, nee Carrie Mertens, was born Aug. 18, 1891, at Two Rivers, daughter of the late William and Catherine Smith Mertens. She was married to Edward Wacek Feb. 14, 1911, at Two Rivers. He preceded her in death in 1960. ... Herald Times Reporter, Monday, June 16, 1975 P.3</p>",
+   "id": "N1996",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Mrs. Carrie Wacek, 83, of Hamilton Memorial Home, Two Rivers, died Saturday afternoon at the home. ... Mrs. Wacek, nee Carrie Mertens, was born Aug. 18, 1891, at Two Rivers, daughter of the late William and Catherine Smith Mertens. She was married to Edward Wacek Feb. 14, 1911, at Two Rivers. He preceded her in death in 1960. ... Herald Times Reporter, Monday, June 16, 1975 P.3",
+   "type": "Transcript"
+  },
+  "N1997": {
+   "attached_to": [
+    {
+     "id": "C1320",
+     "type": "citation"
+    }
+   ],
+   "change": 1795186803,
+   "flags": [],
+   "handle": "1053beb7920f37d7e13259b1815a",
+   "html": "<p>2026-11-20 (karel): Ancestry profile 212817394020 (tree 208290233, https://www.ancestry.com/family-tree/person/tree/208290233/person/212817394020/facts, checked 20 Nov 2026) shows Carrie Wacek, F, birth 18 Aug 1891 Two Rivers, death Jun 1975 Two Rivers, spouse Edward A. Wacek 212817191191 (Gramps I0420); this obituary source was attached on Ancestry to her Birth and Death on 20 Nov 2026 (her Birth also carries the 1920, 1930 and 1940 census records there). Obituary (Find a Grave 111849813, page re-read 20 Nov 2026): &quot;Mrs. Wacek, nee Carrie Mertens, was born Aug. 18, 1891, at Two Rivers ... She was married to Edward Wacek Feb. 14, 1911, at Two Rivers. He preceded her in death in 1960.&quot; Edward&#x27;s death 17 Oct 1960 (I0420) matches. Entered under birth surname Mertens with married surname Wacek. Death entered as Jun 1975 as Ancestry shows it; the obituary of Monday 16 Jun 1975 says she &quot;died Saturday afternoon&quot;, i.e. 14 Jun 1975 (not entered as a field). Checked 20 Nov 2026 export (827f232): I0420 has no family as a partner, so the spouse link makes a new family, not a duplicate. Marriage 14 Feb 1911 not entered (no Marriage fact on Ancestry yet).<br>Conflicts: [&quot;Find a Grave shows the name as &#x27;Carrie B Mertens Wacek&#x27;; the obituary gives no middle initial, so none is entered. Ancestry parents are hints only (William Mertens / Catharine Martens) and are not linked.&quot;]</p>",
+   "id": "N1997",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-20 (karel): Ancestry profile 212817394020 (tree 208290233, https://www.ancestry.com/family-tree/person/tree/208290233/person/212817394020/facts, checked 20 Nov 2026) shows Carrie Wacek, F, birth 18 Aug 1891 Two Rivers, death Jun 1975 Two Rivers, spouse Edward A. Wacek 212817191191 (Gramps I0420); this obituary source was attached on Ancestry to her Birth and Death on 20 Nov 2026 (her Birth also carries the 1920, 1930 and 1940 census records there). Obituary (Find a Grave 111849813, page re-read 20 Nov 2026): \"Mrs. Wacek, nee Carrie Mertens, was born Aug. 18, 1891, at Two Rivers ... She was married to Edward Wacek Feb. 14, 1911, at Two Rivers. He preceded her in death in 1960.\" Edward's death 17 Oct 1960 (I0420) matches. Entered under birth surname Mertens with married surname Wacek. Death entered as Jun 1975 as Ancestry shows it; the obituary of Monday 16 Jun 1975 says she \"died Saturday afternoon\", i.e. 14 Jun 1975 (not entered as a field). Checked 20 Nov 2026 export (827f232): I0420 has no family as a partner, so the spouse link makes a new family, not a duplicate. Marriage 14 Feb 1911 not entered (no Marriage fact on Ancestry yet).\nConflicts: [\"Find a Grave shows the name as 'Carrie B Mertens Wacek'; the obituary gives no middle initial, so none is entered. Ancestry parents are hints only (William Mertens / Catharine Martens) and are not linked.\"]",
+   "type": "Research"
   }
  },
  "people": {
@@ -171003,7 +171210,7 @@
     "type": "Birth",
     "year": 1890
    },
-   "change": 1795014004,
+   "change": 1795186803,
    "citations": [
     "C1319"
    ],
@@ -171033,7 +171240,9 @@
      "role": "Primary"
     }
    ],
-   "families": [],
+   "families": [
+    "F0195"
+   ],
    "flags": [
     "agent-proposed"
    ],
@@ -171070,6 +171279,108 @@
    "urls": [],
    "xref": {
     "ancestry": "212817191191"
+   }
+  },
+  "I0421": {
+   "alt_names": [
+    {
+     "call": "",
+     "date": null,
+     "display": "Carrie Wacek",
+     "first": "Carrie",
+     "nick": "",
+     "prefix": "",
+     "sort": "Wacek, Carrie",
+     "suffix": "",
+     "surname": "Wacek",
+     "title": "",
+     "type": "Married Name"
+    }
+   ],
+   "attributes": [],
+   "birth": {
+    "date": {
+     "day": 18,
+     "iso": "1891-08-18",
+     "modifier": null,
+     "month": 8,
+     "quality": null,
+     "sort": 2411963,
+     "text": "18 August 1891",
+     "year": 1891
+    },
+    "event": "E1621",
+    "place": "P0015",
+    "type": "Birth",
+    "year": 1891
+   },
+   "change": 1795186803,
+   "citations": [
+    "C1320"
+   ],
+   "death": {
+    "date": {
+     "day": null,
+     "iso": "1975-06",
+     "modifier": null,
+     "month": 6,
+     "quality": null,
+     "sort": 2442565,
+     "text": "June 1975",
+     "year": 1975
+    },
+    "event": "E1622",
+    "place": "P0015",
+    "type": "Death",
+    "year": 1975
+   },
+   "events": [
+    {
+     "ref": "E1621",
+     "role": "Primary"
+    },
+    {
+     "ref": "E1622",
+     "role": "Primary"
+    }
+   ],
+   "families": [
+    "F0195"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "gender": "F",
+   "handle": "1053beb7a661cb4ba4efec0d570",
+   "id": "I0421",
+   "media": [],
+   "name": {
+    "call": "",
+    "display": "Carrie Mertens",
+    "first": "Carrie",
+    "nick": "",
+    "prefix": "",
+    "sort": "Mertens, Carrie",
+    "suffix": "",
+    "surname": "Mertens",
+    "title": "",
+    "type": "Birth Name"
+   },
+   "notes": [],
+   "parents": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "urls": [],
+   "xref": {
+    "ancestry": "212817394020"
    }
   }
  },
@@ -180470,6 +180781,14 @@
    "notes": [],
    "type": "Archive",
    "urls": []
+  },
+  "R0032": {
+   "handle": "1053beb786d34470514ce6ac1090",
+   "id": "R0032",
+   "name": "Find a Grave (transcription)",
+   "notes": [],
+   "type": "Archive",
+   "urls": []
   }
  },
  "sources": {
@@ -187980,6 +188299,39 @@
     "agent-proposed"
    ],
    "title": "1900 United States Census, Population Schedule, Wisconsin, Manitowoc County, Manitowoc City, Ward 4, ED 74, sheet 12B, NARA T623 roll 1797"
+  },
+  "S0236": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1320"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1053beb78a7f2c411c769d6435c3",
+   "id": "S0236",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0032"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "Herald Times Reporter (Manitowoc), obituary of Mrs. Carrie Wacek, 16 Jun 1975, p. 3, transcribed on Find a Grave memorial 111849813"
   }
  }
 }
