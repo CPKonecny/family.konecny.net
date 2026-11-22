@@ -41642,6 +41642,222 @@
    ],
    "tier": "index",
    "url": "https://www.findagrave.com/memorial/111849813"
+  },
+  "C1321": {
+   "ancestry_record_id": "",
+   "change": 1795275003,
+   "cited_by": [
+    {
+     "id": "E1623",
+     "type": "event"
+    },
+    {
+     "id": "E1624",
+     "type": "event"
+    },
+    {
+     "id": "I0422",
+     "type": "person"
+    }
+   ],
+   "confidence": 2,
+   "date": {
+    "day": 21,
+    "iso": "1990-07-21",
+    "modifier": null,
+    "month": 7,
+    "quality": null,
+    "sort": 2448094,
+    "text": "21 July 1990",
+    "year": 1990
+   },
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1053f349d13f3ea8d6361acb2def",
+   "id": "C1321",
+   "information": "secondary",
+   "media": [],
+   "notes": [
+    "N1998",
+    "N1999"
+   ],
+   "page": "Certificate 1990-MN-022878",
+   "proposal_file": "2026-11-21_100500_adair-floyd_add-person.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0237",
+   "source_type": "derivative",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "index",
+   "url": "https://www.mnhs.org/search/people"
+  },
+  "C1322": {
+   "ancestry_record_id": "",
+   "change": 1795275004,
+   "cited_by": [
+    {
+     "id": "E1625",
+     "type": "event"
+    },
+    {
+     "id": "E1626",
+     "type": "event"
+    },
+    {
+     "id": "I0423",
+     "type": "person"
+    }
+   ],
+   "confidence": 2,
+   "date": {
+    "day": 5,
+    "iso": "1988-01-05",
+    "modifier": null,
+    "month": 1,
+    "quality": null,
+    "sort": 2447166,
+    "text": "5 January 1988",
+    "year": 1988
+   },
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1053f34a03e87055b9c682d23ed4",
+   "id": "C1322",
+   "information": "secondary",
+   "media": [],
+   "notes": [
+    "N2000",
+    "N2001"
+   ],
+   "page": "Certificate 1988-MN-001948",
+   "proposal_file": "2026-11-21_100510_sodergren-vernon_add-person.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0238",
+   "source_type": "derivative",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "index",
+   "url": "https://www.mnhs.org/search/people"
+  },
+  "C1323": {
+   "ancestry_record_id": "93320757",
+   "change": 1795275005,
+   "cited_by": [
+    {
+     "id": "I0422",
+     "type": "person"
+    }
+   ],
+   "confidence": 3,
+   "date": {
+    "day": 5,
+    "iso": "1950-04-05",
+    "modifier": null,
+    "month": 4,
+    "quality": null,
+    "sort": 2433377,
+    "text": "5 April 1950",
+    "year": 1950
+   },
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1053f34a3a7d76801c841b130ac",
+   "id": "C1323",
+   "information": "primary",
+   "media": [
+    {
+     "ref": "O0240"
+    }
+   ],
+   "notes": [
+    "N2002",
+    "N2003"
+   ],
+   "page": "1 Apr 1950; Minnesota, Freeborn Co., Albert Lea City, ED 24-6, sheet 9, lines 6-8 (Floyd C. Adair household); NARA image 43290879-Minnesota-158485-0010",
+   "proposal_file": "2026-11-21_100502_adair-floyd_census-1950-citation.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0239",
+   "source_type": "original",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "record",
+   "url": "https://1950census.archives.gov/iiif/2/1950census%2F43290879-Minnesota%2F43290879-Minnesota-158485%2F43290879-Minnesota-158485-0010.jpg/full/full/0/default.jpg"
+  },
+  "C1324": {
+   "ancestry_record_id": "92669748",
+   "change": 1795275006,
+   "cited_by": [
+    {
+     "id": "I0423",
+     "type": "person"
+    }
+   ],
+   "confidence": 3,
+   "date": {
+    "day": 11,
+    "iso": "1950-04-11",
+    "modifier": null,
+    "month": 4,
+    "quality": null,
+    "sort": 2433383,
+    "text": "11 April 1950",
+    "year": 1950
+   },
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1053f34a57be4fec90c3dd967605",
+   "id": "C1324",
+   "information": "primary",
+   "media": [
+    {
+     "ref": "O0241"
+    }
+   ],
+   "notes": [
+    "N2004",
+    "N2005"
+   ],
+   "page": "1 Apr 1950; Minnesota, Ramsey Co., St. Paul, ED 90-230, sheet 12, lines 27-30 (Vernon Sodergren household); NARA image 43290879-Minnesota-093953-0013",
+   "proposal_file": "2026-11-21_100511_sodergren-vernon_census-1950-citation.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0240",
+   "source_type": "original",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "record",
+   "url": "https://1950census.archives.gov/iiif/2/1950census%2F43290879-Minnesota%2F43290879-Minnesota-093953%2F43290879-Minnesota-093953-0013.jpg/full/full/0/default.jpg"
   }
  },
  "events": {
@@ -93972,6 +94188,178 @@
     "agent-proposed"
    ],
    "type": "Death"
+  },
+  "E1623": {
+   "attributes": [],
+   "change": 1795275003,
+   "citations": [
+    "C1321"
+   ],
+   "date": {
+    "day": 4,
+    "iso": "1902-05-04",
+    "modifier": null,
+    "month": 5,
+    "quality": null,
+    "sort": 2415874,
+    "text": "4 May 1902",
+    "year": 1902
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1053f349db1365a6ac7a56b118f4",
+   "id": "E1623",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0422",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0343",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Birth"
+  },
+  "E1624": {
+   "attributes": [],
+   "change": 1795275003,
+   "citations": [
+    "C1321"
+   ],
+   "date": {
+    "day": 21,
+    "iso": "1990-07-21",
+    "modifier": null,
+    "month": 7,
+    "quality": null,
+    "sort": 2448094,
+    "text": "21 July 1990",
+    "year": 1990
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1053f349e16261ae61b34f220385",
+   "id": "E1624",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0422",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0285",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Death"
+  },
+  "E1625": {
+   "attributes": [],
+   "change": 1795275004,
+   "citations": [
+    "C1322"
+   ],
+   "date": {
+    "day": 3,
+    "iso": "1907-05-03",
+    "modifier": null,
+    "month": 5,
+    "quality": null,
+    "sort": 2417699,
+    "text": "3 May 1907",
+    "year": 1907
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1053f34a08693d1131e3dbf97684",
+   "id": "E1625",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0423",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0283",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Birth"
+  },
+  "E1626": {
+   "attributes": [],
+   "change": 1795275004,
+   "citations": [
+    "C1322"
+   ],
+   "date": {
+    "day": 5,
+    "iso": "1988-01-05",
+    "modifier": null,
+    "month": 1,
+    "quality": null,
+    "sort": 2447166,
+    "text": "5 January 1988",
+    "year": 1988
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1053f34a0dfe1cc3625dd554b4fb",
+   "id": "E1626",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0423",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0339",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Death"
   }
  },
  "families": {
@@ -100500,6 +100888,60 @@
    "id": "F0195",
    "media": [],
    "mother": "I0421",
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Married"
+  },
+  "F0196": {
+   "attributes": [],
+   "change": 1795275003,
+   "children": [],
+   "citations": [],
+   "events": [],
+   "father": "I0422",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1053f349ef9d92673697472ef45",
+   "id": "F0196",
+   "media": [],
+   "mother": "I0410",
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Married"
+  },
+  "F0197": {
+   "attributes": [],
+   "change": 1795275005,
+   "children": [],
+   "citations": [],
+   "events": [],
+   "father": "I0423",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1053f34a1a607866c31dd08dc9a2",
+   "id": "F0197",
+   "media": [],
+   "mother": "I0411",
    "notes": [],
    "provenance": [
     "agent-karel",
@@ -108677,6 +109119,72 @@
     "agent-karel",
     "agent-proposed"
    ]
+  },
+  "O0240": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1323",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-21_100502_adair-floyd_census-1950-citation.jpg"
+   },
+   "checksum": "09d37f7f2a2e461bd8c616e4fdd1fc5b",
+   "citations": [],
+   "date": null,
+   "desc": "1950 United States Census, Population Schedule, Minnesota, Freeborn County, Albert Lea city, ED 24-6, sheet 9 — 1 Apr 1950; Minnesota, Freeborn Co., Albert Lea City, ED 24-6, sheet 9, lines 6-8 (Floyd C. Adair household); NARA image 43290879-Minnesota-158485-0010",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1053f34a31c1ade477dbb04d471",
+   "id": "O0240",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0240",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ]
+  },
+  "O0241": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1324",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-21_100511_sodergren-vernon_census-1950-citation.jpg"
+   },
+   "checksum": "dcc68e79f61e2854283f87156ea48cfb",
+   "citations": [],
+   "date": null,
+   "desc": "1950 United States Census, Population Schedule, Minnesota, Ramsey County, St. Paul, ED 90-230, sheet 12 — 1 Apr 1950; Minnesota, Ramsey Co., St. Paul, ED 90-230, sheet 12, lines 27-30 (Vernon Sodergren household); NARA image 43290879-Minnesota-093953-0013",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1053f34a4f9544e4107bc1ce5203",
+   "id": "O0241",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0241",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ]
   }
  },
  "meta": {
@@ -108688,21 +109196,21 @@
    "very high"
   ],
   "counts": {
-   "citations": 1267,
-   "events": 1451,
-   "families": 187,
-   "media": 224,
-   "notes": 1402,
-   "people": 418,
-   "places": 332,
+   "citations": 1271,
+   "events": 1455,
+   "families": 189,
+   "media": 226,
+   "notes": 1410,
+   "people": 420,
+   "places": 333,
    "repositories": 33,
-   "sources": 231
+   "sources": 235
   },
   "counts_people": {
-   "full": 350,
+   "full": 352,
    "living": 68
   },
-  "generated": "2026-11-21T08:16:56+00:00",
+  "generated": "2026-11-22T08:16:56+00:00",
   "generator": "gramps_export.py 0.3.0",
   "gramps_version": "6.0.8",
   "gramps_webapi_version": "3.17.0",
@@ -108726,7 +109234,7 @@
    "oral",
    "ai-draft"
   ],
-  "today": "2026-11-21",
+  "today": "2026-11-22",
   "tree": "Konecny"
  },
  "notes": {
@@ -138734,6 +139242,158 @@
    "review": "unreviewed",
    "tags": [],
    "text": "2026-11-20 (karel): Ancestry profile 212817394020 (tree 208290233, https://www.ancestry.com/family-tree/person/tree/208290233/person/212817394020/facts, checked 20 Nov 2026) shows Carrie Wacek, F, birth 18 Aug 1891 Two Rivers, death Jun 1975 Two Rivers, spouse Edward A. Wacek 212817191191 (Gramps I0420); this obituary source was attached on Ancestry to her Birth and Death on 20 Nov 2026 (her Birth also carries the 1920, 1930 and 1940 census records there). Obituary (Find a Grave 111849813, page re-read 20 Nov 2026): \"Mrs. Wacek, nee Carrie Mertens, was born Aug. 18, 1891, at Two Rivers ... She was married to Edward Wacek Feb. 14, 1911, at Two Rivers. He preceded her in death in 1960.\" Edward's death 17 Oct 1960 (I0420) matches. Entered under birth surname Mertens with married surname Wacek. Death entered as Jun 1975 as Ancestry shows it; the obituary of Monday 16 Jun 1975 says she \"died Saturday afternoon\", i.e. 14 Jun 1975 (not entered as a field). Checked 20 Nov 2026 export (827f232): I0420 has no family as a partner, so the spouse link makes a new family, not a duplicate. Marriage 14 Feb 1911 not entered (no Marriage fact on Ancestry yet).\nConflicts: [\"Find a Grave shows the name as 'Carrie B Mertens Wacek'; the obituary gives no middle initial, so none is entered. Ancestry parents are hints only (William Mertens / Catharine Martens) and are not linked.\"]",
+   "type": "Research"
+  },
+  "N1998": {
+   "attached_to": [
+    {
+     "id": "C1321",
+     "type": "citation"
+    }
+   ],
+   "change": 1795275002,
+   "flags": [],
+   "handle": "1053f349caeb22f6a49934aa3140",
+   "html": "<p>Transcription (as written): Adair, Floyd C. Shorty | death 1990-07-21 | Freeborn County | birth May 4 1902 | birthplace OUT OF STATE | mother&#x27;s maiden name PRILL | certificate 1990-MN-022878</p>",
+   "id": "N1998",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Adair, Floyd C. Shorty | death 1990-07-21 | Freeborn County | birth May 4 1902 | birthplace OUT OF STATE | mother's maiden name PRILL | certificate 1990-MN-022878",
+   "type": "Transcript"
+  },
+  "N1999": {
+   "attached_to": [
+    {
+     "id": "C1321",
+     "type": "citation"
+    }
+   ],
+   "change": 1795275003,
+   "flags": [],
+   "handle": "1053f349ce266656a7e2dd679513",
+   "html": "<p>2026-11-21 (karel): Ancestry profile 212817587535 (tree 208290233, created 21 Nov 2026) shows Floyd Charles Adair, M, birth 4 May 1902 Nebraska, USA, death 21 Jul 1990 Freeborn, Minnesota, spouse Florence Marie Hansen 212815368078 (Gramps I0410); the 1950 census (Ancestry record 93320757) is attached there and shows in his Sources list. Minnesota death index row (MNHS People Records Search API, read 21 Nov 2026): &quot;Floyd C. Shorty Adair&quot;, died 21 Jul 1990 Freeborn County, born May 4 1902, birthplace OUT OF STATE, mother&#x27;s maiden name PRILL, certificate 1990-MN-022878; birth and death are entered at day precision from it. Birthplace Nebraska is from the 1950 census image (sheet 9, line 6: &quot;Adair, Floyd C. | Head | 47 | mar | Nebraska&quot;), filed with companion 100502. Wife: same sheet line 7 &quot;Florence M. | wife | 41&quot;; Florence I0410 was born 20 Apr 1908, so 41 on 1 Apr 1950 fits. Find a Grave 266062924 (Graceland Cemetery, Albert Lea; compiled, not filed) names his parents Andrew Clay Adair and Emma Amelia Prill (matches index PRILL) and spouse Florence Marie Hansen Adair. Checked 21 Nov 2026 export (generated 3:16 AM ET, 418 people / 187 families): I0410 has no family as a partner (families: [], child of F0176 only), so the spouse link makes a new family, not a duplicate. Same household batch as 100501 (son Dennis) and 100502/100503 (census citations).<br>Conflicts: [&#x27;Nickname &quot;Shorty&quot; appears only in the death index middle-name field; not entered (not on the Ancestry profile).&#x27;, &#x27;Ancestry\\&#x27;s index for record 93320757 reads Birth Place &quot;35&quot; and Birth Date &quot;abt 1903&quot;; the image itself reads &quot;Nebraska&quot; and age 47 (abt 1902-1903), consistent with 4 May 1902.&#x27;, &#x27;Marriage (1938 per Find a Grave only) not entered.&#x27;]</p>",
+   "id": "N1999",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-21 (karel): Ancestry profile 212817587535 (tree 208290233, created 21 Nov 2026) shows Floyd Charles Adair, M, birth 4 May 1902 Nebraska, USA, death 21 Jul 1990 Freeborn, Minnesota, spouse Florence Marie Hansen 212815368078 (Gramps I0410); the 1950 census (Ancestry record 93320757) is attached there and shows in his Sources list. Minnesota death index row (MNHS People Records Search API, read 21 Nov 2026): \"Floyd C. Shorty Adair\", died 21 Jul 1990 Freeborn County, born May 4 1902, birthplace OUT OF STATE, mother's maiden name PRILL, certificate 1990-MN-022878; birth and death are entered at day precision from it. Birthplace Nebraska is from the 1950 census image (sheet 9, line 6: \"Adair, Floyd C. | Head | 47 | mar | Nebraska\"), filed with companion 100502. Wife: same sheet line 7 \"Florence M. | wife | 41\"; Florence I0410 was born 20 Apr 1908, so 41 on 1 Apr 1950 fits. Find a Grave 266062924 (Graceland Cemetery, Albert Lea; compiled, not filed) names his parents Andrew Clay Adair and Emma Amelia Prill (matches index PRILL) and spouse Florence Marie Hansen Adair. Checked 21 Nov 2026 export (generated 3:16 AM ET, 418 people / 187 families): I0410 has no family as a partner (families: [], child of F0176 only), so the spouse link makes a new family, not a duplicate. Same household batch as 100501 (son Dennis) and 100502/100503 (census citations).\nConflicts: ['Nickname \"Shorty\" appears only in the death index middle-name field; not entered (not on the Ancestry profile).', 'Ancestry\\'s index for record 93320757 reads Birth Place \"35\" and Birth Date \"abt 1903\"; the image itself reads \"Nebraska\" and age 47 (abt 1902-1903), consistent with 4 May 1902.', 'Marriage (1938 per Find a Grave only) not entered.']",
+   "type": "Research"
+  },
+  "N2000": {
+   "attached_to": [
+    {
+     "id": "C1322",
+     "type": "citation"
+    }
+   ],
+   "change": 1795275004,
+   "flags": [],
+   "handle": "1053f349fe312966c47df0150659",
+   "html": "<p>Transcription (as written): Sodergren, Vernon A. | death 1988-01-05 | Ramsey County | birth May 3 1907 | birthplace MINNESOTA | mother&#x27;s maiden name WALSH | certificate 1988-MN-001948</p>",
+   "id": "N2000",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Sodergren, Vernon A. | death 1988-01-05 | Ramsey County | birth May 3 1907 | birthplace MINNESOTA | mother's maiden name WALSH | certificate 1988-MN-001948",
+   "type": "Transcript"
+  },
+  "N2001": {
+   "attached_to": [
+    {
+     "id": "C1322",
+     "type": "citation"
+    }
+   ],
+   "change": 1795275004,
+   "flags": [],
+   "handle": "1053f34a010c6da4dea8df70cb32",
+   "html": "<p>2026-11-21 (karel): Ancestry profile 212817587641 (tree 208290233, created 21 Nov 2026) shows Vernon Alfred Sodergren, M, birth 3 May 1907 Minnesota, death 5 Jan 1988 Ramsey, Minnesota, spouse Ina Jonette Anderson 212815368678 (Gramps I0411); the 1950 census (Ancestry record 92669748) is attached there. Minnesota death index row (MNHS API, read 21 Nov 2026): &quot;Vernon A. Sodergren&quot;, died 5 Jan 1988 Ramsey County, born May 3 1907, MINNESOTA, mother&#x27;s maiden name WALSH, certificate 1988-MN-001948; dates entered at day precision from it. 1950 census, St. Paul, ED 90-230, sheet 12, lines 27-28: &quot;Sodergren, Vernon | Head | 42 | Mar | Minnesota&quot;; &quot;Ina | Wife | 41 | Mar | Minnesota&quot; (companion 100511). Find a Grave 199195685 (Elmhurst Cemetery, St. Paul; compiled, not filed) names his mother Hanora A. Walsh (matches index WALSH) and spouse Ina Jonette Anderson Sodergren. Checked 21 Nov 2026 export (generated 3:16 AM ET, 418/187): I0411 has no family as a partner (families: [], child of F0156 only), so the spouse link makes a new family, not a duplicate. Children Robert (1938-1997) and Patricia (1943-2022) are not proposed.<br>Conflicts: [&#x27;Ina I0411 is recorded as born 4 Jul 1907, so 42 on 1 Apr 1950; the census gives 41.&#x27;]</p>",
+   "id": "N2001",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-21 (karel): Ancestry profile 212817587641 (tree 208290233, created 21 Nov 2026) shows Vernon Alfred Sodergren, M, birth 3 May 1907 Minnesota, death 5 Jan 1988 Ramsey, Minnesota, spouse Ina Jonette Anderson 212815368678 (Gramps I0411); the 1950 census (Ancestry record 92669748) is attached there. Minnesota death index row (MNHS API, read 21 Nov 2026): \"Vernon A. Sodergren\", died 5 Jan 1988 Ramsey County, born May 3 1907, MINNESOTA, mother's maiden name WALSH, certificate 1988-MN-001948; dates entered at day precision from it. 1950 census, St. Paul, ED 90-230, sheet 12, lines 27-28: \"Sodergren, Vernon | Head | 42 | Mar | Minnesota\"; \"Ina | Wife | 41 | Mar | Minnesota\" (companion 100511). Find a Grave 199195685 (Elmhurst Cemetery, St. Paul; compiled, not filed) names his mother Hanora A. Walsh (matches index WALSH) and spouse Ina Jonette Anderson Sodergren. Checked 21 Nov 2026 export (generated 3:16 AM ET, 418/187): I0411 has no family as a partner (families: [], child of F0156 only), so the spouse link makes a new family, not a duplicate. Children Robert (1938-1997) and Patricia (1943-2022) are not proposed.\nConflicts: ['Ina I0411 is recorded as born 4 Jul 1907, so 42 on 1 Apr 1950; the census gives 41.']",
+   "type": "Research"
+  },
+  "N2002": {
+   "attached_to": [
+    {
+     "id": "C1323",
+     "type": "citation"
+    }
+   ],
+   "change": 1795275005,
+   "flags": [],
+   "handle": "1053f34a29464bcdfb0a48f1a60",
+   "html": "<p>Transcription (as written): Sheet header: State Minn.; County Freeborn; Place Albert Lea City; E.D. 24-6; sheet 9; enumerated April 5, 1950 by Mary K. Whelan. Line 6: Adair, Floyd C. | Head | W | M | 47 | mar | Nebraska. Line 7: ——, Florence M. | wife | W | F | 41 | mar | Minn. Line 8: ——, Dennis C. | son | W | M | 6 | nev | Minn.</p>",
+   "id": "N2002",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Sheet header: State Minn.; County Freeborn; Place Albert Lea City; E.D. 24-6; sheet 9; enumerated April 5, 1950 by Mary K. Whelan. Line 6: Adair, Floyd C. | Head | W | M | 47 | mar | Nebraska. Line 7: ——, Florence M. | wife | W | F | 41 | mar | Minn. Line 8: ——, Dennis C. | son | W | M | 6 | nev | Minn.",
+   "type": "Transcript"
+  },
+  "N2003": {
+   "attached_to": [
+    {
+     "id": "C1323",
+     "type": "citation"
+    }
+   ],
+   "change": 1795275005,
+   "flags": [],
+   "handle": "1053f34a2cda297d300e803f21c1",
+   "html": "<p>2026-11-21 (karel): Record-tier evidence for Floyd Adair (212817587535; companion to add_person 100500, applied after it): Floyd C., head, line 6. The 1950 United States Federal Census record 93320757 (Albert Lea, Floyd age 47) is attached on Ancestry to Floyd, Dennis and Florence (Florence also has a 1950 Residence fact citing it); verified on their Facts pages 21 Nov 2026 (Sources list shows &quot;1950 United States Federal Census&quot;). Image is a crop of the NARA sheet (header plus lines 6-8 only; line 9, a 4-year-old daughter presumed living, is left out).<br>Conflicts: [&#x27;Ancestry\\&#x27;s index for this record reads Birth Place &quot;35&quot; and Birth Date &quot;abt 1903&quot; for Floyd; the image reads &quot;Nebraska&quot;, age 47.&#x27;, &quot;The 21 Nov research packet gave the household as lines 7-9; the sheet&#x27;s own line numbers are 6 (Floyd), 7 (Florence), 8 (Dennis).&quot;]</p>",
+   "id": "N2003",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-21 (karel): Record-tier evidence for Floyd Adair (212817587535; companion to add_person 100500, applied after it): Floyd C., head, line 6. The 1950 United States Federal Census record 93320757 (Albert Lea, Floyd age 47) is attached on Ancestry to Floyd, Dennis and Florence (Florence also has a 1950 Residence fact citing it); verified on their Facts pages 21 Nov 2026 (Sources list shows \"1950 United States Federal Census\"). Image is a crop of the NARA sheet (header plus lines 6-8 only; line 9, a 4-year-old daughter presumed living, is left out).\nConflicts: ['Ancestry\\'s index for this record reads Birth Place \"35\" and Birth Date \"abt 1903\" for Floyd; the image reads \"Nebraska\", age 47.', \"The 21 Nov research packet gave the household as lines 7-9; the sheet's own line numbers are 6 (Floyd), 7 (Florence), 8 (Dennis).\"]",
+   "type": "Research"
+  },
+  "N2004": {
+   "attached_to": [
+    {
+     "id": "C1324",
+     "type": "citation"
+    }
+   ],
+   "change": 1795275006,
+   "flags": [],
+   "handle": "1053f34a49522c0e0185b25998f",
+   "html": "<p>Transcription (as written): Sheet header: State Minnesota; County Ramsey; Place St. Paul; E.D. 90-230; sheet 12; enumerated April 11, 1950. Line 27: Sodergren, Vernon | Head | W | M | 42 | Mar | Minnesota. Line 28: ——, Ina | Wife | W | F | 41 | Mar | Minnesota. Line 29: ——, Robert | Son | W | M | 12 | Nev | North Dakota. Line 30: ——, Patricia | Daughter | W | F | 7 | Nev | North Dakota.</p>",
+   "id": "N2004",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Sheet header: State Minnesota; County Ramsey; Place St. Paul; E.D. 90-230; sheet 12; enumerated April 11, 1950. Line 27: Sodergren, Vernon | Head | W | M | 42 | Mar | Minnesota. Line 28: ——, Ina | Wife | W | F | 41 | Mar | Minnesota. Line 29: ——, Robert | Son | W | M | 12 | Nev | North Dakota. Line 30: ——, Patricia | Daughter | W | F | 7 | Nev | North Dakota.",
+   "type": "Transcript"
+  },
+  "N2005": {
+   "attached_to": [
+    {
+     "id": "C1324",
+     "type": "citation"
+    }
+   ],
+   "change": 1795275006,
+   "flags": [],
+   "handle": "1053f34a4c4836127f1986300a80",
+   "html": "<p>2026-11-21 (karel): Record-tier evidence for Vernon Alfred Sodergren (212817587641; companion to add_person 100510, applied after it): head, line 27, wife Ina line 28. The 1950 United States Federal Census record 92669748 (St Paul, age 42) is attached on Ancestry to Vernon and Ina (Ina also has a 1950 Residence fact citing it); verified on their Facts pages 21 Nov 2026. Image is a crop of the NARA sheet (header plus lines 27-30).</p>",
+   "id": "N2005",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-21 (karel): Record-tier evidence for Vernon Alfred Sodergren (212817587641; companion to add_person 100510, applied after it): head, line 27, wife Ina line 28. The 1950 United States Federal Census record 92669748 (St Paul, age 42) is attached on Ancestry to Vernon and Ina (Ina also has a 1950 Residence fact citing it); verified on their Facts pages 21 Nov 2026. Image is a crop of the NARA sheet (header plus lines 27-30).",
    "type": "Research"
   }
  },
@@ -170257,7 +170917,7 @@
     "type": "Birth",
     "year": 1908
    },
-   "change": 1794409209,
+   "change": 1795275003,
    "citations": [
     "C1293",
     "C1304"
@@ -170288,7 +170948,9 @@
      "role": "Primary"
     }
    ],
-   "families": [],
+   "families": [
+    "F0196"
+   ],
    "flags": [
     "agent-proposed"
    ],
@@ -170360,7 +171022,7 @@
     "type": "Birth",
     "year": 1907
    },
-   "change": 1794409210,
+   "change": 1795275005,
    "citations": [
     "C1294",
     "C1305"
@@ -170391,7 +171053,9 @@
      "role": "Primary"
     }
    ],
-   "families": [],
+   "families": [
+    "F0197"
+   ],
    "flags": [
     "agent-proposed"
    ],
@@ -171381,6 +172045,184 @@
    "urls": [],
    "xref": {
     "ancestry": "212817394020"
+   }
+  },
+  "I0422": {
+   "alt_names": [],
+   "attributes": [],
+   "birth": {
+    "date": {
+     "day": 4,
+     "iso": "1902-05-04",
+     "modifier": null,
+     "month": 5,
+     "quality": null,
+     "sort": 2415874,
+     "text": "4 May 1902",
+     "year": 1902
+    },
+    "event": "E1623",
+    "place": "P0343",
+    "type": "Birth",
+    "year": 1902
+   },
+   "change": 1795275006,
+   "citations": [
+    "C1321",
+    "C1323"
+   ],
+   "death": {
+    "date": {
+     "day": 21,
+     "iso": "1990-07-21",
+     "modifier": null,
+     "month": 7,
+     "quality": null,
+     "sort": 2448094,
+     "text": "21 July 1990",
+     "year": 1990
+    },
+    "event": "E1624",
+    "place": "P0285",
+    "type": "Death",
+    "year": 1990
+   },
+   "events": [
+    {
+     "ref": "E1623",
+     "role": "Primary"
+    },
+    {
+     "ref": "E1624",
+     "role": "Primary"
+    }
+   ],
+   "families": [
+    "F0196"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "gender": "M",
+   "handle": "1053f349e6f8276de1b2cdd99e05",
+   "id": "I0422",
+   "media": [],
+   "name": {
+    "call": "",
+    "display": "Floyd Charles Adair",
+    "first": "Floyd Charles",
+    "nick": "",
+    "prefix": "",
+    "sort": "Adair, Floyd Charles",
+    "suffix": "",
+    "surname": "Adair",
+    "title": "",
+    "type": "Birth Name"
+   },
+   "notes": [],
+   "parents": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "urls": [],
+   "xref": {
+    "ancestry": "212817587535"
+   }
+  },
+  "I0423": {
+   "alt_names": [],
+   "attributes": [],
+   "birth": {
+    "date": {
+     "day": 3,
+     "iso": "1907-05-03",
+     "modifier": null,
+     "month": 5,
+     "quality": null,
+     "sort": 2417699,
+     "text": "3 May 1907",
+     "year": 1907
+    },
+    "event": "E1625",
+    "place": "P0283",
+    "type": "Birth",
+    "year": 1907
+   },
+   "change": 1795275006,
+   "citations": [
+    "C1322",
+    "C1324"
+   ],
+   "death": {
+    "date": {
+     "day": 5,
+     "iso": "1988-01-05",
+     "modifier": null,
+     "month": 1,
+     "quality": null,
+     "sort": 2447166,
+     "text": "5 January 1988",
+     "year": 1988
+    },
+    "event": "E1626",
+    "place": "P0339",
+    "type": "Death",
+    "year": 1988
+   },
+   "events": [
+    {
+     "ref": "E1625",
+     "role": "Primary"
+    },
+    {
+     "ref": "E1626",
+     "role": "Primary"
+    }
+   ],
+   "families": [
+    "F0197"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "gender": "M",
+   "handle": "1053f34a133a1eb08877f3f39aaa",
+   "id": "I0423",
+   "media": [],
+   "name": {
+    "call": "",
+    "display": "Vernon Alfred Sodergren",
+    "first": "Vernon Alfred",
+    "nick": "",
+    "prefix": "",
+    "sort": "Sodergren, Vernon Alfred",
+    "suffix": "",
+    "surname": "Sodergren",
+    "title": "",
+    "type": "Birth Name"
+   },
+   "notes": [],
+   "parents": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "urls": [],
+   "xref": {
+    "ancestry": "212817587641"
    }
   }
  },
@@ -180523,6 +181365,38 @@
    ],
    "type": "Unknown",
    "urls": []
+  },
+  "P0343": {
+   "alt_names": [],
+   "citations": [],
+   "code": "",
+   "display": "Nebraska, USA",
+   "enclosed_by": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1053f349d5e04f085f2b36d8ae4c",
+   "hierarchy": [
+    "P0343"
+   ],
+   "id": "P0343",
+   "lat": null,
+   "long": null,
+   "media": [],
+   "name": "Nebraska, USA",
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed",
+    "needs-place"
+   ],
+   "type": "Unknown",
+   "urls": []
   }
  },
  "repositories": {
@@ -188332,6 +189206,138 @@
     "agent-proposed"
    ],
    "title": "Herald Times Reporter (Manitowoc), obituary of Mrs. Carrie Wacek, 16 Jun 1975, p. 3, transcribed on Find a Grave memorial 111849813"
+  },
+  "S0237": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1321"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1053f349c68f7620c836c9f24199",
+   "id": "S0237",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0026"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "Minnesota death index, 1904-2001: Floyd C. Shorty Adair, certificate 1990-MN-022878"
+  },
+  "S0238": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1322"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1053f349faa61af5f50946f29582",
+   "id": "S0238",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0026"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "Minnesota death index, 1904-2001: Vernon A. Sodergren, certificate 1988-MN-001948"
+  },
+  "S0239": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1323"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1053f34a2466c56e1ffae3ca98e",
+   "id": "S0239",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0010"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "1950 United States Census, Population Schedule, Minnesota, Freeborn County, Albert Lea city, ED 24-6, sheet 9"
+  },
+  "S0240": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1324"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1053f34a45061ad0c110054289c8",
+   "id": "S0240",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0010"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "1950 United States Census, Population Schedule, Minnesota, Ramsey County, St. Paul, ED 90-230, sheet 12"
   }
  }
 }
