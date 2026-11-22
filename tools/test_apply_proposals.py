@@ -734,6 +734,66 @@ def test_adoption_and_private_on_a_new_person(w, b):
     eq(w.get("families", fam)["private"], False, "the parents' family does not become private")
 
 
+
+def test_the_family_of_a_private_couple_is_private(w, b):
+    """22 Nov 2026: when the second of a new couple was added, the applier made their family public, and the add_family
+    that followed reused it and dropped its "private": true (and the marriage's). The shape of a real batch; invented names."""
+    fa, fa_anc = w.person("Orrin", "Brook", "M", born=1924, died=2006)
+    mo, mo_anc = w.person("Hedda", "Brook", "F", born=1925, died=1993)
+    parents = w.family(fa, mo)
+    son, wife = anc_id(), anc_id()
+    b.file("add_person", name="001-son", person=new_person(son, "Mattias", "Brook", "M", birth={"date": "1951"}, private=True),
+           citation=cit())
+    b.file("add_person", name="002-wife", person=new_person(wife, "Ilse", "Varga", "F", private=True),
+           relations={"spouse_ancestry_id": son}, citation=cit())
+    b.file("add_family", name="003-couple", family={"father_ancestry_id": son, "mother_ancestry_id": wife, "private": True,
+                                                    "marriage": {"date": "1990"}}, citation=cit())
+    b.file("update_family", name="004-son", family={"gramps_id": w.gid("families", parents)}, add_children=[{"ancestry_id": son}],
+           citation=cit())
+    b.run()
+    has(b.run("--held"), "[private]")
+    out = b.run("--approve", "all")
+    eq(out.count("APPLIED"), 4, out)
+    fams = w.families_of(w.by_anc(son)["handle"])
+    eq(len(fams), 1, "one family for the couple")
+    eq(fams[0]["private"], True, "the couple's family is private")
+    eq([w.get("events", r["ref"])["private"] for r in fams[0]["event_ref_list"]], [True], "and so is their marriage")
+    eq(w.get("families", parents)["private"], False, "the public parents' family stays public")
+    eq([c["ref"] for c in w.get("families", parents)["child_ref_list"]], [w.by_anc(son)["handle"]])
+
+
+def test_a_private_partner_makes_a_new_family_private(w, b):
+    """A new private husband for someone already in the tree, and the parents a new child names when one is private:
+    left public, either family would show on the site with a blank partner."""
+    pub, pub_anc = w.person("Ruthanne", "Calder", "F", born=None)
+    hus = anc_id()
+    b.file("add_person", name="001-husband", person=new_person(hus, "Tobias", "Hale", "M", private=True),
+           relations={"spouse_ancestry_id": pub_anc}, citation=cit())
+    dad, dad_anc = w.person("Edwin", "Marsh", "M", born=1949, died=2008)
+    mum, kid = anc_id(), anc_id()
+    b.file("add_person", name="002-mother", person=new_person(mum, "Wilma", "Marsh", "F", private=True), citation=cit())
+    b.file("add_person", name="003-child", person=new_person(kid, "Selma", "Marsh", "F", private=True),
+           relations={"father_ancestry_id": dad_anc, "mother_ancestry_id": mum}, citation=cit())
+    b.run()
+    out = b.approve_all()
+    eq(out.count("APPLIED"), 3, out)
+    eq([f["private"] for f in w.families_of(pub)], [True], "the public wife and her private husband")
+    eq([f["private"] for f in w.families_of(dad)], [True], "the father and the private mother of his child")
+
+
+def test_private_on_a_family_from_before_is_refused(w, b):
+    """An add_family may not quietly leave out what it asks for: "private": true on a family that was in the tree before
+    the run is set_private's job, so the file is rejected with that reason, and nothing of it stays."""
+    hu, hu_anc = w.person("Old", "Husband", "M", born=1850, died=1920)
+    wi, wi_anc = w.person("Old", "Wife", "F", born=1852, died=1925)
+    fam = w.family(hu, wi)
+    name = b.file("add_family", family={"father_ancestry_id": hu_anc, "mother_ancestry_id": wi_anc, "private": True,
+                                        "marriage": {"date": "1875"}}, citation=cit())
+    b.run()
+    b.approve_all()
+    eq(b.where(name), "rejected"); has(b.reason(name), "set_private")
+    eq((w.get("families", fam)["private"], w.get("families", fam)["event_ref_list"]), (False, []), "nothing half done")
+
 # ---------------------------------------------------------------- the approval gate
 def test_changes_wait_for_approval(w, b):
     per, anc = w.person("Joann", "Unknown", "F", born=1834, died=1918)

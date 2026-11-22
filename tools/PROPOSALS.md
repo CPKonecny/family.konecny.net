@@ -5,7 +5,7 @@ Nothing is typed into Gramps by an agent. A researcher writes one JSON file per 
 rejects it, or holds it for Chris. This page is the reference for those files. The applier is the
 judge: if this page and the applier disagree, tell Claude.
 
-Version: applier 0.3.1, 16 November 2026.
+Version: applier 0.3.2, 22 November 2026.
 
 ## Where a file goes, and when
 
@@ -141,7 +141,8 @@ The first four are required. The highest confidence each tier may claim: `record
   proposal of someone they depend on is rejected, they are rejected too. (Two new spouses who name
   each other are the exception: if the second fails, the first is already in, and the log carries a
   WARNING to link them later with `add_family`.)
-* `"private": true` marks the person and their birth and death events private.
+* `"private": true` marks the person and their birth and death events private. A family the applier
+  makes with them in it (with a spouse, or with the other parent of a child) is private too.
 
 ### add_family
 
@@ -160,8 +161,10 @@ Links people who are already in the tree. At least one parent; children are link
 }
 ```
 
-If the couple already has a family the children are added to it; otherwise the family is made
-(`private` is used only then; to change an existing family use `update_family`). Every ID given must
+If the couple already has a family the children are added to it; otherwise the family is made.
+A family is private when `private` is true or when either partner is private; one made earlier in
+the same batch (when the second of the couple was added) counts as new. On a family that was in the
+tree before the batch, `"private": true` is not applied but rejected: use `set_private` for that. Every ID given must
 be in the tree. A child who already has a father or mother by birth in another family is rejected:
 use `update_family` with a relationship, or `merge_family`.
 

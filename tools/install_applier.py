@@ -27,6 +27,7 @@ SHARE_COPY = "/mnt/bulk8/Archive/Backup/family-history/apply_proposals.py"     #
 BUILT_ON = {
     "0af6dedeff525b171ef13774ced2d7ba359b559caeb6abf3aafab4906e953ff1": "0.2.3 with the 31 Oct 2026 note patches",
     "659667c58b36e768278fa12146d30a5966620f1c677660ebe248fc09c551633c": "0.3.0 of 11 Nov 2026",
+    "9f67e121b46df49c3b420ac2117bb8ac19d274ba566eb07a4b6a468d54f6490e": "0.3.1 of 16 Nov 2026",
 }
 SECRET = re.compile(r"(?i)((?:pass|password|token|key|secret)\w*\s*[=:]\s*)\S+")
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""apply_proposals.py  v0.3.1  (2026-11-16)
+"""apply_proposals.py  v0.3.2  (2026-11-22)
 
 Promotes Karel's proposal files into the Gramps master, and applies validator verdicts.
 
@@ -40,6 +40,11 @@ that the person or family already has is reused (the citation is added to it) ra
 for birth, death, burial and baptism an empty placeholder or a year-only event of the same year is
 filled in instead of adding a second one.
 
+A family is private when one of its two partners is private, or when its add_family says "private": true.
+A family made earlier in the same run (when the second of a couple was added) counts as new for that. An
+add_family that asks for "private": true on a family that was already in the tree before the run is
+rejected rather than half done: that change is set_private's, and waits for Chris.
+
 Every change action records what the objects looked like before, in undo/<name>.undo.json.
 """
 import copy
@@ -60,7 +65,7 @@ from pathlib import Path
 
 import requests
 
-VERSION = "0.3.1"
+VERSION = "0.3.2"
 BASE = os.environ.get("GRAMPS_API", "http://127.0.0.1:5055/api")
 HERE = Path(__file__).resolve().parent
 APPROVALS = Path(os.environ.get("APPLIER_APPROVALS", os.path.expanduser("~/.config/family-site/approved-proposals.txt")))
@@ -344,6 +349,7 @@ class Tree:
         self.pending = set()        # Ancestry IDs of people whose own add_person is waiting for approval
         self.deferred = {}          # spouse's Ancestry ID -> people already added who named that spouse
         self.batch_names = {}       # Ancestry ID -> name, for the new people of this batch (to describe proposals)
+        self.made = set()           # handles of what this run created: a family one proposal made is new to the next
 
     # ----- what we remember of the tree, kept in step with what we write -----
     def index_person(self, p):
@@ -393,6 +399,7 @@ class Tree:
     def create(self, endpoint, obj):
         """POST a new person, family or event and remember it."""
         h = self.api.post(f"{endpoint}/", obj)
+        self.made.add(h)
         made = {**obj, "handle": h, "gramps_id": "(new)"} if DRY else self.api.get(f"{endpoint}/{h}")
         return self.remember(endpoint, made)
 
@@ -1458,12 +1465,24 @@ def reuse_event(existing, cit_h, e, place_h, tags, api):
     api.modify("events", existing["handle"], fn)
 
 def ensure_family(father, mother, tree, api, tags, handles, private=False):
-    """Family with these parents: reuse or create (and link both parents to it)."""
+    """Family with these parents: reuse or create (and link both parents to it).
+
+    The family is private when asked, or when either partner is private: a family left public around a hidden
+    partner shows on the site as a family with a blank partner. A family that an earlier proposal of this run
+    made (the other partner's add_person, say) is new to this batch and is made private here when it should be;
+    a family that was in the tree before this run is left as it is (changing it is set_private's job)."""
+    want = bool(private) or any(bool((p or {}).get("private")) for p in (father, mother))
     fams = tree.family_with(father, mother)
-    if fams: return fams[0]
+    if fams:
+        fam = fams[0]
+        if want and not fam.get("private") and fam["handle"] in tree.made:
+            api.modify("families", fam["handle"], lambda f: f.update(private=True))
+            fam = tree.cached("families", fam["handle"]) or fam
+            handles["family(private)"] = fam.get("gramps_id")
+        return fam
     fam = {"_class": "Family", "father_handle": (father or {}).get("handle"), "mother_handle": (mother or {}).get("handle"),
            "type": "Married" if father and mother else "Unknown", "child_ref_list": [], "event_ref_list": [],
-           "private": bool(private), "tag_list": tags}
+           "private": want, "tag_list": tags}
     fam = tree.create("families", fam)
     for par in (father, mother):
         if par: api.add_ref("people", par["handle"], "family_list", fam["handle"], tags)
@@ -1553,6 +1572,9 @@ def apply(p, tree, api, fname):
         fa, mo = tree.find(str(f.get("father_ancestry_id", ""))), tree.find(str(f.get("mother_ancestry_id", "")))
         cit_h = build_citation(p, tree, api, tags, fname, handles)
         fam = ensure_family(fa, mo, tree, api, tags, handles, f.get("private"))
+        if f.get("private") and not fam.get("private"):
+            raise Refused(f"{family_label(fam, tree)} was in the tree before this batch and is public; \"private\": true is "
+                          f"not applied to an existing family here: file set_private for it")
         if cit_h: api.add_ref("families", fam["handle"], "citation_list", cit_h, tags)
         for c in f.get("children_ancestry_ids", []):
             child = tree.find(str(c))
