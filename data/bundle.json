@@ -39304,6 +39304,53 @@
    "tier": "record",
    "url": "https://www.ancestry.com/imageviewer/collections/9084/images/007714780_00345?pid=1158747"
   },
+  "C1264": {
+   "ancestry_record_id": "",
+   "change": 1794065403,
+   "cited_by": [
+    {
+     "id": "E1565",
+     "type": "event"
+    },
+    {
+     "id": "I0393",
+     "type": "person"
+    }
+   ],
+   "confidence": 4,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051224f95607bd3352244029371",
+   "id": "C1264",
+   "information": "primary",
+   "media": [
+    {
+     "ref": "O0208"
+    }
+   ],
+   "notes": [
+    "N1809",
+    "N1810"
+   ],
+   "page": "1 Apr 1950; ED 36-48B, sheet 1, lines 5–9",
+   "proposal_file": "2026-11-07_100159_01_anton-wacek_add-person.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0203",
+   "source_type": "original",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "record",
+   "url": "https://nara-1950-census.s3.us-east-2.amazonaws.com/1950census/43290879-Wisconsin/43290879-Wisconsin-230426/43290879-Wisconsin-230426-0008.jpg"
+  },
   "C1265": {
    "ancestry_record_id": "",
    "change": 1794065404,
@@ -39331,7 +39378,10 @@
      "ref": "O0209"
     }
    ],
-   "notes": [],
+   "notes": [
+    "N1811",
+    "N1812"
+   ],
    "page": "1 Apr 1950; ED 36-48B, sheet 1, lines 5–9",
    "proposal_file": "2026-11-07_100159_03_emma-wacek_add-person.json",
    "provenance": [
@@ -39891,7 +39941,8 @@
    "information": "secondary",
    "media": [],
    "notes": [
-    "N1838"
+    "N1838",
+    "N1839"
    ],
    "page": "Evergreen Cemetery #44 KLEM obituaries, entry klimentella",
    "proposal_file": "2026-11-08_100501_wacek-ella_add-person.json",
@@ -40577,6 +40628,49 @@
    ],
    "tier": "index",
    "url": "https://www.mnhs.org/search/people"
+  },
+  "C1296": {
+   "ancestry_record_id": "",
+   "change": 1794403802,
+   "cited_by": [
+    {
+     "id": "E1565",
+     "type": "event"
+    }
+   ],
+   "confidence": 4,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051ec03378066f18b8f9a0a4da9",
+   "id": "C1296",
+   "information": "primary",
+   "media": [
+    {
+     "ref": "O0216"
+    }
+   ],
+   "notes": [
+    "N1945",
+    "N1946"
+   ],
+   "page": "1 Apr 1950; ED 36-48B, sheet 7, lines 5–9",
+   "proposal_file": "2026-11-11_083000_anton-wacek_birth-census-1950.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0203",
+   "source_type": "original",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "record",
+   "url": "https://nara-1950-census.s3.us-east-2.amazonaws.com/1950census/43290879-Wisconsin/43290879-Wisconsin-230426/43290879-Wisconsin-230426-0008.jpg"
   },
   "C1298": {
    "ancestry_record_id": "",
@@ -41569,7 +41663,8 @@
     }
    ],
    "notes": [
-    "N1994"
+    "N1994",
+    "N1995"
    ],
    "page": "T623 roll 1797, ED 74, sheet 12B (Supervisor's District 3), North 10th Street, house no. 532, family 260, lines 71-76 (Anton Wacek household)",
    "proposal_file": "2026-11-18_094800_wacek-edward_add-person.json",
@@ -41858,6 +41953,636 @@
    ],
    "tier": "record",
    "url": "https://1950census.archives.gov/iiif/2/1950census%2F43290879-Minnesota%2F43290879-Minnesota-093953%2F43290879-Minnesota-093953-0013.jpg/full/full/0/default.jpg"
+  },
+  "C1402": {
+   "ancestry_record_id": "",
+   "change": 1795389523,
+   "cited_by": [
+    {
+     "id": "E1678",
+     "type": "event"
+    },
+    {
+     "id": "E1679",
+     "type": "event"
+    },
+    {
+     "id": "I0501",
+     "type": "person"
+    }
+   ],
+   "confidence": 2,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1054378c3a264e3749a65a5d3e7b",
+   "id": "C1402",
+   "information": "secondary",
+   "media": [],
+   "notes": [
+    "N2160"
+   ],
+   "page": "https://www.csog.com/obituaries/john-morris ; retrieved 20 Nov 2026",
+   "proposal_file": "2026-11-20_100001_morris-john-thomas_add-person.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0243",
+   "source_type": "derivative",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "index",
+   "url": "https://www.csog.com/obituaries/john-morris"
+  },
+  "C1403": {
+   "ancestry_record_id": "",
+   "change": 1795389524,
+   "cited_by": [
+    {
+     "id": "E1680",
+     "type": "event"
+    },
+    {
+     "id": "E1681",
+     "type": "event"
+    },
+    {
+     "id": "I0502",
+     "type": "person"
+    }
+   ],
+   "confidence": 2,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1054378c6cd77b4777620ec3b3b4",
+   "id": "C1403",
+   "information": "secondary",
+   "media": [],
+   "notes": [
+    "N2162"
+   ],
+   "page": "https://www.csog.com/obituaries/lois-morris ; retrieved 20 Nov 2026",
+   "proposal_file": "2026-11-20_100002_morris-lois-elizabeth_add-person.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0244",
+   "source_type": "derivative",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "index",
+   "url": "https://www.csog.com/obituaries/lois-morris"
+  },
+  "C1404": {
+   "ancestry_record_id": "",
+   "change": 1795389526,
+   "cited_by": [
+    {
+     "id": "E1682",
+     "type": "event"
+    },
+    {
+     "id": "E1683",
+     "type": "event"
+    },
+    {
+     "id": "I0503",
+     "type": "person"
+    }
+   ],
+   "confidence": 2,
+   "date": {
+    "day": 28,
+    "iso": "2001-09-28",
+    "modifier": null,
+    "month": 9,
+    "quality": null,
+    "sort": 2452181,
+    "text": "28 September 2001",
+    "year": 2001
+   },
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1054378cab1355efdc6ee74e3df",
+   "id": "C1404",
+   "information": "secondary",
+   "media": [],
+   "notes": [
+    "N2164",
+    "N2165"
+   ],
+   "page": "Certificate 2001-MN-527392",
+   "proposal_file": "2026-11-21_100501_adair-dennis_add-person.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0245",
+   "source_type": "derivative",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "index",
+   "url": "https://www.mnhs.org/search/people"
+  },
+  "C1425": {
+   "ancestry_record_id": "",
+   "change": 1795389541,
+   "cited_by": [
+    {
+     "id": "I0419",
+     "type": "person"
+    }
+   ],
+   "confidence": 2,
+   "date": null,
+   "evidence": "",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1054378f05ad45a97dbff46a7f7b",
+   "id": "C1425",
+   "information": "",
+   "media": [],
+   "notes": [
+    "N2206",
+    "N2207"
+   ],
+   "page": "pp.45, 58 (printed; PDF pages 23, 30)",
+   "proposal_file": "2026-11-16_174500_wood-norman-iii_suffix-iii.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0234",
+   "source_type": "",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "compiled",
+   "url": ""
+  },
+  "C1426": {
+   "ancestry_record_id": "",
+   "change": 1795389542,
+   "cited_by": [
+    {
+     "id": "F0032",
+     "type": "family"
+    }
+   ],
+   "confidence": 2,
+   "date": null,
+   "evidence": "",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1054378f249f5eb756c432d6c530",
+   "id": "C1426",
+   "information": "",
+   "media": [],
+   "notes": [
+    "N2208",
+    "N2209"
+   ],
+   "page": "p.58 (printed; PDF page 30)",
+   "proposal_file": "2026-11-16_174501_wood-norman-iii_link-f0032.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0234",
+   "source_type": "",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "compiled",
+   "url": ""
+  },
+  "C1427": {
+   "ancestry_record_id": "",
+   "change": 1795389543,
+   "cited_by": [
+    {
+     "id": "F0191",
+     "type": "family"
+    }
+   ],
+   "confidence": 3,
+   "date": null,
+   "evidence": "",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1054378f539165b67b0009e42f1a",
+   "id": "C1427",
+   "information": "",
+   "media": [
+    {
+     "ref": "O0242"
+    }
+   ],
+   "notes": [
+    "N2210",
+    "N2211"
+   ],
+   "page": "T623 roll 1777, ED 3, sheet 6A, lines 10-16",
+   "proposal_file": "2026-11-16_174503_toepel-clara_link-f0191.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0224",
+   "source_type": "",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "record",
+   "url": "https://archive.org/details/12thcensusofpopu1777unit/page/n306"
+  },
+  "C1428": {
+   "ancestry_record_id": "",
+   "change": 1795389544,
+   "cited_by": [
+    {
+     "id": "F0186",
+     "type": "family"
+    }
+   ],
+   "confidence": 3,
+   "date": null,
+   "evidence": "",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1054378f7a975e690eb30cc0bddb",
+   "id": "C1428",
+   "information": "",
+   "media": [],
+   "notes": [
+    "N2212",
+    "N2213"
+   ],
+   "page": "15 December 2006, p. A3",
+   "proposal_file": "2026-11-16_174504_karl-caroline_link-f0186.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0218",
+   "source_type": "",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "compiled",
+   "url": "https://www.2manitowoc.com/44Lanobit.html#langenkampcaroline"
+  },
+  "C1431": {
+   "ancestry_record_id": "",
+   "change": 1795389547,
+   "cited_by": [
+    {
+     "id": "E1565",
+     "type": "event"
+    }
+   ],
+   "confidence": 3,
+   "date": null,
+   "evidence": "",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1054378ff08c611acd49cbc87ab7",
+   "id": "C1431",
+   "information": "",
+   "media": [],
+   "notes": [
+    "N2218",
+    "N2219"
+   ],
+   "page": "15 January 1953, p. 20",
+   "proposal_file": "2026-11-16_174508_wacek-anton_birth-1866-05-30.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0247",
+   "source_type": "",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "compiled",
+   "url": "https://www.2manitowoc.com/44Wobit.html#wacekanton"
+  },
+  "C1432": {
+   "ancestry_record_id": "",
+   "change": 1795389548,
+   "cited_by": [
+    {
+     "id": "I0364",
+     "type": "person"
+    }
+   ],
+   "confidence": 2,
+   "date": null,
+   "evidence": "",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1054379012e937d209fb8a5a76d3",
+   "id": "C1432",
+   "information": "",
+   "media": [],
+   "notes": [
+    "N2221",
+    "N2222"
+   ],
+   "page": "pp.45, 54 (printed; PDF pages 23, 28)",
+   "proposal_file": "2026-11-16_174509_lamotte-joann_name.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0234",
+   "source_type": "",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "compiled",
+   "url": ""
+  },
+  "C1433": {
+   "ancestry_record_id": "",
+   "change": 1795389549,
+   "cited_by": [
+    {
+     "id": "F0071",
+     "type": "family"
+    }
+   ],
+   "confidence": 2,
+   "date": null,
+   "evidence": "",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "105437902f0e78cc5048b620135f",
+   "id": "C1433",
+   "information": "",
+   "media": [],
+   "notes": [],
+   "page": "p.40 (printed; PDF page 21)",
+   "proposal_file": "2026-11-18_093801_konecny-michael-wood_link-f0071.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0234",
+   "source_type": "",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "compiled",
+   "url": ""
+  },
+  "C1439": {
+   "ancestry_record_id": "",
+   "change": 1795389555,
+   "cited_by": [
+    {
+     "id": "F0033",
+     "type": "family"
+    }
+   ],
+   "confidence": 2,
+   "date": null,
+   "evidence": "",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1054379130f97cd44b780d4f3fd2",
+   "id": "C1439",
+   "information": "",
+   "media": [],
+   "notes": [
+    "N2235",
+    "N2236"
+   ],
+   "page": "pp.26-27 (printed; PDF page 14)",
+   "proposal_file": "2026-11-18_121071_stone-eleanor_link-f0033.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0234",
+   "source_type": "",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "compiled",
+   "url": ""
+  },
+  "C1440": {
+   "ancestry_record_id": "",
+   "change": 1795389556,
+   "cited_by": [
+    {
+     "id": "F0031",
+     "type": "family"
+    }
+   ],
+   "confidence": 2,
+   "date": null,
+   "evidence": "",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10543791511d4208fa7f8628e686",
+   "id": "C1440",
+   "information": "",
+   "media": [],
+   "notes": [
+    "N2237",
+    "N2238"
+   ],
+   "page": "p.50 (printed; PDF page 26)",
+   "proposal_file": "2026-11-18_121082_dagel-virginia_link-f0031.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0234",
+   "source_type": "",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "compiled",
+   "url": ""
+  },
+  "C1441": {
+   "ancestry_record_id": "",
+   "change": 1795389557,
+   "cited_by": [
+    {
+     "id": "F0032",
+     "type": "family"
+    }
+   ],
+   "confidence": 2,
+   "date": null,
+   "evidence": "",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1054379170791f43379b989ee220",
+   "id": "C1441",
+   "information": "",
+   "media": [],
+   "notes": [
+    "N2239",
+    "N2240"
+   ],
+   "page": "p.54 (printed; PDF page 28)",
+   "proposal_file": "2026-11-18_121111_crusan-barbara_link-f0032.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0234",
+   "source_type": "",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "compiled",
+   "url": ""
+  },
+  "C1442": {
+   "ancestry_record_id": "",
+   "change": 1795389558,
+   "cited_by": [
+    {
+     "id": "F0032",
+     "type": "family"
+    }
+   ],
+   "confidence": 2,
+   "date": null,
+   "evidence": "",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10543791902235271f6a13769207",
+   "id": "C1442",
+   "information": "",
+   "media": [],
+   "notes": [
+    "N2241",
+    "N2242"
+   ],
+   "page": "pp.54, 62 (printed; PDF pages 28, 32)",
+   "proposal_file": "2026-11-18_121131_wood-charles_link-f0032.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0234",
+   "source_type": "",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "compiled",
+   "url": ""
+  },
+  "C1443": {
+   "ancestry_record_id": "93320757",
+   "change": 1795389559,
+   "cited_by": [
+    {
+     "id": "I0503",
+     "type": "person"
+    }
+   ],
+   "confidence": 3,
+   "date": {
+    "day": 5,
+    "iso": "1950-04-05",
+    "modifier": null,
+    "month": 4,
+    "quality": null,
+    "sort": 2433377,
+    "text": "5 April 1950",
+    "year": 1950
+   },
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10543791b4076d976576239ed781",
+   "id": "C1443",
+   "information": "primary",
+   "media": [
+    {
+     "ref": "O0244"
+    }
+   ],
+   "notes": [
+    "N2243",
+    "N2244"
+   ],
+   "page": "1 Apr 1950; Minnesota, Freeborn Co., Albert Lea City, ED 24-6, sheet 9, lines 6-8 (Floyd C. Adair household); NARA image 43290879-Minnesota-158485-0010",
+   "proposal_file": "2026-11-21_100503_adair-dennis_census-1950-citation.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0239",
+   "source_type": "original",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "record",
+   "url": "https://1950census.archives.gov/iiif/2/1950census%2F43290879-Minnesota%2F43290879-Minnesota-158485%2F43290879-Minnesota-158485-0010.jpg/full/full/0/default.jpg"
   }
  },
  "events": {
@@ -91781,6 +92506,53 @@
    ],
    "type": "Birth"
   },
+  "E1565": {
+   "attributes": [],
+   "change": 1795389548,
+   "citations": [
+    "C1264",
+    "C1296",
+    "C1431"
+   ],
+   "date": {
+    "day": 30,
+    "iso": "1866-05-30",
+    "modifier": null,
+    "month": 5,
+    "quality": null,
+    "sort": 2402752,
+    "text": "30 May 1866",
+    "year": 1866
+   },
+   "description": "Approximate birth from age 83 on the 1 April 1950 census. Exact date 30 May 1866 at a place printed as Milnik, Czechoslovakia, is in his 1953 obituary and is not filed here because that source was not attached on Ancestry as of 8 November 2026.",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051224f9a25f1916163ff701a2",
+   "id": "E1565",
+   "media": [],
+   "notes": [
+    "N2220"
+   ],
+   "participants": [
+    {
+     "person": "I0393",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0268",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Birth"
+  },
   "E1566": {
    "attributes": [],
    "change": 1794065404,
@@ -94360,6 +95132,264 @@
     "agent-proposed"
    ],
    "type": "Death"
+  },
+  "E1678": {
+   "attributes": [],
+   "change": 1795389523,
+   "citations": [
+    "C1402"
+   ],
+   "date": {
+    "day": 13,
+    "iso": "1930-05-13",
+    "modifier": null,
+    "month": 5,
+    "quality": null,
+    "sort": 2426110,
+    "text": "13 May 1930",
+    "year": 1930
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1054378c417b10795917fb8e45e2",
+   "id": "E1678",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0501",
+     "role": "Primary"
+    }
+   ],
+   "place": null,
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Birth"
+  },
+  "E1679": {
+   "attributes": [],
+   "change": 1795389523,
+   "citations": [
+    "C1402"
+   ],
+   "date": {
+    "day": 30,
+    "iso": "2021-04-30",
+    "modifier": null,
+    "month": 4,
+    "quality": null,
+    "sort": 2459335,
+    "text": "30 April 2021",
+    "year": 2021
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1054378c4ac07f7cbffb66de8f34",
+   "id": "E1679",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0501",
+     "role": "Primary"
+    }
+   ],
+   "place": null,
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Death"
+  },
+  "E1680": {
+   "attributes": [],
+   "change": 1795389524,
+   "citations": [
+    "C1403"
+   ],
+   "date": {
+    "day": 6,
+    "iso": "1931-01-06",
+    "modifier": null,
+    "month": 1,
+    "quality": null,
+    "sort": 2426348,
+    "text": "6 January 1931",
+    "year": 1931
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1054378c744b35a219795ee6b75f",
+   "id": "E1680",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0502",
+     "role": "Primary"
+    }
+   ],
+   "place": null,
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Birth"
+  },
+  "E1681": {
+   "attributes": [],
+   "change": 1795389525,
+   "citations": [
+    "C1403"
+   ],
+   "date": {
+    "day": 10,
+    "iso": "2022-08-10",
+    "modifier": null,
+    "month": 8,
+    "quality": null,
+    "sort": 2459802,
+    "text": "10 August 2022",
+    "year": 2022
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1054378c7d9c7df9001740ce5146",
+   "id": "E1681",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0502",
+     "role": "Primary"
+    }
+   ],
+   "place": null,
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Death"
+  },
+  "E1682": {
+   "attributes": [],
+   "change": 1795389526,
+   "citations": [
+    "C1404"
+   ],
+   "date": {
+    "day": 26,
+    "iso": "1943-04-26",
+    "modifier": null,
+    "month": 4,
+    "quality": null,
+    "sort": 2430841,
+    "text": "26 April 1943",
+    "year": 1943
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1054378cb2ac6ac2c8e63fe28fd8",
+   "id": "E1682",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0503",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0283",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Birth"
+  },
+  "E1683": {
+   "attributes": [],
+   "change": 1795389526,
+   "citations": [
+    "C1404"
+   ],
+   "date": {
+    "day": 28,
+    "iso": "2001-09-28",
+    "modifier": null,
+    "month": 9,
+    "quality": null,
+    "sort": 2452181,
+    "text": "28 September 2001",
+    "year": 2001
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1054378cb9a15a6a578671a52f42",
+   "id": "E1683",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0503",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0285",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Death"
   }
  },
  "families": {
@@ -95486,9 +96516,11 @@
   },
   "F0031": {
    "attributes": [],
-   "change": 1793040852,
+   "change": 1795389557,
    "children": [],
-   "citations": [],
+   "citations": [
+    "C1440"
+   ],
    "events": [
     {
      "ref": "E1453",
@@ -95496,7 +96528,9 @@
     }
    ],
    "father": "I0184",
-   "flags": [],
+   "flags": [
+    "agent-proposed"
+   ],
    "handle": "104ebd54a8661132c58751377d33",
    "id": "F0031",
    "marriage": {
@@ -95518,21 +96552,33 @@
    "mother": "I0058",
    "notes": [],
    "provenance": [
+    "agent-karel",
+    "agent-proposed",
     "import-ancestry-2026-10-25"
    ],
    "review": "unreviewed",
    "status": "full",
    "tags": [
     "import-ancestry-2026-10-25",
-    "unreviewed"
+    "unreviewed",
+    "agent-karel",
+    "agent-proposed"
    ],
    "type": "Married"
   },
   "F0032": {
    "attributes": [],
-   "change": 1793473208,
-   "children": [],
-   "citations": [],
+   "change": 1795389558,
+   "children": [
+    {
+     "ref": "I0419"
+    }
+   ],
+   "citations": [
+    "C1426",
+    "C1441",
+    "C1442"
+   ],
    "events": [
     {
      "ref": "E1554",
@@ -95580,25 +96626,33 @@
   },
   "F0033": {
    "attributes": [],
-   "change": 1793040826,
+   "change": 1795389556,
    "children": [],
-   "citations": [],
+   "citations": [
+    "C1439"
+   ],
    "events": [],
    "father": "I0183",
-   "flags": [],
+   "flags": [
+    "agent-proposed"
+   ],
    "handle": "104ebd54a88855215215a7fbf84",
    "id": "F0033",
    "media": [],
    "mother": "I0060",
    "notes": [],
    "provenance": [
+    "agent-karel",
+    "agent-proposed",
     "import-ancestry-2026-10-25"
    ],
    "review": "unreviewed",
    "status": "full",
    "tags": [
     "import-ancestry-2026-10-25",
-    "unreviewed"
+    "unreviewed",
+    "agent-karel",
+    "agent-proposed"
    ],
    "type": "Unknown"
   },
@@ -96993,7 +98047,7 @@
   },
   "F0071": {
    "attributes": [],
-   "change": 1793136383,
+   "change": 1795389549,
    "children": [
     {
      "ref": "I0142"
@@ -97002,7 +98056,9 @@
      "ref": "I0000"
     }
    ],
-   "citations": [],
+   "citations": [
+    "C1433"
+   ],
    "events": [
     {
      "ref": "E1472",
@@ -100550,7 +101606,7 @@
    "father": "I0393",
    "handle": "105122502c3263363e934c0a8c01",
    "id": "F0183",
-   "mother": null,
+   "mother": "I0401",
    "status": "living"
   },
   "F0184": {
@@ -100588,17 +101644,21 @@
   },
   "F0186": {
    "attributes": [],
-   "change": 1794151809,
+   "change": 1795389545,
    "children": [
     {
      "ref": "I0302"
     },
     {
      "ref": "I0399"
+    },
+    {
+     "ref": "I0407"
     }
    ],
    "citations": [
-    "C1281"
+    "C1281",
+    "C1428"
    ],
    "events": [],
    "father": "I0397",
@@ -100746,17 +101806,21 @@
   },
   "F0191": {
    "attributes": [],
-   "change": 1794409204,
+   "change": 1795389544,
    "children": [
     {
      "ref": "I0408"
     },
     {
      "ref": "I0350"
+    },
+    {
+     "ref": "I0416"
     }
    ],
    "citations": [
-    "C1298"
+    "C1298",
+    "C1427"
    ],
    "events": [],
    "father": null,
@@ -100903,8 +101967,12 @@
   },
   "F0196": {
    "attributes": [],
-   "change": 1795275003,
-   "children": [],
+   "change": 1795389527,
+   "children": [
+    {
+     "ref": "I0503"
+    }
+   ],
    "citations": [],
    "events": [],
    "father": "I0422",
@@ -100942,6 +102010,33 @@
    "id": "F0197",
    "media": [],
    "mother": "I0411",
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Married"
+  },
+  "F0222": {
+   "attributes": [],
+   "change": 1795389525,
+   "children": [],
+   "citations": [],
+   "events": [],
+   "father": "I0501",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1054378c8d931d1910e2c90a8aa8",
+   "id": "F0222",
+   "media": [],
+   "mother": "I0502",
    "notes": [],
    "provenance": [
     "agent-karel",
@@ -108229,6 +109324,39 @@
     "agent-proposed"
    ]
   },
+  "O0208": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1264",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-07_100159_wacek-1950.jpg"
+   },
+   "checksum": "11ac0cce292191e24316b3c14d57e363",
+   "citations": [],
+   "date": null,
+   "desc": "1950 United States Federal Census, Manitowoc, Wisconsin — 1 Apr 1950; ED 36-48B, sheet 1, lines 5–9",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051224f8cfb50e02aef4a4d9f4e",
+   "id": "O0208",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0208",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-proposed",
+    "agent-karel"
+   ]
+  },
   "O0209": {
    "access": "login",
    "attached_to": [
@@ -108384,6 +109512,39 @@
    "mime": "image/jpeg",
    "notes": [],
    "private_url": "https://familytree.konecny.net/media/O0215",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ]
+  },
+  "O0216": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1296",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-11_083000_wacek-census-1950.jpg"
+   },
+   "checksum": "11ac0cce292191e24316b3c14d57e363",
+   "citations": [],
+   "date": null,
+   "desc": "1950 United States Federal Census, Manitowoc, Wisconsin — 1 Apr 1950; ED 36-48B, sheet 7, lines 5–9",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1051ec032f0e307a91f5edd7cbb7",
+   "id": "O0216",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0216",
    "provenance": [
     "agent-karel",
     "agent-proposed"
@@ -109185,6 +110346,72 @@
     "agent-karel",
     "agent-proposed"
    ]
+  },
+  "O0242": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1427",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-16_174503_toepel-clara_link-f0191.png"
+   },
+   "checksum": "215560ff17bc375d8678d1ce990f7486",
+   "citations": [],
+   "date": null,
+   "desc": "1900 United States Census, Population Schedule, Wisconsin, Ashland County, Ashland City, ED 3, sheet 6A, NARA T623 roll 1777 — T623 roll 1777, ED 3, sheet 6A, lines 10-16",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1054378f4b142412386115957e88",
+   "id": "O0242",
+   "mime": "image/png",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0242",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ]
+  },
+  "O0244": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1443",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-21_100503_adair-dennis_census-1950-citation.jpg"
+   },
+   "checksum": "09d37f7f2a2e461bd8c616e4fdd1fc5b",
+   "citations": [],
+   "date": null,
+   "desc": "1950 United States Census, Population Schedule, Minnesota, Freeborn County, Albert Lea city, ED 24-6, sheet 9 — 1 Apr 1950; Minnesota, Freeborn Co., Albert Lea City, ED 24-6, sheet 9, lines 6-8 (Floyd C. Adair household); NARA image 43290879-Minnesota-158485-0010",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10543791ad623a33c34ce7c827ce",
+   "id": "O0244",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0244",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ]
   }
  },
  "meta": {
@@ -109196,21 +110423,21 @@
    "very high"
   ],
   "counts": {
-   "citations": 1271,
-   "events": 1455,
-   "families": 189,
-   "media": 226,
-   "notes": 1410,
-   "people": 420,
+   "citations": 1288,
+   "events": 1462,
+   "families": 190,
+   "media": 230,
+   "notes": 1445,
+   "people": 423,
    "places": 333,
-   "repositories": 33,
-   "sources": 235
+   "repositories": 34,
+   "sources": 239
   },
   "counts_people": {
-   "full": 352,
-   "living": 68
+   "full": 356,
+   "living": 67
   },
-  "generated": "2026-11-22T08:16:56+00:00",
+  "generated": "2026-11-23T08:16:55+00:00",
   "generator": "gramps_export.py 0.3.0",
   "gramps_version": "6.0.8",
   "gramps_webapi_version": "3.17.0",
@@ -109234,7 +110461,7 @@
    "oral",
    "ai-draft"
   ],
-  "today": "2026-11-22",
+  "today": "2026-11-23",
   "tree": "Konecny"
  },
  "notes": {
@@ -137173,6 +138400,82 @@
    "text": "2026-11-07 (karel): Ancestry 6 Nov 2026 daily push: Probate 25 Aug 1845 on Philip Wood 212735895872 tree 208290233 from clerk's recorded will (Windham vol. 17–18 pp. 101–102). Transcript /workspace/wood-family/PHILIP-WOOD-WILL-TRANSCRIPT-05NOV.md. Ancestry index wrongly shows 29 Mar 1842 for both will and probate. Refile of 2026-11-06_0940_wood-philip_probate-1845.json on 2026-11-07T09:50:44-05:00: original rejected solely because ancestry_attached=false; Ancestry probate fact and source verified attached 6 Nov 2026 16:35 EST. Original payload otherwise preserved.\nConflicts: ['Ancestry index shows 29 Mar 1842 for BOTH will and probate; clerk margin and session support probate 25 Aug 1845', \"Married daughters' surnames uncertain in handwriting\"]",
    "type": "Research"
   },
+  "N1809": {
+   "attached_to": [
+    {
+     "id": "C1264",
+     "type": "citation"
+    }
+   ],
+   "change": 1794065403,
+   "flags": [],
+   "handle": "1051224f87291c1e56dd19178bb6",
+   "html": "<p>Transcription (as written): Joseph H. Lodl, head; Emma, wife, 56, Wisconsin; Anton Wacek, father-in-law, 83, Bohemia; Anna, mother-in-law, 79, Wisconsin. Ages yield approximate births only.</p>",
+   "id": "N1809",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Joseph H. Lodl, head; Emma, wife, 56, Wisconsin; Anton Wacek, father-in-law, 83, Bohemia; Anna, mother-in-law, 79, Wisconsin. Ages yield approximate births only.",
+   "type": "Transcript"
+  },
+  "N1810": {
+   "attached_to": [
+    {
+     "id": "C1264",
+     "type": "citation"
+    }
+   ],
+   "change": 1794065403,
+   "flags": [],
+   "handle": "1051224f8a152c716f01f60c2fb3",
+   "html": "<p>2026-11-07 (karel): New Ancestry addition verified this batch. Deceased: historical birth more than 130 years ago; no death date asserted. Anna maiden surname unknown, deliberately blank. Birth year derived approximately from census age, not exact. Supporting obituary transcription: Manitowoc Herald Times, 1 Jun 1946, p. 2; https://www.2manitowoc.com/44Komobit.html#konecnylillian ; Lillian obituary names parents Mr. and Mrs. Anton Wacek and sister Mrs. Joseph Lodl. Compiled transcription, not an original newspaper image. Both sources verified attached on Ancestry 7 Nov 2026 by browser executor.</p>",
+   "id": "N1810",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-07 (karel): New Ancestry addition verified this batch. Deceased: historical birth more than 130 years ago; no death date asserted. Anna maiden surname unknown, deliberately blank. Birth year derived approximately from census age, not exact. Supporting obituary transcription: Manitowoc Herald Times, 1 Jun 1946, p. 2; https://www.2manitowoc.com/44Komobit.html#konecnylillian ; Lillian obituary names parents Mr. and Mrs. Anton Wacek and sister Mrs. Joseph Lodl. Compiled transcription, not an original newspaper image. Both sources verified attached on Ancestry 7 Nov 2026 by browser executor.",
+   "type": "Research"
+  },
+  "N1811": {
+   "attached_to": [
+    {
+     "id": "C1265",
+     "type": "citation"
+    }
+   ],
+   "change": 1794065404,
+   "flags": [],
+   "handle": "1051224fa8bf1d7ba94ff07ba377",
+   "html": "<p>Transcription (as written): Joseph H. Lodl, head; Emma, wife, 56, Wisconsin; Anton Wacek, father-in-law, 83, Bohemia; Anna, mother-in-law, 79, Wisconsin. Ages yield approximate births only.</p>",
+   "id": "N1811",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Joseph H. Lodl, head; Emma, wife, 56, Wisconsin; Anton Wacek, father-in-law, 83, Bohemia; Anna, mother-in-law, 79, Wisconsin. Ages yield approximate births only.",
+   "type": "Transcript"
+  },
+  "N1812": {
+   "attached_to": [
+    {
+     "id": "C1265",
+     "type": "citation"
+    }
+   ],
+   "change": 1794065404,
+   "flags": [],
+   "handle": "1051224fabde24720635154d0d64",
+   "html": "<p>2026-11-07 (karel): New Ancestry addition verified this batch. Deceased: historical birth more than 130 years ago; no death date asserted. Anna maiden surname unknown, deliberately blank. Birth year derived approximately from census age, not exact. Supporting obituary transcription: Manitowoc Herald Times, 1 Jun 1946, p. 2; https://www.2manitowoc.com/44Komobit.html#konecnylillian ; Lillian obituary names parents Mr. and Mrs. Anton Wacek and sister Mrs. Joseph Lodl. Compiled transcription, not an original newspaper image. Both sources verified attached on Ancestry 7 Nov 2026 by browser executor.</p>",
+   "id": "N1812",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-07 (karel): New Ancestry addition verified this batch. Deceased: historical birth more than 130 years ago; no death date asserted. Anna maiden surname unknown, deliberately blank. Birth year derived approximately from census age, not exact. Supporting obituary transcription: Manitowoc Herald Times, 1 Jun 1946, p. 2; https://www.2manitowoc.com/44Komobit.html#konecnylillian ; Lillian obituary names parents Mr. and Mrs. Anton Wacek and sister Mrs. Joseph Lodl. Compiled transcription, not an original newspaper image. Both sources verified attached on Ancestry 7 Nov 2026 by browser executor.",
+   "type": "Research"
+  },
   "N1813": {
    "attached_to": [
     {
@@ -137590,6 +138893,25 @@
    "tags": [],
    "text": "Transcription (as written): Mrs. Kliment, the former Ella Wacek, was born Feb. 6, 1900, at Manitowoc, daughter of the late Anton and Annie Suchomel Wacek. ... married to Mr. Kliment April 22, 1924, at Manitowoc. [d. 06-13-1967/age 67 yrs./wife of John Kliment] Died at Holy Family Hospital, Manitowoc.",
    "type": "Transcript"
+  },
+  "N1839": {
+   "attached_to": [
+    {
+     "id": "C1280",
+     "type": "citation"
+    }
+   ],
+   "change": 1794151807,
+   "flags": [],
+   "handle": "105155cfbd1f289df18cc4c95202",
+   "html": "<p>2026-11-08 (karel): New Ancestry profile 212814977714 created 8 Nov 2026 as daughter of Anton Wacek 212814441290 and Anna 212814441317, sister of Lillian G. Wacek I0238 and Emma Wacek 212814441369. Anton&#x27;s 1953 obituary and Lillian&#x27;s 1946 obituary also name her as Mrs. John Kliment, a daughter/sister. relations names father only on purpose: in Gramps Anton&#x27;s existing family has no mother yet, so father-only reuses that family (with Lillian and Emma) instead of creating a duplicate. If Anna has already been set as mother by hand, link Ella to that family by hand instead. Husband John Kliment not added. Source verified attached on Ancestry (person-level citation with URL and transcription) by browser executor 8 Nov 2026. Obituary is a 2manitowoc.com transcription, so tier compiled.</p>",
+   "id": "N1839",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-08 (karel): New Ancestry profile 212814977714 created 8 Nov 2026 as daughter of Anton Wacek 212814441290 and Anna 212814441317, sister of Lillian G. Wacek I0238 and Emma Wacek 212814441369. Anton's 1953 obituary and Lillian's 1946 obituary also name her as Mrs. John Kliment, a daughter/sister. relations names father only on purpose: in Gramps Anton's existing family has no mother yet, so father-only reuses that family (with Lillian and Emma) instead of creating a duplicate. If Anna has already been set as mother by hand, link Ella to that family by hand instead. Husband John Kliment not added. Source verified attached on Ancestry (person-level citation with URL and transcription) by browser executor 8 Nov 2026. Obituary is a 2manitowoc.com transcription, so tier compiled.",
+   "type": "Research"
   },
   "N1840": {
    "attached_to": [
@@ -138330,6 +139652,44 @@
    "review": "unreviewed",
    "tags": [],
    "text": "2026-11-10 (karel): Ada Caroline (Anderson) Hoium Horan, deceased sister of Edith Marvyl (Anderson) Hansen (I0353 / 212807149647) and daughter of William Johan Anderson (I0357 / 212810880936) and Mary Anna Ingvaldson (I0358 / 212810880956). Relationship stated by the 1910 census (Ada C., daughter, age 14, same household as Edith M., 11). Birth date 12 Mar 1896 and death 26 Mar 1952 are on Find a Grave 140407529 (burial Lakewood Cemetery, Albert Lea, Block 5; husband Bennett A. Hoium 1891-1944); the death date matches the Minnesota death index row for 'Ada C. Horan', 26 Mar 1952, Freeborn County, certificate 1952-MN-004399, which carries no birth date. The 1910 age of 14 is consistent with 1896. Weakest of the five: the birth day/month is from Find a Grave only (tier compiled, confidence 1-2). Spouses and daughter Arline are NOT proposed. Relations omitted on purpose: link via add_family 100013. Ancestry profile 212815368792 was already on tree 208290233 from an earlier session; re-verified 10 November 2026 as a daughter of William Johan Anderson 212810880936 and Mary Anna Ingvaldson 212810880956. The Minnesota death-index image (certificate 1952-MN-004399) and the 1910 census image are verified attached in the gallery. A duplicate Lakewood burial fact on Ancestry was left as found. The Find a Grave birth citation has no image and is filed separately with ancestry_attached false.\nConflicts: ['Birth day/month 12 Mar 1896 comes from Find a Grave only; the census gives age 14 (April 1910), consistent with 1896. Treat birth as secondary-only.', \"Surname at death 'Horan' (second marriage); first husband Bennett A. Hoium, whose index row is certificate 1944-MN-004382 (Freeborn, 11 Dec 1944). The link of 'Ada C. Horan' to this Ada rests on Find a Grave naming her as Ada Caroline Anderson Hoium Horan with the same death date and the same county.\"]",
+   "type": "Research"
+  },
+  "N1945": {
+   "attached_to": [
+    {
+     "id": "C1296",
+     "type": "citation"
+    }
+   ],
+   "change": 1794403802,
+   "flags": [],
+   "handle": "1051ec03299c44281970a0cd5ee",
+   "html": "<p>Transcription (as written): Joseph H. Lodl, head; Emma, wife, 56, Wisconsin; Anton Wacek, father-in-law, 83, Bohemia; Anna, mother-in-law, 79, Wisconsin. Ages yield approximate births only.</p>",
+   "id": "N1945",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Joseph H. Lodl, head; Emma, wife, 56, Wisconsin; Anton Wacek, father-in-law, 83, Bohemia; Anna, mother-in-law, 79, Wisconsin. Ages yield approximate births only.",
+   "type": "Transcript"
+  },
+  "N1946": {
+   "attached_to": [
+    {
+     "id": "C1296",
+     "type": "citation"
+    }
+   ],
+   "change": 1794403802,
+   "flags": [],
+   "handle": "1051ec032c734bc1ae40e34446eb",
+   "html": "<p>2026-11-11 (karel): Anton Wacek (I0393 / 212814441290) is in the research database but has no dates, so the site treats him as living. The 1950 census sheet was verified attached on Ancestry on 7 November 2026 and was previously applied as 2026-11-07_100159_wacek-1950.jpg; this filing uses a new unique copy of the same image. Age 83 on 1 April 1950 supports birth about 1867 in Bohemia only, not an exact date and not a death. Death 15 January 1953 at Holy Family Hospital, Manitowoc, is stated in the Manitowoc Herald Times of 15 January 1953, p. 20 (2manitowoc.com transcription, https://www.2manitowoc.com/44Wobit.html#wacekanton), but that compiled obituary and any cemetery index were not recorded as attached on Ancestry through 8 November 2026, and no later attachment was verified, so no death event is filed.</p>",
+   "id": "N1946",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-11 (karel): Anton Wacek (I0393 / 212814441290) is in the research database but has no dates, so the site treats him as living. The 1950 census sheet was verified attached on Ancestry on 7 November 2026 and was previously applied as 2026-11-07_100159_wacek-1950.jpg; this filing uses a new unique copy of the same image. Age 83 on 1 April 1950 supports birth about 1867 in Bohemia only, not an exact date and not a death. Death 15 January 1953 at Holy Family Hospital, Manitowoc, is stated in the Manitowoc Herald Times of 15 January 1953, p. 20 (2manitowoc.com transcription, https://www.2manitowoc.com/44Wobit.html#wacekanton), but that compiled obituary and any cemetery index were not recorded as attached on Ancestry through 8 November 2026, and no later attachment was verified, so no death event is filed.",
    "type": "Research"
   },
   "N1949": {
@@ -139206,6 +140566,25 @@
    "text": "Transcription (as written): Enumerated 15 June 1900, Manitowoc City, Ward 4, Wisconsin, ED 74, sheet 12B. North 10th Street, house no. 532, family 260. Line 71: Wacek, Anton, Head, W M, May 1866, 34, M, 11, Bohemia, Bohemia, Bohemia. Line 72: —— Anna, Wife, W F, July 1871, 28, M, 11, mother of 4 children, 4 living, Wisconsin, Bohemia, Bohemia. Line 73: —— Edward, Son, W M, Jan 1890, 10, S, Wisconsin, Bohemia, Wisconsin. Line 74: —— Emma, Daughter, W F, Oct 1891, 8, S, Wisconsin, Bohemia, Wisconsin. Line 75: —— Lillie, Daughter, W F, Mar 1893, 6, S, Wisconsin, Bohemia, Wisconsin. Line 76: —— Ella, Daughter, W F, Feb 1900, 3/12, S, Wisconsin, Bohemia, Wisconsin.",
    "type": "Transcript"
   },
+  "N1995": {
+   "attached_to": [
+    {
+     "id": "C1319",
+     "type": "citation"
+    }
+   ],
+   "change": 1795014003,
+   "flags": [],
+   "handle": "105357b863212a59c8b82cfc9319",
+   "html": "<p>2026-11-18 (karel): New Ancestry profile 212817191191 created 18 Nov 2026 as son of Anton Wacek 212814441290 (Gramps I0393) and Anna (Gramps I0401), tree 208290233, https://www.ancestry.com/family-tree/person/tree/208290233/person/212817191191/facts . The 1900 census page (image re-read 18 Nov 2026 from https://www.2manitowoc.com/05/1900mtwc4_12b.jpg , same page as Ancestry dbid 7602 record 63553004) says, line 73: &quot;Edward, Son, W M, Jan 1890, 10, S, Wisconsin&quot;, in the household of line 71 &quot;Wacek, Anton, Head&quot; and line 72 &quot;Anna, Wife&quot;, with daughters Emma, Lillie and Ella. The 1910 census page (image re-read 18 Nov 2026 from https://www.2manitowoc.com/05/1910mtwc4_18a.jpg , Ancestry dbid 7884 record 171062935), N. 10th Street house no. 532 (same house as 1900), ED 26 sheet 18A, family 403, line 39: &quot;Edward A., Son, M W, 20, S, Wisconsin&quot;, occupation Laborer, Factory, in the household of line 37 &quot;Wacek, Anton, Head&quot; and line 38 &quot;Annie, Wife&quot;, with Emma W., Lily G. and Ella A. Birth date is the month and year written on the 1900 schedule (no day). Relations names the father only, on purpose: in the 17 Nov 2026 export (18 Nov export unchanged) F0183 is Anton I0393 with no mother, children Lillian I0238, Emma I0394 and Ella I0402; family_with matches exact parents, so naming both parents would create a second family. The same-batch update_family 094801 adds him to F0183 as a Birth child. 174507 (Anna as mother of F0183) is still in held\\; when it is approved Anna becomes his mother too, which is what both census pages already say. Death date and place are not on the census: Find a Grave 168020619 (https://www.findagrave.com/memorial/168020619/edward-a-wacek , page re-read 18 Nov 2026) transcribes Manitowoc Herald Times, Thurs., Oct. 20, 1960, page T3: &quot;Masonic funeral services for Edward A. Wacek, 70, of 1613 23rd St., Two Rivers, well known churchman and fraternal leader, who died unexpectedly of a heart attack at his home Monday morning&quot;. Thursday 20 Oct 1960 makes that Monday 17 Oct 1960, the date on the memorial; place Two Rivers, Manitowoc, Wisconsin. Pioneers Rest stone index (2manitowoc 89Ast) agrees &quot;Edward A. /1890-Oct 1960&quot;.<br>Conflicts: [&#x27;The add_person citation is the 1900 census, which does not state the death; death 1960-10-17 at Two Rivers is from the Herald Times obituary of 20 Oct 1960, p. T3, as transcribed on Find a Grave 168020619. F0183 still has no mother (174507 held).&#x27;]</p>",
+   "id": "N1995",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-18 (karel): New Ancestry profile 212817191191 created 18 Nov 2026 as son of Anton Wacek 212814441290 (Gramps I0393) and Anna (Gramps I0401), tree 208290233, https://www.ancestry.com/family-tree/person/tree/208290233/person/212817191191/facts . The 1900 census page (image re-read 18 Nov 2026 from https://www.2manitowoc.com/05/1900mtwc4_12b.jpg , same page as Ancestry dbid 7602 record 63553004) says, line 73: \"Edward, Son, W M, Jan 1890, 10, S, Wisconsin\", in the household of line 71 \"Wacek, Anton, Head\" and line 72 \"Anna, Wife\", with daughters Emma, Lillie and Ella. The 1910 census page (image re-read 18 Nov 2026 from https://www.2manitowoc.com/05/1910mtwc4_18a.jpg , Ancestry dbid 7884 record 171062935), N. 10th Street house no. 532 (same house as 1900), ED 26 sheet 18A, family 403, line 39: \"Edward A., Son, M W, 20, S, Wisconsin\", occupation Laborer, Factory, in the household of line 37 \"Wacek, Anton, Head\" and line 38 \"Annie, Wife\", with Emma W., Lily G. and Ella A. Birth date is the month and year written on the 1900 schedule (no day). Relations names the father only, on purpose: in the 17 Nov 2026 export (18 Nov export unchanged) F0183 is Anton I0393 with no mother, children Lillian I0238, Emma I0394 and Ella I0402; family_with matches exact parents, so naming both parents would create a second family. The same-batch update_family 094801 adds him to F0183 as a Birth child. 174507 (Anna as mother of F0183) is still in held\\; when it is approved Anna becomes his mother too, which is what both census pages already say. Death date and place are not on the census: Find a Grave 168020619 (https://www.findagrave.com/memorial/168020619/edward-a-wacek , page re-read 18 Nov 2026) transcribes Manitowoc Herald Times, Thurs., Oct. 20, 1960, page T3: \"Masonic funeral services for Edward A. Wacek, 70, of 1613 23rd St., Two Rivers, well known churchman and fraternal leader, who died unexpectedly of a heart attack at his home Monday morning\". Thursday 20 Oct 1960 makes that Monday 17 Oct 1960, the date on the memorial; place Two Rivers, Manitowoc, Wisconsin. Pioneers Rest stone index (2manitowoc 89Ast) agrees \"Edward A. /1890-Oct 1960\".\nConflicts: ['The add_person citation is the 1900 census, which does not state the death; death 1960-10-17 at Two Rivers is from the Herald Times obituary of 20 Oct 1960, p. T3, as transcribed on Find a Grave 168020619. F0183 still has no mother (174507 held).']",
+   "type": "Research"
+  },
   "N1996": {
    "attached_to": [
     {
@@ -139394,6 +140773,519 @@
    "review": "unreviewed",
    "tags": [],
    "text": "2026-11-21 (karel): Record-tier evidence for Vernon Alfred Sodergren (212817587641; companion to add_person 100510, applied after it): head, line 27, wife Ina line 28. The 1950 United States Federal Census record 92669748 (St Paul, age 42) is attached on Ancestry to Vernon and Ina (Ina also has a 1950 Residence fact citing it); verified on their Facts pages 21 Nov 2026. Image is a crop of the NARA sheet (header plus lines 27-30).",
+   "type": "Research"
+  },
+  "N2160": {
+   "attached_to": [
+    {
+     "id": "C1402",
+     "type": "citation"
+    }
+   ],
+   "change": 1795389523,
+   "flags": [],
+   "handle": "1054378c30dba5fa32591c8bece",
+   "html": "<p>Transcription (as written): John Thomas Morris / May 13, 1930 — Apr 30, 2021</p>",
+   "id": "N2160",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): John Thomas Morris / May 13, 1930 — Apr 30, 2021",
+   "type": "Transcript"
+  },
+  "N2162": {
+   "attached_to": [
+    {
+     "id": "C1403",
+     "type": "citation"
+    }
+   ],
+   "change": 1795389524,
+   "flags": [],
+   "handle": "1054378c61b76fe0af7bd012953a",
+   "html": "<p>Transcription (as written): Lois Elizabeth Morris / Jan 6, 1931 — Aug 10, 2022</p>",
+   "id": "N2162",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Lois Elizabeth Morris / Jan 6, 1931 — Aug 10, 2022",
+   "type": "Transcript"
+  },
+  "N2164": {
+   "attached_to": [
+    {
+     "id": "C1404",
+     "type": "citation"
+    }
+   ],
+   "change": 1795389526,
+   "flags": [],
+   "handle": "1054378ca240d065244ed29b8d9",
+   "html": "<p>Transcription (as written): Adair, Dennis Charles | death 2001-09-28 | Freeborn County | birth 04/26/1943 | birthplace MINNESOTA | mother&#x27;s maiden name HANSON | certificate 2001-MN-527392</p>",
+   "id": "N2164",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Adair, Dennis Charles | death 2001-09-28 | Freeborn County | birth 04/26/1943 | birthplace MINNESOTA | mother's maiden name HANSON | certificate 2001-MN-527392",
+   "type": "Transcript"
+  },
+  "N2165": {
+   "attached_to": [
+    {
+     "id": "C1404",
+     "type": "citation"
+    }
+   ],
+   "change": 1795389526,
+   "flags": [],
+   "handle": "1054378ca668193a770c90f6ee85",
+   "html": "<p>2026-11-22 (karel): Ancestry profile 212817587592 (tree 208290233, created 21 Nov 2026) shows Dennis Charles Adair, M, birth 26 Apr 1943 Minnesota, death 28 Sep 2001 Freeborn, Minnesota, parents Floyd Charles Adair 212817587535 (new, 100500 in this batch) and Florence Marie Hansen 212815368078 (Gramps I0410); the 1950 census (Ancestry record 93320757) is attached there. Minnesota death index row (MNHS API, read 21 Nov 2026): &quot;Dennis Charles Adair&quot;, died 28 Sep 2001 Freeborn County, born 04/26/1943, MINNESOTA, mother&#x27;s maiden name HANSON, certificate 2001-MN-527392; dates entered at day precision from it. 1950 census, Albert Lea, ED 24-6, sheet 9, line 8: &quot;Dennis C. | son | W | M | 6 | nev | Minn.&quot; in the household of Floyd C. Adair (line 6) and wife Florence M. (line 7), filed as companion 100503. Both parents named so he goes into the Floyd x Florence family made by 100500 (no father-only family). Deceased 2001, not young; private false.<br>Conflicts: [&quot;Death index gives mother&#x27;s maiden name as HANSON; the tree has Hansen (Florence I0410).&quot;, &quot;Find a Grave 266063070 (listed as their child on Floyd&#x27;s and Florence&#x27;s memorials) not fetched; compiled only, not filed.&quot;]</p>",
+   "id": "N2165",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-22 (karel): Ancestry profile 212817587592 (tree 208290233, created 21 Nov 2026) shows Dennis Charles Adair, M, birth 26 Apr 1943 Minnesota, death 28 Sep 2001 Freeborn, Minnesota, parents Floyd Charles Adair 212817587535 (new, 100500 in this batch) and Florence Marie Hansen 212815368078 (Gramps I0410); the 1950 census (Ancestry record 93320757) is attached there. Minnesota death index row (MNHS API, read 21 Nov 2026): \"Dennis Charles Adair\", died 28 Sep 2001 Freeborn County, born 04/26/1943, MINNESOTA, mother's maiden name HANSON, certificate 2001-MN-527392; dates entered at day precision from it. 1950 census, Albert Lea, ED 24-6, sheet 9, line 8: \"Dennis C. | son | W | M | 6 | nev | Minn.\" in the household of Floyd C. Adair (line 6) and wife Florence M. (line 7), filed as companion 100503. Both parents named so he goes into the Floyd x Florence family made by 100500 (no father-only family). Deceased 2001, not young; private false.\nConflicts: [\"Death index gives mother's maiden name as HANSON; the tree has Hansen (Florence I0410).\", \"Find a Grave 266063070 (listed as their child on Floyd's and Florence's memorials) not fetched; compiled only, not filed.\"]",
+   "type": "Research"
+  },
+  "N2206": {
+   "attached_to": [
+    {
+     "id": "C1425",
+     "type": "citation"
+    }
+   ],
+   "change": 1795389541,
+   "flags": [],
+   "handle": "1054378efcd62bd44eefa1cba12a",
+   "html": "<p>Transcription (as written): p.58 heading: &quot;Norman Bentley Wood, III&quot;. p.45 In Memoriam: &quot;Norman Bentley Wood, III / May 15, 1958 - May 31, 2018&quot;.</p>",
+   "id": "N2206",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): p.58 heading: \"Norman Bentley Wood, III\". p.45 In Memoriam: \"Norman Bentley Wood, III / May 15, 1958 - May 31, 2018\".",
+   "type": "Transcript"
+  },
+  "N2207": {
+   "attached_to": [
+    {
+     "id": "C1425",
+     "type": "citation"
+    }
+   ],
+   "change": 1795389541,
+   "flags": [],
+   "handle": "1054378f007f722577734c5e8b14",
+   "html": "<p>2026-11-22 (karel): Norman Bentley Wood III, added by 2026-11-16_155000_wood-norman-iii_add-person (in applied\\ at 3:59 PM ET, 16 Nov 2026) as first_name &#x27;Norman Bentley&#x27;, surname &#x27;Wood&#x27;, with no suffix because applier 0.2.3 had no suffix field. The book prints the suffix: p.58 heading &quot;Norman Bentley Wood, III&quot; and p.45 In Memoriam &quot;Norman Bentley Wood, III / May 15, 1958 - May 31, 2018&quot; (page transcripts pdf30 and pdf23 re-read 16 Nov 2026). Ancestry person 212816622947 (tree 208290233) has suffix III.</p>",
+   "id": "N2207",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-22 (karel): Norman Bentley Wood III, added by 2026-11-16_155000_wood-norman-iii_add-person (in applied\\ at 3:59 PM ET, 16 Nov 2026) as first_name 'Norman Bentley', surname 'Wood', with no suffix because applier 0.2.3 had no suffix field. The book prints the suffix: p.58 heading \"Norman Bentley Wood, III\" and p.45 In Memoriam \"Norman Bentley Wood, III / May 15, 1958 - May 31, 2018\" (page transcripts pdf30 and pdf23 re-read 16 Nov 2026). Ancestry person 212816622947 (tree 208290233) has suffix III.",
+   "type": "Research"
+  },
+  "N2208": {
+   "attached_to": [
+    {
+     "id": "C1426",
+     "type": "citation"
+    }
+   ],
+   "change": 1795389542,
+   "flags": [],
+   "handle": "1054378f1aff60bec7de0d86dc13",
+   "html": "<p>Transcription (as written): Norm was the son of Norman Bentley Wood Jr. and JoAnn LaMotte (Wood), born on May 15, 1958 in Milwaukee, Wisconsin.</p>",
+   "id": "N2208",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Norm was the son of Norman Bentley Wood Jr. and JoAnn LaMotte (Wood), born on May 15, 1958 in Milwaukee, Wisconsin.",
+   "type": "Transcript"
+  },
+  "N2209": {
+   "attached_to": [
+    {
+     "id": "C1426",
+     "type": "citation"
+    }
+   ],
+   "change": 1795389542,
+   "flags": [],
+   "handle": "1054378f1f1b2c6b65987798cde2",
+   "html": "<p>2026-11-22 (karel): Book p.58 (page image excerpt and transcript pdf30 re-read 16 Nov 2026): &quot;Norm was the son of Norman Bentley Wood Jr. and JoAnn LaMotte (Wood), born on May 15, 1958 in Milwaukee, Wisconsin.&quot; F0032 in the 16 Nov 2026 export is Norman B. Wood Jr. I0059 (Ancestry 212795068190) x JoAnn I0364 (Ancestry 212811346080), marriage 16 Dec 1955, no children. Norman III&#x27;s add_person (2026-11-16_155000) is in applied\\ and linked him to no one; this places him as a Birth son. Ancestry 212816622947 is the child of that couple on tree 208290233.<br>Conflicts: [&#x27;C02 (death date, not this link): p.45 gives 31 May 2018, p.58 gives 30 May 2018 in Dunnellon, Florida. Already recorded in note 2026-11-16_155001; not resolved here.&#x27;]</p>",
+   "id": "N2209",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-22 (karel): Book p.58 (page image excerpt and transcript pdf30 re-read 16 Nov 2026): \"Norm was the son of Norman Bentley Wood Jr. and JoAnn LaMotte (Wood), born on May 15, 1958 in Milwaukee, Wisconsin.\" F0032 in the 16 Nov 2026 export is Norman B. Wood Jr. I0059 (Ancestry 212795068190) x JoAnn I0364 (Ancestry 212811346080), marriage 16 Dec 1955, no children. Norman III's add_person (2026-11-16_155000) is in applied\\ and linked him to no one; this places him as a Birth son. Ancestry 212816622947 is the child of that couple on tree 208290233.\nConflicts: ['C02 (death date, not this link): p.45 gives 31 May 2018, p.58 gives 30 May 2018 in Dunnellon, Florida. Already recorded in note 2026-11-16_155001; not resolved here.']",
+   "type": "Research"
+  },
+  "N2210": {
+   "attached_to": [
+    {
+     "id": "C1427",
+     "type": "citation"
+    }
+   ],
+   "change": 1795389543,
+   "flags": [],
+   "handle": "1054378f40e022aca0aae7ad53f7",
+   "html": "<p>Transcription (as written): L10 Toepel, Mary, Head, W F, Jun 1854, 45, Wd. L11 Mollie, Dau, May 1878. L12 Clara, Dau, Oct 1879, 20. L13 Oscar, Son, Apr 1882. L14 Lilian, Dau, Oct 1883. L15 Alfred, Son, Jan 1888.</p>",
+   "id": "N2210",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): L10 Toepel, Mary, Head, W F, Jun 1854, 45, Wd. L11 Mollie, Dau, May 1878. L12 Clara, Dau, Oct 1879, 20. L13 Oscar, Son, Apr 1882. L14 Lilian, Dau, Oct 1883. L15 Alfred, Son, Jan 1888.",
+   "type": "Transcript"
+  },
+  "N2211": {
+   "attached_to": [
+    {
+     "id": "C1427",
+     "type": "citation"
+    }
+   ],
+   "change": 1795389543,
+   "flags": [],
+   "handle": "1054378f43e35d3c550d86d72793",
+   "html": "<p>2026-11-22 (karel): Clara Toepel (Zetterholm), added by 2026-11-12_100006_toepel-clara_add-person (in applied\\ 16 Nov 2026, 11:29 AM ET) and linked to no one. F0191 is Mary Weihler I0381 (Ancestry 212811650336) with no father, children Alfred Louis Toepel I0408 and Oscar M. Toepel I0350 (16 Nov 2026 export). The 1900 census image (re-read 16 Nov 2026) lists in Mary Toepel&#x27;s household: line 10 &quot;Toepel, Mary, Head ... Jun 1854 ... Wd&quot;, line 12 &quot;Clara, Daughter, Oct 1879&quot;, with line 13 &quot;Oscar, Son, Apr 1882&quot; and line 15 &quot;Alfred, Son, Jan 1888&quot;. The Minnesota death index (certificate 1962-MN-005051, re-read 16 Nov 2026) gives Clara Zetterholm &quot;Birth date: Oct 9 1879&quot; and &quot;Mother&#x27;s maiden name: WEIHLER&quot;. Birth daughter of Mary; no father in F0191, so only the mother side applies. Not add_family: F0191 already exists. Ancestry 212815727974 is Mary&#x27;s daughter on tree 208290233; the census crop is in her Ancestry gallery.<br>Conflicts: [&quot;Identity of Clara Zetterholm with the 1900 Clara Toepel rests on matching birth month and year and mother&#x27;s maiden name WEIHLER; no marriage record found (as in 2026-11-12_100006).&quot;]</p>",
+   "id": "N2211",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-22 (karel): Clara Toepel (Zetterholm), added by 2026-11-12_100006_toepel-clara_add-person (in applied\\ 16 Nov 2026, 11:29 AM ET) and linked to no one. F0191 is Mary Weihler I0381 (Ancestry 212811650336) with no father, children Alfred Louis Toepel I0408 and Oscar M. Toepel I0350 (16 Nov 2026 export). The 1900 census image (re-read 16 Nov 2026) lists in Mary Toepel's household: line 10 \"Toepel, Mary, Head ... Jun 1854 ... Wd\", line 12 \"Clara, Daughter, Oct 1879\", with line 13 \"Oscar, Son, Apr 1882\" and line 15 \"Alfred, Son, Jan 1888\". The Minnesota death index (certificate 1962-MN-005051, re-read 16 Nov 2026) gives Clara Zetterholm \"Birth date: Oct 9 1879\" and \"Mother's maiden name: WEIHLER\". Birth daughter of Mary; no father in F0191, so only the mother side applies. Not add_family: F0191 already exists. Ancestry 212815727974 is Mary's daughter on tree 208290233; the census crop is in her Ancestry gallery.\nConflicts: [\"Identity of Clara Zetterholm with the 1900 Clara Toepel rests on matching birth month and year and mother's maiden name WEIHLER; no marriage record found (as in 2026-11-12_100006).\"]",
+   "type": "Research"
+  },
+  "N2212": {
+   "attached_to": [
+    {
+     "id": "C1428",
+     "type": "citation"
+    }
+   ],
+   "change": 1795389544,
+   "flags": [],
+   "handle": "1054378f71c11a5e79800c56eb30",
+   "html": "<p>Transcription (as written): Caroline was born to George and Pauline Karl. ... She was preceded in death by her husband: Daniel J. Langenkamp; her parents: George and Pauline Karl; one sister: Gertrude Konecny</p>",
+   "id": "N2212",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Caroline was born to George and Pauline Karl. ... She was preceded in death by her husband: Daniel J. Langenkamp; her parents: George and Pauline Karl; one sister: Gertrude Konecny",
+   "type": "Transcript"
+  },
+  "N2213": {
+   "attached_to": [
+    {
+     "id": "C1428",
+     "type": "citation"
+    }
+   ],
+   "change": 1795389544,
+   "flags": [],
+   "handle": "1054378f751c2f927a86aad2dbd2",
+   "html": "<p>2026-11-22 (karel): Caroline M. Karl I0407 (Ancestry 212815086130) has no parents in the 16 Nov 2026 export. F0186 is George F. Karl I0397 x Pauline A. Kowalski I0398, children Gertrude I0302 and Charlotte I0399. Her obituary (Herald Times Reporter, 15 Dec 2006, p. A3, transcript re-read 16 Nov 2026): &quot;Caroline was born to George and Pauline Karl. ... preceded in death by her husband: Daniel J. Langenkamp; her parents: George and Pauline Karl; one sister: Gertrude Konecny&quot;. George F. Karl&#x27;s obituary (Herald Times Reporter, 16 Apr 1979, p. 3): &quot;June 26, 1917, he married Pauline Kowalski in Kewaunee. ... Survivors include his wife, Pauline; four daughters and sons-in-law, Caroline and Daniel Langenkamp, Gertrude and Edward Konecny, Elaine and Ruben Hartl and Charlotte and Glenn Ferdon&quot;. Pauline A. Karl&#x27;s obituary (Manitowoc Herald Times, 13 Aug 1989, p. B10): &quot;The former Pauline A. Kowalski ... married George F. Karl on June 26, 1917 ... Survivors include four daughters and two sons-in-law, Caroline Langenkamp, Gertrude and Edward Konecny, Elaine Hartl, Charlotte and Glenn Ferdon&quot;. Birth daughter of both. Ancestry 212815086130 was created 9 Nov 2026 as daughter of 212814968024 x 212814977135.</p>",
+   "id": "N2213",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-22 (karel): Caroline M. Karl I0407 (Ancestry 212815086130) has no parents in the 16 Nov 2026 export. F0186 is George F. Karl I0397 x Pauline A. Kowalski I0398, children Gertrude I0302 and Charlotte I0399. Her obituary (Herald Times Reporter, 15 Dec 2006, p. A3, transcript re-read 16 Nov 2026): \"Caroline was born to George and Pauline Karl. ... preceded in death by her husband: Daniel J. Langenkamp; her parents: George and Pauline Karl; one sister: Gertrude Konecny\". George F. Karl's obituary (Herald Times Reporter, 16 Apr 1979, p. 3): \"June 26, 1917, he married Pauline Kowalski in Kewaunee. ... Survivors include his wife, Pauline; four daughters and sons-in-law, Caroline and Daniel Langenkamp, Gertrude and Edward Konecny, Elaine and Ruben Hartl and Charlotte and Glenn Ferdon\". Pauline A. Karl's obituary (Manitowoc Herald Times, 13 Aug 1989, p. B10): \"The former Pauline A. Kowalski ... married George F. Karl on June 26, 1917 ... Survivors include four daughters and two sons-in-law, Caroline Langenkamp, Gertrude and Edward Konecny, Elaine Hartl, Charlotte and Glenn Ferdon\". Birth daughter of both. Ancestry 212815086130 was created 9 Nov 2026 as daughter of 212814968024 x 212814977135.",
+   "type": "Research"
+  },
+  "N2218": {
+   "attached_to": [
+    {
+     "id": "C1431",
+     "type": "citation"
+    }
+   ],
+   "change": 1795389547,
+   "flags": [],
+   "handle": "1054378fe61f674b3216fc5e8cda",
+   "html": "<p>Transcription (as written): Anton Wacek, 86, retired cabinet maker ... Born May 30, 1866, in Milnik, Czechoslovakia, Mr. Wacek came to the United States at the age of 12.</p>",
+   "id": "N2218",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Anton Wacek, 86, retired cabinet maker ... Born May 30, 1866, in Milnik, Czechoslovakia, Mr. Wacek came to the United States at the age of 12.",
+   "type": "Transcript"
+  },
+  "N2219": {
+   "attached_to": [
+    {
+     "id": "C1431",
+     "type": "citation"
+    }
+   ],
+   "change": 1795389547,
+   "flags": [],
+   "handle": "1054378fead43a4f6a9840e89c88",
+   "html": "<p>2026-11-22 (karel): Anton&#x27;s one Birth event says &#x27;about 1867, Bohemia&#x27; (from age 83 on the 1 Apr 1950 census: 2026-11-07_100159_01 add_person and 2026-11-11_083000 add_event, both in applied\\). His obituary (transcript re-read 16 Nov 2026) gives the exact date: &quot;Born May 30, 1866, in Milnik, Czechoslovakia&quot;. Age 83 on 1 Apr 1950 fits 30 May 1866. Only the date changes; the place &#x27;Bohemia&#x27; stays (&#x27;Milnik&#x27; is not identified). His obituary was recorded as not attached on Ancestry on 8 Nov 2026 and that has not been re-checked since.</p>",
+   "id": "N2219",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-22 (karel): Anton's one Birth event says 'about 1867, Bohemia' (from age 83 on the 1 Apr 1950 census: 2026-11-07_100159_01 add_person and 2026-11-11_083000 add_event, both in applied\\). His obituary (transcript re-read 16 Nov 2026) gives the exact date: \"Born May 30, 1866, in Milnik, Czechoslovakia\". Age 83 on 1 Apr 1950 fits 30 May 1866. Only the date changes; the place 'Bohemia' stays ('Milnik' is not identified). His obituary was recorded as not attached on Ancestry on 8 Nov 2026 and that has not been re-checked since.",
+   "type": "Research"
+  },
+  "N2220": {
+   "attached_to": [
+    {
+     "id": "E1565",
+     "type": "event"
+    }
+   ],
+   "change": 1795389547,
+   "flags": [],
+   "handle": "1054378ff7853f276989681d694a",
+   "html": "<p>2026-11-22 (karel): this Birth record was corrected (2026-11-16_174508_wacek-anton_birth-1866-05-30.json). Before, it said: date about 1867. Anton&#x27;s one Birth event says &#x27;about 1867, Bohemia&#x27; (from age 83 on the 1 Apr 1950 census: 2026-11-07_100159_01 add_person and 2026-11-11_083000 add_event, both in applied\\). His obituary (transcript re-read 16 Nov 2026) gives the exact date: &quot;Born May 30, 1866, in Milnik, Czechoslovakia&quot;. Age 83 on 1 Apr 1950 fits 30 May 1866. Only the date changes; the place &#x27;Bohemia&#x27; stays (&#x27;Milnik&#x27; is not identified). His obituary was recorded as not attached on Ancestry on 8 Nov 2026 and that has not been re-checked since.</p>",
+   "id": "N2220",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-22 (karel): this Birth record was corrected (2026-11-16_174508_wacek-anton_birth-1866-05-30.json). Before, it said: date about 1867. Anton's one Birth event says 'about 1867, Bohemia' (from age 83 on the 1 Apr 1950 census: 2026-11-07_100159_01 add_person and 2026-11-11_083000 add_event, both in applied\\). His obituary (transcript re-read 16 Nov 2026) gives the exact date: \"Born May 30, 1866, in Milnik, Czechoslovakia\". Age 83 on 1 Apr 1950 fits 30 May 1866. Only the date changes; the place 'Bohemia' stays ('Milnik' is not identified). His obituary was recorded as not attached on Ancestry on 8 Nov 2026 and that has not been re-checked since.",
+   "type": "Research"
+  },
+  "N2221": {
+   "attached_to": [
+    {
+     "id": "C1432",
+     "type": "citation"
+    }
+   ],
+   "change": 1795389548,
+   "flags": [],
+   "handle": "10543790098816cc40d20cb8325f",
+   "html": "<p>Transcription (as written): p.45: &quot;JoAnn LaMotte Wood / June 21,1934 - November 16, 2018&quot;. p.54: &quot;Norman met JoAnn LaMotte (born June 21,1934 in Benton Harbor, MI) ... they married December 16, 1955.&quot;</p>",
+   "id": "N2221",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): p.45: \"JoAnn LaMotte Wood / June 21,1934 - November 16, 2018\". p.54: \"Norman met JoAnn LaMotte (born June 21,1934 in Benton Harbor, MI) ... they married December 16, 1955.\"",
+   "type": "Transcript"
+  },
+  "N2222": {
+   "attached_to": [
+    {
+     "id": "C1432",
+     "type": "citation"
+    }
+   ],
+   "change": 1795389548,
+   "flags": [],
+   "handle": "105437900cf212cbbbeb8867385b",
+   "html": "<p>2026-11-22 (karel): I0364 is recorded as &#x27;Joann&#x27; (Ancestry 212811346080). Book p.45 In Memoriam: &quot;JoAnn LaMotte Wood / June 21,1934 - November 16, 2018&quot;; p.54: &quot;Norman met JoAnn LaMotte (born June 21,1934 in Benton Harbor, MI) ... they married December 16, 1955&quot;; p.58: &quot;JoAnn LaMotte (Wood)&quot; (transcripts pdf23, pdf28, pdf30 re-read 16 Nov 2026). Birth name LaMotte as the main name, Wood as married_surname.</p>",
+   "id": "N2222",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-22 (karel): I0364 is recorded as 'Joann' (Ancestry 212811346080). Book p.45 In Memoriam: \"JoAnn LaMotte Wood / June 21,1934 - November 16, 2018\"; p.54: \"Norman met JoAnn LaMotte (born June 21,1934 in Benton Harbor, MI) ... they married December 16, 1955\"; p.58: \"JoAnn LaMotte (Wood)\" (transcripts pdf23, pdf28, pdf30 re-read 16 Nov 2026). Birth name LaMotte as the main name, Wood as married_surname.",
+   "type": "Research"
+  },
+  "N2235": {
+   "attached_to": [
+    {
+     "id": "C1439",
+     "type": "citation"
+    }
+   ],
+   "change": 1795389555,
+   "flags": [],
+   "handle": "10543791296157bce0232014067c",
+   "html": "<p>Transcription (as written): They only stayed in Fort Leonard Wood a couple of years and then moved to Mt. Clemens, MI where daughter Eleanor was born in 1959. She stayed in DC for 40 years, before moving to Georgia to live with her daughter Eleanor, at the age of 90.</p>",
+   "id": "N2235",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): They only stayed in Fort Leonard Wood a couple of years and then moved to Mt. Clemens, MI where daughter Eleanor was born in 1959. She stayed in DC for 40 years, before moving to Georgia to live with her daughter Eleanor, at the age of 90.",
+   "type": "Transcript"
+  },
+  "N2236": {
+   "attached_to": [
+    {
+     "id": "C1439",
+     "type": "citation"
+    }
+   ],
+   "change": 1795389555,
+   "flags": [],
+   "handle": "105437912c20691676a21d14bed1",
+   "html": "<p>2026-11-22 (karel): Book pp.26-27 (re-read 18 Nov 2026): &quot;to Mt. Clemens, MI where daughter Eleanor was born in 1959.&quot; &quot;before moving to Georgia to live with her daughter Eleanor, at the age of 90.&quot; Parents are the existing couple F0033: Philip V. Gaddis I0183 / Ancestry 212801502810 × Virginia (Wood) Gaddis I0060 / Ancestry 212795068256, currently childless in the 18 Nov export (and in the 17 Nov public bundle). Ancestry IDs verified in the 12 Nov 2026 Gramps XML. Use update_family add_children; never add_family for that existing couple. F0033 type in the 17 Nov public bundle is Unknown and has no children; this file only adds Eleanor as a Birth child. Same household batch as 121070. Living: private true. Created 18 Nov 2026 as Living on Ancestry tree 208290233; ancestry_attached true. Anchor Ancestry IDs were re-confirmed from the 12 Nov 2026 Gramps XML and the IDs supplied for this filing.</p>",
+   "id": "N2236",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-22 (karel): Book pp.26-27 (re-read 18 Nov 2026): \"to Mt. Clemens, MI where daughter Eleanor was born in 1959.\" \"before moving to Georgia to live with her daughter Eleanor, at the age of 90.\" Parents are the existing couple F0033: Philip V. Gaddis I0183 / Ancestry 212801502810 × Virginia (Wood) Gaddis I0060 / Ancestry 212795068256, currently childless in the 18 Nov export (and in the 17 Nov public bundle). Ancestry IDs verified in the 12 Nov 2026 Gramps XML. Use update_family add_children; never add_family for that existing couple. F0033 type in the 17 Nov public bundle is Unknown and has no children; this file only adds Eleanor as a Birth child. Same household batch as 121070. Living: private true. Created 18 Nov 2026 as Living on Ancestry tree 208290233; ancestry_attached true. Anchor Ancestry IDs were re-confirmed from the 12 Nov 2026 Gramps XML and the IDs supplied for this filing.",
+   "type": "Research"
+  },
+  "N2237": {
+   "attached_to": [
+    {
+     "id": "C1440",
+     "type": "citation"
+    }
+   ],
+   "change": 1795389556,
+   "flags": [],
+   "handle": "1054379148fc7d2d034c77bae5dd",
+   "html": "<p>Transcription (as written): Virginia, the only child of Katherine and John, was born 10/14/1953 in Portage, WI.</p>",
+   "id": "N2237",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Virginia, the only child of Katherine and John, was born 10/14/1953 in Portage, WI.",
+   "type": "Transcript"
+  },
+  "N2238": {
+   "attached_to": [
+    {
+     "id": "C1440",
+     "type": "citation"
+    }
+   ],
+   "change": 1795389556,
+   "flags": [],
+   "handle": "105437914cad1630a33a2c60b09f",
+   "html": "<p>2026-11-22 (karel): Book p.50 (re-read 18 Nov 2026): &quot;Virginia, the only child of Katherine and John, was born 10/14/1953 in Portage, WI.&quot; Parents are the existing couple F0031: John Fox Taylor I0184 / Ancestry 212801502955 × Katherine (Wood) Taylor I0058 / Ancestry 212795068121, currently childless in the 18 Nov export. Ancestry IDs verified in the 12 Nov 2026 Gramps XML. Use update_family add_children for that couple; never add_family for F0031. The marriage to Dave is a new family. Same household batch as 121080. Living: private true. Created 18 Nov 2026 as Living on Ancestry tree 208290233; ancestry_attached true. Anchor Ancestry IDs were re-confirmed from the 12 Nov 2026 Gramps XML and the IDs supplied for this filing.</p>",
+   "id": "N2238",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-22 (karel): Book p.50 (re-read 18 Nov 2026): \"Virginia, the only child of Katherine and John, was born 10/14/1953 in Portage, WI.\" Parents are the existing couple F0031: John Fox Taylor I0184 / Ancestry 212801502955 × Katherine (Wood) Taylor I0058 / Ancestry 212795068121, currently childless in the 18 Nov export. Ancestry IDs verified in the 12 Nov 2026 Gramps XML. Use update_family add_children for that couple; never add_family for F0031. The marriage to Dave is a new family. Same household batch as 121080. Living: private true. Created 18 Nov 2026 as Living on Ancestry tree 208290233; ancestry_attached true. Anchor Ancestry IDs were re-confirmed from the 12 Nov 2026 Gramps XML and the IDs supplied for this filing.",
+   "type": "Research"
+  },
+  "N2239": {
+   "attached_to": [
+    {
+     "id": "C1441",
+     "type": "citation"
+    }
+   ],
+   "change": 1795389557,
+   "flags": [],
+   "handle": "105437916893765adb4e4a920f47",
+   "html": "<p>Transcription (as written): Norman and JoAnn would add three children to their branch of the family tree: Barbara (1956), Norman III (1958), and Charles (1962).</p>",
+   "id": "N2239",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Norman and JoAnn would add three children to their branch of the family tree: Barbara (1956), Norman III (1958), and Charles (1962).",
+   "type": "Transcript"
+  },
+  "N2240": {
+   "attached_to": [
+    {
+     "id": "C1441",
+     "type": "citation"
+    }
+   ],
+   "change": 1795389557,
+   "flags": [],
+   "handle": "105437916c31567ec56bdde26614",
+   "html": "<p>2026-11-22 (karel): Book p.54 (re-read 18 Nov 2026): &quot;Norman and JoAnn would add three children to their branch of the family tree: Barbara (1956), Norman III (1958), and Charles (1962).&quot; Parents are the existing couple F0032: Norman B. Wood Jr. I0059 / Ancestry 212795068190 × JoAnn I0364 / Ancestry 212811346080, currently childless in the 18 Nov export. Ancestry IDs verified in the 12 Nov 2026 Gramps XML and in HAND-LINK-QUEUE.md / CHANGESET.csv. Use update_family add_children; never add_family for F0032. Held proposals already touch I0364&#x27;s name and Norman III&#x27;s link to this same family; this file adds only Barbara. Same household batch as 121110. Charles is drafted in H31 as a separate update_family add_children on the same couple. Living: private true. Created 18 Nov 2026 as Living on Ancestry tree 208290233; ancestry_attached true. Anchor Ancestry IDs were re-confirmed from the 12 Nov 2026 Gramps XML and the IDs supplied for this filing. This file adds only Barbara to existing F0032. Charles is a separate update_family in H31.</p>",
+   "id": "N2240",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-22 (karel): Book p.54 (re-read 18 Nov 2026): \"Norman and JoAnn would add three children to their branch of the family tree: Barbara (1956), Norman III (1958), and Charles (1962).\" Parents are the existing couple F0032: Norman B. Wood Jr. I0059 / Ancestry 212795068190 × JoAnn I0364 / Ancestry 212811346080, currently childless in the 18 Nov export. Ancestry IDs verified in the 12 Nov 2026 Gramps XML and in HAND-LINK-QUEUE.md / CHANGESET.csv. Use update_family add_children; never add_family for F0032. Held proposals already touch I0364's name and Norman III's link to this same family; this file adds only Barbara. Same household batch as 121110. Charles is drafted in H31 as a separate update_family add_children on the same couple. Living: private true. Created 18 Nov 2026 as Living on Ancestry tree 208290233; ancestry_attached true. Anchor Ancestry IDs were re-confirmed from the 12 Nov 2026 Gramps XML and the IDs supplied for this filing. This file adds only Barbara to existing F0032. Charles is a separate update_family in H31.",
+   "type": "Research"
+  },
+  "N2241": {
+   "attached_to": [
+    {
+     "id": "C1442",
+     "type": "citation"
+    }
+   ],
+   "change": 1795389558,
+   "flags": [],
+   "handle": "1054379189d45f172ab1e7d1ce82",
+   "html": "<p>Transcription (as written): Norman and JoAnn would add three children to their branch of the family tree: Barbara (1956), Norman III (1958), and Charles (1962). Charles Graham Wood was born September 10, 1962, in Milwaukee, Wisconsin. Like his father, he was the baby of the family, joining sister Barbara, and brother Norman III.</p>",
+   "id": "N2241",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Norman and JoAnn would add three children to their branch of the family tree: Barbara (1956), Norman III (1958), and Charles (1962). Charles Graham Wood was born September 10, 1962, in Milwaukee, Wisconsin. Like his father, he was the baby of the family, joining sister Barbara, and brother Norman III.",
+   "type": "Transcript"
+  },
+  "N2242": {
+   "attached_to": [
+    {
+     "id": "C1442",
+     "type": "citation"
+    }
+   ],
+   "change": 1795389558,
+   "flags": [],
+   "handle": "105437918c862003d6f756263fae",
+   "html": "<p>2026-11-22 (karel): Book pp.54, 62 (re-read 18 Nov 2026): &quot;Norman and JoAnn would add three children to their branch of the family tree: Barbara (1956), Norman III (1958), and Charles (1962).&quot; &quot;Charles Graham Wood was born September 10, 1962, in Milwaukee, Wisconsin. Like his father, he was the baby of the family, joining sister Barbara, and brother Norman III.&quot; Parents are the existing couple F0032: Norman B. Wood Jr. I0059 / Ancestry 212795068190 × JoAnn I0364 / Ancestry 212811346080. Use update_family add_children; never add_family for F0032. Same family as Barbara (H25). Norman III&#x27;s own household is not drafted in this batch. This file adds only Charles. Barbara is a separate update_family in H25. Living: private true. Created 18 Nov 2026 as Living on Ancestry tree 208290233; ancestry_attached true. Anchor Ancestry IDs were re-confirmed from the 12 Nov 2026 Gramps XML and the IDs supplied for this filing. This file adds only Charles to existing F0032. Barbara is a separate update_family in H25.</p>",
+   "id": "N2242",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-22 (karel): Book pp.54, 62 (re-read 18 Nov 2026): \"Norman and JoAnn would add three children to their branch of the family tree: Barbara (1956), Norman III (1958), and Charles (1962).\" \"Charles Graham Wood was born September 10, 1962, in Milwaukee, Wisconsin. Like his father, he was the baby of the family, joining sister Barbara, and brother Norman III.\" Parents are the existing couple F0032: Norman B. Wood Jr. I0059 / Ancestry 212795068190 × JoAnn I0364 / Ancestry 212811346080. Use update_family add_children; never add_family for F0032. Same family as Barbara (H25). Norman III's own household is not drafted in this batch. This file adds only Charles. Barbara is a separate update_family in H25. Living: private true. Created 18 Nov 2026 as Living on Ancestry tree 208290233; ancestry_attached true. Anchor Ancestry IDs were re-confirmed from the 12 Nov 2026 Gramps XML and the IDs supplied for this filing. This file adds only Charles to existing F0032. Barbara is a separate update_family in H25.",
+   "type": "Research"
+  },
+  "N2243": {
+   "attached_to": [
+    {
+     "id": "C1443",
+     "type": "citation"
+    }
+   ],
+   "change": 1795389558,
+   "flags": [],
+   "handle": "10543791a6934d1c5646c206bad7",
+   "html": "<p>Transcription (as written): Sheet header: State Minn.; County Freeborn; Place Albert Lea City; E.D. 24-6; sheet 9; enumerated April 5, 1950 by Mary K. Whelan. Line 6: Adair, Floyd C. | Head | W | M | 47 | mar | Nebraska. Line 7: ——, Florence M. | wife | W | F | 41 | mar | Minn. Line 8: ——, Dennis C. | son | W | M | 6 | nev | Minn.</p>",
+   "id": "N2243",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Sheet header: State Minn.; County Freeborn; Place Albert Lea City; E.D. 24-6; sheet 9; enumerated April 5, 1950 by Mary K. Whelan. Line 6: Adair, Floyd C. | Head | W | M | 47 | mar | Nebraska. Line 7: ——, Florence M. | wife | W | F | 41 | mar | Minn. Line 8: ——, Dennis C. | son | W | M | 6 | nev | Minn.",
+   "type": "Transcript"
+  },
+  "N2244": {
+   "attached_to": [
+    {
+     "id": "C1443",
+     "type": "citation"
+    }
+   ],
+   "change": 1795389559,
+   "flags": [],
+   "handle": "10543791a92c273e9b3706580015",
+   "html": "<p>2026-11-22 (karel): Record-tier evidence for Dennis Adair (212817587592; companion to add_person 100501, applied after it): Dennis C., son, line 8. The 1950 United States Federal Census record 93320757 (Albert Lea, Floyd age 47) is attached on Ancestry to Floyd, Dennis and Florence (Florence also has a 1950 Residence fact citing it); verified on their Facts pages 21 Nov 2026 (Sources list shows &quot;1950 United States Federal Census&quot;). Image is a crop of the NARA sheet (header plus lines 6-8 only; line 9, a 4-year-old daughter presumed living, is left out).<br>Conflicts: [&#x27;Ancestry\\&#x27;s index for this record reads Birth Place &quot;35&quot; and Birth Date &quot;abt 1903&quot; for Floyd; the image reads &quot;Nebraska&quot;, age 47.&#x27;, &quot;The 21 Nov research packet gave the household as lines 7-9; the sheet&#x27;s own line numbers are 6 (Floyd), 7 (Florence), 8 (Dennis).&quot;]</p>",
+   "id": "N2244",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-22 (karel): Record-tier evidence for Dennis Adair (212817587592; companion to add_person 100501, applied after it): Dennis C., son, line 8. The 1950 United States Federal Census record 93320757 (Albert Lea, Floyd age 47) is attached on Ancestry to Floyd, Dennis and Florence (Florence also has a 1950 Residence fact citing it); verified on their Facts pages 21 Nov 2026 (Sources list shows \"1950 United States Federal Census\"). Image is a crop of the NARA sheet (header plus lines 6-8 only; line 9, a 4-year-old daughter presumed living, is left out).\nConflicts: ['Ancestry\\'s index for this record reads Birth Place \"35\" and Birth Date \"abt 1903\" for Floyd; the image reads \"Nebraska\", age 47.', \"The 21 Nov research packet gave the household as lines 7-9; the sheet's own line numbers are 6 (Floyd), 7 (Florence), 8 (Dennis).\"]",
    "type": "Research"
   }
  },
@@ -167208,7 +169100,7 @@
     "type": "Birth",
     "year": 1949
    },
-   "change": 1794885377,
+   "change": 1795389485,
    "citations": [],
    "death": {
     "date": {
@@ -167308,7 +169200,7 @@
     "type": "Birth",
     "year": 1964
    },
-   "change": 1793043735,
+   "change": 1795389483,
    "citations": [],
    "death": {
     "date": {
@@ -167345,7 +169237,9 @@
     }
    ],
    "families": [],
-   "flags": [],
+   "flags": [
+    "agent-proposed"
+   ],
    "gender": "M",
    "handle": "104ebd54c8cc254b87115b2b15ce",
    "id": "I0355",
@@ -167370,13 +169264,17 @@
     "F0039"
    ],
    "provenance": [
+    "agent-karel",
+    "agent-proposed",
     "import-ancestry-2026-10-25"
    ],
    "review": "unreviewed",
    "status": "full",
    "tags": [
     "import-ancestry-2026-10-25",
-    "unreviewed"
+    "unreviewed",
+    "agent-karel",
+    "agent-proposed"
    ],
    "urls": [],
    "xref": {
@@ -167949,7 +169847,21 @@
    "status": "living"
   },
   "I0364": {
-   "alt_names": [],
+   "alt_names": [
+    {
+     "call": "",
+     "date": null,
+     "display": "JoAnn Wood",
+     "first": "JoAnn",
+     "nick": "",
+     "prefix": "",
+     "sort": "Wood, JoAnn",
+     "suffix": "",
+     "surname": "Wood",
+     "title": "",
+     "type": "Married Name"
+    }
+   ],
    "attributes": [
     {
      "type": "Description",
@@ -167972,8 +169884,10 @@
     "type": "Birth",
     "year": 1934
    },
-   "change": 1793473207,
-   "citations": [],
+   "change": 1795389548,
+   "citations": [
+    "C1432"
+   ],
    "death": {
     "date": {
      "day": 16,
@@ -168016,13 +169930,13 @@
    "media": [],
    "name": {
     "call": "",
-    "display": "Joann",
-    "first": "Joann",
+    "display": "JoAnn LaMotte",
+    "first": "JoAnn",
     "nick": "",
     "prefix": "",
-    "sort": "Joann",
+    "sort": "LaMotte, JoAnn",
     "suffix": "",
-    "surname": "",
+    "surname": "LaMotte",
     "title": "",
     "type": "Birth Name"
    },
@@ -169402,12 +171316,44 @@
    "status": "living"
   },
   "I0393": {
+   "alt_names": [],
+   "attributes": [],
+   "birth": {
+    "date": {
+     "day": 30,
+     "iso": "1866-05-30",
+     "modifier": null,
+     "month": 5,
+     "quality": null,
+     "sort": 2402752,
+     "text": "30 May 1866",
+     "year": 1866
+    },
+    "event": "E1565",
+    "place": "P0268",
+    "type": "Birth",
+    "year": 1866
+   },
+   "change": 1794885372,
+   "citations": [
+    "C1264"
+   ],
+   "events": [
+    {
+     "ref": "E1565",
+     "role": "Primary"
+    }
+   ],
    "families": [
     "F0183"
+   ],
+   "flags": [
+    "agent-proposed"
    ],
    "gender": "M",
    "handle": "1051224fa0962dd6582b5509081c",
    "id": "I0393",
+   "media": [],
    "name": {
     "call": "",
     "display": "Anton Wacek",
@@ -169417,10 +171363,25 @@
     "sort": "Wacek, Anton",
     "suffix": "",
     "surname": "Wacek",
-    "title": ""
+    "title": "",
+    "type": "Birth Name"
    },
+   "notes": [],
    "parents": [],
-   "status": "living"
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "urls": [],
+   "xref": {
+    "ancestry": "212814441290"
+   }
   },
   "I0394": {
    "alt_names": [],
@@ -170097,19 +172058,21 @@
    }
   },
   "I0401": {
-   "families": [],
+   "families": [
+    "F0183"
+   ],
    "gender": "F",
    "handle": "105155cfb0db109388f75b25aa5",
    "id": "I0401",
    "name": {
     "call": "",
-    "display": "Anna",
+    "display": "Anna Suchomel",
     "first": "Anna",
     "nick": "",
     "prefix": "",
-    "sort": "Anna",
+    "sort": "Suchomel, Anna",
     "suffix": "",
-    "surname": "",
+    "surname": "Suchomel",
     "title": ""
    },
    "parents": [],
@@ -170619,7 +172582,7 @@
     "type": "Birth",
     "year": 1919
    },
-   "change": 1794846613,
+   "change": 1795389544,
    "citations": [
     "C1287",
     "C1290"
@@ -170673,7 +172636,9 @@
     "type": "Birth Name"
    },
    "notes": [],
-   "parents": [],
+   "parents": [
+    "F0186"
+   ],
    "provenance": [
     "agent-karel",
     "agent-proposed"
@@ -171523,7 +173488,7 @@
     "type": "Birth",
     "year": 1879
    },
-   "change": 1794846614,
+   "change": 1795389544,
    "citations": [
     "C1310",
     "C1317"
@@ -171575,7 +173540,9 @@
     "type": "Birth Name"
    },
    "notes": [],
-   "parents": [],
+   "parents": [
+    "F0191"
+   ],
    "provenance": [
     "agent-karel",
     "agent-proposed"
@@ -171786,9 +173753,10 @@
     "type": "Birth",
     "year": 1958
    },
-   "change": 1794864603,
+   "change": 1795389542,
    "citations": [
-    "C1318"
+    "C1318",
+    "C1425"
    ],
    "death": {
     "date": {
@@ -171826,12 +173794,12 @@
    "media": [],
    "name": {
     "call": "",
-    "display": "Norman Bentley Wood",
+    "display": "Norman Bentley Wood III",
     "first": "Norman Bentley",
     "nick": "",
     "prefix": "",
     "sort": "Wood, Norman Bentley",
-    "suffix": "",
+    "suffix": "III",
     "surname": "Wood",
     "title": "",
     "type": "Birth Name"
@@ -171839,7 +173807,9 @@
    "notes": [
     "N1991"
    ],
-   "parents": [],
+   "parents": [
+    "F0032"
+   ],
    "provenance": [
     "agent-karel",
     "agent-proposed"
@@ -172223,6 +174193,285 @@
    "urls": [],
    "xref": {
     "ancestry": "212817587641"
+   }
+  },
+  "I0501": {
+   "alt_names": [],
+   "attributes": [],
+   "birth": {
+    "date": {
+     "day": 13,
+     "iso": "1930-05-13",
+     "modifier": null,
+     "month": 5,
+     "quality": null,
+     "sort": 2426110,
+     "text": "13 May 1930",
+     "year": 1930
+    },
+    "event": "E1678",
+    "place": null,
+    "type": "Birth",
+    "year": 1930
+   },
+   "change": 1795389525,
+   "citations": [
+    "C1402"
+   ],
+   "death": {
+    "date": {
+     "day": 30,
+     "iso": "2021-04-30",
+     "modifier": null,
+     "month": 4,
+     "quality": null,
+     "sort": 2459335,
+     "text": "30 April 2021",
+     "year": 2021
+    },
+    "event": "E1679",
+    "place": null,
+    "type": "Death",
+    "year": 2021
+   },
+   "events": [
+    {
+     "ref": "E1678",
+     "role": "Primary"
+    },
+    {
+     "ref": "E1679",
+     "role": "Primary"
+    }
+   ],
+   "families": [
+    "F0222"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "gender": "M",
+   "handle": "1054378c52756ad73b72d0b535f6",
+   "id": "I0501",
+   "media": [],
+   "name": {
+    "call": "",
+    "display": "John Thomas Morris",
+    "first": "John Thomas",
+    "nick": "",
+    "prefix": "",
+    "sort": "Morris, John Thomas",
+    "suffix": "",
+    "surname": "Morris",
+    "title": "",
+    "type": "Birth Name"
+   },
+   "notes": [],
+   "parents": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "urls": [],
+   "xref": {
+    "ancestry": "212817431069"
+   }
+  },
+  "I0502": {
+   "alt_names": [
+    {
+     "call": "",
+     "date": null,
+     "display": "Lois Elizabeth Morris",
+     "first": "Lois Elizabeth",
+     "nick": "",
+     "prefix": "",
+     "sort": "Morris, Lois Elizabeth",
+     "suffix": "",
+     "surname": "Morris",
+     "title": "",
+     "type": "Married Name"
+    }
+   ],
+   "attributes": [],
+   "birth": {
+    "date": {
+     "day": 6,
+     "iso": "1931-01-06",
+     "modifier": null,
+     "month": 1,
+     "quality": null,
+     "sort": 2426348,
+     "text": "6 January 1931",
+     "year": 1931
+    },
+    "event": "E1680",
+    "place": null,
+    "type": "Birth",
+    "year": 1931
+   },
+   "change": 1795389525,
+   "citations": [
+    "C1403"
+   ],
+   "death": {
+    "date": {
+     "day": 10,
+     "iso": "2022-08-10",
+     "modifier": null,
+     "month": 8,
+     "quality": null,
+     "sort": 2459802,
+     "text": "10 August 2022",
+     "year": 2022
+    },
+    "event": "E1681",
+    "place": null,
+    "type": "Death",
+    "year": 2022
+   },
+   "events": [
+    {
+     "ref": "E1680",
+     "role": "Primary"
+    },
+    {
+     "ref": "E1681",
+     "role": "Primary"
+    }
+   ],
+   "families": [
+    "F0222"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "gender": "F",
+   "handle": "1054378c833c39867557df5a1170",
+   "id": "I0502",
+   "media": [],
+   "name": {
+    "call": "",
+    "display": "Lois Elizabeth",
+    "first": "Lois Elizabeth",
+    "nick": "",
+    "prefix": "",
+    "sort": "Lois Elizabeth",
+    "suffix": "",
+    "surname": "",
+    "title": "",
+    "type": "Birth Name"
+   },
+   "notes": [],
+   "parents": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "urls": [],
+   "xref": {
+    "ancestry": "212817431091"
+   }
+  },
+  "I0503": {
+   "alt_names": [],
+   "attributes": [],
+   "birth": {
+    "date": {
+     "day": 26,
+     "iso": "1943-04-26",
+     "modifier": null,
+     "month": 4,
+     "quality": null,
+     "sort": 2430841,
+     "text": "26 April 1943",
+     "year": 1943
+    },
+    "event": "E1682",
+    "place": "P0283",
+    "type": "Birth",
+    "year": 1943
+   },
+   "change": 1795389559,
+   "citations": [
+    "C1404",
+    "C1443"
+   ],
+   "death": {
+    "date": {
+     "day": 28,
+     "iso": "2001-09-28",
+     "modifier": null,
+     "month": 9,
+     "quality": null,
+     "sort": 2452181,
+     "text": "28 September 2001",
+     "year": 2001
+    },
+    "event": "E1683",
+    "place": "P0285",
+    "type": "Death",
+    "year": 2001
+   },
+   "events": [
+    {
+     "ref": "E1682",
+     "role": "Primary"
+    },
+    {
+     "ref": "E1683",
+     "role": "Primary"
+    }
+   ],
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "gender": "M",
+   "handle": "1054378cc1cc2592f416051d19f1",
+   "id": "I0503",
+   "media": [],
+   "name": {
+    "call": "",
+    "display": "Dennis Charles Adair",
+    "first": "Dennis Charles",
+    "nick": "",
+    "prefix": "",
+    "sort": "Adair, Dennis Charles",
+    "suffix": "",
+    "surname": "Adair",
+    "title": "",
+    "type": "Birth Name"
+   },
+   "notes": [],
+   "parents": [
+    "F0196"
+   ],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "urls": [],
+   "xref": {
+    "ancestry": "212817587592"
    }
   }
  },
@@ -181663,6 +183912,14 @@
    "notes": [],
    "type": "Archive",
    "urls": []
+  },
+  "R0033": {
+   "handle": "1054378c2729344e404d52342ff5",
+   "id": "R0033",
+   "name": "Cremation Society of Georgia (csog.com, Tukios obituary site)",
+   "notes": [],
+   "type": "Archive",
+   "urls": []
   }
  },
  "sources": {
@@ -188072,10 +190329,12 @@
    "attributes": {},
    "author": "",
    "citations": [
+    "C1264",
     "C1265",
     "C1266",
     "C1267",
-    "C1269"
+    "C1269",
+    "C1296"
    ],
    "flags": [
     "agent-proposed"
@@ -188575,7 +190834,8 @@
    "attributes": {},
    "author": "",
    "citations": [
-    "C1290"
+    "C1290",
+    "C1428"
    ],
    "flags": [
     "agent-proposed"
@@ -188775,7 +191035,8 @@
    "citations": [
     "C1298",
     "C1301",
-    "C1317"
+    "C1317",
+    "C1427"
    ],
    "flags": [
     "agent-proposed"
@@ -189113,7 +191374,15 @@
    "attributes": {},
    "author": "Beth Moorcones, ed.",
    "citations": [
-    "C1318"
+    "C1318",
+    "C1425",
+    "C1426",
+    "C1432",
+    "C1433",
+    "C1439",
+    "C1440",
+    "C1441",
+    "C1442"
    ],
    "flags": [
     "agent-proposed"
@@ -189278,7 +191547,8 @@
    "attributes": {},
    "author": "",
    "citations": [
-    "C1323"
+    "C1323",
+    "C1443"
    ],
    "flags": [
     "agent-proposed"
@@ -189338,6 +191608,138 @@
     "agent-proposed"
    ],
    "title": "1950 United States Census, Population Schedule, Minnesota, Ramsey County, St. Paul, ED 90-230, sheet 12"
+  },
+  "S0243": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1402"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1054378c2ab17bdeb4d0c796b5d7",
+   "id": "S0243",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0033"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "Cremation Society of Georgia obituary page: John Thomas Morris"
+  },
+  "S0244": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1403"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1054378c5bd1660d2de188a3f34b",
+   "id": "S0244",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0033"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "Cremation Society of Georgia obituary page: Lois Elizabeth Morris"
+  },
+  "S0245": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1404"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1054378c9c5d3f07617af72542b5",
+   "id": "S0245",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0026"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "Minnesota death index, 1904-2001: Dennis Charles Adair, certificate 2001-MN-527392"
+  },
+  "S0247": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1431"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1054378fe0de29280872eb4f593d",
+   "id": "S0247",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0024"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "Anton Wacek obituary, Manitowoc Herald Times, 15 Jan 1953, p. 20"
   }
  }
 }
