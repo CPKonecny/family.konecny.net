@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""apply_proposals.py  v0.3.2  (2026-11-22)
+"""apply_proposals.py  v0.3.3  (2026-11-23)
 
 Promotes Karel's proposal files into the Gramps master, and applies validator verdicts.
 
@@ -14,6 +14,7 @@ Promotes Karel's proposal files into the Gramps master, and applies validator ve
   python3 apply_proposals.py --resubmit      # move rejected/*.json back to inbox first, then run
   python3 apply_proposals.py --verdicts      # apply validation/*.json (tag swap + confidence)
   python3 apply_proposals.py --repair-links  # drop family_list/parent_family_list entries that aren't families
+  python3 apply_proposals.py --minors        # who counts as under 18, children it can't judge, what the next run tags (changes nothing)
 
 Login: GRAMPS_USER / GRAMPS_PASS from the environment (cron), else from .applier.env beside this file,
 else prompted (never stored here). The proposal format is described in tools/PROPOSALS.md.
@@ -45,6 +46,12 @@ A family made earlier in the same run (when the second of a couple was added) co
 add_family that asks for "private": true on a family that was already in the tree before the run is
 rejected rather than half done: that change is set_private's, and waits for Chris.
 
+Children under 18: every run ends by tagging "minor" each person whose birth date says they may be under 18 and
+who has no death, and by taking the tag off at 18 (a year alone counts as 31 December, a month as its last day,
+"about" adds two years). New people are tagged as they are made. The public export shows a living person with
+the tag as "Living child", without a name. Someone with no birth date is not tagged: file them private until a
+birth year is known.
+
 Every change action records what the objects looked like before, in undo/<name>.undo.json.
 """
 import copy
@@ -60,12 +67,12 @@ import shutil
 import sys
 import time
 import uuid
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
 from pathlib import Path
 
 import requests
 
-VERSION = "0.3.2"
+VERSION = "0.3.3"
 BASE = os.environ.get("GRAMPS_API", "http://127.0.0.1:5055/api")
 HERE = Path(__file__).resolve().parent
 APPROVALS = Path(os.environ.get("APPLIER_APPROVALS", os.path.expanduser("~/.config/family-site/approved-proposals.txt")))
@@ -74,7 +81,9 @@ DRY = ONE = False
 RECENT_YEARS = 100          # born this recently (or with nothing to date them): Chris approves first
 
 AGENT_TAGS = {"karel": ["agent-karel", "agent-proposed"], "validator": ["agent-validator"]}
-TAG_COLORS = {"agent-karel": "#3f51b5", "agent-proposed": "#ff9800", "agent-validator": "#009688",
+MINOR_TAG = "minor"         # set by the applier from birth dates; the export shows these people as "Living child"
+ADULT_AGE = 18
+TAG_COLORS = {"minor": "#607d8b", "agent-karel": "#3f51b5", "agent-proposed": "#ff9800", "agent-validator": "#009688",
               "ai-validated": "#8bc34a", "needs-human": "#f44336", "reviewed": "#4caf50",
               "sync-to-ancestry": "#9c27b0", "unreviewed": "#ff9800", "needs-place": "#795548"}
 ADDS = {"add_person", "add_family", "add_event", "add_citation", "add_note", "add_media"}
@@ -584,6 +593,152 @@ def event_ymd(ev):
 
 def date_modifier(ev):
     return ((ev or {}).get("date") or {}).get("modifier") or 0
+
+
+def _last_day(y, m):
+    if m == 12:
+        return 31
+    return (date(y, m + 1, 1) - date(y, m, 1)).days
+
+
+def latest_day(y, m=0, d=0):
+    """The latest day that a year, a year and month, or a full date can mean."""
+    if not y:
+        return None
+    m = m if 1 <= (m or 0) <= 12 else 12
+    d = d if d and 1 <= d <= _last_day(y, m) else _last_day(y, m)
+    return date(y, m, d)
+
+
+def latest_birth_of(dateobj):
+    """The latest day a Gramps date (as the API gives it) allows for a birth, or None if it has no year.
+    Leaning late keeps a child counted as a child: "about" adds two years, "after" ten, a range takes its end."""
+    if not dateobj:
+        return None
+    dv = dateobj.get("dateval") or []
+    mod = dateobj.get("modifier") or 0
+    if mod == 6 or len(dv) < 3:                   # text only
+        return None
+    if mod in (4, 5) and len(dv) >= 7 and dv[6]:   # range or span: its end
+        d, m, y = dv[4], dv[5], dv[6]
+    else:
+        d, m, y = dv[0], dv[1], dv[2]
+    if not y:
+        return None
+    if mod == 3 or (dateobj.get("quality") or 0) in (1, 2):    # about; estimated or calculated
+        return latest_day(y + 2)
+    if mod in (2, 7):                              # after, from
+        return latest_day(y + 10)
+    if mod in (1, 8):                              # before, to
+        return latest_day(y, m, d) - timedelta(days=1)
+    return latest_day(y, m, d)
+
+
+def adult_on(born):
+    """The day someone born on `born` turns ADULT_AGE (29 February counts as 1 March)."""
+    try:
+        return born.replace(year=born.year + ADULT_AGE)
+    except ValueError:
+        return date(born.year + ADULT_AGE, 3, 1)
+
+
+def is_minor_born(born, today=None):
+    return born is not None and (today or date.today()) < adult_on(born)
+
+
+BIRTHLIKE = ("Birth", "Baptism", "Christening")
+DEATHLIKE = ("Death", "Burial", "Cremation")
+
+
+def minor_status(person, tree, today=None):
+    """(True/False/None, latest birth day or None): True = may be under 18, False = adult or dead, None = no birth date."""
+    latest, dead = None, False
+    for ref in person.get("event_ref_list") or []:
+        if tname({"type": ref.get("role")}) not in ("", "Primary"):
+            continue
+        ev = tree.events_h.get(ref.get("ref"))
+        if not ev:
+            continue
+        t = tname(ev)
+        if t in DEATHLIKE:
+            dead = True
+        elif t in BIRTHLIKE:
+            b = latest_birth_of(ev.get("date"))
+            if b and (latest is None or b > latest):
+                latest = b
+    if dead:
+        return False, latest
+    if latest is None:
+        return None, None
+    return is_minor_born(latest, today), latest
+
+
+def minors_pass(api, tree, report_only=False, today=None):
+    """Tag "minor" whoever may be under 18 and has no death; take it off everyone else. Returns the lines it printed."""
+    lines, tagged, untagged = [], 0, 0
+    have = tree.tags.get(MINOR_TAG)
+    for p in list(tree.people):
+        minor, born = minor_status(p, tree, today)
+        has = bool(have) and have in (p.get("tag_list") or [])
+        if bool(minor) == has:
+            continue
+        label = f"{person_label(p)}{' [private]' if p.get('private') else ''}" + (f", born by {born:%d %b %Y}" if born else "")
+        dry = report_only or DRY
+        if minor:
+            lines.append(f"{'WOULD TAG' if dry else 'TAGGED'} minor: {label}"); tagged += 1
+        else:
+            lines.append(f"{'WOULD UNTAG' if dry else 'UNTAGGED'} minor: {label}"); untagged += 1
+        if dry:
+            continue
+        h = tree.tag(MINOR_TAG)
+        have = h
+
+        def fn(o, add=bool(minor), h=h):
+            lst = [t for t in (o.get("tag_list") or []) if t != h]
+            o["tag_list"] = lst + [h] if add else lst
+        api.journal = []
+        api.modify("people", p["handle"], fn)
+        api.journal = []
+    for ln in lines:
+        print(ln)
+    if tagged or untagged:
+        print(f"minors: {tagged} {'to tag' if report_only or DRY else 'tagged'}, "
+              f"{untagged} {'to untag' if report_only or DRY else 'untagged'}")
+    return lines
+
+
+def minors_report():
+    """--minors: everyone the rule counts as under 18 now, and what the next run would change. Writes nothing."""
+    api = Api(); tree = Tree(api)
+    have = tree.tags.get(MINOR_TAG)
+    rows = []
+    for p in tree.people:
+        minor, born = minor_status(p, tree)
+        if minor:
+            rows.append((born, p))
+    rows.sort(key=lambda x: x[0], reverse=True)
+    print(f"{len(rows)} people may be under {ADULT_AGE}; the public site shows them as 'Living child':")
+    for born, p in rows:
+        tag = "tagged" if have and have in (p.get("tag_list") or []) else "not tagged yet"
+        print(f"  {person_label(p)}  born by {born:%d %b %Y}, adult from {adult_on(born):%d %b %Y}"
+              f"{'  [private]' if p.get('private') else ''}  ({tag})")
+    # children in the tree with no birth date at all: the rule can't judge them, and the site would name them
+    cutoff = date.today().year - ADULT_AGE
+    unsure = []
+    for p in tree.people:
+        if minor_status(p, tree)[0] is None and p.get("parent_family_list"):
+            latest = tree.latest_birth(p)            # from the parents' and children's dates; None: nothing to go on
+            if latest is None or latest >= cutoff:
+                unsure.append(p)
+    if unsure:
+        print(f"\n{len(unsure)} more {'has' if len(unsure) == 1 else 'have'} no birth date, so the rule can't tell "
+              f"whether they are under {ADULT_AGE}. "
+              "Give each a birth year (a guess marked \"about\" will do), or keep them private:")
+        for p in sorted(unsure, key=person_label):
+            print(f"  {person_label(p)}{'  [private]' if p.get('private') else '  (shown by name now)'}")
+    lines = minors_pass(api, tree, report_only=True)
+    if not lines:
+        print("The tags are up to date.")
 
 def date_problem(text):
     """Why a date in a proposal cannot be used, or None. Dates are written 1898, 1898-07 or 1898-07-04."""
@@ -1534,7 +1689,17 @@ def apply(p, tree, api, fname):
         primary = name_obj(pe["first_name"], pe.get("surname", ""), "Birth Name", pe.get("suffix", ""))
         for key, field in (("call_name", "call"), ("nickname", "nick")):
             if pe.get(key): primary[field] = pe[key]
-        person = {"_class": "Person", "gender": GENDER[pe["gender"]], "private": private, "tag_list": tags,
+        b = pe.get("birth") or {}
+        born = latest_day(*date_key(b["date"])) if b.get("date") else None
+        if born and b.get("date_quality") in ("about", "estimated", "calculated"):
+            born = latest_day(born.year + 2)
+        elif born and b.get("date_quality") == "after":
+            born = latest_day(born.year + 10)
+        elif born and b.get("date_quality") == "before":
+            born = born - timedelta(days=1)
+        minor_now = is_minor_born(born) and not (pe.get("death") or {}).get("date")
+        person = {"_class": "Person", "gender": GENDER[pe["gender"]], "private": private,
+                  "tag_list": list(tags) + ([tree.tag(MINOR_TAG)] if minor_now else []),
                   "primary_name": primary,
                   "alternate_names": [name_obj(pe["first_name"], pe["married_surname"], "Married Name")] if pe.get("married_surname") else [],
                   "attribute_list": [attr("Ancestry ID", pe["ancestry_id"])],
@@ -2147,6 +2312,11 @@ def run():
             print(f"WARNING {person_label(person)} was added, but the spouse named for them (Ancestry {anc}) was not: "
                   "link the two with an add_family proposal once that person is in")
     if not stopped:
+        try:
+            minors_pass(api, tree)
+        except Exception as ex:                       # never let the tagging stop the queue's report; the next run retries
+            print(f"minors: tagging stopped ({type(ex).__name__}: {ex}); the next run tries again")
+    if not stopped:
         print(f"{applied} applied, {rejected} rejected, {api.writes} API write(s) {'planned' if DRY else 'made'}")
     report = waiting_report(held, tree) if held else ""
     if held and not stopped:
@@ -2295,7 +2465,7 @@ def main(argv=None):
     global DRY, ONE
     argv = list(sys.argv[1:] if argv is None else argv)
     known = {"--dry-run", "--one", "--resubmit", "--verdicts", "--repair-links", "--held", "--approve", "--reject",
-             "--reason", "--undo", "--force", "--version"}
+             "--reason", "--undo", "--force", "--version", "--minors"}
     flags = [a for a in argv if a.startswith("--")]
     if set(flags) - known:
         sys.exit(f"unknown option {sorted(set(flags) - known)[0]}; see the top of this file")
@@ -2313,6 +2483,8 @@ def main(argv=None):
     for d in (INBOX, APPLIED, REJECTED, VALID, HELD, UNDO): d.mkdir(parents=True, exist_ok=True)
     if "--held" in argv:
         show_held(); return 0
+    if "--minors" in argv:
+        minors_report(); return 0
     lock = None if DRY else take_lock()
     if not DRY and lock is None:
         print("another applier run is still going; nothing done this time")

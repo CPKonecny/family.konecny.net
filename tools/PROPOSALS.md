@@ -5,7 +5,7 @@ Nothing is typed into Gramps by an agent. A researcher writes one JSON file per 
 rejects it, or holds it for Chris. This page is the reference for those files. The applier is the
 judge: if this page and the applier disagree, tell Claude.
 
-Version: applier 0.3.2, 22 November 2026.
+Version: applier 0.3.3, 23 November 2026.
 
 ## Where a file goes, and when
 
@@ -52,6 +52,7 @@ Proposals that change the same record are marked there to be read together.
 | get rid of a duplicate or empty event (`delete_event`) | `merge_event` |
 | correct the date or place of an event that is there | `update_event` |
 | keep a person, family, event or note off the public site (`set_private`) | `set_private`; for something new, `"private": true` in the `add_…` file |
+| show a child under 18 without their name | nothing: give their birth year, and the applier tags them `minor` |
 | record a marriage | `family.marriage` in `add_family`, or `add_event` with type `Marriage` |
 
 Two things cannot be asked for: taking a parent out of a family, and deleting a person. Write those to
@@ -349,8 +350,19 @@ Gramps IDs; a person may also be given as `{"ancestry_id": "…"}`. Only what is
 * Take relationships from the source itself, page open, never from a summary of it.
 * From family papers (the Reunion Book, letters): names, relationships, and dates and places of
   birth, marriage and death only. No health, cause of death, character, work or addresses.
-* Every living person goes in with `"private": true` unless Chris has said otherwise for that person.
-  So does someone who died young and whose parents or brothers and sisters are living.
+* Living adults go in with `"private": false`. The public site shows a living person by name and family
+  links only: no dates, places or details. Make a living person private only when Chris has said so
+  for that person.
+* Give every child a birth year, an estimate if need be (`"date_quality": "about"`). From the birth date
+  the applier tags anyone under 18 `minor`, at every run, private or not, and takes the tag off on
+  their 18th birthday; the public site shows a tagged person as "Living child", with no name and no
+  page. A child with no birth year can't be judged and would be shown by name, so they go in with
+  `"private": true` until a year is known. The tag is the applier's: never add or remove it yourself.
+* Someone who died young and whose parents or brothers and sisters are living goes in with
+  `"private": true`; Chris decides.
+* Never name a child under 18, not even by first name, in a note, an event or media description, or
+  anything in `content/`. The export holds back Gramps text that names one, and the site leaves out
+  a story section or research card that does.
 * One batch per household, so that Chris can read what he is approving.
 
 ## Checking the tree
@@ -370,10 +382,12 @@ python3 apply_proposals.py --approve all             # approve what --held just 
 python3 apply_proposals.py --approve NAME            # or one by one (a unique beginning of the name is enough)
 python3 apply_proposals.py --reject NAME --reason "why"
 python3 apply_proposals.py --undo NAME               # put back what an applied change altered
+python3 apply_proposals.py --minors                  # who the site shows as "Living child", and children it can't judge
 ```
 
 `--approve all` covers only what the last `--held` listed, so nothing that arrived in between is
-approved unseen. An approval is for one file with one content and is kept in
+approved unseen. `--minors` changes nothing: it lists everyone the rule counts as under 18, with the
+day each turns 18, then the children in the tree with no birth date at all. An approval is for one file with one content and is kept in
 `~/.config/family-site/`, outside the proposals folder. `--undo` refuses if the same records have
 been changed again since.
 

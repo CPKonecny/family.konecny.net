@@ -59,6 +59,20 @@ HIDDEN_EVENT_TYPES = {"_AMTID", "_MTTAG", "_ORIG"}
 LINE_SHORT = {"konecny": "Konečný", "tauber": "Tauber", "wood": "Wood", "toepel": "Toepel", "hansen": "Hansen", "morris": "Morris", "all": ""}
 NOTE_EVENT_TYPES = {"research note", "spouse order research note"}   # shown as research notes
 NAME_EVENT_TYPES = {"aka"}                                             # shown with the names
+# how a child is related to a parent, when it is not by birth (Gramps' child reference types)
+REL_WORD = {"Adopted": "adopted", "Stepchild": "stepchild", "Foster": "foster child", "Sponsored": "sponsored child"}
+GROUP_LABEL = {"adopted": "Adoptive parents", "stepchild": "Step-parents", "foster child": "Foster parents",
+               "sponsored child": "Sponsors"}
+PARENT_WORD = {("adopted", "father"): "adoptive father", ("adopted", "mother"): "adoptive mother",
+               ("stepchild", "father"): "stepfather", ("stepchild", "mother"): "stepmother",
+               ("foster child", "father"): "foster father", ("foster child", "mother"): "foster mother",
+               ("sponsored child", "father"): "sponsor", ("sponsored child", "mother"): "sponsor"}
+
+
+def _rel_side(word: str, parent: str) -> str:
+    if not parent:
+        return word
+    return f"adopted by the {parent}" if word == "adopted" else f"{word} of the {parent}"
 
 
 TIER_ALIASES = {"published": "compiled", "hint": "tree", "newspaper": "record", "member-tree": "tree", "ai": "ai-draft"}
@@ -368,6 +382,16 @@ class Site:
             self.name_index[p["name"]["display"].lower()].append(p["id"])
         self.living_names = {p["name"]["display"].lower() for p in self.people.values() if p["status"] == "living"
                              and p["name"].get("first") and p["name"].get("surname")}
+        # parts of content/ that the export found naming a child under 18 (it knows their names; this build
+        # doesn't): (path under content/, section or card id, or None for the whole file). They are left out.
+        self.minor_text = set()
+        for e in self.meta.get("minor_text") or []:
+            rel = str(e.get("file") or "")
+            rel = rel[len("content/"):] if rel.startswith("content/") else rel
+            self.minor_text.add((rel, e.get("id")))
+
+    def names_child(self, rel: str, part_id=None) -> bool:
+        return (rel, None) in self.minor_text or (part_id is not None and (rel, part_id) in self.minor_text)
 
     # ---- lookups ---------------------------------------------------------- #
     def resolve(self, ref: str) -> str | None:
@@ -439,6 +463,64 @@ class Site:
     def spouse_in(self, f: dict, pid: str) -> dict | None:
         other = f.get("mother") if f.get("father") == pid else f.get("father")
         return self.people.get(other) if other else None
+
+    # ---- adopted, step, foster ------------------------------------------- #
+    @staticmethod
+    def rel_word(v) -> str:
+        """Gramps' child-to-parent relationship as a word; '' for a birth child or when it isn't known"""
+        if not v or v in ("Birth", "None", "Unknown"):
+            return ""
+        return REL_WORD.get(v, str(v).lower())
+
+    def child_rel(self, f: dict, ch: dict) -> str:
+        """'adopted', 'stepchild of the father' …: how a child in this family is related, '' for a birth child"""
+        fw = self.rel_word(ch.get("frel")) if f.get("father") else ""
+        mw = self.rel_word(ch.get("mrel")) if f.get("mother") else ""
+        if fw and fw == mw:
+            return fw
+        if fw and mw:
+            return f"{_rel_side(fw, 'father')}, {_rel_side(mw, 'mother')}"
+        if fw:
+            return _rel_side(fw, "father" if f.get("mother") else "")
+        if mw:
+            return _rel_side(mw, "mother" if f.get("father") else "")
+        return ""
+
+    def children_in(self, f: dict) -> list[dict]:
+        """the children of a family, each {"person", "rel"}"""
+        return [{"person": self.people[c["ref"]], "rel": self.child_rel(f, c)}
+                for c in f.get("children", []) if c["ref"] in self.people]
+
+    def parent_groups(self, p: dict) -> list[dict]:
+        """one row per family the person is a child in: {"label", "family", "parents": [{"person", "rel"}]}.
+        'Adoptive parents' when both are; otherwise 'Parents', with 'stepfather' or the like by the one who is."""
+        out = []
+        for fid in p.get("parents", []):
+            f = self.families.get(fid)
+            if not f:
+                continue
+            ch = next((c for c in f.get("children", []) if c["ref"] == p["id"]), {})
+            rows = []
+            for key, rel in (("father", ch.get("frel")), ("mother", ch.get("mrel"))):
+                q = self.people.get(f[key]) if f.get(key) else None
+                if q:
+                    rows.append({"person": q, "rel": self.rel_word(rel), "role": key})
+            if not rows:
+                continue
+            words = {r["rel"] for r in rows}
+            if len(words) == 1 and next(iter(words)):
+                w = next(iter(words))
+                label = GROUP_LABEL.get(w, f"Parents ({w})")
+                for r in rows:
+                    r["rel"] = ""
+            else:
+                label = "Parents"
+                for r in rows:
+                    r["rel"] = PARENT_WORD.get((r["rel"], r["role"]), r["rel"])
+            if len(rows) == 1 and label.endswith("s"):
+                label = label[:-1]
+            out.append({"label": label, "family": f, "parents": rows})
+        return out
 
     # ---- facts ------------------------------------------------------------ #
     def sort_key(self, e: dict):
@@ -705,6 +787,9 @@ def main(argv=None) -> int:
 
     def content(name: str) -> str:
         path = os.path.join(args.content, name)
+        if site.names_child(name):
+            site.warnings.append(f"content/{name}: left out — it names a child under 18 (the export report says where)")
+            return ""
         if os.path.exists(path):
             with open(path, encoding="utf-8") as f:
                 return f.read()
@@ -736,6 +821,18 @@ def main(argv=None) -> int:
 
     # stories — hand-maintained pages; the nightly export never writes content/stories/
     stories = load_stories(args.content)
+    if stories and site.names_child("stories/stories.json"):
+        site.warnings.append("stories: left out — stories.json names a child under 18 outside its sections "
+                             "(the export report says where)")
+        stories = None
+    elif stories:
+        kept = []
+        for sec in stories.get("sections") or []:
+            if site.names_child("stories/stories.json", sec.get("id")):
+                site.warnings.append(f"story {sec.get('id')}: dropped — names a child under 18 (the export report says where)")
+            else:
+                kept.append(sec)
+        stories["sections"] = kept
     if stories:
         sections = stories.get("sections") or []
         write("stories/index.html", "stories.html", stories=stories, section=None, title="Family stories", nav="stories")
@@ -752,7 +849,9 @@ def main(argv=None) -> int:
         site.warnings.append("content/stories/stories.json not found — no /stories/ pages")
 
     # people — ordered with diacritics folded, so Konečný files with Konecny and Šebák under S
-    people_sorted = sorted(site.people.values(), key=lambda p: (fold(p["name"]["sort"]), p["name"]["sort"], p["id"]))
+    # children under 18 are a placeholder in their families: no page, not in the index
+    people_sorted = sorted((p for p in site.people.values() if not p.get("minor")),
+                           key=lambda p: (fold(p["name"]["sort"]), p["name"]["sort"], p["id"]))
     for p in people_sorted:
         facts = site.facts_of(p) if p["status"] == "full" else []
         fams = []
@@ -760,11 +859,13 @@ def main(argv=None) -> int:
             f = site.families.get(fid)
             if not f:
                 continue
-            fams.append({"family": f, "spouse": site.spouse_in(f, p["id"]),
-                         "children": [site.people[c["ref"]] for c in f.get("children", []) if c["ref"] in site.people]})
+            fams.append({"family": f, "spouse": site.spouse_in(f, p["id"]), "children": site.children_in(f)})
         parent_fams = [site.families[fid] for fid in p.get("parents", []) if fid in site.families]
+        siblings = site.siblings_of(p)
+        kids_note = any(q.get("minor") for q in siblings) or any(c["person"].get("minor") for fm in fams for c in fm["children"])
         write(f"person/{p['id']}/index.html", "person.html", p=p, facts=facts, extras=site.extras_of(p) if p["status"] == "full" else {"notes": [], "names": []}, families=fams, parent_families=parent_fams,
-              parents=site.parents_of(p), siblings=site.siblings_of(p), summary=site.review_summary(facts),
+              parents=site.parents_of(p), parent_groups=site.parent_groups(p), siblings=siblings, kids_note=kids_note,
+              summary=site.review_summary(facts),
               line_color=site.line_of(p), title=p["name"]["display"], on_lines=line_members.get(p["id"], []),
               notes=[site.notes[n] for n in p.get("notes", []) if n in site.notes],
               media=[site.media[m["ref"]] for m in p.get("media", []) if m["ref"] in site.media],
@@ -781,10 +882,10 @@ def main(argv=None) -> int:
                 if e and site.kind(e) == "fact":
                     facts.append(site._fact(e, role=ref.get("role"), ref_citations=ref.get("citations", []), ref_notes=ref.get("notes", [])))
             facts.sort(key=lambda x: site.sort_key(x["event"]))
-        children = [site.people[c["ref"]] for c in f.get("children", []) if c["ref"] in site.people]
+        children = site.children_in(f)
         title = " & ".join(x["name"]["display"] for x in (father, mother) if x) or "Family"
         write(f"family/{f['id']}/index.html", "family.html", f=f, father=father, mother=mother, facts=facts,
-              children=children, title=title, notes=[site.notes[n] for n in f.get("notes", []) if n in site.notes],
+              children=children, kids_note=any(c["person"].get("minor") for c in children), title=title, notes=[site.notes[n] for n in f.get("notes", []) if n in site.notes],
               media=[site.media[m["ref"]] for m in f.get("media", []) if m["ref"] in site.media], nav="people")
 
     # citations
@@ -860,6 +961,9 @@ def main(argv=None) -> int:
             text = " ".join(str(it.get(k) or "") for k in ("title", "summary", "detail", "ask")).lower()
             if any(n in text for n in site.living_names):
                 site.warnings.append(f"board {it.get('id')}: dropped — names a living person")
+                continue
+            if site.names_child("research/board.json", it.get("id")):
+                site.warnings.append(f"board {it.get('id')}: dropped — names a child under 18 (the export report says where)")
                 continue
             it = dict(it)
             it["people"] = [site.people[i] for i in it.get("people") or [] if i in site.people and site.people[i]["status"] == "full"]

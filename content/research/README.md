@@ -20,6 +20,7 @@ Fields:
 Rules:
 
 - No living person’s dates, places or details. First names and relationships are fine (“Jody’s parents”); the build drops any entry whose text contains a living person’s full name and says so in the log.
+- Never name a child under 18, not even by first name (“a grandchild” is fine). The nightly export finds entries that give a child’s full name, and the site drops those entries.
 - `now` means being worked on this week and holds at most four items; `next` is the queue; `open` is the normal resting state for a known question, and most items should sit there. Do not retire a status.
 - Write progress into the entry, not a status report: say what was found and what is still missing, not what was filed when.
 - Change another entry's wording only to correct a fact or to remove a living person's details.

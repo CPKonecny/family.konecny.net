@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% from "_macros.html" import plink, placelink, datetext, stamp, fact, ladder, notecard, mediacard, summarybar %}
+{% from "_macros.html" import plink, rel, placelink, datetext, stamp, fact, ladder, notecard, mediacard, summarybar %}
 {% block description %}{{ p.name.display }}{% if p.status == 'full' %}, {{ p|lifespan }}{% if p.birth and p.birth.place %}, born {{ site.place_name(p.birth.place) }}{% endif %}{% endif %}.{% endblock %}
 {% block body %}
 {% set full = p.status == 'full' %}
@@ -46,17 +46,18 @@
   <section class="kin" id="family">
     <h2>Family</h2>
     <dl class="kinlist">
-      {% if parents %}<div><dt>Parents</dt><dd>{% for q in parents %}{{ plink(q) }}{% if not loop.last %} · {% endif %}{% endfor %}{% for f in parent_families %} <a class="famlink" href="/family/{{ f.id }}/">family</a>{% endfor %}</dd></div>{% endif %}
+      {% for g in parent_groups %}<div><dt>{{ g.label }}</dt><dd>{% for r in g.parents %}{{ plink(r.person) }}{{ rel(r.rel) }}{% if not loop.last %} · {% endif %}{% endfor %} <a class="famlink" href="/family/{{ g.family.id }}/">family</a></dd></div>{% endfor %}
       {% if siblings %}<div><dt>Siblings</dt><dd>{% for q in siblings %}{{ plink(q) }}{% if not loop.last %} · {% endif %}{% endfor %}</dd></div>{% endif %}
       {% for fm in families %}
       <div><dt>{% if fm.spouse %}Married{% else %}Family{% endif %}</dt>
         <dd>{% if fm.spouse %}{{ plink(fm.spouse) }}{% endif %}{% if fm.family.status == 'full' and fm.family.marriage and fm.family.marriage.date %} <span class="yrs">m. {{ fm.family.marriage.date.text }}{% if fm.family.marriage.place %}, {{ site.town(fm.family.marriage.place) }}{% endif %}</span>{% endif %}
           <a class="famlink" href="/family/{{ fm.family.id }}/">family</a>
-          {% if fm.children %}<div class="kids">Children: {% for c in fm.children %}{{ plink(c) }}{% if not loop.last %} · {% endif %}{% endfor %}</div>{% endif %}
+          {% if fm.children %}<div class="kids">Children: {% for c in fm.children %}{{ plink(c.person) }}{{ rel(c.rel) }}{% if not loop.last %} · {% endif %}{% endfor %}</div>{% endif %}
         </dd></div>
       {% endfor %}
-      {% if not parents and not siblings and not families %}<div><dd class="muted">No family links recorded.</dd></div>{% endif %}
+      {% if not parent_groups and not siblings and not families %}<div><dd class="muted">No family links recorded.</dd></div>{% endif %}
     </dl>
+    {% if kids_note %}<p class="muted small">Children under 18 are shown as “Living child”, without their names; they appear by name from their 18th birthday.</p>{% endif %}
   </section>
 
   {% if full %}

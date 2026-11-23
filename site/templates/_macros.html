@@ -3,7 +3,11 @@
 {%- endmacro %}
 
 {% macro plink(p, years=True) -%}
-<a class="p c-{{ site.line_of(p) }}" href="/person/{{ p.id }}/">{{ p.name.display }}</a>{% if years %} <span class="yrs">{{ p|lifespan }}</span>{% endif %}
+{% if p.minor %}<span class="p minor" title="Children under 18 are not named on this site">{{ p.name.display }}</span>{% else %}<a class="p c-{{ site.line_of(p) }}" href="/person/{{ p.id }}/">{{ p.name.display }}</a>{% if years %} <span class="yrs">{{ p|lifespan }}</span>{% endif %}{% endif %}
+{%- endmacro %}
+
+{% macro rel(word) -%}
+{% if word %} <span class="rel">{{ word }}</span>{% endif %}
 {%- endmacro %}
 
 {% macro placelink(pl, short=False) -%}

@@ -110,6 +110,8 @@ article.index.people { max-width: 1000px; }
 .c-konecny { --thread: var(--t-konecny); } .c-tauber { --thread: var(--t-tauber); } .c-wood { --thread: var(--t-wood); } .c-toepel { --thread: var(--t-toepel); } .c-hansen { --thread: var(--t-hansen); } .c-neutral { --thread: var(--t-neutral); }
 a.p { color: var(--ink); text-decoration-color: var(--thread, var(--t-neutral)); }
 a.p:hover { color: var(--thread, var(--link)); }
+span.p.minor { color: var(--muted); font-style: italic; }   /* a child under 18: no name, no page */
+.rel { color: var(--muted); font-size: 0.85em; font-style: italic; }   /* adopted, stepchild … */
 .yrs { color: var(--muted); font-size: 0.9em; font-variant-numeric: tabular-nums; white-space: nowrap; }
 
 /* home */

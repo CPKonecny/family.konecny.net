@@ -43,6 +43,9 @@ jobs:
           pip install requests
           python3 tools/test_apply_proposals.py
 
+      - name: The export's own tests (children under 18, adopted and step children)
+        run: python3 export/test_gramps_export.py
+
       - name: Stories name no living person
         run: python3 tools/check_stories.py
 
@@ -51,7 +54,7 @@ jobs:
           set -o pipefail
           python3 site/build.py | tee build.log
           if grep -q '^warning: board .*dropped' build.log; then
-            echo "A research-board card names a living person in full, so the site would hide it."
-            echo "Reword it: first name and relationship only."
+            echo "A research-board card names a living person in full, or a child under 18, so the site would hide it."
+            echo "Reword it: first name and relationship only, and no name at all for a child under 18."
             exit 1
           fi

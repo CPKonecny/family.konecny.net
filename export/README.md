@@ -32,18 +32,21 @@ Exit codes: 0 fine · 1 dry run found leak-audit problems · 2 login/API error �
   "exclude":      {"I0301": "opted out entirely"},
   "public_media": {"O0012": "our own scan, tagged public but path looks like a record image"},
   "withhold":     {"E0450": "event text mentions a living person"},
-  "public_text":  {"N0812": "names a living cousin by name and relationship only — fine"}
+  "public_text":  {"N0812": "names a living cousin by name and relationship only — fine"},
+  "minor_ok":     {"I9001": "the name is also an author's in source S0012, which is not about this child"}
 }
 ```
 
-Precedence per person: `exclude` → private flag → `deceased` → `living` → Gramps' own probably-alive verdict (`GET /api/living/{handle}`, max age 110, overridable with `--max-age`). `public_media` forces a file public; `withhold` keeps any family, event, citation, note or media object off the site regardless of other rules. A note whose text names a living or excluded person (first name + surname, any of their names) is held back automatically and listed in the report's warnings; `public_text` releases one after you have read it.
+Precedence per person: `exclude` → private flag → the `minor` tag (with no death event) → `deceased` → `living` → Gramps' own probably-alive verdict (`GET /api/living/{handle}`, max age 110, overridable with `--max-age`). `public_media` forces a file public; `withhold` keeps any family, event, citation, note or media object off the site regardless of other rules. A note whose text names a living or excluded person (first name + surname, any of their names) is held back automatically and listed in the report's warnings; `public_text` releases one after you have read it.
+
+**Children under 18.** The applier tags them `minor` from their birth dates (it can see private births; this Guest account can't), and a birth this account can see that is less than 18 years ago counts too. Such a child is published as a placeholder, “Living child”: an ID, the family links and `"minor": true`, no name, no gender, no adopted/step label, and the site gives them no page. Text that names a child (as “Pia Novak” or “Novak, Pia”) is held back: notes (`public_text` does not release these), event descriptions and media descriptions. The parts of `content/` that name one are listed in `meta.minor_text` by place only (file, and section or card id); the site leaves them out. A child's name anywhere else in the bundle fails the audit. A name that someone shown on the site also carries is not checked (the report lists these), and `minor_ok` turns the checks off for a child whose name is in a source about someone else; neither shows the child's name.
 
 ## 3. What the rules do (short form)
 
 | Object | Published when | Reduced to |
 |---|---|---|
-| Person | not private, not excluded | **living**: name, gender, parent/spouse family links only. **full**: everything |
-| Family | not private; at least one publishable member | partner living → partners + children refs only, no events |
+| Person | not private, not excluded | **living**: name, gender, parent/spouse family links only; under 18: “Living child”, links only. **full**: everything |
+| Family | not private; at least one publishable member | partner living → partners + children refs (with adopted/step/foster) only, no events |
 | Event | reached from a full person/family; not private; not referenced by any living/excluded person or family | — |
 | Place | reached from a published event, plus every enclosing place; not private | — |
 | Citation / Source / Repository | reached from a published object; not private | — |
@@ -52,7 +55,7 @@ Precedence per person: `exclude` → private flag → `deceased` → `living` �
 
 Review state per object from tags: `reviewed` → `human`, `ai-validated` → `ai`, anything else → `unreviewed`; `needs-human`, `agent-proposed`, `sync-to-ancestry` are carried as flags; provenance tags (`import-…`, `agent-…`, `chris`) are carried as `provenance`.
 
-Before writing, the script audits its own output: no living/excluded person outside name-and-relationship fields, no `private` flag anywhere, every reference resolvable. A failed audit means no bundle is written.
+Before writing, the script audits its own output: no living/excluded person outside name-and-relationship fields, no child under 18 beyond the placeholder and no child's name anywhere, no `private` flag anywhere, every reference resolvable. A failed audit means no bundle is written. `python3 export/test_gramps_export.py` checks all this on an invented tree, and the site built from it.
 
 ## 4. Nightly run (after v0 is live)
 

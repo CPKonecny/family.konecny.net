@@ -794,6 +794,84 @@ def test_private_on_a_family_from_before_is_refused(w, b):
     eq(b.where(name), "rejected"); has(b.reason(name), "set_private")
     eq((w.get("families", fam)["private"], w.get("families", fam)["event_ref_list"]), (False, []), "nothing half done")
 
+
+# ---------------------------------------------------------------- children under 18
+def _tag_handle(w, name):
+    for t in w.send("GET", "tags/", params={"page": 1, "pagesize": 500}):
+        if t.get("name") == name:
+            return t["handle"]
+    return None
+
+
+def _ago(years, days=0):
+    from datetime import date, timedelta
+    t = date.today()
+    try:
+        d = t.replace(year=t.year - years)
+    except ValueError:
+        d = t.replace(year=t.year - years, day=28)
+    d -= timedelta(days=days)
+    return (d.year, d.month, d.day)
+
+
+def test_children_under_18_are_tagged_and_untagged(w, b):
+    """Invented names. Full dates, a year alone, a death, no birth at all, a private child, and someone who turned 18."""
+    from datetime import date
+    yr = date.today().year
+    kid, _ = w.person("Pia", "Lindqvist", "F", born=_ago(10))
+    teen_year, _ = w.person("Oskar", "Lindqvist", "M", born=yr - 17)          # a year alone: counts as 31 December
+    adult_year, _ = w.person("Edda", "Lindqvist", "F", born=yr - 19)
+    almost, _ = w.person("Rune", "Lindqvist", "M", born=_ago(18, days=-3))    # turns 18 in three days
+    just18, _ = w.person("Siv", "Lindqvist", "F", born=_ago(18))              # 18 today
+    gone, _ = w.person("Tove", "Lindqvist", "F", born=_ago(9), died=_ago(2))
+    nobirth, _ = w.person("Ulf", "Lindqvist", "M", born=None)
+    hidden, _ = w.person("Vera", "Lindqvist", "F", born=_ago(6), private=True)
+    dry = b.run("--dry-run")
+    has(dry, "WOULD TAG minor: ")
+    eq(_tag_handle(w, "minor"), None, "a dry run makes no tag")
+    out = b.run()
+    has(out, "minors: 4 tagged, 0 untagged")
+    tag = _tag_handle(w, "minor")
+    tagged = {h for h in (kid, teen_year, adult_year, almost, just18, gone, nobirth, hidden) if tag in w.get("people", h)["tag_list"]}
+    eq(tagged, {kid, teen_year, almost, hidden}, "who is tagged")
+    # someone tagged earlier who is now an adult loses the tag; the next run changes nothing more
+    p = w.get("people", adult_year); p["tag_list"] = p["tag_list"] + [tag]; w.send("PUT", f"people/{adult_year}", json=p)
+    has(b.run(), "minors: 0 tagged, 1 untagged")
+    eq(tag in w.get("people", adult_year)["tag_list"], False)
+    lacks(b.run(), "minors:")
+    report = b.run("--minors")
+    has(report, "4 people may be under 18"); has(report, "Pia Lindqvist"); has(report, "[private]"); has(report, "The tags are up to date.")
+    lacks(report, "Edda Lindqvist")
+    lacks(report, "no birth date")
+    # a child with no birth date can't be judged, so --minors lists them; not one whose parent's dates rule it out,
+    # and not someone who is nobody's child in the tree (a spouse who married in)
+    dad, _ = w.person("Gunnar", "Lindqvist", "M", born=yr - 40)
+    unsure, _ = w.person("Liv", "Lindqvist", "F", born=None)
+    old_dad, _ = w.person("Harald", "Lindqvist", "M", born=1900)
+    old_kid, _ = w.person("Maj", "Lindqvist", "F", born=None)
+    w.family(dad, None, [unsure])
+    w.family(old_dad, None, [old_kid])
+    report = b.run("--minors")
+    has(report, "1 more has no birth date"); has(report, "Liv Lindqvist"); has(report, "(shown by name now)")
+    lacks(report, "Maj Lindqvist"); lacks(report, "Ulf Lindqvist")
+    lacks(b.run(), "minors:")                                   # nothing to tag: the rule leaves them alone
+
+
+def test_a_child_is_tagged_the_moment_it_is_added(w, b):
+    from datetime import date
+    yr = date.today().year
+    fa, fa_anc = w.person("Arvid", "Holm", "M", born=yr - 40)
+    child, grown = anc_id(), anc_id()
+    b.file("add_person", name="001-child", person=new_person(child, "Ines", "Holm", "F", birth={"date": str(yr - 8)}),
+           relations={"father_ancestry_id": fa_anc}, citation=cit())
+    b.file("add_person", name="002-grown", person=new_person(grown, "Jon", "Holm", "M", birth={"date": str(yr - 25)}),
+           relations={"father_ancestry_id": fa_anc}, citation=cit())
+    b.run()
+    has(b.approve_all(), "APPLIED")
+    tag = _tag_handle(w, "minor")
+    eq(tag in w.by_anc(child)["tag_list"], True, "the child")
+    eq(tag in w.by_anc(grown)["tag_list"], False, "the adult")
+
 # ---------------------------------------------------------------- the approval gate
 def test_changes_wait_for_approval(w, b):
     per, anc = w.person("Joann", "Unknown", "F", born=1834, died=1918)

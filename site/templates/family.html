@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% from "_macros.html" import plink, placelink, datetext, stamp, fact, notecard, mediacard %}
+{% from "_macros.html" import plink, rel, placelink, datetext, stamp, fact, notecard, mediacard %}
 {% block body %}
 <article class="family">
   <header class="phead">
@@ -14,7 +14,8 @@
   {% if children %}
   <section class="kin">
     <h2>Children</h2>
-    <ol class="kids-list">{% for c in children %}<li>{{ plink(c) }}</li>{% endfor %}</ol>
+    <ol class="kids-list">{% for c in children %}<li>{{ plink(c.person) }}{{ rel(c.rel) }}</li>{% endfor %}</ol>
+    {% if kids_note %}<p class="muted small">Children under 18 are shown as “Living child”, without their names; they appear by name from their 18th birthday.</p>{% endif %}
   </section>
   {% endif %}
 

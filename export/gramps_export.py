@@ -9,7 +9,10 @@ public media files. Nothing else ever touches the Gramps server.
 Rules (see the bundle schema document for the full statement):
   1. Living people: name, gender and relationships only. "Living" is Gramps'
      own probably-alive verdict (GET /api/living/{handle}), overridable per
-     person in overrides.json (living / deceased / exclude).
+     person in overrides.json (living / deceased / exclude). Children under 18
+     (tagged "minor" by the applier, or with a visible birth less than 18
+     years ago) are a placeholder, "Living child": no name, gender or page,
+     only their place in the family; text that names them is held back.
   2. Anything marked private in Gramps stays out, at every level (objects,
      names, event refs, attributes, citations, notes, media refs).
   3. Media: a file is published only if the media object carries the public tag
@@ -51,8 +54,8 @@ import urllib.error
 import urllib.parse
 import urllib.request
 
-VERSION = "0.3.0"
-SCHEMA_VERSION = "0.3"
+VERSION = "0.4.0"
+SCHEMA_VERSION = "0.4"
 
 TABLES = [
     "people", "families", "events", "places", "citations",
@@ -61,6 +64,15 @@ TABLES = [
 # Gramps 6.0 death / birth fallbacks (gramps.gen.lib.eventtype)
 DEATH_TYPES = {"Death", "Burial", "Cremation", "Cause Of Death", "Probate", "Stillbirth"}
 BIRTH_TYPES = {"Birth", "Baptism", "Christening", "Stillbirth"}
+# Children under 18 are published as a placeholder: no name, no page, no dates. The applier
+# (tools/apply_proposals.py, Editor role) tags them "minor" from their birth dates, which it can see even
+# when they are private; this account cannot, so the tag is what counts here. A visible birth less than
+# 18 years ago counts too. The date rule below is the applier's, kept in step with it by hand.
+MINOR_TAG = "minor"
+ADULT_AGE = 18
+MINOR_LABEL = "Living child"
+MINOR_NAME = {"first": "", "surname": "", "prefix": "", "suffix": "", "title": "", "call": "", "nick": "",
+              "display": MINOR_LABEL, "sort": MINOR_LABEL}
 REVIEW_TAGS = {
     "reviewed": "human",
     "ai-validated": "ai",
@@ -319,6 +331,54 @@ def date_year(d: dict | None) -> int | None:
     return None
 
 
+def _last_day(y: int, m: int) -> int:
+    if m == 12:
+        return 31
+    return (dt.date(y, m + 1, 1) - dt.date(y, m, 1)).days
+
+
+def latest_day(y, m=0, d=0):
+    """The latest day that a year, a year and month, or a full date can mean."""
+    if not y:
+        return None
+    m = m if 1 <= (m or 0) <= 12 else 12
+    d = d if d and 1 <= d <= _last_day(y, m) else _last_day(y, m)
+    return dt.date(y, m, d)
+
+
+def latest_birth_of(d: dict | None):
+    """The latest day a Gramps date allows for a birth, or None without a year. Same rule as the applier:
+    leaning late keeps a child counted as a child ("about" adds two years, "after" ten, a range takes its end)."""
+    if not d or not isinstance(d, dict):
+        return None
+    dv = d.get("dateval") or []
+    mod = d.get("modifier") or 0
+    if mod == 6 or len(dv) < 3:                    # text only
+        return None
+    if mod in (4, 5) and len(dv) >= 7 and dv[6]:   # range or span: its end
+        day, mon, yr = dv[4], dv[5], dv[6]
+    else:
+        day, mon, yr = dv[0], dv[1], dv[2]
+    if not yr or int(yr) < 1 or int(yr) > 9000:
+        return None
+    yr, mon, day = int(yr), int(mon or 0), int(day or 0)
+    if mod == 3 or (d.get("quality") or 0) in (1, 2):    # about; estimated or calculated
+        return latest_day(yr + 2)
+    if mod in (2, 7):                              # after, from
+        return latest_day(yr + 10)
+    if mod in (1, 8):                              # before, to
+        return latest_day(yr, mon, day) - dt.timedelta(days=1)
+    return latest_day(yr, mon, day)
+
+
+def adult_on(born):
+    """The day someone born on `born` turns 18 (29 February counts as 1 March)."""
+    try:
+        return born.replace(year=born.year + ADULT_AGE)
+    except ValueError:
+        return dt.date(born.year + ADULT_AGE, 3, 1)
+
+
 def date_obj(d: dict | None) -> dict | None:
     """Gramps Date -> compact public form (None if empty)."""
     if not d or not isinstance(d, dict):
@@ -499,7 +559,7 @@ def looks_like_record_image(path: str, tags: list[str]) -> bool:
 # Overrides
 # --------------------------------------------------------------------------- #
 class Overrides:
-    KEYS = ("living", "deceased", "exclude", "public_media", "withhold", "public_text")
+    KEYS = ("living", "deceased", "exclude", "public_media", "withhold", "public_text", "minor_ok")
 
     def __init__(self, path: str | None):
         self.path = path
@@ -773,12 +833,42 @@ class Exporter:
         self.fam_status = {}    # family handle -> "full" | "living" | "excluded"
         self.living_set = set()
         self.excluded_set = set()
+        self.minor_set = set()  # living people published as MINOR_LABEL (subset of living_set)
+        self.minor_why = {}     # person handle -> why they count as under 18
         self.included = {t: set() for t in TABLES if t != "tags"}
         self.media_access = {}  # media handle -> ("public"|"login"|"excluded", reason)
         self.ids = {}           # (table, handle) -> gramps_id
         self.counts = collections.OrderedDict()
 
     # ---- people ---------------------------------------------------------- #
+    def _own_events(self, p: dict):
+        for ref in p.get("event_ref_list", []) or []:
+            if typestr(ref.get("role")) not in ("", "Primary"):
+                continue
+            ev = self.idx.events.get(ref.get("ref"))
+            if ev:
+                yield typestr(ev.get("type")), ev
+
+    def has_death(self, p: dict) -> bool:
+        return any(t in DEATH_TYPES for t, _ev in self._own_events(p))
+
+    def minor_verdict(self, p: dict) -> str:
+        """Why this (living) person counts as under 18, or "" if they don't: the applier's tag, or a
+        birth this account can see whose latest possible day is less than 18 years ago."""
+        if MINOR_TAG in self.idx.tags_of(p):
+            return f"tagged {MINOR_TAG}"
+        if self.has_death(p):
+            return ""
+        latest = None
+        for t, ev in self._own_events(p):
+            if t in ("Birth", "Baptism", "Christening"):
+                b = latest_birth_of(ev.get("date"))
+                if b and (latest is None or b > latest):
+                    latest = b
+        if latest and self.today < adult_on(latest):
+            return f"born by {latest.isoformat()}, adult from {adult_on(latest).isoformat()} (not tagged yet)"
+        return ""
+
     def classify_people(self):
         api_living = self.data.get("living") or {}
         api_dates = self.data.get("living_dates") or {}
@@ -789,10 +879,17 @@ class Exporter:
             gid = p.get("gramps_id", h)
             name = name_of(p)["display"]
             local_alive, why = self.local.verdict(p)
+            tagged_minor = MINOR_TAG in self.idx.tags_of(p) and not self.has_death(p)
             if self.ov.has("exclude", p):
                 st, rs = "excluded", "override: exclude"
             elif p.get("private"):
                 st, rs = "excluded", "private"
+            elif tagged_minor:
+                # before overrides.deceased and Gramps' verdict: a child is never published in full
+                st, rs = "living", f"tagged {MINOR_TAG} (under {ADULT_AGE})"
+                if self.ov.has("deceased", p):
+                    self.report.warn(f"{gid} is in overrides.deceased but tagged {MINOR_TAG} with no death event: "
+                                     f"kept as '{MINOR_LABEL}'. Record the death in Gramps if that is right.")
             elif self.ov.has("deceased", p):
                 st, rs = "full", "override: deceased"
             elif self.ov.has("living", p):
@@ -814,11 +911,18 @@ class Exporter:
             self.reason[h] = rs
             if st == "living":
                 self.living_set.add(h)
-                if "no own dates" in why or "no evidence" in why:
+                minor = self.minor_verdict(p)
+                if minor:
+                    self.minor_set.add(h)
+                    self.minor_why[h] = minor
+                elif "no own dates" in why or "no evidence" in why:
                     check_list.append(f"{gid} {name}: {rs}")
             elif st == "excluded":
                 self.excluded_set.add(h)
-            if rs.startswith("override"):
+            elif MINOR_TAG in self.idx.tags_of(p):
+                self.report.warn(f"{gid} is tagged {MINOR_TAG} but published in full as deceased "
+                                 f"(it has a death event); the applier takes the tag off at its next run")
+            if rs.startswith(("override", "tagged")):
                 key = rs
             elif st == "excluded":
                 key = "private"
@@ -838,7 +942,9 @@ class Exporter:
         r = self.report
         r.add("People", f"| status | n |\n|---|---:|\n| total in Gramps | {len(self.status)} |\n"
                         f"| **full** (deceased, everything published) | {full} |\n"
-                        f"| **name-only** (living) | {living} |\n| **excluded** | {excluded} |")
+                        f"| **name-only** (living) | {living} |\n"
+                        f"| … of whom under {ADULT_AGE}, shown as '{MINOR_LABEL}' (no name) | {len(self.minor_set)} |\n"
+                        f"| **excluded** | {excluded} |")
         r.add("People", "")
         r.add("People", "Why name-only / excluded:")
         r.add("People", "")
@@ -880,6 +986,12 @@ class Exporter:
         if excl_lines:
             r.add("People", "")
             r.add("People", "Excluded:\n\n" + "\n".join(excl_lines))
+        minor_lines = [f"- {self.idx.people[h].get('gramps_id')} {name_of(self.idx.people[h])['display']} — {self.minor_why[h]}"
+                       for h in sorted(self.minor_set, key=lambda x: name_of(self.idx.people[x])["sort"])]
+        if minor_lines:
+            r.add("People", "")
+            r.add("People", f"Shown as '{MINOR_LABEL}' — under {ADULT_AGE}, so no name and no page; "
+                            f"by name from their 18th birthday ({len(minor_lines)}):\n\n" + "\n".join(minor_lines))
 
     # ---- families -------------------------------------------------------- #
     def classify_families(self):
@@ -953,7 +1065,50 @@ class Exporter:
                     pats[k] = p.get("gramps_id")
         return [(re.compile(r"(?<!\w)" + r"\s+".join(map(re.escape, k.split())) + r"(?!\w)"), v) for k, v in pats.items()]
 
+    def minor_name_patterns(self) -> list:
+        """(regex, person id) for the names of children under 18, as 'Pia Novak' and 'Novak, Pia'. A name the
+        site shows for someone else (a deceased namesake, a living adult) is skipped and listed in the report, and so
+        is a child listed in overrides.minor_ok (their name belongs to someone else in a source)."""
+        shown = set()
+        for h, st in self.status.items():
+            if st == "full":
+                shown |= self._name_keys(self.idx.people[h])
+            elif st == "living" and h not in self.minor_set:
+                shown |= self._name_keys({"primary_name": self.idx.people[h].get("primary_name") or {}})
+        pats, self.minor_namesakes = {}, []
+        for h in self.minor_set:
+            p = self.idx.people[h]
+            if self.ov.has("minor_ok", p):
+                continue
+            for nm in [name_of(p)] + alt_names_of(p):
+                first, sur = (nm.get("first") or "").strip(), (nm.get("surname") or "").strip()
+                if len(first) < 2 or len(sur) < 2:
+                    continue
+                for given in {first, first.split()[0]}:
+                    k = fold_name(f"{given} {sur}")
+                    if k in shown:
+                        self.minor_namesakes.append((p.get("gramps_id"), k))
+                    else:
+                        pats[(fold_name(given), fold_name(sur))] = p.get("gramps_id")
+
+        def words(s):
+            return r"\s+".join(map(re.escape, s.split()))
+        alts = [(words(g) + r"\s+" + words(s) + "|" + words(s) + r",?\s+" + words(g), v) for (g, s), v in pats.items()]
+        # one combined pattern for the quick "no" that almost every string gets, then the single ones for the id
+        self.minor_any = re.compile(r"(?<!\w)(?:" + "|".join(a for a, _v in alts) + r")(?!\w)") if alts else None
+        return [(re.compile(r"(?<!\w)(?:" + a + r")(?!\w)"), v) for a, v in alts]
+
+    def names_minor(self, text) -> str | None:
+        """The person id of a child under 18 whom this text names, or None."""
+        if not getattr(self, "minor_pats", None) or not text:
+            return None
+        low = fold_name(plain_text(text) if isinstance(text, dict) else str(text))
+        if not low or not self.minor_any.search(low):
+            return None
+        return next((pid for rx, pid in self.minor_pats if rx.search(low)), None)
+
     def compute_inclusion(self):
+        self.minor_pats = self.minor_name_patterns()
         inc = self.included
         withheld_events = {}   # event handle -> reason
         # people and families
@@ -1017,6 +1172,9 @@ class Exporter:
                 if self.withheld("events", eh):
                     withheld_events[eh] = "override: withhold"
                     continue
+                if self.names_minor(ev.get("description")):
+                    withheld_events[eh] = "names a child under 18"
+                    continue
                 inc["events"].add(eh)
                 self.event_participants[eh].append((h, typestr(ref.get("role")) or "Primary"))
                 cit_refs.update(self._citation_refs(ref))
@@ -1043,6 +1201,9 @@ class Exporter:
                     continue
                 if self.withheld("events", eh):
                     withheld_events[eh] = "override: withhold"
+                    continue
+                if self.names_minor(ev.get("description")):
+                    withheld_events[eh] = "names a child under 18"
                     continue
                 inc["events"].add(eh)
                 self.event_families[eh].append((h, typestr(ref.get("role")) or "Family"))
@@ -1112,6 +1273,9 @@ class Exporter:
             if self.withheld("media", mh):
                 self.media_access[mh] = ("excluded", "override: withhold")
                 continue
+            if self.names_minor(m.get("desc")):
+                self.media_access[mh] = ("excluded", "its description names a child under 18")
+                continue
             if mh in media_by_living:
                 self.media_access[mh] = ("login", "attached to a living or excluded person")
             elif self.ov.has("public_media", m):
@@ -1138,12 +1302,17 @@ class Exporter:
         # notes
         name_pats = self.living_name_patterns()
         self.notes_held = []      # (note id, person id): note text names a living/excluded person
+        self.notes_held_minor = []  # (note id, person id): note text names a child under 18 (public_text does not release it)
         self.notes_toolout = 0    # import logs and other tool output
         for nh in note_refs:
             n = self.idx.notes.get(nh)
             if n and not n.get("private") and not self.withheld("notes", nh):
                 if is_tool_note(n):
                     self.notes_toolout += 1
+                    continue
+                kid = self.names_minor(n.get("text"))
+                if kid:
+                    self.notes_held_minor.append((n.get("gramps_id"), kid))
                     continue
                 low = fold_name(plain_text(n.get("text")))
                 hit = next((pid for rx, pid in name_pats if rx.search(low)), None)
@@ -1152,6 +1321,8 @@ class Exporter:
                     continue
                 inc["notes"].add(nh)
         self.ev_withheld = collections.Counter(withheld_events.values())
+        self.events_held_minor = sorted(self.idx.events[e].get("gramps_id") or e
+                                        for e, why in withheld_events.items() if why == "names a child under 18")
         self.media_by_living = media_by_living
 
     # ---- id maps --------------------------------------------------------- #
@@ -1318,6 +1489,13 @@ class Exporter:
             }
             rec["parents"] = [x for x in rec["parents"] if x]
             rec["families"] = [x for x in rec["families"] if x]
+            if h in self.minor_set:
+                # under 18: a placeholder in the family, nothing that tells who it is
+                rec["name"] = dict(MINOR_NAME)
+                rec["gender"] = "U"
+                rec["minor"] = True
+                B["people"][g] = rec
+                continue
             if st == "living":
                 rec["name"] = {k: rec["name"][k] for k in ("first", "surname", "prefix", "suffix", "title",
                                                              "call", "nick", "display", "sort")}
@@ -1396,7 +1574,9 @@ class Exporter:
                     continue
                 ch = {"ref": cg}
                 frel, mrel = typestr(cr.get("frel")), typestr(cr.get("mrel"))
-                if st == "full":
+                # adopted / step / foster is a relationship, so living families carry it too;
+                # a child under 18 carries nothing but the link
+                if cr.get("ref") not in self.minor_set:
                     if frel and frel != "Birth":
                         ch["frel"] = frel
                     if mrel and mrel != "Birth":
@@ -1587,6 +1767,8 @@ class Exporter:
             "counts": {k: len(v) for k, v in B.items() if k != "meta"},
             "counts_people": {"full": sum(1 for p in B["people"].values() if p["status"] == "full"),
                               "living": sum(1 for p in B["people"].values() if p["status"] == "living")},
+            # hand-written parts of content/ that name a child under 18, by place only: the build leaves them out
+            "minor_text": list(getattr(self, "minor_text", [])),
         }
         self.bundle = B
         return B
@@ -1600,10 +1782,12 @@ class Exporter:
         n_inc = len(inc["events"])
         shared = self.ev_withheld.get("shared with a living or excluded person", 0)
         forced = self.ev_withheld.get("override: withhold", 0)
-        orphan = n_all - n_inc - shared - forced - n_priv
+        kids = self.ev_withheld.get("names a child under 18", 0)
+        orphan = n_all - n_inc - shared - forced - kids - n_priv
         r.add("Events", f"| | n |\n|---|---:|\n| total | {n_all} |\n| published | {n_inc} |\n"
                         f"| withheld — shared with a living or excluded person | {shared} |\n"
                         f"| withheld — private | {n_priv} |\n| withheld — overrides.withhold | {forced} |\n"
+                        f"| withheld — the description names a child under 18 | {kids} |\n"
                         f"| only attached to living/excluded people (their own events) | {max(orphan, 0)} |")
         types = collections.Counter(typestr(idx.events[h].get("type")) for h in inc["events"])
         r.add("Events", "")
@@ -1703,6 +1887,22 @@ class Exporter:
         if held:
             r.warn(f"{len(held)} notes held back because they name a living/excluded person (edit the note, or list it in "
                    "overrides.public_text if naming them is fine): " + "; ".join(f"{n} names {p}" for n, p in sorted(held)))
+        held_kids = getattr(self, "notes_held_minor", [])
+        if held_kids:
+            r.warn(f"{len(held_kids)} notes held back because they name a child under 18 (edit the note; overrides.public_text "
+                   "does not release these): " + "; ".join(f"{n} names {p}" for n, p in sorted(held_kids)))
+        kid_events = getattr(self, "events_held_minor", [])
+        if kid_events:
+            r.warn("events held back because the description names a child under 18 (edit the description): "
+                   + ", ".join(kid_events))
+        kid_media = sorted(idx.media[h].get("gramps_id") or h for h, (a, w) in self.media_access.items()
+                           if w.startswith("its description names a child"))
+        if kid_media:
+            r.warn("media held back because the description names a child under 18 (edit the description): "
+                   + ", ".join(kid_media))
+        if getattr(self, "minor_namesakes", None):
+            r.warn("children under 18 whose name someone shown on the site also carries, so text naming it is not held back "
+                   "(it can't tell them apart): " + "; ".join(f"{p} '{k}'" for p, k in sorted(self.minor_namesakes)))
         if getattr(self, "notes_toolout", 0):
             r.warn(f"{self.notes_toolout} import-log / tool-output notes left off the site (GEDCOM import report etc.)")
         same = getattr(self, "namesakes", [])
@@ -1713,12 +1913,61 @@ class Exporter:
             r.warn("event descriptions may name living/excluded people (review, then overrides.withhold if needed): "
                    + "; ".join(hits[:30]) + (" …" if len(hits) > 30 else ""))
 
+    # ---- hand-written pages ----------------------------------------------- #
+    def scan_content(self, root: str):
+        """The site build publishes content/ (stories, the research board, about.md) and knows no child's name, so
+        this looks for them there. What it finds goes into the bundle by place only (file and section or card id,
+        never a name), and the build leaves those parts out until the text is changed."""
+        self.minor_text, self.minor_text_hits = [], []
+        base = os.path.join(root, "content")
+        if not getattr(self, "minor_pats", None) or not os.path.isdir(base):
+            return
+        for dirpath, dirs, files in os.walk(base):
+            dirs.sort()
+            for fn in sorted(files):
+                if fn.lower() == "readme.md" or not fn.endswith((".json", ".md")):
+                    continue
+                path = os.path.join(dirpath, fn)
+                rel = os.path.relpath(path, root).replace(os.sep, "/")
+                try:
+                    with open(path, encoding="utf-8") as f:
+                        raw = f.read()
+                except (OSError, UnicodeDecodeError) as e:
+                    self.report.warn(f"could not read {rel} for the under-18 check: {e}")
+                    continue
+                data = None
+                if fn.endswith(".json"):
+                    try:
+                        data = json.loads(raw)
+                    except ValueError:
+                        data = None
+                if isinstance(data, dict) and isinstance(data.get("sections"), list):      # stories.json
+                    parts = [(s.get("id"), s) for s in data["sections"] if isinstance(s, dict)]
+                    parts.append((None, {k: v for k, v in data.items() if k != "sections"}))
+                elif isinstance(data, dict) and isinstance(data.get("items"), list):       # board.json (_readme is not published)
+                    parts = [(it.get("id"), it) for it in data["items"] if isinstance(it, dict)]
+                else:
+                    parts = [(None, data if data is not None else raw)]
+                for part_id, part in parts:
+                    kid = next((k for k in (self.names_minor(s) for s in _strings(part)) if k), None)
+                    if not kid:
+                        continue
+                    entry = {"file": rel, "id": part_id}
+                    if entry not in self.minor_text:
+                        self.minor_text.append(entry)
+                    self.minor_text_hits.append((rel, part_id, kid))
+        for rel, part_id, kid in self.minor_text_hits:
+            where = f"{rel}" + (f" ({part_id})" if part_id else " (the whole file)")
+            self.report.warn(f"{where} names a child under 18 ({kid}): the site leaves it out until the text is changed")
+            print(f"warning: {where} names a child under 18 ({kid}); the site leaves it out", file=sys.stderr)
+
     # ---- leak audit ------------------------------------------------------ #
     def audit(self, B: dict) -> list[str]:
         problems = []
         living_ids = {g for g, p in B["people"].items() if p["status"] == "living"}
         excluded_ids = {self.gid("people", h) for h in self.excluded_set}
-        allowed_living = {"id", "handle", "status", "name", "gender", "parents", "families"}
+        minor_ids = {self.gid("people", h) for h in self.minor_set}
+        allowed_living = {"id", "handle", "status", "name", "gender", "parents", "families", "minor"}
         for g, p in B["people"].items():
             if p["status"] == "living":
                 extra = set(p) - allowed_living
@@ -1726,6 +1975,9 @@ class Exporter:
                     problems.append(f"living person {g} carries {sorted(extra)}")
                 if set(p["name"]) & {"citations", "notes", "date"}:
                     problems.append(f"living person {g}: name carries citations/notes")
+            if g in minor_ids or p.get("minor"):
+                if p["status"] != "living" or p.get("minor") is not True or p["name"] != MINOR_NAME or p["gender"] != "U":
+                    problems.append(f"child under 18 {g} is not reduced to the '{MINOR_LABEL}' placeholder")
         for g, f in B["families"].items():
             if f["status"] == "living" and set(f) - {"id", "handle", "status", "father", "mother", "children"}:
                 problems.append(f"living family {g} carries extra keys")
@@ -1735,6 +1987,14 @@ class Exporter:
             for c in f["children"]:
                 if c["ref"] not in B["people"]:
                     problems.append(f"family {g} child -> unknown person {c['ref']}")
+                if set(c) - {"ref", "frel", "mrel"} or (c["ref"] in minor_ids and set(c) != {"ref"}):
+                    problems.append(f"family {g}: the link to child {c['ref']} carries {sorted(set(c) - {'ref'})}")
+        # no child's name anywhere in the bundle (namesakes and overrides.minor_ok aside, see minor_name_patterns)
+        for path, s in _strings_at(B, "bundle"):
+            kid = self.names_minor(s)
+            if kid:
+                problems.append(f"{path} names child under 18 {kid} (edit the text in Gramps; if the name is "
+                                f"someone else's, list {kid} in overrides.minor_ok)")
         for g, e in B["events"].items():
             for part in e["participants"]:
                 if part["person"] in living_ids or part["person"] in excluded_ids:
@@ -1777,6 +2037,32 @@ class Exporter:
                 if o.get("private") and h in self.included.get(table, ()):
                     problems.append(f"private {table} {h} was included")
         return problems
+
+
+def _strings(x):
+    """every string in a JSON-like value"""
+    if isinstance(x, str):
+        yield x
+    elif isinstance(x, dict):
+        for v in x.values():
+            yield from _strings(v)
+    elif isinstance(x, list):
+        for v in x:
+            yield from _strings(v)
+
+
+def _strings_at(x, path: str):
+    """(path, string) for every string in a JSON-like value, keys included"""
+    if isinstance(x, str):
+        yield path, x
+    elif isinstance(x, dict):
+        for k, v in x.items():
+            if isinstance(k, str):
+                yield f"{path}.<key>", k
+            yield from _strings_at(v, f"{path}.{k}")
+    elif isinstance(x, list):
+        for i, v in enumerate(x):
+            yield from _strings_at(v, f"{path}[{i}]")
 
 
 def _chain_ids(places: dict, g: str, depth: int = 0) -> list[str]:
@@ -1925,6 +2211,7 @@ def main(argv=None) -> int:
     exp.classify_people()
     exp.classify_families()
     exp.compute_inclusion()
+    exp.scan_content(args.out)
     exp.report_secondary()
     bundle = exp.build_bundle()
     problems = exp.audit(bundle)
