@@ -36603,9 +36603,7 @@
     }
    ],
    "notes": [
-    "N0791",
-    "N0792",
-    "N1476"
+    "N0792"
    ],
    "page": "clip 87101637",
    "proposal_file": "2026-10-27_0920_toepel-jeffrey_obit-2008.json",
@@ -41954,6 +41952,61 @@
    "tier": "record",
    "url": "https://1950census.archives.gov/iiif/2/1950census%2F43290879-Minnesota%2F43290879-Minnesota-093953%2F43290879-Minnesota-093953-0013.jpg/full/full/0/default.jpg"
   },
+  "C1367": {
+   "ancestry_record_id": "",
+   "change": 1795389486,
+   "cited_by": [
+    {
+     "id": "E1656",
+     "type": "event"
+    },
+    {
+     "id": "E1657",
+     "type": "event"
+    },
+    {
+     "id": "I0466",
+     "type": "person"
+    }
+   ],
+   "confidence": 3,
+   "date": {
+    "day": 21,
+    "iso": "2024-03-21",
+    "modifier": null,
+    "month": 3,
+    "quality": null,
+    "sort": 2460391,
+    "text": "21 March 2024",
+    "year": 2024
+   },
+   "evidence": "",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "105437868fa05164d8ab65a8849c",
+   "id": "C1367",
+   "information": "",
+   "media": [],
+   "notes": [
+    "N2090"
+   ],
+   "page": "Nelson-Doran funeral notice; Brainerd Dispatch 21 Mar 2024",
+   "proposal_file": "2026-11-18_104550_dressel-mark_add-person.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0242",
+   "source_type": "",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "compiled",
+   "url": "https://www.nelson-doran.com/obituaries/mark-dressel"
+  },
   "C1402": {
    "ancestry_record_id": "",
    "change": 1795389523,
@@ -42512,10 +42565,7 @@
    "id": "C1442",
    "information": "",
    "media": [],
-   "notes": [
-    "N2241",
-    "N2242"
-   ],
+   "notes": [],
    "page": "pp.54, 62 (printed; PDF pages 28, 32)",
    "proposal_file": "2026-11-18_121131_wood-charles_link-f0032.json",
    "provenance": [
@@ -42583,6 +42633,328 @@
    ],
    "tier": "record",
    "url": "https://1950census.archives.gov/iiif/2/1950census%2F43290879-Minnesota%2F43290879-Minnesota-158485%2F43290879-Minnesota-158485-0010.jpg/full/full/0/default.jpg"
+  },
+  "C1454": {
+   "ancestry_record_id": "",
+   "change": 1795441102,
+   "cited_by": [
+    {
+     "id": "F0222",
+     "type": "family"
+    }
+   ],
+   "confidence": 2,
+   "date": null,
+   "evidence": "",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1054564a8e843d83c5dbfb636c5a",
+   "id": "C1454",
+   "information": "",
+   "media": [],
+   "notes": [
+    "N2265"
+   ],
+   "page": "Collin's parents were John and Lois Morris, who lived and died in Atlanta",
+   "proposal_file": "2026-11-22_183020_morris-collin_link-f0222.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0249",
+   "source_type": "",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "oral",
+   "url": ""
+  },
+  "C1455": {
+   "ancestry_record_id": "",
+   "change": 1795446003,
+   "cited_by": [
+    {
+     "id": "E1700",
+     "type": "event"
+    },
+    {
+     "id": "E1701",
+     "type": "event"
+    },
+    {
+     "id": "I0505",
+     "type": "person"
+    }
+   ],
+   "confidence": 3,
+   "date": {
+    "day": 14,
+    "iso": "1916-09-14",
+    "modifier": null,
+    "month": 9,
+    "quality": null,
+    "sort": 2421121,
+    "text": "14 September 1916",
+    "year": 1916
+   },
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1054593667e5911e120a346f5b4",
+   "id": "C1455",
+   "information": "secondary",
+   "media": [
+    {
+     "ref": "O0245"
+    }
+   ],
+   "notes": [
+    "N2267",
+    "N2268"
+   ],
+   "page": "Thursday 14 September 1916, page 5, col. 6-7",
+   "proposal_file": "2026-11-23_100000_shinofield-thomas_add-person.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0250",
+   "source_type": "original",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "compiled",
+   "url": "https://www.loc.gov/resource/sn87058308/1916-09-14/ed-1/?sp=5"
+  },
+  "C1456": {
+   "ancestry_record_id": "79937331",
+   "change": 1795446005,
+   "cited_by": [
+    {
+     "id": "E1702",
+     "type": "event"
+    },
+    {
+     "id": "E1703",
+     "type": "event"
+    },
+    {
+     "id": "I0506",
+     "type": "person"
+    }
+   ],
+   "confidence": 3,
+   "date": {
+    "day": null,
+    "iso": "1930-04",
+    "modifier": null,
+    "month": 4,
+    "quality": null,
+    "sort": 2426068,
+    "text": "April 1930",
+    "year": 1930
+   },
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10545936b7803f131370fe453e8b",
+   "id": "C1456",
+   "information": "primary",
+   "media": [
+    {
+     "ref": "O0246"
+    }
+   ],
+   "notes": [
+    "N2269",
+    "N2270"
+   ],
+   "page": "April 1930; Minnesota, Freeborn Co., Albert Lea City, Ward 2, ED 24-2, sheet 4A, lines 1-6 (Charles C. Hansen household, dwelling 66, family 72, 105 First Ave South, continued from sheet 3B); Internet Archive minnesotacensus00reel1087, image n38",
+   "proposal_file": "2026-11-23_100010_shinofield-shirley_add-person.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0251",
+   "source_type": "original",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "record",
+   "url": "https://www.ancestry.com/search/collections/6224/records/79937331"
+  },
+  "C1457": {
+   "ancestry_record_id": "79937384",
+   "change": 1795446006,
+   "cited_by": [
+    {
+     "id": "E1704",
+     "type": "event"
+    },
+    {
+     "id": "E1705",
+     "type": "event"
+    },
+    {
+     "id": "I0507",
+     "type": "person"
+    }
+   ],
+   "confidence": 3,
+   "date": {
+    "day": null,
+    "iso": "1930-04",
+    "modifier": null,
+    "month": 4,
+    "quality": null,
+    "sort": 2426068,
+    "text": "April 1930",
+    "year": 1930
+   },
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10545936ef0634acae222dd08875",
+   "id": "C1457",
+   "information": "primary",
+   "media": [
+    {
+     "ref": "O0247"
+    }
+   ],
+   "notes": [
+    "N2271",
+    "N2272"
+   ],
+   "page": "April 1930; Minnesota, Freeborn Co., Albert Lea City, Ward 2, ED 24-2 (Ancestry index: ED 0002), sheet 4A (Ancestry: Page 4A), line 6 (Charles C. Hansen household, dwelling 66, family 72, 105 First Ave South, continued from sheet 3B); Internet Archive minnesotacensus00reel1087, image n38",
+   "proposal_file": "2026-11-23_100020_shinofield-edna-elizabeth_add-person.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0251",
+   "source_type": "original",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "record",
+   "url": "https://www.ancestry.com/search/collections/6224/records/79937384"
+  },
+  "C1458": {
+   "ancestry_record_id": "15888063",
+   "change": 1795446008,
+   "cited_by": [
+    {
+     "id": "I0505",
+     "type": "person"
+    }
+   ],
+   "confidence": 3,
+   "date": {
+    "day": null,
+    "iso": "1900-06",
+    "modifier": null,
+    "month": 6,
+    "quality": null,
+    "sort": 2415172,
+    "text": "June 1900",
+    "year": 1900
+   },
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10545937210378dd690b75a8673a",
+   "id": "C1458",
+   "information": "primary",
+   "media": [
+    {
+     "ref": "O0248"
+    }
+   ],
+   "notes": [
+    "N2273",
+    "N2274"
+   ],
+   "page": "June 1900; Iowa, Mahaska Co., Spring Creek Twp., Supervisor's District 6, ED 77, sheet 14A, lines 39-50, dwelling 295, family 300 (John G. Shinofield household); Thos V. at line 45. Ancestry image 4120109_00809; Internet Archive 12thcensusofpopu446unit, image n807",
+   "proposal_file": "2026-11-23_100001_shinofield-thomas_census-1900-citation.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0252",
+   "source_type": "original",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "record",
+   "url": "https://www.ancestry.com/imageviewer/collections/7602/images/4120109_00809?pId=15888063"
+  },
+  "C1459": {
+   "ancestry_record_id": "",
+   "change": 1795446008,
+   "cited_by": [
+    {
+     "id": "I0505",
+     "type": "person"
+    }
+   ],
+   "confidence": 3,
+   "date": {
+    "day": 14,
+    "iso": "1916-09-14",
+    "modifier": null,
+    "month": 9,
+    "quality": null,
+    "sort": 2421121,
+    "text": "14 September 1916",
+    "year": 1916
+   },
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "105459373c692747b53d1882b018",
+   "id": "C1459",
+   "information": "secondary",
+   "media": [
+    {
+     "ref": "O0249"
+    }
+   ],
+   "notes": [
+    "N2275",
+    "N2276"
+   ],
+   "page": "Thursday 14 September 1916, page 6, col. 2",
+   "proposal_file": "2026-11-23_100002_shinofield-thomas_obit-p6-citation.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0253",
+   "source_type": "original",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "compiled",
+   "url": "https://www.loc.gov/resource/sn87058308/1916-09-14/ed-1/?sp=6"
   }
  },
  "events": {
@@ -95133,6 +95505,92 @@
    ],
    "type": "Death"
   },
+  "E1656": {
+   "attributes": [],
+   "change": 1795482256,
+   "citations": [
+    "C1367"
+   ],
+   "date": {
+    "day": 22,
+    "iso": "1952-04-22",
+    "modifier": null,
+    "month": 4,
+    "quality": null,
+    "sort": 2434125,
+    "text": "22 April 1952",
+    "year": 1952
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10543786943328dc97c8f46f6c09",
+   "id": "E1656",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0466",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0347",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Birth"
+  },
+  "E1657": {
+   "attributes": [],
+   "change": 1795482256,
+   "citations": [
+    "C1367"
+   ],
+   "date": {
+    "day": 18,
+    "iso": "2024-03-18",
+    "modifier": null,
+    "month": 3,
+    "quality": null,
+    "sort": 2460388,
+    "text": "18 March 2024",
+    "year": 2024
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10543786999b3388c232dcc630fd",
+   "id": "E1657",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0466",
+     "role": "Primary"
+    }
+   ],
+   "place": null,
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Death"
+  },
   "E1678": {
    "attributes": [],
    "change": 1795389523,
@@ -95380,6 +95838,264 @@
     }
    ],
    "place": "P0285",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Death"
+  },
+  "E1700": {
+   "attributes": [],
+   "change": 1795446003,
+   "citations": [
+    "C1455"
+   ],
+   "date": {
+    "day": 4,
+    "iso": "1886-03-04",
+    "modifier": null,
+    "month": 3,
+    "quality": null,
+    "sort": 2409970,
+    "text": "4 March 1886",
+    "year": 1886
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10545936732155a97d2935bd70d",
+   "id": "E1700",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0505",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0360",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Birth"
+  },
+  "E1701": {
+   "attributes": [],
+   "change": 1795446004,
+   "citations": [
+    "C1455"
+   ],
+   "date": {
+    "day": 10,
+    "iso": "1916-09-10",
+    "modifier": null,
+    "month": 9,
+    "quality": null,
+    "sort": 2421117,
+    "text": "10 September 1916",
+    "year": 1916
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "105459367ea9709f970740fd801d",
+   "id": "E1701",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0505",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0361",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Death"
+  },
+  "E1702": {
+   "attributes": [],
+   "change": 1795446005,
+   "citations": [
+    "C1456"
+   ],
+   "date": {
+    "day": 24,
+    "iso": "1914-09-24",
+    "modifier": null,
+    "month": 9,
+    "quality": null,
+    "sort": 2420400,
+    "text": "24 September 1914",
+    "year": 1914
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10545936bf9a3e426bee667c09af",
+   "id": "E1702",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0506",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0285",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Birth"
+  },
+  "E1703": {
+   "attributes": [],
+   "change": 1795446005,
+   "citations": [
+    "C1456"
+   ],
+   "date": {
+    "day": 7,
+    "iso": "1995-09-07",
+    "modifier": null,
+    "month": 9,
+    "quality": null,
+    "sort": 2449968,
+    "text": "7 September 1995",
+    "year": 1995
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10545936c76477139969d9bf849f",
+   "id": "E1703",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0506",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0285",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Death"
+  },
+  "E1704": {
+   "attributes": [],
+   "change": 1795446007,
+   "citations": [
+    "C1457"
+   ],
+   "date": {
+    "day": 7,
+    "iso": "1916-08-07",
+    "modifier": null,
+    "month": 8,
+    "quality": null,
+    "sort": 2421083,
+    "text": "7 August 1916",
+    "year": 1916
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10545936f3ad702bdab95227de30",
+   "id": "E1704",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0507",
+     "role": "Primary"
+    }
+   ],
+   "place": null,
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Birth"
+  },
+  "E1705": {
+   "attributes": [],
+   "change": 1795446007,
+   "citations": [
+    "C1457"
+   ],
+   "date": {
+    "day": 18,
+    "iso": "1978-01-18",
+    "modifier": null,
+    "month": 1,
+    "quality": null,
+    "sort": 2443527,
+    "text": "18 January 1978",
+    "year": 1978
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10545936f916278af2f3d2b1dcec",
+   "id": "E1705",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0507",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0338",
    "provenance": [
     "agent-karel",
     "agent-proposed"
@@ -95925,6 +96641,15 @@
    "children": [
     {
      "ref": "I0141"
+    },
+    {
+     "ref": "I0428"
+    },
+    {
+     "ref": "I0429"
+    },
+    {
+     "ref": "I0430"
     }
    ],
    "father": "I0142",
@@ -96517,7 +97242,11 @@
   "F0031": {
    "attributes": [],
    "change": 1795389557,
-   "children": [],
+   "children": [
+    {
+     "ref": "I0482"
+    }
+   ],
    "citations": [
     "C1440"
    ],
@@ -96570,6 +97299,12 @@
    "attributes": [],
    "change": 1795389558,
    "children": [
+    {
+     "ref": "I0490"
+    },
+    {
+     "ref": "I0494"
+    },
     {
      "ref": "I0419"
     }
@@ -96627,7 +97362,11 @@
   "F0033": {
    "attributes": [],
    "change": 1795389556,
-   "children": [],
+   "children": [
+    {
+     "ref": "I0481"
+    }
+   ],
    "citations": [
     "C1439"
    ],
@@ -98054,6 +98793,9 @@
     },
     {
      "ref": "I0000"
+    },
+    {
+     "ref": "I0424"
     }
    ],
    "citations": [
@@ -102023,11 +102765,359 @@
    ],
    "type": "Married"
   },
+  "F0198": {
+   "children": [
+    {
+     "frel": "Adopted",
+     "mrel": "Adopted",
+     "ref": "I0427"
+    }
+   ],
+   "father": "I0424",
+   "handle": "105437802d7a3f5c6516bf3b2d4e",
+   "id": "F0198",
+   "mother": "I0425",
+   "status": "living"
+  },
+  "F0199": {
+   "children": [
+    {
+     "frel": "Adopted",
+     "mrel": "Adopted",
+     "ref": "I0430"
+    }
+   ],
+   "father": "I0431",
+   "handle": "105437813dd0204236754472a575",
+   "id": "F0199",
+   "mother": "I0432",
+   "status": "living"
+  },
+  "F0200": {
+   "children": [
+    {
+     "ref": "I0434"
+    },
+    {
+     "ref": "I0435"
+    },
+    {
+     "ref": "I0436"
+    }
+   ],
+   "father": "I0433",
+   "handle": "1054378166b8189d2c01a89bc80e",
+   "id": "F0200",
+   "mother": "I0428",
+   "status": "living"
+  },
+  "F0201": {
+   "children": [
+    {
+     "ref": "I0438"
+    },
+    {
+     "ref": "I0439"
+    }
+   ],
+   "father": "I0437",
+   "handle": "1054378214ab295dd00fcb325b76",
+   "id": "F0201",
+   "mother": "I0429",
+   "status": "living"
+  },
+  "F0202": {
+   "children": [
+    {
+     "ref": "I0441"
+    },
+    {
+     "ref": "I0442"
+    },
+    {
+     "ref": "I0443"
+    },
+    {
+     "ref": "I0444"
+    },
+    {
+     "ref": "I0445"
+    },
+    {
+     "frel": "Adopted",
+     "mrel": "Adopted",
+     "ref": "I0446"
+    },
+    {
+     "ref": "I0447"
+    },
+    {
+     "ref": "I0448"
+    }
+   ],
+   "father": "I0440",
+   "handle": "1054378281967efd8f23018f5664",
+   "id": "F0202",
+   "mother": "I0430",
+   "status": "living"
+  },
+  "F0203": {
+   "children": [
+    {
+     "ref": "I0450"
+    },
+    {
+     "ref": "I0451"
+    },
+    {
+     "ref": "I0452"
+    },
+    {
+     "ref": "I0453"
+    },
+    {
+     "ref": "I0454"
+    }
+   ],
+   "father": "I0441",
+   "handle": "10543783f67658671e54f461a208",
+   "id": "F0203",
+   "mother": "I0449",
+   "status": "living"
+  },
+  "F0204": {
+   "children": [
+    {
+     "ref": "I0456"
+    },
+    {
+     "ref": "I0457"
+    },
+    {
+     "ref": "I0458"
+    },
+    {
+     "ref": "I0459"
+    }
+   ],
+   "father": "I0442",
+   "handle": "10543784e065336789d4ce55cad6",
+   "id": "F0204",
+   "mother": "I0455",
+   "status": "living"
+  },
+  "F0205": {
+   "children": [
+    {
+     "ref": "I0461"
+    }
+   ],
+   "father": "I0460",
+   "handle": "10543785b00d4c2a048d64f9f2a9",
+   "id": "F0205",
+   "mother": "I0443",
+   "status": "living"
+  },
+  "F0206": {
+   "children": [
+    {
+     "ref": "I0463"
+    }
+   ],
+   "father": "I0355",
+   "handle": "1054378602921adc1b165d685ec7",
+   "id": "F0206",
+   "mother": "I0462",
+   "status": "living"
+  },
+  "F0207": {
+   "children": [
+    {
+     "ref": "I0465"
+    }
+   ],
+   "father": "I0354",
+   "handle": "105437867145d85d2d96d8f9035",
+   "id": "F0207",
+   "mother": "I0464",
+   "status": "living"
+  },
+  "F0208": {
+   "children": [
+    {
+     "ref": "I0467"
+    },
+    {
+     "ref": "I0468"
+    }
+   ],
+   "father": "I0466",
+   "handle": "10543786a97529156dbdf3a067b8",
+   "id": "F0208",
+   "mother": "I0356",
+   "status": "living"
+  },
+  "F0209": {
+   "children": [],
+   "father": "I0467",
+   "handle": "105437871b8a15487828c9a4c25c",
+   "id": "F0209",
+   "mother": "I0469",
+   "status": "living"
+  },
+  "F0210": {
+   "children": [],
+   "father": "I0470",
+   "handle": "1054378743e7176dc22cc3fcf985",
+   "id": "F0210",
+   "mother": "I0468",
+   "status": "living"
+  },
+  "F0211": {
+   "children": [
+    {
+     "ref": "I0472"
+    }
+   ],
+   "father": "I0471",
+   "handle": "1054378766ec7891f500913142ff",
+   "id": "F0211",
+   "mother": "I0372",
+   "status": "living"
+  },
+  "F0212": {
+   "children": [],
+   "father": "I0473",
+   "handle": "10543787bec53fb0b9ab4fa1e35d",
+   "id": "F0212",
+   "mother": "I0372",
+   "status": "living"
+  },
+  "F0213": {
+   "children": [
+    {
+     "frel": "Adopted",
+     "ref": "I0475"
+    },
+    {
+     "ref": "I0476"
+    }
+   ],
+   "father": "I0373",
+   "handle": "10543787ea3d1238f63664a073cf",
+   "id": "F0213",
+   "mother": "I0474",
+   "status": "living"
+  },
+  "F0215": {
+   "children": [
+    {
+     "ref": "I0479"
+    },
+    {
+     "ref": "I0480"
+    }
+   ],
+   "father": "I0478",
+   "handle": "105437888ecc2f49063b331fa257",
+   "id": "F0215",
+   "mother": "I0374",
+   "status": "living"
+  },
+  "F0216": {
+   "children": [
+    {
+     "ref": "I0484"
+    },
+    {
+     "ref": "I0488"
+    }
+   ],
+   "father": "I0483",
+   "handle": "10543789655a7b549f078481a52",
+   "id": "F0216",
+   "mother": "I0482",
+   "status": "living"
+  },
+  "F0217": {
+   "children": [
+    {
+     "ref": "I0486"
+    },
+    {
+     "ref": "I0487"
+    }
+   ],
+   "father": "I0485",
+   "handle": "10543789bf8c7d47e516474a0139",
+   "id": "F0217",
+   "mother": "I0484",
+   "status": "living"
+  },
+  "F0218": {
+   "children": [],
+   "father": "I0489",
+   "handle": "1054378a65d91fa33f993412845a",
+   "id": "F0218",
+   "mother": "I0488",
+   "status": "living"
+  },
+  "F0219": {
+   "children": [
+    {
+     "ref": "I0492"
+    },
+    {
+     "ref": "I0493"
+    }
+   ],
+   "father": "I0491",
+   "handle": "1054378ab02657a26c2e5342788c",
+   "id": "F0219",
+   "mother": "I0490",
+   "status": "living"
+  },
+  "F0220": {
+   "children": [
+    {
+     "ref": "I0496"
+    },
+    {
+     "ref": "I0497"
+    }
+   ],
+   "father": "I0494",
+   "handle": "1054378b4aef281eb53beef06aad",
+   "id": "F0220",
+   "mother": "I0495",
+   "status": "living"
+  },
+  "F0221": {
+   "children": [
+    {
+     "ref": "I0499"
+    },
+    {
+     "ref": "I0500"
+    }
+   ],
+   "father": "I0498",
+   "handle": "1054378bc0132d57fdff5316ad76",
+   "id": "F0221",
+   "mother": "I0496",
+   "status": "living"
+  },
   "F0222": {
    "attributes": [],
-   "change": 1795389525,
-   "children": [],
-   "citations": [],
+   "change": 1795441102,
+   "children": [
+    {
+     "ref": "I0063"
+    }
+   ],
+   "citations": [
+    "C1454"
+   ],
    "events": [],
    "father": "I0501",
    "flags": [
@@ -102037,6 +103127,40 @@
    "id": "F0222",
    "media": [],
    "mother": "I0502",
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Married"
+  },
+  "F0223": {
+   "attributes": [],
+   "change": 1795446007,
+   "children": [
+    {
+     "ref": "I0506"
+    },
+    {
+     "ref": "I0507"
+    }
+   ],
+   "citations": [],
+   "events": [],
+   "father": "I0505",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "105459368c534543a3913722b756",
+   "id": "F0223",
+   "media": [],
+   "mother": "I0409",
    "notes": [],
    "provenance": [
     "agent-karel",
@@ -110412,6 +111536,171 @@
     "agent-karel",
     "agent-proposed"
    ]
+  },
+  "O0245": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1455",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-23_100000_shinofield-thomas_add-person.jpg"
+   },
+   "checksum": "4cd4b9ca3f60a5f9b8f91a462cad8f13",
+   "citations": [],
+   "date": null,
+   "desc": "The Oskaloosa Herald (Oskaloosa, Iowa), 14 Sep 1916, p. 5: obituary of Thos. Vores Shinofield — Thursday 14 September 1916, page 5, col. 6-7",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "105459365fef377b9a978b90b094",
+   "id": "O0245",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0245",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ]
+  },
+  "O0246": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1456",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-23_100010_shinofield-shirley_add-person.jpg"
+   },
+   "checksum": "da781977a29121a9c5fd58c49ebf411e",
+   "citations": [],
+   "date": null,
+   "desc": "1930 United States Census, Population Schedule, Minnesota, Freeborn County, Albert Lea city, ED 24-2, sheet 4A — April 1930; Minnesota, Freeborn Co., Albert Lea City, Ward 2, ED 24-2, sheet 4A, lines 1-6 (Charles C. Hansen household, dwelling 66, family 72, 105 First Ave South, continued from sheet 3B); Internet Archive minnesotacensus00reel1087, image n38",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10545936ac6a3f4aa0855efa7d6a",
+   "id": "O0246",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0246",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ]
+  },
+  "O0247": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1457",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-23_100020_shinofield-edna-elizabeth_add-person.jpg"
+   },
+   "checksum": "da781977a29121a9c5fd58c49ebf411e",
+   "citations": [],
+   "date": null,
+   "desc": "1930 United States Census, Population Schedule, Minnesota, Freeborn County, Albert Lea city, ED 24-2, sheet 4A — April 1930; Minnesota, Freeborn Co., Albert Lea City, Ward 2, ED 24-2 (Ancestry index: ED 0002), sheet 4A (Ancestry: Page 4A), line 6 (Charles C. Hansen household, dwelling 66, family 72, 105 First Ave South, continued from sheet 3B); Internet Archive minnesotacensus00reel1087, image n38",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10545936e7497241c8ee14e1a918",
+   "id": "O0247",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0247",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ]
+  },
+  "O0248": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1458",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-23_100001_shinofield-thomas_census-1900-citation.jpg"
+   },
+   "checksum": "dfa821c299b296746e451748533598ab",
+   "citations": [],
+   "date": null,
+   "desc": "1900 United States Census, Population Schedule, Iowa, Mahaska County, Spring Creek Township, ED 77, sheet 14 — June 1900; Iowa, Mahaska Co., Spring Creek Twp., Supervisor's District 6, ED 77, sheet 14A, lines 39-50, dwelling 295, family 300 (John G. Shinofield household); Thos V. at line 45. Ancestry image 4120109_00809; Internet Archive 12thcensusofpopu446unit, image n807",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10545937199026891ff014a49655",
+   "id": "O0248",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0248",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ]
+  },
+  "O0249": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1459",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-23_100002_shinofield-thomas_obit-p6-citation.jpg"
+   },
+   "checksum": "c1781fc4115e896486c57276c2a18b9e",
+   "citations": [],
+   "date": null,
+   "desc": "The Oskaloosa Herald (Oskaloosa, Iowa), 14 Sep 1916, p. 6: death notice of Thomas Noris Shinofield — Thursday 14 September 1916, page 6, col. 2",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1054593734fd78dc60a6e256962e",
+   "id": "O0249",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0249",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ]
   }
  },
  "meta": {
@@ -110423,22 +111712,22 @@
    "very high"
   ],
   "counts": {
-   "citations": 1288,
-   "events": 1462,
-   "families": 190,
-   "media": 230,
-   "notes": 1445,
-   "people": 423,
-   "places": 333,
-   "repositories": 34,
-   "sources": 239
+   "citations": 1295,
+   "events": 1470,
+   "families": 214,
+   "media": 235,
+   "notes": 1454,
+   "people": 502,
+   "places": 336,
+   "repositories": 37,
+   "sources": 245
   },
   "counts_people": {
-   "full": 356,
-   "living": 67
+   "full": 360,
+   "living": 142
   },
-  "generated": "2026-11-23T08:16:55+00:00",
-  "generator": "gramps_export.py 0.3.0",
+  "generated": "2026-11-24T01:09:46+00:00",
+  "generator": "gramps_export.py 0.4.0",
   "gramps_version": "6.0.8",
   "gramps_webapi_version": "3.17.0",
   "living_rule": {
@@ -110446,13 +111735,14 @@
    "overrides_file": "overrides.json",
    "source": "gramps-api"
   },
+  "minor_text": [],
   "private_site": "https://familytree.konecny.net",
   "review_states": {
    "ai": "checked by the AI validator against its citation",
    "human": "reviewed by a person",
    "unreviewed": "not yet checked"
   },
-  "schema": "0.3",
+  "schema": "0.4",
   "tiers": [
    "record",
    "index",
@@ -117051,25 +118341,6 @@
    "tags": [],
    "text": "2026-10-27 (karel): B4 Queue: Franklin mother via 1866 remarriage. Ancestry: Marriage cite already ON; gallery crop ON; research notes ON; existing Abigail Church 212735895871 linked as mother 27 Oct 2026. Not a family-event proposal for Samuel×Abigail (mother evidence on son's remarriage). No spouse field.",
    "type": "Research"
-  },
-  "N0791": {
-   "attached_to": [
-    {
-     "id": "C1184",
-     "type": "citation"
-    }
-   ],
-   "change": 1793136618,
-   "flags": [],
-   "handle": "104ef8b62ab24e002b356fbe6cf7",
-   "html": "<p>Transcription (as written): Toepel, Jeffrey S. Jeffrey S. Toepel, 59, formerly of Green Bay, passed away on Aug. 28, 2008, in Mesa, Ariz., after a courageous battle with cancer. He is sadly missed by his daughter, Alyssa Toepel, Appleton and Alyssa&#x27;s mother, Ann Toepel, Green Bay. He is also fondly remembered by his parents, Dick and Dorothy Toepel, Mesa, Ariz.; his sisters, Jodi (Pete) Konecny, Nashville, Tenn.; Beth (Mark) Dressel, Pequot Lake, Minn.; and his brother, Dave (Stephanie) Toepel, Mesa, Ariz.</p>",
-   "id": "N0791",
-   "preformatted": false,
-   "provenance": [],
-   "review": "unreviewed",
-   "tags": [],
-   "text": "Transcription (as written): Toepel, Jeffrey S. Jeffrey S. Toepel, 59, formerly of Green Bay, passed away on Aug. 28, 2008, in Mesa, Ariz., after a courageous battle with cancer. He is sadly missed by his daughter, Alyssa Toepel, Appleton and Alyssa's mother, Ann Toepel, Green Bay. He is also fondly remembered by his parents, Dick and Dorothy Toepel, Mesa, Ariz.; his sisters, Jodi (Pete) Konecny, Nashville, Tenn.; Beth (Mark) Dressel, Pequot Lake, Minn.; and his brother, Dave (Stephanie) Toepel, Mesa, Ariz.",
-   "type": "Transcript"
   },
   "N0792": {
    "attached_to": [
@@ -131740,29 +133011,6 @@
    "text": "Validator (claude-opus-5-5, 2026-10-28): consistent, confidence 3/4, tier record.\nThe visible part of the Radnice death register entry reads 'October 28. zem:', house no. 10, 'Kateřina manželka Tomáše Tauber'. This matches the claimed death day and month, the house number, and the identification as Tomáš Taubr's wife, so claim 2 (that the record is about this Kateřina) is well supported. The year, the place name Mostiště/Liblín, the age, the burial date and the cause are cut off in the attached crop. Those details depend on the transcription and should be checked against the full page at pag. 233.\nMatches: Death register column header 'Gméno Zemřelého' (name of the deceased) confirms a death register; Date column reads 'October 28.' followed by 'zem:' (zemřela, died), matching 28 October; House number column reads 10, matching house 10; Name column reads 'Kateřina manželka Tomáše Tauber', i.e. Kateřina, wife of Tomáš Tauber. Tauber/Taubr is a spelling variant of the same surname; The underlined forename Kateřina matches the subject; the husband Tomáš Taubr matches the research note\nLimits: The image is a cropped strip showing only the header and the first line of the entry; The year 1840 does not appear in the visible crop; Age 42, burial 29 Oct 1840 and cause Leberverhärtung are not visible and rest on the transcription only; The village name Mostiště is not legible in the crop. The second line is cut off, though 'Liblín' may be part of it; The record names her only as wife of Tomáš Tauber and gives no maiden name or parents; Age at death would only imply a birth year (~1798), not a date. The research note records a soft conflict with the 1830 marriage age (~1803), which concerns the birth claim, not this death claim",
    "type": "Research"
   },
-  "N1476": {
-   "attached_to": [
-    {
-     "id": "C1184",
-     "type": "citation"
-    }
-   ],
-   "change": 1793222251,
-   "flags": [],
-   "handle": "104f2bc0bb02321fddb650a1138a",
-   "html": "<p>Validator (claude-sonnet-5-5, 2026-10-28): supports, confidence 3/4, tier record.<br>The clipping image reads clearly and explicitly states that Jeffrey S. Toepel, 59, formerly of Green Bay, died Aug. 28, 2008, in Mesa, Ariz., of cancer. The family members listed (parents Dick and Dorothy, sisters Jodi Konecny and Beth Dressel, brother Dave, daughter Alyssa, Ann) match the claim note. Confidence stops at 3 because the middle name, the publication date and the county are not visible in the clip, and the obituary is a secondary source.<br>Matches: Obituary names Jeffrey S. Toepel, age 59, died Aug. 28, 2008, in Mesa, Ariz., matching the claimed death date and place; &quot;Formerly of Green Bay&quot; matches the claim note; Age 59 is consistent with a 1949 birth year; Parents Dick and Dorothy Toepel, Mesa, Ariz. match the note; Sisters Jodi (Pete) Konecny, Nashville, Tenn., and Beth (Mark) Dressel, Pequot Lake, Minn. match the note; Brother Dave (Stephanie) Toepel, Mesa, Ariz. matches the note; Daughter Alyssa Toepel, Appleton, and her mother Ann Toepel, Green Bay match the note; Cancer as cause matches (&quot;courageous battle with cancer&quot;)<br>Limits: The clipping shows only &quot;Jeffrey S.&quot;, not the full middle name Scott; The image does not show the publication date (7 Sep 2008) or the newspaper name; these rely on the citation; Mesa is given, but the county (Maricopa) is not stated; this is an inference; Age 59 implies birth between 1948 and 1949 depending on birthday; the exact birth date is not given; The image is cropped at the bottom, so the remainder of the obituary is not visible; the transcript covers text beyond the image, such as the end of the brother line; Newspaper obituary is a derivative, secondary source for the death; the informant is unknown</p>",
-   "id": "N1476",
-   "preformatted": false,
-   "provenance": [
-    "agent-validator"
-   ],
-   "review": "unreviewed",
-   "tags": [
-    "agent-validator"
-   ],
-   "text": "Validator (claude-sonnet-5-5, 2026-10-28): supports, confidence 3/4, tier record.\nThe clipping image reads clearly and explicitly states that Jeffrey S. Toepel, 59, formerly of Green Bay, died Aug. 28, 2008, in Mesa, Ariz., of cancer. The family members listed (parents Dick and Dorothy, sisters Jodi Konecny and Beth Dressel, brother Dave, daughter Alyssa, Ann) match the claim note. Confidence stops at 3 because the middle name, the publication date and the county are not visible in the clip, and the obituary is a secondary source.\nMatches: Obituary names Jeffrey S. Toepel, age 59, died Aug. 28, 2008, in Mesa, Ariz., matching the claimed death date and place; \"Formerly of Green Bay\" matches the claim note; Age 59 is consistent with a 1949 birth year; Parents Dick and Dorothy Toepel, Mesa, Ariz. match the note; Sisters Jodi (Pete) Konecny, Nashville, Tenn., and Beth (Mark) Dressel, Pequot Lake, Minn. match the note; Brother Dave (Stephanie) Toepel, Mesa, Ariz. matches the note; Daughter Alyssa Toepel, Appleton, and her mother Ann Toepel, Green Bay match the note; Cancer as cause matches (\"courageous battle with cancer\")\nLimits: The clipping shows only \"Jeffrey S.\", not the full middle name Scott; The image does not show the publication date (7 Sep 2008) or the newspaper name; these rely on the citation; Mesa is given, but the county (Maricopa) is not stated; this is an inference; Age 59 implies birth between 1948 and 1949 depending on birthday; the exact birth date is not given; The image is cropped at the bottom, so the remainder of the obituary is not visible; the transcript covers text beyond the image, such as the end of the brother line; Newspaper obituary is a derivative, secondary source for the death; the informant is unknown",
-   "type": "Research"
-  },
   "N1477": {
    "attached_to": [
     {
@@ -140775,6 +142023,25 @@
    "text": "2026-11-21 (karel): Record-tier evidence for Vernon Alfred Sodergren (212817587641; companion to add_person 100510, applied after it): head, line 27, wife Ina line 28. The 1950 United States Federal Census record 92669748 (St Paul, age 42) is attached on Ancestry to Vernon and Ina (Ina also has a 1950 Residence fact citing it); verified on their Facts pages 21 Nov 2026. Image is a crop of the NARA sheet (header plus lines 27-30).",
    "type": "Research"
   },
+  "N2090": {
+   "attached_to": [
+    {
+     "id": "C1367",
+     "type": "citation"
+    }
+   ],
+   "change": 1795389486,
+   "flags": [],
+   "handle": "1054378689ca2e1c91fb7507ad63",
+   "html": "<p>Transcription (as written): Mark Dressel, age 71, passed away unexpectedly on Monday, March 18, 2024, at his home. Services will be announced at a later date. Mark was born to Vernon and Mary (Gebo) Dressel on April 22, 1952, in Minneapolis. Mark is survived by his wife of 46 years and soul mate, Beth; two children, Jason (Jen) Dressel and Ashley (Rory) Welu; four grandchildren, Vivian, Jameson, Bria, and Willa. He is preceded in death by his parents and sister, Pam Dressel.</p>",
+   "id": "N2090",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Mark Dressel, age 71, passed away unexpectedly on Monday, March 18, 2024, at his home. Services will be announced at a later date. Mark was born to Vernon and Mary (Gebo) Dressel on April 22, 1952, in Minneapolis. Mark is survived by his wife of 46 years and soul mate, Beth; two children, Jason (Jen) Dressel and Ashley (Rory) Welu; four grandchildren, Vivian, Jameson, Bria, and Willa. He is preceded in death by his parents and sister, Pam Dressel.",
+   "type": "Transcript"
+  },
   "N2160": {
    "attached_to": [
     {
@@ -141212,44 +142479,6 @@
    "text": "2026-11-22 (karel): Book p.54 (re-read 18 Nov 2026): \"Norman and JoAnn would add three children to their branch of the family tree: Barbara (1956), Norman III (1958), and Charles (1962).\" Parents are the existing couple F0032: Norman B. Wood Jr. I0059 / Ancestry 212795068190 × JoAnn I0364 / Ancestry 212811346080, currently childless in the 18 Nov export. Ancestry IDs verified in the 12 Nov 2026 Gramps XML and in HAND-LINK-QUEUE.md / CHANGESET.csv. Use update_family add_children; never add_family for F0032. Held proposals already touch I0364's name and Norman III's link to this same family; this file adds only Barbara. Same household batch as 121110. Charles is drafted in H31 as a separate update_family add_children on the same couple. Living: private true. Created 18 Nov 2026 as Living on Ancestry tree 208290233; ancestry_attached true. Anchor Ancestry IDs were re-confirmed from the 12 Nov 2026 Gramps XML and the IDs supplied for this filing. This file adds only Barbara to existing F0032. Charles is a separate update_family in H31.",
    "type": "Research"
   },
-  "N2241": {
-   "attached_to": [
-    {
-     "id": "C1442",
-     "type": "citation"
-    }
-   ],
-   "change": 1795389558,
-   "flags": [],
-   "handle": "1054379189d45f172ab1e7d1ce82",
-   "html": "<p>Transcription (as written): Norman and JoAnn would add three children to their branch of the family tree: Barbara (1956), Norman III (1958), and Charles (1962). Charles Graham Wood was born September 10, 1962, in Milwaukee, Wisconsin. Like his father, he was the baby of the family, joining sister Barbara, and brother Norman III.</p>",
-   "id": "N2241",
-   "preformatted": false,
-   "provenance": [],
-   "review": "unreviewed",
-   "tags": [],
-   "text": "Transcription (as written): Norman and JoAnn would add three children to their branch of the family tree: Barbara (1956), Norman III (1958), and Charles (1962). Charles Graham Wood was born September 10, 1962, in Milwaukee, Wisconsin. Like his father, he was the baby of the family, joining sister Barbara, and brother Norman III.",
-   "type": "Transcript"
-  },
-  "N2242": {
-   "attached_to": [
-    {
-     "id": "C1442",
-     "type": "citation"
-    }
-   ],
-   "change": 1795389558,
-   "flags": [],
-   "handle": "105437918c862003d6f756263fae",
-   "html": "<p>2026-11-22 (karel): Book pp.54, 62 (re-read 18 Nov 2026): &quot;Norman and JoAnn would add three children to their branch of the family tree: Barbara (1956), Norman III (1958), and Charles (1962).&quot; &quot;Charles Graham Wood was born September 10, 1962, in Milwaukee, Wisconsin. Like his father, he was the baby of the family, joining sister Barbara, and brother Norman III.&quot; Parents are the existing couple F0032: Norman B. Wood Jr. I0059 / Ancestry 212795068190 × JoAnn I0364 / Ancestry 212811346080. Use update_family add_children; never add_family for F0032. Same family as Barbara (H25). Norman III&#x27;s own household is not drafted in this batch. This file adds only Charles. Barbara is a separate update_family in H25. Living: private true. Created 18 Nov 2026 as Living on Ancestry tree 208290233; ancestry_attached true. Anchor Ancestry IDs were re-confirmed from the 12 Nov 2026 Gramps XML and the IDs supplied for this filing. This file adds only Charles to existing F0032. Barbara is a separate update_family in H25.</p>",
-   "id": "N2242",
-   "preformatted": false,
-   "provenance": [],
-   "review": "unreviewed",
-   "tags": [],
-   "text": "2026-11-22 (karel): Book pp.54, 62 (re-read 18 Nov 2026): \"Norman and JoAnn would add three children to their branch of the family tree: Barbara (1956), Norman III (1958), and Charles (1962).\" \"Charles Graham Wood was born September 10, 1962, in Milwaukee, Wisconsin. Like his father, he was the baby of the family, joining sister Barbara, and brother Norman III.\" Parents are the existing couple F0032: Norman B. Wood Jr. I0059 / Ancestry 212795068190 × JoAnn I0364 / Ancestry 212811346080. Use update_family add_children; never add_family for F0032. Same family as Barbara (H25). Norman III's own household is not drafted in this batch. This file adds only Charles. Barbara is a separate update_family in H25. Living: private true. Created 18 Nov 2026 as Living on Ancestry tree 208290233; ancestry_attached true. Anchor Ancestry IDs were re-confirmed from the 12 Nov 2026 Gramps XML and the IDs supplied for this filing. This file adds only Charles to existing F0032. Barbara is a separate update_family in H25.",
-   "type": "Research"
-  },
   "N2243": {
    "attached_to": [
     {
@@ -141286,6 +142515,234 @@
    "review": "unreviewed",
    "tags": [],
    "text": "2026-11-22 (karel): Record-tier evidence for Dennis Adair (212817587592; companion to add_person 100501, applied after it): Dennis C., son, line 8. The 1950 United States Federal Census record 93320757 (Albert Lea, Floyd age 47) is attached on Ancestry to Floyd, Dennis and Florence (Florence also has a 1950 Residence fact citing it); verified on their Facts pages 21 Nov 2026 (Sources list shows \"1950 United States Federal Census\"). Image is a crop of the NARA sheet (header plus lines 6-8 only; line 9, a 4-year-old daughter presumed living, is left out).\nConflicts: ['Ancestry\\'s index for this record reads Birth Place \"35\" and Birth Date \"abt 1903\" for Floyd; the image reads \"Nebraska\", age 47.', \"The 21 Nov research packet gave the household as lines 7-9; the sheet's own line numbers are 6 (Floyd), 7 (Florence), 8 (Dennis).\"]",
+   "type": "Research"
+  },
+  "N2265": {
+   "attached_to": [
+    {
+     "id": "C1454",
+     "type": "citation"
+    }
+   ],
+   "change": 1795441102,
+   "flags": [],
+   "handle": "1054564a84b5181886cbf2ca3350",
+   "html": "<p>Transcription (as written): Chris said on 31 Oct 2026 (oral) that Collin&#x27;s parents were John and Lois Morris, who lived and died in Atlanta.</p>",
+   "id": "N2265",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Chris said on 31 Oct 2026 (oral) that Collin's parents were John and Lois Morris, who lived and died in Atlanta.",
+   "type": "Transcript"
+  },
+  "N2267": {
+   "attached_to": [
+    {
+     "id": "C1455",
+     "type": "citation"
+    }
+   ],
+   "change": 1795446003,
+   "flags": [],
+   "handle": "10545936584ed27ced70b7067c8",
+   "html": "<p>Transcription (as written): SHINOFIELD.—Thos. Vores Shinofield, son of J. G. and Elizabeth Shinofield, was born March 4, 188[6, last digit damaged], in What Cheer, Iowa; when a small child he moved with his parents to Oskaloosa, where he attended school, after which they went to Albert Lea, Minn. There he was united in marriage with Edna Lula Hanson. To this happy union there were born two children: Shirley Marie and Edna Elizabeth. [...] He quietly passed away Sept. 10, 1916, [...] at the age of 30 years, 6 months and 6 days. He leaves to mourn his loss his wife and the two children, father and mother, five brothers and five sisters with a host of relatives and friends. The funeral was held at the home of J. G. Shinofield, 541 Ninth avenue east, at 2:30 p. m., Sept. 11, 1916, [...] The body was taken to Albert Lea, Minn., for interment.</p>",
+   "id": "N2267",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): SHINOFIELD.—Thos. Vores Shinofield, son of J. G. and Elizabeth Shinofield, was born March 4, 188[6, last digit damaged], in What Cheer, Iowa; when a small child he moved with his parents to Oskaloosa, where he attended school, after which they went to Albert Lea, Minn. There he was united in marriage with Edna Lula Hanson. To this happy union there were born two children: Shirley Marie and Edna Elizabeth. [...] He quietly passed away Sept. 10, 1916, [...] at the age of 30 years, 6 months and 6 days. He leaves to mourn his loss his wife and the two children, father and mother, five brothers and five sisters with a host of relatives and friends. The funeral was held at the home of J. G. Shinofield, 541 Ninth avenue east, at 2:30 p. m., Sept. 11, 1916, [...] The body was taken to Albert Lea, Minn., for interment.",
+   "type": "Transcript"
+  },
+  "N2268": {
+   "attached_to": [
+    {
+     "id": "C1455",
+     "type": "citation"
+    }
+   ],
+   "change": 1795446003,
+   "flags": [],
+   "handle": "105459365beb28d0212e0c44abc7",
+   "html": "<p>2026-11-23 (karel): Ancestry profile 212817991787 (tree 208290233, created 23 Nov 2026) shows Thomas Voris Shinofield, M, birth 4 Mar 1886 What Cheer, Keokuk, Iowa, USA, death 10 Sep 1916 Oskaloosa, Mahaska, Iowa, USA, spouse Edna Luella Hansen 212815368044 (Gramps I0409); the 1900 census (Ancestry record 15888063) is attached there and both Oskaloosa Herald obituary images (14 Sep 1916 pp. 5 and 6) are in his gallery. The p. 5 obituary names his wife &quot;Edna Lula Hanson&quot; (married at Albert Lea) and the daughters Shirley Marie and Edna Elizabeth; it gives birth 4 Mar 188[6] at What Cheer and death 10 Sep 1916 aged 30 y 6 m 6 d; p. 6 (companion 100002) gives March 4th, 1886 and the death at 541 Ninth Avenue East, Oskaloosa. Edna I0409 is the right woman: she appears as Edna L. Shinofield, widowed daughter of Charles Hansen, with daughters Shirley and Edna in the 1930 Albert Lea census (companion 100010), and her Gramps record already carries the married name Shinofield. Checked 23 Nov 2026 export (generated 3:16 AM ET, 423 people / 190 families): I0409 has no family as a partner (families: [], child of F0176 only), so the spouse link makes a new family (applier 0.3.2 ensure_family), not a duplicate; I0409 is not private, so the family is public. Same household batch as 100001 (1900 census), 100002 (obituary p. 6), 100003 (research note) and 100010 (daughter Shirley).<br>Conflicts: [&#x27;Middle name is printed &quot;Vores&quot; on p. 5 and &quot;Noris&quot; on p. 6; Find a Grave 193802994 and the Ancestry profile have &quot;Voris&quot; (entered as Voris).&#x27;, &#x27;The last digit of the birth year is damaged on p. 5; p. 6 prints 1886, and 4 Mar 1886 + 30 y 6 m 6 d = 10 Sep 1916.&#x27;, &quot;The 21 Nov packet assumed death at Albert Lea; both obituaries put the death at his parents&#x27; home, 541 Ninth Avenue East, Oskaloosa. Burial was at Albert Lea (Graceland Cemetery per Find a Grave 193802994; compiled, burial not filed).&quot;, &quot;Marriage (1910 per Find a Grave; about 1911 from Edna&#x27;s 1930 &#x27;age at first marriage 22&#x27;) not entered: no marriage record yet.&quot;]</p>",
+   "id": "N2268",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-23 (karel): Ancestry profile 212817991787 (tree 208290233, created 23 Nov 2026) shows Thomas Voris Shinofield, M, birth 4 Mar 1886 What Cheer, Keokuk, Iowa, USA, death 10 Sep 1916 Oskaloosa, Mahaska, Iowa, USA, spouse Edna Luella Hansen 212815368044 (Gramps I0409); the 1900 census (Ancestry record 15888063) is attached there and both Oskaloosa Herald obituary images (14 Sep 1916 pp. 5 and 6) are in his gallery. The p. 5 obituary names his wife \"Edna Lula Hanson\" (married at Albert Lea) and the daughters Shirley Marie and Edna Elizabeth; it gives birth 4 Mar 188[6] at What Cheer and death 10 Sep 1916 aged 30 y 6 m 6 d; p. 6 (companion 100002) gives March 4th, 1886 and the death at 541 Ninth Avenue East, Oskaloosa. Edna I0409 is the right woman: she appears as Edna L. Shinofield, widowed daughter of Charles Hansen, with daughters Shirley and Edna in the 1930 Albert Lea census (companion 100010), and her Gramps record already carries the married name Shinofield. Checked 23 Nov 2026 export (generated 3:16 AM ET, 423 people / 190 families): I0409 has no family as a partner (families: [], child of F0176 only), so the spouse link makes a new family (applier 0.3.2 ensure_family), not a duplicate; I0409 is not private, so the family is public. Same household batch as 100001 (1900 census), 100002 (obituary p. 6), 100003 (research note) and 100010 (daughter Shirley).\nConflicts: ['Middle name is printed \"Vores\" on p. 5 and \"Noris\" on p. 6; Find a Grave 193802994 and the Ancestry profile have \"Voris\" (entered as Voris).', 'The last digit of the birth year is damaged on p. 5; p. 6 prints 1886, and 4 Mar 1886 + 30 y 6 m 6 d = 10 Sep 1916.', \"The 21 Nov packet assumed death at Albert Lea; both obituaries put the death at his parents' home, 541 Ninth Avenue East, Oskaloosa. Burial was at Albert Lea (Graceland Cemetery per Find a Grave 193802994; compiled, burial not filed).\", \"Marriage (1910 per Find a Grave; about 1911 from Edna's 1930 'age at first marriage 22') not entered: no marriage record yet.\"]",
+   "type": "Research"
+  },
+  "N2269": {
+   "attached_to": [
+    {
+     "id": "C1456",
+     "type": "citation"
+    }
+   ],
+   "change": 1795446005,
+   "flags": [],
+   "handle": "10545936a2852d5aded95af75426",
+   "html": "<p>Transcription (as written): Sheet header: State Minnesota; County Freeborn; Incorporated place Albert Lea City; Ward Second; E.D. 24-2; Sheet 4A. Line 1: [72 cont.] Hansen, Marie | Wife-H | F | W | 62 | M | 21 | Denmark. Line 2: Shinofield, Edna L. | Daughter | F | W | 39 | Wd | 22 | Minnesota | Denmark | Denmark. Line 3: Hansen, Elva | Daughter | F | W | 24 | S | Minnesota. Line 4: —, Florence | Daughter | F | W | 21 | S | Minnesota. Line 5: Shinofield, Shirley | Granddaughter | F | W | 16 | S | [school] Yes | Minnesota | Iowa | Minnesota. Line 6: —, Edna | Granddaughter | F | W | 14 | S | [school] Yes | Iowa | Iowa | Minnesota.</p>",
+   "id": "N2269",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Sheet header: State Minnesota; County Freeborn; Incorporated place Albert Lea City; Ward Second; E.D. 24-2; Sheet 4A. Line 1: [72 cont.] Hansen, Marie | Wife-H | F | W | 62 | M | 21 | Denmark. Line 2: Shinofield, Edna L. | Daughter | F | W | 39 | Wd | 22 | Minnesota | Denmark | Denmark. Line 3: Hansen, Elva | Daughter | F | W | 24 | S | Minnesota. Line 4: —, Florence | Daughter | F | W | 21 | S | Minnesota. Line 5: Shinofield, Shirley | Granddaughter | F | W | 16 | S | [school] Yes | Minnesota | Iowa | Minnesota. Line 6: —, Edna | Granddaughter | F | W | 14 | S | [school] Yes | Iowa | Iowa | Minnesota.",
+   "type": "Transcript"
+  },
+  "N2270": {
+   "attached_to": [
+    {
+     "id": "C1456",
+     "type": "citation"
+    }
+   ],
+   "change": 1795446005,
+   "flags": [],
+   "handle": "10545936a7642921b9c337ff97db",
+   "html": "<p>2026-11-23 (karel): Ancestry profile 212817991967 (tree 208290233, created 23 Nov 2026) shows Shirley Marie Shinofield, F, birth 24 Sep 1914 Freeborn County, Minnesota, death 7 Sep 1995 Freeborn County, Minnesota, daughter of Thomas Voris Shinofield 212817991787 and Edna Luella Hansen 212815368044 (I0409); the 1930 United States Federal Census record 79937331 is attached there. Census: line 5 &quot;Shinofield, Shirley&quot;, granddaughter, 16, born Minnesota, father born Iowa, mother born Minnesota, beside her widowed mother Edna L. Shinofield (line 2) and sister Edna (line 6) in Charles C. Hansen&#x27;s household; Charles is I0377, Edna&#x27;s father. Both 1916 obituaries of Thomas (companions 100000/100002) name the daughters Shirley Marie and Edna Elizabeth; his father&#x27;s birthplace Iowa agrees with Thomas. Birth date: Minnesota birth index 1914-09643 (Shirley Marie Shinofield, 24 Sep 1914, Freeborn, mother&#x27;s maiden name Hanson); death: Minnesota death index 1995-MN-024536 (Shirley Marie Hansen, born Sep 24 1914, Minnesota, mother&#x27;s maiden name HANSON, died 7 Sep 1995 Freeborn County). Neither index is attached on Ancestry, so neither is cited here; the dates are entered as they stand on the Ancestry profile. Parents: Thomas is new in this batch (add_person 100000; the applier files him first, and this file waits if he is held); Edna I0409 is in Gramps. The applier reuses the Thomas x Edna family that 100000 makes, so no second family. Born 1914 and died 1995: not recent under the 100-year rule, so private false.<br>Conflicts: [&#x27;The 1930 census age 16 fits a Sep 1914 birth (16 on 1 Apr 1930).&#x27;, &#x27;The death index gives her surname as Hansen (a married name, &quot;probably Mrs. Reuben Hansen, Ellendale&quot; per the 21 Nov packet, not proven); married_surname is not entered because it is not on the Ancestry profile and no marriage record is in hand.&#x27;, &#x27;The applier puts the add_person citation on the birth and death events too; this 1930 census supports her parentage and age, not the exact dates, which rest on the two Minnesota indexes (not attached on Ancestry).&#x27;, &quot;Edna L.&#x27;s 1930 age 39 vs her recorded birth 6 Apr 1889 (she would be 40 on 1 Apr 1930); age at first marriage 22 implies about 1911, Find a Grave says 1910.&quot;]</p>",
+   "id": "N2270",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-23 (karel): Ancestry profile 212817991967 (tree 208290233, created 23 Nov 2026) shows Shirley Marie Shinofield, F, birth 24 Sep 1914 Freeborn County, Minnesota, death 7 Sep 1995 Freeborn County, Minnesota, daughter of Thomas Voris Shinofield 212817991787 and Edna Luella Hansen 212815368044 (I0409); the 1930 United States Federal Census record 79937331 is attached there. Census: line 5 \"Shinofield, Shirley\", granddaughter, 16, born Minnesota, father born Iowa, mother born Minnesota, beside her widowed mother Edna L. Shinofield (line 2) and sister Edna (line 6) in Charles C. Hansen's household; Charles is I0377, Edna's father. Both 1916 obituaries of Thomas (companions 100000/100002) name the daughters Shirley Marie and Edna Elizabeth; his father's birthplace Iowa agrees with Thomas. Birth date: Minnesota birth index 1914-09643 (Shirley Marie Shinofield, 24 Sep 1914, Freeborn, mother's maiden name Hanson); death: Minnesota death index 1995-MN-024536 (Shirley Marie Hansen, born Sep 24 1914, Minnesota, mother's maiden name HANSON, died 7 Sep 1995 Freeborn County). Neither index is attached on Ancestry, so neither is cited here; the dates are entered as they stand on the Ancestry profile. Parents: Thomas is new in this batch (add_person 100000; the applier files him first, and this file waits if he is held); Edna I0409 is in Gramps. The applier reuses the Thomas x Edna family that 100000 makes, so no second family. Born 1914 and died 1995: not recent under the 100-year rule, so private false.\nConflicts: ['The 1930 census age 16 fits a Sep 1914 birth (16 on 1 Apr 1930).', 'The death index gives her surname as Hansen (a married name, \"probably Mrs. Reuben Hansen, Ellendale\" per the 21 Nov packet, not proven); married_surname is not entered because it is not on the Ancestry profile and no marriage record is in hand.', 'The applier puts the add_person citation on the birth and death events too; this 1930 census supports her parentage and age, not the exact dates, which rest on the two Minnesota indexes (not attached on Ancestry).', \"Edna L.'s 1930 age 39 vs her recorded birth 6 Apr 1889 (she would be 40 on 1 Apr 1930); age at first marriage 22 implies about 1911, Find a Grave says 1910.\"]",
+   "type": "Research"
+  },
+  "N2271": {
+   "attached_to": [
+    {
+     "id": "C1457",
+     "type": "citation"
+    }
+   ],
+   "change": 1795446006,
+   "flags": [],
+   "handle": "10545936e0723f4d6fcff462174",
+   "html": "<p>Transcription (as written): Sheet header: State Minnesota; County Freeborn; Incorporated place Albert Lea City; Ward Second; E.D. 24-2; Sheet 4A. Line 1: [72 cont.] Hansen, Marie | Wife-H | F | W | 62 | M | 21 | Denmark. Line 2: Shinofield, Edna L. | Daughter | F | W | 39 | Wd | 22 | Minnesota | Denmark | Denmark. Line 3: Hansen, Elva | Daughter | F | W | 24 | S | Minnesota. Line 4: —, Florence | Daughter | F | W | 21 | S | Minnesota. Line 5: Shinofield, Shirley | Granddaughter | F | W | 16 | S | [school] Yes | Minnesota | Iowa | Minnesota. Line 6: —, Edna | Granddaughter | F | W | 14 | S | [school] Yes | Iowa | Iowa | Minnesota.</p>",
+   "id": "N2271",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Sheet header: State Minnesota; County Freeborn; Incorporated place Albert Lea City; Ward Second; E.D. 24-2; Sheet 4A. Line 1: [72 cont.] Hansen, Marie | Wife-H | F | W | 62 | M | 21 | Denmark. Line 2: Shinofield, Edna L. | Daughter | F | W | 39 | Wd | 22 | Minnesota | Denmark | Denmark. Line 3: Hansen, Elva | Daughter | F | W | 24 | S | Minnesota. Line 4: —, Florence | Daughter | F | W | 21 | S | Minnesota. Line 5: Shinofield, Shirley | Granddaughter | F | W | 16 | S | [school] Yes | Minnesota | Iowa | Minnesota. Line 6: —, Edna | Granddaughter | F | W | 14 | S | [school] Yes | Iowa | Iowa | Minnesota.",
+   "type": "Transcript"
+  },
+  "N2272": {
+   "attached_to": [
+    {
+     "id": "C1457",
+     "type": "citation"
+    }
+   ],
+   "change": 1795446006,
+   "flags": [],
+   "handle": "10545936e35b212a646b04ea0ece",
+   "html": "<p>2026-11-23 (karel): Ancestry profile 212817992119 (tree 208290233, created 23 Nov 2026) shows Edna Elizabeth Shinofield, F, birth 7 Aug 1916 (no place), death 18 Jan 1978 Hennepin County, Minnesota, USA, daughter of Thomas Voris Shinofield 212817991787 and Edna Luella Hansen 212815368044 (I0409); the 1930 United States Federal Census record 79937384 (Albert Lea, Freeborn, Minnesota, Page 4A, ED 0002, FHL 2340822, 105 First Ave South) is attached there with a 1930 Residence fact (Albert Lea). Census: line 6 &quot;Edna Shinofield&quot; (surname by ditto), granddaughter, 14, born about 1916 in Iowa, father born Iowa, mother born Minnesota, in the household of Charles C. Hansen (62, head; I0377), beside her widowed mother Edna L. Shinofield (line 2) and sister Shirley (line 5, companion 100010). Both 1916 obituaries of Thomas (companions 100000/100002) name the daughters Shirley Marie and Edna Elizabeth; Thomas died 10 Sep 1916, about a month after her birth. Birth date: Minnesota death index 1978-MN-000677 (Edna Elizabeth, born 7 Aug 1916, mother&#x27;s maiden name HANSEN, birthplace out of state, died 18 Jan 1978 Hennepin County). The index is not attached on Ancestry, so it is not cited here; the dates are entered as they stand on the Ancestry profile. Parents: Thomas is new in this batch (add_person 100000; the applier files him first, and this file waits if he is held); Edna I0409 is in Gramps. The applier reuses the Thomas x Edna family that 100000 makes, so no second family. Born 1916 and died 1978: an adult who has died, so private false.<br>Conflicts: [&quot;The 1930 census gives her birthplace as Iowa (her father&#x27;s family was at Oskaloosa, where he died in Sep 1916) and the death index says only out of state; no birth place is entered until a birth record is found.&quot;, &#x27;The 1930 census age 14 fits an Aug 1916 birth (13 on 1 Apr 1930 by strict arithmetic; enumerators often rounded or used age at enumeration day).&#x27;, &#x27;Her death-index surname (married name, Chapin per the 23 Nov packet) is not entered: it is not on the Ancestry profile and no marriage record is in hand.&#x27;, &#x27;The applier puts the add_person citation on the birth and death events too; this 1930 census supports her parentage and age, not the exact dates, which rest on the Minnesota death index (not attached on Ancestry).&#x27;]</p>",
+   "id": "N2272",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-23 (karel): Ancestry profile 212817992119 (tree 208290233, created 23 Nov 2026) shows Edna Elizabeth Shinofield, F, birth 7 Aug 1916 (no place), death 18 Jan 1978 Hennepin County, Minnesota, USA, daughter of Thomas Voris Shinofield 212817991787 and Edna Luella Hansen 212815368044 (I0409); the 1930 United States Federal Census record 79937384 (Albert Lea, Freeborn, Minnesota, Page 4A, ED 0002, FHL 2340822, 105 First Ave South) is attached there with a 1930 Residence fact (Albert Lea). Census: line 6 \"Edna Shinofield\" (surname by ditto), granddaughter, 14, born about 1916 in Iowa, father born Iowa, mother born Minnesota, in the household of Charles C. Hansen (62, head; I0377), beside her widowed mother Edna L. Shinofield (line 2) and sister Shirley (line 5, companion 100010). Both 1916 obituaries of Thomas (companions 100000/100002) name the daughters Shirley Marie and Edna Elizabeth; Thomas died 10 Sep 1916, about a month after her birth. Birth date: Minnesota death index 1978-MN-000677 (Edna Elizabeth, born 7 Aug 1916, mother's maiden name HANSEN, birthplace out of state, died 18 Jan 1978 Hennepin County). The index is not attached on Ancestry, so it is not cited here; the dates are entered as they stand on the Ancestry profile. Parents: Thomas is new in this batch (add_person 100000; the applier files him first, and this file waits if he is held); Edna I0409 is in Gramps. The applier reuses the Thomas x Edna family that 100000 makes, so no second family. Born 1916 and died 1978: an adult who has died, so private false.\nConflicts: [\"The 1930 census gives her birthplace as Iowa (her father's family was at Oskaloosa, where he died in Sep 1916) and the death index says only out of state; no birth place is entered until a birth record is found.\", 'The 1930 census age 14 fits an Aug 1916 birth (13 on 1 Apr 1930 by strict arithmetic; enumerators often rounded or used age at enumeration day).', 'Her death-index surname (married name, Chapin per the 23 Nov packet) is not entered: it is not on the Ancestry profile and no marriage record is in hand.', 'The applier puts the add_person citation on the birth and death events too; this 1930 census supports her parentage and age, not the exact dates, which rest on the Minnesota death index (not attached on Ancestry).']",
+   "type": "Research"
+  },
+  "N2273": {
+   "attached_to": [
+    {
+     "id": "C1458",
+     "type": "citation"
+    }
+   ],
+   "change": 1795446007,
+   "flags": [],
+   "handle": "10545937132ffdf673b965aa393",
+   "html": "<p>Transcription (as written): Sheet header: State Iowa; County Mahaska; Township Spring Creek Twp; Supervisor&#x27;s District 6; Enumeration District 77; Sheet 14; enumerator Mark W. Beach. Line 39: [dwelling] 295 [family] 300 | Shinofield [as indexed], John G. | Head | W | M | June 1850 | 49 | m | 27 | Germany | Germany | Germany. Line 40: Leah E. | Wife | W | F | Sep 1855 | 44 | m | 27 | [children] 12 | [living] 11. Line 45: Thos V. | Son | W | M | Mar 1886 | 14 | S | Iowa | Germany | Iowa | At School.</p>",
+   "id": "N2273",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Sheet header: State Iowa; County Mahaska; Township Spring Creek Twp; Supervisor's District 6; Enumeration District 77; Sheet 14; enumerator Mark W. Beach. Line 39: [dwelling] 295 [family] 300 | Shinofield [as indexed], John G. | Head | W | M | June 1850 | 49 | m | 27 | Germany | Germany | Germany. Line 40: Leah E. | Wife | W | F | Sep 1855 | 44 | m | 27 | [children] 12 | [living] 11. Line 45: Thos V. | Son | W | M | Mar 1886 | 14 | S | Iowa | Germany | Iowa | At School.",
+   "type": "Transcript"
+  },
+  "N2274": {
+   "attached_to": [
+    {
+     "id": "C1458",
+     "type": "citation"
+    }
+   ],
+   "change": 1795446007,
+   "flags": [],
+   "handle": "105459371620101589e9bf2d3601",
+   "html": "<p>2026-11-23 (karel): Record-tier evidence for Thomas Voris Shinofield (212817991787; companion to add_person 100000, applied after it): &quot;Thos V&quot;, son, line 45, born Mar 1886 in Iowa, age 14, in the household of John G. and Leah E. Shinofield, matching the obituaries&#x27; parents &quot;J. G. and Elizabeth Shinofield&quot; / &quot;Mr. and Mrs. John G. Shinofield&quot; and birth &quot;March 4, 1886&quot; in Iowa. The 1900 United States Federal Census record 15888063 is attached on Ancestry to Thomas with a 1900 Residence fact (Spring Creek, Mahaska, Iowa). Image is a crop of the same microfilm page from the Internet Archive copy of NARA T623 roll 446 (image n807 = Ancestry 4120109_00809): sheet header plus lines 39-50, the Shinofield household only.<br>Conflicts: [&#x27;Ancestry indexes the father as &quot;John ?? Shinofield&quot;; the image reads &quot;John G&quot;. The surname is written once on line 39 and is hard to read (&quot;Shin?field&quot;); the index reading Shinofield is kept.&#x27;, &#x27;The p. 6 obituary says he &quot;has lived in Mahaska county for 18 years&quot; (since about 1898); p. 5 says he moved to Oskaloosa as a small child. The census places the family in Spring Creek Township, Mahaska Co., in June 1900.&#x27;]</p>",
+   "id": "N2274",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-23 (karel): Record-tier evidence for Thomas Voris Shinofield (212817991787; companion to add_person 100000, applied after it): \"Thos V\", son, line 45, born Mar 1886 in Iowa, age 14, in the household of John G. and Leah E. Shinofield, matching the obituaries' parents \"J. G. and Elizabeth Shinofield\" / \"Mr. and Mrs. John G. Shinofield\" and birth \"March 4, 1886\" in Iowa. The 1900 United States Federal Census record 15888063 is attached on Ancestry to Thomas with a 1900 Residence fact (Spring Creek, Mahaska, Iowa). Image is a crop of the same microfilm page from the Internet Archive copy of NARA T623 roll 446 (image n807 = Ancestry 4120109_00809): sheet header plus lines 39-50, the Shinofield household only.\nConflicts: ['Ancestry indexes the father as \"John ?? Shinofield\"; the image reads \"John G\". The surname is written once on line 39 and is hard to read (\"Shin?field\"); the index reading Shinofield is kept.', 'The p. 6 obituary says he \"has lived in Mahaska county for 18 years\" (since about 1898); p. 5 says he moved to Oskaloosa as a small child. The census places the family in Spring Creek Township, Mahaska Co., in June 1900.']",
+   "type": "Research"
+  },
+  "N2275": {
+   "attached_to": [
+    {
+     "id": "C1459",
+     "type": "citation"
+    }
+   ],
+   "change": 1795446008,
+   "flags": [],
+   "handle": "105459372f262c825bb237f83de3",
+   "html": "<p>Transcription (as written): SHINOFIELD—Thomas Noris Shinofield died at his home, 541 Ninth avenue East, September 10th, 1916, [...] He was born in Iowa on March 4th, 1886, and has lived in Mahaska county for 18 years. He leaves his wife and two daughters, Shirley Marie, and Edna Elizabeth, and his father and mother, Mr. and Mrs. John G. Shinofield. Funeral services were held on Monday afternoon from the residence at 2:30 o&#x27;clock, and the body taken to Albert Lea, Minn. Burial will be made on Wednesday.</p>",
+   "id": "N2275",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): SHINOFIELD—Thomas Noris Shinofield died at his home, 541 Ninth avenue East, September 10th, 1916, [...] He was born in Iowa on March 4th, 1886, and has lived in Mahaska county for 18 years. He leaves his wife and two daughters, Shirley Marie, and Edna Elizabeth, and his father and mother, Mr. and Mrs. John G. Shinofield. Funeral services were held on Monday afternoon from the residence at 2:30 o'clock, and the body taken to Albert Lea, Minn. Burial will be made on Wednesday.",
+   "type": "Transcript"
+  },
+  "N2276": {
+   "attached_to": [
+    {
+     "id": "C1459",
+     "type": "citation"
+    }
+   ],
+   "change": 1795446008,
+   "flags": [],
+   "handle": "1054593731f69b746866e9eec84",
+   "html": "<p>2026-11-23 (karel): Second obituary in the same issue for Thomas Voris Shinofield (212817991787; companion to add_person 100000): gives the birth year in full (March 4th, 1886, in Iowa), the death on 10 Sep 1916 at 541 Ninth Avenue East, Oskaloosa, his wife and daughters Shirley Marie and Edna Elizabeth, and his parents Mr. and Mrs. John G. Shinofield. The page image is uploaded to his Ancestry gallery (23 Nov 2026).<br>Conflicts: [&#x27;Middle name printed &quot;Noris&quot; here, &quot;Vores&quot; on p. 5; entered as Voris (Find a Grave, Ancestry).&#x27;, &#x27;A misplaced line of type (&quot;mouth, Ill., were also out of town&quot;) replaces the age in this item; the age 30 y 6 m 6 d comes from p. 5.&#x27;]</p>",
+   "id": "N2276",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-23 (karel): Second obituary in the same issue for Thomas Voris Shinofield (212817991787; companion to add_person 100000): gives the birth year in full (March 4th, 1886, in Iowa), the death on 10 Sep 1916 at 541 Ninth Avenue East, Oskaloosa, his wife and daughters Shirley Marie and Edna Elizabeth, and his parents Mr. and Mrs. John G. Shinofield. The page image is uploaded to his Ancestry gallery (23 Nov 2026).\nConflicts: ['Middle name printed \"Noris\" here, \"Vores\" on p. 5; entered as Voris (Find a Grave, Ancestry).', 'A misplaced line of type (\"mouth, Ill., were also out of town\") replaces the age in this item; the age 30 y 6 m 6 d comes from p. 5.']",
+   "type": "Research"
+  },
+  "N2277": {
+   "attached_to": [
+    {
+     "id": "I0505",
+     "type": "person"
+    }
+   ],
+   "change": 1795446009,
+   "flags": [],
+   "handle": "105459374767139d5a1c834685e2",
+   "html": "<p>2026-11-23 (karel): RESEARCH SUMMARY — Thomas Voris Shinofield (1886–1916), husband of Edna Luella Hansen (I0409). 23 Nov 2026.<br>Found: two obituaries in The Oskaloosa Herald, 14 Sep 1916 (Library of Congress, Chronicling America): p. 5 &quot;Thos. Vores Shinofield, son of J. G. and Elizabeth Shinofield, was born March 4, 188[6] in What Cheer, Iowa&quot;, married Edna Lula Hanson at Albert Lea, daughters Shirley Marie and Edna Elizabeth, died Sept. 10, 1916 aged 30 y 6 m 6 d, body taken to Albert Lea; p. 6 &quot;Thomas Noris Shinofield died at his home, 541 Ninth avenue East&quot;, born in Iowa March 4th, 1886, parents Mr. and Mrs. John G. Shinofield. Source files: oskaloosa-herald_1916-09-14_p5_shinofield-obit.jpg, oskaloosa-herald_1916-09-14_p6_shinofield-obit.jpg and the transcription oskaloosa-herald-1916-09-14-shinofield-verbatim.txt (Karel box, /workspace/nov22/sources/; filed as images of proposals 2026-11-23_100000 and _100002). 1900 census, Spring Creek Twp., Mahaska Co., Iowa, ED 77, sheet 14, line 45: Thos V, son, Mar 1886, Iowa, in John G. &amp; Leah E. Shinofield&#x27;s household (proposal 2026-11-23_100001). 1930 census, Albert Lea, ED 24-2, sheet 4A: widow Edna L. Shinofield with Shirley (16) and Edna (14) in Charles Hansen&#x27;s household.<br>Compiled, not filed: Find a Grave 193802994 (Graceland Cemetery, Albert Lea) spells the middle name Voris, gives parents John Gustavis Shinofield (1850–1931) and Leah Elizabeth Hasty Shinofield (1855–1933) and marriage 1910.<br>Ruled out: death at Albert Lea (21 Nov packet) — both obituaries place the death at Oskaloosa; he is not in the Minnesota death index (searched Shinofield, Shinafield, Shinnofield, Shinofeld, Shenofield).<br>Still open: the 1910 or 1911 marriage record (Freeborn Co., MN), the 1910 census and 1915 Iowa census, the burial date, and his parents and ten brothers and sisters (not in Gramps).</p><p>Tier: ai-draft</p>",
+   "id": "N2277",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-23 (karel): RESEARCH SUMMARY — Thomas Voris Shinofield (1886–1916), husband of Edna Luella Hansen (I0409). 23 Nov 2026.\nFound: two obituaries in The Oskaloosa Herald, 14 Sep 1916 (Library of Congress, Chronicling America): p. 5 \"Thos. Vores Shinofield, son of J. G. and Elizabeth Shinofield, was born March 4, 188[6] in What Cheer, Iowa\", married Edna Lula Hanson at Albert Lea, daughters Shirley Marie and Edna Elizabeth, died Sept. 10, 1916 aged 30 y 6 m 6 d, body taken to Albert Lea; p. 6 \"Thomas Noris Shinofield died at his home, 541 Ninth avenue East\", born in Iowa March 4th, 1886, parents Mr. and Mrs. John G. Shinofield. Source files: oskaloosa-herald_1916-09-14_p5_shinofield-obit.jpg, oskaloosa-herald_1916-09-14_p6_shinofield-obit.jpg and the transcription oskaloosa-herald-1916-09-14-shinofield-verbatim.txt (Karel box, /workspace/nov22/sources/; filed as images of proposals 2026-11-23_100000 and _100002). 1900 census, Spring Creek Twp., Mahaska Co., Iowa, ED 77, sheet 14, line 45: Thos V, son, Mar 1886, Iowa, in John G. & Leah E. Shinofield's household (proposal 2026-11-23_100001). 1930 census, Albert Lea, ED 24-2, sheet 4A: widow Edna L. Shinofield with Shirley (16) and Edna (14) in Charles Hansen's household.\nCompiled, not filed: Find a Grave 193802994 (Graceland Cemetery, Albert Lea) spells the middle name Voris, gives parents John Gustavis Shinofield (1850–1931) and Leah Elizabeth Hasty Shinofield (1855–1933) and marriage 1910.\nRuled out: death at Albert Lea (21 Nov packet) — both obituaries place the death at Oskaloosa; he is not in the Minnesota death index (searched Shinofield, Shinafield, Shinnofield, Shinofeld, Shenofield).\nStill open: the 1910 or 1911 marriage record (Freeborn Co., MN), the 1910 census and 1915 Iowa census, the burial date, and his parents and ten brothers and sisters (not in Gramps).\n\nTier: ai-draft",
    "type": "Research"
   }
  },
@@ -146484,18 +147941,19 @@
   },
   "I0062": {
    "families": [],
-   "gender": "F",
+   "gender": "U",
    "handle": "104ebd54a8973f4b8a2857b2ca55",
    "id": "I0062",
+   "minor": true,
    "name": {
     "call": "",
-    "display": "Sofia Jane Konecny",
-    "first": "Sofia Jane",
+    "display": "Living child",
+    "first": "",
     "nick": "",
     "prefix": "",
-    "sort": "Konecny, Sofia Jane",
+    "sort": "Living child",
     "suffix": "",
-    "surname": "Konecny",
+    "surname": "",
     "title": ""
    },
    "parents": [
@@ -146521,7 +147979,9 @@
     "surname": "Morris",
     "title": ""
    },
-   "parents": [],
+   "parents": [
+    "F0222"
+   ],
    "status": "living"
   },
   "I0064": {
@@ -169132,7 +170592,9 @@
      "role": "Primary"
     }
    ],
-   "families": [],
+   "families": [
+    "F0207"
+   ],
    "flags": [
     "agent-proposed"
    ],
@@ -169236,7 +170698,9 @@
      "role": "Primary"
     }
    ],
-   "families": [],
+   "families": [
+    "F0206"
+   ],
    "flags": [
     "agent-proposed"
    ],
@@ -169283,7 +170747,9 @@
    }
   },
   "I0356": {
-   "families": [],
+   "families": [
+    "F0208"
+   ],
    "gender": "F",
    "handle": "104ebd54c8ed3c37e83a03e3ab3c",
    "id": "I0356",
@@ -170176,7 +171642,10 @@
    "status": "living"
   },
   "I0372": {
-   "families": [],
+   "families": [
+    "F0211",
+    "F0212"
+   ],
    "gender": "F",
    "handle": "104ebd54c9d36b89d923c65647b7",
    "id": "I0372",
@@ -170197,7 +171666,9 @@
    "status": "living"
   },
   "I0373": {
-   "families": [],
+   "families": [
+    "F0213"
+   ],
    "gender": "M",
    "handle": "104ebd54c9dc1c746c5eb6070b20",
    "id": "I0373",
@@ -170218,7 +171689,9 @@
    "status": "living"
   },
   "I0374": {
-   "families": [],
+   "families": [
+    "F0215"
+   ],
    "gender": "F",
    "handle": "104ebd54c9e45b5c668da4624bf9",
    "id": "I0374",
@@ -172778,7 +174251,7 @@
     "type": "Birth",
     "year": 1889
    },
-   "change": 1794409209,
+   "change": 1795446004,
    "citations": [
     "C1292",
     "C1302",
@@ -172810,7 +174283,9 @@
      "role": "Primary"
     }
    ],
-   "families": [],
+   "families": [
+    "F0223"
+   ],
    "flags": [
     "agent-proposed"
    ],
@@ -174195,6 +175670,1720 @@
     "ancestry": "212817587641"
    }
   },
+  "I0424": {
+   "families": [
+    "F0198"
+   ],
+   "gender": "M",
+   "handle": "10543780059efef760afdef6ee3",
+   "id": "I0424",
+   "name": {
+    "call": "",
+    "display": "Michael Wood Konecny",
+    "first": "Michael Wood",
+    "nick": "",
+    "prefix": "",
+    "sort": "Konecny, Michael Wood",
+    "suffix": "",
+    "surname": "Konecny",
+    "title": ""
+   },
+   "parents": [
+    "F0071"
+   ],
+   "status": "living"
+  },
+  "I0425": {
+   "families": [
+    "F0198"
+   ],
+   "gender": "F",
+   "handle": "10543780224e332b08ac358cb6d0",
+   "id": "I0425",
+   "name": {
+    "call": "",
+    "display": "Nancy Immel",
+    "first": "Nancy",
+    "nick": "",
+    "prefix": "",
+    "sort": "Immel, Nancy",
+    "suffix": "",
+    "surname": "Immel",
+    "title": ""
+   },
+   "parents": [],
+   "status": "living"
+  },
+  "I0427": {
+   "families": [],
+   "gender": "M",
+   "handle": "105437808c903d877b13904b508b",
+   "id": "I0427",
+   "name": {
+    "call": "",
+    "display": "Oliver Konecny",
+    "first": "Oliver",
+    "nick": "",
+    "prefix": "",
+    "sort": "Konecny, Oliver",
+    "suffix": "",
+    "surname": "Konecny",
+    "title": ""
+   },
+   "parents": [
+    "F0198"
+   ],
+   "status": "living"
+  },
+  "I0428": {
+   "families": [
+    "F0200"
+   ],
+   "gender": "F",
+   "handle": "10543780b378513b078f17aaf206",
+   "id": "I0428",
+   "name": {
+    "call": "",
+    "display": "Lisa Konecny",
+    "first": "Lisa",
+    "nick": "",
+    "prefix": "",
+    "sort": "Konecny, Lisa",
+    "suffix": "",
+    "surname": "Konecny",
+    "title": ""
+   },
+   "parents": [
+    "F0015"
+   ],
+   "status": "living"
+  },
+  "I0429": {
+   "families": [
+    "F0201"
+   ],
+   "gender": "F",
+   "handle": "10543780d65816dbc9a5e5adbb43",
+   "id": "I0429",
+   "name": {
+    "call": "",
+    "display": "Kathryn Konecny",
+    "first": "Kathryn",
+    "nick": "",
+    "prefix": "",
+    "sort": "Konecny, Kathryn",
+    "suffix": "",
+    "surname": "Konecny",
+    "title": ""
+   },
+   "parents": [
+    "F0015"
+   ],
+   "status": "living"
+  },
+  "I0430": {
+   "families": [
+    "F0202"
+   ],
+   "gender": "F",
+   "handle": "10543780fe495f38bea83c96df1f",
+   "id": "I0430",
+   "name": {
+    "call": "",
+    "display": "Kari Konecny",
+    "first": "Kari",
+    "nick": "",
+    "prefix": "",
+    "sort": "Konecny, Kari",
+    "suffix": "",
+    "surname": "Konecny",
+    "title": ""
+   },
+   "parents": [
+    "F0015",
+    "F0199"
+   ],
+   "status": "living"
+  },
+  "I0431": {
+   "families": [
+    "F0199"
+   ],
+   "gender": "M",
+   "handle": "105437811a193f826a05729cbce6",
+   "id": "I0431",
+   "name": {
+    "call": "",
+    "display": "Rolland Baumann",
+    "first": "Rolland",
+    "nick": "",
+    "prefix": "",
+    "sort": "Baumann, Rolland",
+    "suffix": "",
+    "surname": "Baumann",
+    "title": ""
+   },
+   "parents": [],
+   "status": "living"
+  },
+  "I0432": {
+   "families": [
+    "F0199"
+   ],
+   "gender": "F",
+   "handle": "10543781330923d81aa57e81f49b",
+   "id": "I0432",
+   "name": {
+    "call": "",
+    "display": "Rebekah",
+    "first": "Rebekah",
+    "nick": "",
+    "prefix": "",
+    "sort": "Rebekah",
+    "suffix": "",
+    "surname": "",
+    "title": ""
+   },
+   "parents": [],
+   "status": "living"
+  },
+  "I0433": {
+   "families": [
+    "F0200"
+   ],
+   "gender": "M",
+   "handle": "105437815e325507c07e1f4d331b",
+   "id": "I0433",
+   "name": {
+    "call": "",
+    "display": "Jason Youmans",
+    "first": "Jason",
+    "nick": "",
+    "prefix": "",
+    "sort": "Youmans, Jason",
+    "suffix": "",
+    "surname": "Youmans",
+    "title": ""
+   },
+   "parents": [],
+   "status": "living"
+  },
+  "I0434": {
+   "families": [],
+   "gender": "U",
+   "handle": "105437818b9b1125b55115bf3685",
+   "id": "I0434",
+   "minor": true,
+   "name": {
+    "call": "",
+    "display": "Living child",
+    "first": "",
+    "nick": "",
+    "prefix": "",
+    "sort": "Living child",
+    "suffix": "",
+    "surname": "",
+    "title": ""
+   },
+   "parents": [
+    "F0200"
+   ],
+   "status": "living"
+  },
+  "I0435": {
+   "families": [],
+   "gender": "U",
+   "handle": "10543781b7c252de463372d94703",
+   "id": "I0435",
+   "minor": true,
+   "name": {
+    "call": "",
+    "display": "Living child",
+    "first": "",
+    "nick": "",
+    "prefix": "",
+    "sort": "Living child",
+    "suffix": "",
+    "surname": "",
+    "title": ""
+   },
+   "parents": [
+    "F0200"
+   ],
+   "status": "living"
+  },
+  "I0436": {
+   "families": [],
+   "gender": "U",
+   "handle": "10543781e40cf868c4e0e81e20c",
+   "id": "I0436",
+   "minor": true,
+   "name": {
+    "call": "",
+    "display": "Living child",
+    "first": "",
+    "nick": "",
+    "prefix": "",
+    "sort": "Living child",
+    "suffix": "",
+    "surname": "",
+    "title": ""
+   },
+   "parents": [
+    "F0200"
+   ],
+   "status": "living"
+  },
+  "I0437": {
+   "families": [
+    "F0201"
+   ],
+   "gender": "M",
+   "handle": "1054378209e33e23c91625740a82",
+   "id": "I0437",
+   "name": {
+    "call": "",
+    "display": "Kristopher Chavez",
+    "first": "Kristopher",
+    "nick": "",
+    "prefix": "",
+    "sort": "Chavez, Kristopher",
+    "suffix": "",
+    "surname": "Chavez",
+    "title": ""
+   },
+   "parents": [],
+   "status": "living"
+  },
+  "I0438": {
+   "families": [],
+   "gender": "U",
+   "handle": "1054378238cd2c59ac7f047da38d",
+   "id": "I0438",
+   "minor": true,
+   "name": {
+    "call": "",
+    "display": "Living child",
+    "first": "",
+    "nick": "",
+    "prefix": "",
+    "sort": "Living child",
+    "suffix": "",
+    "surname": "",
+    "title": ""
+   },
+   "parents": [
+    "F0201"
+   ],
+   "status": "living"
+  },
+  "I0439": {
+   "families": [],
+   "gender": "U",
+   "handle": "105437825665309648d7b183f612",
+   "id": "I0439",
+   "minor": true,
+   "name": {
+    "call": "",
+    "display": "Living child",
+    "first": "",
+    "nick": "",
+    "prefix": "",
+    "sort": "Living child",
+    "suffix": "",
+    "surname": "",
+    "title": ""
+   },
+   "parents": [
+    "F0201"
+   ],
+   "status": "living"
+  },
+  "I0440": {
+   "families": [
+    "F0202"
+   ],
+   "gender": "M",
+   "handle": "1054378276765cb93db32f155f38",
+   "id": "I0440",
+   "name": {
+    "call": "",
+    "display": "Mike Haege",
+    "first": "Mike",
+    "nick": "",
+    "prefix": "",
+    "sort": "Haege, Mike",
+    "suffix": "",
+    "surname": "Haege",
+    "title": ""
+   },
+   "parents": [],
+   "status": "living"
+  },
+  "I0441": {
+   "families": [
+    "F0203"
+   ],
+   "gender": "M",
+   "handle": "10543782a4a342eaefbc349ad0a1",
+   "id": "I0441",
+   "name": {
+    "call": "",
+    "display": "Michael Haege",
+    "first": "Michael",
+    "nick": "",
+    "prefix": "",
+    "sort": "Haege, Michael",
+    "suffix": "",
+    "surname": "Haege",
+    "title": ""
+   },
+   "parents": [
+    "F0202"
+   ],
+   "status": "living"
+  },
+  "I0442": {
+   "families": [
+    "F0204"
+   ],
+   "gender": "M",
+   "handle": "10543782c62a3191e1426797a6ce",
+   "id": "I0442",
+   "name": {
+    "call": "",
+    "display": "Tyler Haege",
+    "first": "Tyler",
+    "nick": "",
+    "prefix": "",
+    "sort": "Haege, Tyler",
+    "suffix": "",
+    "surname": "Haege",
+    "title": ""
+   },
+   "parents": [
+    "F0202"
+   ],
+   "status": "living"
+  },
+  "I0443": {
+   "families": [
+    "F0205"
+   ],
+   "gender": "F",
+   "handle": "10543782f23e31d6756168382546",
+   "id": "I0443",
+   "name": {
+    "call": "",
+    "display": "Bryanna Haege",
+    "first": "Bryanna",
+    "nick": "",
+    "prefix": "",
+    "sort": "Haege, Bryanna",
+    "suffix": "",
+    "surname": "Haege",
+    "title": ""
+   },
+   "parents": [
+    "F0202"
+   ],
+   "status": "living"
+  },
+  "I0444": {
+   "families": [],
+   "gender": "M",
+   "handle": "105437832345757db634c9cea87e",
+   "id": "I0444",
+   "name": {
+    "call": "",
+    "display": "Elijah Haege",
+    "first": "Elijah",
+    "nick": "",
+    "prefix": "",
+    "sort": "Haege, Elijah",
+    "suffix": "",
+    "surname": "Haege",
+    "title": ""
+   },
+   "parents": [
+    "F0202"
+   ],
+   "status": "living"
+  },
+  "I0445": {
+   "families": [],
+   "gender": "M",
+   "handle": "105437834ed9ec3234dff050b7d",
+   "id": "I0445",
+   "name": {
+    "call": "",
+    "display": "Isaiah Haege",
+    "first": "Isaiah",
+    "nick": "",
+    "prefix": "",
+    "sort": "Haege, Isaiah",
+    "suffix": "",
+    "surname": "Haege",
+    "title": ""
+   },
+   "parents": [
+    "F0202"
+   ],
+   "status": "living"
+  },
+  "I0446": {
+   "families": [],
+   "gender": "F",
+   "handle": "105437837ecc7ccf418906ef8ad4",
+   "id": "I0446",
+   "name": {
+    "call": "",
+    "display": "Primrose Haege",
+    "first": "Primrose",
+    "nick": "",
+    "prefix": "",
+    "sort": "Haege, Primrose",
+    "suffix": "",
+    "surname": "Haege",
+    "title": ""
+   },
+   "parents": [
+    "F0202"
+   ],
+   "status": "living"
+  },
+  "I0447": {
+   "families": [],
+   "gender": "U",
+   "handle": "10543783ab8cf30b1e1663e6747",
+   "id": "I0447",
+   "minor": true,
+   "name": {
+    "call": "",
+    "display": "Living child",
+    "first": "",
+    "nick": "",
+    "prefix": "",
+    "sort": "Living child",
+    "suffix": "",
+    "surname": "",
+    "title": ""
+   },
+   "parents": [
+    "F0202"
+   ],
+   "status": "living"
+  },
+  "I0448": {
+   "families": [],
+   "gender": "U",
+   "handle": "10543783d5c543076a86d1a7cbeb",
+   "id": "I0448",
+   "minor": true,
+   "name": {
+    "call": "",
+    "display": "Living child",
+    "first": "",
+    "nick": "",
+    "prefix": "",
+    "sort": "Living child",
+    "suffix": "",
+    "surname": "",
+    "title": ""
+   },
+   "parents": [
+    "F0202"
+   ],
+   "status": "living"
+  },
+  "I0449": {
+   "families": [
+    "F0203"
+   ],
+   "gender": "F",
+   "handle": "10543783ef9425ffad4fe8157c8e",
+   "id": "I0449",
+   "name": {
+    "call": "",
+    "display": "Melody Cedergren",
+    "first": "Melody",
+    "nick": "",
+    "prefix": "",
+    "sort": "Cedergren, Melody",
+    "suffix": "",
+    "surname": "Cedergren",
+    "title": ""
+   },
+   "parents": [],
+   "status": "living"
+  },
+  "I0450": {
+   "families": [],
+   "gender": "U",
+   "handle": "1054378412225f0e60616d47e11f",
+   "id": "I0450",
+   "minor": true,
+   "name": {
+    "call": "",
+    "display": "Living child",
+    "first": "",
+    "nick": "",
+    "prefix": "",
+    "sort": "Living child",
+    "suffix": "",
+    "surname": "",
+    "title": ""
+   },
+   "parents": [
+    "F0203"
+   ],
+   "status": "living"
+  },
+  "I0451": {
+   "families": [],
+   "gender": "U",
+   "handle": "1054378439ef723bd04906414e57",
+   "id": "I0451",
+   "minor": true,
+   "name": {
+    "call": "",
+    "display": "Living child",
+    "first": "",
+    "nick": "",
+    "prefix": "",
+    "sort": "Living child",
+    "suffix": "",
+    "surname": "",
+    "title": ""
+   },
+   "parents": [
+    "F0203"
+   ],
+   "status": "living"
+  },
+  "I0452": {
+   "families": [],
+   "gender": "U",
+   "handle": "105437845ad47c231f5699bf3011",
+   "id": "I0452",
+   "minor": true,
+   "name": {
+    "call": "",
+    "display": "Living child",
+    "first": "",
+    "nick": "",
+    "prefix": "",
+    "sort": "Living child",
+    "suffix": "",
+    "surname": "",
+    "title": ""
+   },
+   "parents": [
+    "F0203"
+   ],
+   "status": "living"
+  },
+  "I0453": {
+   "families": [],
+   "gender": "U",
+   "handle": "105437848a097a4b6331511ceab3",
+   "id": "I0453",
+   "minor": true,
+   "name": {
+    "call": "",
+    "display": "Living child",
+    "first": "",
+    "nick": "",
+    "prefix": "",
+    "sort": "Living child",
+    "suffix": "",
+    "surname": "",
+    "title": ""
+   },
+   "parents": [
+    "F0203"
+   ],
+   "status": "living"
+  },
+  "I0454": {
+   "families": [],
+   "gender": "U",
+   "handle": "10543784b5001b3285c1e3e6f830",
+   "id": "I0454",
+   "minor": true,
+   "name": {
+    "call": "",
+    "display": "Living child",
+    "first": "",
+    "nick": "",
+    "prefix": "",
+    "sort": "Living child",
+    "suffix": "",
+    "surname": "",
+    "title": ""
+   },
+   "parents": [
+    "F0203"
+   ],
+   "status": "living"
+  },
+  "I0455": {
+   "families": [
+    "F0204"
+   ],
+   "gender": "F",
+   "handle": "10543784d62b720b71b16376bed1",
+   "id": "I0455",
+   "name": {
+    "call": "",
+    "display": "Whitney Szajner",
+    "first": "Whitney",
+    "nick": "",
+    "prefix": "",
+    "sort": "Szajner, Whitney",
+    "suffix": "",
+    "surname": "Szajner",
+    "title": ""
+   },
+   "parents": [],
+   "status": "living"
+  },
+  "I0456": {
+   "families": [],
+   "gender": "U",
+   "handle": "105437850784597af2fe8fd13e84",
+   "id": "I0456",
+   "minor": true,
+   "name": {
+    "call": "",
+    "display": "Living child",
+    "first": "",
+    "nick": "",
+    "prefix": "",
+    "sort": "Living child",
+    "suffix": "",
+    "surname": "",
+    "title": ""
+   },
+   "parents": [
+    "F0204"
+   ],
+   "status": "living"
+  },
+  "I0457": {
+   "families": [],
+   "gender": "U",
+   "handle": "1054378534e43e2a675aa00b128b",
+   "id": "I0457",
+   "minor": true,
+   "name": {
+    "call": "",
+    "display": "Living child",
+    "first": "",
+    "nick": "",
+    "prefix": "",
+    "sort": "Living child",
+    "suffix": "",
+    "surname": "",
+    "title": ""
+   },
+   "parents": [
+    "F0204"
+   ],
+   "status": "living"
+  },
+  "I0458": {
+   "families": [],
+   "gender": "U",
+   "handle": "105437855e2c5dee03740bca1018",
+   "id": "I0458",
+   "minor": true,
+   "name": {
+    "call": "",
+    "display": "Living child",
+    "first": "",
+    "nick": "",
+    "prefix": "",
+    "sort": "Living child",
+    "suffix": "",
+    "surname": "",
+    "title": ""
+   },
+   "parents": [
+    "F0204"
+   ],
+   "status": "living"
+  },
+  "I0459": {
+   "families": [],
+   "gender": "U",
+   "handle": "1054378587291153255c4c81543c",
+   "id": "I0459",
+   "minor": true,
+   "name": {
+    "call": "",
+    "display": "Living child",
+    "first": "",
+    "nick": "",
+    "prefix": "",
+    "sort": "Living child",
+    "suffix": "",
+    "surname": "",
+    "title": ""
+   },
+   "parents": [
+    "F0204"
+   ],
+   "status": "living"
+  },
+  "I0460": {
+   "families": [
+    "F0205"
+   ],
+   "gender": "M",
+   "handle": "10543785a5a129a7c99a97e8d14e",
+   "id": "I0460",
+   "name": {
+    "call": "",
+    "display": "Joshua Willems",
+    "first": "Joshua",
+    "nick": "",
+    "prefix": "",
+    "sort": "Willems, Joshua",
+    "suffix": "",
+    "surname": "Willems",
+    "title": ""
+   },
+   "parents": [],
+   "status": "living"
+  },
+  "I0461": {
+   "families": [],
+   "gender": "U",
+   "handle": "10543785d60d792ad28fee1af109",
+   "id": "I0461",
+   "minor": true,
+   "name": {
+    "call": "",
+    "display": "Living child",
+    "first": "",
+    "nick": "",
+    "prefix": "",
+    "sort": "Living child",
+    "suffix": "",
+    "surname": "",
+    "title": ""
+   },
+   "parents": [
+    "F0205"
+   ],
+   "status": "living"
+  },
+  "I0462": {
+   "families": [
+    "F0206"
+   ],
+   "gender": "F",
+   "handle": "10543785f7f23b333584d7fccfda",
+   "id": "I0462",
+   "name": {
+    "call": "",
+    "display": "Stephanie",
+    "first": "Stephanie",
+    "nick": "",
+    "prefix": "",
+    "sort": "Stephanie",
+    "suffix": "",
+    "surname": "",
+    "title": ""
+   },
+   "parents": [],
+   "status": "living"
+  },
+  "I0463": {
+   "families": [],
+   "gender": "F",
+   "handle": "105437862cc5531150cd89cafc1e",
+   "id": "I0463",
+   "name": {
+    "call": "",
+    "display": "Alix Toepel",
+    "first": "Alix",
+    "nick": "",
+    "prefix": "",
+    "sort": "Toepel, Alix",
+    "suffix": "",
+    "surname": "Toepel",
+    "title": ""
+   },
+   "parents": [
+    "F0206"
+   ],
+   "status": "living"
+  },
+  "I0464": {
+   "families": [
+    "F0207"
+   ],
+   "gender": "F",
+   "handle": "105437864e0012bc214d056193f5",
+   "id": "I0464",
+   "name": {
+    "call": "",
+    "display": "Ann Toepel",
+    "first": "Ann",
+    "nick": "",
+    "prefix": "",
+    "sort": "Toepel, Ann",
+    "suffix": "",
+    "surname": "Toepel",
+    "title": ""
+   },
+   "parents": [],
+   "status": "living"
+  },
+  "I0465": {
+   "families": [],
+   "gender": "F",
+   "handle": "1054378668d975893a07fe5020a3",
+   "id": "I0465",
+   "name": {
+    "call": "",
+    "display": "Alyssa Toepel",
+    "first": "Alyssa",
+    "nick": "",
+    "prefix": "",
+    "sort": "Toepel, Alyssa",
+    "suffix": "",
+    "surname": "Toepel",
+    "title": ""
+   },
+   "parents": [
+    "F0207"
+   ],
+   "status": "living"
+  },
+  "I0466": {
+   "alt_names": [],
+   "attributes": [],
+   "birth": {
+    "date": {
+     "day": 22,
+     "iso": "1952-04-22",
+     "modifier": null,
+     "month": 4,
+     "quality": null,
+     "sort": 2434125,
+     "text": "22 April 1952",
+     "year": 1952
+    },
+    "event": "E1656",
+    "place": "P0347",
+    "type": "Birth",
+    "year": 1952
+   },
+   "change": 1795482256,
+   "citations": [
+    "C1367"
+   ],
+   "death": {
+    "date": {
+     "day": 18,
+     "iso": "2024-03-18",
+     "modifier": null,
+     "month": 3,
+     "quality": null,
+     "sort": 2460388,
+     "text": "18 March 2024",
+     "year": 2024
+    },
+    "event": "E1657",
+    "place": null,
+    "type": "Death",
+    "year": 2024
+   },
+   "events": [
+    {
+     "ref": "E1656",
+     "role": "Primary"
+    },
+    {
+     "ref": "E1657",
+     "role": "Primary"
+    }
+   ],
+   "families": [
+    "F0208"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "gender": "M",
+   "handle": "105437869e913e9648e3c6697f78",
+   "id": "I0466",
+   "media": [],
+   "name": {
+    "call": "",
+    "display": "Mark S. Dressel",
+    "first": "Mark S.",
+    "nick": "",
+    "prefix": "",
+    "sort": "Dressel, Mark S.",
+    "suffix": "",
+    "surname": "Dressel",
+    "title": "",
+    "type": "Birth Name"
+   },
+   "notes": [],
+   "parents": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "urls": [],
+   "xref": {
+    "ancestry": "212817213450"
+   }
+  },
+  "I0467": {
+   "families": [
+    "F0209"
+   ],
+   "gender": "M",
+   "handle": "10543786d2c67ee9b5286f57557",
+   "id": "I0467",
+   "name": {
+    "call": "",
+    "display": "Jason Dressel",
+    "first": "Jason",
+    "nick": "",
+    "prefix": "",
+    "sort": "Dressel, Jason",
+    "suffix": "",
+    "surname": "Dressel",
+    "title": ""
+   },
+   "parents": [
+    "F0208"
+   ],
+   "status": "living"
+  },
+  "I0468": {
+   "families": [
+    "F0210"
+   ],
+   "gender": "F",
+   "handle": "10543786f51b658926385bb8d67b",
+   "id": "I0468",
+   "name": {
+    "call": "",
+    "display": "Ashley Dressel",
+    "first": "Ashley",
+    "nick": "",
+    "prefix": "",
+    "sort": "Dressel, Ashley",
+    "suffix": "",
+    "surname": "Dressel",
+    "title": ""
+   },
+   "parents": [
+    "F0208"
+   ],
+   "status": "living"
+  },
+  "I0469": {
+   "families": [
+    "F0209"
+   ],
+   "gender": "F",
+   "handle": "10543787141f1bbf7dcd20df89b4",
+   "id": "I0469",
+   "name": {
+    "call": "",
+    "display": "Jen",
+    "first": "Jen",
+    "nick": "",
+    "prefix": "",
+    "sort": "Jen",
+    "suffix": "",
+    "surname": "",
+    "title": ""
+   },
+   "parents": [],
+   "status": "living"
+  },
+  "I0470": {
+   "families": [
+    "F0210"
+   ],
+   "gender": "M",
+   "handle": "1054378739147b06ba4cbede28f4",
+   "id": "I0470",
+   "name": {
+    "call": "",
+    "display": "Rory Welu",
+    "first": "Rory",
+    "nick": "",
+    "prefix": "",
+    "sort": "Welu, Rory",
+    "suffix": "",
+    "surname": "Welu",
+    "title": ""
+   },
+   "parents": [],
+   "status": "living"
+  },
+  "I0471": {
+   "families": [
+    "F0211"
+   ],
+   "gender": "M",
+   "handle": "105437875f0a12b978733921dcef",
+   "id": "I0471",
+   "name": {
+    "call": "",
+    "display": "Vincent Hrenak",
+    "first": "Vincent",
+    "nick": "",
+    "prefix": "",
+    "sort": "Hrenak, Vincent",
+    "suffix": "",
+    "surname": "Hrenak",
+    "title": ""
+   },
+   "parents": [],
+   "status": "living"
+  },
+  "I0472": {
+   "families": [],
+   "gender": "M",
+   "handle": "1054378793fd9576f52e0705f85",
+   "id": "I0472",
+   "name": {
+    "call": "",
+    "display": "Brian V. Hrenak",
+    "first": "Brian V.",
+    "nick": "",
+    "prefix": "",
+    "sort": "Hrenak, Brian V.",
+    "suffix": "",
+    "surname": "Hrenak",
+    "title": ""
+   },
+   "parents": [
+    "F0211"
+   ],
+   "status": "living"
+  },
+  "I0473": {
+   "families": [
+    "F0212"
+   ],
+   "gender": "M",
+   "handle": "10543787b6a21faeceafa6a3c1b5",
+   "id": "I0473",
+   "name": {
+    "call": "Bill",
+    "display": "William Parham",
+    "first": "William",
+    "nick": "",
+    "prefix": "",
+    "sort": "Parham, William",
+    "suffix": "",
+    "surname": "Parham",
+    "title": ""
+   },
+   "parents": [],
+   "status": "living"
+  },
+  "I0474": {
+   "families": [
+    "F0213"
+   ],
+   "gender": "F",
+   "handle": "10543787ded3497359a796b20ebc",
+   "id": "I0474",
+   "name": {
+    "call": "",
+    "display": "Marchelle D. Adams",
+    "first": "Marchelle D.",
+    "nick": "",
+    "prefix": "",
+    "sort": "Adams, Marchelle D.",
+    "suffix": "",
+    "surname": "Adams",
+    "title": ""
+   },
+   "parents": [],
+   "status": "living"
+  },
+  "I0475": {
+   "families": [],
+   "gender": "F",
+   "handle": "10543788132868f1f64439404cf0",
+   "id": "I0475",
+   "name": {
+    "call": "",
+    "display": "Tara Louise Wood",
+    "first": "Tara Louise",
+    "nick": "",
+    "prefix": "",
+    "sort": "Wood, Tara Louise",
+    "suffix": "",
+    "surname": "Wood",
+    "title": ""
+   },
+   "parents": [
+    "F0213"
+   ],
+   "status": "living"
+  },
+  "I0476": {
+   "families": [],
+   "gender": "M",
+   "handle": "105437883f3d11524a1621478121",
+   "id": "I0476",
+   "name": {
+    "call": "",
+    "display": "Franklin Bradley Wood",
+    "first": "Franklin Bradley",
+    "nick": "",
+    "prefix": "",
+    "sort": "Wood, Franklin Bradley",
+    "suffix": "",
+    "surname": "Wood",
+    "title": ""
+   },
+   "parents": [
+    "F0213"
+   ],
+   "status": "living"
+  },
+  "I0477": {
+   "families": [],
+   "gender": "U",
+   "handle": "1054378868fd4a7de8d54f5b2e6e",
+   "id": "I0477",
+   "minor": true,
+   "name": {
+    "call": "",
+    "display": "Living child",
+    "first": "",
+    "nick": "",
+    "prefix": "",
+    "sort": "Living child",
+    "suffix": "",
+    "surname": "",
+    "title": ""
+   },
+   "parents": [],
+   "status": "living"
+  },
+  "I0478": {
+   "families": [
+    "F0215"
+   ],
+   "gender": "M",
+   "handle": "105437888850450666cf33daf28e",
+   "id": "I0478",
+   "name": {
+    "call": "",
+    "display": "Tony Moorcones",
+    "first": "Tony",
+    "nick": "",
+    "prefix": "",
+    "sort": "Moorcones, Tony",
+    "suffix": "",
+    "surname": "Moorcones",
+    "title": ""
+   },
+   "parents": [],
+   "status": "living"
+  },
+  "I0479": {
+   "families": [],
+   "gender": "M",
+   "handle": "10543788b3783bc9abd5b77bc939",
+   "id": "I0479",
+   "name": {
+    "call": "Drew",
+    "display": "Andrew M. Moorcones",
+    "first": "Andrew M.",
+    "nick": "",
+    "prefix": "",
+    "sort": "Moorcones, Andrew M.",
+    "suffix": "",
+    "surname": "Moorcones",
+    "title": ""
+   },
+   "parents": [
+    "F0215"
+   ],
+   "status": "living"
+  },
+  "I0480": {
+   "families": [],
+   "gender": "F",
+   "handle": "10543788d8f945869665f6087ab8",
+   "id": "I0480",
+   "name": {
+    "call": "",
+    "display": "Amy E. Moorcones",
+    "first": "Amy E.",
+    "nick": "",
+    "prefix": "",
+    "sort": "Moorcones, Amy E.",
+    "suffix": "",
+    "surname": "Moorcones",
+    "title": ""
+   },
+   "parents": [
+    "F0215"
+   ],
+   "status": "living"
+  },
+  "I0481": {
+   "families": [],
+   "gender": "F",
+   "handle": "10543788fb4923422b69b897cffe",
+   "id": "I0481",
+   "name": {
+    "call": "",
+    "display": "Eleanor Gaddis",
+    "first": "Eleanor",
+    "nick": "",
+    "prefix": "",
+    "sort": "Gaddis, Eleanor",
+    "suffix": "",
+    "surname": "Gaddis",
+    "title": ""
+   },
+   "parents": [
+    "F0033"
+   ],
+   "status": "living"
+  },
+  "I0482": {
+   "families": [
+    "F0216"
+   ],
+   "gender": "F",
+   "handle": "105437892ff52b831a5f6840e989",
+   "id": "I0482",
+   "name": {
+    "call": "",
+    "display": "Virginia Wood Taylor",
+    "first": "Virginia Wood",
+    "nick": "",
+    "prefix": "",
+    "sort": "Taylor, Virginia Wood",
+    "suffix": "",
+    "surname": "Taylor",
+    "title": ""
+   },
+   "parents": [
+    "F0031"
+   ],
+   "status": "living"
+  },
+  "I0483": {
+   "families": [
+    "F0216"
+   ],
+   "gender": "M",
+   "handle": "105437895ae351219dd05c34b9aa",
+   "id": "I0483",
+   "name": {
+    "call": "Dave",
+    "display": "David William Dagel",
+    "first": "David William",
+    "nick": "",
+    "prefix": "",
+    "sort": "Dagel, David William",
+    "suffix": "",
+    "surname": "Dagel",
+    "title": ""
+   },
+   "parents": [],
+   "status": "living"
+  },
+  "I0484": {
+   "families": [
+    "F0217"
+   ],
+   "gender": "F",
+   "handle": "1054378990ce18f98dab724c2ed9",
+   "id": "I0484",
+   "name": {
+    "call": "",
+    "display": "Jennifer Lynn Dagel",
+    "first": "Jennifer Lynn",
+    "nick": "",
+    "prefix": "",
+    "sort": "Dagel, Jennifer Lynn",
+    "suffix": "",
+    "surname": "Dagel",
+    "title": ""
+   },
+   "parents": [
+    "F0216"
+   ],
+   "status": "living"
+  },
+  "I0485": {
+   "families": [
+    "F0217"
+   ],
+   "gender": "M",
+   "handle": "10543789b4256a82ec75dd1e5bb4",
+   "id": "I0485",
+   "name": {
+    "call": "Josh",
+    "display": "Joshua Donald Nigbor",
+    "first": "Joshua Donald",
+    "nick": "",
+    "prefix": "",
+    "sort": "Nigbor, Joshua Donald",
+    "suffix": "",
+    "surname": "Nigbor",
+    "title": ""
+   },
+   "parents": [],
+   "status": "living"
+  },
+  "I0486": {
+   "families": [],
+   "gender": "U",
+   "handle": "10543789e8104b26f5832360804",
+   "id": "I0486",
+   "minor": true,
+   "name": {
+    "call": "",
+    "display": "Living child",
+    "first": "",
+    "nick": "",
+    "prefix": "",
+    "sort": "Living child",
+    "suffix": "",
+    "surname": "",
+    "title": ""
+   },
+   "parents": [
+    "F0217"
+   ],
+   "status": "living"
+  },
+  "I0487": {
+   "families": [],
+   "gender": "U",
+   "handle": "1054378a173578635929d8f0a152",
+   "id": "I0487",
+   "minor": true,
+   "name": {
+    "call": "",
+    "display": "Living child",
+    "first": "",
+    "nick": "",
+    "prefix": "",
+    "sort": "Living child",
+    "suffix": "",
+    "surname": "",
+    "title": ""
+   },
+   "parents": [
+    "F0217"
+   ],
+   "status": "living"
+  },
+  "I0488": {
+   "families": [
+    "F0218"
+   ],
+   "gender": "F",
+   "handle": "1054378a41423e94b483d2d54d1f",
+   "id": "I0488",
+   "name": {
+    "call": "Liz",
+    "display": "Elizabeth Katherine Dagel",
+    "first": "Elizabeth Katherine",
+    "nick": "",
+    "prefix": "",
+    "sort": "Dagel, Elizabeth Katherine",
+    "suffix": "",
+    "surname": "Dagel",
+    "title": ""
+   },
+   "parents": [
+    "F0216"
+   ],
+   "status": "living"
+  },
+  "I0489": {
+   "families": [
+    "F0218"
+   ],
+   "gender": "M",
+   "handle": "1054378a5f18349254ebac550926",
+   "id": "I0489",
+   "name": {
+    "call": "",
+    "display": "Brian Paul Kiley",
+    "first": "Brian Paul",
+    "nick": "",
+    "prefix": "",
+    "sort": "Kiley, Brian Paul",
+    "suffix": "",
+    "surname": "Kiley",
+    "title": ""
+   },
+   "parents": [],
+   "status": "living"
+  },
+  "I0490": {
+   "families": [
+    "F0219"
+   ],
+   "gender": "F",
+   "handle": "1054378a857e5e9015e8a20b6bf4",
+   "id": "I0490",
+   "name": {
+    "call": "",
+    "display": "Barbara Wood",
+    "first": "Barbara",
+    "nick": "",
+    "prefix": "",
+    "sort": "Wood, Barbara",
+    "suffix": "",
+    "surname": "Wood",
+    "title": ""
+   },
+   "parents": [
+    "F0032"
+   ],
+   "status": "living"
+  },
+  "I0491": {
+   "families": [
+    "F0219"
+   ],
+   "gender": "M",
+   "handle": "1054378aa623670ad0ff6cb62d94",
+   "id": "I0491",
+   "name": {
+    "call": "",
+    "display": "Bob Crusan",
+    "first": "Bob",
+    "nick": "",
+    "prefix": "",
+    "sort": "Crusan, Bob",
+    "suffix": "",
+    "surname": "Crusan",
+    "title": ""
+   },
+   "parents": [],
+   "status": "living"
+  },
+  "I0492": {
+   "families": [],
+   "gender": "U",
+   "handle": "1054378acdf05eb33e68f5fdbd83",
+   "id": "I0492",
+   "name": {
+    "call": "",
+    "display": "Marcus Justin Crusan",
+    "first": "Marcus Justin",
+    "nick": "",
+    "prefix": "",
+    "sort": "Crusan, Marcus Justin",
+    "suffix": "",
+    "surname": "Crusan",
+    "title": ""
+   },
+   "parents": [
+    "F0219"
+   ],
+   "status": "living"
+  },
+  "I0493": {
+   "families": [],
+   "gender": "U",
+   "handle": "1054378aee312512ade73c9dfce7",
+   "id": "I0493",
+   "name": {
+    "call": "",
+    "display": "Hillary Renee Crusan",
+    "first": "Hillary Renee",
+    "nick": "",
+    "prefix": "",
+    "sort": "Crusan, Hillary Renee",
+    "suffix": "",
+    "surname": "Crusan",
+    "title": ""
+   },
+   "parents": [
+    "F0219"
+   ],
+   "status": "living"
+  },
+  "I0494": {
+   "families": [
+    "F0220"
+   ],
+   "gender": "M",
+   "handle": "1054378b1dad77ecedcd0fbe68e8",
+   "id": "I0494",
+   "name": {
+    "call": "Chuck",
+    "display": "Charles Graham Wood",
+    "first": "Charles Graham",
+    "nick": "",
+    "prefix": "",
+    "sort": "Wood, Charles Graham",
+    "suffix": "",
+    "surname": "Wood",
+    "title": ""
+   },
+   "parents": [
+    "F0032"
+   ],
+   "status": "living"
+  },
+  "I0495": {
+   "families": [
+    "F0220"
+   ],
+   "gender": "F",
+   "handle": "1054378b434e171c849d02d4ad49",
+   "id": "I0495",
+   "name": {
+    "call": "",
+    "display": "Georgia Egel",
+    "first": "Georgia",
+    "nick": "",
+    "prefix": "",
+    "sort": "Egel, Georgia",
+    "suffix": "",
+    "surname": "Egel",
+    "title": ""
+   },
+   "parents": [],
+   "status": "living"
+  },
+  "I0496": {
+   "families": [
+    "F0221"
+   ],
+   "gender": "F",
+   "handle": "1054378b78ab1aa3bdb9ec166722",
+   "id": "I0496",
+   "name": {
+    "call": "",
+    "display": "Whitney Tamara Wood",
+    "first": "Whitney Tamara",
+    "nick": "",
+    "prefix": "",
+    "sort": "Wood, Whitney Tamara",
+    "suffix": "",
+    "surname": "Wood",
+    "title": ""
+   },
+   "parents": [
+    "F0220"
+   ],
+   "status": "living"
+  },
+  "I0497": {
+   "families": [],
+   "gender": "F",
+   "handle": "1054378b99fa49bbe5a85fd993d5",
+   "id": "I0497",
+   "name": {
+    "call": "Lexi",
+    "display": "Alexis Brianna Wood",
+    "first": "Alexis Brianna",
+    "nick": "",
+    "prefix": "",
+    "sort": "Wood, Alexis Brianna",
+    "suffix": "",
+    "surname": "Wood",
+    "title": ""
+   },
+   "parents": [
+    "F0220"
+   ],
+   "status": "living"
+  },
+  "I0498": {
+   "families": [
+    "F0221"
+   ],
+   "gender": "M",
+   "handle": "1054378bb6cc5e0c7c4e12ef274b",
+   "id": "I0498",
+   "name": {
+    "call": "Matt",
+    "display": "Matthew Abshire",
+    "first": "Matthew",
+    "nick": "",
+    "prefix": "",
+    "sort": "Abshire, Matthew",
+    "suffix": "",
+    "surname": "Abshire",
+    "title": ""
+   },
+   "parents": [],
+   "status": "living"
+  },
+  "I0499": {
+   "families": [],
+   "gender": "U",
+   "handle": "1054378be7802ef70d4697134048",
+   "id": "I0499",
+   "minor": true,
+   "name": {
+    "call": "",
+    "display": "Living child",
+    "first": "",
+    "nick": "",
+    "prefix": "",
+    "sort": "Living child",
+    "suffix": "",
+    "surname": "",
+    "title": ""
+   },
+   "parents": [
+    "F0221"
+   ],
+   "status": "living"
+  },
+  "I0500": {
+   "families": [],
+   "gender": "U",
+   "handle": "1054378c15034a9e2de1f38316f9",
+   "id": "I0500",
+   "minor": true,
+   "name": {
+    "call": "",
+    "display": "Living child",
+    "first": "",
+    "nick": "",
+    "prefix": "",
+    "sort": "Living child",
+    "suffix": "",
+    "surname": "",
+    "title": ""
+   },
+   "parents": [
+    "F0221"
+   ],
+   "status": "living"
+  },
   "I0501": {
    "alt_names": [],
    "attributes": [],
@@ -174472,6 +177661,274 @@
    "urls": [],
    "xref": {
     "ancestry": "212817587592"
+   }
+  },
+  "I0505": {
+   "alt_names": [],
+   "attributes": [],
+   "birth": {
+    "date": {
+     "day": 4,
+     "iso": "1886-03-04",
+     "modifier": null,
+     "month": 3,
+     "quality": null,
+     "sort": 2409970,
+     "text": "4 March 1886",
+     "year": 1886
+    },
+    "event": "E1700",
+    "place": "P0360",
+    "type": "Birth",
+    "year": 1886
+   },
+   "change": 1795446009,
+   "citations": [
+    "C1455",
+    "C1458",
+    "C1459"
+   ],
+   "death": {
+    "date": {
+     "day": 10,
+     "iso": "1916-09-10",
+     "modifier": null,
+     "month": 9,
+     "quality": null,
+     "sort": 2421117,
+     "text": "10 September 1916",
+     "year": 1916
+    },
+    "event": "E1701",
+    "place": "P0361",
+    "type": "Death",
+    "year": 1916
+   },
+   "events": [
+    {
+     "ref": "E1700",
+     "role": "Primary"
+    },
+    {
+     "ref": "E1701",
+     "role": "Primary"
+    }
+   ],
+   "families": [
+    "F0223"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "gender": "M",
+   "handle": "10545936843e2dc27cd516411597",
+   "id": "I0505",
+   "media": [],
+   "name": {
+    "call": "",
+    "display": "Thomas Voris Shinofield",
+    "first": "Thomas Voris",
+    "nick": "",
+    "prefix": "",
+    "sort": "Shinofield, Thomas Voris",
+    "suffix": "",
+    "surname": "Shinofield",
+    "title": "",
+    "type": "Birth Name"
+   },
+   "notes": [
+    "N2277"
+   ],
+   "parents": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "urls": [],
+   "xref": {
+    "ancestry": "212817991787"
+   }
+  },
+  "I0506": {
+   "alt_names": [],
+   "attributes": [],
+   "birth": {
+    "date": {
+     "day": 24,
+     "iso": "1914-09-24",
+     "modifier": null,
+     "month": 9,
+     "quality": null,
+     "sort": 2420400,
+     "text": "24 September 1914",
+     "year": 1914
+    },
+    "event": "E1702",
+    "place": "P0285",
+    "type": "Birth",
+    "year": 1914
+   },
+   "change": 1795446006,
+   "citations": [
+    "C1456"
+   ],
+   "death": {
+    "date": {
+     "day": 7,
+     "iso": "1995-09-07",
+     "modifier": null,
+     "month": 9,
+     "quality": null,
+     "sort": 2449968,
+     "text": "7 September 1995",
+     "year": 1995
+    },
+    "event": "E1703",
+    "place": "P0285",
+    "type": "Death",
+    "year": 1995
+   },
+   "events": [
+    {
+     "ref": "E1702",
+     "role": "Primary"
+    },
+    {
+     "ref": "E1703",
+     "role": "Primary"
+    }
+   ],
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "gender": "F",
+   "handle": "10545936cf57396aa7bf0d52c604",
+   "id": "I0506",
+   "media": [],
+   "name": {
+    "call": "",
+    "display": "Shirley Marie Shinofield",
+    "first": "Shirley Marie",
+    "nick": "",
+    "prefix": "",
+    "sort": "Shinofield, Shirley Marie",
+    "suffix": "",
+    "surname": "Shinofield",
+    "title": "",
+    "type": "Birth Name"
+   },
+   "notes": [],
+   "parents": [
+    "F0223"
+   ],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "urls": [],
+   "xref": {
+    "ancestry": "212817991967"
+   }
+  },
+  "I0507": {
+   "alt_names": [],
+   "attributes": [],
+   "birth": {
+    "date": {
+     "day": 7,
+     "iso": "1916-08-07",
+     "modifier": null,
+     "month": 8,
+     "quality": null,
+     "sort": 2421083,
+     "text": "7 August 1916",
+     "year": 1916
+    },
+    "event": "E1704",
+    "place": null,
+    "type": "Birth",
+    "year": 1916
+   },
+   "change": 1795446007,
+   "citations": [
+    "C1457"
+   ],
+   "death": {
+    "date": {
+     "day": 18,
+     "iso": "1978-01-18",
+     "modifier": null,
+     "month": 1,
+     "quality": null,
+     "sort": 2443527,
+     "text": "18 January 1978",
+     "year": 1978
+    },
+    "event": "E1705",
+    "place": "P0338",
+    "type": "Death",
+    "year": 1978
+   },
+   "events": [
+    {
+     "ref": "E1704",
+     "role": "Primary"
+    },
+    {
+     "ref": "E1705",
+     "role": "Primary"
+    }
+   ],
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "gender": "F",
+   "handle": "10545936fe366d6ac3ec6de11f5e",
+   "id": "I0507",
+   "media": [],
+   "name": {
+    "call": "",
+    "display": "Edna Elizabeth Shinofield",
+    "first": "Edna Elizabeth",
+    "nick": "",
+    "prefix": "",
+    "sort": "Shinofield, Edna Elizabeth",
+    "suffix": "",
+    "surname": "Shinofield",
+    "title": "",
+    "type": "Birth Name"
+   },
+   "notes": [],
+   "parents": [
+    "F0223"
+   ],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "urls": [],
+   "xref": {
+    "ancestry": "212817992119"
    }
   }
  },
@@ -183646,6 +187103,102 @@
    ],
    "type": "Unknown",
    "urls": []
+  },
+  "P0347": {
+   "alt_names": [],
+   "citations": [],
+   "code": "",
+   "display": "Minneapolis, Minnesota",
+   "enclosed_by": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10543780ef697ad9f61ced62f70d",
+   "hierarchy": [
+    "P0347"
+   ],
+   "id": "P0347",
+   "lat": null,
+   "long": null,
+   "media": [],
+   "name": "Minneapolis, Minnesota",
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed",
+    "needs-place"
+   ],
+   "type": "Unknown",
+   "urls": []
+  },
+  "P0360": {
+   "alt_names": [],
+   "citations": [],
+   "code": "",
+   "display": "What Cheer, Keokuk, Iowa, USA",
+   "enclosed_by": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "105459366db04ce9dcbc513929f1",
+   "hierarchy": [
+    "P0360"
+   ],
+   "id": "P0360",
+   "lat": null,
+   "long": null,
+   "media": [],
+   "name": "What Cheer, Keokuk, Iowa, USA",
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed",
+    "needs-place"
+   ],
+   "type": "Unknown",
+   "urls": []
+  },
+  "P0361": {
+   "alt_names": [],
+   "citations": [],
+   "code": "",
+   "display": "Oskaloosa, Mahaska, Iowa, USA",
+   "enclosed_by": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "105459367ab7954dda6d7ddd4af",
+   "hierarchy": [
+    "P0361"
+   ],
+   "id": "P0361",
+   "lat": null,
+   "long": null,
+   "media": [],
+   "name": "Oskaloosa, Mahaska, Iowa, USA",
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed",
+    "needs-place"
+   ],
+   "type": "Unknown",
+   "urls": []
   }
  },
  "repositories": {
@@ -183917,6 +187470,30 @@
    "handle": "1054378c2729344e404d52342ff5",
    "id": "R0033",
    "name": "Cremation Society of Georgia (csog.com, Tukios obituary site)",
+   "notes": [],
+   "type": "Archive",
+   "urls": []
+  },
+  "R0034": {
+   "handle": "10545936506546b0c76cb33a7797",
+   "id": "R0034",
+   "name": "Library of Congress, Chronicling America (LCCN sn87058308)",
+   "notes": [],
+   "type": "Archive",
+   "urls": []
+  },
+  "R0035": {
+   "handle": "10545936982a759535250f4f041a",
+   "id": "R0035",
+   "name": "National Archives and Records Administration (NARA), FHL microfilm 2340822",
+   "notes": [],
+   "type": "Archive",
+   "urls": []
+  },
+  "R0036": {
+   "handle": "105459370c0b63442ae1c33c0322",
+   "id": "R0036",
+   "name": "National Archives and Records Administration (NARA), microfilm T623 roll 446",
    "notes": [],
    "type": "Archive",
    "urls": []
@@ -191609,6 +195186,33 @@
    ],
    "title": "1950 United States Census, Population Schedule, Minnesota, Ramsey County, St. Paul, ED 90-230, sheet 12"
   },
+  "S0242": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1367"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "105437868670587fdf70bfa8a14b",
+   "id": "S0242",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "Mark S. Dressel obituary, Nelson-Doran Funeral Home, Brainerd, Minnesota, also published by the Brainerd Dispatch, 21 March 2024"
+  },
   "S0243": {
    "abbrev": "",
    "attributes": {},
@@ -191740,6 +195344,166 @@
     "agent-proposed"
    ],
    "title": "Anton Wacek obituary, Manitowoc Herald Times, 15 Jan 1953, p. 20"
+  },
+  "S0249": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1454"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1054564a80b07198113a44cee5c8",
+   "id": "S0249",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "Chris Konecny, oral account, 31 October 2026"
+  },
+  "S0250": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1455"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1054593653f5627589863480e3e4",
+   "id": "S0250",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0034"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "The Oskaloosa Herald (Oskaloosa, Iowa), 14 Sep 1916, p. 5: obituary of Thos. Vores Shinofield"
+  },
+  "S0251": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1456",
+    "C1457"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "105459369d065ec3a3840cc5b7b5",
+   "id": "S0251",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0035"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "1930 United States Census, Population Schedule, Minnesota, Freeborn County, Albert Lea city, ED 24-2, sheet 4A"
+  },
+  "S0252": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1458"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "105459370f4288ebb3ff39c81b9",
+   "id": "S0252",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0036"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "1900 United States Census, Population Schedule, Iowa, Mahaska County, Spring Creek Township, ED 77, sheet 14"
+  },
+  "S0253": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1459"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "105459372b5725ca58af33a1ac34",
+   "id": "S0253",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0034"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "The Oskaloosa Herald (Oskaloosa, Iowa), 14 Sep 1916, p. 6: death notice of Thomas Noris Shinofield"
   }
  }
 }
