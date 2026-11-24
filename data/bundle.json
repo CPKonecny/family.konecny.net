@@ -111726,7 +111726,7 @@
    "full": 360,
    "living": 142
   },
-  "generated": "2026-11-24T01:09:46+00:00",
+  "generated": "2026-11-24T08:17:52+00:00",
   "generator": "gramps_export.py 0.4.0",
   "gramps_version": "6.0.8",
   "gramps_webapi_version": "3.17.0",
@@ -111751,7 +111751,7 @@
    "oral",
    "ai-draft"
   ],
-  "today": "2026-11-23",
+  "today": "2026-11-24",
   "tree": "Konecny"
  },
  "notes": {
