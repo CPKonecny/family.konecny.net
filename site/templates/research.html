@@ -14,7 +14,7 @@
 {% block body %}
 <article class="prose research">
   <header class="phead"><p class="eyebrow">Research</p><h1>Where the research stands</h1>
-  <p class="span muted">What is being worked on, what comes next, what is still open, and where the family can help. Updated {{ updated }}; the lists below are kept by hand, the counts come from the research database.</p></header>
+  <p class="span muted">What is being worked on, what comes next, what is still open, and where the family can help. The cards are kept by hand{% if board_changed %} and were last changed on <b>{{ board_changed }}</b>{% if board_age and board_age > 1 %} ({{ board_age }} days ago){% endif %}{% endif %}; the counts come from the research database, updated {{ updated }}.</p></header>
 
   <nav class="jumps row" aria-label="Sections">
     {% if asks %}<a href="#help">Can you help?</a>{% endif %}

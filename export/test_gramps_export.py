@@ -177,7 +177,7 @@ STORIES = {"title": "Stories", "summary": "Stories of the family.", "further": [
                          "entries": [{"title": "The boat", "detail": "Anton farmed by the lake; Tove Lindqvist still has his boat."}]},
                         {"status": "proven", "id": "lake", "heading": "The lake", "kind": "entries", "after": [],
                          "entries": [{"title": "The farm", "detail": "Anton farmed by the lake for forty years."}]}]}
-BOARD = {"_readme": "Nils Lindqvist is not published from here", "items": [
+BOARD = {"_readme": "Nils Lindqvist is not published from here", "reviewed": "2026-11-20", "items": [
     {"id": "R1", "status": "open", "line": "konecny", "title": "Find the school records", "summary": "Where Nils Lindqvist went to school",
      "detail": "", "owner": "Karel", "people": [], "since": "2026-11-01"},
     {"id": "R2", "status": "open", "line": "konecny", "title": "Anton's farm deed", "summary": "The 1931 deed",
@@ -401,6 +401,7 @@ def test_the_site_shows_the_placeholder_and_the_labels(work):
     assert "Anton farmed by the lake for forty years." in pages["stories/lake/index.html"]
     assert "stories/farm/index.html" not in pages
     research = pages["research/index.html"]
+    assert "last changed on <b>20 November 2026</b>" in research, "outside git, the board's own date"
     assert "deed" in research and "school records" not in research
 
 

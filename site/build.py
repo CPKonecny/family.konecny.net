@@ -21,6 +21,7 @@ import os
 import re
 import shutil
 import struct
+import subprocess
 import sys
 import unicodedata
 from urllib.parse import quote, urlsplit, urlunsplit
@@ -112,6 +113,20 @@ def estimate_tier(title: str, has_image: bool):
 # ----------------------------------------------------------------------------- #
 # helpers exposed to templates
 # ----------------------------------------------------------------------------- #
+def last_change(path: str):
+    """When a file in this repository last changed, from git (the Pages build checks out the whole history).
+    None outside a git checkout, or for a file git doesn't track."""
+    rel = os.path.relpath(os.path.abspath(path), ROOT)
+    if rel.startswith(".."):
+        return None
+    try:
+        r = subprocess.run(["git", "-C", ROOT, "log", "-1", "--format=%cI", "--", rel],
+                           capture_output=True, text=True, timeout=30)
+        return dt.datetime.fromisoformat(r.stdout.strip()) if r.returncode == 0 and r.stdout.strip() else None
+    except (OSError, ValueError, subprocess.SubprocessError):
+        return None
+
+
 def fold(s: str) -> str:
     """Diacritics folded, lower-cased: the key for sorting and grouping names so that
     Konečný files with Konecny and Šebák under S, not after Z."""
@@ -1002,9 +1017,17 @@ def main(argv=None) -> int:
     # research board (content/research/board.json) — hand-maintained; living-name check as for the stories
     board_path = os.path.join(args.content, "research", "board.json")
     board = []
+    board_changed = None      # when the cards last changed: the board is kept by hand, the export never touches it
     if os.path.exists(board_path):
         with open(board_path, encoding="utf-8") as f:
-            raw_items = json.load(f).get("items", [])
+            board_raw = json.load(f)
+        raw_items = board_raw.get("items", [])
+        board_changed = last_change(board_path)
+        if board_changed is None and board_raw.get("reviewed"):
+            try:
+                board_changed = dt.datetime.fromisoformat(str(board_raw["reviewed"])).replace(tzinfo=tz)
+            except ValueError:
+                board_changed = None
         line_title = {l["slug"]: l["title"] for l in cfg.get("lines", [])}
         for it in raw_items:
             text = " ".join(str(it.get(k) or "") for k in ("title", "summary", "detail", "ask")).lower()
@@ -1075,7 +1098,14 @@ def main(argv=None) -> int:
         ls = [l for l in lines if l.get("side") == sd["key"] or sd["key"] is None]
         if ls:
             sides.append({**sd, "lines": ls})
-    write("research/index.html", "research.html", board=by_status, asks=asks, flagged=flagged_rows,
+    board_age = None
+    if board_changed:
+        board_changed = board_changed.astimezone(tz)
+        board_age = (dt.datetime.now(tz).date() - board_changed.date()).days
+        if board_age > 2:
+            site.warnings.append(f"research board: the cards last changed {board_age} days ago ({board_changed:%d %b %Y})")
+    write("research/index.html", "research.html", board_changed=board_changed.strftime("%-d %B %Y") if board_changed else None,
+          board_age=board_age, board=by_status, asks=asks, flagged=flagged_rows,
           flagged_total=sum(len(r["facts"]) for r in flagged_rows), activity=activity, activity_cols=activity_cols,
           recent=recent, stats=stats, rs=rs, title="Research", nav="research")
     write("questions/index.html", "redirect.html", target="/research/", title="Research")
