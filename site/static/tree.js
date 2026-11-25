@@ -18,6 +18,7 @@ var $ = function (s) { return app.querySelector(s); };
 var BASE = app.getAttribute('data-base') || '';          // empty on the site; the site's address in a stand-alone copy
 var EXT = BASE ? ' target="_blank" rel="noopener"' : '';
 var cv = $('#tx-cv'), ctx = cv.getContext('2d'), stage = $('#tx-stage');
+var TURN = $('#tx-turn') ? '#tx-turn' : '#tx-desc';      // the turn button's label; a page kept from before it had one still works
 var TNOW = 2030;                 // depth is measured back from here; nothing is drawn against it
 var KZ = 0.15;                   // world units per year (one unit sideways = one person)
 var GEN = 28;                    // nominal years per generation, used only where no date is public
@@ -60,6 +61,16 @@ function kinName(p) { if (!p.f || !p.m) return shortName(p); return p.f.split(' 
 function place(s) { return (s || '').replace(/^house\s+\d+[a-z]?\s+/i, '').replace(/\s+č\.?\s*p\.?\s*\d+[a-z]?$/i, '').replace(/\s*\(.*\)$/, ''); }
 function years(p) { if (p.st !== 'f') return 'name only'; if (!p.bt && !p.dt) return 'dates unknown'; return (p.bt || '?') + '–' + (p.dt || '?'); }
 function lineColour(pid) { return pathLine[pid] || P[pid].c || 'neutral'; }
+var kinMemo = {};
+function kinCount(id, back) {       // how many people are on record before (back) or after someone
+  var key = (back ? 'a' : 'd') + id;
+  if (!(key in kinMemo)) {
+    var seen = {}, q = [id], n = 0;
+    while (q.length) (back ? parents(q.pop()) : children(q.pop())).forEach(function (k) { if (k && !seen[k]) { seen[k] = 1; n++; q.push(k); } });
+    kinMemo[key] = n;
+  }
+  return kinMemo[key];
+}
 
 /* Where a person sits in time: the year of birth when it is public. Living people and undated people have no
    public year, so they are placed by generation from the nearest dated relatives and never drawn against a year. */
@@ -201,6 +212,7 @@ function build(focus) {
   var lastDated = dated.length ? Math.max.apply(null, dated) : S.tMin;
   S.liveFrom = Math.floor((live.length ? Math.min(Math.min.apply(null, live), lastDated + 1) : lastDated + 10) / 10) * 10;
   S.focus = focus; S.rootZ = wz(root.t); S.tween = from && !reduce ? 0 : 1; S.line = null; S.fade = reduce ? 1 : 0; S.win = { L: 0, w: 1 };
+  S.trail = null; S.from = null;
 }
 function pos(n) {                    // where a person is now, in ground units: tree place, fan place, or on the way between
   var x = lerp(n.x, n.fx, S.fanMix), z = lerp(n.z, n.fz, S.fanMix);
@@ -211,16 +223,19 @@ function pos(n) {                    // where a person is now, in ground units: 
 /* ---------- the route the camera follows ---------- */
 function setPath(via, ids) {
   var chain = [], n;
-  if (ids) chain = ids.filter(function (id) { return S.nodes[id]; });
+  if (ids) chain = ids.filter(function (id) { return S.nodes[id] && P[id].st !== 'm'; });
   else {
     n = S.nodes[via] || S.nodes[S.focus];
-    var kind = n.kind;
+    var kind = n.kind, f = S.from && S.nodes[S.from];
+    if (kind === 'focus') {
+      kind = S.lens === 'long' && !S.back ? 'desc' : 'anc';
+      if (f && f.kind === kind) n = f;                     // from the centre, the way you came is the way on, when it is the way you face
+    }
     for (var c = n; c; c = c.toward) chain.unshift(c.id);
-    if (kind === 'focus') kind = S.lens === 'long' && !S.back ? 'desc' : 'anc';
     while (true) {                   // carry on to the far end of that branch, taking the deeper side at each fork
       var next = null;
       if (kind === 'anc') n.par.forEach(function (q) { if (q && (!next || q.reach > next.reach)) next = q; });
-      else n.kids.forEach(function (k) { if (!next || k.reach > next.reach) next = k; });
+      else n.kids.forEach(function (k) { if (k.p.st !== 'm' && (!next || k.reach > next.reach)) next = k; });   // never a child under 18: they have no name here
       if (!next) break; chain.push(next.id); n = next;
     }
   }
@@ -388,15 +403,15 @@ function draw() {
         var f1 = ((n.uc - win.L) / win.w) * 2 - 1 - S.panX, f2 = ((t.uc - win.L) / win.w) * 2 - 1 - S.panX;
         if ((f1 < -1.25 && f2 < -1.25) || (f1 > 1.25 && f2 > 1.25)) return;
       }
-      var wa = pos(n), wb = pos(t), on = S.onPath[n.id] && S.onPath[t.id], pts = [], i, k, e, q, sMax = 0;
+      var wa = pos(n), wb = pos(t), on = S.onPath[n.id] && S.onPath[t.id], home = !on && S.trail && S.trail[n.id] && S.trail[t.id], pts = [], i, k, e, q, sMax = 0;
       var steps = ((a || b).s < 22 && tilt === 1) ? 5 : 12;
       for (i = 0; i <= steps; i++) { k = i / steps; e = k * k * (3 - 2 * k); q = place(lerp(wb.x, wa.x, e), lerp(wb.z, wa.z, k), lerp(t.uc, n.uc, e), 0); if (q) { pts.push(q); sMax = Math.max(sMax, q.s); } }
       if (pts.length < 2 || sMax < 1.2) return;
       var al = kindA * timeA * fog(pts[pts.length - 1].s) * S.fade;
       if (pts[0].x < -40 && pts[pts.length - 1].x < -40 || pts[0].x > W + 40 && pts[pts.length - 1].x > W + 40) return;
-      ctx.globalAlpha = al * (on ? 0.95 : col.dark ? 0.5 : 0.42);
+      ctx.globalAlpha = al * (on ? 0.95 : home ? 0.82 : col.dark ? 0.5 : 0.42);
       ctx.strokeStyle = S.mode === 'evidence' ? col.muted : (col[n.col] || col.neutral);
-      ctx.lineWidth = clamp(pts[pts.length - 1].s * (on ? 0.05 : 0.026), on ? 1.4 : 0.6, on ? 5 : 3);
+      ctx.lineWidth = clamp(pts[pts.length - 1].s * (on ? 0.05 : home ? 0.037 : 0.026), on ? 1.4 : home ? 1.1 : 0.6, on ? 5 : home ? 4 : 3);
       ctx.beginPath(); ctx.moveTo(pts[0].x, pts[0].y); for (i = 1; i < pts.length; i++) ctx.lineTo(pts[i].x, pts[i].y); ctx.stroke();
     });
     // where the trail stops: no parents on record
@@ -449,8 +464,8 @@ function draw() {
     else boxes.push({ x: W - 262, y: 0, w: 262, h: 52 });
     vis.forEach(function (v) { if (v.r >= 3.2 && v.a > 0.2) boxes.push({ x: v.x - v.r, y: v.y - v.r, w: v.r * 2, h: v.r * 2 }); });
     order.forEach(function (v) {
-      var n = v.n; v.key = n.id === S.sel || n.kind === 'focus' || !!S.onPath[n.id] || !!tips[n.id] || (tilt < 0.5 && Math.abs(n.gen) <= 2);
-      v.pri = (n.id === S.sel ? 4000 : 0) + (n.kind === 'focus' ? 3000 : 0) + (S.onPath[n.id] ? 40 : 0) + (tips[n.id] ? 25 : 0) + v.s;
+      var n = v.n, came = !!(S.trail && S.trail[n.id]); v.key = n.id === S.sel || n.kind === 'focus' || !!S.onPath[n.id] || came || !!tips[n.id] || (tilt < 0.5 && Math.abs(n.gen) <= 2);
+      v.pri = (n.id === S.sel ? 4000 : 0) + (n.kind === 'focus' ? 3000 : 0) + (S.onPath[n.id] ? 40 : 0) + (came ? 30 : 0) + (tips[n.id] ? 25 : 0) + v.s;
     });
     order.sort(function (a, b) { return b.pri - a.pri; });
     var cards = [], foot = tilt > 0.5 && S.footH ? { x: 0, y: H - S.footH + 14, w: W, h: S.footH } : null;
@@ -621,7 +636,8 @@ function follow() {                  // in the long view the person you are pass
 }
 function yearNow() { return TNOW - camT.tz / KZ; }
 var shown = {};
-function put(sel, prop, val) { if (shown[sel + prop] !== val) { shown[sel + prop] = val; var el = $(sel); if (prop === 'display') el.style.display = val; else el[prop] = val; } }
+function put(sel, prop, val) { if (shown[sel + prop] !== val) { shown[sel + prop] = val; var el = $(sel); if (prop === 'display') el.style.display = val; else if (prop.indexOf('aria-') === 0) el.setAttribute(prop, val); else el[prop] = val; } }
+function standing() { return S.nodes[S.sel] && P[S.sel].st !== 'm' ? S.sel : S.focus; }      // the person the long view is passing
 function hud() {
   var long = S.lens === 'long';
   put('#tx-year', 'display', long ? '' : 'none'); put('#tx-when', 'hidden', !long);
@@ -630,9 +646,13 @@ function hud() {
   put('#tx-yr', 'textContent', live ? 'Now' : String(Math.round(y)));
   var ev = null; D.events.forEach(function (e) { if (!live && Math.abs(e.year - y) < 4 && e.year <= S.liveFrom) ev = e; });
   var g = n ? Math.abs(n.gen) : 0;
-  put('#tx-yrsub', 'textContent', ev ? ev.year + ' · ' + ev.label : !S.touched ? 'Drag or scroll to travel back · tap a person' : live ? 'The living: names only, no dates' : !g ? 'Standing with ' + shortName(P[S.focus]) : g + (g === 1 ? ' generation ' : ' generations ') + (S.back ? 'back' : 'on'));
+  put('#tx-yrsub', 'textContent', ev ? ev.year + ' · ' + ev.label : !S.touched ? 'Drag or scroll to travel ' + (S.back ? 'back' : 'on') + ' · tap a person' : live ? 'The living: names only, no dates' : !g ? 'Standing with ' + shortName(P[S.focus]) : g + (g === 1 ? ' generation ' : ' generations ') + (S.back ? 'back' : 'on'));
   var a = S.back ? S.tMin : S.anc.root.t, b = S.back ? S.anc.root.t : S.tMax;
   if (!S.sliding) put('#tx-slide', 'value', String(Math.round(1000 * clamp((y - a) / Math.max(1, b - a), 0, 1))));
+  var here = standing(), cnt = kinCount(here, !S.back), what = S.back ? 'descendant' : 'ancestor';
+  var say = cnt ? 'Turn around: the ' + cnt + ' ' + what + (cnt === 1 ? '' : 's') + ' of ' + P[here].n : 'No ' + what + 's on record for ' + P[here].n;
+  put(TURN, 'textContent', cnt ? cnt + ' ' + what + (cnt === 1 ? '' : 's') : 'No ' + what + 's');
+  put('#tx-desc', 'disabled', !cnt); put('#tx-desc', 'title', say); put('#tx-desc', 'aria-label', say);
 }
 
 /* ---------- panel ---------- */
@@ -651,7 +671,7 @@ function chipList(ids) {
   }).join('');
 }
 function panel() {
-  var id = S.sel || S.focus, p = P[id], n = S.nodes[id], c = n ? n.col : lineColour(id), l = lineOf[c], h = '';
+  var id = S.sel && P[S.sel].st !== 'm' ? S.sel : S.focus, p = P[id], n = S.nodes[id], c = n ? n.col : lineColour(id), l = lineOf[c], h = '';      // never a child under 18
   var url = BASE + '/person/' + id + '/', ev = n ? n.ev : evidence(p), more = app.classList.contains('tx-more');
   h += '<div class="tx-who" style="--thread: ' + thread(c) + '"><span class="tx-band"></span><div>';
   h += '<p class="eyebrow">' + esc(relation(n)) + (l ? ' · ' + esc(l.short) + ' line' : '') + '</p>';
@@ -686,7 +706,8 @@ function panel() {
     h += '</dl>';
     if (groups.some(function (g) { return g[1].some(function (i) { return P[i].st === 'm'; }); })) h += '<p class="tx-small">Children under 18 are shown as “Living child”, without their names. Each one opens in the research database, for family members who have the login.</p>';
   }
-  h += '<p class="tx-about">Father to the left, mother to the right, and the further back someone was born the further away they stand. Living relatives are placed by generation, never against a year.</p></div>';
+  h += '<p class="tx-about">Father to the left, mother to the right, and the further back someone was born the further away they stand. Living relatives are placed by generation, never against a year.</p>';
+  h += '<p class="tx-about">' + (S.lens === 'long' ? 'Wherever you stand you can turn around: the button below the picture shows who came after that person, or before. ' : '') + 'Double-tap someone to stand with them.</p></div>';
   $('#tx-panel').innerHTML = h;
 }
 
@@ -704,25 +725,41 @@ function chips() {
 }
 function sync() {
   app.querySelectorAll('[data-lens]').forEach(function (b) { b.setAttribute('aria-pressed', String(b.getAttribute('data-lens') === S.lens)); });
-  $('#tx-desc').setAttribute('aria-pressed', String(!S.back));
   var long = S.lens === 'long';
   $('#tx-fly').hidden = !long; $('#tx-fly').textContent = S.flying ? 'Pause' : (S.back ? 'Fly back' : 'Fly on'); $('#tx-fly').setAttribute('aria-pressed', String(S.flying));
   $('#tx-fit').textContent = long ? 'Reset' : 'Fit';
-  var none = long && !S.back && !S.desc.root.kids.length ? 'No children on record for ' + P[S.focus].n + '.' : (S.lens === 'fan' || (long && S.back)) && !S.anc.root.par[0] && !S.anc.root.par[1] ? 'No parents on record for ' + P[S.focus].n + '. Try Descendants or the Tree view.' : '';
+  var noA = !S.anc.root.par[0] && !S.anc.root.par[1], noD = !S.desc.root.kids.length, who = P[S.focus].n;
+  var none = long && noA && noD ? 'No parents or children on record for ' + who + '.' : long && !S.back && noD ? 'No children on record for ' + who + '.' : long && S.back && noA ? 'No parents on record for ' + who + '. Turn around to see who came after.' : S.lens === 'fan' && noA ? 'No parents on record for ' + who + '. Try the Long view or the Tree view.' : '';
   $('#tx-empty').hidden = !none; $('#tx-empty').textContent = none;
   chips();
-  var hash = '#' + S.lens + '-' + S.focus + (S.line ? '-' + S.line : '');
+  var hash = '#' + (long && !S.back ? 'ahead' : S.lens) + '-' + S.focus + (S.line ? '-' + S.line : '');      // "ahead": the long view looking forward
   try { if (S.pushNext && !S.routing && location.hash && location.hash !== hash) history.pushState(null, '', hash); else history.replaceState(null, '', hash); } catch (e) {}
   S.pushNext = false;
 }
 function stopFly() { if (S.flying) { S.flying = false; sync(); } }
 function setLens(l) { stopFly(); S.lens = l; S.panX = 0; S.whole = false; if (!S.nodes[S.sel]) S.sel = S.focus; setPath(S.sel); aim(false); sync(); panel(); }
-function focusOn(id) {
+function focusOn(id, back) {         // stand with someone: they become the centre. You keep looking the way you were, if anyone is that way
   if (!P[id] || P[id].st === 'm') return;
+  var want = back == null ? S.back : back;
   stopFly(); S.pushNext = id !== S.focus; build(id); S.sel = id; S.panX = 0; S.whole = false;
   var a = S.anc.root.reach, d = S.desc.root.reach;
-  if (S.lens === 'long') S.back = a > 0 || d === 0;
+  S.back = want ? a > 0 || d === 0 : d === 0;
   setPath(id); aim(false); sync(); panel();
+}
+/* Turning round. From whoever you stand with, look the other way: walk back to an ancestor and turn, and their whole
+   family is ahead of you, the way you came still marked; turn again further down a branch and you look back from there. */
+function turn() {
+  if (S.lens !== 'long') return;
+  var here = standing(), was = S.focus, back = !S.back;
+  if (!kinCount(here, back)) return;                       // no one on record that way
+  stopFly();
+  if (here !== was) {                                      // a new centre: keep the way you came to it
+    S.pushNext = true; build(here);
+    var n = S.nodes[was];
+    if (n) { S.from = was; S.trail = {}; for (var c = n; c; c = c.toward) S.trail[c.id] = 1; }
+  }
+  S.sel = here; S.back = back; S.panX = 0; S.line = null;
+  setPath(here); aim(false); sync(); panel();
 }
 function select(id) {
   if (!S.nodes[id] || P[id].st === 'm') return;
@@ -782,7 +819,7 @@ function travel(dz) {                // move through time in the long view, stay
 }
 
 function wire() {
-  var ptr = {}, drag = null, pinch = 0, tapT = 0, tapId = null;
+  var ptr = {}, drag = null, pinch = 0, tapT = 0, tapId = null, tapAt = null;
   cv.addEventListener('pointerdown', function (e) {
     cv.setPointerCapture(e.pointerId); ptr[e.pointerId] = { x: e.offsetX, y: e.offsetY };
     var ids = Object.keys(ptr);
@@ -811,9 +848,14 @@ function wire() {
     var d = drag; delete ptr[e.pointerId]; if (Object.keys(ptr).length < 2) pinch = 0; cv.classList.remove('tx-drag');
     if (!d || d.moved || Object.keys(ptr).length) { drag = null; return; }
     drag = null;
-    var id = hit(e.offsetX, e.offsetY), now = Date.now();
-    if (id && id === tapId && now - tapT < 380) { focusOn(id); tapId = null; return; }
-    tapId = id; tapT = now;
+    var now = Date.now(), again = tapId && now - tapT < 400 && Math.hypot(e.offsetX - tapAt.x, e.offsetY - tapAt.y) < 30;
+    if (again) {                     // a second tap in the same place means the person first tapped, who has started to move:
+      var who = tapId; tapId = null; // stand with them, or, if they are the centre already, turn around
+      if (who === S.focus) turn(); else focusOn(who);
+      return;
+    }
+    var id = hit(e.offsetX, e.offsetY);
+    tapId = id; tapT = now; tapAt = { x: e.offsetX, y: e.offsetY };
     if (id) select(id);
   }
   cv.addEventListener('pointerup', up); cv.addEventListener('pointercancel', function (e) { delete ptr[e.pointerId]; drag = null; pinch = 0; cv.classList.remove('tx-drag'); });
@@ -825,6 +867,7 @@ function wire() {
     else zoomBy(Math.exp(-dy * 0.0022), e.offsetX, e.offsetY);
   }, { passive: false });
   cv.addEventListener('keydown', function (e) {
+    if (e.ctrlKey || e.metaKey || e.altKey) return;        // the browser's own shortcuts: zoom, new tab
     var k = e.key, long = S.lens === 'long', used = true;
     if (k === 'ArrowUp') long ? travel(S.back ? 1.4 : -1.4) : (camT.tz += 60 / cam.s, go());
     else if (k === 'ArrowDown') long ? travel(S.back ? -1.4 : 1.4) : (camT.tz -= 60 / cam.s, go());
@@ -832,12 +875,13 @@ function wire() {
     else if (k === 'ArrowRight') long ? (S.panX = clamp(S.panX + 0.25, -1.6, 1.6), go()) : (camT.tx += 60 / cam.s, go());
     else if (k === '+' || k === '=') zoomBy(1.3); else if (k === '-') zoomBy(1 / 1.3);
     else if (k === 'Enter' && S.sel && S.sel !== S.focus) focusOn(S.sel);
+    else if (k === 't' || k === 'T') turn();
     else used = false;
     if (used) { e.preventDefault(); touched(); }
   });
   function touched() { if (!S.touched) { S.touched = true; go(); } }
   app.querySelectorAll('[data-lens]').forEach(function (b) { b.addEventListener('click', function () { setLens(b.getAttribute('data-lens')); touched(); }); });
-  $('#tx-desc').addEventListener('click', function () { stopFly(); S.back = !S.back; S.panX = 0; S.sel = S.focus; S.line = null; setPath(S.focus); aim(false); sync(); panel(); });
+  $('#tx-desc').addEventListener('click', function () { touched(); turn(); });
   $('#tx-fly').addEventListener('click', function () {
     touched(); if (S.flying) { stopFly(); return; }
     var end = S.stations[S.stations.length - 1]; if (Math.abs(end.z - camT.tz) < 0.2) { camT.tz = S.stations[0].z; cam.tz = camT.tz; }
@@ -871,7 +915,7 @@ function wire() {
   }
   q.addEventListener('input', search); q.addEventListener('focus', search);
   q.addEventListener('keydown', function (e) { if (e.key === 'Escape') { res.hidden = true; q.blur(); } if (e.key === 'Enter') { var b = res.querySelector('[data-id]'); if (b) b.click(); } });
-  res.addEventListener('click', function (e) { var b = e.target.closest('[data-id]'); if (!b) return; res.hidden = true; q.value = ''; touched(); focusOn(b.getAttribute('data-id')); });
+  res.addEventListener('click', function (e) { var b = e.target.closest('[data-id]'); if (!b) return; res.hidden = true; q.value = ''; touched(); focusOn(b.getAttribute('data-id'), true); });
   document.addEventListener('pointerdown', function (e) { if (!e.target.closest('.tx-find')) res.hidden = true; });
   // theme and size
   new MutationObserver(function () { readTheme(); wCache = {}; go(); }).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme', 'class', 'style'] });
@@ -881,11 +925,12 @@ function wire() {
   new ResizeObserver(function () { S.footH = $('.tx-foot').offsetHeight; go(); }).observe($('.tx-foot'));
   window.addEventListener('hashchange', route);
 }
-function route() {                  // #long-I0141 opens a view on a person; #long-I0141-wood also follows that line
-  var m = /^#(long|tree|fan)-(I\d+)(?:-([a-z]+))?$/.exec(location.hash || '');
+function route() {                  // #long-I0141 opens a view on a person, #ahead-I0141 looks forward from them; #long-I0141-wood also follows that line
+  var m = /^#(long|ahead|tree|fan)-(I\d+)(?:-([a-z]+))?$/.exec(location.hash || '');
   if (!m || !P[m[2]] || P[m[2]].st === 'm') return false;
-  if (m[2] === S.focus && m[1] === S.lens && (m[3] || null) === S.line) return true;
-  S.routing = true; S.lens = m[1]; focusOn(m[2]);
+  var lens = m[1] === 'ahead' ? 'long' : m[1], back = m[1] !== 'ahead';
+  if (m[2] === S.focus && lens === S.lens && (lens !== 'long' || back === S.back) && (m[3] || null) === S.line) return true;
+  S.routing = true; S.lens = lens; focusOn(m[2], lens === 'long' ? back : null);
   if (m[3] && lineOf[m[3]]) followLine(m[3]);
   S.routing = false;
   return true;
@@ -900,7 +945,7 @@ function start(data) {
   if (document.fonts && document.fonts.load) Promise.all(['700 13px "Bricolage Grotesque"', '800 15px "Bricolage Grotesque"', '500 12px "Bricolage Grotesque"', '600 condensed 10px "Bricolage Grotesque"', '500 10px "IBM Plex Mono"']
     .map(function (f) { return document.fonts.load(f, 'Konečný Štěpán'); })).then(function () { wCache = {}; go(); }).catch(function () {});
 }
-if (app.hasAttribute('data-debug')) window.__tx = { S: S, cam: cam, camT: camT };
+if (app.hasAttribute('data-debug')) window.__tx = { S: S, cam: cam, camT: camT, select: select, focusOn: focusOn, turn: turn, people: function () { return P; } };
 fetch(app.getAttribute('data-src')).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(start).catch(function (err) {
   $('#tx-panel').innerHTML = '<p class="tx-note">The tree did not load (' + esc(err.message || err) + '). Reload the page to try again.</p>';
   if (window.console) console.error(err);

@@ -15,6 +15,7 @@ from __future__ import annotations
 import argparse
 import collections
 import datetime as dt
+import hashlib
 import html
 import json
 import os
@@ -918,8 +919,14 @@ def main(argv=None) -> int:
         exported = dt.datetime.fromisoformat(bundle["meta"]["generated"].replace("Z", "+00:00")).astimezone(tz)
     except (KeyError, ValueError):
         exported = dt.datetime.now(dt.timezone.utc).astimezone(tz)
+    def asset(name: str) -> str:
+        """The address of a file in static/ with a short hash of its content. When the file changes its address
+        does too, so a page never runs with a script or stylesheet the browser kept from before the change."""
+        with open(os.path.join(HERE, "static", name), "rb") as f:
+            return f"/static/{name}?v={hashlib.sha256(f.read()).hexdigest()[:8]}"
+
     env.globals.update({
-        "site": site, "cfg": cfg, "meta": bundle["meta"], "review_label": review_label,
+        "site": site, "cfg": cfg, "meta": bundle["meta"], "review_label": review_label, "asset": asset,
         "now": dt.datetime.now(dt.timezone.utc).strftime("%-d %B %Y"),
         "updated": exported.strftime("%-d %B %Y"), "updated_time": exported.strftime("%H:%M %Z"),
         "CONF_LABEL": CONF_LABEL, "TIER_LABEL": TIER_LABEL,

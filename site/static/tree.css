@@ -27,6 +27,10 @@ body.treepage main { max-width: none; margin: 0; min-height: 0; min-width: 0; }
 .tx-tog { flex: none; border: 1px solid var(--rule); background: var(--card); }
 .tx-tog:hover { border-color: var(--ink); }
 .tx-tog[aria-pressed="true"] { border-color: var(--ink); color: var(--ink); box-shadow: inset 0 0 0 1px var(--ink); }
+.tx-turn { display: inline-flex; align-items: center; gap: 6px; color: var(--ink); }
+.tx-turn svg { flex: none; }
+.tx-turn:disabled { color: var(--muted); cursor: default; }
+.tx-turn:disabled:hover { border-color: var(--rule); }
 .tx-find { position: relative; flex: 1 1 110px; max-width: 300px; min-width: 0; }
 .tx-find input { width: 100%; padding: 5px 10px; border: 1px solid var(--rule); border-radius: 6px; background: var(--card); font-size: 0.95rem; font-family: var(--text); }
 .tx-find input::placeholder { color: var(--muted); }
