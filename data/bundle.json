@@ -43651,6 +43651,106 @@
    ],
    "tier": "compiled",
    "url": "https://www.2manitowoc.com/89AKlobit.html#konieczkalorraine"
+  },
+  "C1473": {
+   "ancestry_record_id": "27906837",
+   "change": 1795615622,
+   "cited_by": [
+    {
+     "id": "F0188",
+     "type": "family"
+    }
+   ],
+   "confidence": 3,
+   "date": {
+    "day": null,
+    "iso": "1920-01",
+    "modifier": null,
+    "month": 1,
+    "quality": null,
+    "sort": 2422325,
+    "text": "January 1920",
+    "year": 1920
+   },
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1054be5034676797ac95b41b148e",
+   "id": "C1473",
+   "information": "primary",
+   "media": [
+    {
+     "ref": "O0257"
+    }
+   ],
+   "notes": [
+    "N2304",
+    "N2305"
+   ],
+   "page": "Year: 1920; Census Place: Manitowoc Ward 5, Manitowoc, Wisconsin; Roll: T625_1994; Page: 7A; Enumeration District: 105; 915 26th St., Felix Jentsch household (head record 27906834); Lucile, daughter",
+   "proposal_file": "2026-11-24_101032_jentsch-lucille_link-f0188.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0255",
+   "source_type": "original",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "record",
+   "url": "https://www.ancestry.com/search/collections/6061/records/27906837"
+  },
+  "C1474": {
+   "ancestry_record_id": "",
+   "change": 1795615623,
+   "cited_by": [
+    {
+     "id": "F0195",
+     "type": "family"
+    }
+   ],
+   "confidence": 3,
+   "date": {
+    "day": 15,
+    "iso": "1963-04-15",
+    "modifier": null,
+    "month": 4,
+    "quality": null,
+    "sort": 2438135,
+    "text": "15 April 1963",
+    "year": 1963
+   },
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1054be505a0f3cd8e370d03b45f8",
+   "id": "C1474",
+   "information": "secondary",
+   "media": [],
+   "notes": [
+    "N2306",
+    "N2307"
+   ],
+   "page": "Monday 15 April 1963, page M-13",
+   "proposal_file": "2026-11-24_101042_wacek-lorraine_link-f0195.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0261",
+   "source_type": "derivative",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "compiled",
+   "url": "https://www.2manitowoc.com/89AKlobit.html#konieczkalorraine"
   }
  },
  "events": {
@@ -103667,13 +103767,18 @@
   },
   "F0188": {
    "attributes": [],
-   "change": 1794236407,
+   "change": 1795615622,
    "children": [
     {
      "ref": "I0406"
+    },
+    {
+     "ref": "I0510"
     }
    ],
-   "citations": [],
+   "citations": [
+    "C1473"
+   ],
    "events": [],
    "father": "I0404",
    "flags": [
@@ -103894,9 +103999,15 @@
   },
   "F0195": {
    "attributes": [],
-   "change": 1795186803,
-   "children": [],
-   "citations": [],
+   "change": 1795615623,
+   "children": [
+    {
+     "ref": "I0511"
+    }
+   ],
+   "citations": [
+    "C1474"
+   ],
    "events": [],
    "father": "I0420",
    "flags": [
@@ -104219,6 +104330,18 @@
    "handle": "10543787ea3d1238f63664a073cf",
    "id": "F0213",
    "mother": "I0474",
+   "status": "living"
+  },
+  "F0214": {
+   "children": [
+    {
+     "ref": "I0477"
+    }
+   ],
+   "father": null,
+   "handle": "10543788701227cb13728a1867ba",
+   "id": "F0214",
+   "mother": "I0475",
    "status": "living"
   },
   "F0215": {
@@ -113244,6 +113367,39 @@
     "agent-karel",
     "agent-proposed"
    ]
+  },
+  "O0257": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1473",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-24_101032_jentsch-lucille_link-f0188.jpg"
+   },
+   "checksum": "f1f1979568d761862478455cbe2abf58",
+   "citations": [],
+   "date": null,
+   "desc": "1920 United States Census, Population Schedule, Wisconsin, Manitowoc County, Manitowoc city Ward 5, ED 105, sheet 7A — Year: 1920; Census Place: Manitowoc Ward 5, Manitowoc, Wisconsin; Roll: T625_1994; Page: 7A; Enumeration District: 105; 915 26th St., Felix Jentsch household (head record 27906834); Lucile, daughter",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1054be5029c1727142b8d7837e1f",
+   "id": "O0257",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0257",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ]
   }
  },
  "meta": {
@@ -113255,11 +113411,11 @@
    "very high"
   ],
   "counts": {
-   "citations": 1308,
+   "citations": 1310,
    "events": 1482,
-   "families": 216,
-   "media": 242,
-   "notes": 1480,
+   "families": 217,
+   "media": 243,
+   "notes": 1484,
    "people": 507,
    "places": 340,
    "repositories": 43,
@@ -113269,8 +113425,8 @@
    "full": 365,
    "living": 142
   },
-  "generated": "2026-11-25T08:17:53+00:00",
-  "generator": "gramps_export.py 0.4.0",
+  "generated": "2026-11-25T14:56:48+00:00",
+  "generator": "gramps_export.py 0.4.1",
   "gramps_version": "6.0.8",
   "gramps_webapi_version": "3.17.0",
   "living_rule": {
@@ -144781,6 +144937,82 @@
    "tags": [],
    "text": "2026-11-24 (karel): Marriage of Michael Konieczka 212818118806 (101050) and Lorraine Wacek 212818118697 (101040), both new in this batch; the family is the one the applier makes from Michael's spouse link. Lorraine's obituary (Two Rivers Reporter, 15 Apr 1963, p. M-13): \"She was married Aug. 11, 1940, to Michael Konieczka at Sacred Heart Church\"; Michael's obituary (Manitowoc Herald Times, 10 Jan 1972, citation 101051 on him): \"He married Lorraine Wacek at Sacred Heart Church Aug. 11, 1940.\" Sacred Heart is the Two Rivers parish named in both obituaries. Ancestry has Marriage 11 Aug 1940 Two Rivers on both profiles. Transcription tier (compiled), no marriage record image yet.\nConflicts: ['Both obituaries are transcriptions on 2manitowoc.com; a marriage record (Wisconsin marriage index / Sacred Heart register) would raise this to record tier.']",
    "type": "Research"
+  },
+  "N2304": {
+   "attached_to": [
+    {
+     "id": "C1473",
+     "type": "citation"
+    }
+   ],
+   "change": 1795615621,
+   "flags": [],
+   "handle": "1054be501f14148b83bda272bf69",
+   "html": "<p>Transcription (as written): Fourteenth Census of the United States: 1920, Population; State Wisconsin; County Manitowoc; City of Manitowoc, Ward 5; ED 105; Sheet 7A. 915 26th St., Felix Jentsch household: Felix Jentsch | Head | 32 | Wisconsin. Anna | Wife | 28 | Wisconsin. Ernst | Son | 9. Lucile [indexed also as Lucild] | Daughter | F | W | 6 | S | attended school yes | born Wisconsin | father born Wisconsin | mother born Wisconsin. Alice | Daughter | 4.</p>",
+   "id": "N2304",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Fourteenth Census of the United States: 1920, Population; State Wisconsin; County Manitowoc; City of Manitowoc, Ward 5; ED 105; Sheet 7A. 915 26th St., Felix Jentsch household: Felix Jentsch | Head | 32 | Wisconsin. Anna | Wife | 28 | Wisconsin. Ernst | Son | 9. Lucile [indexed also as Lucild] | Daughter | F | W | 6 | S | attended school yes | born Wisconsin | father born Wisconsin | mother born Wisconsin. Alice | Daughter | 4.",
+   "type": "Transcript"
+  },
+  "N2305": {
+   "attached_to": [
+    {
+     "id": "C1473",
+     "type": "citation"
+    }
+   ],
+   "change": 1795615622,
+   "flags": [],
+   "handle": "1054be5021f46fe22a444b59fd4d",
+   "html": "<p>2026-11-25 (karel): Places Lucille Jentsch (Ancestry 212818118334, add_person 2026-11-24_101030 in this same batch) as a Birth child of Felix H. Jentsch I0404 in his existing father-only family F0188 (father I0404, no mother, child Ernest M. Jentsch I0406), as 2026-11-22_183011 placed Dana by Ancestry ID. 1920 census: Lucile, daughter of head Felix Jentsch, beside her brother Ernst (I0406). Checked the 24 Nov export (7c0a5fd): F0188 = father I0404, mother null, children [I0406], type Unknown. No mother is set: the 1920 wife Anna (28) is not identified (not Anna Nemetz I0405 of F0190). add_family is not used: F0188 exists and a father-only add_person relation would make a duplicate father-only family. Ancestry shows Felix as her father, no mother.<br>Conflicts: [&quot;Mother unknown; if the 1920 Anna is identified later, filling F0188&#x27;s mother would make her the mother of Ernest too, so it needs its own source for each child.&quot;]</p>",
+   "id": "N2305",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-25 (karel): Places Lucille Jentsch (Ancestry 212818118334, add_person 2026-11-24_101030 in this same batch) as a Birth child of Felix H. Jentsch I0404 in his existing father-only family F0188 (father I0404, no mother, child Ernest M. Jentsch I0406), as 2026-11-22_183011 placed Dana by Ancestry ID. 1920 census: Lucile, daughter of head Felix Jentsch, beside her brother Ernst (I0406). Checked the 24 Nov export (7c0a5fd): F0188 = father I0404, mother null, children [I0406], type Unknown. No mother is set: the 1920 wife Anna (28) is not identified (not Anna Nemetz I0405 of F0190). add_family is not used: F0188 exists and a father-only add_person relation would make a duplicate father-only family. Ancestry shows Felix as her father, no mother.\nConflicts: [\"Mother unknown; if the 1920 Anna is identified later, filling F0188's mother would make her the mother of Ernest too, so it needs its own source for each child.\"]",
+   "type": "Research"
+  },
+  "N2306": {
+   "attached_to": [
+    {
+     "id": "C1474",
+     "type": "citation"
+    }
+   ],
+   "change": 1795615623,
+   "flags": [],
+   "handle": "1054be50512925bb105daaf7e9fe",
+   "html": "<p>Transcription (as written): Mrs. Michael Konieczka, 49, of 1623-23rd St., Two Rivers, died Saturday afternoon at Two Rivers Municipal Hospital where she had been a patient three weeks. [...] Burial will be in Pioneers&#x27; Rest Cemetery. Mrs. Konieczka, nee Lorraine Wacek, was born at Two Rivers Dec. 22, 1913, daughter of the late Edward and Mrs. Carrie Mertens Wacek. She was married Aug. 11, 1940, to Michael Konieczka at Sacred Heart Church, [...] Surviving are her husband and mother. [...] Two Rivers Reporter, April 15, 1963 P. M-13</p>",
+   "id": "N2306",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Mrs. Michael Konieczka, 49, of 1623-23rd St., Two Rivers, died Saturday afternoon at Two Rivers Municipal Hospital where she had been a patient three weeks. [...] Burial will be in Pioneers' Rest Cemetery. Mrs. Konieczka, nee Lorraine Wacek, was born at Two Rivers Dec. 22, 1913, daughter of the late Edward and Mrs. Carrie Mertens Wacek. She was married Aug. 11, 1940, to Michael Konieczka at Sacred Heart Church, [...] Surviving are her husband and mother. [...] Two Rivers Reporter, April 15, 1963 P. M-13",
+   "type": "Transcript"
+  },
+  "N2307": {
+   "attached_to": [
+    {
+     "id": "C1474",
+     "type": "citation"
+    }
+   ],
+   "change": 1795615623,
+   "flags": [],
+   "handle": "1054be5055061b194bc5c2079432",
+   "html": "<p>2026-11-25 (karel): Places Lorraine Wacek (Ancestry 212818118697, add_person 2026-11-24_101040 in this same batch) as a Birth child of the existing family F0195 = Edward A. Wacek I0420 (Ancestry 212817191191) x Carrie Mertens I0421 (Ancestry 212817394020), as 2026-11-22_183011 placed Dana by Ancestry ID. Her obituary: &quot;daughter of the late Edward and Mrs. Carrie Mertens Wacek&quot;; the 1940 census (attached on Ancestry) lists her as daughter in Edward and Carrie&#x27;s household in Two Rivers. Checked the 24 Nov export (7c0a5fd): F0195 = father I0420, mother I0421, children [], type Married. add_family is not used: F0195 exists. Ancestry shows Edward and Carrie as her parents.</p>",
+   "id": "N2307",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-25 (karel): Places Lorraine Wacek (Ancestry 212818118697, add_person 2026-11-24_101040 in this same batch) as a Birth child of the existing family F0195 = Edward A. Wacek I0420 (Ancestry 212817191191) x Carrie Mertens I0421 (Ancestry 212817394020), as 2026-11-22_183011 placed Dana by Ancestry ID. Her obituary: \"daughter of the late Edward and Mrs. Carrie Mertens Wacek\"; the 1940 census (attached on Ancestry) lists her as daughter in Edward and Carrie's household in Two Rivers. Checked the 24 Nov export (7c0a5fd): F0195 = father I0420, mother I0421, children [], type Married. add_family is not used: F0195 exists. Ancestry shows Edward and Carrie as her parents.",
+   "type": "Research"
   }
  },
  "people": {
@@ -175568,6 +175800,20 @@
    }
   },
   "I0401": {
+   "alt_names": [
+    {
+     "call": "",
+     "display": "Anna Wacek",
+     "first": "Anna",
+     "nick": "",
+     "prefix": "",
+     "sort": "Wacek, Anna",
+     "suffix": "",
+     "surname": "Wacek",
+     "title": "",
+     "type": "Married Name"
+    }
+   ],
    "families": [
     "F0183"
    ],
@@ -177733,6 +177979,20 @@
    "status": "living"
   },
   "I0425": {
+   "alt_names": [
+    {
+     "call": "",
+     "display": "Nancy Konecny",
+     "first": "Nancy",
+     "nick": "",
+     "prefix": "",
+     "sort": "Konecny, Nancy",
+     "suffix": "",
+     "surname": "Konecny",
+     "title": "",
+     "type": "Married Name"
+    }
+   ],
    "families": [
     "F0198"
    ],
@@ -177775,6 +178035,20 @@
    "status": "living"
   },
   "I0428": {
+   "alt_names": [
+    {
+     "call": "",
+     "display": "Lisa Youmans",
+     "first": "Lisa",
+     "nick": "",
+     "prefix": "",
+     "sort": "Youmans, Lisa",
+     "suffix": "",
+     "surname": "Youmans",
+     "title": "",
+     "type": "Married Name"
+    }
+   ],
    "families": [
     "F0200"
    ],
@@ -177798,6 +178072,20 @@
    "status": "living"
   },
   "I0429": {
+   "alt_names": [
+    {
+     "call": "",
+     "display": "Kathryn Chavez",
+     "first": "Kathryn",
+     "nick": "",
+     "prefix": "",
+     "sort": "Chavez, Kathryn",
+     "suffix": "",
+     "surname": "Chavez",
+     "title": "",
+     "type": "Married Name"
+    }
+   ],
    "families": [
     "F0201"
    ],
@@ -177821,6 +178109,20 @@
    "status": "living"
   },
   "I0430": {
+   "alt_names": [
+    {
+     "call": "",
+     "display": "Kari Haege",
+     "first": "Kari",
+     "nick": "",
+     "prefix": "",
+     "sort": "Haege, Kari",
+     "suffix": "",
+     "surname": "Haege",
+     "title": "",
+     "type": "Married Name"
+    }
+   ],
    "families": [
     "F0202"
    ],
@@ -177866,6 +178168,20 @@
    "status": "living"
   },
   "I0432": {
+   "alt_names": [
+    {
+     "call": "",
+     "display": "Rebekah Baumann",
+     "first": "Rebekah",
+     "nick": "",
+     "prefix": "",
+     "sort": "Baumann, Rebekah",
+     "suffix": "",
+     "surname": "Baumann",
+     "title": "",
+     "type": "Married Name"
+    }
+   ],
    "families": [
     "F0199"
    ],
@@ -177912,16 +178228,15 @@
    "gender": "U",
    "handle": "105437818b9b1125b55115bf3685",
    "id": "I0434",
-   "minor": true,
    "name": {
     "call": "",
-    "display": "Living child",
-    "first": "",
+    "display": "Charlotte Youmans",
+    "first": "Charlotte",
     "nick": "",
     "prefix": "",
-    "sort": "Living child",
+    "sort": "Youmans, Charlotte",
     "suffix": "",
-    "surname": "",
+    "surname": "Youmans",
     "title": ""
    },
    "parents": [
@@ -178106,6 +178421,20 @@
    "status": "living"
   },
   "I0443": {
+   "alt_names": [
+    {
+     "call": "",
+     "display": "Bryanna Willems",
+     "first": "Bryanna",
+     "nick": "",
+     "prefix": "",
+     "sort": "Willems, Bryanna",
+     "suffix": "",
+     "surname": "Willems",
+     "title": "",
+     "type": "Married Name"
+    }
+   ],
    "families": [
     "F0205"
    ],
@@ -178236,6 +178565,20 @@
    "status": "living"
   },
   "I0449": {
+   "alt_names": [
+    {
+     "call": "",
+     "display": "Melody Haege",
+     "first": "Melody",
+     "nick": "",
+     "prefix": "",
+     "sort": "Haege, Melody",
+     "suffix": "",
+     "surname": "Haege",
+     "title": "",
+     "type": "Married Name"
+    }
+   ],
    "families": [
     "F0203"
    ],
@@ -178367,6 +178710,20 @@
    "status": "living"
   },
   "I0455": {
+   "alt_names": [
+    {
+     "call": "",
+     "display": "Whitney Haege",
+     "first": "Whitney",
+     "nick": "",
+     "prefix": "",
+     "sort": "Haege, Whitney",
+     "suffix": "",
+     "surname": "Haege",
+     "title": "",
+     "type": "Married Name"
+    }
+   ],
    "families": [
     "F0204"
    ],
@@ -178519,6 +178876,20 @@
    "status": "living"
   },
   "I0462": {
+   "alt_names": [
+    {
+     "call": "",
+     "display": "Stephanie Toepel",
+     "first": "Stephanie",
+     "nick": "",
+     "prefix": "",
+     "sort": "Toepel, Stephanie",
+     "suffix": "",
+     "surname": "Toepel",
+     "title": "",
+     "type": "Married Name"
+    }
+   ],
    "families": [
     "F0206"
    ],
@@ -178714,6 +179085,20 @@
    "status": "living"
   },
   "I0468": {
+   "alt_names": [
+    {
+     "call": "",
+     "display": "Ashley Welu",
+     "first": "Ashley",
+     "nick": "",
+     "prefix": "",
+     "sort": "Welu, Ashley",
+     "suffix": "",
+     "surname": "Welu",
+     "title": "",
+     "type": "Married Name"
+    }
+   ],
    "families": [
     "F0210"
    ],
@@ -178737,6 +179122,20 @@
    "status": "living"
   },
   "I0469": {
+   "alt_names": [
+    {
+     "call": "",
+     "display": "Jen Dressel",
+     "first": "Jen",
+     "nick": "",
+     "prefix": "",
+     "sort": "Dressel, Jen",
+     "suffix": "",
+     "surname": "Dressel",
+     "title": "",
+     "type": "Married Name"
+    }
+   ],
    "families": [
     "F0209"
    ],
@@ -178842,6 +179241,20 @@
    "status": "living"
   },
   "I0474": {
+   "alt_names": [
+    {
+     "call": "",
+     "display": "Marchelle D. Wood",
+     "first": "Marchelle D.",
+     "nick": "",
+     "prefix": "",
+     "sort": "Wood, Marchelle D.",
+     "suffix": "",
+     "surname": "Wood",
+     "title": "",
+     "type": "Married Name"
+    }
+   ],
    "families": [
     "F0213"
    ],
@@ -178863,7 +179276,9 @@
    "status": "living"
   },
   "I0475": {
-   "families": [],
+   "families": [
+    "F0214"
+   ],
    "gender": "F",
    "handle": "10543788132868f1f64439404cf0",
    "id": "I0475",
@@ -178921,7 +179336,9 @@
     "surname": "",
     "title": ""
    },
-   "parents": [],
+   "parents": [
+    "F0214"
+   ],
    "status": "living"
   },
   "I0478": {
@@ -178988,6 +179405,20 @@
    "status": "living"
   },
   "I0481": {
+   "alt_names": [
+    {
+     "call": "",
+     "display": "Eleanor Stone",
+     "first": "Eleanor",
+     "nick": "",
+     "prefix": "",
+     "sort": "Stone, Eleanor",
+     "suffix": "",
+     "surname": "Stone",
+     "title": "",
+     "type": "Married Name"
+    }
+   ],
    "families": [],
    "gender": "F",
    "handle": "10543788fb4923422b69b897cffe",
@@ -179009,6 +179440,20 @@
    "status": "living"
   },
   "I0482": {
+   "alt_names": [
+    {
+     "call": "",
+     "display": "Virginia Wood Dagel",
+     "first": "Virginia Wood",
+     "nick": "",
+     "prefix": "",
+     "sort": "Dagel, Virginia Wood",
+     "suffix": "",
+     "surname": "Dagel",
+     "title": "",
+     "type": "Married Name"
+    }
+   ],
    "families": [
     "F0216"
    ],
@@ -179053,6 +179498,20 @@
    "status": "living"
   },
   "I0484": {
+   "alt_names": [
+    {
+     "call": "",
+     "display": "Jennifer Lynn Nigbor",
+     "first": "Jennifer Lynn",
+     "nick": "",
+     "prefix": "",
+     "sort": "Nigbor, Jennifer Lynn",
+     "suffix": "",
+     "surname": "Nigbor",
+     "title": "",
+     "type": "Married Name"
+    }
+   ],
    "families": [
     "F0217"
    ],
@@ -179141,6 +179600,20 @@
    "status": "living"
   },
   "I0488": {
+   "alt_names": [
+    {
+     "call": "",
+     "display": "Elizabeth Katherine Kiley",
+     "first": "Elizabeth Katherine",
+     "nick": "",
+     "prefix": "",
+     "sort": "Kiley, Elizabeth Katherine",
+     "suffix": "",
+     "surname": "Kiley",
+     "title": "",
+     "type": "Married Name"
+    }
+   ],
    "families": [
     "F0218"
    ],
@@ -179185,6 +179658,20 @@
    "status": "living"
   },
   "I0490": {
+   "alt_names": [
+    {
+     "call": "",
+     "display": "Barbara Crusan",
+     "first": "Barbara",
+     "nick": "",
+     "prefix": "",
+     "sort": "Crusan, Barbara",
+     "suffix": "",
+     "surname": "Crusan",
+     "title": "",
+     "type": "Married Name"
+    }
+   ],
    "families": [
     "F0219"
    ],
@@ -179294,6 +179781,20 @@
    "status": "living"
   },
   "I0495": {
+   "alt_names": [
+    {
+     "call": "",
+     "display": "Georgia Wood",
+     "first": "Georgia",
+     "nick": "",
+     "prefix": "",
+     "sort": "Wood, Georgia",
+     "suffix": "",
+     "surname": "Wood",
+     "title": "",
+     "type": "Married Name"
+    }
+   ],
    "families": [
     "F0220"
    ],
@@ -179315,6 +179816,20 @@
    "status": "living"
   },
   "I0496": {
+   "alt_names": [
+    {
+     "call": "",
+     "display": "Whitney Tamara Abshire",
+     "first": "Whitney Tamara",
+     "nick": "",
+     "prefix": "",
+     "sort": "Abshire, Whitney Tamara",
+     "suffix": "",
+     "surname": "Abshire",
+     "title": "",
+     "type": "Married Name"
+    }
+   ],
    "families": [
     "F0221"
    ],
@@ -180181,7 +180696,7 @@
     "type": "Birth",
     "year": 1914
    },
-   "change": 1795534213,
+   "change": 1795615622,
    "citations": [
     "C1462",
     "C1468"
@@ -180233,7 +180748,9 @@
     "type": "Birth Name"
    },
    "notes": [],
-   "parents": [],
+   "parents": [
+    "F0188"
+   ],
    "provenance": [
     "agent-karel",
     "agent-proposed"
@@ -180282,7 +180799,7 @@
     "type": "Birth",
     "year": 1913
    },
-   "change": 1795534214,
+   "change": 1795615623,
    "citations": [
     "C1463",
     "C1469",
@@ -180337,7 +180854,9 @@
     "type": "Birth Name"
    },
    "notes": [],
-   "parents": [],
+   "parents": [
+    "F0195"
+   ],
    "provenance": [
     "agent-karel",
     "agent-proposed"
@@ -198232,7 +198751,8 @@
    "attributes": {},
    "author": "",
    "citations": [
-    "C1462"
+    "C1462",
+    "C1473"
    ],
    "flags": [
     "agent-proposed"
@@ -198432,7 +198952,8 @@
    "author": "",
    "citations": [
     "C1469",
-    "C1472"
+    "C1472",
+    "C1474"
    ],
    "flags": [
     "agent-proposed"
