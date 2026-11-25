@@ -29,6 +29,10 @@
       {% endfor %}
     </div>
     {% endif %}
+    <div class="sidebox">
+      <p class="eyebrow">Tree</p>
+      <a class="linetag c-{{ line_color }}" href="/tree/#long-{{ p.id }}"><span class="band" aria-hidden="true"></span><span class="lt">See {{ p.name.call or (p.name.first or p.name.display).split(' ')[0] }} in the tree <small>ancestors and descendants</small></span></a>
+    </div>
     {% if full %}
     <nav class="sidebox jumps" aria-label="Sections">
       <p class="eyebrow">On this page</p>

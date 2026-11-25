@@ -12,6 +12,7 @@
 <link rel="preload" href="/static/fonts/bricolage-grotesque-latin-standard-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/static/fonts/source-serif-4-latin-standard-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/static/site.css">
+{% block styles %}{% endblock %}
 <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
 <script>try{var t=localStorage.getItem('fk-theme');if(t==='light'||t==='dark'){document.documentElement.setAttribute('data-theme',t)}}catch(e){}</script>
 </head>
@@ -21,6 +22,7 @@
 <header class="top">
   <a class="brand" href="/"{% if current == 'home' %} aria-current="page"{% endif %}><span class="wm">Kone<i>č</i>ný → Konecny</span></a>
   <nav class="nav" aria-label="Site">
+    <a href="/tree/"{% if current == 'tree' %} aria-current="page"{% endif %}>Tree</a>
     <a href="/people/"{% if current == 'people' %} aria-current="page"{% endif %}>People</a>
     <a href="/places/"{% if current == 'places' %} aria-current="page"{% endif %}>Places</a>
     <a href="/sources/"{% if current == 'sources' %} aria-current="page"{% endif %}>Sources</a>
@@ -35,9 +37,11 @@
 <main id="main" class="{% block mainclass %}{% endblock %}">
 {% block body %}{% endblock %}
 </main>
+{% block footer %}
 <footer class="foot">
   <nav class="footnav" aria-label="Site, repeated">
     <a href="/">Home</a>
+    <a href="/tree/">Tree</a>
     {% for l in lines %}<a class="c-{{ l.color }}" href="/line/{{ l.slug }}/">{{ l.title|replace('The ', '')|replace(', back to the Mayflower', '') }}</a>{% endfor %}
     <a href="/people/">People</a>
     <a href="/places/">Places</a>
@@ -49,6 +53,7 @@
   <p>{{ cfg.site_name }} · built {{ now }} from the research database as of {{ meta.generated[:10] }} · {{ meta.counts_people.full + meta.counts_people.living }} people: {{ meta.counts_people.full }} with their records, {{ meta.counts_people.living }} living by name only.</p>
   <p>Review states are shown as they stand in the database: <span class="stamp human">reviewed</span> by a person, <span class="stamp ai">AI-checked</span> against its own citation, <span class="stamp un">unreviewed</span> not yet checked, <span class="stamp needs">needs a look</span> flagged by the checker. <a href="/about/">How this site works</a>.</p>
 </footer>
+{% endblock %}
 <script src="/static/site.js" defer></script>
 </body>
 </html>

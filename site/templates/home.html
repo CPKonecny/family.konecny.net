@@ -16,6 +16,20 @@
 
 {% if body %}<section class="prose intro">{{ body|md|safe }}</section>{% endif %}
 
+{% if tree_people %}
+<section class="lines storyhome treehome">
+  <h2 class="sidehead"><a href="/tree/">The family tree</a> <small>everyone in one view</small></h2>
+  <div class="linegrid">
+    <a class="linecard storycard c-neutral" href="/tree/">
+      <span class="band" aria-hidden="true"></span>
+      <span class="lt">Walk back through the generations</span>
+      <span class="ls">Stand with anyone in the family and see their parents, grandparents and everyone behind them, as far as the records go. Or open the same people as a tree or a fan.</span>
+      <span class="lm">{{ tree_people }} people · long view · tree · fan</span>
+    </a>
+  </div>
+</section>
+{% endif %}
+
 {% for side in sides %}
 <section class="lines">
   {% if side.title %}<h2 class="sidehead">{{ side.title }}{% if side.subtitle %} <small>{{ side.subtitle|typo }}</small>{% endif %}</h2>{% endif %}

@@ -796,6 +796,85 @@ class Site:
         return {**line, "stations": stations, "generations": len(stations)}
 
 
+def tree_data(site: "Site", lines: list, board: list) -> dict:
+    """What the tree explorer (/tree/) draws, written to /data/tree.json: everyone's name and family links, and
+    for people shown in full their years, birth and death towns, first crossing, the review state of their
+    facts (the same counts as the person page's summary bar) and the open research cards that name them.
+    A living person carries name, gender and family links, exactly as on their page; a child under 18 is the
+    placeholder. Names are the ones the rest of the site shows: "n" is shown_name(), "m" the married surname
+    in it; the picture itself labels people by first name and birth surname, as a pedigree does.
+    Nothing is taken from anywhere but the published bundle."""
+    cfg = site.cfg
+    slug_of = {}
+    for line in cfg.get("lines", []):
+        for s in line.get("surnames", []):
+            slug_of.setdefault(s.lower(), line["slug"])
+    cards = collections.defaultdict(list)
+    for it in board:
+        if it.get("status") == "done":
+            continue
+        for p in it.get("people") or []:
+            cards[p["id"]].append([it["id"], it["title"], it.get("status", "open")])
+    people = {}
+    for pid, p in site.people.items():
+        nm = p["name"]
+        o = {"n": site.shown_name(p), "f": nm.get("call") or nm.get("first") or "", "s": nm.get("surname") or "", "g": p.get("gender") or "U",
+             "pf": [f for f in p.get("parents", []) if f in site.families], "fs": [f for f in p.get("families", []) if f in site.families]}
+        if p.get("minor"):
+            o["st"] = "m"
+        elif p["status"] != "full":
+            o["st"] = "l"
+        else:
+            o["st"] = "f"
+            b, d = p.get("birth") or {}, p.get("death") or {}
+            if b.get("year"):
+                o["by"], o["bt"] = b["year"], year_text(b.get("date"), "") or str(b["year"])
+            if d.get("year"):
+                o["dy"], o["dt"] = d["year"], year_text(d.get("date"), "") or str(d["year"])
+            if b.get("place"):
+                o["bp"] = site.town(b["place"])
+            if d.get("place"):
+                o["dp"] = site.town(d["place"])
+            facts = site.facts_of(p)
+            rs = site.review_summary(facts)
+            o["ev"] = [rs["total"], rs["human"], rs["ai"], rs["un"], rs["needs"]]
+            cross = next((f for f in facts if f["crossing"] and (f["date"] or {}).get("year")), None)
+            if cross:
+                o["x"] = {"y": cross["date"]["year"], "t": cross["event"]["type"], "p": site.town(cross["place"]["id"]) if cross["place"] else ""}
+            if pid in cards:
+                o["rq"] = cards[pid]
+        married = site.heading_married(p)
+        if married:
+            o["m"] = married["surname"]
+        slug = slug_of.get((nm.get("surname") or "").lower())
+        if slug:
+            o["c"] = slug
+        people[pid] = o
+    families = {}
+    for fid, f in site.families.items():
+        kids = []
+        for c in f.get("children", []):
+            if c["ref"] not in site.people:
+                continue
+            fr, mr = c.get("frel") or "", c.get("mrel") or ""
+            kids.append([c["ref"], fr, mr] if (fr or mr) else c["ref"])
+        families[fid] = {"a": f.get("father") if f.get("father") in site.people else None,
+                         "b": f.get("mother") if f.get("mother") in site.people else None, "k": kids}
+    named = [pid for pid, o in people.items() if o["st"] != "m"]
+    start = site.resolve(str(cfg.get("root_person") or ""))
+    if start not in named:
+        start = next((ln["stations"][0]["person"]["id"] for ln in lines), None)
+    if start not in named:
+        start = min(named, key=lambda pid: -len(people[pid]["pf"]) - len(people[pid]["fs"])) if named else None
+    return {
+        "meta": {"generated": str(site.meta.get("generated", ""))[:10], "people": len(people)},
+        "root": start, "priv": cfg.get("private_site", ""), "events": cfg.get("world_events", []),
+        "lines": [{"slug": ln["slug"], "title": ln["title"], "short": LINE_SHORT.get(ln["slug"]) or ln["title"], "color": ln["color"],
+                   "path": [st["person"]["id"] for st in ln["stations"]]} for ln in lines],
+        "P": people, "F": families,
+    }
+
+
 # ----------------------------------------------------------------------------- #
 # build
 # ----------------------------------------------------------------------------- #
@@ -1109,8 +1188,13 @@ def main(argv=None) -> int:
           flagged_total=sum(len(r["facts"]) for r in flagged_rows), activity=activity, activity_cols=activity_cols,
           recent=recent, stats=stats, rs=rs, title="Research", nav="research")
     write("questions/index.html", "redirect.html", target="/research/", title="Research")
+    # the tree explorer: one page, and the small data file it draws from
+    tree = tree_data(site, lines, board)
+    if tree["root"]:
+        write("tree/index.html", "tree.html", title="The family tree", nav="tree")
     write("index.html", "home.html", sides=sides, lines=lines, stats=stats, rs=rs, recent=recent,
-          stories=stories, asks=asks[:3], body=content("home.md"), title=None, nav="home")
+          stories=stories, asks=asks[:3], body=content("home.md"), title=None, nav="home",
+          tree_people=len(tree["P"]) if tree["root"] else 0)
     write("404.html", "404.html", title="Not found")
 
     # static, data, media, CNAME
@@ -1118,6 +1202,8 @@ def main(argv=None) -> int:
     os.makedirs(os.path.join(out, "data"), exist_ok=True)
     with open(os.path.join(out, "data", "bundle.json"), "w", encoding="utf-8") as f:
         json.dump(bundle, f, ensure_ascii=False, separators=(",", ":"))
+    with open(os.path.join(out, "data", "tree.json"), "w", encoding="utf-8") as f:
+        json.dump(tree, f, ensure_ascii=False, separators=(",", ":"))
     if os.path.isdir(args.media):
         shutil.copytree(args.media, os.path.join(out, "media"), dirs_exist_ok=True)
     cname = os.path.join(ROOT, "CNAME")

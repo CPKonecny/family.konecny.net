@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block description %}The whole family in one view: walk back through the generations, or open it as a tree or a fan.{% endblock %}
+{% block head %}<script>document.documentElement.classList.add('tx-page')</script>{% endblock %}
+{% block styles %}<link rel="stylesheet" href="/static/tree.css">{% endblock %}
+{% block bodyclass %}treepage{% endblock %}
+{% block body %}
+<h1 class="vh">The family tree</h1>
+<div class="tx" id="tx" data-src="/data/tree.json">
+  <div class="tx-bar">
+    <div class="tx-seg" role="group" aria-label="View">
+      <button type="button" data-lens="long" aria-pressed="true">Long view</button><button type="button" data-lens="tree" aria-pressed="false">Tree</button><button type="button" data-lens="fan" aria-pressed="false">Fan</button>
+    </div>
+    <div class="tx-find">
+      <label class="vh" for="tx-q">Find a person</label>
+      <input id="tx-q" type="search" placeholder="Find a person" autocomplete="off" spellcheck="false">
+      <ul class="tx-results" id="tx-results" hidden></ul>
+    </div>
+  </div>
+  <div class="tx-stage" id="tx-stage">
+    <canvas id="tx-cv" tabindex="0" role="img" aria-label="The family tree, drawn as a picture. The person in view and their parents, partner, children, brothers and sisters are listed after it."></canvas>
+    <div class="tx-year" id="tx-year" aria-hidden="true"><b id="tx-yr"></b><span id="tx-yrsub"></span></div>
+    <div class="tx-tools">
+      <button type="button" class="tx-go" id="tx-fly" aria-pressed="false">Fly back</button>
+      <button type="button" class="tx-zoom" id="tx-zin" aria-label="Zoom in">+</button>
+      <button type="button" class="tx-zoom" id="tx-zout" aria-label="Zoom out">−</button>
+      <button type="button" id="tx-fit">Reset</button>
+    </div>
+    <p class="tx-empty" id="tx-empty" hidden></p>
+    <div class="tx-foot">
+      <div class="tx-when" id="tx-when"><button type="button" class="tx-tog" id="tx-desc" aria-pressed="false">Descendants</button><input id="tx-slide" type="range" min="0" max="1000" step="1" value="1000" aria-label="Year"><span>Now</span></div>
+      <div class="tx-chips" id="tx-chips"></div>
+    </div>
+  </div>
+  <aside class="tx-panel" id="tx-panel" aria-live="polite"><noscript><p class="tx-note">The tree needs JavaScript. Everyone in it is also on the <a href="/people/">People</a> page.</p></noscript></aside>
+</div>
+<script src="/static/tree.js" defer></script>
+{% endblock %}
+{% block footer %}{% endblock %}

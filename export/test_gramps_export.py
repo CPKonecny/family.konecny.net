@@ -10,7 +10,9 @@ Builds a small invented tree as a raw cache (the form --raw-dir writes), runs th
     no name, gender or page; text naming them is held back (notes, event descriptions, media descriptions),
     and so are the parts of content/ that name them, which the build then leaves out;
   * adopted, step and foster children are labelled, in living families too, but never a child under 18;
-  * the leak audit passes on all that, and fails when a child's name gets into the bundle another way.
+  * the leak audit passes on all that, and fails when a child's name gets into the bundle another way;
+  * the tree explorer's data (data/tree.json) carries a name and family links for a living person and the
+    placeholder for a child, and nothing else about either.
 
 Needs only the standard library for the export; the site build needs jinja2 and markdown
 (site/requirements.txt), and that part is skipped when they are missing.
@@ -403,6 +405,22 @@ def test_the_site_shows_the_placeholder_and_the_labels(work):
     research = pages["research/index.html"]
     assert "last changed on <b>20 November 2026</b>" in research, "outside git, the board's own date"
     assert "deed" in research and "school records" not in research
+    # the tree explorer draws from data/tree.json: a living person is a name and family links, a child the placeholder
+    tree = json.loads(pages["data/tree.json"])
+    assert "tree/index.html" in pages and tree["root"] == t.gid(h["erik"]), tree["root"]
+    assert set(tree["P"]) == set(B["people"]) and set(tree["F"]) == set(B["families"])
+    for pid, o in tree["P"].items():
+        if o["st"] != "f":
+            assert set(o) <= {"n", "f", "s", "m", "g", "pf", "fs", "st", "c"}, f"{pid} is not shown in full but carries {sorted(o)}"
+        assert (o["st"] == "f") == (B["people"][pid]["status"] == "full"), pid
+    for key in ("tove", "nils", "young_anton"):
+        o = tree["P"][t.gid(h[key])]
+        assert (o["st"], o["n"], o["f"], o["s"], o["g"]) == ("m", "Living child", "", "", "U"), o
+    maja_t = tree["P"][t.gid(h["maja"])]             # names are the ones the rest of the site shows
+    assert (maja_t["st"], maja_t["n"], maja_t["s"], maja_t["m"]) == ("l", "Maja (Holm) Lindqvist", "Holm", "Lindqvist"), maja_t
+    kid = [c for c in tree["F"][fam["id"]]["k"] if isinstance(c, list)]
+    assert kid == [[t.gid(h["ingrid"]), "Adopted", "Adopted"]], "adopted is carried for the adult, never for a child under 18"
+    assert '<a href="/tree/"' in pages["index.html"] and f'/tree/#long-{t.gid(h["ingrid"])}"' in ingrid
 
 
 TESTS = [v for k, v in sorted(globals().items()) if k.startswith("test_")]

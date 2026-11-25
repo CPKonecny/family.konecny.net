@@ -6,7 +6,7 @@ The public family-history site, generated from a public-safe export of the Gramp
 export/      gramps_export.py (runs on the server), overrides.json, publish.sh, README (runbook)
 data/        bundle.json + report.md — written by the export, committed by the server, never by hand
 media/       public media files + thumbnails — same
-site/        build.py, config.json, templates/, static/ (site.css, site.js, fonts/) — the generator
+site/        build.py, config.json, templates/, static/ (site.css, site.js, tree.css, tree.js, fonts/) — the generator
 content/     about.md, research/board.json, stories/ — hand-written (the export never writes here; see the READMEs there)
 tools/       checks and repairs run by hand or in the build (check_stories.py runs in both workflows; apply_update.py pulls a code update from a git bundle)
 .github/     pages.yml: on every push to main, check the stories, build _site/ and deploy; check.yml: build every pull request
@@ -48,8 +48,20 @@ Everything on the person, family, place and source pages comes from `data/bundle
 
 The three typefaces (Bricolage Grotesque, Source Serif 4, IBM Plex Mono — all SIL Open Font License) are served from `site/static/fonts/`; the site makes no third-party requests.
 
+## The tree explorer
+
+`/tree/` shows everyone in one picture, three ways. **Long view**: depth is time; the person you stand with is at the front, each generation behind shares the width of the view (father's side left, mother's side right), and the view narrows to the branch you walk into. **Tree**: the same people from above, ancestors up and descendants down, on a true time scale. **Fan**: ancestors in rings, each wedge sized by how much of that branch is known; it opens on the inner rings, where the names can be read, and Fit shows all of it. Any person can be the centre (“Stand here”), the lines from `config.json` can be followed like a flight, and the Evidence switch recolours everything by the review state of each person's facts.
+
+- `site/static/tree.js` draws it all on one canvas, with no library and no third-party request. `site/static/tree.css` holds the page chrome; every class starts with `tx-`. `site/templates/tree.html` is the page.
+- The data is `/data/tree.json` (about 100 KB), written by `tree_data()` in `site/build.py` from the same bundle as the rest of the site: names and family links for everyone; years, towns, first crossing, review counts and open research cards only for people shown in full. A living person is a name and family links, a child under 18 the “Living child” placeholder. The export test checks that. Names in the panel, the lists and the search are the ones the rest of the site shows (“First (Birth) Married”); the picture labels people by first name and birth surname, as a pedigree does.
+- Living and undated people have no public year. They are placed by generation from their nearest dated relatives, drawn hollow, and no year line is drawn from the first of them onward.
+- Links in: `/tree/#long-I0145` (also `tree-` and `fan-`) opens a view on a person; `/tree/#long-I0141-wood` also follows that line. Person pages, line pages and the home page link this way.
+- In the explorer the Morris line has its own colour (`--t-morris` in `tree.css`), because a tree rooted on one of the children shows both sides at once. Elsewhere on the site it still borrows the Wood colour from `config.json`.
+
 ## Roadmap
 
 - **v0** (this): lineage routes, person and family pages with evidence ladders, citation and source pages with transcriptions, places, family stories, the research board, about.
-- **v1**: migration map with a time slider (after the geocoding backfill into Gramps), lifespan timeline against world events.
-- **v2**: how-are-we-related path finder in the browser, rooted-at-me entry links, name and place evolution, period map overlays.
+- **Tree explorer** (25 Nov 2026): long view, tree and fan on one engine; stand with anyone; follow a line; evidence colouring.
+- **Next on the same engine**: how-are-we-related path finder; a “start from me” link for each relative; brick walls that open their research card from the picture.
+- **v1**: migration map with a time slider and a lifespan timeline against world events, sharing the explorer's year control.
+- **v2**: name and place evolution, period map overlays.
