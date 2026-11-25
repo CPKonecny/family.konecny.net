@@ -15,7 +15,7 @@
   <section class="kin">
     <h2>Children</h2>
     <ol class="kids-list">{% for c in children %}<li>{{ plink(c.person) }}{{ rel(c.rel) }}</li>{% endfor %}</ol>
-    {% if kids_note %}<p class="muted small">Children under 18 are shown as “Living child”, without their names; they appear by name from their 18th birthday.</p>{% endif %}
+    {% if kids_note %}<p class="muted small">Children under 18 are shown as “Living child”, without their names; they appear by name from their 18th birthday. Each one opens in the research database, for family members who have the login.</p>{% endif %}
   </section>
   {% endif %}
 
@@ -28,8 +28,6 @@
 
   {% if notes %}<section class="notes"><h2>Notes</h2>{% for n in notes %}{{ notecard(n) }}{% endfor %}</section>{% endif %}
   {% if media %}<section class="gallery"><h2>Images</h2><div class="mediarow">{% for m in media %}{{ mediacard(m) }}{% endfor %}</div></section>{% endif %}
-  {% if f.status == 'full' %}
   <footer class="pfoot"><p>Research database: <a href="{{ cfg.private_site }}/family/{{ f.id }}" rel="noopener">{{ f.id }}</a> (family login)</p></footer>
-  {% endif %}
 </article>
 {% endblock %}

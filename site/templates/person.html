@@ -16,7 +16,7 @@
     </p>
     {{ summarybar(summary) }}
     {% else %}
-    <p class="living-note">A living member of the family. This site shows only the name and the family links; nothing else is published for living people.</p>
+    <p class="living-note">A living member of the family. This site shows only the name and the family links; nothing else is published for living people. Family members with the login can see more in the research database (link at the foot of the page).</p>
     {% endif %}
   </header>
 
@@ -57,7 +57,7 @@
       {% endfor %}
       {% if not parent_groups and not siblings and not families %}<div><dd class="muted">No family links recorded.</dd></div>{% endif %}
     </dl>
-    {% if kids_note %}<p class="muted small">Children under 18 are shown as “Living child”, without their names; they appear by name from their 18th birthday.</p>{% endif %}
+    {% if kids_note %}<p class="muted small">Children under 18 are shown as “Living child”, without their names; they appear by name from their 18th birthday. Each one opens in the research database, for family members who have the login.</p>{% endif %}
   </section>
 
   {% if full %}
@@ -103,10 +103,10 @@
   </section>
   {% endif %}
 
-  <footer class="pfoot" id="record">
-    <p>Research database: <a href="{{ cfg.private_site }}/person/{{ p.id }}" rel="noopener">{{ p.id }}</a> (family login){% if p.xref and p.xref.ancestry %} · Ancestry tree person {{ p.xref.ancestry }}{% endif %}{% if p.provenance %} · from {{ p.provenance|join(', ') }}{% endif %}</p>
-  </footer>
   {% endif %}
+  <footer class="pfoot" id="record">
+    <p>Research database: <a href="{{ cfg.private_site }}/person/{{ p.id }}" rel="noopener">{{ p.id }}</a> (family login){% if full and p.xref and p.xref.ancestry %} · Ancestry tree person {{ p.xref.ancestry }}{% endif %}{% if full and p.provenance %} · from {{ p.provenance|join(', ') }}{% endif %}</p>
+  </footer>
   </div>
 </article>
 {% endblock %}

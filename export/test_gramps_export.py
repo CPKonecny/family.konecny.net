@@ -347,12 +347,16 @@ def test_the_site_shows_the_placeholder_and_the_labels(work):
         assert f"person/{t.gid(h[key])}/index.html" not in pages, "a child under 18 has no page"
     fam = next(f for f in B["families"].values() if f["father"] == t.gid(h["erik"]))
     fpage = pages[f"family/{fam['id']}/index.html"]
-    assert fpage.count('<span class="p minor"') == 3 and "Living child" in fpage
+    assert fpage.count('class="p minor"') == 3 and "Living child" in fpage
+    for key in ("tove", "nils", "young_anton"):          # each opens in the research database, behind the family login
+        assert f'<a class="p minor" href="{cfg["private_site"]}/person/{t.gid(h[key])}"' in fpage, fpage
+    assert f'{cfg["private_site"]}/family/{fam["id"]}' in fpage, "a living family links to the research database too"
     assert 'Ingrid Lindqvist</a> <span class="yrs">living</span> <span class="rel">adopted</span>' in fpage, fpage
     assert "<span class=\"rel\">adopted</span>" not in fpage.split("Ingrid")[0], "no label on the children under 18"
     assert "Children under 18 are shown as" in fpage
     ingrid = pages[f"person/{t.gid(h['ingrid'])}/index.html"]
     assert "<dt>Adoptive parents</dt>" in ingrid, ingrid
+    assert f'{cfg["private_site"]}/person/{t.gid(h["ingrid"])}' in ingrid, "a living person's page links to the research database"
     people_index = pages["people/index.html"]
     assert "Living child" not in people_index and "Saga Lindqvist" in people_index
     assert "Anton farmed by the lake for forty years." in pages["stories/lake/index.html"]
