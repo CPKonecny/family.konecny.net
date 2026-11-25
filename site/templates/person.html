@@ -1,14 +1,14 @@
 {% extends "base.html" %}
 {% from "_macros.html" import plink, rel, placelink, datetext, stamp, fact, ladder, notecard, mediacard, summarybar %}
-{% block description %}{{ p.name.display }}{% if p.status == 'full' %}, {{ p|lifespan }}{% if p.birth and p.birth.place %}, born {{ site.place_name(p.birth.place) }}{% endif %}{% endif %}.{% endblock %}
+{% block description %}{{ p|shown }}{% if p.status == 'full' %}, {{ p|lifespan }}{% if p.birth and p.birth.place %}, born {{ site.place_name(p.birth.place) }}{% endif %}{% endif %}.{% endblock %}
 {% block body %}
 {% set full = p.status == 'full' %}
 <article class="person c-{{ line_color }}">
   <header class="phead">
     <p class="eyebrow">{% if full %}{{ p.name.surname }}{% else %}Living{% endif %} · {{ p.id }}</p>
-    <h1>{{ p.name.display }}</h1>
+    <h1>{{ p|shown }}</h1>
+    {% if also or extras.names %}<p class="aka">also {% for a in also %}{{ a.display }}{% if a.type and a.type != 'Birth Name' %} <small>({{ a.type|lower }})</small>{% endif %}{% if not loop.last or extras.names %}, {% endif %}{% endfor %}{% for a in extras.names %}{{ a.text|typo }}{% if not loop.last %}, {% endif %}{% endfor %}</p>{% endif %}
     {% if full %}
-    {% if p.alt_names or extras.names %}<p class="aka">also {% for a in p.alt_names %}{{ a.display }}{% if a.type and a.type != 'Birth Name' %} <small>({{ a.type|lower }})</small>{% endif %}{% if not loop.last or extras.names %}, {% endif %}{% endfor %}{% for a in extras.names %}{{ a.text|typo }}{% if not loop.last %}, {% endif %}{% endfor %}</p>{% endif %}
     <p class="span">
       <b>{{ p|lifespan }}</b>
       {% if p.birth %} · born {% if p.birth.date %}{{ p.birth.date.text }}{% endif %}{% if p.birth.place %} {{ placelink(site.place(p.birth.place)) }}{% endif %}{% endif %}

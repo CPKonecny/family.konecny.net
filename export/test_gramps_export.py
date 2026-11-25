@@ -24,6 +24,7 @@ import subprocess
 import sys
 import tempfile
 import traceback
+import re
 import unicodedata
 import importlib.util
 from pathlib import Path
@@ -68,14 +69,23 @@ class Tree:
                                  "note_list": [], "media_list": [], "attribute_list": [], "tag_list": [], "change": 1})
         return h
 
-    def person(self, first, surname, gender=1, events=(), tags=(), private=False, notes=(), media=()):
+    def person(self, first, surname, gender=1, events=(), tags=(), private=False, notes=(), media=(), alt=()):
+        """alt: (surname, type) or (surname, type, year) for each alternate name, e.g. ("Lindqvist", "Married Name")"""
         h = self._h("people")
+        alternates = []
+        for a in alt:
+            sur, typ, yr = (tuple(a) + (0,))[:3]
+            alternates.append({"first_name": first, "surname_list": [{"surname": sur, "primary": True, "prefix": ""}],
+                               "title": "", "suffix": "", "call": "", "nick": "", "type": typ, "private": False,
+                               "date": {"dateval": [0, 0, yr, False], "modifier": 0, "quality": 0, "calendar": 0,
+                                        "sortval": yr * 400, "text": ""} if yr else None,
+                               "citation_list": [], "note_list": []})
         self.t["people"].append({
             "handle": h, "gramps_id": f"I{self.n['people']:04d}", "gender": gender, "private": private,
             "primary_name": {"first_name": first, "surname_list": [{"surname": surname, "primary": True, "prefix": ""}],
                              "title": "", "suffix": "", "call": "", "nick": "", "type": "Birth Name",
                              "citation_list": [], "note_list": [], "private": False},
-            "alternate_names": [], "event_ref_list": [{"ref": e, "role": "Primary", "private": False} for e in events],
+            "alternate_names": alternates, "event_ref_list": [{"ref": e, "role": "Primary", "private": False} for e in events],
             "family_list": [], "parent_family_list": [], "tag_list": [self.tag(t) for t in tags],
             "media_list": [{"ref": m, "private": False} for m in media], "citation_list": [],
             "note_list": list(notes), "attribute_list": [], "urls": [], "change": 1})
@@ -143,16 +153,22 @@ def lindqvist():
                                                    t.event("Death", 1970, 1, 9, desc="Mourned by Tove Lindqvist and the parish")],
                      notes=[obit, plain, released], media=[photo, farm])
     erik = t.person("Erik", "Lindqvist", events=[t.event("Birth", 1975, 6, 1)])
-    maja = t.person("Maja", "Holm", gender=0)
+    maja = t.person("Maja", "Holm", gender=0, alt=[("Lindqvist", "Married Name", 1999)])   # living adult, married name
+    # deceased, married twice: the heading takes the last married name, the also-line the earlier one
+    ebba = t.person("Ebba", "Berg", gender=0, alt=[("Nyström", "Married Name"), ("Lindqvist", "Married Name")],
+                    events=[t.event("Birth", 1905, 2, 2), t.event("Death", 1980, 3, 3)])
+    # living, filed with the married surname as the main one: shown as filed until the birth name is known
+    sara = t.person("Sara", "Lindqvist", gender=0, alt=[("Lindqvist", "Married Name")])
     tove = t.person("Tove", "Lindqvist", gender=0, tags=["minor"])
     nils = t.person("Nils", "Lindqvist", events=[t.event("Birth", 2015, 3, 2)])
     ingrid = t.person("Ingrid", "Lindqvist", gender=0, events=[t.event("Birth", 1990, 8, 8)])
     young_anton = t.person("Anton", "Lindqvist", events=[t.event("Birth", 2016, 5, 5)])
     almost = t.person("Saga", "Lindqvist", gender=0, events=[t.event("Birth", 2008, 11, 23)])   # 18 today
-    t.family(anton, "", [erik])
+    t.family(anton, ebba, [erik])
+    t.family("", sara, [])
     t.family(erik, maja, [tove, (nils, "Adopted", "Adopted"), (ingrid, "Adopted", "Adopted"), young_anton, almost])
     return t, {"anton": anton, "erik": erik, "maja": maja, "tove": tove, "nils": nils, "ingrid": ingrid,
-               "young_anton": young_anton, "saga": almost, "obit": obit, "plain": plain, "released": released,
+               "young_anton": young_anton, "saga": almost, "ebba": ebba, "sara": sara, "obit": obit, "plain": plain, "released": released,
                "photo": photo, "farm": farm}
 
 
@@ -247,6 +263,20 @@ def test_content_that_names_a_child_is_marked_by_place(work):
     assert got == [("content/research/board.json", "R1"), ("content/stories/stories.json", "farm")], got
     assert "README" not in json.dumps(B["meta"]["minor_text"])
     assert "names a child under 18" in err and "stories.json (farm)" in report
+
+
+def test_a_living_adult_carries_her_married_name_and_nothing_more(work):
+    t, h = lindqvist()
+    rc, B, _text, report, err, _out = run_export(t, work)
+    assert rc == 0, report[-3000:] + err
+    maja = B["people"][t.gid(h["maja"])]
+    assert maja["status"] == "living" and maja["name"]["display"] == "Maja Holm"
+    assert [(a["surname"], a["type"]) for a in maja["alt_names"]] == [("Lindqvist", "Married Name")], maja
+    assert "date" not in maja["alt_names"][0] and "citations" not in maja["alt_names"][0]
+    ebba = B["people"][t.gid(h["ebba"])]
+    assert ebba["status"] == "full" and [a["surname"] for a in ebba["alt_names"]] == ["Nyström", "Lindqvist"]
+    for key in ("tove", "nils", "young_anton"):
+        assert "alt_names" not in B["people"][t.gid(h[key])]
 
 
 def test_adopted_is_a_relationship_but_not_for_a_child(work):
@@ -357,7 +387,16 @@ def test_the_site_shows_the_placeholder_and_the_labels(work):
     ingrid = pages[f"person/{t.gid(h['ingrid'])}/index.html"]
     assert "<dt>Adoptive parents</dt>" in ingrid, ingrid
     assert f'{cfg["private_site"]}/person/{t.gid(h["ingrid"])}' in ingrid, "a living person's page links to the research database"
+    mpage = pages[f"person/{t.gid(h['maja'])}/index.html"]
+    assert "<h1>Maja (Holm) Lindqvist</h1>" in mpage, re.search(r"<h1>.*?</h1>", mpage).group(0)
+    assert "Erik Lindqvist <span class=\"amp\">&amp;</span> Maja (Holm) Lindqvist" in fpage
+    epage = pages[f"person/{t.gid(h['ebba'])}/index.html"]
+    assert "<h1>Ebba (Berg) Lindqvist</h1>" in epage and "also Ebba Nyström <small>(married name)</small>" in epage, \
+        re.search(r'<p class="aka">.*?</p>', epage, re.S)
+    spage = pages[f"person/{t.gid(h['sara'])}/index.html"]
+    assert "<h1>Sara Lindqvist</h1>" in spage, "a primary that is already the married surname is shown as filed"
     people_index = pages["people/index.html"]
+    assert re.search(r'data-k="maja holm [^"]*maja \(holm\) lindqvist"', people_index), "Lindqvist finds Maja"
     assert "Living child" not in people_index and "Saga Lindqvist" in people_index
     assert "Anton farmed by the lake for forty years." in pages["stories/lake/index.html"]
     assert "stories/farm/index.html" not in pages

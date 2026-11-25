@@ -7,8 +7,8 @@ the server), applies the publication rules, and writes ONE JSON bundle plus the
 public media files. Nothing else ever touches the Gramps server.
 
 Rules (see the bundle schema document for the full statement):
-  1. Living people: name, gender and relationships only. "Living" is Gramps'
-     own probably-alive verdict (GET /api/living/{handle}), overridable per
+  1. Living people: name (with any married names, never their dates), gender
+     and relationships only. "Living" is Gramps' own probably-alive verdict (GET /api/living/{handle}), overridable per
      person in overrides.json (living / deceased / exclude). Children under 18
      (tagged "minor" by the applier, or with a visible birth less than 18
      years ago) are a placeholder, "Living child": no name, gender or page,
@@ -54,7 +54,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 
-VERSION = "0.4.0"
+VERSION = "0.4.1"
 SCHEMA_VERSION = "0.4"
 
 TABLES = [
@@ -73,6 +73,7 @@ ADULT_AGE = 18
 MINOR_LABEL = "Living child"
 MINOR_NAME = {"first": "", "surname": "", "prefix": "", "suffix": "", "title": "", "call": "", "nick": "",
               "display": MINOR_LABEL, "sort": MINOR_LABEL}
+LIVING_NAME_KEYS = ("first", "surname", "prefix", "suffix", "title", "call", "nick", "display", "sort")
 REVIEW_TAGS = {
     "reviewed": "human",
     "ai-validated": "ai",
@@ -1037,6 +1038,12 @@ class Exporter:
         return bool(obj) and self.ov.has("withhold", obj)
 
     @staticmethod
+    def married_names_of(p: dict) -> list[dict]:
+        """a living adult's Married Name alternates, name parts only (no date, citations or notes)"""
+        return [dict({k: a[k] for k in LIVING_NAME_KEYS}, type=a["type"]) for a in alt_names_of(p)
+                if a.get("type") == "Married Name" and (a.get("surname") or "").strip()]
+
+    @staticmethod
     def _name_keys(p: dict) -> set:
         """lower-case 'first surname' and 'first-given-name surname' for every name a person goes by"""
         keys = set()
@@ -1075,6 +1082,10 @@ class Exporter:
                 shown |= self._name_keys(self.idx.people[h])
             elif st == "living" and h not in self.minor_set:
                 shown |= self._name_keys({"primary_name": self.idx.people[h].get("primary_name") or {}})
+                for m in self.married_names_of(self.idx.people[h]):
+                    first, sur = (m.get("first") or "").strip(), (m.get("surname") or "").strip()
+                    if len(first) >= 2 and len(sur) >= 2:
+                        shown |= {fold_name(f"{given} {sur}") for given in {first, first.split()[0]}}
         pats, self.minor_namesakes = {}, []
         for h in self.minor_set:
             p = self.idx.people[h]
@@ -1497,8 +1508,11 @@ class Exporter:
                 B["people"][g] = rec
                 continue
             if st == "living":
-                rec["name"] = {k: rec["name"][k] for k in ("first", "surname", "prefix", "suffix", "title",
-                                                             "call", "nick", "display", "sort")}
+                rec["name"] = {k: rec["name"][k] for k in LIVING_NAME_KEYS}
+                # a married surname is a name, so a living adult carries it; never its date, citations or notes
+                married = self.married_names_of(p)
+                if married:
+                    rec["alt_names"] = married
                 B["people"][g] = rec
                 continue
             owner = ("person", g)
@@ -1967,7 +1981,7 @@ class Exporter:
         living_ids = {g for g, p in B["people"].items() if p["status"] == "living"}
         excluded_ids = {self.gid("people", h) for h in self.excluded_set}
         minor_ids = {self.gid("people", h) for h in self.minor_set}
-        allowed_living = {"id", "handle", "status", "name", "gender", "parents", "families", "minor"}
+        allowed_living = {"id", "handle", "status", "name", "gender", "parents", "families", "minor", "alt_names"}
         for g, p in B["people"].items():
             if p["status"] == "living":
                 extra = set(p) - allowed_living
@@ -1975,6 +1989,11 @@ class Exporter:
                     problems.append(f"living person {g} carries {sorted(extra)}")
                 if set(p["name"]) & {"citations", "notes", "date"}:
                     problems.append(f"living person {g}: name carries citations/notes")
+                for a in p.get("alt_names") or []:
+                    if a.get("type") != "Married Name" or set(a) - set(LIVING_NAME_KEYS) - {"type"}:
+                        problems.append(f"living person {g}: an alternate name other than a bare married name")
+                if p.get("alt_names") is not None and (p.get("minor") or not p["alt_names"]):
+                    problems.append(f"living person {g}: alt_names on a child, or an empty list")
             if g in minor_ids or p.get("minor"):
                 if p["status"] != "living" or p.get("minor") is not True or p["name"] != MINOR_NAME or p["gender"] != "U":
                     problems.append(f"child under 18 {g} is not reduced to the '{MINOR_LABEL}' placeholder")

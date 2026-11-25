@@ -13,7 +13,7 @@
   <section class="letter" id="L{{ L }}">
     <h2>{{ L }}</h2>
     <ul class="plist cols" data-filter-list>
-      {% for p in people %}<li data-k="{{ p.name.display|fold }} {{ p.name.sort|fold }}">{{ plink(p) }}{% if p.status == 'full' and p.birth and p.birth.place %} <span class="muted">· {{ site.town(p.birth.place) }}</span>{% endif %}</li>{% endfor %}
+      {% for p in people %}<li data-k="{{ p.name.display|fold }} {{ p.name.sort|fold }} {{ p|shown|fold }}">{{ plink(p) }}{% if p.status == 'full' and p.birth and p.birth.place %} <span class="muted">· {{ site.town(p.birth.place) }}</span>{% endif %}</li>{% endfor %}
     </ul>
   </section>
   {% endfor %}

@@ -25,7 +25,7 @@
       <span class="band" aria-hidden="true"></span>
       <span class="lt">{{ l.title }}</span>
       <span class="ls">{{ l.subtitle }}</span>
-      <span class="lm">{{ l.generations }} generations · back to {{ l.stations[-1].person.name.display }}{% if l.stations[-1].person.birth and l.stations[-1].person.birth.year %} ({{ l.stations[-1].person.birth.year }}){% endif %}</span>
+      <span class="lm">{{ l.generations }} generations · back to {{ l.stations[-1].person|shown }}{% if l.stations[-1].person.birth and l.stations[-1].person.birth.year %} ({{ l.stations[-1].person.birth.year }}){% endif %}</span>
     </a>
     {% endfor %}
   </div>

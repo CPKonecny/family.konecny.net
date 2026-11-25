@@ -382,6 +382,9 @@ class Site:
             self.name_index[p["name"]["display"].lower()].append(p["id"])
         self.living_names = {p["name"]["display"].lower() for p in self.people.values() if p["status"] == "living"
                              and p["name"].get("first") and p["name"].get("surname")}
+        self.living_names |= {f'{p["name"]["first"]} {m["surname"]}'.lower() for p in self.people.values()
+                              if p["status"] == "living" and p["name"].get("first")
+                              for m in self.married_names(p)}
         # parts of content/ that the export found naming a child under 18 (it knows their names; this build
         # doesn't): (path under content/, section or card id, or None for the whole file). They are left out.
         self.minor_text = set()
@@ -389,6 +392,48 @@ class Site:
             rel = str(e.get("file") or "")
             rel = rel[len("content/"):] if rel.startswith("content/") else rel
             self.minor_text.add((rel, e.get("id")))
+
+    # ---- married names ----------------------------------------------------- #
+    @staticmethod
+    def married_names(p: dict) -> list[dict]:
+        """the person's Married Name alternates, in the order Gramps keeps them (the last is taken as the latest)"""
+        return [a for a in p.get("alt_names") or [] if a.get("type") == "Married Name" and (a.get("surname") or "").strip()]
+
+    def heading_married(self, p: dict) -> dict | None:
+        """the married name the heading shows, or None: none filed, a child under 18, or a primary name that
+        already carries a married surname (filed that way before the birth name was known; Karel splits those)"""
+        if p.get("minor"):
+            return None
+        ms = self.married_names(p)
+        birth = fold(p["name"].get("surname") or "").split()
+        if not ms:
+            return None
+        if birth and any(fold(m["surname"]).split()[-1] in birth for m in ms):
+            return None
+        return ms[-1]
+
+    def shown_name(self, p: dict) -> str:
+        """'Lisa (Konecny) Youmans' for someone with a married name; otherwise the name as filed"""
+        m = self.heading_married(p)
+        n = p["name"]
+        if not m:
+            return n["display"]
+        birth = " ".join(x for x in (n.get("prefix"), n.get("surname")) if x)
+        married = " ".join(x for x in (m.get("prefix"), m.get("surname")) if x)
+        # a birth surname that isn't known: the married one alone ("Lois Elizabeth Morris")
+        return " ".join(x for x in (n.get("title"), n.get("first"), f"({birth})" if birth else "", married, n.get("suffix")) if x)
+
+    def index_surname(self, p: dict) -> str:
+        """the surname a person files under in the index: the birth surname, or the married one when that's unknown"""
+        if p["name"].get("surname"):
+            return p["name"]["surname"]
+        m = self.heading_married(p)
+        return m["surname"] if m else ""
+
+    def also_names(self, p: dict) -> list[dict]:
+        """the alternate names for the 'also' line: all of them except the married name the heading already shows"""
+        m = self.heading_married(p)
+        return [a for a in p.get("alt_names") or [] if a is not m]
 
     def names_child(self, rel: str, part_id=None) -> bool:
         return (rel, None) in self.minor_text or (part_id is not None and (rel, part_id) in self.minor_text)
@@ -769,6 +814,7 @@ def main(argv=None) -> int:
     env.filters["md"] = md
     env.filters["story"] = story_html
     env.filters["fold"] = fold
+    env.filters["shown"] = site.shown_name
     try:
         from zoneinfo import ZoneInfo
         tz = ZoneInfo(cfg.get("timezone", "America/New_York"))
@@ -850,8 +896,11 @@ def main(argv=None) -> int:
 
     # people — ordered with diacritics folded, so Konečný files with Konecny and Šebák under S
     # children under 18 are a placeholder in their families: no page, not in the index
-    people_sorted = sorted((p for p in site.people.values() if not p.get("minor")),
-                           key=lambda p: (fold(p["name"]["sort"]), p["name"]["sort"], p["id"]))
+    def index_key(p):
+        sur = site.index_surname(p)
+        s = f'{sur}, {p["name"].get("first") or ""}' if sur and not p["name"].get("surname") else p["name"]["sort"]
+        return (fold(s), s, p["id"])
+    people_sorted = sorted((p for p in site.people.values() if not p.get("minor")), key=index_key)
     for p in people_sorted:
         facts = site.facts_of(p) if p["status"] == "full" else []
         fams = []
@@ -866,7 +915,7 @@ def main(argv=None) -> int:
         write(f"person/{p['id']}/index.html", "person.html", p=p, facts=facts, extras=site.extras_of(p) if p["status"] == "full" else {"notes": [], "names": []}, families=fams, parent_families=parent_fams,
               parents=site.parents_of(p), parent_groups=site.parent_groups(p), siblings=siblings, kids_note=kids_note,
               summary=site.review_summary(facts),
-              line_color=site.line_of(p), title=p["name"]["display"], on_lines=line_members.get(p["id"], []),
+              line_color=site.line_of(p), title=site.shown_name(p), also=site.also_names(p), on_lines=line_members.get(p["id"], []),
               notes=[site.notes[n] for n in p.get("notes", []) if n in site.notes],
               media=[site.media[m["ref"]] for m in p.get("media", []) if m["ref"] in site.media],
               name_citations=site.ladder(p.get("name", {}).get("citations", [])), nav="people")
@@ -883,7 +932,7 @@ def main(argv=None) -> int:
                     facts.append(site._fact(e, role=ref.get("role"), ref_citations=ref.get("citations", []), ref_notes=ref.get("notes", [])))
             facts.sort(key=lambda x: site.sort_key(x["event"]))
         children = site.children_in(f)
-        title = " & ".join(x["name"]["display"] for x in (father, mother) if x) or "Family"
+        title = " & ".join(site.shown_name(x) for x in (father, mother) if x) or "Family"
         write(f"family/{f['id']}/index.html", "family.html", f=f, father=father, mother=mother, facts=facts,
               children=children, kids_note=any(c["person"].get("minor") for c in children), title=title, notes=[site.notes[n] for n in f.get("notes", []) if n in site.notes],
               media=[site.media[m["ref"]] for m in f.get("media", []) if m["ref"] in site.media], nav="people")
@@ -939,7 +988,7 @@ def main(argv=None) -> int:
     # indexes
     by_letter = collections.OrderedDict()
     for p in people_sorted:
-        letter = fold(p["name"]["surname"] or p["name"]["display"] or "?")[:1].upper()
+        letter = fold(site.index_surname(p) or p["name"]["display"] or "?")[:1].upper()
         if not letter.isalpha():
             letter = "?"
         by_letter.setdefault(letter, []).append(p)

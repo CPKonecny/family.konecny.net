@@ -45,7 +45,7 @@ Precedence per person: `exclude` → private flag → the `minor` tag (with no d
 
 | Object | Published when | Reduced to |
 |---|---|---|
-| Person | not private, not excluded | **living**: name, gender, parent/spouse family links only; under 18: “Living child”, links only. **full**: everything |
+| Person | not private, not excluded | **living**: name and married names (no dates), gender, parent/spouse family links only; under 18: “Living child”, links only. **full**: everything |
 | Family | not private; at least one publishable member | partner living → partners + children refs (with adopted/step/foster) only, no events |
 | Event | reached from a full person/family; not private; not referenced by any living/excluded person or family | — |
 | Place | reached from a published event, plus every enclosing place; not private | — |

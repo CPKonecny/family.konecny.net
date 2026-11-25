@@ -4,7 +4,7 @@
 <article class="family">
   <header class="phead">
     <p class="eyebrow">Family · {{ f.id }}{% if f.type and f.type != 'Married' %} · {{ f.type|lower }}{% endif %}</p>
-    <h1>{% if father %}{{ father.name.display }}{% endif %}{% if father and mother %} <span class="amp">&amp;</span> {% endif %}{% if mother %}{{ mother.name.display }}{% endif %}</h1>
+    <h1>{% if father %}{{ father|shown }}{% endif %}{% if father and mother %} <span class="amp">&amp;</span> {% endif %}{% if mother %}{{ mother|shown }}{% endif %}</h1>
     <p class="span">
       {% if father %}{{ plink(father) }}{% endif %}{% if father and mother %} · {% endif %}{% if mother %}{{ plink(mother) }}{% endif %}
     </p>
