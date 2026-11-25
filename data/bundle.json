@@ -42955,6 +42955,702 @@
    ],
    "tier": "compiled",
    "url": "https://www.loc.gov/resource/sn87058308/1916-09-14/ed-1/?sp=6"
+  },
+  "C1460": {
+   "ancestry_record_id": "63557432",
+   "change": 1795534203,
+   "cited_by": [
+    {
+     "id": "E1706",
+     "type": "event"
+    },
+    {
+     "id": "E1707",
+     "type": "event"
+    },
+    {
+     "id": "I0508",
+     "type": "person"
+    }
+   ],
+   "confidence": 3,
+   "date": {
+    "day": null,
+    "iso": "1900-06",
+    "modifier": null,
+    "month": 6,
+    "quality": null,
+    "sort": 2415172,
+    "text": "June 1900",
+    "year": 1900
+   },
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10548dc8a1fe3e928057c0df7526",
+   "id": "C1460",
+   "information": "primary",
+   "media": [
+    {
+     "ref": "O0250"
+    }
+   ],
+   "notes": [
+    "N2278",
+    "N2279"
+   ],
+   "page": "Year: 1900; Census Place: Manitowoc Ward 7, Manitowoc, Wisconsin; Roll: 1797; Page: 17; Enumeration District: 0076; 20th Street, dwelling 255, family 285 (Frank Jentsch household), lines 94-100; Frank at line 94",
+   "proposal_file": "2026-11-24_101000_jentsch-frank_add-person.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0254",
+   "source_type": "original",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "record",
+   "url": "https://www.ancestry.com/search/collections/7602/records/63557432"
+  },
+  "C1461": {
+   "ancestry_record_id": "63557432",
+   "change": 1795534204,
+   "cited_by": [
+    {
+     "id": "E1708",
+     "type": "event"
+    },
+    {
+     "id": "E1709",
+     "type": "event"
+    },
+    {
+     "id": "I0509",
+     "type": "person"
+    }
+   ],
+   "confidence": 3,
+   "date": {
+    "day": null,
+    "iso": "1900-06",
+    "modifier": null,
+    "month": 6,
+    "quality": null,
+    "sort": 2415172,
+    "text": "June 1900",
+    "year": 1900
+   },
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10548dc8c8a05bbb659f07443e1a",
+   "id": "C1461",
+   "information": "primary",
+   "media": [
+    {
+     "ref": "O0251"
+    }
+   ],
+   "notes": [
+    "N2280",
+    "N2281"
+   ],
+   "page": "Year: 1900; Census Place: Manitowoc Ward 7, Manitowoc, Wisconsin; Roll: 1797; Page: 17; Enumeration District: 0076; 20th Street, dwelling 255, family 285 (Frank Jentsch household), lines 94-100; Annie, wife, at line 95",
+   "proposal_file": "2026-11-24_101010_lodl-anna_add-person.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0254",
+   "source_type": "original",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "record",
+   "url": "https://www.ancestry.com/search/collections/7602/records/63557432"
+  },
+  "C1462": {
+   "ancestry_record_id": "27906837",
+   "change": 1795534206,
+   "cited_by": [
+    {
+     "id": "E1710",
+     "type": "event"
+    },
+    {
+     "id": "E1711",
+     "type": "event"
+    },
+    {
+     "id": "I0510",
+     "type": "person"
+    }
+   ],
+   "confidence": 3,
+   "date": {
+    "day": null,
+    "iso": "1920-01",
+    "modifier": null,
+    "month": 1,
+    "quality": null,
+    "sort": 2422325,
+    "text": "January 1920",
+    "year": 1920
+   },
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10548dc90f0811eded000ffe732f",
+   "id": "C1462",
+   "information": "primary",
+   "media": [
+    {
+     "ref": "O0252"
+    }
+   ],
+   "notes": [
+    "N2282",
+    "N2283"
+   ],
+   "page": "Year: 1920; Census Place: Manitowoc Ward 5, Manitowoc, Wisconsin; Roll: T625_1994; Page: 7A; Enumeration District: 105; 915 26th St., Felix Jentsch household (head record 27906834); Lucile, daughter",
+   "proposal_file": "2026-11-24_101030_jentsch-lucille_add-person.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0255",
+   "source_type": "original",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "record",
+   "url": "https://www.ancestry.com/search/collections/6061/records/27906837"
+  },
+  "C1463": {
+   "ancestry_record_id": "77046753",
+   "change": 1795534207,
+   "cited_by": [
+    {
+     "id": "E1712",
+     "type": "event"
+    },
+    {
+     "id": "E1713",
+     "type": "event"
+    },
+    {
+     "id": "I0511",
+     "type": "person"
+    }
+   ],
+   "confidence": 3,
+   "date": {
+    "day": null,
+    "iso": "1940-04",
+    "modifier": null,
+    "month": 4,
+    "quality": null,
+    "sort": 2429721,
+    "text": "April 1940",
+    "year": 1940
+   },
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10548dc94b9474cd9429068fd7df",
+   "id": "C1463",
+   "information": "primary",
+   "media": [
+    {
+     "ref": "O0253"
+    }
+   ],
+   "notes": [
+    "N2284",
+    "N2285"
+   ],
+   "page": "Year: 1940; Census Place: Two Rivers, Manitowoc, Wisconsin; Roll: m-t0627-04495; Page: 12A; Enumeration District: 36-47; Edward Wacek household (head record 77046750); Lorraine, daughter",
+   "proposal_file": "2026-11-24_101040_wacek-lorraine_add-person.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0256",
+   "source_type": "original",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "record",
+   "url": "https://www.ancestry.com/search/collections/2442/records/77046753"
+  },
+  "C1464": {
+   "ancestry_record_id": "119683574",
+   "change": 1795534208,
+   "cited_by": [
+    {
+     "id": "E1714",
+     "type": "event"
+    },
+    {
+     "id": "E1715",
+     "type": "event"
+    },
+    {
+     "id": "I0512",
+     "type": "person"
+    }
+   ],
+   "confidence": 3,
+   "date": {
+    "day": null,
+    "iso": "1950-04",
+    "modifier": null,
+    "month": 4,
+    "quality": null,
+    "sort": 2433373,
+    "text": "April 1950",
+    "year": 1950
+   },
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10548dc979bd2acf1d206dff02c6",
+   "id": "C1464",
+   "information": "primary",
+   "media": [
+    {
+     "ref": "O0254"
+    }
+   ],
+   "notes": [
+    "N2286",
+    "N2287"
+   ],
+   "page": "National Archives at Washington, DC; Washington, D.C.; Seventeenth Census of the United States, 1950; Year: 1950; Census Place: Two Rivers, Manitowoc, Wisconsin; Roll: 3934; Page: 74; Enumeration District: 36-85; 1623 24th; Michael S Konieczka, head",
+   "proposal_file": "2026-11-24_101050_konieczka-michael_add-person.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0257",
+   "source_type": "original",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "record",
+   "url": "https://www.ancestry.com/search/collections/62308/records/119683574"
+  },
+  "C1465": {
+   "ancestry_record_id": "63557432",
+   "change": 1795534210,
+   "cited_by": [
+    {
+     "id": "E1716",
+     "type": "event"
+    },
+    {
+     "id": "F0225",
+     "type": "family"
+    }
+   ],
+   "confidence": 3,
+   "date": {
+    "day": null,
+    "iso": "1900-06",
+    "modifier": null,
+    "month": 6,
+    "quality": null,
+    "sort": 2415172,
+    "text": "June 1900",
+    "year": 1900
+   },
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10548dc9ace570e54da27641dc75",
+   "id": "C1465",
+   "information": "primary",
+   "media": [
+    {
+     "ref": "O0255"
+    }
+   ],
+   "notes": [
+    "N2288",
+    "N2289"
+   ],
+   "page": "Year: 1900; Census Place: Manitowoc Ward 7, Manitowoc, Wisconsin; Roll: 1797; Page: 17; Enumeration District: 0076; 20th Street, dwelling 255, family 285 (Frank Jentsch household), lines 94-100; Frank line 94, Annie line 95, Felix (son, record 63557435) line 97",
+   "proposal_file": "2026-11-24_101020_jentsch-frank_x_lodl-anna_add-family.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0254",
+   "source_type": "original",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "record",
+   "url": "https://www.ancestry.com/search/collections/7602/records/63557432"
+  },
+  "C1466": {
+   "ancestry_record_id": "",
+   "change": 1795534211,
+   "cited_by": [
+    {
+     "id": "I0508",
+     "type": "person"
+    }
+   ],
+   "confidence": 3,
+   "date": {
+    "day": 26,
+    "iso": "1926-10-26",
+    "modifier": null,
+    "month": 10,
+    "quality": null,
+    "sort": 2424815,
+    "text": "26 October 1926",
+    "year": 1926
+   },
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10548dc9e1414dcd028635f77d94",
+   "id": "C1466",
+   "information": "secondary",
+   "media": [],
+   "notes": [
+    "N2290",
+    "N2291"
+   ],
+   "page": "Tuesday 26 October 1926, page 2",
+   "proposal_file": "2026-11-24_101001_jentsch-frank_obit-1926-citation.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0258",
+   "source_type": "derivative",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "compiled",
+   "url": "https://www.2manitowoc.com/44Jahobit.html"
+  },
+  "C1467": {
+   "ancestry_record_id": "",
+   "change": 1795534212,
+   "cited_by": [
+    {
+     "id": "I0509",
+     "type": "person"
+    }
+   ],
+   "confidence": 3,
+   "date": {
+    "day": 8,
+    "iso": "1952-07-08",
+    "modifier": null,
+    "month": 7,
+    "quality": null,
+    "sort": 2434202,
+    "text": "8 July 1952",
+    "year": 1952
+   },
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10548dc9f56243f78e249df85674",
+   "id": "C1467",
+   "information": "secondary",
+   "media": [],
+   "notes": [
+    "N2292",
+    "N2293"
+   ],
+   "page": "Tuesday 8 July 1952, page 14",
+   "proposal_file": "2026-11-24_101011_lodl-anna_obit-1952-citation.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0259",
+   "source_type": "derivative",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "compiled",
+   "url": "https://www.2manitowoc.com/44Jahobit.html"
+  },
+  "C1468": {
+   "ancestry_record_id": "",
+   "change": 1795534213,
+   "cited_by": [
+    {
+     "id": "I0510",
+     "type": "person"
+    }
+   ],
+   "confidence": 2,
+   "date": {
+    "day": 28,
+    "iso": "1930-05-28",
+    "modifier": null,
+    "month": 5,
+    "quality": null,
+    "sort": 2426125,
+    "text": "28 May 1930",
+    "year": 1930
+   },
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10548dca1933341cdcdb29b48ebd",
+   "id": "C1468",
+   "information": "secondary",
+   "media": [],
+   "notes": [
+    "N2294",
+    "N2295"
+   ],
+   "page": "Lucille Jentsch entry, burial note",
+   "proposal_file": "2026-11-24_101031_jentsch-lucille_burial-note-citation.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0260",
+   "source_type": "derivative",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "compiled",
+   "url": "https://www.2manitowoc.com/44Jahobit.html"
+  },
+  "C1469": {
+   "ancestry_record_id": "",
+   "change": 1795534213,
+   "cited_by": [
+    {
+     "id": "I0511",
+     "type": "person"
+    }
+   ],
+   "confidence": 3,
+   "date": {
+    "day": 15,
+    "iso": "1963-04-15",
+    "modifier": null,
+    "month": 4,
+    "quality": null,
+    "sort": 2438135,
+    "text": "15 April 1963",
+    "year": 1963
+   },
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10548dca34e635803a810bb0aa22",
+   "id": "C1469",
+   "information": "secondary",
+   "media": [],
+   "notes": [
+    "N2296",
+    "N2297"
+   ],
+   "page": "Monday 15 April 1963, page M-13",
+   "proposal_file": "2026-11-24_101041_wacek-lorraine_obit-1963-citation.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0261",
+   "source_type": "derivative",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "compiled",
+   "url": "https://www.2manitowoc.com/89AKlobit.html#konieczkalorraine"
+  },
+  "C1470": {
+   "ancestry_record_id": "119683575",
+   "change": 1795534214,
+   "cited_by": [
+    {
+     "id": "I0511",
+     "type": "person"
+    }
+   ],
+   "confidence": 3,
+   "date": {
+    "day": null,
+    "iso": "1950-04",
+    "modifier": null,
+    "month": 4,
+    "quality": null,
+    "sort": 2433373,
+    "text": "April 1950",
+    "year": 1950
+   },
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10548dca4ee66b9ea3a44d5c699c",
+   "id": "C1470",
+   "information": "primary",
+   "media": [
+    {
+     "ref": "O0256"
+    }
+   ],
+   "notes": [
+    "N2298",
+    "N2299"
+   ],
+   "page": "National Archives at Washington, DC; Washington, D.C.; Seventeenth Census of the United States, 1950; Year: 1950; Census Place: Two Rivers, Manitowoc, Wisconsin; Roll: 3934; Page: 74; Enumeration District: 36-85; 1623 24th; Lorraine A Konieczka, wife",
+   "proposal_file": "2026-11-24_101043_wacek-lorraine_census-1950-citation.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0257",
+   "source_type": "original",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "record",
+   "url": "https://www.ancestry.com/search/collections/62308/records/119683575"
+  },
+  "C1471": {
+   "ancestry_record_id": "",
+   "change": 1795534214,
+   "cited_by": [
+    {
+     "id": "I0512",
+     "type": "person"
+    }
+   ],
+   "confidence": 3,
+   "date": {
+    "day": 10,
+    "iso": "1972-01-10",
+    "modifier": null,
+    "month": 1,
+    "quality": null,
+    "sort": 2441327,
+    "text": "10 January 1972",
+    "year": 1972
+   },
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10548dca6569304506558807cfb6",
+   "id": "C1471",
+   "information": "secondary",
+   "media": [],
+   "notes": [
+    "N2300",
+    "N2301"
+   ],
+   "page": "Monday 10 January 1972",
+   "proposal_file": "2026-11-24_101051_konieczka-michael_obit-1972-citation.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0262",
+   "source_type": "derivative",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "compiled",
+   "url": "https://www.2manitowoc.com/89AKlobit.html"
+  },
+  "C1472": {
+   "ancestry_record_id": "",
+   "change": 1795534215,
+   "cited_by": [
+    {
+     "id": "E1717",
+     "type": "event"
+    }
+   ],
+   "confidence": 3,
+   "date": {
+    "day": 15,
+    "iso": "1963-04-15",
+    "modifier": null,
+    "month": 4,
+    "quality": null,
+    "sort": 2438135,
+    "text": "15 April 1963",
+    "year": 1963
+   },
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10548dca790226a253dbf8371c72",
+   "id": "C1472",
+   "information": "secondary",
+   "media": [],
+   "notes": [
+    "N2302",
+    "N2303"
+   ],
+   "page": "Monday 15 April 1963, page M-13",
+   "proposal_file": "2026-11-24_101052_konieczka-michael_x_wacek-lorraine_marriage.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0261",
+   "source_type": "derivative",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "compiled",
+   "url": "https://www.2manitowoc.com/89AKlobit.html#konieczkalorraine"
   }
  },
  "events": {
@@ -96106,6 +96802,522 @@
     "agent-proposed"
    ],
    "type": "Death"
+  },
+  "E1706": {
+   "attributes": [],
+   "change": 1795534203,
+   "citations": [
+    "C1460"
+   ],
+   "date": {
+    "day": null,
+    "iso": "1854-10",
+    "modifier": null,
+    "month": 10,
+    "quality": null,
+    "sort": 2398493,
+    "text": "October 1854",
+    "year": 1854
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10548dc8a6ec305827f91e5f17bc",
+   "id": "E1706",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0508",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0003",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Birth"
+  },
+  "E1707": {
+   "attributes": [],
+   "change": 1795534203,
+   "citations": [
+    "C1460"
+   ],
+   "date": {
+    "day": 26,
+    "iso": "1926-10-26",
+    "modifier": null,
+    "month": 10,
+    "quality": null,
+    "sort": 2424815,
+    "text": "26 October 1926",
+    "year": 1926
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10548dc8ac7b116ab3ba6d673791",
+   "id": "E1707",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0508",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0158",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Death"
+  },
+  "E1708": {
+   "attributes": [],
+   "change": 1795534204,
+   "citations": [
+    "C1461"
+   ],
+   "date": {
+    "day": null,
+    "iso": "1864",
+    "modifier": null,
+    "month": null,
+    "quality": null,
+    "sort": 2401872,
+    "text": "1864",
+    "year": 1864
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10548dc8d265127ae29512b6a28f",
+   "id": "E1708",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0509",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0362",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Birth"
+  },
+  "E1709": {
+   "attributes": [],
+   "change": 1795534204,
+   "citations": [
+    "C1461"
+   ],
+   "date": {
+    "day": 8,
+    "iso": "1952-07-08",
+    "modifier": null,
+    "month": 7,
+    "quality": null,
+    "sort": 2434202,
+    "text": "8 July 1952",
+    "year": 1952
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10548dc8df8e1a77cb739c87a005",
+   "id": "E1709",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0509",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0363",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Death"
+  },
+  "E1710": {
+   "attributes": [],
+   "change": 1795534206,
+   "citations": [
+    "C1462"
+   ],
+   "date": {
+    "day": null,
+    "iso": "1914",
+    "modifier": "about",
+    "month": null,
+    "quality": null,
+    "sort": 2420134,
+    "text": "about 1914",
+    "year": 1914
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10548dc918065ff388cbc777e35d",
+   "id": "E1710",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0510",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0089",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Birth"
+  },
+  "E1711": {
+   "attributes": [],
+   "change": 1795534206,
+   "citations": [
+    "C1462"
+   ],
+   "date": {
+    "day": null,
+    "iso": "1930",
+    "modifier": null,
+    "month": null,
+    "quality": null,
+    "sort": 2425978,
+    "text": "1930",
+    "year": 1930
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10548dc928343f6bfddf50a653d7",
+   "id": "E1711",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0510",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0364",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Death"
+  },
+  "E1712": {
+   "attributes": [],
+   "change": 1795534207,
+   "citations": [
+    "C1463"
+   ],
+   "date": {
+    "day": 22,
+    "iso": "1913-12-22",
+    "modifier": null,
+    "month": 12,
+    "quality": null,
+    "sort": 2420124,
+    "text": "22 December 1913",
+    "year": 1913
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10548dc9501c72011c2086b4d39",
+   "id": "E1712",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0511",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0016",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Birth"
+  },
+  "E1713": {
+   "attributes": [],
+   "change": 1795534207,
+   "citations": [
+    "C1463"
+   ],
+   "date": {
+    "day": null,
+    "iso": "1963-04",
+    "modifier": null,
+    "month": 4,
+    "quality": null,
+    "sort": 2438121,
+    "text": "April 1963",
+    "year": 1963
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10548dc955b4462130bd56f85519",
+   "id": "E1713",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0511",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0016",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Death"
+  },
+  "E1714": {
+   "attributes": [],
+   "change": 1795534209,
+   "citations": [
+    "C1464"
+   ],
+   "date": {
+    "day": 26,
+    "iso": "1908-08-26",
+    "modifier": null,
+    "month": 8,
+    "quality": null,
+    "sort": 2418180,
+    "text": "26 August 1908",
+    "year": 1908
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10548dc9827b7aafc22b04a5d660",
+   "id": "E1714",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0512",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0365",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Birth"
+  },
+  "E1715": {
+   "attributes": [],
+   "change": 1795534209,
+   "citations": [
+    "C1464"
+   ],
+   "date": {
+    "day": null,
+    "iso": "1972-01",
+    "modifier": null,
+    "month": 1,
+    "quality": null,
+    "sort": 2441318,
+    "text": "January 1972",
+    "year": 1972
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10548dc987e93f4b91222c6291c9",
+   "id": "E1715",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0512",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0089",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Death"
+  },
+  "E1716": {
+   "attributes": [],
+   "change": 1795534210,
+   "citations": [
+    "C1465"
+   ],
+   "date": {
+    "day": null,
+    "iso": "1883",
+    "modifier": "about",
+    "month": null,
+    "quality": null,
+    "sort": 2408812,
+    "text": "about 1883",
+    "year": 1883
+   },
+   "description": "",
+   "families": [
+    {
+     "family": "F0225",
+     "role": "Family"
+    }
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10548dc9c6d934cb460a208cba70",
+   "id": "E1716",
+   "media": [],
+   "notes": [],
+   "participants": [],
+   "place": null,
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Marriage"
+  },
+  "E1717": {
+   "attributes": [],
+   "change": 1795534215,
+   "citations": [
+    "C1472"
+   ],
+   "date": {
+    "day": 11,
+    "iso": "1940-08-11",
+    "modifier": null,
+    "month": 8,
+    "quality": null,
+    "sort": 2429853,
+    "text": "11 August 1940",
+    "year": 1940
+   },
+   "description": "Sacred Heart Church",
+   "families": [
+    {
+     "family": "F0224",
+     "role": "Family"
+    }
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10548dca80505cbea49f7b8cc2bb",
+   "id": "E1717",
+   "media": [],
+   "notes": [],
+   "participants": [],
+   "place": "P0016",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Marriage"
   }
  },
  "families": {
@@ -103161,6 +104373,106 @@
    "id": "F0223",
    "media": [],
    "mother": "I0409",
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Married"
+  },
+  "F0224": {
+   "attributes": [],
+   "change": 1795534215,
+   "children": [],
+   "citations": [],
+   "events": [
+    {
+     "ref": "E1717",
+     "role": "Family"
+    }
+   ],
+   "father": "I0512",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10548dc994604adfd369bb05df93",
+   "id": "F0224",
+   "marriage": {
+    "date": {
+     "day": 11,
+     "iso": "1940-08-11",
+     "modifier": null,
+     "month": 8,
+     "quality": null,
+     "sort": 2429853,
+     "text": "11 August 1940",
+     "year": 1940
+    },
+    "event": "E1717",
+    "place": "P0016",
+    "year": 1940
+   },
+   "media": [],
+   "mother": "I0511",
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Married"
+  },
+  "F0225": {
+   "attributes": [],
+   "change": 1795534211,
+   "children": [
+    {
+     "ref": "I0404"
+    }
+   ],
+   "citations": [
+    "C1465"
+   ],
+   "events": [
+    {
+     "ref": "E1716",
+     "role": "Family"
+    }
+   ],
+   "father": "I0508",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10548dc9b17975c7b97795dae506",
+   "id": "F0225",
+   "marriage": {
+    "date": {
+     "day": null,
+     "iso": "1883",
+     "modifier": "about",
+     "month": null,
+     "quality": null,
+     "sort": 2408812,
+     "text": "about 1883",
+     "year": 1883
+    },
+    "event": "E1716",
+    "place": null,
+    "year": 1883
+   },
+   "media": [],
+   "mother": "I0509",
    "notes": [],
    "provenance": [
     "agent-karel",
@@ -111701,6 +113013,237 @@
     "agent-karel",
     "agent-proposed"
    ]
+  },
+  "O0250": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1460",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-24_101000_jentsch-frank_add-person.jpg"
+   },
+   "checksum": "2b7a307ba88ff19045cf40e202cce081",
+   "citations": [],
+   "date": null,
+   "desc": "1900 United States Census, Population Schedule, Wisconsin, Manitowoc County, Manitowoc city Ward 7, ED 76, sheet 17 — Year: 1900; Census Place: Manitowoc Ward 7, Manitowoc, Wisconsin; Roll: 1797; Page: 17; Enumeration District: 0076; 20th Street, dwelling 255, family 285 (Frank Jentsch household), lines 94-100; Frank at line 94",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10548dc897373ecc0f9a9924f73d",
+   "id": "O0250",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0250",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ]
+  },
+  "O0251": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1461",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-24_101010_lodl-anna_add-person.jpg"
+   },
+   "checksum": "2b7a307ba88ff19045cf40e202cce081",
+   "citations": [],
+   "date": null,
+   "desc": "1900 United States Census, Population Schedule, Wisconsin, Manitowoc County, Manitowoc city Ward 7, ED 76, sheet 17 — Year: 1900; Census Place: Manitowoc Ward 7, Manitowoc, Wisconsin; Roll: 1797; Page: 17; Enumeration District: 0076; 20th Street, dwelling 255, family 285 (Frank Jentsch household), lines 94-100; Annie, wife, at line 95",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10548dc8c0bb3d3462d4a7dacf32",
+   "id": "O0251",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0251",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ]
+  },
+  "O0252": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1462",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-24_101030_jentsch-lucille_add-person.jpg"
+   },
+   "checksum": "f1f1979568d761862478455cbe2abf58",
+   "citations": [],
+   "date": null,
+   "desc": "1920 United States Census, Population Schedule, Wisconsin, Manitowoc County, Manitowoc city Ward 5, ED 105, sheet 7A — Year: 1920; Census Place: Manitowoc Ward 5, Manitowoc, Wisconsin; Roll: T625_1994; Page: 7A; Enumeration District: 105; 915 26th St., Felix Jentsch household (head record 27906834); Lucile, daughter",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10548dc9051efe9c85ab6374b9",
+   "id": "O0252",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0252",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ]
+  },
+  "O0253": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1463",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-24_101040_wacek-lorraine_add-person.jpg"
+   },
+   "checksum": "775cc6baf8f98804cbf3c280fba847f8",
+   "citations": [],
+   "date": null,
+   "desc": "1940 United States Census, Population Schedule, Wisconsin, Manitowoc County, Two Rivers, ED 36-47, sheet 12A — Year: 1940; Census Place: Two Rivers, Manitowoc, Wisconsin; Roll: m-t0627-04495; Page: 12A; Enumeration District: 36-47; Edward Wacek household (head record 77046750); Lorraine, daughter",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10548dc944685cff0e84ccfe9173",
+   "id": "O0253",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0253",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ]
+  },
+  "O0254": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1464",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-24_101050_konieczka-michael_add-person.jpg"
+   },
+   "checksum": "b0c33f6a6540dfdc88434bc95127aa8b",
+   "citations": [],
+   "date": null,
+   "desc": "1950 United States Census, Population Schedule, Wisconsin, Manitowoc County, Two Rivers, ED 36-85, page 74 — National Archives at Washington, DC; Washington, D.C.; Seventeenth Census of the United States, 1950; Year: 1950; Census Place: Two Rivers, Manitowoc, Wisconsin; Roll: 3934; Page: 74; Enumeration District: 36-85; 1623 24th; Michael S Konieczka, head",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10548dc96f4f485132be0346776a",
+   "id": "O0254",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0254",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ]
+  },
+  "O0255": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1465",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-24_101020_jentsch-frank_x_lodl-anna_add-family.jpg"
+   },
+   "checksum": "2b7a307ba88ff19045cf40e202cce081",
+   "citations": [],
+   "date": null,
+   "desc": "1900 United States Census, Population Schedule, Wisconsin, Manitowoc County, Manitowoc city Ward 7, ED 76, sheet 17 — Year: 1900; Census Place: Manitowoc Ward 7, Manitowoc, Wisconsin; Roll: 1797; Page: 17; Enumeration District: 0076; 20th Street, dwelling 255, family 285 (Frank Jentsch household), lines 94-100; Frank line 94, Annie line 95, Felix (son, record 63557435) line 97",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10548dc9a57d628adda272adbf3a",
+   "id": "O0255",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0255",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ]
+  },
+  "O0256": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1470",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-24_101043_wacek-lorraine_census-1950-citation.jpg"
+   },
+   "checksum": "b0c33f6a6540dfdc88434bc95127aa8b",
+   "citations": [],
+   "date": null,
+   "desc": "1950 United States Census, Population Schedule, Wisconsin, Manitowoc County, Two Rivers, ED 36-85, page 74 — National Archives at Washington, DC; Washington, D.C.; Seventeenth Census of the United States, 1950; Year: 1950; Census Place: Two Rivers, Manitowoc, Wisconsin; Roll: 3934; Page: 74; Enumeration District: 36-85; 1623 24th; Lorraine A Konieczka, wife",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10548dca47a35d7005115df34b84",
+   "id": "O0256",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0256",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ]
   }
  },
  "meta": {
@@ -111712,21 +113255,21 @@
    "very high"
   ],
   "counts": {
-   "citations": 1295,
-   "events": 1470,
-   "families": 214,
-   "media": 235,
-   "notes": 1454,
-   "people": 502,
-   "places": 336,
-   "repositories": 37,
-   "sources": 245
+   "citations": 1308,
+   "events": 1482,
+   "families": 216,
+   "media": 242,
+   "notes": 1480,
+   "people": 507,
+   "places": 340,
+   "repositories": 43,
+   "sources": 254
   },
   "counts_people": {
-   "full": 360,
+   "full": 365,
    "living": 142
   },
-  "generated": "2026-11-24T08:17:52+00:00",
+  "generated": "2026-11-25T08:17:53+00:00",
   "generator": "gramps_export.py 0.4.0",
   "gramps_version": "6.0.8",
   "gramps_webapi_version": "3.17.0",
@@ -111751,7 +113294,7 @@
    "oral",
    "ai-draft"
   ],
-  "today": "2026-11-24",
+  "today": "2026-11-25",
   "tree": "Konecny"
  },
  "notes": {
@@ -142743,6 +144286,500 @@
    "review": "unreviewed",
    "tags": [],
    "text": "2026-11-23 (karel): RESEARCH SUMMARY — Thomas Voris Shinofield (1886–1916), husband of Edna Luella Hansen (I0409). 23 Nov 2026.\nFound: two obituaries in The Oskaloosa Herald, 14 Sep 1916 (Library of Congress, Chronicling America): p. 5 \"Thos. Vores Shinofield, son of J. G. and Elizabeth Shinofield, was born March 4, 188[6] in What Cheer, Iowa\", married Edna Lula Hanson at Albert Lea, daughters Shirley Marie and Edna Elizabeth, died Sept. 10, 1916 aged 30 y 6 m 6 d, body taken to Albert Lea; p. 6 \"Thomas Noris Shinofield died at his home, 541 Ninth avenue East\", born in Iowa March 4th, 1886, parents Mr. and Mrs. John G. Shinofield. Source files: oskaloosa-herald_1916-09-14_p5_shinofield-obit.jpg, oskaloosa-herald_1916-09-14_p6_shinofield-obit.jpg and the transcription oskaloosa-herald-1916-09-14-shinofield-verbatim.txt (Karel box, /workspace/nov22/sources/; filed as images of proposals 2026-11-23_100000 and _100002). 1900 census, Spring Creek Twp., Mahaska Co., Iowa, ED 77, sheet 14, line 45: Thos V, son, Mar 1886, Iowa, in John G. & Leah E. Shinofield's household (proposal 2026-11-23_100001). 1930 census, Albert Lea, ED 24-2, sheet 4A: widow Edna L. Shinofield with Shirley (16) and Edna (14) in Charles Hansen's household.\nCompiled, not filed: Find a Grave 193802994 (Graceland Cemetery, Albert Lea) spells the middle name Voris, gives parents John Gustavis Shinofield (1850–1931) and Leah Elizabeth Hasty Shinofield (1855–1933) and marriage 1910.\nRuled out: death at Albert Lea (21 Nov packet) — both obituaries place the death at Oskaloosa; he is not in the Minnesota death index (searched Shinofield, Shinafield, Shinnofield, Shinofeld, Shenofield).\nStill open: the 1910 or 1911 marriage record (Freeborn Co., MN), the 1910 census and 1915 Iowa census, the burial date, and his parents and ten brothers and sisters (not in Gramps).\n\nTier: ai-draft",
+   "type": "Research"
+  },
+  "N2278": {
+   "attached_to": [
+    {
+     "id": "C1460",
+     "type": "citation"
+    }
+   ],
+   "change": 1795534202,
+   "flags": [],
+   "handle": "10548dc891c07a5f0f14a0685cb5",
+   "html": "<p>Transcription (as written): Sheet header: Twelfth Census of the United States, Schedule No. 1, Population; State Wisconsin; County Manitowoc; City Manitowoc, Ward 7; Supervisor&#x27;s District 253 [as read]; Enumeration District 76; Sheet 17 [B]. Line 94: [dwelling 255, family 285 per the Ancestry index; numbers overwritten on the sheet] Jentsch, Frank | Head | W | M | Oct 1854 | 45 | M | 17 [years married] | Germany | Germany | Germany | [immigrated] 1876 | 24 [years in US]. Line 95: Annie | Wife | W | F | Oct 1864 | 35 | M | 17 | [mother of] 7 | [living] 6 | Wisconsin | Bohemia | Bohemia. Line 96: Martha | Daughter | June 1884 | 15 | S | Wisconsin. Line 97: Felix | Son | W | M | July 1886 | 13 | S | Wisconsin. Line 98: Alice | Daughter | Aug 1888 | 11 | S. Line 99: Lucia | Daughter | Mar 1890 | 10 | S. Line 100: Erna | Daughter | Feb 1895 | 5 | S. [Ancestry index continues the household with Annie, Daughter, Apr 1897, 3.]</p>",
+   "id": "N2278",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Sheet header: Twelfth Census of the United States, Schedule No. 1, Population; State Wisconsin; County Manitowoc; City Manitowoc, Ward 7; Supervisor's District 253 [as read]; Enumeration District 76; Sheet 17 [B]. Line 94: [dwelling 255, family 285 per the Ancestry index; numbers overwritten on the sheet] Jentsch, Frank | Head | W | M | Oct 1854 | 45 | M | 17 [years married] | Germany | Germany | Germany | [immigrated] 1876 | 24 [years in US]. Line 95: Annie | Wife | W | F | Oct 1864 | 35 | M | 17 | [mother of] 7 | [living] 6 | Wisconsin | Bohemia | Bohemia. Line 96: Martha | Daughter | June 1884 | 15 | S | Wisconsin. Line 97: Felix | Son | W | M | July 1886 | 13 | S | Wisconsin. Line 98: Alice | Daughter | Aug 1888 | 11 | S. Line 99: Lucia | Daughter | Mar 1890 | 10 | S. Line 100: Erna | Daughter | Feb 1895 | 5 | S. [Ancestry index continues the household with Annie, Daughter, Apr 1897, 3.]",
+   "type": "Transcript"
+  },
+  "N2279": {
+   "attached_to": [
+    {
+     "id": "C1460",
+     "type": "citation"
+    }
+   ],
+   "change": 1795534202,
+   "flags": [],
+   "handle": "10548dc8943d33d62e7cb7ad8502",
+   "html": "<p>2026-11-24 (karel): Ancestry profile 212818118177 (tree 208290233, created 24 Nov 2026) shows Frank Jentsch, M, birth Oct 1854 Germany, death 26 Oct 1926 Manitowoc, Manitowoc, Wisconsin, USA, spouse Anna Lodl 212818118179 (new in this batch, 101010) and son Felix H. Jentsch 212815084816 (Gramps I0404); the 1900 United States Federal Census record 63557432 is attached there. Census line 94: Frank Jentsch, head, born Oct 1854 Germany, age 45, married 17 years, immigrated 1876, with wife Annie (Oct 1864, Wisconsin) and son Felix (July 1886, Wisconsin; Felix&#x27;s record 63557435). The death date and place come from his obituary (Manitowoc Herald News, 26 Oct 1926, p. 2, companion add_citation 101001): &quot;died at his home 1017 So. 17th street this morning&quot;; it names &quot;Felix, this city&quot; as a survivor and &quot;Anna Lodl&quot; as his wife, and its &quot;on October 30 would have been 72&quot; agrees with the Oct 1854 birth. Checked the 24 Nov export (main 7c0a5fd, generated 3:17:52 AM ET, 502 people / 214 families): no Frank Jentsch, no Ancestry ID 212818118177, and Felix I0404 has parents [] (no parent family). He is linked by add_family 101020 (Frank x Anna, child Felix) in this batch. Born 1854, died 1926: long dead, so private false (birth and death events public with him).<br>Conflicts: [&#x27;The obituary implies a birthday of 30 Oct 1854 (&quot;on October 30 would have been 72&quot;); the day is derived from an age statement, so only Oct 1854 (census) is entered.&#x27;, &#x27;The applier puts this census citation on the birth and death events too; the census supports the birth month/year only, the death rests on the obituary (101001).&#x27;]</p>",
+   "id": "N2279",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-24 (karel): Ancestry profile 212818118177 (tree 208290233, created 24 Nov 2026) shows Frank Jentsch, M, birth Oct 1854 Germany, death 26 Oct 1926 Manitowoc, Manitowoc, Wisconsin, USA, spouse Anna Lodl 212818118179 (new in this batch, 101010) and son Felix H. Jentsch 212815084816 (Gramps I0404); the 1900 United States Federal Census record 63557432 is attached there. Census line 94: Frank Jentsch, head, born Oct 1854 Germany, age 45, married 17 years, immigrated 1876, with wife Annie (Oct 1864, Wisconsin) and son Felix (July 1886, Wisconsin; Felix's record 63557435). The death date and place come from his obituary (Manitowoc Herald News, 26 Oct 1926, p. 2, companion add_citation 101001): \"died at his home 1017 So. 17th street this morning\"; it names \"Felix, this city\" as a survivor and \"Anna Lodl\" as his wife, and its \"on October 30 would have been 72\" agrees with the Oct 1854 birth. Checked the 24 Nov export (main 7c0a5fd, generated 3:17:52 AM ET, 502 people / 214 families): no Frank Jentsch, no Ancestry ID 212818118177, and Felix I0404 has parents [] (no parent family). He is linked by add_family 101020 (Frank x Anna, child Felix) in this batch. Born 1854, died 1926: long dead, so private false (birth and death events public with him).\nConflicts: ['The obituary implies a birthday of 30 Oct 1854 (\"on October 30 would have been 72\"); the day is derived from an age statement, so only Oct 1854 (census) is entered.', 'The applier puts this census citation on the birth and death events too; the census supports the birth month/year only, the death rests on the obituary (101001).']",
+   "type": "Research"
+  },
+  "N2280": {
+   "attached_to": [
+    {
+     "id": "C1461",
+     "type": "citation"
+    }
+   ],
+   "change": 1795534203,
+   "flags": [],
+   "handle": "10548dc8b9b1631d23b623b724f1",
+   "html": "<p>Transcription (as written): Sheet header: Twelfth Census of the United States, Schedule No. 1, Population; State Wisconsin; County Manitowoc; City Manitowoc, Ward 7; Supervisor&#x27;s District 253 [as read]; Enumeration District 76; Sheet 17 [B]. Line 94: [dwelling 255, family 285 per the Ancestry index; numbers overwritten on the sheet] Jentsch, Frank | Head | W | M | Oct 1854 | 45 | M | 17 [years married] | Germany | Germany | Germany | [immigrated] 1876 | 24 [years in US]. Line 95: Annie | Wife | W | F | Oct 1864 | 35 | M | 17 | [mother of] 7 | [living] 6 | Wisconsin | Bohemia | Bohemia. Line 96: Martha | Daughter | June 1884 | 15 | S | Wisconsin. Line 97: Felix | Son | W | M | July 1886 | 13 | S | Wisconsin. Line 98: Alice | Daughter | Aug 1888 | 11 | S. Line 99: Lucia | Daughter | Mar 1890 | 10 | S. Line 100: Erna | Daughter | Feb 1895 | 5 | S. [Ancestry index continues the household with Annie, Daughter, Apr 1897, 3.]</p>",
+   "id": "N2280",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Sheet header: Twelfth Census of the United States, Schedule No. 1, Population; State Wisconsin; County Manitowoc; City Manitowoc, Ward 7; Supervisor's District 253 [as read]; Enumeration District 76; Sheet 17 [B]. Line 94: [dwelling 255, family 285 per the Ancestry index; numbers overwritten on the sheet] Jentsch, Frank | Head | W | M | Oct 1854 | 45 | M | 17 [years married] | Germany | Germany | Germany | [immigrated] 1876 | 24 [years in US]. Line 95: Annie | Wife | W | F | Oct 1864 | 35 | M | 17 | [mother of] 7 | [living] 6 | Wisconsin | Bohemia | Bohemia. Line 96: Martha | Daughter | June 1884 | 15 | S | Wisconsin. Line 97: Felix | Son | W | M | July 1886 | 13 | S | Wisconsin. Line 98: Alice | Daughter | Aug 1888 | 11 | S. Line 99: Lucia | Daughter | Mar 1890 | 10 | S. Line 100: Erna | Daughter | Feb 1895 | 5 | S. [Ancestry index continues the household with Annie, Daughter, Apr 1897, 3.]",
+   "type": "Transcript"
+  },
+  "N2281": {
+   "attached_to": [
+    {
+     "id": "C1461",
+     "type": "citation"
+    }
+   ],
+   "change": 1795534204,
+   "flags": [],
+   "handle": "10548dc8bce27730632ecaf59bb3",
+   "html": "<p>2026-11-24 (karel): Ancestry profile 212818118179 (tree 208290233, created 24 Nov 2026) shows Anna Lodl, F, birth 1864 Tisch Mills, Manitowoc, Wisconsin, USA, death 8 Jul 1952 Waukesha, Waukesha, Wisconsin, USA, spouse Frank Jentsch 212818118177 (101000) and son Felix H. Jentsch 212815084816 (I0404); the 1900 United States Federal Census record for the Frank Jentsch household is attached there. Census line 95: Annie, wife, born Oct 1864 Wisconsin, age 35, married 17 years, mother of 7 children, 6 living. Birth year/place and death come from her obituary (Manitowoc Herald Times, 8 Jul 1952, p. 14, companion 101011): &quot;Mrs. Jentsch, the former Anna Lodel, was born in 1864 at Tisch Mills&quot;; died &quot;Tuesday morning&quot; at Waukesha; cemetery note &quot;d. 07-08-1952 at Waukesha&quot;. Checked the 24 Nov export (7c0a5fd): no Anna Lodl/Lodel/Jentsch and no Ancestry ID 212818118179. No relations block: she is linked by add_family 101020 (Frank x Anna, child Felix) in this batch. Not linked to Joseph H. Lodl I0395 (possible relative, lead only). Born 1864, died 1952: long dead, so private false.<br>Conflicts: [&quot;Surname is spelled Lodl in Frank&#x27;s 1926 obituary and Lodel in her 1952 obituary; entered as Lodl (Ancestry profile), Lodel noted here.&quot;, &#x27;The 1900 census gives Oct 1864, Wisconsin; the obituary gives the year and Tisch Mills only. Year entered (Ancestry profile); the month is in the census citation.&#x27;, &#x27;The applier puts this census citation on the death event too; the death rests on the obituary (101011).&#x27;]</p>",
+   "id": "N2281",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-24 (karel): Ancestry profile 212818118179 (tree 208290233, created 24 Nov 2026) shows Anna Lodl, F, birth 1864 Tisch Mills, Manitowoc, Wisconsin, USA, death 8 Jul 1952 Waukesha, Waukesha, Wisconsin, USA, spouse Frank Jentsch 212818118177 (101000) and son Felix H. Jentsch 212815084816 (I0404); the 1900 United States Federal Census record for the Frank Jentsch household is attached there. Census line 95: Annie, wife, born Oct 1864 Wisconsin, age 35, married 17 years, mother of 7 children, 6 living. Birth year/place and death come from her obituary (Manitowoc Herald Times, 8 Jul 1952, p. 14, companion 101011): \"Mrs. Jentsch, the former Anna Lodel, was born in 1864 at Tisch Mills\"; died \"Tuesday morning\" at Waukesha; cemetery note \"d. 07-08-1952 at Waukesha\". Checked the 24 Nov export (7c0a5fd): no Anna Lodl/Lodel/Jentsch and no Ancestry ID 212818118179. No relations block: she is linked by add_family 101020 (Frank x Anna, child Felix) in this batch. Not linked to Joseph H. Lodl I0395 (possible relative, lead only). Born 1864, died 1952: long dead, so private false.\nConflicts: [\"Surname is spelled Lodl in Frank's 1926 obituary and Lodel in her 1952 obituary; entered as Lodl (Ancestry profile), Lodel noted here.\", 'The 1900 census gives Oct 1864, Wisconsin; the obituary gives the year and Tisch Mills only. Year entered (Ancestry profile); the month is in the census citation.', 'The applier puts this census citation on the death event too; the death rests on the obituary (101011).']",
+   "type": "Research"
+  },
+  "N2282": {
+   "attached_to": [
+    {
+     "id": "C1462",
+     "type": "citation"
+    }
+   ],
+   "change": 1795534205,
+   "flags": [],
+   "handle": "10548dc8f9555e9b7554166364d7",
+   "html": "<p>Transcription (as written): Fourteenth Census of the United States: 1920, Population; State Wisconsin; County Manitowoc; City of Manitowoc, Ward 5; ED 105; Sheet 7A. 915 26th St., Felix Jentsch household: Felix Jentsch | Head | 32 | Wisconsin. Anna | Wife | 28 | Wisconsin. Ernst | Son | 9. Lucile [indexed also as Lucild] | Daughter | F | W | 6 | S | attended school yes | born Wisconsin | father born Wisconsin | mother born Wisconsin. Alice | Daughter | 4.</p>",
+   "id": "N2282",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Fourteenth Census of the United States: 1920, Population; State Wisconsin; County Manitowoc; City of Manitowoc, Ward 5; ED 105; Sheet 7A. 915 26th St., Felix Jentsch household: Felix Jentsch | Head | 32 | Wisconsin. Anna | Wife | 28 | Wisconsin. Ernst | Son | 9. Lucile [indexed also as Lucild] | Daughter | F | W | 6 | S | attended school yes | born Wisconsin | father born Wisconsin | mother born Wisconsin. Alice | Daughter | 4.",
+   "type": "Transcript"
+  },
+  "N2283": {
+   "attached_to": [
+    {
+     "id": "C1462",
+     "type": "citation"
+    }
+   ],
+   "change": 1795534205,
+   "flags": [],
+   "handle": "10548dc8fe7f529de3b82cac9f1c",
+   "html": "<p>2026-11-24 (karel): Ancestry profile 212818118334 (tree 208290233, created 24 Nov 2026) shows Lucille Jentsch, F, birth abt 1914 Wisconsin, USA, death 1930 Chippewa Falls, Chippewa, Wisconsin, USA, daughter of Felix H. Jentsch 212815084816 (Gramps I0404), mother not entered; the 1920 United States Federal Census record 27906837 is attached there. Census: Lucile, daughter, 6, born Wisconsin, in the household of Felix Jentsch (32, head) at 915 26th St., Manitowoc Ward 5, with Anna (wife, 28), Ernst (son, 9) and Alice (daughter, 4). Death: Evergreen Cemetery note &quot;[bur. 5-28-1930/age 16 yrs/... died at Chippewa Falls, WI/bur. on Mrs. Frank Jentsch lot]&quot; (companion 101031). Checked the 24 Nov export (7c0a5fd): no Lucille/Lucile Jentsch and no Ancestry ID 212818118334. No relations block, on purpose: a father-only relation would make a second father-only family (as happened for Ella, F0185). She is placed in Felix&#x27;s existing father-only family F0188 (Felix I0404 + Ernest I0406) by update_family 101032 in this batch. Born about 1914, died 1930: not recent under the 100-year rule, and her parents and brother Ernst (b. about 1911) are of an age to be dead, so private false.<br>Conflicts: [&#x27;The census age 6 (Jan 1920) gives about 1913-1914; the cemetery note\\&#x27;s age 16 in May 1930 fits 1913-1914. A Wisconsin birth index entry &quot;Jintsch&quot;, 15 Jul 1913, Manitowoc, has no given name and is not attached; not used.&#x27;, &#x27;The 1920 mother &quot;Anna&quot; (28) is not settled: she is not Anna Nemetz I0405 (b. 1889, whose 1967 obituary calls Alice and Ernst step-children). No mother is entered.&#x27;, &#x27;The applier puts this census citation on the death event too; the death rests on the cemetery note (101031).&#x27;]</p>",
+   "id": "N2283",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-24 (karel): Ancestry profile 212818118334 (tree 208290233, created 24 Nov 2026) shows Lucille Jentsch, F, birth abt 1914 Wisconsin, USA, death 1930 Chippewa Falls, Chippewa, Wisconsin, USA, daughter of Felix H. Jentsch 212815084816 (Gramps I0404), mother not entered; the 1920 United States Federal Census record 27906837 is attached there. Census: Lucile, daughter, 6, born Wisconsin, in the household of Felix Jentsch (32, head) at 915 26th St., Manitowoc Ward 5, with Anna (wife, 28), Ernst (son, 9) and Alice (daughter, 4). Death: Evergreen Cemetery note \"[bur. 5-28-1930/age 16 yrs/... died at Chippewa Falls, WI/bur. on Mrs. Frank Jentsch lot]\" (companion 101031). Checked the 24 Nov export (7c0a5fd): no Lucille/Lucile Jentsch and no Ancestry ID 212818118334. No relations block, on purpose: a father-only relation would make a second father-only family (as happened for Ella, F0185). She is placed in Felix's existing father-only family F0188 (Felix I0404 + Ernest I0406) by update_family 101032 in this batch. Born about 1914, died 1930: not recent under the 100-year rule, and her parents and brother Ernst (b. about 1911) are of an age to be dead, so private false.\nConflicts: ['The census age 6 (Jan 1920) gives about 1913-1914; the cemetery note\\'s age 16 in May 1930 fits 1913-1914. A Wisconsin birth index entry \"Jintsch\", 15 Jul 1913, Manitowoc, has no given name and is not attached; not used.', 'The 1920 mother \"Anna\" (28) is not settled: she is not Anna Nemetz I0405 (b. 1889, whose 1967 obituary calls Alice and Ernst step-children). No mother is entered.', 'The applier puts this census citation on the death event too; the death rests on the cemetery note (101031).']",
+   "type": "Research"
+  },
+  "N2284": {
+   "attached_to": [
+    {
+     "id": "C1463",
+     "type": "citation"
+    }
+   ],
+   "change": 1795534207,
+   "flags": [],
+   "handle": "10548dc93dbf6c8ade2445c56e1a",
+   "html": "<p>Transcription (as written): Sixteenth Census of the United States: 1940, Population Schedule; State Wisconsin; County Manitowoc; Two Rivers; ED 36-47; Sheet 12A. Edward Wacek | Head | 50. Carrie Wacek | Wife | 47. Lorraine Wacek | Daughter | F | 26 | single | born Wisconsin. Joseph Mertons | 67 [in household].</p>",
+   "id": "N2284",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Sixteenth Census of the United States: 1940, Population Schedule; State Wisconsin; County Manitowoc; Two Rivers; ED 36-47; Sheet 12A. Edward Wacek | Head | 50. Carrie Wacek | Wife | 47. Lorraine Wacek | Daughter | F | 26 | single | born Wisconsin. Joseph Mertons | 67 [in household].",
+   "type": "Transcript"
+  },
+  "N2285": {
+   "attached_to": [
+    {
+     "id": "C1463",
+     "type": "citation"
+    }
+   ],
+   "change": 1795534207,
+   "flags": [],
+   "handle": "10548dc940c81d7bef49e2b129e8",
+   "html": "<p>2026-11-24 (karel): Ancestry profile 212818118697 (tree 208290233, created 24 Nov 2026) shows Lorraine Wacek, F, birth 22 Dec 1913 Two Rivers, Manitowoc, Wisconsin, USA, death Apr 1963 Two Rivers, daughter of Edward A. Wacek 212817191191 (Gramps I0420) and Carrie Mertens 212817394020 (I0421), spouse Michael Konieczka 212818118806 (new, 101050); the 1940 United States Federal Census record 77046753 and the 1950 census record 119683575 are attached there. 1940 census: Lorraine Wacek, daughter, 26, single, born Wisconsin, in the household of Edward Wacek (50, head) and Carrie (47, wife), Two Rivers. Birth date and parents from her obituary (Two Rivers Reporter, 15 Apr 1963, p. M-13, companion 101041): &quot;nee Lorraine Wacek, was born at Two Rivers Dec. 22, 1913, daughter of the late Edward and Mrs. Carrie Mertens Wacek&quot;; &quot;She was married Aug. 11, 1940, to Michael Konieczka&quot;. Checked the 24 Nov export (7c0a5fd): no Lorraine/Wacek-Konieczka and no Ancestry ID 212818118697; F0195 (Edward I0420 x Carrie I0421) has no children. No relations block: she is placed in F0195 by update_family 101042, and Michael&#x27;s add_person (101050) names her as spouse. Born 1913, died 1963: not recent under the 100-year rule, so private false.<br>Conflicts: [&#x27;Death: the obituary (Monday 15 Apr 1963) says she &quot;died Saturday afternoon&quot;, i.e. 13 Apr 1963, but that day is derived; only Apr 1963 is entered (also the stone index &quot;1913-Apr 1963&quot;).&#x27;, &#x27;The applier puts this census citation on the birth and death events too; the census supports her parentage and age only; the dates rest on the obituary (101041).&#x27;]</p>",
+   "id": "N2285",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-24 (karel): Ancestry profile 212818118697 (tree 208290233, created 24 Nov 2026) shows Lorraine Wacek, F, birth 22 Dec 1913 Two Rivers, Manitowoc, Wisconsin, USA, death Apr 1963 Two Rivers, daughter of Edward A. Wacek 212817191191 (Gramps I0420) and Carrie Mertens 212817394020 (I0421), spouse Michael Konieczka 212818118806 (new, 101050); the 1940 United States Federal Census record 77046753 and the 1950 census record 119683575 are attached there. 1940 census: Lorraine Wacek, daughter, 26, single, born Wisconsin, in the household of Edward Wacek (50, head) and Carrie (47, wife), Two Rivers. Birth date and parents from her obituary (Two Rivers Reporter, 15 Apr 1963, p. M-13, companion 101041): \"nee Lorraine Wacek, was born at Two Rivers Dec. 22, 1913, daughter of the late Edward and Mrs. Carrie Mertens Wacek\"; \"She was married Aug. 11, 1940, to Michael Konieczka\". Checked the 24 Nov export (7c0a5fd): no Lorraine/Wacek-Konieczka and no Ancestry ID 212818118697; F0195 (Edward I0420 x Carrie I0421) has no children. No relations block: she is placed in F0195 by update_family 101042, and Michael's add_person (101050) names her as spouse. Born 1913, died 1963: not recent under the 100-year rule, so private false.\nConflicts: ['Death: the obituary (Monday 15 Apr 1963) says she \"died Saturday afternoon\", i.e. 13 Apr 1963, but that day is derived; only Apr 1963 is entered (also the stone index \"1913-Apr 1963\").', 'The applier puts this census citation on the birth and death events too; the census supports her parentage and age only; the dates rest on the obituary (101041).']",
+   "type": "Research"
+  },
+  "N2286": {
+   "attached_to": [
+    {
+     "id": "C1464",
+     "type": "citation"
+    }
+   ],
+   "change": 1795534208,
+   "flags": [],
+   "handle": "10548dc968d21dbf17f081f44c05",
+   "html": "<p>Transcription (as written): Seventeenth Census of the United States, 1950, Population and Housing; State Wisconsin; County Manitowoc; Two Rivers; ED 36-85; Sheet/page 74. 1623 24th [St.]: Michael S Konieczka | Head | M | W | 41 | Married. Lorraine A Konieczka | Wife | F | W | 37 | Married.</p>",
+   "id": "N2286",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Seventeenth Census of the United States, 1950, Population and Housing; State Wisconsin; County Manitowoc; Two Rivers; ED 36-85; Sheet/page 74. 1623 24th [St.]: Michael S Konieczka | Head | M | W | 41 | Married. Lorraine A Konieczka | Wife | F | W | 37 | Married.",
+   "type": "Transcript"
+  },
+  "N2287": {
+   "attached_to": [
+    {
+     "id": "C1464",
+     "type": "citation"
+    }
+   ],
+   "change": 1795534208,
+   "flags": [],
+   "handle": "10548dc96bed1ff6e66c19b0b3f1",
+   "html": "<p>2026-11-24 (karel): Ancestry profile 212818118806 (tree 208290233, created 24 Nov 2026) shows Michael Konieczka, M, birth 26 Aug 1908 Pulaski, Wisconsin, USA, death Jan 1972 Wisconsin, USA, marriage 11 Aug 1940 Two Rivers, spouse Lorraine Wacek 212818118697 (new in this batch, 101040); the 1950 United States Federal Census record 119683574 is attached there. 1950 census: Michael S Konieczka, head, 41, married, with Lorraine A Konieczka, wife, 37, at 1623 24th, Two Rivers. Birth from his obituary (Manitowoc Herald Times, 10 Jan 1972, companion 101051): &quot;born Aug. 26, 1908, at Pulaski, a son of the late Andrew and Mary Wichlacz Konieczka. He married Lorraine Wacek at Sacred Heart Church Aug. 11, 1940.&quot; Death Jan 1972 per the cemetery index note &quot;(Michael Konieczka/26 Aug 1908/Jan 1972/SSDI)&quot;. Checked the 24 Nov export (7c0a5fd): no Konieczka and no Ancestry ID 212818118806; Lorraine is new, so the spouse link makes a new family, not a duplicate. His parents Andrew and Mary Wichlacz are not filed (not on the breadth-first list). Born 1908, died 1972: not recent, so private false.<br>Conflicts: [&#x27;Death: the obituary (Monday 10 Jan 1972) says he &quot;died at home Saturday&quot;, i.e. 8 Jan 1972 at Two Rivers, but the day is derived; only Jan 1972, Wisconsin (Ancestry profile) is entered.&#x27;, &#x27;The applier puts this census citation on the birth and death events too; the census supports his age (41 in 1950) only; the dates rest on the obituary (101051).&#x27;]</p>",
+   "id": "N2287",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-24 (karel): Ancestry profile 212818118806 (tree 208290233, created 24 Nov 2026) shows Michael Konieczka, M, birth 26 Aug 1908 Pulaski, Wisconsin, USA, death Jan 1972 Wisconsin, USA, marriage 11 Aug 1940 Two Rivers, spouse Lorraine Wacek 212818118697 (new in this batch, 101040); the 1950 United States Federal Census record 119683574 is attached there. 1950 census: Michael S Konieczka, head, 41, married, with Lorraine A Konieczka, wife, 37, at 1623 24th, Two Rivers. Birth from his obituary (Manitowoc Herald Times, 10 Jan 1972, companion 101051): \"born Aug. 26, 1908, at Pulaski, a son of the late Andrew and Mary Wichlacz Konieczka. He married Lorraine Wacek at Sacred Heart Church Aug. 11, 1940.\" Death Jan 1972 per the cemetery index note \"(Michael Konieczka/26 Aug 1908/Jan 1972/SSDI)\". Checked the 24 Nov export (7c0a5fd): no Konieczka and no Ancestry ID 212818118806; Lorraine is new, so the spouse link makes a new family, not a duplicate. His parents Andrew and Mary Wichlacz are not filed (not on the breadth-first list). Born 1908, died 1972: not recent, so private false.\nConflicts: ['Death: the obituary (Monday 10 Jan 1972) says he \"died at home Saturday\", i.e. 8 Jan 1972 at Two Rivers, but the day is derived; only Jan 1972, Wisconsin (Ancestry profile) is entered.', 'The applier puts this census citation on the birth and death events too; the census supports his age (41 in 1950) only; the dates rest on the obituary (101051).']",
+   "type": "Research"
+  },
+  "N2288": {
+   "attached_to": [
+    {
+     "id": "C1465",
+     "type": "citation"
+    }
+   ],
+   "change": 1795534209,
+   "flags": [],
+   "handle": "10548dc99fbb2ad162900bf3f928",
+   "html": "<p>Transcription (as written): Sheet header: Twelfth Census of the United States, Schedule No. 1, Population; State Wisconsin; County Manitowoc; City Manitowoc, Ward 7; Supervisor&#x27;s District 253 [as read]; Enumeration District 76; Sheet 17 [B]. Line 94: [dwelling 255, family 285 per the Ancestry index; numbers overwritten on the sheet] Jentsch, Frank | Head | W | M | Oct 1854 | 45 | M | 17 [years married] | Germany | Germany | Germany | [immigrated] 1876 | 24 [years in US]. Line 95: Annie | Wife | W | F | Oct 1864 | 35 | M | 17 | [mother of] 7 | [living] 6 | Wisconsin | Bohemia | Bohemia. Line 96: Martha | Daughter | June 1884 | 15 | S | Wisconsin. Line 97: Felix | Son | W | M | July 1886 | 13 | S | Wisconsin. Line 98: Alice | Daughter | Aug 1888 | 11 | S. Line 99: Lucia | Daughter | Mar 1890 | 10 | S. Line 100: Erna | Daughter | Feb 1895 | 5 | S. [Ancestry index continues the household with Annie, Daughter, Apr 1897, 3.]</p>",
+   "id": "N2288",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Sheet header: Twelfth Census of the United States, Schedule No. 1, Population; State Wisconsin; County Manitowoc; City Manitowoc, Ward 7; Supervisor's District 253 [as read]; Enumeration District 76; Sheet 17 [B]. Line 94: [dwelling 255, family 285 per the Ancestry index; numbers overwritten on the sheet] Jentsch, Frank | Head | W | M | Oct 1854 | 45 | M | 17 [years married] | Germany | Germany | Germany | [immigrated] 1876 | 24 [years in US]. Line 95: Annie | Wife | W | F | Oct 1864 | 35 | M | 17 | [mother of] 7 | [living] 6 | Wisconsin | Bohemia | Bohemia. Line 96: Martha | Daughter | June 1884 | 15 | S | Wisconsin. Line 97: Felix | Son | W | M | July 1886 | 13 | S | Wisconsin. Line 98: Alice | Daughter | Aug 1888 | 11 | S. Line 99: Lucia | Daughter | Mar 1890 | 10 | S. Line 100: Erna | Daughter | Feb 1895 | 5 | S. [Ancestry index continues the household with Annie, Daughter, Apr 1897, 3.]",
+   "type": "Transcript"
+  },
+  "N2289": {
+   "attached_to": [
+    {
+     "id": "C1465",
+     "type": "citation"
+    }
+   ],
+   "change": 1795534209,
+   "flags": [],
+   "handle": "10548dc9a21b90305e6ff9c9c26",
+   "html": "<p>2026-11-24 (karel): Makes the family of Frank Jentsch 212818118177 (101000) and Anna Lodl 212818118179 (101010), both new in this batch, with their son Felix H. Jentsch 212815084816 (Gramps I0404) by birth. 1900 census (attached on Ancestry to Frank, Anna and Felix, record 63557435): Felix, son, born July 1886 Wisconsin, in the household of Frank (head) and Annie (wife), both married 17 years. Frank&#x27;s 1926 obituary names &quot;Felix, this city&quot; among the survivors and Anna&#x27;s 1952 obituary names &quot;Felix of Manitowoc&quot; as her son. Ancestry shows Frank and Anna as a couple with child Felix and a Marriage fact 1883. Checked the 24 Nov export (7c0a5fd): Felix I0404 parents [] (his only families are his own F0188 and F0190), so this is not a second birth family; no family with these partners exists. Marriage: about 1883, from the census &quot;married 17 years&quot; (June 1900) and the obituary &quot;married to Anna Lodl 43 years ago&quot; (Oct 1926); year only, no place.<br>Conflicts: [&#x27;The marriage year is computed from two duration statements (census 17 years; obituary 43 years), both giving 1883 but either could be off by one; entered as about 1883.&#x27;, &#x27;The census lists six other children (Martha 1884, Alice 1888, Lucia 1890, Erna 1895, Annie 1897 and Josephine d. 1899 is implied by 7 born/6 living); none is filed here.&#x27;]</p>",
+   "id": "N2289",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-24 (karel): Makes the family of Frank Jentsch 212818118177 (101000) and Anna Lodl 212818118179 (101010), both new in this batch, with their son Felix H. Jentsch 212815084816 (Gramps I0404) by birth. 1900 census (attached on Ancestry to Frank, Anna and Felix, record 63557435): Felix, son, born July 1886 Wisconsin, in the household of Frank (head) and Annie (wife), both married 17 years. Frank's 1926 obituary names \"Felix, this city\" among the survivors and Anna's 1952 obituary names \"Felix of Manitowoc\" as her son. Ancestry shows Frank and Anna as a couple with child Felix and a Marriage fact 1883. Checked the 24 Nov export (7c0a5fd): Felix I0404 parents [] (his only families are his own F0188 and F0190), so this is not a second birth family; no family with these partners exists. Marriage: about 1883, from the census \"married 17 years\" (June 1900) and the obituary \"married to Anna Lodl 43 years ago\" (Oct 1926); year only, no place.\nConflicts: ['The marriage year is computed from two duration statements (census 17 years; obituary 43 years), both giving 1883 but either could be off by one; entered as about 1883.', 'The census lists six other children (Martha 1884, Alice 1888, Lucia 1890, Erna 1895, Annie 1897 and Josephine d. 1899 is implied by 7 born/6 living); none is filed here.']",
+   "type": "Research"
+  },
+  "N2290": {
+   "attached_to": [
+    {
+     "id": "C1466",
+     "type": "citation"
+    }
+   ],
+   "change": 1795534211,
+   "flags": [],
+   "handle": "10548dc9daf2d3d98d7c8daeb9c",
+   "html": "<p>Transcription (as written): Frank Jentsch, for thirty years an employe of the Rahr Sons Company and previous to that time in charge of a brewery plant at Francis Creek, died at his home 1017 So. 17th street this morning, [...] Mr. Jentsch was born in Germany and on October 30 would have been 72 years old. He made his home at Breslau, Germany and came to America in 1876 and to Manitowoc county 35 years ago, locating at Francis Creek where he remained five years and then removed to the city. He was married to Anna Lodl 43 years ago and Mrs. Jentsch with seven children survive. Mrs. Emil Schlundt, Two Rivers, Mrs. Warren Melendy, Waukesha, Mrs. Harry Stoeding, Whitefish Bay, Mrs. George Burger and Mrs. Chester Plantico, this city, and Felix, this city and Max of Glassboro, N.Y. Two sisters in Germany also survive. Manitowoc Herald News, October 26, 1926 P. 2</p>",
+   "id": "N2290",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Frank Jentsch, for thirty years an employe of the Rahr Sons Company and previous to that time in charge of a brewery plant at Francis Creek, died at his home 1017 So. 17th street this morning, [...] Mr. Jentsch was born in Germany and on October 30 would have been 72 years old. He made his home at Breslau, Germany and came to America in 1876 and to Manitowoc county 35 years ago, locating at Francis Creek where he remained five years and then removed to the city. He was married to Anna Lodl 43 years ago and Mrs. Jentsch with seven children survive. Mrs. Emil Schlundt, Two Rivers, Mrs. Warren Melendy, Waukesha, Mrs. Harry Stoeding, Whitefish Bay, Mrs. George Burger and Mrs. Chester Plantico, this city, and Felix, this city and Max of Glassboro, N.Y. Two sisters in Germany also survive. Manitowoc Herald News, October 26, 1926 P. 2",
+   "type": "Transcript"
+  },
+  "N2291": {
+   "attached_to": [
+    {
+     "id": "C1466",
+     "type": "citation"
+    }
+   ],
+   "change": 1795534211,
+   "flags": [],
+   "handle": "10548dc9de4459d458d6b1468f42",
+   "html": "<p>2026-11-24 (karel): Obituary of Frank Jentsch (212818118177; companion to add_person 101000, applied after it), source of his death date 26 Oct 1926 at Manitowoc (paper dated 26 Oct 1926, &quot;died at his home 1017 So. 17th street this morning&quot;), his wife Anna Lodl, his son Felix, and immigration 1876. Transcription tier: 2manitowoc.com volunteer transcription, not the newspaper image, so compiled, not record. The obituary is attached on Ancestry as the source of his Death fact.<br>Conflicts: [&#x27;&quot;married to Anna Lodl 43 years ago&quot; gives about 1883, agreeing with the 1900 census (married 17 years).&#x27;]</p>",
+   "id": "N2291",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-24 (karel): Obituary of Frank Jentsch (212818118177; companion to add_person 101000, applied after it), source of his death date 26 Oct 1926 at Manitowoc (paper dated 26 Oct 1926, \"died at his home 1017 So. 17th street this morning\"), his wife Anna Lodl, his son Felix, and immigration 1876. Transcription tier: 2manitowoc.com volunteer transcription, not the newspaper image, so compiled, not record. The obituary is attached on Ancestry as the source of his Death fact.\nConflicts: ['\"married to Anna Lodl 43 years ago\" gives about 1883, agreeing with the 1900 census (married 17 years).']",
+   "type": "Research"
+  },
+  "N2292": {
+   "attached_to": [
+    {
+     "id": "C1467",
+     "type": "citation"
+    }
+   ],
+   "change": 1795534211,
+   "flags": [],
+   "handle": "10548dc9ef5a20acf1d2b695e816",
+   "html": "<p>Transcription (as written): Mrs. Frank Jentsch, 87, died Tuesday morning of a heart attack at Waukesha where she was visiting a daughter, Mrs. F. W. Melendy, [...] Burial will be in the Manitowoc Evergreen Cemetery. Mrs. Jentsch, the former Anna Lodel, was born in 1864 at Tisch Mills. Her husband died 26 years ago. Survivors include four daughters, Mrs. Melendy of Waukesha, Mrs. Burger and Mrs. Chester Plantico of Manitowoc and Mrs. Harry Staeding of Milwaukee; two sons, Felix of Manitowoc and Max of Glassboro, N.J.; two sisters, Mrs. Joseph Urbanek of Two Creeks and Mrs. Anton Blaha of Two Rivers; 11 grandchildren and 13 great grandchildren. [...] Manitowoc Herald Times, July 8, 1952 P. 14 [cemetery note:] [d. 07-08-1952 at Waukesha, WI/age 87 yrs./bur. on Mrs. Frank Jentsch lot]</p>",
+   "id": "N2292",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Mrs. Frank Jentsch, 87, died Tuesday morning of a heart attack at Waukesha where she was visiting a daughter, Mrs. F. W. Melendy, [...] Burial will be in the Manitowoc Evergreen Cemetery. Mrs. Jentsch, the former Anna Lodel, was born in 1864 at Tisch Mills. Her husband died 26 years ago. Survivors include four daughters, Mrs. Melendy of Waukesha, Mrs. Burger and Mrs. Chester Plantico of Manitowoc and Mrs. Harry Staeding of Milwaukee; two sons, Felix of Manitowoc and Max of Glassboro, N.J.; two sisters, Mrs. Joseph Urbanek of Two Creeks and Mrs. Anton Blaha of Two Rivers; 11 grandchildren and 13 great grandchildren. [...] Manitowoc Herald Times, July 8, 1952 P. 14 [cemetery note:] [d. 07-08-1952 at Waukesha, WI/age 87 yrs./bur. on Mrs. Frank Jentsch lot]",
+   "type": "Transcript"
+  },
+  "N2293": {
+   "attached_to": [
+    {
+     "id": "C1467",
+     "type": "citation"
+    }
+   ],
+   "change": 1795534211,
+   "flags": [],
+   "handle": "10548dc9f2888cad1d910560e0a",
+   "html": "<p>2026-11-24 (karel): Obituary of Anna (Lodl/Lodel) Jentsch (212818118179; companion to add_person 101010, applied after it): born 1864 at Tisch Mills, died at Waukesha (Tuesday 8 Jul 1952 per the cemetery note), widow of Frank (&quot;Her husband died 26 years ago&quot;), son Felix of Manitowoc. Transcription tier (2manitowoc.com), so compiled.<br>Conflicts: [&#x27;Age 87 at death in July 1952 fits a birth in Oct 1864 (census).&#x27;]</p>",
+   "id": "N2293",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-24 (karel): Obituary of Anna (Lodl/Lodel) Jentsch (212818118179; companion to add_person 101010, applied after it): born 1864 at Tisch Mills, died at Waukesha (Tuesday 8 Jul 1952 per the cemetery note), widow of Frank (\"Her husband died 26 years ago\"), son Felix of Manitowoc. Transcription tier (2manitowoc.com), so compiled.\nConflicts: ['Age 87 at death in July 1952 fits a birth in Oct 1864 (census).']",
+   "type": "Research"
+  },
+  "N2294": {
+   "attached_to": [
+    {
+     "id": "C1468",
+     "type": "citation"
+    }
+   ],
+   "change": 1795534212,
+   "flags": [],
+   "handle": "10548dca0e8f91324578865c465",
+   "html": "<p>Transcription (as written): [bur. 5-28-1930/age 16 yrs/cause: cerebral hemorrhage/died at Chippewa Falls, WI/bur. on Mrs. Frank Jentsch lot]</p>",
+   "id": "N2294",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): [bur. 5-28-1930/age 16 yrs/cause: cerebral hemorrhage/died at Chippewa Falls, WI/bur. on Mrs. Frank Jentsch lot]",
+   "type": "Transcript"
+  },
+  "N2295": {
+   "attached_to": [
+    {
+     "id": "C1468",
+     "type": "citation"
+    }
+   ],
+   "change": 1795534212,
+   "flags": [],
+   "handle": "10548dca13df3a2c965eba38a248",
+   "html": "<p>2026-11-24 (karel): Source of the death of Lucille Jentsch (212818118334; companion to add_person 101030, applied after it): buried 28 May 1930 at Evergreen Cemetery, Manitowoc, age 16, died at Chippewa Falls, on the lot of Mrs. Frank Jentsch (her grandmother Anna, 101010). Year only entered for the death; the burial date is not used as a death date. Cemetery transcription, compiled tier.<br>Conflicts: [&#x27;The cause of death in the note is not entered (family-papers rule: no health details).&#x27;]</p>",
+   "id": "N2295",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-24 (karel): Source of the death of Lucille Jentsch (212818118334; companion to add_person 101030, applied after it): buried 28 May 1930 at Evergreen Cemetery, Manitowoc, age 16, died at Chippewa Falls, on the lot of Mrs. Frank Jentsch (her grandmother Anna, 101010). Year only entered for the death; the burial date is not used as a death date. Cemetery transcription, compiled tier.\nConflicts: ['The cause of death in the note is not entered (family-papers rule: no health details).']",
+   "type": "Research"
+  },
+  "N2296": {
+   "attached_to": [
+    {
+     "id": "C1469",
+     "type": "citation"
+    }
+   ],
+   "change": 1795534213,
+   "flags": [],
+   "handle": "10548dca2e2b206814e8db1145a1",
+   "html": "<p>Transcription (as written): Mrs. Michael Konieczka, 49, of 1623-23rd St., Two Rivers, died Saturday afternoon at Two Rivers Municipal Hospital where she had been a patient three weeks. [...] Burial will be in Pioneers&#x27; Rest Cemetery. Mrs. Konieczka, nee Lorraine Wacek, was born at Two Rivers Dec. 22, 1913, daughter of the late Edward and Mrs. Carrie Mertens Wacek. She was married Aug. 11, 1940, to Michael Konieczka at Sacred Heart Church, [...] Surviving are her husband and mother. [...] Two Rivers Reporter, April 15, 1963 P. M-13</p>",
+   "id": "N2296",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Mrs. Michael Konieczka, 49, of 1623-23rd St., Two Rivers, died Saturday afternoon at Two Rivers Municipal Hospital where she had been a patient three weeks. [...] Burial will be in Pioneers' Rest Cemetery. Mrs. Konieczka, nee Lorraine Wacek, was born at Two Rivers Dec. 22, 1913, daughter of the late Edward and Mrs. Carrie Mertens Wacek. She was married Aug. 11, 1940, to Michael Konieczka at Sacred Heart Church, [...] Surviving are her husband and mother. [...] Two Rivers Reporter, April 15, 1963 P. M-13",
+   "type": "Transcript"
+  },
+  "N2297": {
+   "attached_to": [
+    {
+     "id": "C1469",
+     "type": "citation"
+    }
+   ],
+   "change": 1795534213,
+   "flags": [],
+   "handle": "10548dca317ead2dcaf8e9d175f",
+   "html": "<p>2026-11-24 (karel): Obituary of Lorraine (Wacek) Konieczka (212818118697; companion to add_person 101040, applied after it): born at Two Rivers 22 Dec 1913, daughter of the late Edward and Mrs. Carrie Mertens Wacek, married Michael Konieczka 11 Aug 1940 at Sacred Heart Church, died at Two Rivers Municipal Hospital (April 1963). Transcription tier (2manitowoc.com), so compiled.<br>Conflicts: [&#x27;The day of death (Saturday = 13 Apr 1963) is not entered: it is derived from the weekday.&#x27;]</p>",
+   "id": "N2297",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-24 (karel): Obituary of Lorraine (Wacek) Konieczka (212818118697; companion to add_person 101040, applied after it): born at Two Rivers 22 Dec 1913, daughter of the late Edward and Mrs. Carrie Mertens Wacek, married Michael Konieczka 11 Aug 1940 at Sacred Heart Church, died at Two Rivers Municipal Hospital (April 1963). Transcription tier (2manitowoc.com), so compiled.\nConflicts: ['The day of death (Saturday = 13 Apr 1963) is not entered: it is derived from the weekday.']",
+   "type": "Research"
+  },
+  "N2298": {
+   "attached_to": [
+    {
+     "id": "C1470",
+     "type": "citation"
+    }
+   ],
+   "change": 1795534213,
+   "flags": [],
+   "handle": "10548dca40c62cae8ef7e3d141c1",
+   "html": "<p>Transcription (as written): Seventeenth Census of the United States, 1950, Population and Housing; State Wisconsin; County Manitowoc; Two Rivers; ED 36-85; Sheet/page 74. 1623 24th [St.]: Michael S Konieczka | Head | M | W | 41 | Married. Lorraine A Konieczka | Wife | F | W | 37 | Married.</p>",
+   "id": "N2298",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Seventeenth Census of the United States, 1950, Population and Housing; State Wisconsin; County Manitowoc; Two Rivers; ED 36-85; Sheet/page 74. 1623 24th [St.]: Michael S Konieczka | Head | M | W | 41 | Married. Lorraine A Konieczka | Wife | F | W | 37 | Married.",
+   "type": "Transcript"
+  },
+  "N2299": {
+   "attached_to": [
+    {
+     "id": "C1470",
+     "type": "citation"
+    }
+   ],
+   "change": 1795534214,
+   "flags": [],
+   "handle": "10548dca43f121ef3b4e8424cc65",
+   "html": "<p>2026-11-24 (karel): Record-tier evidence for Lorraine (Wacek) Konieczka (212818118697; companion to 101040): the 1950 census, attached on Ancestry to her (record 119683575), lists Lorraine A Konieczka, wife, 37, married, in the household of Michael S Konieczka (41, head) at 1623 24th, Two Rivers, consistent with her Dec 1913 birth and her 1940 marriage.<br>Conflicts: [&#x27;The 1950 address 1623 24th differs from her 1963 obituary address 1623-23rd St.; both Two Rivers.&#x27;]</p>",
+   "id": "N2299",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-24 (karel): Record-tier evidence for Lorraine (Wacek) Konieczka (212818118697; companion to 101040): the 1950 census, attached on Ancestry to her (record 119683575), lists Lorraine A Konieczka, wife, 37, married, in the household of Michael S Konieczka (41, head) at 1623 24th, Two Rivers, consistent with her Dec 1913 birth and her 1940 marriage.\nConflicts: ['The 1950 address 1623 24th differs from her 1963 obituary address 1623-23rd St.; both Two Rivers.']",
+   "type": "Research"
+  },
+  "N2300": {
+   "attached_to": [
+    {
+     "id": "C1471",
+     "type": "citation"
+    }
+   ],
+   "change": 1795534214,
+   "flags": [],
+   "handle": "10548dca5f2746151e64cc1e4668",
+   "html": "<p>Transcription (as written): Funeral services for Michael Konieczka, 63, of 1510-23rd St., Two Rivers, who died at home Saturday after a long illness, will be at 9:30 a.m. Tuesday [...] burial will be in Pioneers&#x27; Rest Cemetery. Mr. Konieczka was born Aug. 26, 1908, at Pulaski, a son of the late Andrew and Mary Wichlacz Konieczka. He married Lorraine Wacek at Sacred Heart Church Aug. 11, 1940. She died in 1963. [...] Manitowoc Herald Times, Manitowoc, Wis. January 10, 1972 [cemetery index note:] (Michael Konieczka/26 Aug 1908/Jan 1972/SSDI)</p>",
+   "id": "N2300",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Funeral services for Michael Konieczka, 63, of 1510-23rd St., Two Rivers, who died at home Saturday after a long illness, will be at 9:30 a.m. Tuesday [...] burial will be in Pioneers' Rest Cemetery. Mr. Konieczka was born Aug. 26, 1908, at Pulaski, a son of the late Andrew and Mary Wichlacz Konieczka. He married Lorraine Wacek at Sacred Heart Church Aug. 11, 1940. She died in 1963. [...] Manitowoc Herald Times, Manitowoc, Wis. January 10, 1972 [cemetery index note:] (Michael Konieczka/26 Aug 1908/Jan 1972/SSDI)",
+   "type": "Transcript"
+  },
+  "N2301": {
+   "attached_to": [
+    {
+     "id": "C1471",
+     "type": "citation"
+    }
+   ],
+   "change": 1795534214,
+   "flags": [],
+   "handle": "10548dca62282ca33fdf77081a87",
+   "html": "<p>2026-11-24 (karel): Obituary of Michael Konieczka (212818118806; companion to add_person 101050, applied after it): born 26 Aug 1908 at Pulaski, son of the late Andrew and Mary Wichlacz Konieczka, married Lorraine Wacek at Sacred Heart Church 11 Aug 1940, she died in 1963; he died at home (Jan 1972). Transcription tier (2manitowoc.com), so compiled.<br>Conflicts: [&#x27;The day of death (Saturday = 8 Jan 1972) is not entered: it is derived from the weekday.&#x27;]</p>",
+   "id": "N2301",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-24 (karel): Obituary of Michael Konieczka (212818118806; companion to add_person 101050, applied after it): born 26 Aug 1908 at Pulaski, son of the late Andrew and Mary Wichlacz Konieczka, married Lorraine Wacek at Sacred Heart Church 11 Aug 1940, she died in 1963; he died at home (Jan 1972). Transcription tier (2manitowoc.com), so compiled.\nConflicts: ['The day of death (Saturday = 8 Jan 1972) is not entered: it is derived from the weekday.']",
+   "type": "Research"
+  },
+  "N2302": {
+   "attached_to": [
+    {
+     "id": "C1472",
+     "type": "citation"
+    }
+   ],
+   "change": 1795534215,
+   "flags": [],
+   "handle": "10548dca7072698cb475a9c147c8",
+   "html": "<p>Transcription (as written): Mrs. Michael Konieczka, 49, of 1623-23rd St., Two Rivers, died Saturday afternoon at Two Rivers Municipal Hospital where she had been a patient three weeks. [...] Burial will be in Pioneers&#x27; Rest Cemetery. Mrs. Konieczka, nee Lorraine Wacek, was born at Two Rivers Dec. 22, 1913, daughter of the late Edward and Mrs. Carrie Mertens Wacek. She was married Aug. 11, 1940, to Michael Konieczka at Sacred Heart Church, [...] Surviving are her husband and mother. [...] Two Rivers Reporter, April 15, 1963 P. M-13</p>",
+   "id": "N2302",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Mrs. Michael Konieczka, 49, of 1623-23rd St., Two Rivers, died Saturday afternoon at Two Rivers Municipal Hospital where she had been a patient three weeks. [...] Burial will be in Pioneers' Rest Cemetery. Mrs. Konieczka, nee Lorraine Wacek, was born at Two Rivers Dec. 22, 1913, daughter of the late Edward and Mrs. Carrie Mertens Wacek. She was married Aug. 11, 1940, to Michael Konieczka at Sacred Heart Church, [...] Surviving are her husband and mother. [...] Two Rivers Reporter, April 15, 1963 P. M-13",
+   "type": "Transcript"
+  },
+  "N2303": {
+   "attached_to": [
+    {
+     "id": "C1472",
+     "type": "citation"
+    }
+   ],
+   "change": 1795534215,
+   "flags": [],
+   "handle": "10548dca740747efa6e29d646f0b",
+   "html": "<p>2026-11-24 (karel): Marriage of Michael Konieczka 212818118806 (101050) and Lorraine Wacek 212818118697 (101040), both new in this batch; the family is the one the applier makes from Michael&#x27;s spouse link. Lorraine&#x27;s obituary (Two Rivers Reporter, 15 Apr 1963, p. M-13): &quot;She was married Aug. 11, 1940, to Michael Konieczka at Sacred Heart Church&quot;; Michael&#x27;s obituary (Manitowoc Herald Times, 10 Jan 1972, citation 101051 on him): &quot;He married Lorraine Wacek at Sacred Heart Church Aug. 11, 1940.&quot; Sacred Heart is the Two Rivers parish named in both obituaries. Ancestry has Marriage 11 Aug 1940 Two Rivers on both profiles. Transcription tier (compiled), no marriage record image yet.<br>Conflicts: [&#x27;Both obituaries are transcriptions on 2manitowoc.com; a marriage record (Wisconsin marriage index / Sacred Heart register) would raise this to record tier.&#x27;]</p>",
+   "id": "N2303",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-24 (karel): Marriage of Michael Konieczka 212818118806 (101050) and Lorraine Wacek 212818118697 (101040), both new in this batch; the family is the one the applier makes from Michael's spouse link. Lorraine's obituary (Two Rivers Reporter, 15 Apr 1963, p. M-13): \"She was married Aug. 11, 1940, to Michael Konieczka at Sacred Heart Church\"; Michael's obituary (Manitowoc Herald Times, 10 Jan 1972, citation 101051 on him): \"He married Lorraine Wacek at Sacred Heart Church Aug. 11, 1940.\" Sacred Heart is the Two Rivers parish named in both obituaries. Ancestry has Marriage 11 Aug 1940 Two Rivers on both profiles. Transcription tier (compiled), no marriage record image yet.\nConflicts: ['Both obituaries are transcriptions on 2manitowoc.com; a marriage record (Wisconsin marriage index / Sacred Heart register) would raise this to record tier.']",
    "type": "Research"
   }
  },
@@ -173762,7 +175799,7 @@
     "type": "Birth",
     "year": 1886
    },
-   "change": 1794236409,
+   "change": 1795534210,
    "citations": [
     "C1284"
    ],
@@ -173816,7 +175853,9 @@
     "type": "Birth Name"
    },
    "notes": [],
-   "parents": [],
+   "parents": [
+    "F0225"
+   ],
    "provenance": [
     "agent-karel",
     "agent-proposed"
@@ -177929,6 +179968,478 @@
    "urls": [],
    "xref": {
     "ancestry": "212817992119"
+   }
+  },
+  "I0508": {
+   "alt_names": [],
+   "attributes": [],
+   "birth": {
+    "date": {
+     "day": null,
+     "iso": "1854-10",
+     "modifier": null,
+     "month": 10,
+     "quality": null,
+     "sort": 2398493,
+     "text": "October 1854",
+     "year": 1854
+    },
+    "event": "E1706",
+    "place": "P0003",
+    "type": "Birth",
+    "year": 1854
+   },
+   "change": 1795534211,
+   "citations": [
+    "C1460",
+    "C1466"
+   ],
+   "death": {
+    "date": {
+     "day": 26,
+     "iso": "1926-10-26",
+     "modifier": null,
+     "month": 10,
+     "quality": null,
+     "sort": 2424815,
+     "text": "26 October 1926",
+     "year": 1926
+    },
+    "event": "E1707",
+    "place": "P0158",
+    "type": "Death",
+    "year": 1926
+   },
+   "events": [
+    {
+     "ref": "E1706",
+     "role": "Primary"
+    },
+    {
+     "ref": "E1707",
+     "role": "Primary"
+    }
+   ],
+   "families": [
+    "F0225"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "gender": "M",
+   "handle": "10548dc8b2321272855cd188959",
+   "id": "I0508",
+   "media": [],
+   "name": {
+    "call": "",
+    "display": "Frank Jentsch",
+    "first": "Frank",
+    "nick": "",
+    "prefix": "",
+    "sort": "Jentsch, Frank",
+    "suffix": "",
+    "surname": "Jentsch",
+    "title": "",
+    "type": "Birth Name"
+   },
+   "notes": [],
+   "parents": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "urls": [],
+   "xref": {
+    "ancestry": "212818118177"
+   }
+  },
+  "I0509": {
+   "alt_names": [
+    {
+     "call": "",
+     "date": null,
+     "display": "Anna Jentsch",
+     "first": "Anna",
+     "nick": "",
+     "prefix": "",
+     "sort": "Jentsch, Anna",
+     "suffix": "",
+     "surname": "Jentsch",
+     "title": "",
+     "type": "Married Name"
+    }
+   ],
+   "attributes": [],
+   "birth": {
+    "date": {
+     "day": null,
+     "iso": "1864",
+     "modifier": null,
+     "month": null,
+     "quality": null,
+     "sort": 2401872,
+     "text": "1864",
+     "year": 1864
+    },
+    "event": "E1708",
+    "place": "P0362",
+    "type": "Birth",
+    "year": 1864
+   },
+   "change": 1795534212,
+   "citations": [
+    "C1461",
+    "C1467"
+   ],
+   "death": {
+    "date": {
+     "day": 8,
+     "iso": "1952-07-08",
+     "modifier": null,
+     "month": 7,
+     "quality": null,
+     "sort": 2434202,
+     "text": "8 July 1952",
+     "year": 1952
+    },
+    "event": "E1709",
+    "place": "P0363",
+    "type": "Death",
+    "year": 1952
+   },
+   "events": [
+    {
+     "ref": "E1708",
+     "role": "Primary"
+    },
+    {
+     "ref": "E1709",
+     "role": "Primary"
+    }
+   ],
+   "families": [
+    "F0225"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "gender": "F",
+   "handle": "10548dc8e65b3846256081c2b53f",
+   "id": "I0509",
+   "media": [],
+   "name": {
+    "call": "",
+    "display": "Anna Lodl",
+    "first": "Anna",
+    "nick": "",
+    "prefix": "",
+    "sort": "Lodl, Anna",
+    "suffix": "",
+    "surname": "Lodl",
+    "title": "",
+    "type": "Birth Name"
+   },
+   "notes": [],
+   "parents": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "urls": [],
+   "xref": {
+    "ancestry": "212818118179"
+   }
+  },
+  "I0510": {
+   "alt_names": [],
+   "attributes": [],
+   "birth": {
+    "date": {
+     "day": null,
+     "iso": "1914",
+     "modifier": "about",
+     "month": null,
+     "quality": null,
+     "sort": 2420134,
+     "text": "about 1914",
+     "year": 1914
+    },
+    "event": "E1710",
+    "place": "P0089",
+    "type": "Birth",
+    "year": 1914
+   },
+   "change": 1795534213,
+   "citations": [
+    "C1462",
+    "C1468"
+   ],
+   "death": {
+    "date": {
+     "day": null,
+     "iso": "1930",
+     "modifier": null,
+     "month": null,
+     "quality": null,
+     "sort": 2425978,
+     "text": "1930",
+     "year": 1930
+    },
+    "event": "E1711",
+    "place": "P0364",
+    "type": "Death",
+    "year": 1930
+   },
+   "events": [
+    {
+     "ref": "E1710",
+     "role": "Primary"
+    },
+    {
+     "ref": "E1711",
+     "role": "Primary"
+    }
+   ],
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "gender": "F",
+   "handle": "10548dc92f3175bed96f6b53ed72",
+   "id": "I0510",
+   "media": [],
+   "name": {
+    "call": "",
+    "display": "Lucille Jentsch",
+    "first": "Lucille",
+    "nick": "",
+    "prefix": "",
+    "sort": "Jentsch, Lucille",
+    "suffix": "",
+    "surname": "Jentsch",
+    "title": "",
+    "type": "Birth Name"
+   },
+   "notes": [],
+   "parents": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "urls": [],
+   "xref": {
+    "ancestry": "212818118334"
+   }
+  },
+  "I0511": {
+   "alt_names": [
+    {
+     "call": "",
+     "date": null,
+     "display": "Lorraine Konieczka",
+     "first": "Lorraine",
+     "nick": "",
+     "prefix": "",
+     "sort": "Konieczka, Lorraine",
+     "suffix": "",
+     "surname": "Konieczka",
+     "title": "",
+     "type": "Married Name"
+    }
+   ],
+   "attributes": [],
+   "birth": {
+    "date": {
+     "day": 22,
+     "iso": "1913-12-22",
+     "modifier": null,
+     "month": 12,
+     "quality": null,
+     "sort": 2420124,
+     "text": "22 December 1913",
+     "year": 1913
+    },
+    "event": "E1712",
+    "place": "P0016",
+    "type": "Birth",
+    "year": 1913
+   },
+   "change": 1795534214,
+   "citations": [
+    "C1463",
+    "C1469",
+    "C1470"
+   ],
+   "death": {
+    "date": {
+     "day": null,
+     "iso": "1963-04",
+     "modifier": null,
+     "month": 4,
+     "quality": null,
+     "sort": 2438121,
+     "text": "April 1963",
+     "year": 1963
+    },
+    "event": "E1713",
+    "place": "P0016",
+    "type": "Death",
+    "year": 1963
+   },
+   "events": [
+    {
+     "ref": "E1712",
+     "role": "Primary"
+    },
+    {
+     "ref": "E1713",
+     "role": "Primary"
+    }
+   ],
+   "families": [
+    "F0224"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "gender": "F",
+   "handle": "10548dc95ab377f81ff80edb5301",
+   "id": "I0511",
+   "media": [],
+   "name": {
+    "call": "",
+    "display": "Lorraine Wacek",
+    "first": "Lorraine",
+    "nick": "",
+    "prefix": "",
+    "sort": "Wacek, Lorraine",
+    "suffix": "",
+    "surname": "Wacek",
+    "title": "",
+    "type": "Birth Name"
+   },
+   "notes": [],
+   "parents": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "urls": [],
+   "xref": {
+    "ancestry": "212818118697"
+   }
+  },
+  "I0512": {
+   "alt_names": [],
+   "attributes": [],
+   "birth": {
+    "date": {
+     "day": 26,
+     "iso": "1908-08-26",
+     "modifier": null,
+     "month": 8,
+     "quality": null,
+     "sort": 2418180,
+     "text": "26 August 1908",
+     "year": 1908
+    },
+    "event": "E1714",
+    "place": "P0365",
+    "type": "Birth",
+    "year": 1908
+   },
+   "change": 1795534215,
+   "citations": [
+    "C1464",
+    "C1471"
+   ],
+   "death": {
+    "date": {
+     "day": null,
+     "iso": "1972-01",
+     "modifier": null,
+     "month": 1,
+     "quality": null,
+     "sort": 2441318,
+     "text": "January 1972",
+     "year": 1972
+    },
+    "event": "E1715",
+    "place": "P0089",
+    "type": "Death",
+    "year": 1972
+   },
+   "events": [
+    {
+     "ref": "E1714",
+     "role": "Primary"
+    },
+    {
+     "ref": "E1715",
+     "role": "Primary"
+    }
+   ],
+   "families": [
+    "F0224"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "gender": "M",
+   "handle": "10548dc98d1136a743950e1eea24",
+   "id": "I0512",
+   "media": [],
+   "name": {
+    "call": "",
+    "display": "Michael Konieczka",
+    "first": "Michael",
+    "nick": "",
+    "prefix": "",
+    "sort": "Konieczka, Michael",
+    "suffix": "",
+    "surname": "Konieczka",
+    "title": "",
+    "type": "Birth Name"
+   },
+   "notes": [],
+   "parents": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "urls": [],
+   "xref": {
+    "ancestry": "212818118806"
    }
   }
  },
@@ -187199,6 +189710,134 @@
    ],
    "type": "Unknown",
    "urls": []
+  },
+  "P0362": {
+   "alt_names": [],
+   "citations": [],
+   "code": "",
+   "display": "Tisch Mills, Manitowoc, Wisconsin, USA",
+   "enclosed_by": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10548dc8cd4b1e96cd417bf2a042",
+   "hierarchy": [
+    "P0362"
+   ],
+   "id": "P0362",
+   "lat": null,
+   "long": null,
+   "media": [],
+   "name": "Tisch Mills, Manitowoc, Wisconsin, USA",
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed",
+    "needs-place"
+   ],
+   "type": "Unknown",
+   "urls": []
+  },
+  "P0363": {
+   "alt_names": [],
+   "citations": [],
+   "code": "",
+   "display": "Waukesha, Waukesha, Wisconsin, USA",
+   "enclosed_by": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10548dc8da7c19e73fd13ccf0400",
+   "hierarchy": [
+    "P0363"
+   ],
+   "id": "P0363",
+   "lat": null,
+   "long": null,
+   "media": [],
+   "name": "Waukesha, Waukesha, Wisconsin, USA",
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed",
+    "needs-place"
+   ],
+   "type": "Unknown",
+   "urls": []
+  },
+  "P0364": {
+   "alt_names": [],
+   "citations": [],
+   "code": "",
+   "display": "Chippewa Falls, Chippewa, Wisconsin, USA",
+   "enclosed_by": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10548dc9229572bed67af24da2c",
+   "hierarchy": [
+    "P0364"
+   ],
+   "id": "P0364",
+   "lat": null,
+   "long": null,
+   "media": [],
+   "name": "Chippewa Falls, Chippewa, Wisconsin, USA",
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed",
+    "needs-place"
+   ],
+   "type": "Unknown",
+   "urls": []
+  },
+  "P0365": {
+   "alt_names": [],
+   "citations": [],
+   "code": "",
+   "display": "Pulaski, Wisconsin, USA",
+   "enclosed_by": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10548dc97e6c72e4b83a788712a9",
+   "hierarchy": [
+    "P0365"
+   ],
+   "id": "P0365",
+   "lat": null,
+   "long": null,
+   "media": [],
+   "name": "Pulaski, Wisconsin, USA",
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed",
+    "needs-place"
+   ],
+   "type": "Unknown",
+   "urls": []
   }
  },
  "repositories": {
@@ -187494,6 +190133,54 @@
    "handle": "105459370c0b63442ae1c33c0322",
    "id": "R0036",
    "name": "National Archives and Records Administration (NARA), microfilm T623 roll 446",
+   "notes": [],
+   "type": "Archive",
+   "urls": []
+  },
+  "R0037": {
+   "handle": "10548dc88a6ec43901621d18ba1",
+   "id": "R0037",
+   "name": "National Archives and Records Administration (NARA), microfilm T623 roll 1797; Ancestry.com, 1900 United States Federal Census (collection 7602)",
+   "notes": [],
+   "type": "Archive",
+   "urls": []
+  },
+  "R0038": {
+   "handle": "10548dc8eea57fd8cda373bd5dfe",
+   "id": "R0038",
+   "name": "National Archives and Records Administration (NARA), microfilm T625 roll 1994; Ancestry.com, 1920 United States Federal Census (collection 6061)",
+   "notes": [],
+   "type": "Archive",
+   "urls": []
+  },
+  "R0039": {
+   "handle": "10548dc93638559acbd305221a9a",
+   "id": "R0039",
+   "name": "National Archives and Records Administration (NARA), microfilm T627 roll 4495; Ancestry.com, 1940 United States Federal Census (collection 2442)",
+   "notes": [],
+   "type": "Archive",
+   "urls": []
+  },
+  "R0040": {
+   "handle": "10548dc961bb7df11e3267132d56",
+   "id": "R0040",
+   "name": "National Archives at Washington, DC; Seventeenth Census of the United States, 1950; Ancestry.com, 1950 United States Federal Census (collection 62308)",
+   "notes": [],
+   "type": "Archive",
+   "urls": []
+  },
+  "R0041": {
+   "handle": "10548dc9d1686d5ef160f34c854a",
+   "id": "R0041",
+   "name": "2manitowoc.com (Manitowoc County genealogy site), obituary transcription",
+   "notes": [],
+   "type": "Archive",
+   "urls": []
+  },
+  "R0042": {
+   "handle": "10548dca03642d05519abddef43a",
+   "id": "R0042",
+   "name": "2manitowoc.com (Manitowoc County genealogy site), cemetery transcription",
    "notes": [],
    "type": "Archive",
    "urls": []
@@ -195504,6 +198191,307 @@
     "agent-proposed"
    ],
    "title": "The Oskaloosa Herald (Oskaloosa, Iowa), 14 Sep 1916, p. 6: death notice of Thomas Noris Shinofield"
+  },
+  "S0254": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1460",
+    "C1461",
+    "C1465"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10548dc88deb6c6bea249a7981d4",
+   "id": "S0254",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0037"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "1900 United States Census, Population Schedule, Wisconsin, Manitowoc County, Manitowoc city Ward 7, ED 76, sheet 17"
+  },
+  "S0255": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1462"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10548dc8f37a24ad481067bf4924",
+   "id": "S0255",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0038"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "1920 United States Census, Population Schedule, Wisconsin, Manitowoc County, Manitowoc city Ward 5, ED 105, sheet 7A"
+  },
+  "S0256": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1463"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10548dc9393d2ba753decf328121",
+   "id": "S0256",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0039"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "1940 United States Census, Population Schedule, Wisconsin, Manitowoc County, Two Rivers, ED 36-47, sheet 12A"
+  },
+  "S0257": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1464",
+    "C1470"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10548dc964e542851af113fae34b",
+   "id": "S0257",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0040"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "1950 United States Census, Population Schedule, Wisconsin, Manitowoc County, Two Rivers, ED 36-85, page 74"
+  },
+  "S0258": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1466"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10548dc9d5366809361648c2bd86",
+   "id": "S0258",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0041"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "Manitowoc Herald News (Manitowoc, Wisconsin), 26 Oct 1926, p. 2: obituary of Frank Jentsch (transcription, 2manitowoc.com, Evergreen Cemetery obituaries Ja-)"
+  },
+  "S0259": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1467"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10548dc9eb9445bb2dd24de0a055",
+   "id": "S0259",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0041"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "Manitowoc Herald Times (Manitowoc, Wisconsin), 8 Jul 1952, p. 14: obituary of Mrs. Frank Jentsch (Anna Lodel) (transcription, 2manitowoc.com, Evergreen Cemetery obituaries Ja-)"
+  },
+  "S0260": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1468"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10548dca08c06607fc56c98164ea",
+   "id": "S0260",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0042"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "Evergreen Cemetery, Manitowoc, Wisconsin: burial note for Lucille Jentsch (2manitowoc.com, Evergreen Cemetery obituaries Ja-)"
+  },
+  "S0261": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1469",
+    "C1472"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10548dca299f2026ad12ec09618b",
+   "id": "S0261",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0041"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "Two Rivers Reporter (Two Rivers, Wisconsin), 15 Apr 1963, p. M-13: obituary of Mrs. Michael Konieczka (Lorraine Wacek) (transcription, 2manitowoc.com, Pioneers Rest Cemetery obituaries K)"
+  },
+  "S0262": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1471"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10548dca5ab336be2aa674eca6a4",
+   "id": "S0262",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0041"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "Manitowoc Herald Times (Manitowoc, Wisconsin), 10 Jan 1972: obituary of Michael Konieczka (transcription, 2manitowoc.com, Pioneers Rest Cemetery obituaries K)"
   }
  }
 }
