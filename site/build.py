@@ -801,6 +801,8 @@ def tree_data(site: "Site", lines: list, board: list) -> dict:
     """What the tree explorer (/tree/) draws, written to /data/tree.json: everyone's name and family links, and
     for people shown in full their years, birth and death towns, first crossing, the review state of their
     facts (the same counts as the person page's summary bar) and the open research cards that name them.
+    A family carries its two partners and its children, and "w" when the two are on record as married and
+    both are shown in full.
     A living person carries name, gender and family links, exactly as on their page; a child under 18 is the
     placeholder. Names are the ones the rest of the site shows: "n" is shown_name(), "m" the married surname
     in it; the picture itself labels people by first name and birth surname, as a pedigree does.
@@ -861,6 +863,10 @@ def tree_data(site: "Site", lines: list, board: list) -> dict:
             kids.append([c["ref"], fr, mr] if (fr or mr) else c["ref"])
         families[fid] = {"a": f.get("father") if f.get("father") in site.people else None,
                          "b": f.get("mother") if f.get("mother") in site.people else None, "k": kids}
+        # "w": married, so the explorer may say husband and wife. Only of two people both shown in full: for the
+        # living a couple is a family link and nothing more, so they are each other's partner
+        if (f.get("type") == "Married" or f.get("marriage")) and all(people.get(families[fid][k], {}).get("st") == "f" for k in ("a", "b")):
+            families[fid]["w"] = 1
     named = [pid for pid, o in people.items() if o["st"] != "m"]
     start = site.resolve(str(cfg.get("root_person") or ""))
     if start not in named:
@@ -873,6 +879,87 @@ def tree_data(site: "Site", lines: list, board: list) -> dict:
         "lines": [{"slug": ln["slug"], "title": ln["title"], "short": LINE_SHORT.get(ln["slug"]) or ln["title"], "color": ln["color"],
                    "path": [st["person"]["id"] for st in ln["stations"]]} for ln in lines],
         "P": people, "F": families,
+    }
+
+
+EVENT_CODE = {"Birth": "b", "Baptism": "p", "Christening": "p", "Marriage": "m", "Residence": "r", "Census": "r", "Occupation": "o",
+              "Arrival": "a", "Immigration": "a", "Departure": "l", "Emigration": "l", "Naturalization": "n", "Death": "d", "Burial": "u"}
+
+
+_STREET = re.compile(r"\b(st|street|ave|avenue|rd|road|blvd|boulevard|dr|drive|ln|lane|ct|court)\.?$", re.I)
+
+
+def map_town(name: str) -> str:
+    """The town a place record is in, for a mark on the map: "Chicago Ward 7, Cook, Illinois, USA" is Chicago,
+    "house 35 Svatý Štěpán, parish Brumov" is Svatý Štěpán, "722 14th St, Milwaukee, …" is Milwaukee."""
+    parts = [x.strip() for x in (name or "").split(",") if x.strip()]
+    first = parts[0] if parts else ""
+    first = re.sub(r"^(house|čp\.?|č\.\s*p\.?)\s*\d+[a-z]?\s+", "", first, flags=re.I)
+    first = re.sub(r"\s*\(.*\)$", "", first)
+    first = re.sub(r"\s+(house|ward|precinct|district|čp\.?|č\.\s*p\.?)\s*\d+[a-z]?$", "", first, flags=re.I)
+    first = re.sub(r"\s+\d+[a-z]?$", "", first)
+    if (re.match(r"^\d", first) or _STREET.search(first) or re.match(r"^(house|čp\.?|č\.\s*p\.?)?$", first, re.I)) and len(parts) > 1:
+        first = parts[1]
+    return first
+
+
+def lives_data(site: "Site", lines: list) -> dict:
+    """What the map and the lifelines (/map/) draw, written to /data/lives.json: for each person shown in full the
+    years of birth and death and their dated events at a place that has coordinates, as their own page shows
+    them, with the towns those events name and the colour of the line each person belongs to. The living and
+    children under 18 are not in it at all: the site shows no dates or places for them.
+    A person's line is the lineage route they stand on, else their surname's, else that of their nearest
+    relative by blood who has one (a husband or wife takes it from their children)."""
+    cfg = site.cfg
+    slug_of = {}
+    for line in cfg.get("lines", []):
+        for s in line.get("surnames", []):
+            slug_of.setdefault(s.lower(), line["slug"])
+    line_of = {}
+    for ln in lines:
+        for st in ln["stations"]:
+            line_of.setdefault(st["person"]["id"], ln["slug"])
+    for pid, p in site.people.items():
+        slug = slug_of.get((p["name"].get("surname") or "").lower())
+        if slug:
+            line_of.setdefault(pid, slug)
+    queue = collections.deque(line_of)
+    while queue:
+        pid = queue.popleft()
+        p = site.people.get(pid) or {}
+        near = []
+        for fid in p.get("parents", []):
+            f = site.families.get(fid) or {}
+            near += [f.get("father"), f.get("mother")]
+        for fid in p.get("families", []):
+            near += [c["ref"] for c in (site.families.get(fid) or {}).get("children", [])]
+        for q in near:
+            if q in site.people and q not in line_of:
+                line_of[q] = line_of[pid]
+                queue.append(q)
+    places, people = {}, []
+    for pid, p in site.people.items():
+        if p["status"] != "full" or p.get("minor"):
+            continue
+        b, d = p.get("birth") or {}, p.get("death") or {}
+        evs = []
+        for f in site.facts_of(p):
+            year, pl = (f["date"] or {}).get("year"), f["place"]
+            if not year or not pl or pl.get("lat") is None or pl.get("long") is None:
+                continue
+            places.setdefault(pl["id"], [map_town(pl.get("name")) or site.town(pl["id"]) or "", round(float(pl["lat"]), 3), round(float(pl["long"]), 3)])
+            evs.append([year, pl["id"], EVENT_CODE.get(f["event"]["type"], "x")])
+        o = {"id": pid, "n": site.shown_name(p), "c": line_of.get(pid, ""), "e": evs}
+        if b.get("year"):
+            o["b"] = b["year"]
+        if d.get("year"):
+            o["d"] = d["year"]
+        if evs or "b" in o or "d" in o:
+            people.append(o)
+    return {
+        "meta": {"generated": str(site.meta.get("generated", ""))[:10]},
+        "lines": [{"slug": ln["slug"], "short": LINE_SHORT.get(ln["slug"]) or ln["title"], "color": ln["color"]} for ln in lines],
+        "events": cfg.get("world_events", []), "places": places, "people": people,
     }
 
 
@@ -1199,9 +1286,14 @@ def main(argv=None) -> int:
     tree = tree_data(site, lines, board)
     if tree["root"]:
         write("tree/index.html", "tree.html", title="The family tree", nav="tree")
+    # the map and the lifelines: one page, drawn from the dated, located events of people shown in full
+    lives = lives_data(site, lines)
+    on_map = sum(1 for p in lives["people"] if p["e"])
+    if on_map:
+        write("map/index.html", "map.html", title="Map and lifelines", nav="map")
     write("index.html", "home.html", sides=sides, lines=lines, stats=stats, rs=rs, recent=recent,
           stories=stories, asks=asks[:3], body=content("home.md"), title=None, nav="home",
-          tree_people=len(tree["P"]) if tree["root"] else 0)
+          tree_people=len(tree["P"]) if tree["root"] else 0, map_people=on_map, map_places=len(lives["places"]))
     write("404.html", "404.html", title="Not found")
 
     # static, data, media, CNAME
@@ -1211,6 +1303,8 @@ def main(argv=None) -> int:
         json.dump(bundle, f, ensure_ascii=False, separators=(",", ":"))
     with open(os.path.join(out, "data", "tree.json"), "w", encoding="utf-8") as f:
         json.dump(tree, f, ensure_ascii=False, separators=(",", ":"))
+    with open(os.path.join(out, "data", "lives.json"), "w", encoding="utf-8") as f:
+        json.dump(lives, f, ensure_ascii=False, separators=(",", ":"))
     if os.path.isdir(args.media):
         shutil.copytree(args.media, os.path.join(out, "media"), dirs_exist_ok=True)
     cname = os.path.join(ROOT, "CNAME")

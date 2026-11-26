@@ -32,6 +32,7 @@
     <div class="sidebox">
       <p class="eyebrow">Tree</p>
       <a class="linetag c-{{ line_color }}" href="/tree/#long-{{ p.id }}"><span class="band" aria-hidden="true"></span><span class="lt">See {{ p.name.call or (p.name.first or p.name.display).split(' ')[0] }} in the tree <small>ancestors and descendants</small></span></a>
+      {% if p.id != cfg.root_person %}<a class="linetag c-{{ line_color }}" href="/tree/#kin-{{ p.id }}"><span class="band" aria-hidden="true"></span><span class="lt">How are we related? <small>the relationship, in the tree</small></span></a>{% endif %}
     </div>
     {% if full %}
     <nav class="sidebox jumps" aria-label="Sections">
