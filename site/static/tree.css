@@ -112,6 +112,14 @@ body.treepage main { max-width: none; margin: 0; min-height: 0; min-width: 0; }
 @media (max-width: 899px) { .tx:not(.tx-more) .tx-rel .tx-note { display: none; } }      /* the short panel on a phone: the sentence and the way */
 .tx-about { margin-top: 10px; }
 
+/* the map and the lifelines (/map/): the same frame, with these few things of its own */
+.mx-tree { font: 600 0.88rem var(--display); color: var(--ink); white-space: nowrap; }
+.mx-reg { padding-left: 11px; }
+.mx-who { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 4px 14px; }
+.mx-who a { font: 500 0.92rem var(--display); color: var(--ink); text-decoration-color: var(--thread, var(--t-neutral)); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+.mx-who small, .tx-kin dd button small { font: 400 0.7rem var(--mono); color: var(--muted); }
+.mx-who > * { display: inline; }
+
 @media (min-width: 900px) {
   .tx, .tx.tx-more { grid-template-columns: minmax(0, 1fr) 340px; grid-template-rows: auto minmax(0, 1fr); }
   .tx-bar { grid-column: 1 / -1; }

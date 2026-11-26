@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block description %}Where the family was, year by year, on a map; and every dated life as a line on one time scale.{% endblock %}
+{% block head %}<script>document.documentElement.classList.add('tx-page')</script>{% endblock %}
+{% block styles %}<link rel="stylesheet" href="{{ asset('tree.css') }}">{% endblock %}
+{% block bodyclass %}treepage{% endblock %}
+{% block body %}
+<h1 class="vh">Map and lifelines</h1>
+<div class="tx mx" id="mx" data-src="/data/lives.json" data-atlas="{{ asset('atlas.json') }}">
+  <div class="tx-bar">
+    <div class="tx-seg" role="group" aria-label="View">
+      <button type="button" data-lens="map" aria-pressed="true">Map</button><button type="button" data-lens="lives" aria-pressed="false">Lifelines</button>
+    </div>
+    <a class="mx-tree" href="/tree/">The family tree</a>
+  </div>
+  <div class="tx-stage" id="mx-stage">
+    <canvas id="mx-cv" tabindex="0" role="img" aria-label="A map of where the family was in the year on the slider. The places and the people in them are listed after it."></canvas>
+    <div class="tx-year" aria-hidden="true"><b id="mx-yr"></b><span id="mx-yrsub"></span></div>
+    <div class="tx-tools">
+      <button type="button" class="tx-go" id="mx-play" aria-pressed="false">Play</button>
+      <button type="button" class="tx-zoom" id="mx-zin" aria-label="Zoom in">+</button>
+      <button type="button" class="tx-zoom" id="mx-zout" aria-label="Zoom out">−</button>
+      <button type="button" id="mx-fit">Fit</button>
+    </div>
+    <div class="tx-foot">
+      <div class="tx-when"><input id="mx-slide" type="range" min="1570" max="2020" step="1" value="1913" aria-label="Year"><span id="mx-end"></span></div>
+      <div class="tx-chips" id="mx-chips"></div>
+    </div>
+  </div>
+  <aside class="tx-panel" id="mx-panel" aria-live="polite"><noscript><p class="tx-note">The map needs JavaScript. Every place is also on the <a href="/places/">Places</a> page, and every person on the <a href="/people/">People</a> page.</p></noscript></aside>
+</div>
+<script src="{{ asset('map.js') }}" defer></script>
+{% endblock %}
+{% block footer %}{% endblock %}

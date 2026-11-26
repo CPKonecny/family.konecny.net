@@ -26,6 +26,12 @@
       <span class="ls">Stand with anyone in the family and see their parents, grandparents and everyone behind them, as far as the records go. Or open the same people as a tree or a fan.</span>
       <span class="lm">{{ tree_people }} people · long view · tree · fan</span>
     </a>
+    {% if map_people %}<a class="linecard storycard c-neutral" href="/map/">
+      <span class="band" aria-hidden="true"></span>
+      <span class="lt">Follow the family across the map</span>
+      <span class="ls">Slide through the years and watch where everyone was: the villages of Bohemia, the crossing, Plymouth, Wisconsin. Or see every dated life as a line on one long time scale.</span>
+      <span class="lm">{{ map_people }} people · {{ map_places }} places · map · lifelines</span>
+    </a>{% endif %}
   </div>
 </section>
 {% endif %}

@@ -425,6 +425,20 @@ def test_the_site_shows_the_placeholder_and_the_labels(work):
     kid = [c for c in tree["F"][fam["id"]]["k"] if isinstance(c, list)]
     assert kid == [[t.gid(h["ingrid"]), "Adopted", "Adopted"]], "adopted is carried for the adult, never for a child under 18"
     assert '<a href="/tree/"' in pages["index.html"] and f'/tree/#long-{t.gid(h["ingrid"])}"' in ingrid
+    # the map and the lifelines draw from data/lives.json: dates and places, so only people shown in full are in it at all
+    lives = json.loads(pages["data/lives.json"])
+    assert lives["people"], "someone has a date"
+    for o in lives["people"]:
+        assert B["people"][o["id"]]["status"] == "full" and tree["P"][o["id"]]["st"] == "f", f"{o['id']} is on the map but not shown in full"
+        assert set(o) <= {"id", "n", "c", "b", "d", "e"} and all(pl in lives["places"] for _, pl, _ in o["e"]), o
+    assert ("map/index.html" in pages) == any(o["e"] for o in lives["people"])
+    import importlib.util
+    spec = importlib.util.spec_from_file_location("site_build", os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "site", "build.py"))
+    sb = importlib.util.module_from_spec(spec); spec.loader.exec_module(sb)
+    for name, town in (("Chicago Ward 7, Cook, Illinois, USA", "Chicago"), ("house 35 Svatý Štěpán, parish Brumov na Vláře", "Svatý Štěpán"),
+                       ("722 14th St, Milwaukee, Milwaukee, Wisconsin, USA", "Milwaukee"), ("Štítná nad Vláří 37, Štítná nad Vláří, Moravia", "Štítná nad Vláří"),
+                       ("Milwaukee (Districts 1-250), Milwaukee, Wisconsin", "Milwaukee"), ("Plymouth, Plymouth, Massachusetts", "Plymouth")):
+        assert sb.map_town(name) == town, (name, sb.map_town(name))
 
 
 TESTS = [v for k, v in sorted(globals().items()) if k.startswith("test_")]

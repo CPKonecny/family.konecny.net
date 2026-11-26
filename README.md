@@ -66,10 +66,21 @@ Any person can be the centre: “Stand here”, a double-tap, Enter, or the butt
 - Links in: `/tree/#long-I0145` (also `tree-` and `fan-`) opens a view on a person; `/tree/#long-I0141-wood` also follows that line. Person pages, line pages and the home page link this way.
 - In the explorer the Morris line has its own colour (`--t-morris` in `tree.css`), because a tree rooted on one of the children shows both sides at once. Elsewhere on the site it still borrows the Wood colour from `config.json`.
 
+## The map and the lifelines
+
+`/map/` is one page with two views of the same years and one year control (slider, Play, arrow keys; the year is in the address, `/map/#map-1913`, `/map/#lives-1913`).
+
+- **Map**: where everyone was in that year. A person is at the place of their latest dated record, and before their first located record at that first place; a long move leaves an arc for a few years. Marks are sized by how many people are there and coloured by line; a tap lists who was there, with links. “Go to” has the regions; drag and pinch or `+`/`−` for anywhere else. The database's several records of one town (a ward, a house, a street) are gathered under one mark and named by `map_town()` in `site/build.py`.
+- **Lifelines**: every life with a date on record as a bar from birth to death, grouped by line, the oldest line first, world events ruled across. A bar that fades at one end has no date there. A tap on a life gives the person; a tap on the scale moves the year.
+- The data is `/data/lives.json` (about 45 KB), written by `lives_data()` in `site/build.py` from the facts the person pages show: years of birth and death, and dated events at a place that has coordinates. **Only people shown in full are in it.** The living and children under 18 are not on the map or among the lifelines at all, because the site shows no dates or places for them. The export test checks that.
+- The outlines are `site/static/atlas.json` (68 KB): Natural Earth 1:50m countries and lakes and the US Census Bureau's state borders, all public domain, clipped and simplified once by `tools/make_atlas.py` (the commands are at its head). The site still makes no third-party requests: there is no map service. Borders and coastlines are today's, and the page says so.
+- `site/static/map.js` draws both views on one canvas; the page shares its frame and styles with the tree explorer (`tree.css`). The projection is an equal-area cone over the North Atlantic, turned so that north is up wherever you look.
+
 ## Roadmap
 
 - **v0** (this): lineage routes, person and family pages with evidence ladders, citation and source pages with transcriptions, places, family stories, the research board, about.
 - **Tree explorer** (25 Nov 2026): long view, tree and fan on one engine; stand with anyone; follow a line; evidence colouring. The long view shows both ways at once: older up, younger down.
 - **On the same engine** (26 Nov 2026): how are we related, with the relationship in words and lit in the picture; this is me; brick walls that open their research card.
-- **v1**: migration map with a time slider and a lifespan timeline against world events, sharing the explorer's year control.
+- **Map and lifelines** (26 Nov 2026): where the family was year by year, and every dated life on one time scale, sharing one year control.
+- **Next**: the tree's year and the map's year linked both ways; story chapters that fly a line with its story alongside.
 - **v2**: name and place evolution, period map overlays.
