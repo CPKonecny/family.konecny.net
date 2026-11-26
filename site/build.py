@@ -801,6 +801,8 @@ def tree_data(site: "Site", lines: list, board: list) -> dict:
     """What the tree explorer (/tree/) draws, written to /data/tree.json: everyone's name and family links, and
     for people shown in full their years, birth and death towns, first crossing, the review state of their
     facts (the same counts as the person page's summary bar) and the open research cards that name them.
+    A family carries its two partners and its children, and "w" when the two are on record as married and
+    both are shown in full.
     A living person carries name, gender and family links, exactly as on their page; a child under 18 is the
     placeholder. Names are the ones the rest of the site shows: "n" is shown_name(), "m" the married surname
     in it; the picture itself labels people by first name and birth surname, as a pedigree does.
@@ -861,6 +863,10 @@ def tree_data(site: "Site", lines: list, board: list) -> dict:
             kids.append([c["ref"], fr, mr] if (fr or mr) else c["ref"])
         families[fid] = {"a": f.get("father") if f.get("father") in site.people else None,
                          "b": f.get("mother") if f.get("mother") in site.people else None, "k": kids}
+        # "w": married, so the explorer may say husband and wife. Only of two people both shown in full: for the
+        # living a couple is a family link and nothing more, so they are each other's partner
+        if (f.get("type") == "Married" or f.get("marriage")) and all(people.get(families[fid][k], {}).get("st") == "f" for k in ("a", "b")):
+            families[fid]["w"] = 1
     named = [pid for pid, o in people.items() if o["st"] != "m"]
     start = site.resolve(str(cfg.get("root_person") or ""))
     if start not in named:

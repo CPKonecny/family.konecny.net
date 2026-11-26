@@ -36,7 +36,7 @@ var esc = function (s) { return String(s).replace(/[&<>"]/g, function (c) { retu
 var wz = function (t) { return (TNOW - t) * KZ; };
 
 var S = { focus: null, sel: null, lens: 'long', back: true, mode: 'lines', nodes: {}, list: [], anc: null, desc: null, path: [], onPath: {}, stations: [],
-          fanMix: 0, fanT: 0, aAnc: 1, aDesc: 1, tween: 1, fade: 1, flying: false, panX: 0, win: { L: 0, w: 1 }, liveFrom: 1950, tMin: 1500, tMax: 2000, line: null, hits: [], touched: false };
+          fanMix: 0, fanT: 0, aAnc: 1, aDesc: 1, tween: 1, fade: 1, flying: false, panX: 0, win: { L: 0, w: 1 }, liveFrom: 1950, tMin: 1500, tMax: 2000, line: null, hits: [], touched: false, kin: null, pick: null, me: null };
 var cam = { tx: 0, tz: 0, s: 60, theta: TOP, F: 1000, yT: 300 }, camT = { tx: 0, tz: 0, s: 60, theta: TOP, F: 1000, yT: 300 };
 var longP = { theta: 0.2, F: 1000, yT: 300, s: 170 };
 
@@ -72,6 +72,96 @@ function kinCount(id, back) {       // how many people are on record before (bac
   }
   return kinMemo[key];
 }
+
+/* ---------- how two people are related ----------
+   Blood first: where their ancestries meet, and how many generations each is from there. Failing that, by one
+   marriage or partnership at either end. Children under 18 are never one of the two, and cannot be on the way:
+   everyone between two people and the ancestors they share is a parent of someone. */
+function ups(id) {                   // every ancestor of a person by the fewest generations: id -> [generations, the child on the way]
+  var m = {}, q = [id]; m[id] = [0, null];
+  while (q.length) { var x = q.shift(); parents(x).forEach(function (p) { if (p && !m[p]) { m[p] = [m[x][0] + 1, x]; q.push(p); } }); }
+  return m;
+}
+function wayDown(m, top) { var out = []; for (var x = top; x != null; x = m[x][1]) out.push(x); return out; }      // from a shared ancestor down to the person
+function blood(a, b) {
+  var A = ups(a), B = ups(b), best = null, tops = [];
+  Object.keys(A).forEach(function (c) { if (B[c] && (best == null || A[c][0] + B[c][0] < best)) best = A[c][0] + B[c][0]; });
+  if (best == null) return null;
+  Object.keys(A).forEach(function (c) { if (B[c] && A[c][0] + B[c][0] === best) tops.push(c); });
+  tops.sort(function (x, y) { return Math.abs(A[x][0] - B[x][0]) - Math.abs(A[y][0] - B[y][0]) || (pathLine[y] ? 1 : 0) - (pathLine[x] ? 1 : 0) || (P[y].g === 'M' ? 1 : 0) - (P[x].g === 'M' ? 1 : 0); });
+  var top = tops[0], i = A[top][0], j = B[top][0], half = false;
+  tops = tops.filter(function (c) { return A[c][0] === i && B[c][0] === j; });
+  var wa = wayDown(A, top), wb = wayDown(B, top);
+  if (tops.length === 1 && i && j) {                        // one shared ancestor and two different partners of theirs: a half relation
+    var other = function (kid) { return parents(kid).filter(function (x) { return x && x !== top; })[0]; }, oa = other(wa[1]), ob = other(wb[1]);
+    half = !!(oa && ob && oa !== ob);
+  }
+  return { i: i, j: j, tops: tops, half: half, wa: wa, wb: wb };
+}
+var kinMemo2 = {};
+function kinOf(a, b) {
+  var key = a + '|' + b;
+  if (!kinMemo2[key]) kinMemo2[key] = kinFind(a, b);
+  return Object.assign({}, kinMemo2[key]);
+}
+function kinFind(a, b) {
+  if (a === b) return { kind: 'same' };
+  var k = blood(a, b), best = null;
+  if (k) { k.kind = 'blood'; k.x = a; k.y = b; return k; }
+  if (partners(a).indexOf(b) >= 0) return { kind: 'pair' };
+  var take = function (k, kind, x, y) { if (k && (!best || k.i + k.j < best.i + best.j)) { k.kind = kind; k.x = x; k.y = y; best = k; } };
+  partners(a).forEach(function (s) { take(blood(s, b), 'wedA', s, b); });
+  partners(b).forEach(function (s) { take(blood(a, s), 'wedB', a, s); });
+  if (!best) partners(a).forEach(function (sa) { partners(b).forEach(function (sb) { take(blood(sa, sb), 'wedAB', sa, sb); }); });
+  if (best) return best;
+  // the family of someone who married in: a blood relative of a, their partner, and that partner's blood relative b
+  var A = ups(a), kin = {}, q = Object.keys(A), cost = Infinity;
+  q.forEach(function (x) { kin[x] = 1; });
+  while (q.length) children(q.pop()).forEach(function (c) { if (!kin[c]) { kin[c] = 1; q.push(c); } });
+  Object.keys(kin).forEach(function (x) {
+    partners(x).forEach(function (y) {
+      if (kin[y]) return; var k2 = blood(y, b); if (!k2) return;
+      var k1 = blood(a, x), c = k1.i + k1.j + k2.i + k2.j;
+      if (c < cost) { cost = c; k1.kind = 'wedM'; k1.x = a; k1.y = x; k1.m = y; k1.k2 = k2; best = k1; }
+    });
+  });
+  return best || { kind: 'none' };
+}
+function greats(n, word) { return n <= 0 ? word : n === 1 ? 'great-' + word : n + '× great-' + word; }
+function relName(i, j, g, half) {    // what someone is to you, when you are i generations below where you meet and they are j
+  var m = g === 'M', f = g === 'F', h = half ? 'half ' : '';
+  if (!j) return i === 1 ? (m ? 'father' : f ? 'mother' : 'parent') : greats(i - 2, 'grand' + (m ? 'father' : f ? 'mother' : 'parent'));
+  if (!i) return j === 1 ? (m ? 'son' : f ? 'daughter' : 'child') : greats(j - 2, 'grand' + (m ? 'son' : f ? 'daughter' : 'child'));
+  if (i === 1 && j === 1) return (half ? 'half-' : '') + (m ? 'brother' : f ? 'sister' : 'brother or sister');
+  if (j === 1) return h + greats(i - 2, m ? 'uncle' : f ? 'aunt' : 'uncle or aunt');
+  if (i === 1) return h + greats(j - 2, m ? 'nephew' : f ? 'niece' : 'nephew or niece');
+  var deg = Math.min(i, j) - 1, rem = Math.abs(i - j);
+  return h + (['', 'first', 'second', 'third', 'fourth', 'fifth', 'sixth', 'seventh', 'eighth', 'ninth', 'tenth'][deg] || deg + 'th') + ' cousin' + (rem ? (rem === 1 ? ' once' : rem === 2 ? ' twice' : ' ' + rem + ' times') + ' removed' : '');
+}
+function pairWord(x, y) {            // what y is to x: husband or wife where a marriage of two people shown in full is on record, partner otherwise
+  var wed = P[x].fs.some(function (fid) { var f = F[fid]; return f.w && (f.a === y || f.b === y); });
+  return wed ? (P[y].g === 'M' ? 'husband' : P[y].g === 'F' ? 'wife' : 'partner') : 'partner';
+}
+function firstName(id) { var p = P[id]; return p.f ? p.f.split(' ')[0] : p.n; }
+function whose(id) { return id === S.me ? 'your' : firstName(id) + '’s'; }
+function kinWhat(k, a, b) {          // what b is to a, without saying whose: ["great-uncle"], or ["great-uncle, Name", "wife"] for "the wife of … great-uncle, Name"
+  var r = k.tops ? relName(k.i, k.j, P[k.y].g, k.half) : '';
+  if (k.kind === 'pair') return [pairWord(a, b)];
+  if (k.kind === 'blood') return [r];
+  if (k.kind === 'wedA') return [pairWord(a, k.x) + '’s ' + r];
+  if (k.kind === 'wedB') return [r + ', ' + P[k.y].n, pairWord(k.y, b)];
+  if (k.kind === 'wedM') return [r, relName(k.k2.i, k.k2.j, P[b].g, k.k2.half) + ' of ' + P[k.m].n + ', the ' + pairWord(k.y, k.m)];      // "the father of Marie Nováková, the wife of … great-uncle"
+  return [pairWord(a, k.x) + '’s ' + r + ', ' + P[k.y].n, pairWord(k.y, b)];
+}
+function kinSay(k, a, b) {           // in words: what b is to a. "short" leaves out whose, where that is plain from the place it is shown
+  var me = b === S.me, who = me ? 'You are' : P[b].n + ' is';
+  if (k.kind === 'same') return { say: (me ? 'This is you' : 'This is ' + P[b].n) + '.' };
+  if (k.kind === 'none') return { say: 'The tree shows no relationship between ' + P[a].n + ' and ' + P[b].n + ', by blood or through one marriage.' };
+  var w = kinWhat(k, a, b), o = { say: who + ' ' + (w[1] ? 'the ' + w[1] + ' of ' : '') + whose(a) + ' ' + w[0] + '.', short: w[1] ? w[1] + ' of ' + whose(a) + ' ' + w[0] : w[0] };
+  if (k.tops && k.i && k.j) o.meet = (k.kind !== 'blood' ? firstName(k.x) + ' and ' + firstName(k.y) + ' both descend from ' : a === S.me || me ? 'You both descend from ' : 'They both descend from ') + k.tops.map(function (t) { return P[t].n; }).join(' and ') + '.';
+  return o;
+}
+function refPerson() { return S.me && P[S.me] ? S.me : D.root; }      // who relationships are named from: you, once you have said who you are
 
 /* Where a person sits in time: the year of birth when it is public. Living people and undated people have no
    public year, so they are placed by generation from the nearest dated relatives and never drawn against a year. */
@@ -180,6 +270,7 @@ function evidence(p) {               // the state of a person's facts, by the sa
 }
 
 function build(focus) {
+  S.kin = null;
   var old = {}; S.list.forEach(function (n) { old[n.id] = pos(n); });
   var from = old[focus] || (S.sel && old[S.sel]) || null;
   var anc = buildAnc(focus), desc = buildDesc(focus), root = anc.root;
@@ -353,7 +444,7 @@ function draw() {
   var h = zvT * sin - yvT * cos, Dz = zvT * cos + yvT * sin, NEAR = zvT * 0.2;
   var tilt = clamp((TOP - th) / (TOP - longP.theta), 0, 1);          // 0 looking straight down … 1 the long view
   var pin = 0.13 * tilt;
-  var boxes = [], late = [];
+  var boxes = [], late = [], walls = [];
   var free = function (b) { for (var i = 0; i < boxes.length; i++) { var o = boxes[i]; if (b.x < o.x + o.w && b.x + b.w > o.x && b.y < o.y + o.h && b.y + b.h > o.y) return false; } return true; };
   var yH = tilt > 0.3 ? H / 2 - cam.F * Math.tan(th) : -1e4;         // the horizon, once the camera is low enough to see one
   /* Older than the person you are with: the ground receding to the horizon. Younger: below them, after a band that
@@ -445,7 +536,7 @@ function draw() {
       var t = n.toward; if (!t) return; var a = P2[n.id], b = P2[t.id]; if (!a && !b) return;
       var kindA = n.kind === 'desc' ? S.aDesc : S.aAnc; if (kindA < 0.01) return;
       if (tilt === 1 && a && b && ((a.fr < -1.25 && b.fr < -1.25) || (a.fr > 1.25 && b.fr > 1.25))) return;      // in the long view, a link wholly outside the view is not drawn
-      var wa = pos(n), wb = pos(t), on = S.onPath[n.id] && S.onPath[t.id], home = !on && S.trail && S.trail[n.id] && S.trail[t.id], pts = [], i, k, e, q, sMax = 0;
+      var both = S.trail && S.trail[n.id] && S.trail[t.id], on = (S.onPath[n.id] && S.onPath[t.id]) || (S.kin && both), home = !on && both, wa = pos(n), wb = pos(t), pts = [], i, k, e, q, sMax = 0;
       var steps = ((a || b).s < 22 && tilt === 1) ? 5 : 12;
       for (i = 0; i <= steps; i++) { k = i / steps; e = k * k * (3 - 2 * k); q = place(lerp(wb.x, wa.x, e), lerp(wb.z, wa.z, k), lerp(t.uc, n.uc, e), 0, n.kind); if (q) { pts.push(q); sMax = Math.max(sMax, q.s); } }
       if (pts.length < 2 || sMax < 1.2) return;
@@ -456,13 +547,17 @@ function draw() {
       ctx.lineWidth = clamp(pts[pts.length - 1].s * (on ? 0.05 : home ? 0.037 : 0.026), on ? 1.4 : home ? 1.1 : 0.6, on ? 5 : home ? 4 : 3);
       ctx.beginPath(); ctx.moveTo(pts[0].x, pts[0].y); for (i = 1; i < pts.length; i++) ctx.lineTo(pts[i].x, pts[i].y); ctx.stroke();
     });
-    // where the trail stops: no parents on record
+    // where the trail stops, no parents on record: a brick wall. A bar across the end of the line, red and with a
+    // question mark where a research card is open on that person; tapping it opens the question in the panel
     ctx.setLineDash([2, 4]); ctx.lineWidth = 1;
     S.list.forEach(function (n) {
       if (n.kind === 'desc' || !P2[n.id]) return; var v = P2[n.id]; if (v.s < 9) return;
       if (n.par[0] || n.par[1] || n.dup[0] || n.dup[1]) return;
-      var e = place(v.w.x, v.w.z + 1.5, n.uc, 0, n.kind); if (!e) return;
-      ctx.globalAlpha = v.a * S.aAnc * timeA * 0.7; ctx.strokeStyle = col.muted; ctx.beginPath(); ctx.moveTo(v.gx, v.gy); ctx.lineTo(e.x, e.y); ctx.stroke();
+      var e = place(v.w.x, v.w.z + 1.5, n.uc, pin, n.kind); if (!e) return;          // from the person upward, a little way further back
+      var wa = v.a * S.aAnc * timeA, need = clamp(v.s * 0.085, 1.7, 8.5) + clamp(v.s * 0.06, 4, 11);
+      if (v.y - e.y < need) e.y = v.y - need;
+      ctx.globalAlpha = wa * 0.7; ctx.strokeStyle = col.muted; ctx.beginPath(); ctx.moveTo(v.x, v.y); ctx.lineTo(e.x, e.y); ctx.stroke();
+      if (n.p.st === 'f' && e.x > -20 && e.x < W + 20) walls.push({ id: n.id, x: e.x, y: e.y, s: v.s, a: wa, q: !!(n.p.rq && n.p.rq.length) });
     });
     ctx.setLineDash([]);
   }
@@ -473,8 +568,24 @@ function draw() {
     ctx.globalAlpha = smooth(0.3, 0.8, tilt); ctx.fillStyle = col.paper; ctx.fillRect(0, 0, W, Math.max(0, yH - 8)); ctx.fillStyle = hz; ctx.fillRect(0, yH - 8, W, 54);
   }
 
+  if (timeA > 0.01) {                // the walls themselves, in front of the haze
+    ctx.lineCap = 'butt';
+    walls.forEach(function (w) {
+      var half = clamp(w.s * 0.075, 3, 9), th = clamp(w.s * 0.024, 1.5, 3.5);
+      ctx.globalAlpha = w.a * (w.q ? 1 : 0.8); ctx.strokeStyle = w.q && S.mode !== 'evidence' ? col.needs : col.muted; ctx.lineWidth = th;
+      ctx.beginPath(); ctx.moveTo(w.x - half, w.y); ctx.lineTo(w.x + half, w.y); ctx.stroke();
+      if (w.q && w.s >= 30) {
+        var fs = clamp(w.s * 0.11, 9.5, 13);
+        ctx.fillStyle = S.mode !== 'evidence' ? col.needs : col.muted; ctx.font = '800 ' + fs + 'px ' + DISP; ctx.textAlign = 'center'; ctx.textBaseline = 'bottom'; ctx.fillText('?', w.x, w.y - th);
+        boxes.push({ x: w.x - half, y: w.y - th - fs, w: half * 2, h: fs + th });
+      }
+    });
+    ctx.lineCap = 'round';
+  }
+
   // people, far to near
   var dotA = 1 - fanA; S.hits = [];
+  if (dotA > 0.5) walls.forEach(function (w) { if (w.s >= 22) S.hits.push({ id: w.id, x: w.x, y: w.y - 4, r: 5, s: w.s, wall: w.q ? 2 : 1 }); });
   vis.sort(function (a, b) { return a.s - b.s; });
   if (dotA > 0.01) vis.forEach(function (v) {
     var n = v.n, p = n.p, s = v.s, r = clamp(s * 0.085, 1.7, 8.5), c = nodeColour(n), al = v.a * dotA;
@@ -710,8 +821,8 @@ function relation(n) {
   if (!n || n.kind === 'focus') return 'In focus';
   var g = Math.abs(n.gen), sex = n.p.g, base = n.kind === 'anc' ? (sex === 'M' ? 'father' : sex === 'F' ? 'mother' : 'parent') : (sex === 'M' ? 'son' : sex === 'F' ? 'daughter' : 'child');
   var w = g === 1 ? base : g === 2 ? 'grand' + base : g === 3 ? 'great-grand' + base : (g - 2) + '× great-grand' + base;
-  var fp = P[S.focus], first = fp.f ? fp.f.split(' ')[0] : fp.n;
-  return first + '’s ' + w;
+  var own = whose(S.focus);
+  return own.charAt(0).toUpperCase() + own.slice(1) + ' ' + w;
 }
 function thread(slug) { var l = lineOf[slug]; return 'var(--t-' + slug + ', var(--t-' + (l ? l.color : 'neutral') + ', var(--t-neutral)))'; }
 function chip(id) { var p = P[id]; if (p.st === 'm') return ''; return '<button type="button" data-go="' + id + '" style="--thread: ' + thread(lineColour(id)) + '">' + esc(kinName(p)) + '</button>'; }
@@ -720,16 +831,34 @@ function chipList(ids) {
     return P[i].st !== 'm' ? chip(i) : '<a class="tx-minor" href="' + D.priv + '/person/' + i + '" rel="noopener" title="Not named on this site. Opens in the research database (family login)">Living child</a>';
   }).join('');
 }
+function kinCard() {
+  var k = S.kin, t = kinSay(k, k.a, k.b), h = '<div class="tx-rel"><button type="button" class="tx-rel-x" data-kin-done aria-label="Done">×</button><p class="eyebrow">How they are related</p><p class="tx-rel-say">' + esc(t.say) + '</p>';
+  if (t.meet) h += '<p class="tx-note">' + esc(t.meet) + '</p>';
+  if (!S.me && k.a === D.root) h += '<p class="tx-note">Not ' + esc(firstName(D.root)) + '? Find your own name and choose “This is me”: relationships are then named from you.</p>';
+  if (k.tops) {                      // the way from one to the other: up to where they meet and down again, "=" for a couple
+    var btn = function (id, top) { return '<button type="button" data-walk="' + id + '"' + (top ? ' class="tx-top"' : '') + '>' + esc(id === S.me ? 'You' : firstName(id)) + '</button>'; };
+    var leg = function (g) { return g.wa.slice().reverse().map(function (id) { return btn(id, g.tops.indexOf(id) >= 0); }).concat(g.wb.slice(1).map(function (id) { return '\u0000' + btn(id); })).join('<i title="child of">↑</i>').replace(/<i title="child of">↑<\/i>\u0000/g, '<i title="parent of">↓</i>'); };
+    var eq = '<i title="partner of">=</i>', way = (k.x !== k.a ? btn(k.a) + eq : '') + leg(k);
+    if (k.kind === 'wedM') way += eq + leg(k.k2); else if (k.y !== k.b) way += eq + btn(k.b);
+    h += '<p class="tx-rel-way">' + way + '</p>';
+  }
+  return h + '<p class="tx-rel-acts"><button type="button" class="tx-link" data-kin-other>Compare with someone else</button></p></div>';
+}
 function panel() {
   var id = S.sel && P[S.sel].st !== 'm' ? S.sel : S.focus, p = P[id], n = S.nodes[id], c = n ? n.col : lineColour(id), l = lineOf[c], h = '';      // never a child under 18
-  var url = BASE + '/person/' + id + '/', ev = n ? n.ev : evidence(p), more = app.classList.contains('tx-more');
+  var url = BASE + '/person/' + id + '/', ev = n ? n.ev : evidence(p), more = app.classList.contains('tx-more'), ref = refPerson();
+  if (S.kin) h += kinCard();
   h += '<div class="tx-who" style="--thread: ' + thread(c) + '"><span class="tx-band"></span><div>';
-  h += '<p class="eyebrow">' + esc(relation(n)) + (l ? ' · ' + esc(l.short) + ' line' : '') + '</p>';
+  h += '<p class="eyebrow">' + esc(id === S.me ? (id === S.focus ? 'You · in focus' : 'You') : relation(n)) + (l ? ' · ' + esc(l.short) + ' line' : '') + '</p>';
   h += '<h2><a href="' + url + '"' + EXT + '>' + esc(p.n) + '</a></h2>';
   if (p.st === 'f') {
     var pl = [place(p.bp), place(p.dp)].filter(function (s, i, a) { return s && a.indexOf(s) === i; });
     h += '<p class="tx-span">' + esc(years(p)) + (pl.length ? ' <span class="tx-place">' + esc(pl.join(' → ')) + '</span>' : '') + '</p>';
   } else h += '<p class="tx-span tx-note">Name and family links only</p>';
+  if (id !== ref && S.focus !== ref && !S.kin) {             // the centre is someone else: say what this person is to you, or to the person the site starts from
+    var kr = kinOf(ref, id);
+    if (kr.kind !== 'none') h += '<p class="tx-toyou">' + (ref === S.me ? 'To you: ' : 'To ' + esc(firstName(ref)) + ': ') + '<button type="button" class="tx-link" data-kin-show>' + esc(kinSay(kr, ref, id).short) + '</button></p>';
+  }
   h += '</div></div><div class="tx-acts">';
   if (id !== S.focus) h += '<button type="button" class="tx-btn" data-stand>Stand here</button>';
   h += '<a class="tx-btn tx-alt" href="' + url + '"' + EXT + '>Open their page</a>';
@@ -739,8 +868,9 @@ function panel() {
     if (p.x) h += '<p class="tx-note">' + (p.x.t === 'Departure' || p.x.t === 'Emigration' ? 'Left ' : 'Arrived ') + (p.x.p ? esc(place(p.x.p)) + ', ' : '') + p.x.y + '.</p>';
     var e = p.ev, lab = { human: 'reviewed', ai: 'AI-checked', un: 'unreviewed', needs: 'needs a look', none: 'no facts yet' }[ev];
     h += '<p class="tx-note"><span class="stamp ' + (ev === 'none' ? 'un' : ev) + '">' + lab + '</span>' + (e[0] ? e[0] + (e[0] === 1 ? ' fact: ' : ' facts: ') + [e[1] ? e[1] + ' reviewed' : '', e[2] ? e[2] + ' AI-checked' : '', e[4] ? e[4] + ' flagged' : '', (e[3] - e[4]) > 0 ? (e[3] - e[4]) + ' unreviewed' : ''].filter(Boolean).join(', ') : '') + '</p>';
-    if (n && n.kind !== 'desc' && !n.par[0] && !n.par[1]) h += '<p class="tx-note">The trail stops here: no parents on record.</p>';
-    (p.rq || []).forEach(function (q) { h += '<p class="tx-note">Open question: <a href="' + BASE + '/research/#' + q[0] + '"' + EXT + '>' + esc(q[1]) + '</a></p>'; });
+    var stop = n && n.kind !== 'desc' && !n.par[0] && !n.par[1] && !n.dup[0] && !n.dup[1];
+    if (stop) h += '<p class="tx-note tx-q">The trail stops here: no parents on record.' + (p.rq && p.rq.length ? '' : ' No research card is open on it yet.') + '</p>';
+    (p.rq || []).forEach(function (q, i) { h += '<p class="tx-note' + (stop || i ? '' : ' tx-q') + '">Open question: <a href="' + BASE + '/research/#' + q[0] + '"' + EXT + '>' + esc(q[1]) + '</a></p>'; });
   }
   var groups = [];
   p.pf.forEach(function (fid) {
@@ -757,13 +887,17 @@ function panel() {
     if (groups.some(function (g) { return g[1].some(function (i) { return P[i].st === 'm'; }); })) h += '<p class="tx-small">Children under 18 are shown as “Living child”, without their names. Each one opens in the research database, for family members who have the login.</p>';
   }
   h += '<p class="tx-about">' + (S.lens === 'fan' ? 'Each ring out is a generation back, father’s side to the left and mother’s to the right.' : 'Older is up and younger is down, father to the left and mother to the right.') + ' Living relatives are placed by generation, never against a year.</p>';
-  h += '<p class="tx-about">Tap someone to walk to them. Double-tap, or Stand here, puts them at the centre: all their ancestors open above them and all their descendants below.</p></div>';
+  h += '<p class="tx-about">Tap someone to walk to them. Double-tap, or Stand here, puts them at the centre: all their ancestors open above them and all their descendants below.</p>';
+  h += '<p class="tx-about">' + (id === S.me ? 'This is you: the tree opens on you and names everyone’s relationship to you. It is remembered on this device only. <button type="button" class="tx-link" data-notme>This is not me</button>'
+    : (S.me ? '' : 'Are you in the tree? Find your own name, then: ') + '<button type="button" class="tx-link" data-me>This is me</button>') + '</p></div>';
   $('#tx-panel').innerHTML = h;
 }
 
 /* ---------- controls ---------- */
 function chips() {
   var on = S.mode === 'evidence', h = '<button type="button" class="tx-tog" data-evid aria-pressed="' + on + '">Evidence</button>';
+  h += '<button type="button" class="tx-tog" data-kin aria-pressed="' + !!S.kin + '">How related?</button>';
+  if (S.me && S.focus !== S.me) h += '<button type="button" class="tx-tog" data-home>Start from me</button>';
   if (on) {
     var k = S.lens === 'fan' ? 'tx-key tx-fill' : 'tx-key';
     [['human', 'reviewed'], ['', 'AI-checked'], ['needs', 'needs a look'], ['un', 'unreviewed'], ['none', 'none yet']].forEach(function (e) { h += '<span class="' + k + '"><i class="' + e[0] + '"></i>' + e[1] + '</span>'; });
@@ -782,7 +916,7 @@ function sync() {
   var none = S.lens !== 'fan' && noA && noD ? 'No parents or children on record for ' + who + '.' : S.lens === 'fan' && noA ? 'No parents on record for ' + who + '. Try the Long view or the Tree view.' : '';
   $('#tx-empty').hidden = !none; $('#tx-empty').textContent = none;
   chips();
-  var hash = '#' + S.lens + '-' + S.focus + (S.line ? '-' + S.line : '');
+  var hash = S.kin && S.lens !== 'fan' ? '#kin-' + S.kin.a + '-' + S.kin.b + (S.lens === 'tree' ? '-tree' : '') : '#' + S.lens + '-' + S.focus + (S.line ? '-' + S.line : '');
   try { if (S.pushNext && !S.routing && location.hash && location.hash !== hash) history.pushState(null, '', hash); else history.replaceState(null, '', hash); } catch (e) {}
   S.pushNext = false;
 }
@@ -795,6 +929,37 @@ function focusOn(id) {               // stand with someone: they become the cent
   var n = was && was !== id ? S.nodes[was] : null;          // the way you came stays marked, and is the route that way to begin with
   if (n) { S.from = was; S.trail = {}; for (var c = n; c; c = c.toward) S.trail[c.id] = 1; }
   setPath(id); aim(false); sync(); panel();
+}
+/* How are we related? The picture is centred on the ancestor the two share, with the way down to each of them lit:
+   one is the route, the other marked like the way home. Where one is the other's ancestor, the elder is the centre. */
+function showKin(a, b) {
+  if (!P[a] || !P[b] || P[a].st === 'm' || P[b].st === 'm') return;
+  var k = kinOf(a, b); k.a = a; k.b = b;
+  stopFly(); S.pick = null;
+  if (k.tops) {
+    var top = k.tops[0], main = k.wa.length > 1 ? k.wa : k.wb;
+    if (S.lens === 'fan') S.lens = 'long';
+    S.pushNext = true; build(top); S.sel = top; S.panX = 0; S.whole = false; S.back = false;
+    S.trail = {}; k.wa.concat(k.wb).forEach(function (id) { S.trail[id] = 1; });
+    S.from = main[main.length - 1]; if (main.length > 1) S.down = main.slice();
+    S.kin = k; setPath(null); aim(false);
+  } else { S.pushNext = !S.kin; S.kin = k; }
+  sync(); panel(); go();
+}
+function askKin(other) {             // from the button under the picture: the person you are with, and you (or whoever the site starts from)
+  var b = S.kin ? S.kin.b : standing(), a = refPerson();
+  if (S.kin && !other) { S.kin = null; sync(); panel(); go(); return; }
+  if (other || a === b) { S.pick = b; var q = $('#tx-q'); q.value = ''; q.placeholder = 'Related to whom?'; q.focus(); return; }
+  showKin(a, b);
+}
+function setMe(id) {                 // "This is me": kept on this device only
+  S.me = id && P[id] && P[id].st !== 'm' ? id : null;
+  try { if (S.me) localStorage.setItem('tx-me', S.me); else localStorage.removeItem('tx-me'); } catch (e) {}
+  sync(); panel();
+}
+function openWall() {                // a tap on a brick wall: the panel opens at what is known about it, and the research card if there is one
+  app.classList.add('tx-more'); panel();
+  var q = $('#tx-panel .tx-q'); if (q && q.scrollIntoView) q.scrollIntoView({ block: 'center' });
 }
 function openHere() { var here = standing(); if (S.lens === 'long' && here !== S.focus) focusOn(here); }      // the button under the picture
 function select(id) {                // walk to someone in the picture; the route on their side of the centre now runs through them
@@ -834,10 +999,10 @@ function hit(x, y) {
     S.anc.list.forEach(function (n) { if (n.gen === g && a >= n.a0 && a <= n.a1) f = n.id; });
     return f;
   }
-  var best = null, bd = Infinity;
+  var best = null, bd = Infinity; S.hitWall = 0;
   S.hits.forEach(function (h) {
-    if (h.box) { if (x >= h.box.x && x <= h.box.x + h.box.w && y >= h.box.y && y <= h.box.y + h.box.h && bd > 0.5) { best = h.id; bd = 0.5; } return; }
-    var d = Math.hypot(h.x - x, h.y - y); if (d <= Math.max(h.r + 9, 17) && d < bd) { bd = d; best = h.id; }
+    if (h.box) { if (x >= h.box.x && x <= h.box.x + h.box.w && y >= h.box.y && y <= h.box.y + h.box.h && bd > 0.5) { best = h.id; bd = 0.5; S.hitWall = 0; } return; }
+    var d = Math.hypot(h.x - x, h.y - y); if (d <= Math.max(h.r + 9, 17) && d < bd) { bd = d; best = h.id; S.hitWall = h.wall || 0; }
   });
   return best;
 }
@@ -888,9 +1053,10 @@ function wire() {
       if (who !== S.focus) focusOn(who);
       return;
     }
-    var id = hit(e.offsetX, e.offsetY);
+    var id = hit(e.offsetX, e.offsetY), wall = S.hitWall;
     tapId = id; tapT = now; tapAt = { x: e.offsetX, y: e.offsetY };
     if (id) select(id);
+    if (id && wall) openWall();
   }
   cv.addEventListener('pointerup', up); cv.addEventListener('pointercancel', function (e) { delete ptr[e.pointerId]; drag = null; pinch = 0; cv.classList.remove('tx-drag'); });
   cv.addEventListener('wheel', function (e) {
@@ -933,10 +1099,18 @@ function wire() {
   $('#tx-slide').addEventListener('change', function () { S.sliding = false; });
   $('#tx-chips').addEventListener('click', function (e) {
     if (e.target.closest('[data-evid]')) { S.mode = S.mode === 'evidence' ? 'lines' : 'evidence'; sync(); go(); return; }
+    if (e.target.closest('[data-kin]')) { touched(); askKin(); return; }
+    if (e.target.closest('[data-home]')) { touched(); focusOn(S.me); return; }
     var b = e.target.closest('[data-line]'); if (b) { touched(); followLine(b.getAttribute('data-line')); }
   });
   $('#tx-panel').addEventListener('click', function (e) {
     var b = e.target.closest('[data-go]'); if (b) { focusOn(b.getAttribute('data-go')); return; }
+    b = e.target.closest('[data-walk]'); if (b) { var w = b.getAttribute('data-walk'); if (S.nodes[w]) select(w); else focusOn(w); return; }
+    if (e.target.closest('[data-kin-show]')) { showKin(refPerson(), standing()); return; }
+    if (e.target.closest('[data-kin-other]')) { askKin(true); return; }
+    if (e.target.closest('[data-kin-done]')) { S.kin = null; sync(); panel(); go(); return; }
+    if (e.target.closest('[data-me]')) { setMe(standing()); return; }
+    if (e.target.closest('[data-notme]')) { setMe(null); return; }
     if (e.target.closest('[data-stand]')) focusOn(S.sel);
     if (e.target.closest('[data-more]')) { app.classList.toggle('tx-more'); panel(); }
   });
@@ -950,7 +1124,13 @@ function wire() {
   }
   q.addEventListener('input', search); q.addEventListener('focus', search);
   q.addEventListener('keydown', function (e) { if (e.key === 'Escape') { res.hidden = true; q.blur(); } if (e.key === 'Enter') { var b = res.querySelector('[data-id]'); if (b) b.click(); } });
-  res.addEventListener('click', function (e) { var b = e.target.closest('[data-id]'); if (!b) return; res.hidden = true; q.value = ''; touched(); focusOn(b.getAttribute('data-id')); });
+  res.addEventListener('click', function (e) {
+    var b = e.target.closest('[data-id]'); if (!b) return; res.hidden = true; q.value = ''; touched();
+    var id = b.getAttribute('data-id'), was = S.pick; unpick();
+    if (was) showKin(id, was); else focusOn(id);            // "Related to whom?": what the person you were with is to the one you chose
+  });
+  function unpick() { S.pick = null; q.placeholder = 'Find a person'; }
+  q.addEventListener('blur', function () { setTimeout(function () { if (S.pick && document.activeElement !== q) unpick(); }, 250); });
   document.addEventListener('pointerdown', function (e) { if (!e.target.closest('.tx-find')) res.hidden = true; });
   // theme and size
   new MutationObserver(function () { readTheme(); wCache = {}; go(); }).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme', 'class', 'style'] });
@@ -961,10 +1141,18 @@ function wire() {
   window.addEventListener('hashchange', route);
 }
 function route() {                  // #long-I0141 opens a view on a person; #long-I0141-wood also follows that line
+  var k = /^#kin-(I\d+)(?:-(I\d+))?(?:-(tree))?$/.exec(location.hash || '');
+  if (k && !k[2]) { k[2] = k[1]; k[1] = refPerson(); }     // #kin-I0233, as person pages link: what that person is to you, or to the person the site starts from
+  if (k && P[k[1]] && P[k[2]] && P[k[1]].st !== 'm' && P[k[2]].st !== 'm' && k[1] !== k[2]) {  // #kin-I0141-I0233: what the second is to the first
+    if (S.kin && S.kin.a === k[1] && S.kin.b === k[2] && S.lens === (k[3] || 'long')) return true;
+    S.routing = true; S.lens = k[3] || 'long'; if (!S.focus) { build(k[1]); S.sel = k[1]; setPath(k[1]); } showKin(k[1], k[2]); S.routing = false;
+    return true;
+  }
+  if (k && P[k[2]] && P[k[2]].st !== 'm') { S.routing = true; S.lens = 'long'; focusOn(k[2]); S.routing = false; return true; }      // the same person twice: just that person
   var m = /^#(long|ahead|tree|fan)-(I\d+)(?:-([a-z]+))?$/.exec(location.hash || '');
   if (!m || !P[m[2]] || P[m[2]].st === 'm') return false;
   var lens = m[1] === 'ahead' ? 'long' : m[1];              // "ahead" was the long view turned round, before older was always up
-  if (m[2] === S.focus && lens === S.lens && (m[3] || null) === S.line) return true;
+  if (m[2] === S.focus && lens === S.lens && (m[3] || null) === S.line && !S.kin) return true;
   S.routing = true; S.lens = lens; focusOn(m[2]);
   if (m[3] && lineOf[m[3]]) followLine(m[3]);
   S.routing = false;
@@ -975,12 +1163,14 @@ function start(data) {
   D = data; P = D.P; F = D.F;
   D.lines.forEach(function (l) { lineOf[l.slug] = l; l.path.forEach(function (id) { if (!pathLine[id]) pathLine[id] = l.slug; }); });
   readTheme(); resize(); wire();
-  if (!route()) { build(D.root); S.sel = D.root; setPath(D.root); sync(); panel(); }
+  try { S.me = localStorage.getItem('tx-me'); } catch (e) {}
+  if (!P[S.me] || P[S.me].st === 'm') S.me = null;
+  if (!route()) { var home = refPerson(); build(home); S.sel = home; setPath(home); sync(); panel(); }
   aim(true);
   if (document.fonts && document.fonts.load) Promise.all(['700 13px "Bricolage Grotesque"', '800 15px "Bricolage Grotesque"', '500 12px "Bricolage Grotesque"', '600 condensed 10px "Bricolage Grotesque"', '500 10px "IBM Plex Mono"']
     .map(function (f) { return document.fonts.load(f, 'Konečný Štěpán'); })).then(function () { wCache = {}; go(); }).catch(function () {});
 }
-if (app.hasAttribute('data-debug')) window.__tx = { S: S, cam: cam, camT: camT, select: select, focusOn: focusOn, open: openHere, people: function () { return P; } };
+if (app.hasAttribute('data-debug')) window.__tx = { S: S, cam: cam, camT: camT, select: select, focusOn: focusOn, open: openHere, kinOf: kinOf, kinSay: kinSay, showKin: showKin, setMe: setMe, people: function () { return P; } };
 fetch(app.getAttribute('data-src')).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(start).catch(function (err) {
   $('#tx-panel').innerHTML = '<p class="tx-note">The tree did not load (' + esc(err.message || err) + '). Reload the page to try again.</p>';
   if (window.console) console.error(err);

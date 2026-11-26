@@ -413,6 +413,10 @@ def test_the_site_shows_the_placeholder_and_the_labels(work):
         if o["st"] != "f":
             assert set(o) <= {"n", "f", "s", "m", "g", "pf", "fs", "st", "c"}, f"{pid} is not shown in full but carries {sorted(o)}"
         assert (o["st"] == "f") == (B["people"][pid]["status"] == "full"), pid
+    for fid, f in tree["F"].items():                 # husband and wife are said only of two people both shown in full
+        both = all(f[k] and tree["P"][f[k]]["st"] == "f" for k in ("a", "b"))
+        assert set(f) <= {"a", "b", "k", "w"} and bool(f.get("w")) == both, f"{fid}: {f}"
+    assert any(f.get("w") for f in tree["F"].values()) and any(not f.get("w") for f in tree["F"].values())
     for key in ("tove", "nils", "young_anton"):
         o = tree["P"][t.gid(h[key])]
         assert (o["st"], o["n"], o["f"], o["s"], o["g"]) == ("m", "Living child", "", "", "U"), o

@@ -95,6 +95,21 @@ body.treepage main { max-width: none; margin: 0; min-height: 0; min-width: 0; }
 .tx-kin dd button:hover { border-color: var(--ink); }
 .tx-kin dd a.tx-minor { color: var(--muted); font-style: italic; font-size: 0.92rem; align-self: center; text-decoration-style: dotted; text-decoration-color: var(--muted); }
 .tx-small, .tx-about { margin: 2px 0 0; font-size: 0.82rem; color: var(--muted); }
+.tx-link { border: 0; padding: 0; background: none; color: var(--link); font: inherit; text-decoration: underline; text-underline-offset: 2px; cursor: pointer; }
+.tx-toyou { font-size: 0.9rem; color: var(--muted); }
+/* how two people are related */
+.tx-rel { position: relative; border: 1px solid var(--rule); border-left: 4px solid var(--ink); border-radius: 6px; background: var(--paper); padding: 8px 34px 9px 12px; margin: 0 0 10px; display: grid; gap: 4px; }
+.tx-rel-x { position: absolute; top: 2px; right: 2px; width: 30px; height: 30px; border: 0; background: none; color: var(--muted); font: 400 1.25rem/1 var(--display); cursor: pointer; }
+.tx-rel-x:hover { color: var(--ink); }
+.tx-rel p { margin: 0; }
+.tx-rel-say { font: 600 1.02rem/1.25 var(--display); text-wrap: balance; }
+.tx-rel-way { display: flex; flex-wrap: wrap; align-items: center; gap: 3px 4px; }
+.tx-rel-way button { border: 1px solid var(--rule); background: var(--card); border-radius: 5px; padding: 1px 7px; font: 500 0.82rem var(--display); cursor: pointer; }
+.tx-rel-way button:hover { border-color: var(--ink); }
+.tx-rel-way button.tx-top { border-color: var(--ink); font-weight: 700; }
+.tx-rel-way i { font-style: normal; color: var(--muted); font-size: 0.8rem; }
+.tx-rel-acts { font-size: 0.85rem; }
+@media (max-width: 899px) { .tx:not(.tx-more) .tx-rel .tx-note { display: none; } }      /* the short panel on a phone: the sentence and the way */
 .tx-about { margin-top: 10px; }
 
 @media (min-width: 900px) {
