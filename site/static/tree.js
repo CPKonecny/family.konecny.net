@@ -4,9 +4,8 @@
    site/build.py writes from the published bundle: names and family links for everyone, and years, towns and
    review states only for people the site shows in full.
 
-   - Long view: older is always up, younger always down. The person you are with is the largest; their ancestors
-     recede above them, each generation sharing the width of the view (father's side left, mother's side right),
-     and the descendants of the person at the centre spread below. The view narrows to the branch you walk into.
+   - Long view: depth is time. The person you stand with is at the front; each generation behind them shares the
+     width of the view (father's side left, mother's side right) and narrows to the branch you walk into.
    - Tree: the same people from straight above, ancestors up and descendants down, on a true time scale.
    - Fan: ancestors in rings, each wedge sized by how much of that branch is known.
 
@@ -36,7 +35,7 @@ var esc = function (s) { return String(s).replace(/[&<>"]/g, function (c) { retu
 var wz = function (t) { return (TNOW - t) * KZ; };
 
 var S = { focus: null, sel: null, lens: 'long', back: true, mode: 'lines', nodes: {}, list: [], anc: null, desc: null, path: [], onPath: {}, stations: [],
-          fanMix: 0, fanT: 0, aAnc: 1, aDesc: 1, tween: 1, fade: 1, flying: false, panX: 0, win: { L: 0, w: 1 }, liveFrom: 1950, tMin: 1500, tMax: 2000, line: null, hits: [], touched: false, kin: null, pick: null, me: null };
+          fanMix: 0, fanT: 0, aAnc: 1, aDesc: 0, tween: 1, fade: 1, flying: false, panX: 0, win: { L: 0, w: 1 }, liveFrom: 1950, tMin: 1500, tMax: 2000, line: null, hits: [], touched: false, kin: null, pick: null, me: null };
 var cam = { tx: 0, tz: 0, s: 60, theta: TOP, F: 1000, yT: 300 }, camT = { tx: 0, tz: 0, s: 60, theta: TOP, F: 1000, yT: 300 };
 var longP = { theta: 0.2, F: 1000, yT: 300, s: 170 };
 
@@ -304,8 +303,8 @@ function build(focus) {
   (function cnt(n) { n.size = 1; n.kids.forEach(function (k) { n.size += cnt(k); }); return n.size; })(desc.root);
   (function iv(n, a, b) {
     if (n !== desc.root) { n.u0 = a; n.u1 = b; n.uc = (a + b) / 2; }
-    var tot = 0, at = a; n.kids.forEach(function (k) { tot += 1.6 + Math.sqrt(k.size - 1); });
-    n.kids.forEach(function (k) { var w = (b - a) * (1.6 + Math.sqrt(k.size - 1)) / tot; iv(k, at, at + w); at += w; });
+    var tot = 0, at = a; n.kids.forEach(function (k) { tot += 1 + Math.sqrt(k.size - 1); });
+    n.kids.forEach(function (k) { var w = (b - a) * (1 + Math.sqrt(k.size - 1)) / tot; iv(k, at, at + w); at += w; });
   })(desc.root, 0, 1);
   root.kids = desc.root.kids; root.kids.forEach(function (k) { k.parent = root; k.toward = root; });
   S.anc = anc; S.desc = desc; S.nodes = {}; S.list = [];
@@ -325,7 +324,7 @@ function build(focus) {
   var lastDated = dated.length ? Math.max.apply(null, dated) : S.tMin;
   S.liveFrom = Math.floor((live.length ? Math.min(Math.min.apply(null, live), lastDated + 1) : lastDated + 10) / 10) * 10;
   S.focus = focus; S.rootZ = wz(root.t); S.tween = from && !reduce ? 0 : 1; S.line = null; S.fade = reduce ? 1 : 0; S.win = { L: 0, w: 1 };
-  S.trail = null; S.from = null; S.up = null; S.down = null;
+  S.trail = null; S.from = null;
 }
 function pos(n) {                    // where a person is now, in ground units: tree place, fan place, or on the way between
   var x = lerp(n.x, n.fx, S.fanMix), z = lerp(n.z, n.fz, S.fanMix);
@@ -333,39 +332,33 @@ function pos(n) {                    // where a person is now, in ground units: 
   return { x: x, z: z };
 }
 
-/* ---------- the routes the camera follows ----------
-   Two of them, both starting from the person at the centre: one up through the ancestors to the far end of a branch,
-   one down through the descendants. Travelling moves along them in time; each person on a route is a station. */
-function chainFrom(n, kind) {        // from the centre through n and on to the far end of that branch, taking the deeper side at each fork
-  var chain = [], next;
-  for (var c = n; c; c = c.toward) chain.unshift(c.id);
-  while (true) {
-    next = null;
-    if (kind === 'anc') n.par.forEach(function (q) { if (q && (!next || q.reach > next.reach)) next = q; });
-    else n.kids.forEach(function (k) { if (k.p.st !== 'm' && (!next || k.reach > next.reach)) next = k; });   // never a child under 18: they have no name here
-    if (!next) break; chain.push(next.id); n = next;
+/* ---------- the route the camera follows ---------- */
+function setPath(via, ids) {
+  var chain = [], n;
+  if (ids) chain = ids.filter(function (id) { return S.nodes[id] && P[id].st !== 'm'; });
+  else {
+    n = S.nodes[via] || S.nodes[S.focus];
+    var kind = n.kind, f = S.from && S.nodes[S.from];
+    if (kind === 'focus') {
+      kind = S.lens === 'long' && !S.back ? 'desc' : 'anc';
+      if (f && f.kind === kind) n = f;                     // from the centre, the way you came is the way on, when it is the way you face
+    }
+    for (var c = n; c; c = c.toward) chain.unshift(c.id);
+    while (true) {                   // carry on to the far end of that branch, taking the deeper side at each fork
+      var next = null;
+      if (kind === 'anc') n.par.forEach(function (q) { if (q && (!next || q.reach > next.reach)) next = q; });
+      else n.kids.forEach(function (k) { if (k.p.st !== 'm' && (!next || k.reach > next.reach)) next = k; });   // never a child under 18: they have no name here
+      if (!next) break; chain.push(next.id); n = next;
+    }
   }
-  return chain;
+  S.path = chain; S.onPath = {}; chain.forEach(function (id) { S.onPath[id] = 1; });
+  S.stations = chain.map(function (id, i) {
+    var n = S.nodes[id], base = i > 0 ? S.nodes[chain[i - 1]] : null;
+    return { id: id, z: n.z, x: n.x, L: base ? base.u0 : 0, w: base ? base.u1 - base.u0 : 1 };
+  });
 }
-function setPath(via, ids, fresh) {
-  var root = S.nodes[S.focus], n = S.nodes[via], f = S.from && S.nodes[S.from];
-  if (ids) S.up = ids.filter(function (id) { return S.nodes[id] && P[id].st !== 'm'; });      // a named line: always a way back
-  else if (n && n.kind === 'anc') S.up = chainFrom(n, 'anc');
-  else if (n && n.kind === 'desc') S.down = chainFrom(n, 'desc');
-  else if (fresh) S.up = S.down = null;                     // Reset: both routes as they were to begin with
-  // to begin with, a route runs the way you came, if you came that way, and otherwise along the longest branch
-  if (!S.up || S.up[0] !== S.focus) S.up = chainFrom(f && f.kind === 'anc' ? f : root, 'anc');
-  if (!S.down || S.down[0] !== S.focus) S.down = chainFrom(f && f.kind === 'desc' ? f : root, 'desc');
-  var st = function (chain) {
-    return chain.map(function (id, i) { var m = S.nodes[id], base = i > 0 ? S.nodes[chain[i - 1]] : null; return { id: id, z: m.z, L: base ? base.u0 : 0, w: base ? base.u1 - base.u0 : 1 }; });
-  };
-  S.stUp = st(S.up); S.stDown = st(S.down);
-  S.path = S.up.slice().reverse().concat(S.down.slice(1));  // oldest first
-  S.stations = S.stUp.slice().reverse().concat(S.stDown.slice(1));
-  S.onPath = {}; S.path.forEach(function (id) { S.onPath[id] = 1; });
-}
-function windowAt(z) {               // the share of the width in view at depth z: it narrows smoothly from one station's to the next
-  var st = z >= S.rootZ ? S.stUp : S.stDown, i, a, b;
+function windowAt(z) {               // the share of the fan in view at depth z: it narrows smoothly from one station's to the next
+  var st = S.stations, i, a, b;
   for (i = 0; i < st.length - 1; i++) {
     a = st[i]; b = st[i + 1];
     if ((z - a.z) * (z - b.z) <= 0 && a.z !== b.z) {
@@ -374,33 +367,16 @@ function windowAt(z) {               // the share of the width in view at depth 
       var k = Math.pow(r, u); return { L: a.L + (b.L - a.L) * (1 - k) / (1 - r), w: a.w * k };
     }
   }
-  a = st[st.length - 1];
+  a = Math.abs(z - st[0].z) < Math.abs(z - st[st.length - 1].z) ? st[0] : st[st.length - 1];
   return { L: a.L, w: a.w };
 }
 function stationAt(z) { var best = null, d = Infinity; S.stations.forEach(function (s) { var e = Math.abs(s.z - z); if (e < d) { d = e; best = s; } }); return best; }
-function routeEnds() { return { old: S.stUp[S.stUp.length - 1].z, young: S.stDown[S.stDown.length - 1].z }; }
 
 /* ---------- camera ---------- */
-function longParams(s0) {            // a long lens held low: the horizon near the top, each generation back six tenths the size of the one before
-  var yH = horizonY(), r1 = 0.6, th = 0.2, Fp = 1000;
+function longParams(s0) {            // a long lens held low: the person in focus near the bottom, the horizon near the top
+  var yH = (W < 700 ? 0.2 : 0.17) * H, yT = clamp(H - 86 - 96, 0.45 * H, (W < 700 ? 0.61 : 0.62) * H), r1 = 0.6, th = 0.2, Fp = 1000;
   for (var i = 0; i < 8; i++) { Fp = s0 * (r1 / (1 - r1)) * GEN * KZ * Math.cos(th); th = Math.atan((H / 2 - yH) / Fp); }
-  return { theta: th, F: Fp, yH: yH, s: s0 };
-}
-/* The long view is an hourglass. The person you are with sits on a line across it, their card in a band below that
-   line; ancestors recede above the line and descendants below the band. How far down the line sits depends on how
-   much family there is each way, so a person with no children on record still has the whole height for the past. */
-function small() { return H < 520; }                     // a short picture, as on a phone with the browser's bars showing: names, not cards
-function horizonY() { return (W < 700 ? (small() ? 0.18 : 0.2) : 0.17) * H; }
-function bandH() { return small() ? 62 : 104; }
-function floorY() { return H - (S.footH || 86) - 4; }
-function hingeY() {
-  var n = S.nodes[S.sel] || S.nodes[S.focus], up, down;
-  if (n.kind === 'desc') { up = S.anc.root.reach - n.gen; down = n.reach; } else { up = n.reach; down = n.gen + S.desc.root.reach; }
-  var yH = horizonY(), T = Math.max(60, floorY() - bandH() - yH);
-  var wU = 1 - Math.pow(0.55, up), wD = [0, 0.25, 0.43, 0.58, 0.72][Math.min(down, 4)], lam = wU + wD > 0 ? wD / (wU + wD) : 0;
-  var below = down ? Math.max(T * lam, Math.min([0, 60, 90, 110, 110][Math.min(down, 4)], T * 0.42)) : 0;
-  var above = up ? Math.max(T - below, Math.min(T, 64)) : down ? 44 : T;
-  return Math.min(yH + above, Math.max(0.66 * H, yH + 64));
+  return { theta: th, F: Fp, yT: yT, s: s0 };
 }
 function baseScale() { return clamp(W * 0.44, 150, 215); }
 function bounds(kind) {
@@ -430,7 +406,7 @@ function aim(snap) {                 // point the camera for the current view
   longP = longParams(S.zoomLong || baseScale()); S.moved = false;
   if (S.lens === 'long') {
     var n = S.nodes[S.sel] || S.nodes[S.focus];
-    camT.theta = longP.theta; camT.F = longP.F; camT.yT = hingeY(); camT.s = longP.s; camT.tz = n.z; camT.tx = n.x;
+    camT.theta = longP.theta; camT.F = longP.F; camT.yT = longP.yT; camT.s = longP.s; camT.tz = n.z; camT.tx = n.x;
   } else { camT.F = longP.F; frame(); }
   S.fanT = S.lens === 'fan' ? 1 : 0;
   if (snap || reduce) { for (var k in camT) cam[k] = camT[k]; S.fanMix = S.fanT; S.tween = 1; S.fade = 1; S.win = windowAt(cam.tz); }
@@ -464,41 +440,20 @@ function draw() {
   var zvT = cam.F / cam.s, yvT = (H / 2 - cam.yT) / cam.s;
   var h = zvT * sin - yvT * cos, Dz = zvT * cos + yvT * sin, NEAR = zvT * 0.2;
   var tilt = clamp((TOP - th) / (TOP - longP.theta), 0, 1);          // 0 looking straight down … 1 the long view
+  var dir = S.lens === 'long' && !S.back ? -1 : 1;                   // looking ahead from an ancestor flips the ground
   var pin = 0.13 * tilt;
   var boxes = [], late = [], walls = [];
   var free = function (b) { for (var i = 0; i < boxes.length; i++) { var o = boxes[i]; if (b.x < o.x + o.w && b.x + b.w > o.x && b.y < o.y + o.h && b.y + b.h > o.y) return false; } return true; };
-  var yH = tilt > 0.3 ? H / 2 - cam.F * Math.tan(th) : -1e4;         // the horizon, once the camera is low enough to see one
-  /* Older than the person you are with: the ground receding to the horizon. Younger: below them, after a band that
-     holds their card, so that older is up and younger is down wherever you are. People are the size they would be the
-     same distance above, and the generations below are spread over the room there is, down to the youngest. People
-     born within fifteen years after the person you are with sit on the way down the band; a child is always below it. */
-  var gB = bandH(), gL = Math.max(0, floorY() - cam.yT - gB), gE = Math.max(cam.tz - wz(S.tMax), 3 * GEN * KZ), gD = 15 * KZ, glass = smooth(0, 0.6, tilt);
-  function persp(x, d, y) {
-    var dz = d + Dz, hh = h - (y || 0), zv = hh * sin + dz * cos;
+  function proj(x, z, y) {
+    var dz = dir * (z - cam.tz) + Dz, hh = h - (y || 0), zv = hh * sin + dz * cos;
     if (zv <= NEAR) return null;
     var k = cam.F / zv; return { x: W / 2 + (x - cam.tx) * k, y: H / 2 - (-hh * cos + dz * sin) * k, s: k };
   }
-  function proj(x, z, y) {
-    var d = z - cam.tz;
-    if (d >= 0 || !glass) return persp(x, d, y);
-    var k = persp(x, -d, 0).s, m = { x: W / 2 + (x - cam.tx) * k, y: cam.yT + gB * smooth(0, gD, -d) + gL * Math.min(1.1, -2 * d / (gE - d)) - (y || 0) * cos * k, s: k };
-    if (glass >= 1) return m;
-    var p = persp(x, d, y); if (!p) return m;                        // on the way between the tree view and this one
-    return { x: lerp(p.x, m.x, glass), y: lerp(p.y, m.y, glass), s: lerp(p.s, m.s, glass) };
-  }
-  var win = S.win, HsF = W / 2 - 26, HsN = Math.min(clamp(0.24 * W, 150, 290), HsF), FULL = { L: 0, w: 1 }, camUp = cam.tz >= S.rootZ - 1e-6;
-  function span(d) { return HsN + (HsF - HsN) * (1 - Math.exp(-Math.abs(d) / 9)); }
-  function winOf(kind, z) {          // the share of the width a person is measured against
-    if ((kind === 'desc') === camUp) return FULL;                    // beyond the person at the centre: the whole of their family that way
-    var behind = kind === 'desc' ? z - cam.tz : cam.tz - z;          // between you and the centre: the route's own share at that depth
-    if (behind <= 0) return win;
-    var w2 = windowAt(z), k = smooth(0, 1.2, behind);
-    return { L: lerp(win.L, w2.L, k), w: lerp(win.w, w2.w, k) };
-  }
-  function frac(uc, w) { return ((uc - w.L) / w.w) * 2 - 1 - S.panX; }
-  function place(x, z, uc, y, kind) {
+  var win = S.win, HsF = W / 2 - 26, HsN = Math.min(clamp(0.24 * W, 150, 290), HsF);
+  function span(d) { return HsN + (HsF - HsN) * (1 - Math.exp(-Math.max(0, d) / 9)); }
+  function place(x, z, uc, y) {
     var q = proj(x, z, y); if (!q) return null;
-    if (tilt > 0) q.x = lerp(q.x, W / 2 + clamp(frac(uc, winOf(kind, z)), -9, 9) * span(z - cam.tz), tilt);
+    if (tilt > 0) q.x = lerp(q.x, W / 2 + clamp(((uc - win.L) / win.w) * 2 - 1 - S.panX, -9, 9) * span(dir * (z - cam.tz)), tilt);
     return q;
   }
   function fog(s) { if (!tilt) return 1; var q = s / cam.s; return lerp(1, clamp(0.22 + 0.78 * smooth(0.07, 0.5, q), 0, 1) * (1 - smooth(1.9, 2.7, q)), tilt); }
@@ -506,6 +461,7 @@ function draw() {
   ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
   ctx.globalAlpha = 1; ctx.fillStyle = col.paper; ctx.fillRect(0, 0, W, H);
   var timeA = 1 - smooth(0, 0.5, S.fanMix), fanA = tilt < 0.02 ? smooth(0.55, 1, S.fanMix) : 0;
+  var yH = tilt > 0.3 ? H / 2 - cam.F * Math.tan(th) : -1e4;         // the horizon, once the camera is low enough to see one
 
   // year lines: a rule every ten, fifty or hundred years, whichever has room
   if (timeA > 0.01) {
@@ -537,10 +493,9 @@ function draw() {
   var vis = [], P2 = {};
   S.list.forEach(function (n) {
     var a = n.kind === 'desc' ? S.aDesc : n.kind === 'anc' ? S.aAnc : 1; if (a < 0.01) return;
-    var w = pos(n), g = place(w.x, w.z, n.uc, 0, n.kind); if (!g) return;
-    var hd = pin ? place(w.x, w.z, n.uc, pin, n.kind) : g; if (!hd) return;
-    var wn = tilt > 0 ? winOf(n.kind, w.z) : win;
-    var v = { n: n, gx: g.x, gy: g.y, x: hd.x, y: hd.y, s: g.s, a: a * fog(g.s) * S.fade, w: w, fr: frac(n.uc, wn), ww: wn.w, low: tilt > 0.5 && w.z < cam.tz - 0.05 };
+    var w = pos(n), g = place(w.x, w.z, n.uc, 0); if (!g) return;
+    var hd = pin ? place(w.x, w.z, n.uc, pin) : g; if (!hd) return;
+    var v = { n: n, gx: g.x, gy: g.y, x: hd.x, y: hd.y, s: g.s, a: a * fog(g.s) * S.fade, w: w };
     P2[n.id] = v;
     if (v.x < -260 || v.x > W + 260 || v.y < -160 || v.y > H + 220) return;
     vis.push(v);
@@ -556,10 +511,13 @@ function draw() {
     S.list.forEach(function (n) {
       var t = n.toward; if (!t) return; var a = P2[n.id], b = P2[t.id]; if (!a && !b) return;
       var kindA = n.kind === 'desc' ? S.aDesc : S.aAnc; if (kindA < 0.01) return;
-      if (tilt === 1 && a && b && ((a.fr < -1.25 && b.fr < -1.25) || (a.fr > 1.25 && b.fr > 1.25))) return;      // in the long view, a link wholly outside the view is not drawn
+      if (tilt === 1) {                                          // in the long view, a link wholly outside the window is not drawn
+        var f1 = ((n.uc - win.L) / win.w) * 2 - 1 - S.panX, f2 = ((t.uc - win.L) / win.w) * 2 - 1 - S.panX;
+        if ((f1 < -1.25 && f2 < -1.25) || (f1 > 1.25 && f2 > 1.25)) return;
+      }
       var both = S.trail && S.trail[n.id] && S.trail[t.id], on = (S.onPath[n.id] && S.onPath[t.id]) || (S.kin && both), home = !on && both, wa = pos(n), wb = pos(t), pts = [], i, k, e, q, sMax = 0;
       var steps = ((a || b).s < 22 && tilt === 1) ? 5 : 12;
-      for (i = 0; i <= steps; i++) { k = i / steps; e = k * k * (3 - 2 * k); q = place(lerp(wb.x, wa.x, e), lerp(wb.z, wa.z, k), lerp(t.uc, n.uc, e), 0, n.kind); if (q) { pts.push(q); sMax = Math.max(sMax, q.s); } }
+      for (i = 0; i <= steps; i++) { k = i / steps; e = k * k * (3 - 2 * k); q = place(lerp(wb.x, wa.x, e), lerp(wb.z, wa.z, k), lerp(t.uc, n.uc, e), 0); if (q) { pts.push(q); sMax = Math.max(sMax, q.s); } }
       if (pts.length < 2 || sMax < 1.2) return;
       var al = kindA * timeA * fog(pts[pts.length - 1].s) * S.fade;
       if (pts[0].x < -40 && pts[pts.length - 1].x < -40 || pts[0].x > W + 40 && pts[pts.length - 1].x > W + 40) return;
@@ -574,8 +532,9 @@ function draw() {
     S.list.forEach(function (n) {
       if (n.kind === 'desc' || !P2[n.id]) return; var v = P2[n.id]; if (v.s < 9) return;
       if (n.par[0] || n.par[1] || n.dup[0] || n.dup[1]) return;
-      var e = place(v.w.x, v.w.z + 1.5, n.uc, pin, n.kind); if (!e) return;          // from the person upward, a little way further back
-      var wa = v.a * S.aAnc * timeA, need = clamp(v.s * 0.085, 1.7, 8.5) + clamp(v.s * 0.06, 4, 11);
+      var wa = v.a * S.aAnc * timeA; if (wa < 0.02) return;      // turned round, the ancestors are out of the picture and so are their walls
+      var e = place(v.w.x, v.w.z + dir * 1.5, n.uc, pin); if (!e) return;            // from the person, a little way further back
+      var need = clamp(v.s * 0.085, 1.7, 8.5) + clamp(v.s * 0.06, 4, 11);
       if (v.y - e.y < need) e.y = v.y - need;
       ctx.globalAlpha = wa * 0.7; ctx.strokeStyle = col.muted; ctx.beginPath(); ctx.moveTo(v.x, v.y); ctx.lineTo(e.x, e.y); ctx.stroke();
       if (n.p.st === 'f' && e.x > -20 && e.x < W + 20) walls.push({ id: n.id, x: e.x, y: e.y, s: v.s, a: wa, q: !!(n.p.rq && n.p.rq.length) });
@@ -606,12 +565,12 @@ function draw() {
 
   // people, far to near
   var dotA = 1 - fanA; S.hits = [];
-  if (dotA > 0.5) walls.forEach(function (w) { if (w.s >= 22) S.hits.push({ id: w.id, x: w.x, y: w.y - 4, r: 5, s: w.s, wall: w.q ? 2 : 1 }); });
+  if (dotA > 0.5 && S.aAnc > 0.5) walls.forEach(function (w) { if (w.s >= 22) S.hits.push({ id: w.id, x: w.x, y: w.y - 4, r: 5, s: w.s, wall: w.q ? 2 : 1 }); });
   vis.sort(function (a, b) { return a.s - b.s; });
   if (dotA > 0.01) vis.forEach(function (v) {
     var n = v.n, p = n.p, s = v.s, r = clamp(s * 0.085, 1.7, 8.5), c = nodeColour(n), al = v.a * dotA;
     if (p.st === 'm') r *= 0.7;
-    if (tilt > 0 && n.kind !== 'focus') r = lerp(r, Math.min(r, Math.max(1.5, ((n.u1 - n.u0) / v.ww) * span(v.w.z - cam.tz) * 0.84)), tilt);
+    if (tilt > 0 && n.kind !== 'focus') r = lerp(r, Math.min(r, Math.max(1.5, ((n.u1 - n.u0) / win.w) * span(dir * (v.w.z - cam.tz)) * 0.84)), tilt);
     if (pin && s > 30) {             // a pin standing on its year
       ctx.globalAlpha = al * 0.55; ctx.strokeStyle = c; ctx.lineWidth = clamp(s * 0.012, 0.6, 1.6);
       ctx.beginPath(); ctx.moveTo(v.gx, v.gy); ctx.lineTo(v.x, v.y); ctx.stroke();
@@ -646,7 +605,7 @@ function draw() {
     order.forEach(function (v) {
       var n = v.n, p = n.p, s = v.s, b;
       if (foot && v.pri < 3000) { boxes.push(foot); foot = null; }      // only the person stood with may run under the controls
-      if (s >= 132 && !(tilt > 0.5 && small())) {
+      if (s >= 132) {
         var need = Math.max(tw('800 15.5px ' + DISP, p.f && p.s ? p.s : p.n), tw('500 12px ' + DISP, p.f && p.s ? p.f : '')) + 24;
         var cw = clamp(Math.max(s - 16, need), 116, Math.min(190, tilt > 0.5 ? HsN - 12 : 190)), ch = (p.st === 'f' ? 78 : 64) + (p.x && S.mode === 'lines' ? 13 : 0);
         b = { x: clamp(v.x - cw / 2, 6, W - cw - 6), y: v.y + v.r + 8, w: cw, h: ch };
@@ -655,14 +614,13 @@ function draw() {
       if (s < 30 && !v.key) return;
       var big = s >= 60, fs = big ? clamp(11.5 + (s - 60) / 40, 11.5, 13.5) : clamp(10 + (s - 22) / 30, 10, 11.5), rows = [], yr = p.st === 'f' && (p.bt || p.dt) ? years(p) : '';
       if (v.key && fs < 11) fs = 11;
-      if (s >= 132 && tilt > 0.5 && small()) fs = 15;          // where there are no cards, the people you are with have the largest names
       fs = Math.round(fs * 2) / 2;
       if (big && p.f && p.s) rows.push([p.f.split(' ')[0], '500 ' + (fs - 1.5) + 'px ' + DISP, fs + 0.5, col.muted], [p.s, '700 ' + fs + 'px ' + DISP, fs + 3, p.st === 'f' ? col.ink : col.muted]);
       else rows.push([shortName(p), (big || v.key ? '700 ' : '600 ') + fs + 'px ' + DISP, fs + 3, p.st === 'f' ? col.ink : col.muted]);
       if (big && yr) rows.push([yr, '500 9.5px ' + MONO, 12, col.muted]);
       /* A name goes above its point, else below. The people at the front, and the line being walked, matter most:
          theirs may also sit beside the point, lose its years, and at the very front be cut short as a last resort. */
-      var near = s >= 45 || v.key, sets = [rows], spots = v.low || s >= 132 ? (near ? [1, 0, 2, 3] : [1, 0]) : near ? [0, 1, 2, 3] : [0, 1], al = 'center', bw, bh, i, j;      // below you, and beside you where there are no cards, a name hangs under its point
+      var near = s >= 45 || v.key, sets = [rows], spots = near ? [0, 1, 2, 3] : [0, 1], al = 'center', bw, bh, i, j;
       if (near && rows.length > 2) sets.push(rows.slice(0, 2));
       if (big && rows.length > 1) sets.push(sets[sets.length - 1].map(function (r) { return [fitText(r[1], r[0], 58), r[1], r[2], r[3]]; }));
       b = null;
@@ -790,18 +748,19 @@ function go() { if (!raf) { last = 0; raf = requestAnimationFrame(tick); } }
 function tick(now) {
   raf = 0; var dt = last ? Math.min(0.05, (now - last) / 1000) : 0.016; last = now; var busy = false, k;
   if (S.flying) {
-    var end = S.back ? routeEnds().old : routeEnds().young, step = 2.1 * dt * (end > camT.tz ? 1 : -1);
+    var end = S.stations[S.stations.length - 1].z, step = 2.1 * dt * (end > camT.tz ? 1 : -1);
     if (Math.abs(end - camT.tz) <= Math.abs(step)) { camT.tz = end; stopFly(); } else camT.tz += step;
     busy = true;
   }
-  if (S.lens === 'long') { follow(); camT.yT = hingeY(); }
+  if (S.lens === 'long') follow();
   var e = reduce ? 1 : 1 - Math.exp(-dt / 0.14);
   for (k in camT) { var d = camT[k] - cam[k]; if (Math.abs(d) > (k === 'theta' ? 1e-4 : k === 's' || k === 'F' || k === 'yT' ? 0.02 : 1e-3)) { cam[k] += d * e; busy = true; } else cam[k] = camT[k]; }
   var mv = function (cur, tgt, rate) { if (cur === tgt) return cur; busy = true; var s2 = reduce ? 1 : dt * rate; return Math.abs(tgt - cur) <= s2 ? tgt : cur + Math.sign(tgt - cur) * s2; };
   S.fanMix = mv(S.fanMix, S.fanT, 1.5); S.tween = mv(S.tween, 1, 1.5); S.fade = mv(S.fade, 1, 3);
   var wt = windowAt(cam.tz), we = reduce ? 1 : 1 - Math.exp(-dt / 0.09), wc = S.win.L + S.win.w / 2, tc = wt.L + wt.w / 2, lw = Math.log(S.win.w), ltw = Math.log(wt.w);
   if (Math.abs(lw - ltw) > 1e-4 || Math.abs(wc - tc) > S.win.w * 1e-4) { lw += (ltw - lw) * we; wc += (tc - wc) * we; S.win = { L: wc - Math.exp(lw) / 2, w: Math.exp(lw) }; busy = true; } else S.win = wt;
-  S.aDesc = mv(S.aDesc, S.lens === 'fan' ? 0 : 1, 3.5);       // the fan is of ancestors only
+  var wantA = S.lens === 'long' ? (S.back ? 1 : 0) : 1, wantD = S.lens === 'long' ? (S.back ? 0 : 1) : S.lens === 'fan' ? 0 : 1;
+  S.aAnc = mv(S.aAnc, wantA, 3.5); S.aDesc = mv(S.aDesc, wantD, 3.5);
   draw(); hud();
   if (busy) raf = requestAnimationFrame(tick);
 }
@@ -810,12 +769,8 @@ function follow() {                  // in the long view the person you are pass
 }
 function yearNow() { return TNOW - camT.tz / KZ; }
 var shown = {};
-function put(sel, prop, val) { if (shown[sel + prop] !== val) { shown[sel + prop] = val; var el = $(sel); if (prop === 'display') el.style.display = val; else if (/^(aria|data)-/.test(prop)) el.setAttribute(prop, val); else el[prop] = val; } }
-function standing() { return S.nodes[S.sel] && P[S.sel].st !== 'm' ? S.sel : S.focus; }      // the person you are with in the long view
-function flyBack() {                 // which way Fly goes: back, unless you are at the far end already or have been heading down
-  var e = routeEnds(), up = e.old - camT.tz > 0.2, down = camT.tz - e.young > 0.2;
-  return up && (S.back || !down);
-}
+function put(sel, prop, val) { if (shown[sel + prop] !== val) { shown[sel + prop] = val; var el = $(sel); if (prop === 'display') el.style.display = val; else if (prop.indexOf('aria-') === 0) el.setAttribute(prop, val); else el[prop] = val; } }
+function standing() { return S.nodes[S.sel] && P[S.sel].st !== 'm' ? S.sel : S.focus; }      // the person the long view is passing
 function hud() {
   var long = S.lens === 'long';
   put('#tx-year', 'display', long ? '' : 'none'); put('#tx-when', 'hidden', !long);
@@ -824,17 +779,14 @@ function hud() {
   put('#tx-yr', 'textContent', live ? 'Now' : String(Math.round(y)));
   var ev = null; D.events.forEach(function (e) { if (!live && Math.abs(e.year - y) < 4 && e.year <= S.liveFrom) ev = e; });
   var g = n ? Math.abs(n.gen) : 0;
-  put('#tx-yrsub', 'textContent', ev ? ev.year + ' · ' + ev.label : !S.touched ? 'Older is up, younger down · drag or tap' : live ? 'The living: names only, no dates' : !g ? 'Standing with ' + shortName(P[S.focus]) : g + (g === 1 ? ' generation ' : ' generations ') + (n.kind === 'desc' ? 'on' : 'back'));
-  put('#tx-fly', 'textContent', S.flying ? 'Pause' : flyBack() ? 'Fly back' : 'Fly on');
-  var e = routeEnds(), a = TNOW - e.old / KZ, b = TNOW - e.young / KZ;
+  put('#tx-yrsub', 'textContent', ev ? ev.year + ' · ' + ev.label : !S.touched ? 'Drag or scroll to travel ' + (S.back ? 'back' : 'on') + ' · tap a person' : live ? 'The living: names only, no dates' : !g ? 'Standing with ' + shortName(P[S.focus]) : g + (g === 1 ? ' generation ' : ' generations ') + (S.back ? 'back' : 'on'));
+  var a = S.back ? S.tMin : S.anc.root.t, b = S.back ? S.anc.root.t : S.tMax;
   if (!S.sliding) put('#tx-slide', 'value', String(Math.round(1000 * clamp((y - a) / Math.max(1, b - a), 0, 1))));
-  // the button under the picture: the rest of the family of the person you are with, which opens when they are put at the centre
-  var here = standing(), up = S.nodes[here].kind === 'desc', cnt = here === S.focus ? 0 : kinCount(here, up), what = (up ? 'ancestor' : 'descendant') + (cnt === 1 ? '' : 's');
-  put('#tx-desc', 'hidden', !cnt);
-  if (cnt) {
-    var say = 'Show all ' + cnt + ' ' + what + ' of ' + P[here].n + (up ? ', above' : ', below');
-    put(TURN, 'textContent', cnt + ' ' + what); put('#tx-desc', 'title', say); put('#tx-desc', 'aria-label', say); put('#tx-desc', 'data-way', up ? 'up' : 'down');
-  }
+  var here = standing(), cnt = kinCount(here, !S.back), what = S.back ? 'descendant' : 'ancestor';
+  var say = cnt ? 'Turn around: the ' + cnt + ' ' + what + (cnt === 1 ? '' : 's') + ' of ' + P[here].n : 'No ' + what + 's on record for ' + P[here].n;
+  put(TURN, 'textContent', cnt ? cnt + ' ' + what + (cnt === 1 ? '' : 's') : 'No ' + what + 's');
+  put('#tx-desc', 'disabled', !cnt); put('#tx-desc', 'title', say); put('#tx-desc', 'aria-label', say);
+  put('#tx-desc', 'hidden', false);                        // a page kept from the day the button came and went with the person
 }
 
 /* ---------- panel ---------- */
@@ -907,8 +859,13 @@ function panel() {
     h += '</dl>';
     if (groups.some(function (g) { return g[1].some(function (i) { return P[i].st === 'm'; }); })) h += '<p class="tx-small">Children under 18 are shown as “Living child”, without their names. Each one opens in the research database, for family members who have the login.</p>';
   }
-  h += '<p class="tx-about">' + (S.lens === 'fan' ? 'Each ring out is a generation back, father’s side to the left and mother’s to the right.' : 'Older is up and younger is down, father to the left and mother to the right.') + ' Living relatives are placed by generation, never against a year.</p>';
-  h += '<p class="tx-about">Tap someone to walk to them. Double-tap, or Stand here, puts them at the centre: all their ancestors open above them and all their descendants below.</p>';
+  var first = esc(firstName(S.focus));
+  h += '<p class="tx-about">' + (S.lens === 'fan' ? 'Each ring out is a generation back, father’s side to the left and mother’s to the right.'
+    : S.lens === 'tree' ? 'Older is up and younger is down, father to the left and mother to the right.'
+    : S.back ? 'The tree grows upward from ' + first + ': father to the left, mother to the right, and the further back someone was born the further up they stand.'
+    : 'The tree is turned round on ' + first + ': everyone who came after rises above, the youngest furthest up.') + ' Living relatives are placed by generation, never against a year.</p>';
+  h += '<p class="tx-about">Tap someone to walk to them. ' + (S.lens === 'long' ? 'Double-tap anyone to turn the tree round on them, from their ancestors to their descendants and back again. The button below the picture does the same for whoever you are with.'
+    : 'Double-tap, or Stand here, puts them at the centre.') + '</p>';
   h += '<p class="tx-about">' + (id === S.me ? 'This is you: the tree opens on you and names everyone’s relationship to you. It is remembered on this device only. <button type="button" class="tx-link" data-notme>This is not me</button>'
     : (S.me ? '' : 'Are you in the tree? Find your own name, then: ') + '<button type="button" class="tx-link" data-me>This is me</button>') + '</p></div>';
   $('#tx-panel').innerHTML = h;
@@ -931,28 +888,29 @@ function chips() {
 function sync() {
   app.querySelectorAll('[data-lens]').forEach(function (b) { b.setAttribute('aria-pressed', String(b.getAttribute('data-lens') === S.lens)); });
   var long = S.lens === 'long';
-  $('#tx-fly').hidden = !long; $('#tx-fly').setAttribute('aria-pressed', String(S.flying));
+  $('#tx-fly').hidden = !long; $('#tx-fly').textContent = S.flying ? 'Pause' : (S.back ? 'Fly back' : 'Fly on'); $('#tx-fly').setAttribute('aria-pressed', String(S.flying));
   $('#tx-fit').textContent = long ? 'Reset' : 'Fit';
   var noA = !S.anc.root.par[0] && !S.anc.root.par[1], noD = !S.desc.root.kids.length, who = P[S.focus].n;
-  var none = S.lens !== 'fan' && noA && noD ? 'No parents or children on record for ' + who + '.' : S.lens === 'fan' && noA ? 'No parents on record for ' + who + '. Try the Long view or the Tree view.' : '';
+  var none = long && noA && noD ? 'No parents or children on record for ' + who + '.' : long && !S.back && noD ? 'No children on record for ' + who + '.' : long && S.back && noA ? 'No parents on record for ' + who + '. Turn around to see who came after.' : S.lens === 'fan' && noA ? 'No parents on record for ' + who + '. Try the Long view or the Tree view.' : '';
   $('#tx-empty').hidden = !none; $('#tx-empty').textContent = none;
   chips();
-  var hash = S.kin && S.lens !== 'fan' ? '#kin-' + S.kin.a + '-' + S.kin.b + (S.lens === 'tree' ? '-tree' : '') : '#' + S.lens + '-' + S.focus + (S.line ? '-' + S.line : '');
+  var hash = S.kin && S.lens !== 'fan' ? '#kin-' + S.kin.a + '-' + S.kin.b + (S.lens === 'tree' ? '-tree' : '')
+    : '#' + (long && !S.back ? 'ahead' : S.lens) + '-' + S.focus + (S.line ? '-' + S.line : '');      // "ahead": the long view turned round
   try { if (S.pushNext && !S.routing && location.hash && location.hash !== hash) history.pushState(null, '', hash); else history.replaceState(null, '', hash); } catch (e) {}
   S.pushNext = false;
 }
 function stopFly() { if (S.flying) { S.flying = false; sync(); } }
-function setLens(l) { stopFly(); S.lens = l; S.panX = 0; S.whole = false; if (!S.nodes[S.sel]) S.sel = S.focus; setPath(S.sel); aim(false); sync(); panel(); }
-function focusOn(id) {               // stand with someone: they become the centre, all their ancestors above them and all their descendants below
+function setLens(l) { stopFly(); S.lens = l; S.panX = 0; S.whole = false; if (!S.nodes[S.sel]) S.sel = S.focus; repath(S.sel); aim(false); sync(); panel(); }
+function focusOn(id, back) {         // stand with someone: they become the centre. You keep looking the way you were, if anyone is that way
   if (!P[id] || P[id].st === 'm') return;
-  var was = S.focus;
-  stopFly(); S.pushNext = id !== was; build(id); S.sel = id; S.panX = 0; S.whole = false; S.back = true;
-  var n = was && was !== id ? S.nodes[was] : null;          // the way you came stays marked, and is the route that way to begin with
-  if (n) { S.from = was; S.trail = {}; for (var c = n; c; c = c.toward) S.trail[c.id] = 1; }
+  var want = back == null ? S.back : back;
+  stopFly(); S.pushNext = id !== S.focus; build(id); S.sel = id; S.panX = 0; S.whole = false;
+  var a = S.anc.root.reach, d = S.desc.root.reach;
+  S.back = want ? a > 0 || d === 0 : d === 0;
   setPath(id); aim(false); sync(); panel();
 }
-/* How are we related? The picture is centred on the ancestor the two share, with the way down to each of them lit:
-   one is the route, the other marked like the way home. Where one is the other's ancestor, the elder is the centre. */
+/* How are we related? The tree is turned round on the ancestor the two share, and the way up to each of them is lit:
+   one is the route, the other marked the same. Where one is the other's ancestor, the elder is the centre. */
 function showKin(a, b) {
   if (!P[a] || !P[b] || P[a].st === 'm' || P[b].st === 'm') return;
   var k = kinOf(a, b); k.a = a; k.b = b;
@@ -962,10 +920,13 @@ function showKin(a, b) {
     if (S.lens === 'fan') S.lens = 'long';
     S.pushNext = true; build(top); S.sel = top; S.panX = 0; S.whole = false; S.back = false;
     S.trail = {}; k.wa.concat(k.wb).forEach(function (id) { S.trail[id] = 1; });
-    S.from = main[main.length - 1]; if (main.length > 1) S.down = main.slice();
-    S.kin = k; setPath(null); aim(false);
+    S.from = main[main.length - 1]; k.main = main;
+    S.kin = k; setPath(null, main); aim(false);
   } else { S.pushNext = !S.kin; S.kin = k; }
   sync(); panel(); go();
+}
+function repath(via) {               // the route again: while a relationship is shown it stays the line between the two
+  if (S.kin && S.kin.main && S.lens !== 'fan') setPath(null, S.kin.main); else setPath(via);
 }
 function askKin(other) {             // from the button under the picture: the person you are with, and you (or whoever the site starts from)
   var b = S.kin ? S.kin.b : standing(), a = refPerson();
@@ -982,13 +943,29 @@ function openWall() {                // a tap on a brick wall: the panel opens a
   app.classList.add('tx-more'); panel();
   var q = $('#tx-panel .tx-q'); if (q && q.scrollIntoView) q.scrollIntoView({ block: 'center' });
 }
-function openHere() { var here = standing(); if (S.lens === 'long' && here !== S.focus) focusOn(here); }      // the button under the picture
-function select(id) {                // walk to someone in the picture; the route on their side of the centre now runs through them
+/* Turning round. The tree always grows upward; turning it round on someone changes what grows: from that person's
+   ancestors to everyone who came after them, and back again. Walk back to an ancestor and turn, and their whole family
+   rises ahead of you, the way you came still marked; turn again on someone further along and you look back from there. */
+function turn(id) {
+  if (S.lens !== 'long') return;
+  var here = id && S.nodes[id] && P[id].st !== 'm' ? id : standing(), was = S.focus, back = !S.back;
+  if (!kinCount(here, back)) return;                       // no one on record that way
+  stopFly();
+  if (here !== was) {                                      // a new centre: keep the way you came to it
+    S.pushNext = true; build(here);
+    var n = S.nodes[was];
+    if (n) { S.from = was; S.trail = {}; for (var c = n; c; c = c.toward) S.trail[c.id] = 1; }
+  } else if (S.kin) { S.kin = null; S.trail = null; S.from = null; }      // turning away from a relationship puts it away
+  S.sel = here; S.back = back; S.panX = 0; S.line = null;
+  setPath(here); aim(false); sync(); panel();
+}
+function select(id) {                // walk to someone in the picture; the route now runs through them
   if (!S.nodes[id] || P[id].st === 'm') return;
   stopFly(); S.sel = id; S.line = null;
   var n = S.nodes[id];
+  if (S.lens === 'long' && (S.back ? n.kind === 'desc' : n.kind === 'anc')) return;
   setPath(id); S.panX = 0;
-  if (S.lens === 'long') { camT.tz = n.z; if (n.kind !== 'focus') S.back = n.kind === 'anc'; }
+  if (S.lens === 'long') camT.tz = n.z;
   sync(); panel(); go();
 }
 function followLine(slug) {
@@ -1007,7 +984,7 @@ function resize() {
   cv.width = Math.round(W * dpr); cv.height = Math.round(H * dpr);
   if (!S.focus) return;
   longP = longParams(S.zoomLong || baseScale());
-  if (S.lens === 'long') { longP.yT = hingeY(); ['theta', 'F', 'yT', 's'].forEach(function (k) { cam[k] = camT[k] = longP[k]; }); }
+  if (S.lens === 'long') ['theta', 'F', 'yT', 's'].forEach(function (k) { cam[k] = camT[k] = longP[k]; });
   else if (!S.moved) { frame(); for (var k in camT) cam[k] = camT[k]; }
   else cam.yT = camT.yT = H / 2;
   go();
@@ -1033,9 +1010,10 @@ function zoomBy(f, px, py) {
   var s0 = camT.s, s1 = clamp(s0 * f, 2.5, 260), wx = camT.tx + (px - W / 2) / s0, wzz = camT.tz + (H / 2 - py) / s0;
   camT.s = s1; camT.tx = wx - (px - W / 2) / s1; camT.tz = wzz - (H / 2 - py) / s1; S.moved = true; go();
 }
-function travel(dz) {                // move through time in the long view, staying on the routes: more is older, which is up
-  stopFly(); if (dz) S.back = dz > 0;
-  var e = routeEnds(); camT.tz = clamp(camT.tz + dz, e.young - 0.3, e.old + 0.3); go();
+function travel(dz) {                // move through time in the long view, staying on the route
+  stopFly();
+  var zs = S.stations.map(function (s) { return s.z; }), lo = Math.min.apply(null, zs), hi = Math.max.apply(null, zs);
+  camT.tz = clamp(camT.tz + dz, lo - 0.3, hi + 0.3); go();
 }
 
 function wire() {
@@ -1061,21 +1039,21 @@ function wire() {
     drag.moved = true; cv.classList.add('tx-drag'); drag.x = e.offsetX; drag.y = e.offsetY;
     if (S.lens === 'long') {
       var zvT = cam.F / cam.s, h = zvT * Math.sin(cam.theta) - ((H / 2 - cam.yT) / cam.s) * Math.cos(cam.theta);
-      S.panX = clamp(S.panX - dx / (W / 2 - 26), -1.6, 1.6); travel(dy / (cam.s * h / zvT));                 // the picture follows the finger: pull it down and older people come to you
+      S.panX = clamp(S.panX - dx / (W / 2 - 26), -1.6, 1.6); travel((S.back ? 1 : -1) * dy / (cam.s * h / zvT));
     } else { camT.tx -= dx / cam.s; camT.tz += dy / cam.s; cam.tx = camT.tx; cam.tz = camT.tz; S.moved = true; go(); }
   });
   function up(e) {
     var d = drag; delete ptr[e.pointerId]; if (Object.keys(ptr).length < 2) pinch = 0; cv.classList.remove('tx-drag');
     if (!d || d.moved || Object.keys(ptr).length) { drag = null; return; }
     drag = null;
-    var now = Date.now(), again = tapId && now - tapT < 400 && Math.hypot(e.offsetX - tapAt.x, e.offsetY - tapAt.y) < 30;
+    var now = e.timeStamp || Date.now(), again = tapId && now - tapT < 400 && Math.hypot(e.offsetX - tapAt.x, e.offsetY - tapAt.y) < 30;      // when the finger lifted, not when this ran: the first tap's own work must not eat into the time allowed
     if (again) {                     // a second tap in the same place means the person first tapped, who has started to move:
-      var who = tapId; tapId = null; // put them at the centre
-      if (who !== S.focus) focusOn(who);
+      var who = tapId; tapId = null; // the tree turns round on them. (In the flat views, which show both ways at once, they become the centre.)
+      if (S.lens === 'long') turn(who); else if (who !== S.focus) focusOn(who);
       return;
     }
     var id = hit(e.offsetX, e.offsetY), wall = S.hitWall;
-    tapId = id; tapT = now; tapAt = { x: e.offsetX, y: e.offsetY };
+    tapId = wall ? null : id; tapT = now; tapAt = { x: e.offsetX, y: e.offsetY };      // a tap on a brick wall opens its question; it is never half of a double tap
     if (id) select(id);
     if (id && wall) openWall();
   }
@@ -1084,44 +1062,43 @@ function wire() {
     e.preventDefault(); touched();
     var dy = e.deltaMode === 1 ? e.deltaY * 30 : e.deltaY, dx = e.deltaMode === 1 ? e.deltaX * 30 : e.deltaX;
     if (e.ctrlKey || e.metaKey) { zoomBy(Math.exp(-dy * 0.01), e.offsetX, e.offsetY); return; }
-    if (S.lens === 'long') { S.panX = clamp(S.panX + dx / (W / 2 - 26), -1.6, 1.6); travel(-dy * 0.011); }            // as a page scrolls: down the wheel is down the picture, to younger people
+    if (S.lens === 'long') { S.panX = clamp(S.panX + dx / (W / 2 - 26), -1.6, 1.6); travel((S.back ? 1 : -1) * dy * 0.011); }
     else zoomBy(Math.exp(-dy * 0.0022), e.offsetX, e.offsetY);
   }, { passive: false });
   cv.addEventListener('keydown', function (e) {
     if (e.ctrlKey || e.metaKey || e.altKey) return;        // the browser's own shortcuts: zoom, new tab
     var k = e.key, long = S.lens === 'long', used = true;
-    if (k === 'ArrowUp') long ? travel(1.4) : (camT.tz += 60 / cam.s, go());
-    else if (k === 'ArrowDown') long ? travel(-1.4) : (camT.tz -= 60 / cam.s, go());
+    if (k === 'ArrowUp') long ? travel(S.back ? 1.4 : -1.4) : (camT.tz += 60 / cam.s, go());
+    else if (k === 'ArrowDown') long ? travel(S.back ? -1.4 : 1.4) : (camT.tz -= 60 / cam.s, go());
     else if (k === 'ArrowLeft') long ? (S.panX = clamp(S.panX - 0.25, -1.6, 1.6), go()) : (camT.tx -= 60 / cam.s, go());
     else if (k === 'ArrowRight') long ? (S.panX = clamp(S.panX + 0.25, -1.6, 1.6), go()) : (camT.tx += 60 / cam.s, go());
     else if (k === '+' || k === '=') zoomBy(1.3); else if (k === '-') zoomBy(1 / 1.3);
     else if (k === 'Enter' && S.sel && S.sel !== S.focus) focusOn(S.sel);
+    else if (k === 't' || k === 'T') turn();
     else used = false;
     if (used) { e.preventDefault(); touched(); }
   });
   function touched() { if (!S.touched) { S.touched = true; go(); } }
   app.querySelectorAll('[data-lens]').forEach(function (b) { b.addEventListener('click', function () { setLens(b.getAttribute('data-lens')); touched(); }); });
-  $('#tx-desc').addEventListener('click', function () { touched(); openHere(); });
+  $('#tx-desc').addEventListener('click', function () { touched(); turn(); });
   $('#tx-fly').addEventListener('click', function () {
     touched(); if (S.flying) { stopFly(); return; }
-    var e = routeEnds(), back = flyBack(), end = back ? e.old : e.young;
-    if (Math.abs(end - camT.tz) < 0.2) return;             // no one either way
-    S.back = back;
-    if (reduce) { camT.tz = end; go(); return; }
+    var end = S.stations[S.stations.length - 1]; if (Math.abs(end.z - camT.tz) < 0.2) { camT.tz = S.stations[0].z; cam.tz = camT.tz; }
+    if (reduce) { camT.tz = end.z; go(); return; }
     S.flying = true; S.panX = 0; sync(); go();
   });
   $('#tx-zin').addEventListener('click', function () { zoomBy(1.35); }); $('#tx-zout').addEventListener('click', function () { zoomBy(1 / 1.35); });
-  $('#tx-fit').addEventListener('click', function () { stopFly(); S.zoomLong = 0; S.panX = 0; if (S.lens === 'long') { S.sel = S.focus; S.line = null; S.back = true; setPath(S.focus, null, true); panel(); chips(); } else S.whole = true; aim(false); });
+  $('#tx-fit').addEventListener('click', function () { stopFly(); S.zoomLong = 0; S.panX = 0; if (S.lens === 'long') { S.sel = S.focus; S.line = null; repath(S.focus); panel(); chips(); } else S.whole = true; aim(false); });
   $('#tx-slide').addEventListener('input', function () {
     S.sliding = true; shown['#tx-slidevalue'] = this.value; stopFly(); touched();
-    var e = routeEnds(), a = TNOW - e.old / KZ, b = TNOW - e.young / KZ, y = a + (b - a) * this.value / 1000;
-    camT.tz = clamp(wz(y), e.young, e.old); go();
+    var a = S.back ? S.tMin : S.anc.root.t, b = S.back ? S.anc.root.t : S.tMax, y = a + (b - a) * this.value / 1000;
+    var zs = S.stations.map(function (s) { return s.z; }); camT.tz = clamp(wz(y), Math.min.apply(null, zs), Math.max.apply(null, zs)); go();
   });
   $('#tx-slide').addEventListener('change', function () { S.sliding = false; });
   $('#tx-chips').addEventListener('click', function (e) {
     if (e.target.closest('[data-evid]')) { S.mode = S.mode === 'evidence' ? 'lines' : 'evidence'; sync(); go(); return; }
     if (e.target.closest('[data-kin]')) { touched(); askKin(); return; }
-    if (e.target.closest('[data-home]')) { touched(); focusOn(S.me); return; }
+    if (e.target.closest('[data-home]')) { touched(); focusOn(S.me, true); return; }
     var b = e.target.closest('[data-line]'); if (b) { touched(); followLine(b.getAttribute('data-line')); }
   });
   $('#tx-panel').addEventListener('click', function (e) {
@@ -1148,7 +1125,7 @@ function wire() {
   res.addEventListener('click', function (e) {
     var b = e.target.closest('[data-id]'); if (!b) return; res.hidden = true; q.value = ''; touched();
     var id = b.getAttribute('data-id'), was = S.pick; unpick();
-    if (was) showKin(id, was); else focusOn(id);            // "Related to whom?": what the person you were with is to the one you chose
+    if (was) showKin(id, was); else focusOn(id, true);            // "Related to whom?": what the person you were with is to the one you chose
   });
   function unpick() { S.pick = null; q.placeholder = 'Find a person'; }
   q.addEventListener('blur', function () { setTimeout(function () { if (S.pick && document.activeElement !== q) unpick(); }, 250); });
@@ -1161,7 +1138,7 @@ function wire() {
   new ResizeObserver(function () { S.footH = $('.tx-foot').offsetHeight; go(); }).observe($('.tx-foot'));
   window.addEventListener('hashchange', route);
 }
-function route() {                  // #long-I0141 opens a view on a person; #long-I0141-wood also follows that line
+function route() {                  // #long-I0141 opens a view on a person, #ahead-I0141 the long view turned round on them; #long-I0141-wood also follows that line
   var k = /^#kin-(I\d+)(?:-(I\d+))?(?:-(tree))?$/.exec(location.hash || '');
   if (k && !k[2]) { k[2] = k[1]; k[1] = refPerson(); }     // #kin-I0233, as person pages link: what that person is to you, or to the person the site starts from
   if (k && P[k[1]] && P[k[2]] && P[k[1]].st !== 'm' && P[k[2]].st !== 'm' && k[1] !== k[2]) {  // #kin-I0141-I0233: what the second is to the first
@@ -1169,12 +1146,12 @@ function route() {                  // #long-I0141 opens a view on a person; #lo
     S.routing = true; S.lens = k[3] || 'long'; if (!S.focus) { build(k[1]); S.sel = k[1]; setPath(k[1]); } showKin(k[1], k[2]); S.routing = false;
     return true;
   }
-  if (k && P[k[2]] && P[k[2]].st !== 'm') { S.routing = true; S.lens = 'long'; focusOn(k[2]); S.routing = false; return true; }      // the same person twice: just that person
+  if (k && P[k[2]] && P[k[2]].st !== 'm') { S.routing = true; S.lens = 'long'; focusOn(k[2], true); S.routing = false; return true; }      // the same person twice: just that person
   var m = /^#(long|ahead|tree|fan)-(I\d+)(?:-([a-z]+))?$/.exec(location.hash || '');
   if (!m || !P[m[2]] || P[m[2]].st === 'm') return false;
-  var lens = m[1] === 'ahead' ? 'long' : m[1];              // "ahead" was the long view turned round, before older was always up
-  if (m[2] === S.focus && lens === S.lens && (m[3] || null) === S.line && !S.kin) return true;
-  S.routing = true; S.lens = lens; focusOn(m[2]);
+  var lens = m[1] === 'ahead' ? 'long' : m[1], back = m[1] !== 'ahead';
+  if (m[2] === S.focus && lens === S.lens && (lens !== 'long' || back === S.back) && (m[3] || null) === S.line && !S.kin) return true;
+  S.routing = true; S.lens = lens; focusOn(m[2], lens === 'long' ? back : null);
   if (m[3] && lineOf[m[3]]) followLine(m[3]);
   S.routing = false;
   return true;
@@ -1191,7 +1168,7 @@ function start(data) {
   if (document.fonts && document.fonts.load) Promise.all(['700 13px "Bricolage Grotesque"', '800 15px "Bricolage Grotesque"', '500 12px "Bricolage Grotesque"', '600 condensed 10px "Bricolage Grotesque"', '500 10px "IBM Plex Mono"']
     .map(function (f) { return document.fonts.load(f, 'Konečný Štěpán'); })).then(function () { wCache = {}; go(); }).catch(function () {});
 }
-if (app.hasAttribute('data-debug')) window.__tx = { S: S, cam: cam, camT: camT, select: select, focusOn: focusOn, open: openHere, kinOf: kinOf, kinSay: kinSay, showKin: showKin, setMe: setMe, people: function () { return P; } };
+if (app.hasAttribute('data-debug')) window.__tx = { S: S, cam: cam, camT: camT, select: select, focusOn: focusOn, turn: turn, kinOf: kinOf, kinSay: kinSay, showKin: showKin, setMe: setMe, people: function () { return P; } };
 fetch(app.getAttribute('data-src')).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(start).catch(function (err) {
   $('#tx-panel').innerHTML = '<p class="tx-note">The tree did not load (' + esc(err.message || err) + '). Reload the page to try again.</p>';
   if (window.console) console.error(err);
