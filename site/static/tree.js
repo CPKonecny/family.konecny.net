@@ -19,6 +19,7 @@ var BASE = app.getAttribute('data-base') || '';          // empty on the site; t
 var EXT = BASE ? ' target="_blank" rel="noopener"' : '';
 var cv = $('#tx-cv'), ctx = cv.getContext('2d'), stage = $('#tx-stage');
 var TURN = $('#tx-turn') ? '#tx-turn' : '#tx-desc';      // the turn button's label; a page kept from before it had one still works
+var END = $('#tx-end') ? '#tx-end' : null;               // the label at the young end of the year slider, likewise
 var TNOW = 2030;                 // depth is measured back from here; nothing is drawn against it
 var KZ = 0.15;                   // world units per year (one unit sideways = one person)
 var GEN = 28;                    // nominal years per generation, used only where no date is public
@@ -323,6 +324,12 @@ function build(focus) {
   S.tMin = Math.min.apply(null, S.list.map(function (n) { return n.t; })); S.tMax = Math.max.apply(null, S.list.map(function (n) { return n.t; }));
   var lastDated = dated.length ? Math.max.apply(null, dated) : S.tMin;
   S.liveFrom = Math.floor((live.length ? Math.min(Math.min.apply(null, live), lastDated + 1) : lastDated + 10) / 10) * 10;
+  // the young end of the year slider: the centre looking back, the youngest of the family looking on. "Now" where the living
+  // are; a year only for someone shown in full who has one
+  var rp = P[focus], young = desc.root, modern = false;
+  desc.list.forEach(function (n) { if (n.t > young.t) young = n; if (P[n.id].st !== 'f' && n.t >= 1900) modern = true; });
+  S.endBack = rp.st !== 'f' ? (root.t >= 1900 ? 'Now' : '') : rp.by ? String(rp.by) : '';
+  S.endOn = modern ? 'Now' : P[young.id].st === 'f' && P[young.id].by ? String(P[young.id].by) : '';
   S.focus = focus; S.rootZ = wz(root.t); S.tween = from && !reduce ? 0 : 1; S.line = null; S.fade = reduce ? 1 : 0; S.win = { L: 0, w: 1 };
   S.trail = null; S.from = null;
 }
@@ -768,6 +775,19 @@ function follow() {                  // in the long view the person you are pass
   var st = stationAt(camT.tz); if (st && st.id !== S.sel) { S.sel = st.id; panel(); }
 }
 function yearNow() { return TNOW - camT.tz / KZ; }
+/* What the year readout says for where the picture stands. A year only while the person you are with is shown in full,
+   never beside someone who is not: the living are placed by generation, and that place is not a date. Nor does the year
+   count on toward them: between someone shown in full and someone who is not, it holds at the first one's own year.
+   Beside someone not shown in full it is "Now", or a dash for the few placed long ago who simply have no dates on record. */
+function yearShown() {
+  var st = S.stations, z = camT.tz, at = 0, i;
+  for (i = 1; i < st.length; i++) if (Math.abs(st[i].z - z) < Math.abs(st[at].z - z)) at = i;
+  var here = st[at], full = function (q) { return P[q.id].st === 'f'; };
+  if (!here) return 'Now';
+  if (!full(here)) return S.nodes[here.id].t >= 1900 ? 'Now' : '—';
+  var d = z - here.z, a = st[at - 1], b = st[at + 1], nb = a && (a.z - here.z) * d > 0 ? a : b && (b.z - here.z) * d > 0 ? b : null;
+  return nb && !full(nb) ? TNOW - here.z / KZ : yearNow();
+}
 var shown = {};
 function put(sel, prop, val) { if (shown[sel + prop] !== val) { shown[sel + prop] = val; var el = $(sel); if (prop === 'display') el.style.display = val; else if (prop.indexOf('aria-') === 0) el.setAttribute(prop, val); else el[prop] = val; } }
 function standing() { return S.nodes[S.sel] && P[S.sel].st !== 'm' ? S.sel : S.focus; }      // the person the long view is passing
@@ -775,13 +795,14 @@ function hud() {
   var long = S.lens === 'long';
   put('#tx-year', 'display', long ? '' : 'none'); put('#tx-when', 'hidden', !long);
   if (!long) return;
-  var y = yearNow(), n = S.nodes[S.sel], live = y > S.liveFrom + 9.5;
-  put('#tx-yr', 'textContent', live ? 'Now' : String(Math.round(y)));
-  var ev = null; D.events.forEach(function (e) { if (!live && Math.abs(e.year - y) < 4 && e.year <= S.liveFrom) ev = e; });
+  var y = yearNow(), ys = yearShown(), n = S.nodes[S.sel], live = typeof ys !== 'number';
+  put('#tx-yr', 'textContent', live ? ys : String(Math.round(ys)));
+  var ev = null; D.events.forEach(function (e) { if (!live && Math.abs(e.year - ys) < 4 && e.year <= S.liveFrom) ev = e; });
   var g = n ? Math.abs(n.gen) : 0;
-  put('#tx-yrsub', 'textContent', ev ? ev.year + ' · ' + ev.label : !S.touched ? 'Drag or scroll to travel ' + (S.back ? 'back' : 'on') + ' · tap a person' : live ? 'The living: names only, no dates' : !g ? 'Standing with ' + shortName(P[S.focus]) : g + (g === 1 ? ' generation ' : ' generations ') + (S.back ? 'back' : 'on'));
+  put('#tx-yrsub', 'textContent', ev ? ev.year + ' · ' + ev.label : !S.touched ? 'Drag or scroll to travel ' + (S.back ? 'back' : 'on') + ' · tap a person' : live ? (ys === 'Now' ? 'The living: names only, no dates' : 'Name only: no dates on record') : !g ? 'Standing with ' + shortName(P[S.focus]) : g + (g === 1 ? ' generation ' : ' generations ') + (S.back ? 'back' : 'on'));
   var a = S.back ? S.tMin : S.anc.root.t, b = S.back ? S.anc.root.t : S.tMax;
   if (!S.sliding) put('#tx-slide', 'value', String(Math.round(1000 * clamp((y - a) / Math.max(1, b - a), 0, 1))));
+  if (END) put(END, 'textContent', S.back ? S.endBack : S.endOn);
   var here = standing(), cnt = kinCount(here, !S.back), what = S.back ? 'descendant' : 'ancestor';
   var say = cnt ? 'Turn around: the ' + cnt + ' ' + what + (cnt === 1 ? '' : 's') + ' of ' + P[here].n : 'No ' + what + 's on record for ' + P[here].n;
   put(TURN, 'textContent', cnt ? cnt + ' ' + what + (cnt === 1 ? '' : 's') : 'No ' + what + 's');
@@ -1168,7 +1189,7 @@ function start(data) {
   if (document.fonts && document.fonts.load) Promise.all(['700 13px "Bricolage Grotesque"', '800 15px "Bricolage Grotesque"', '500 12px "Bricolage Grotesque"', '600 condensed 10px "Bricolage Grotesque"', '500 10px "IBM Plex Mono"']
     .map(function (f) { return document.fonts.load(f, 'Konečný Štěpán'); })).then(function () { wCache = {}; go(); }).catch(function () {});
 }
-if (app.hasAttribute('data-debug')) window.__tx = { S: S, cam: cam, camT: camT, select: select, focusOn: focusOn, turn: turn, kinOf: kinOf, kinSay: kinSay, showKin: showKin, setMe: setMe, people: function () { return P; } };
+if (app.hasAttribute('data-debug')) window.__tx = { S: S, cam: cam, camT: camT, select: select, focusOn: focusOn, turn: turn, yearShown: yearShown, kinOf: kinOf, kinSay: kinSay, showKin: showKin, setMe: setMe, people: function () { return P; } };
 fetch(app.getAttribute('data-src')).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(start).catch(function (err) {
   $('#tx-panel').innerHTML = '<p class="tx-note">The tree did not load (' + esc(err.message || err) + '). Reload the page to try again.</p>';
   if (window.console) console.error(err);
