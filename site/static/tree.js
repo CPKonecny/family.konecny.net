@@ -76,15 +76,27 @@ function kinCount(id, back) {       // how many people are on record before (bac
 /* ---------- how two people are related ----------
    Blood first: where their ancestries meet, and how many generations each is from there. Failing that, by one
    marriage or partnership at either end. Children under 18 are never one of the two, and cannot be on the way:
-   everyone between two people and the ancestors they share is a parent of someone. */
-function ups(id) {                   // every ancestor of a person by the fewest generations: id -> [generations, the child on the way]
+   everyone between two people and the ancestors they share is a parent of someone.
+   A person's ancestry is the family they were born into, as everywhere in the tree. Where someone has a second family
+   on record, an adoptive one, that is followed only when nothing else joins the two people, and the relationship is
+   then said to be by adoption. */
+function adopters(pid) {             // the parents of a second family, where the child is recorded as adopted
+  var own = birthFam(pid), out = [];
+  P[pid].pf.forEach(function (fid) {
+    var f = F[fid]; if (!f || fid === own) return;
+    var k = f.k.filter(function (k) { return kidId(k) === pid; })[0];
+    if (k && typeof k !== 'string' && (k[1] === 'Adopted' || k[2] === 'Adopted')) [f.a, f.b].forEach(function (x) { if (x && out.indexOf(x) < 0) out.push(x); });
+  });
+  return out;
+}
+function ups(id, all) {              // every ancestor of a person by the fewest generations: id -> [generations, the child on the way]
   var m = {}, q = [id]; m[id] = [0, null];
-  while (q.length) { var x = q.shift(); parents(x).forEach(function (p) { if (p && !m[p]) { m[p] = [m[x][0] + 1, x]; q.push(p); } }); }
+  while (q.length) { var x = q.shift(); (all ? parents(x).concat(adopters(x)) : parents(x)).forEach(function (p) { if (p && !m[p]) { m[p] = [m[x][0] + 1, x]; q.push(p); } }); }
   return m;
 }
 function wayDown(m, top) { var out = []; for (var x = top; x != null; x = m[x][1]) out.push(x); return out; }      // from a shared ancestor down to the person
-function blood(a, b) {
-  var A = ups(a), B = ups(b), best = null, tops = [];
+function blood(a, b, all) {
+  var A = ups(a, all), B = ups(b, all), best = null, tops = [];
   Object.keys(A).forEach(function (c) { if (B[c] && (best == null || A[c][0] + B[c][0] < best)) best = A[c][0] + B[c][0]; });
   if (best == null) return null;
   Object.keys(A).forEach(function (c) { if (B[c] && A[c][0] + B[c][0] === best) tops.push(c); });
@@ -94,34 +106,41 @@ function blood(a, b) {
   var wa = wayDown(A, top), wb = wayDown(B, top);
   if (tops.length === 1 && i && j) {                        // one shared ancestor and two different partners of theirs: a half relation
     var other = function (kid) { return parents(kid).filter(function (x) { return x && x !== top; })[0]; }, oa = other(wa[1]), ob = other(wb[1]);
-    half = !!(oa && ob && oa !== ob);
+    half = !all && !!(oa && ob && oa !== ob);
   }
-  return { i: i, j: j, tops: tops, half: half, wa: wa, wb: wb };
+  var k = { i: i, j: j, tops: tops, half: half, wa: wa, wb: wb };
+  if (all) { var kb = blood(a, b); if (kb && kb.i === i && kb.j === j) return kb; k.adopt = true; }      // by adoption only where birth does not give the same
+  return k;
 }
 var kinMemo2 = {};
 function kinOf(a, b) {
   var key = a + '|' + b;
-  if (!kinMemo2[key]) kinMemo2[key] = kinFind(a, b);
+  if (!kinMemo2[key]) {
+    var k = kinFind(a, b);
+    if (k.kind === 'none') k = kinFind(a, b, true);         // nothing by birth or marriage: is there a link by adoption?
+    kinMemo2[key] = k;
+  }
   return Object.assign({}, kinMemo2[key]);
 }
-function kinFind(a, b) {
+function kinFind(a, b, all) {
   if (a === b) return { kind: 'same' };
-  var k = blood(a, b), best = null;
+  var k = blood(a, b, all), best = null;
   if (k) { k.kind = 'blood'; k.x = a; k.y = b; return k; }
   if (partners(a).indexOf(b) >= 0) return { kind: 'pair' };
   var take = function (k, kind, x, y) { if (k && (!best || k.i + k.j < best.i + best.j)) { k.kind = kind; k.x = x; k.y = y; best = k; } };
-  partners(a).forEach(function (s) { take(blood(s, b), 'wedA', s, b); });
-  partners(b).forEach(function (s) { take(blood(a, s), 'wedB', a, s); });
-  if (!best) partners(a).forEach(function (sa) { partners(b).forEach(function (sb) { take(blood(sa, sb), 'wedAB', sa, sb); }); });
+  partners(a).forEach(function (s) { take(blood(s, b, all), 'wedA', s, b); });
+  partners(b).forEach(function (s) { take(blood(a, s, all), 'wedB', a, s); });
+  if (!best) partners(a).forEach(function (sa) { partners(b).forEach(function (sb) { take(blood(sa, sb, all), 'wedAB', sa, sb); }); });
   if (best) return best;
   // the family of someone who married in: a blood relative of a, their partner, and that partner's blood relative b
-  var A = ups(a), kin = {}, q = Object.keys(A), cost = Infinity;
+  var A = ups(a, all), kin = {}, q = Object.keys(A), cost = Infinity;
   q.forEach(function (x) { kin[x] = 1; });
   while (q.length) children(q.pop()).forEach(function (c) { if (!kin[c]) { kin[c] = 1; q.push(c); } });
   Object.keys(kin).forEach(function (x) {
     partners(x).forEach(function (y) {
-      if (kin[y]) return; var k2 = blood(y, b); if (!k2) return;
-      var k1 = blood(a, x), c = k1.i + k1.j + k2.i + k2.j;
+      if (kin[y]) return; var k2 = blood(y, b, all); if (!k2) return;
+      var k1 = blood(a, x, all); if (!k1) return;         // x is among the children by an adoption, and this pass follows birth
+      var c = k1.i + k1.j + k2.i + k2.j;
       if (c < cost) { cost = c; k1.kind = 'wedM'; k1.x = a; k1.y = x; k1.m = y; k1.k2 = k2; best = k1; }
     });
   });
@@ -145,20 +164,22 @@ function pairWord(x, y) {            // what y is to x: husband or wife where a 
 function firstName(id) { var p = P[id]; return p.f ? p.f.split(' ')[0] : p.n; }
 function whose(id) { return id === S.me ? 'your' : firstName(id) + '’s'; }
 function kinWhat(k, a, b) {          // what b is to a, without saying whose: ["great-uncle"], or ["great-uncle, Name", "wife"] for "the wife of … great-uncle, Name"
-  var r = k.tops ? relName(k.i, k.j, P[k.y].g, k.half) : '';
+  var by = function (g) { return g.adopt ? ' by adoption' : ''; };
+  var r = k.tops ? relName(k.i, k.j, P[k.y].g, k.half) + by(k) : '';
   if (k.kind === 'pair') return [pairWord(a, b)];
   if (k.kind === 'blood') return [r];
   if (k.kind === 'wedA') return [pairWord(a, k.x) + '’s ' + r];
   if (k.kind === 'wedB') return [r + ', ' + P[k.y].n, pairWord(k.y, b)];
-  if (k.kind === 'wedM') return [r, relName(k.k2.i, k.k2.j, P[b].g, k.k2.half) + ' of ' + P[k.m].n + ', the ' + pairWord(k.y, k.m)];      // "the father of Marie Nováková, the wife of … great-uncle"
+  if (k.kind === 'wedM') return [r, relName(k.k2.i, k.k2.j, P[b].g, k.k2.half) + by(k.k2) + ' of ' + P[k.m].n + ', the ' + pairWord(k.y, k.m)];      // "the father of Marie Nováková, the wife of … great-uncle"
+  if (k.x === k.y) return [pairWord(a, k.x) + ', ' + P[k.x].n, pairWord(k.x, b)];      // two partners of one person: "the wife of Marjorie's husband, Frank Konecny"
   return [pairWord(a, k.x) + '’s ' + r + ', ' + P[k.y].n, pairWord(k.y, b)];
 }
 function kinSay(k, a, b) {           // in words: what b is to a. "short" leaves out whose, where that is plain from the place it is shown
   var me = b === S.me, who = me ? 'You are' : P[b].n + ' is';
   if (k.kind === 'same') return { say: (me ? 'This is you' : 'This is ' + P[b].n) + '.' };
-  if (k.kind === 'none') return { say: 'The tree shows no relationship between ' + P[a].n + ' and ' + P[b].n + ', by blood or through one marriage.' };
+  if (k.kind === 'none') return { say: 'The tree shows no relationship between ' + P[a].n + ' and ' + P[b].n + ', by blood, by adoption or through one marriage.' };
   var w = kinWhat(k, a, b), o = { say: who + ' ' + (w[1] ? 'the ' + w[1] + ' of ' : '') + whose(a) + ' ' + w[0] + '.', short: w[1] ? w[1] + ' of ' + whose(a) + ' ' + w[0] : w[0] };
-  if (k.tops && k.i && k.j) o.meet = (k.kind !== 'blood' ? firstName(k.x) + ' and ' + firstName(k.y) + ' both descend from ' : a === S.me || me ? 'You both descend from ' : 'They both descend from ') + k.tops.map(function (t) { return P[t].n; }).join(' and ') + '.';
+  if (k.tops && k.i && k.j && !k.adopt) o.meet = (k.kind !== 'blood' ? firstName(k.x) + ' and ' + firstName(k.y) + ' both descend from ' : a === S.me || me ? 'You both descend from ' : 'They both descend from ') + k.tops.map(function (t) { return P[t].n; }).join(' and ') + '.';
   return o;
 }
 function refPerson() { return S.me && P[S.me] ? S.me : D.root; }      // who relationships are named from: you, once you have said who you are
