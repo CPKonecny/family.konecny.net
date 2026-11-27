@@ -45373,6 +45373,186 @@
    ],
    "tier": "record",
    "url": "https://www.ancestry.com/search/collections/7602/records/10480059"
+  },
+  "C1518": {
+   "ancestry_record_id": "16513062",
+   "change": 1795705206,
+   "cited_by": [
+    {
+     "id": "E1730",
+     "type": "event"
+    },
+    {
+     "id": "E1731",
+     "type": "event"
+    },
+    {
+     "id": "I0520",
+     "type": "person"
+    }
+   ],
+   "confidence": 3,
+   "date": {
+    "day": null,
+    "iso": "1910-04",
+    "modifier": null,
+    "month": 4,
+    "quality": null,
+    "sort": 2418763,
+    "text": "April 1910",
+    "year": 1910
+   },
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1054f3b5949a5a33cefe0a29d7df",
+   "id": "C1518",
+   "information": "primary",
+   "media": [
+    {
+     "ref": "O0267"
+    }
+   ],
+   "notes": [
+    "N2400",
+    "N2401"
+   ],
+   "page": "Year: 1910; Census Place: West Windsor, Mercer, New Jersey; Roll: T624_896; Page: 11B; Enumeration District: 0106; dwelling 224, family 236, Thomas G Everett household; sheet 11B, line 99, Thomas G, head",
+   "proposal_file": "2026-11-26_100010_everett-thomas-gordon_add-person.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0284",
+   "source_type": "original",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "record",
+   "url": "https://www.ancestry.com/search/collections/7884/records/16513062"
+  },
+  "C1519": {
+   "ancestry_record_id": "174724058",
+   "change": 1795705207,
+   "cited_by": [
+    {
+     "id": "E1732",
+     "type": "event"
+    },
+    {
+     "id": "E1733",
+     "type": "event"
+    },
+    {
+     "id": "I0521",
+     "type": "person"
+    }
+   ],
+   "confidence": 3,
+   "date": {
+    "day": null,
+    "iso": "1910-04",
+    "modifier": null,
+    "month": 4,
+    "quality": null,
+    "sort": 2418763,
+    "text": "April 1910",
+    "year": 1910
+   },
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1054f3b5c7782c6cb78b83a69c1d",
+   "id": "C1519",
+   "information": "primary",
+   "media": [
+    {
+     "ref": "O0268"
+    }
+   ],
+   "notes": [
+    "N2402",
+    "N2403"
+   ],
+   "page": "Year: 1910; Census Place: West Windsor, Mercer, New Jersey; Roll: T624_896; Page: 11B; Enumeration District: 0106; dwelling 224, family 236, Thomas G Everett household; sheet 11B, line 100, Ella M, wife",
+   "proposal_file": "2026-11-26_100011_hulit-ella-mae_add-person.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0284",
+   "source_type": "original",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "record",
+   "url": "https://www.ancestry.com/search/collections/7884/records/174724058"
+  },
+  "C1520": {
+   "ancestry_record_id": "174724061",
+   "change": 1795705208,
+   "cited_by": [
+    {
+     "id": "E1734",
+     "type": "event"
+    },
+    {
+     "id": "E1735",
+     "type": "event"
+    },
+    {
+     "id": "I0522",
+     "type": "person"
+    }
+   ],
+   "confidence": 3,
+   "date": {
+    "day": null,
+    "iso": "1910-04",
+    "modifier": null,
+    "month": 4,
+    "quality": null,
+    "sort": 2418763,
+    "text": "April 1910",
+    "year": 1910
+   },
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1054f3b5fd487c3b6d1f475d2ae",
+   "id": "C1520",
+   "information": "primary",
+   "media": [
+    {
+     "ref": "O0269"
+    }
+   ],
+   "notes": [
+    "N2404",
+    "N2405"
+   ],
+   "page": "Year: 1910; Census Place: West Windsor, Mercer, New Jersey; Roll: T624_896; Page: 12A; Enumeration District: 0106; dwelling 224, family 236, Thomas G Everett household; sheet 12A, line 3, Annetta, daughter",
+   "proposal_file": "2026-11-26_100012_everett-annetta_add-person.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0285",
+   "source_type": "original",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "record",
+   "url": "https://www.ancestry.com/search/collections/7884/records/174724061"
   }
  },
  "events": {
@@ -99470,6 +99650,264 @@
     "agent-proposed"
    ],
    "type": "Death"
+  },
+  "E1730": {
+   "attributes": [],
+   "change": 1795705206,
+   "citations": [
+    "C1518"
+   ],
+   "date": {
+    "day": 14,
+    "iso": "1876-03-14",
+    "modifier": null,
+    "month": 3,
+    "quality": null,
+    "sort": 2406328,
+    "text": "14 March 1876",
+    "year": 1876
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1054f3b5a10a5ce1f1bab591f43a",
+   "id": "E1730",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0520",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0367",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Birth"
+  },
+  "E1731": {
+   "attributes": [],
+   "change": 1795705206,
+   "citations": [
+    "C1518"
+   ],
+   "date": {
+    "day": 12,
+    "iso": "1930-01-12",
+    "modifier": null,
+    "month": 1,
+    "quality": null,
+    "sort": 2425989,
+    "text": "12 January 1930",
+    "year": 1930
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1054f3b5ac7d3bc07544f81c640f",
+   "id": "E1731",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0520",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0368",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Death"
+  },
+  "E1732": {
+   "attributes": [],
+   "change": 1795705207,
+   "citations": [
+    "C1519"
+   ],
+   "date": {
+    "day": 24,
+    "iso": "1884-10-24",
+    "modifier": null,
+    "month": 10,
+    "quality": null,
+    "sort": 2409474,
+    "text": "24 October 1884",
+    "year": 1884
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1054f3b5d0365f37a4195c387d1d",
+   "id": "E1732",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0521",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0369",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Birth"
+  },
+  "E1733": {
+   "attributes": [],
+   "change": 1795705207,
+   "citations": [
+    "C1519"
+   ],
+   "date": {
+    "day": 27,
+    "iso": "1967-10-27",
+    "modifier": null,
+    "month": 10,
+    "quality": null,
+    "sort": 2439791,
+    "text": "27 October 1967",
+    "year": 1967
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1054f3b5d61c65f2656ece0962e4",
+   "id": "E1733",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0521",
+     "role": "Primary"
+    }
+   ],
+   "place": null,
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Death"
+  },
+  "E1734": {
+   "attributes": [],
+   "change": 1795705209,
+   "citations": [
+    "C1520"
+   ],
+   "date": {
+    "day": 17,
+    "iso": "1909-05-17",
+    "modifier": null,
+    "month": 5,
+    "quality": null,
+    "sort": 2418444,
+    "text": "17 May 1909",
+    "year": 1909
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1054f3b606361257ceeeade0b5c4",
+   "id": "E1734",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0522",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0370",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Birth"
+  },
+  "E1735": {
+   "attributes": [],
+   "change": 1795705209,
+   "citations": [
+    "C1520"
+   ],
+   "date": {
+    "day": 25,
+    "iso": "1998-06-25",
+    "modifier": null,
+    "month": 6,
+    "quality": null,
+    "sort": 2450990,
+    "text": "25 June 1998",
+    "year": 1998
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1054f3b610694b2a9dad11465382",
+   "id": "E1735",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0522",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0371",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Death"
   }
  },
  "families": {
@@ -106672,6 +107110,37 @@
    },
    "media": [],
    "mother": "I0509",
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Married"
+  },
+  "F0226": {
+   "attributes": [],
+   "change": 1795705209,
+   "children": [
+    {
+     "ref": "I0522"
+    }
+   ],
+   "citations": [],
+   "events": [],
+   "father": "I0520",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1054f3b5e24217dc548f6b5441be",
+   "id": "F0226",
+   "media": [],
+   "mother": "I0521",
    "notes": [],
    "provenance": [
     "agent-karel",
@@ -115707,6 +116176,105 @@
     "agent-karel",
     "agent-proposed"
    ]
+  },
+  "O0267": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1518",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-26_100010_everett-thomas-gordon_add-person.jpg"
+   },
+   "checksum": "e1faa671bc47fc60cd3acae0c7d03b67",
+   "citations": [],
+   "date": null,
+   "desc": "1910 United States Census, Population Schedule, New Jersey, Mercer County, West Windsor Township, ED 106, sheet 11B — Year: 1910; Census Place: West Windsor, Mercer, New Jersey; Roll: T624_896; Page: 11B; Enumeration District: 0106; dwelling 224, family 236, Thomas G Everett household; sheet 11B, line 99, Thomas G, head",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1054f3b58a1d704a8fd11054a1b3",
+   "id": "O0267",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0267",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ]
+  },
+  "O0268": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1519",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-26_100011_hulit-ella-mae_add-person.jpg"
+   },
+   "checksum": "e1faa671bc47fc60cd3acae0c7d03b67",
+   "citations": [],
+   "date": null,
+   "desc": "1910 United States Census, Population Schedule, New Jersey, Mercer County, West Windsor Township, ED 106, sheet 11B — Year: 1910; Census Place: West Windsor, Mercer, New Jersey; Roll: T624_896; Page: 11B; Enumeration District: 0106; dwelling 224, family 236, Thomas G Everett household; sheet 11B, line 100, Ella M, wife",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1054f3b5bfc9763432a9fb0d55a8",
+   "id": "O0268",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0268",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ]
+  },
+  "O0269": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1520",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-26_100012_everett-annetta_add-person.jpg"
+   },
+   "checksum": "0a4d809043b453a02857d623adfb203e",
+   "citations": [],
+   "date": null,
+   "desc": "1910 United States Census, Population Schedule, New Jersey, Mercer County, West Windsor Township, ED 106, sheet 12A — Year: 1910; Census Place: West Windsor, Mercer, New Jersey; Roll: T624_896; Page: 12A; Enumeration District: 0106; dwelling 224, family 236, Thomas G Everett household; sheet 12A, line 3, Annetta, daughter",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1054f3b5f5a950dcf64dbea8a498",
+   "id": "O0269",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0269",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ]
   }
  },
  "meta": {
@@ -115718,21 +116286,21 @@
    "very high"
   ],
   "counts": {
-   "citations": 1348,
-   "events": 1492,
-   "families": 217,
-   "media": 250,
-   "notes": 1565,
-   "people": 512,
-   "places": 341,
-   "repositories": 53,
-   "sources": 273
+   "citations": 1351,
+   "events": 1498,
+   "families": 218,
+   "media": 253,
+   "notes": 1572,
+   "people": 517,
+   "places": 346,
+   "repositories": 54,
+   "sources": 275
   },
   "counts_people": {
-   "full": 370,
-   "living": 142
+   "full": 373,
+   "living": 144
   },
-  "generated": "2026-11-26T08:17:02+00:00",
+  "generated": "2026-11-27T08:17:02+00:00",
   "generator": "gramps_export.py 0.4.1",
   "gramps_version": "6.0.8",
   "gramps_webapi_version": "3.17.0",
@@ -115757,7 +116325,7 @@
    "oral",
    "ai-draft"
   ],
-  "today": "2026-11-26",
+  "today": "2026-11-27",
   "tree": "Konecny"
  },
  "notes": {
@@ -148858,6 +149426,139 @@
    "review": "unreviewed",
    "tags": [],
    "text": "2026-11-25 (karel): Places Anna A. Chill 212818335906 (add_person 103050, this batch) as a Birth child of Albert Chill I0008 and Mathilde Luise Ottilie Bieging I0009 in their existing family F0004 (25 Nov export: 8 children, no Anna). 1900 census: Annie Chill, daughter, with Albert Chill head and Tillie Chill wife; the confirmation index names father Albert Chill. Ancestry shows her as their daughter. add_family is not used because F0004 exists.",
+   "type": "Research"
+  },
+  "N2400": {
+   "attached_to": [
+    {
+     "id": "C1518",
+     "type": "citation"
+    }
+   ],
+   "change": 1795705205,
+   "flags": [],
+   "handle": "1054f3b57d9e4820e4a88675b294",
+   "html": "<p>Transcription (as written): Thirteenth Census of the United States, 1910, Population; New Jersey; Mercer; West Windsor Township; supervisor&#x27;s district 4; ED 106; dwelling 224, family 236. Sheet 11B, line 99: Everett, Thomas G | Head | M | W | 35 | M1 | married 6 years | New Jersey | New Jersey | New Jersey | Laborer. Line 100: Ella M | Wife | F | W | 25 | M1 | 6 years | 3 children born, 3 living | New Jersey. Sheet 12A, line 1: Orville | Son | 4. Line 2: Lester | Son | 3. Line 3: Annetta | Daughter | F | W | 1/12 | S | New Jersey.</p>",
+   "id": "N2400",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Thirteenth Census of the United States, 1910, Population; New Jersey; Mercer; West Windsor Township; supervisor's district 4; ED 106; dwelling 224, family 236. Sheet 11B, line 99: Everett, Thomas G | Head | M | W | 35 | M1 | married 6 years | New Jersey | New Jersey | New Jersey | Laborer. Line 100: Ella M | Wife | F | W | 25 | M1 | 6 years | 3 children born, 3 living | New Jersey. Sheet 12A, line 1: Orville | Son | 4. Line 2: Lester | Son | 3. Line 3: Annetta | Daughter | F | W | 1/12 | S | New Jersey.",
+   "type": "Transcript"
+  },
+  "N2401": {
+   "attached_to": [
+    {
+     "id": "C1518",
+     "type": "citation"
+    }
+   ],
+   "change": 1795705205,
+   "flags": [],
+   "handle": "1054f3b583451f85caa79f744c8e",
+   "html": "<p>2026-11-26 (karel): Ancestry profile 212818786964 (tree 208290233, created 26 Nov 2026) shows Thomas Gordon Everett, M, b. 14 Mar 1876 Hightstown, Mercer, New Jersey, d. 12 Jan 1930 Philadelphia, spouse Ella Mae Hulit 212818786998; the 1910 census record 16513062 is attached there (Everett, Thomas G, head, 35, married 6 years, born New Jersey). Birth and death dates from Find a Grave 112381543 (Greenwood Cemetery, Hamilton NJ), compiled only (research note 100013). Checked the 26 Nov export (generated 3:17 AM ET, 512 people): no person with this Ancestry ID. New couple: spouse link to Ella (add_person 100011, this batch) creates a new family; neither is in Gramps. Father of Annetta Everett (add_person 100012). Born 1876, died 1930: private false.<br>Conflicts: [&#x27;Birth day and death date rest on Find a Grave 112381543 only; the attached 1910 census gives age 35 (born about 1874-1875), which does not exactly fit Mar 1876.&#x27;]</p>",
+   "id": "N2401",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-26 (karel): Ancestry profile 212818786964 (tree 208290233, created 26 Nov 2026) shows Thomas Gordon Everett, M, b. 14 Mar 1876 Hightstown, Mercer, New Jersey, d. 12 Jan 1930 Philadelphia, spouse Ella Mae Hulit 212818786998; the 1910 census record 16513062 is attached there (Everett, Thomas G, head, 35, married 6 years, born New Jersey). Birth and death dates from Find a Grave 112381543 (Greenwood Cemetery, Hamilton NJ), compiled only (research note 100013). Checked the 26 Nov export (generated 3:17 AM ET, 512 people): no person with this Ancestry ID. New couple: spouse link to Ella (add_person 100011, this batch) creates a new family; neither is in Gramps. Father of Annetta Everett (add_person 100012). Born 1876, died 1930: private false.\nConflicts: ['Birth day and death date rest on Find a Grave 112381543 only; the attached 1910 census gives age 35 (born about 1874-1875), which does not exactly fit Mar 1876.']",
+   "type": "Research"
+  },
+  "N2402": {
+   "attached_to": [
+    {
+     "id": "C1519",
+     "type": "citation"
+    }
+   ],
+   "change": 1795705207,
+   "flags": [],
+   "handle": "1054f3b5b995182eee31e341b4f9",
+   "html": "<p>Transcription (as written): Thirteenth Census of the United States, 1910, Population; New Jersey; Mercer; West Windsor Township; supervisor&#x27;s district 4; ED 106; dwelling 224, family 236. Sheet 11B, line 99: Everett, Thomas G | Head | M | W | 35 | M1 | married 6 years | New Jersey | New Jersey | New Jersey | Laborer. Line 100: Ella M | Wife | F | W | 25 | M1 | 6 years | 3 children born, 3 living | New Jersey. Sheet 12A, line 1: Orville | Son | 4. Line 2: Lester | Son | 3. Line 3: Annetta | Daughter | F | W | 1/12 | S | New Jersey.</p>",
+   "id": "N2402",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Thirteenth Census of the United States, 1910, Population; New Jersey; Mercer; West Windsor Township; supervisor's district 4; ED 106; dwelling 224, family 236. Sheet 11B, line 99: Everett, Thomas G | Head | M | W | 35 | M1 | married 6 years | New Jersey | New Jersey | New Jersey | Laborer. Line 100: Ella M | Wife | F | W | 25 | M1 | 6 years | 3 children born, 3 living | New Jersey. Sheet 12A, line 1: Orville | Son | 4. Line 2: Lester | Son | 3. Line 3: Annetta | Daughter | F | W | 1/12 | S | New Jersey.",
+   "type": "Transcript"
+  },
+  "N2403": {
+   "attached_to": [
+    {
+     "id": "C1519",
+     "type": "citation"
+    }
+   ],
+   "change": 1795705207,
+   "flags": [],
+   "handle": "1054f3b5bc4665da6921e0abfaab",
+   "html": "<p>2026-11-26 (karel): Ancestry profile 212818786998 (created 26 Nov 2026) shows Ella Mae Hulit, F, b. 24 Oct 1884 Lawrence Township, Mercer, NJ, d. 27 Oct 1967, spouse of Thomas Gordon Everett 212818786964; the 1910 census record 174724058 is attached (Ella M, wife, 25, married 6 years, 3 children born/3 living, born New Jersey), which shows her under the married name Everett. Dates from Find a Grave 113339675 (daughter of Reuben Vanderbilt Hulit and Hannah Maria Ross), compiled only; her son Orville&#x27;s 1953 obituary calls her &#x27;Mrs. Ella Mae Everett&#x27; and Beulah&#x27;s 1992 obituary &#x27;Ella Mae Hewlett Everett&#x27; (research note 100013). Checked the 26 Nov export (generated 3:17 AM ET, 512 people): no person with this Ancestry ID. Spouse link to Thomas (100010) creates the new family. Private false (born 1884, died 1967).<br>Conflicts: [&#x27;Birth and death dates rest on Find a Grave 113339675 only; the 1910 census age 25 fits 1884-1885.&#x27;, &quot;Maiden name is spelled Hulit (Find a Grave) and Hewlett (Beulah&#x27;s 1992 obituary); Hulit is used.&quot;]</p>",
+   "id": "N2403",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-26 (karel): Ancestry profile 212818786998 (created 26 Nov 2026) shows Ella Mae Hulit, F, b. 24 Oct 1884 Lawrence Township, Mercer, NJ, d. 27 Oct 1967, spouse of Thomas Gordon Everett 212818786964; the 1910 census record 174724058 is attached (Ella M, wife, 25, married 6 years, 3 children born/3 living, born New Jersey), which shows her under the married name Everett. Dates from Find a Grave 113339675 (daughter of Reuben Vanderbilt Hulit and Hannah Maria Ross), compiled only; her son Orville's 1953 obituary calls her 'Mrs. Ella Mae Everett' and Beulah's 1992 obituary 'Ella Mae Hewlett Everett' (research note 100013). Checked the 26 Nov export (generated 3:17 AM ET, 512 people): no person with this Ancestry ID. Spouse link to Thomas (100010) creates the new family. Private false (born 1884, died 1967).\nConflicts: ['Birth and death dates rest on Find a Grave 113339675 only; the 1910 census age 25 fits 1884-1885.', \"Maiden name is spelled Hulit (Find a Grave) and Hewlett (Beulah's 1992 obituary); Hulit is used.\"]",
+   "type": "Research"
+  },
+  "N2404": {
+   "attached_to": [
+    {
+     "id": "C1520",
+     "type": "citation"
+    }
+   ],
+   "change": 1795705208,
+   "flags": [],
+   "handle": "1054f3b5efc75ee064a4fe8506d2",
+   "html": "<p>Transcription (as written): Thirteenth Census of the United States, 1910, Population; New Jersey; Mercer; West Windsor Township; supervisor&#x27;s district 4; ED 106; dwelling 224, family 236. Sheet 11B, line 99: Everett, Thomas G | Head | M | W | 35 | M1 | married 6 years | New Jersey | New Jersey | New Jersey | Laborer. Line 100: Ella M | Wife | F | W | 25 | M1 | 6 years | 3 children born, 3 living | New Jersey. Sheet 12A, line 1: Orville | Son | 4. Line 2: Lester | Son | 3. Line 3: Annetta | Daughter | F | W | 1/12 | S | New Jersey.</p>",
+   "id": "N2404",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Thirteenth Census of the United States, 1910, Population; New Jersey; Mercer; West Windsor Township; supervisor's district 4; ED 106; dwelling 224, family 236. Sheet 11B, line 99: Everett, Thomas G | Head | M | W | 35 | M1 | married 6 years | New Jersey | New Jersey | New Jersey | Laborer. Line 100: Ella M | Wife | F | W | 25 | M1 | 6 years | 3 children born, 3 living | New Jersey. Sheet 12A, line 1: Orville | Son | 4. Line 2: Lester | Son | 3. Line 3: Annetta | Daughter | F | W | 1/12 | S | New Jersey.",
+   "type": "Transcript"
+  },
+  "N2405": {
+   "attached_to": [
+    {
+     "id": "C1520",
+     "type": "citation"
+    }
+   ],
+   "change": 1795705208,
+   "flags": [],
+   "handle": "1054f3b5f23a50c89da19aab1b46",
+   "html": "<p>2026-11-26 (karel): Ancestry profile 212818787041 (created 26 Nov 2026) shows Annetta Everett, F, b. 17 May 1909 New Jersey, d. 25 Jun 1998 Clearwater, Pinellas, Florida, daughter of Thomas Gordon Everett 212818786964 and Ella Mae Hulit 212818786998; the 1910 census record 174724061 is attached (Annetta, daughter, 1/12, born New Jersey, in Thomas G Everett&#x27;s household). Dates from the Social Security index transcription (sortedbyname.com: &#x27;MORRIS, ANNETTA L ... born 17 May 1909, and died 25 June 1998, Death residence: Zip Code 33759&#x27;), index only. Her sister Beulah&#x27;s 1992 obituary (&#x27;Daughter of the late Thomas and Ella Mae Hewlett Everett ... a sister, Annetta Morris of Clearwater, Fla.&#x27;) ties the married Annetta Morris to this family. Checked the 26 Nov export (generated 3:17 AM ET, 512 people): no person with this Ancestry ID. Both parents are new in this batch (100010/100011), filed first. Married name Morris is NOT filed: no record under that name is attached yet. Her link as mother of John Thomas Morris I0501 is a LEAD on Ancestry and is queued as a hand link, not filed here.<br>Conflicts: [&#x27;The 1910 census (April 1910) gives her age as 1/12, which points to about March 1910; the Social Security index gives 17 May 1909. Both are recorded; the SSA date matches Ancestry.&#x27;, &#x27;Death place is the ZIP of her last residence (33759, Clearwater), not a stated place of death.&#x27;]</p>",
+   "id": "N2405",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-26 (karel): Ancestry profile 212818787041 (created 26 Nov 2026) shows Annetta Everett, F, b. 17 May 1909 New Jersey, d. 25 Jun 1998 Clearwater, Pinellas, Florida, daughter of Thomas Gordon Everett 212818786964 and Ella Mae Hulit 212818786998; the 1910 census record 174724061 is attached (Annetta, daughter, 1/12, born New Jersey, in Thomas G Everett's household). Dates from the Social Security index transcription (sortedbyname.com: 'MORRIS, ANNETTA L ... born 17 May 1909, and died 25 June 1998, Death residence: Zip Code 33759'), index only. Her sister Beulah's 1992 obituary ('Daughter of the late Thomas and Ella Mae Hewlett Everett ... a sister, Annetta Morris of Clearwater, Fla.') ties the married Annetta Morris to this family. Checked the 26 Nov export (generated 3:17 AM ET, 512 people): no person with this Ancestry ID. Both parents are new in this batch (100010/100011), filed first. Married name Morris is NOT filed: no record under that name is attached yet. Her link as mother of John Thomas Morris I0501 is a LEAD on Ancestry and is queued as a hand link, not filed here.\nConflicts: ['The 1910 census (April 1910) gives her age as 1/12, which points to about March 1910; the Social Security index gives 17 May 1909. Both are recorded; the SSA date matches Ancestry.', 'Death place is the ZIP of her last residence (33759, Clearwater), not a stated place of death.']",
+   "type": "Research"
+  },
+  "N2407": {
+   "attached_to": [
+    {
+     "id": "I0520",
+     "type": "person"
+    }
+   ],
+   "change": 1795705210,
+   "flags": [],
+   "handle": "1054f3b62f9e6acbad1db2dcd46",
+   "html": "<p>2026-11-26 (karel): RESEARCH SUMMARY — Thomas Gordon Everett (1876–1930) and Ella Mae (Hulit) Everett (1884–1967), parents of Annetta (Everett) Morris. 26 Nov 2026.<br>Found: 1910 census, West Windsor, Mercer Co., NJ, ED 106, sheets 11B-12A, dwelling 224: Thomas G 35 (head, laborer), Ella M 25 (wife; married 6 years; 3 children born, 3 living), Orville 4, Lester 3, Annetta 1/12. Find a Grave (Greenwood Cemetery, Hamilton NJ): Thomas Gordon Everett, 14 Mar 1876 Hightstown – 12 Jan 1930 Philadelphia, #112381543, son of James Hughes Everett Jr and Anna Mary Gordon; Ella Mae Hulit Everett, 24 Oct 1884 Lawrence Twp – 27 Oct 1967, #113339675, daughter of Reuben Vanderbilt Hulit and Hannah Maria Ross; married 3 Dec 1904, Trenton (compiled only). Obituaries transcribed on Find a Grave: Orville J. Everett (Trenton Evening Times, 11 May 1953, p. 4): &#x27;Son of Mrs. Ella Mae Everett and the late Thomas G. Everett ... survived by two sisters, Mrs. John Morris of Orlando, Florida; and Miss Beulah Everett&#x27;; Beulah M. Everett (Trenton Evening Times, 9 Dec 1992, p. 18): &#x27;Daughter of the late Thomas and Ella Mae Hewlett Everett ... a sister, Annetta Morris of Clearwater, Fla.&#x27;<br>Still open: death certificates, the 1904 marriage record, and the Everett and Hulit parents (Ancestry hints not accepted).</p><p>Tier: ai-draft</p>",
+   "id": "N2407",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-26 (karel): RESEARCH SUMMARY — Thomas Gordon Everett (1876–1930) and Ella Mae (Hulit) Everett (1884–1967), parents of Annetta (Everett) Morris. 26 Nov 2026.\nFound: 1910 census, West Windsor, Mercer Co., NJ, ED 106, sheets 11B-12A, dwelling 224: Thomas G 35 (head, laborer), Ella M 25 (wife; married 6 years; 3 children born, 3 living), Orville 4, Lester 3, Annetta 1/12. Find a Grave (Greenwood Cemetery, Hamilton NJ): Thomas Gordon Everett, 14 Mar 1876 Hightstown – 12 Jan 1930 Philadelphia, #112381543, son of James Hughes Everett Jr and Anna Mary Gordon; Ella Mae Hulit Everett, 24 Oct 1884 Lawrence Twp – 27 Oct 1967, #113339675, daughter of Reuben Vanderbilt Hulit and Hannah Maria Ross; married 3 Dec 1904, Trenton (compiled only). Obituaries transcribed on Find a Grave: Orville J. Everett (Trenton Evening Times, 11 May 1953, p. 4): 'Son of Mrs. Ella Mae Everett and the late Thomas G. Everett ... survived by two sisters, Mrs. John Morris of Orlando, Florida; and Miss Beulah Everett'; Beulah M. Everett (Trenton Evening Times, 9 Dec 1992, p. 18): 'Daughter of the late Thomas and Ella Mae Hewlett Everett ... a sister, Annetta Morris of Clearwater, Fla.'\nStill open: death certificates, the 1904 marriage record, and the Everett and Hulit parents (Ancestry hints not accepted).\n\nTier: ai-draft",
    "type": "Research"
   }
  },
@@ -185871,6 +186572,324 @@
    "xref": {
     "ancestry": "212818335906"
    }
+  },
+  "I0518": {
+   "families": [],
+   "gender": "M",
+   "handle": "1054f3b53e79372bcd1bebc23ab0",
+   "id": "I0518",
+   "name": {
+    "call": "",
+    "display": "Melvin Giovacchini",
+    "first": "Melvin",
+    "nick": "",
+    "prefix": "",
+    "sort": "Giovacchini, Melvin",
+    "suffix": "",
+    "surname": "Giovacchini",
+    "title": ""
+   },
+   "parents": [],
+   "status": "living"
+  },
+  "I0519": {
+   "families": [],
+   "gender": "M",
+   "handle": "1054f3b569315b004f26c75ab80c",
+   "id": "I0519",
+   "name": {
+    "call": "",
+    "display": "Marshall Giovacchini",
+    "first": "Marshall",
+    "nick": "",
+    "prefix": "",
+    "sort": "Giovacchini, Marshall",
+    "suffix": "",
+    "surname": "Giovacchini",
+    "title": ""
+   },
+   "parents": [],
+   "status": "living"
+  },
+  "I0520": {
+   "alt_names": [],
+   "attributes": [],
+   "birth": {
+    "date": {
+     "day": 14,
+     "iso": "1876-03-14",
+     "modifier": null,
+     "month": 3,
+     "quality": null,
+     "sort": 2406328,
+     "text": "14 March 1876",
+     "year": 1876
+    },
+    "event": "E1730",
+    "place": "P0367",
+    "type": "Birth",
+    "year": 1876
+   },
+   "change": 1795705210,
+   "citations": [
+    "C1518"
+   ],
+   "death": {
+    "date": {
+     "day": 12,
+     "iso": "1930-01-12",
+     "modifier": null,
+     "month": 1,
+     "quality": null,
+     "sort": 2425989,
+     "text": "12 January 1930",
+     "year": 1930
+    },
+    "event": "E1731",
+    "place": "P0368",
+    "type": "Death",
+    "year": 1930
+   },
+   "events": [
+    {
+     "ref": "E1730",
+     "role": "Primary"
+    },
+    {
+     "ref": "E1731",
+     "role": "Primary"
+    }
+   ],
+   "families": [
+    "F0226"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "gender": "M",
+   "handle": "1054f3b5b21b5e424cb0d9e5bc54",
+   "id": "I0520",
+   "media": [],
+   "name": {
+    "call": "",
+    "display": "Thomas Gordon Everett",
+    "first": "Thomas Gordon",
+    "nick": "",
+    "prefix": "",
+    "sort": "Everett, Thomas Gordon",
+    "suffix": "",
+    "surname": "Everett",
+    "title": "",
+    "type": "Birth Name"
+   },
+   "notes": [
+    "N2407"
+   ],
+   "parents": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "urls": [],
+   "xref": {
+    "ancestry": "212818786964"
+   }
+  },
+  "I0521": {
+   "alt_names": [
+    {
+     "call": "",
+     "date": null,
+     "display": "Ella Mae Everett",
+     "first": "Ella Mae",
+     "nick": "",
+     "prefix": "",
+     "sort": "Everett, Ella Mae",
+     "suffix": "",
+     "surname": "Everett",
+     "title": "",
+     "type": "Married Name"
+    }
+   ],
+   "attributes": [],
+   "birth": {
+    "date": {
+     "day": 24,
+     "iso": "1884-10-24",
+     "modifier": null,
+     "month": 10,
+     "quality": null,
+     "sort": 2409474,
+     "text": "24 October 1884",
+     "year": 1884
+    },
+    "event": "E1732",
+    "place": "P0369",
+    "type": "Birth",
+    "year": 1884
+   },
+   "change": 1795705208,
+   "citations": [
+    "C1519"
+   ],
+   "death": {
+    "date": {
+     "day": 27,
+     "iso": "1967-10-27",
+     "modifier": null,
+     "month": 10,
+     "quality": null,
+     "sort": 2439791,
+     "text": "27 October 1967",
+     "year": 1967
+    },
+    "event": "E1733",
+    "place": null,
+    "type": "Death",
+    "year": 1967
+   },
+   "events": [
+    {
+     "ref": "E1732",
+     "role": "Primary"
+    },
+    {
+     "ref": "E1733",
+     "role": "Primary"
+    }
+   ],
+   "families": [
+    "F0226"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "gender": "F",
+   "handle": "1054f3b5daeb148eb16a1cb53f38",
+   "id": "I0521",
+   "media": [],
+   "name": {
+    "call": "",
+    "display": "Ella Mae Hulit",
+    "first": "Ella Mae",
+    "nick": "",
+    "prefix": "",
+    "sort": "Hulit, Ella Mae",
+    "suffix": "",
+    "surname": "Hulit",
+    "title": "",
+    "type": "Birth Name"
+   },
+   "notes": [],
+   "parents": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "urls": [],
+   "xref": {
+    "ancestry": "212818786998"
+   }
+  },
+  "I0522": {
+   "alt_names": [],
+   "attributes": [],
+   "birth": {
+    "date": {
+     "day": 17,
+     "iso": "1909-05-17",
+     "modifier": null,
+     "month": 5,
+     "quality": null,
+     "sort": 2418444,
+     "text": "17 May 1909",
+     "year": 1909
+    },
+    "event": "E1734",
+    "place": "P0370",
+    "type": "Birth",
+    "year": 1909
+   },
+   "change": 1795705209,
+   "citations": [
+    "C1520"
+   ],
+   "death": {
+    "date": {
+     "day": 25,
+     "iso": "1998-06-25",
+     "modifier": null,
+     "month": 6,
+     "quality": null,
+     "sort": 2450990,
+     "text": "25 June 1998",
+     "year": 1998
+    },
+    "event": "E1735",
+    "place": "P0371",
+    "type": "Death",
+    "year": 1998
+   },
+   "events": [
+    {
+     "ref": "E1734",
+     "role": "Primary"
+    },
+    {
+     "ref": "E1735",
+     "role": "Primary"
+    }
+   ],
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "gender": "F",
+   "handle": "1054f3b616cfd352b6f009d9846",
+   "id": "I0522",
+   "media": [],
+   "name": {
+    "call": "",
+    "display": "Annetta Everett",
+    "first": "Annetta",
+    "nick": "",
+    "prefix": "",
+    "sort": "Everett, Annetta",
+    "suffix": "",
+    "surname": "Everett",
+    "title": "",
+    "type": "Birth Name"
+   },
+   "notes": [],
+   "parents": [
+    "F0226"
+   ],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "urls": [],
+   "xref": {
+    "ancestry": "212818787041"
+   }
   }
  },
  "places": {
@@ -195300,6 +196319,166 @@
    ],
    "type": "Unknown",
    "urls": []
+  },
+  "P0367": {
+   "alt_names": [],
+   "citations": [],
+   "code": "",
+   "display": "Hightstown, Mercer, New Jersey, USA",
+   "enclosed_by": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1054f3b59c99382399bf2ee8c605",
+   "hierarchy": [
+    "P0367"
+   ],
+   "id": "P0367",
+   "lat": null,
+   "long": null,
+   "media": [],
+   "name": "Hightstown, Mercer, New Jersey, USA",
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed",
+    "needs-place"
+   ],
+   "type": "Unknown",
+   "urls": []
+  },
+  "P0368": {
+   "alt_names": [],
+   "citations": [],
+   "code": "",
+   "display": "Philadelphia, Pennsylvania, USA",
+   "enclosed_by": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1054f3b5a7322fa61b77dcb7a353",
+   "hierarchy": [
+    "P0368"
+   ],
+   "id": "P0368",
+   "lat": null,
+   "long": null,
+   "media": [],
+   "name": "Philadelphia, Pennsylvania, USA",
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed",
+    "needs-place"
+   ],
+   "type": "Unknown",
+   "urls": []
+  },
+  "P0369": {
+   "alt_names": [],
+   "citations": [],
+   "code": "",
+   "display": "Lawrence Township, Mercer, New Jersey, USA",
+   "enclosed_by": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1054f3b5cc484ba029b87265c264",
+   "hierarchy": [
+    "P0369"
+   ],
+   "id": "P0369",
+   "lat": null,
+   "long": null,
+   "media": [],
+   "name": "Lawrence Township, Mercer, New Jersey, USA",
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed",
+    "needs-place"
+   ],
+   "type": "Unknown",
+   "urls": []
+  },
+  "P0370": {
+   "alt_names": [],
+   "citations": [],
+   "code": "",
+   "display": "New Jersey, USA",
+   "enclosed_by": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1054f3b601e63dba9a44a247d745",
+   "hierarchy": [
+    "P0370"
+   ],
+   "id": "P0370",
+   "lat": null,
+   "long": null,
+   "media": [],
+   "name": "New Jersey, USA",
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed",
+    "needs-place"
+   ],
+   "type": "Unknown",
+   "urls": []
+  },
+  "P0371": {
+   "alt_names": [],
+   "citations": [],
+   "code": "",
+   "display": "Clearwater, Pinellas, Florida, USA",
+   "enclosed_by": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1054f3b60bc837374c6e5780630d",
+   "hierarchy": [
+    "P0371"
+   ],
+   "id": "P0371",
+   "lat": null,
+   "long": null,
+   "media": [],
+   "name": "Clearwater, Pinellas, Florida, USA",
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed",
+    "needs-place"
+   ],
+   "type": "Unknown",
+   "urls": []
   }
  },
  "repositories": {
@@ -195723,6 +196902,14 @@
    "handle": "1054c046619223c243d49ec31734",
    "id": "R0052",
    "name": "Already cited on this person as C0784",
+   "notes": [],
+   "type": "Archive",
+   "urls": []
+  },
+  "R0054": {
+   "handle": "1054f3b570db2bdb9a63e513f9dc",
+   "id": "R0054",
+   "name": "National Archives and Records Administration (NARA), microfilm T624 roll 896; Ancestry.com, 1910 United States Federal Census (collection 7884)",
    "notes": [],
    "type": "Archive",
    "urls": []
@@ -204682,6 +205869,73 @@
     "agent-proposed"
    ],
    "title": "Roman Catholic Church Radnice parish, Radnice Roman Catholic parish registers (SOA Plzeň, Porta fontium)"
+  },
+  "S0284": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1518",
+    "C1519"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1054f3b576ee12fc8cf7d483cf63",
+   "id": "S0284",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0054"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "1910 United States Census, Population Schedule, New Jersey, Mercer County, West Windsor Township, ED 106, sheet 11B"
+  },
+  "S0285": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1520"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1054f3b5ec0b72334e405c18fe4c",
+   "id": "S0285",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0054"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "1910 United States Census, Population Schedule, New Jersey, Mercer County, West Windsor Township, ED 106, sheet 12A"
   }
  }
 }
