@@ -45553,6 +45553,417 @@
    ],
    "tier": "record",
    "url": "https://www.ancestry.com/search/collections/7884/records/174724061"
+  },
+  "C1521": {
+   "ancestry_record_id": "",
+   "change": 1795793402,
+   "cited_by": [
+    {
+     "id": "E1736",
+     "type": "event"
+    },
+    {
+     "id": "E1737",
+     "type": "event"
+    },
+    {
+     "id": "I0523",
+     "type": "person"
+    }
+   ],
+   "confidence": 3,
+   "date": {
+    "day": 24,
+    "iso": "1981-12-24",
+    "modifier": null,
+    "month": 12,
+    "quality": null,
+    "sort": 2444963,
+    "text": "24 December 1981",
+    "year": 1981
+   },
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1055284742ad40418a026b5035a9",
+   "id": "C1521",
+   "information": "secondary",
+   "media": [],
+   "notes": [
+    "N2408",
+    "N2409"
+   ],
+   "page": "24 December 1981, page 3",
+   "proposal_file": "2026-11-27_100000_burger-george_add-person.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0286",
+   "source_type": "derivative",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "compiled",
+   "url": "https://www.2manitowoc.com/44Burobit.html"
+  },
+  "C1522": {
+   "ancestry_record_id": "",
+   "change": 1795793403,
+   "cited_by": [
+    {
+     "id": "E1738",
+     "type": "event"
+    },
+    {
+     "id": "E1739",
+     "type": "event"
+    },
+    {
+     "id": "I0524",
+     "type": "person"
+    }
+   ],
+   "confidence": 3,
+   "date": {
+    "day": 28,
+    "iso": "1952-01-28",
+    "modifier": null,
+    "month": 1,
+    "quality": null,
+    "sort": 2434040,
+    "text": "28 January 1952",
+    "year": 1952
+   },
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1055284770076d7266ffcfc4b0e7",
+   "id": "C1522",
+   "information": "secondary",
+   "media": [],
+   "notes": [
+    "N2410",
+    "N2411"
+   ],
+   "page": "Monday 28 January 1952, page 2",
+   "proposal_file": "2026-11-27_100010_plantico-chester-a_add-person.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0287",
+   "source_type": "derivative",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "compiled",
+   "url": "https://www.2manitowoc.com/44Plobit.html"
+  },
+  "C1523": {
+   "ancestry_record_id": "30852868",
+   "change": 1795793405,
+   "cited_by": [
+    {
+     "id": "E1740",
+     "type": "event"
+    },
+    {
+     "id": "E1741",
+     "type": "event"
+    },
+    {
+     "id": "I0525",
+     "type": "person"
+    }
+   ],
+   "confidence": 3,
+   "date": {
+    "day": null,
+    "iso": "1910-04",
+    "modifier": null,
+    "month": 4,
+    "quality": null,
+    "sort": 2418763,
+    "text": "April 1910",
+    "year": 1910
+   },
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10552847ad7d7e4fba0f26b22448",
+   "id": "C1523",
+   "information": "primary",
+   "media": [
+    {
+     "ref": "O0270"
+    }
+   ],
+   "notes": [
+    "N2412",
+    "N2413"
+   ],
+   "page": "Year: 1910; Census Place: Two Rivers, Manitowoc, Wisconsin; Page: 19A; Enumeration District: 0041; 2314 Adams St., dwelling 158, family 194; Emil A. Schlundt (head), Martha (wife), Otto (brother); image 4454976_00674",
+   "proposal_file": "2026-11-27_100040_schlundt-emil-a_add-person.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0288",
+   "source_type": "original",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "record",
+   "url": "https://www.ancestry.com/search/collections/7884/records/30852868"
+  },
+  "C1524": {
+   "ancestry_record_id": "118892040",
+   "change": 1795793406,
+   "cited_by": [
+    {
+     "id": "I0523",
+     "type": "person"
+    }
+   ],
+   "confidence": 3,
+   "date": {
+    "day": null,
+    "iso": "1950-04",
+    "modifier": null,
+    "month": 4,
+    "quality": null,
+    "sort": 2433373,
+    "text": "April 1950",
+    "year": 1950
+   },
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10552847f1e12767cc796d416f2e",
+   "id": "C1524",
+   "information": "primary",
+   "media": [
+    {
+     "ref": "O0271"
+    }
+   ],
+   "notes": [
+    "N2414",
+    "N2415"
+   ],
+   "page": "Year: 1950; Census Place: Manitowoc, Manitowoc, Wisconsin; Enumeration District: 36-48A; Sheet: 22; house 1206, dwelling 257; lines 29-30, George M. Burger (head) and Erna M. (wife); NARA image 43290879-Wisconsin-147178-0023",
+   "proposal_file": "2026-11-27_100001_burger-george_census-1950-citation.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0289",
+   "source_type": "original",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "record",
+   "url": "https://www.ancestry.com/search/collections/62308/records/118892040"
+  },
+  "C1525": {
+   "ancestry_record_id": "",
+   "change": 1795793407,
+   "cited_by": [
+    {
+     "id": "E1742",
+     "type": "event"
+    }
+   ],
+   "confidence": 3,
+   "date": {
+    "day": 24,
+    "iso": "1981-12-24",
+    "modifier": null,
+    "month": 12,
+    "quality": null,
+    "sort": 2444963,
+    "text": "24 December 1981",
+    "year": 1981
+   },
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1055284802bc46155f3931483a20",
+   "id": "C1525",
+   "information": "secondary",
+   "media": [],
+   "notes": [
+    "N2416",
+    "N2417"
+   ],
+   "page": "24 December 1981, page 3",
+   "proposal_file": "2026-11-27_100002_burger-george_x_jentsch-erna_marriage.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0286",
+   "source_type": "derivative",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "compiled",
+   "url": "https://www.2manitowoc.com/44Burobit.html"
+  },
+  "C1526": {
+   "ancestry_record_id": "77102890",
+   "change": 1795793408,
+   "cited_by": [
+    {
+     "id": "I0524",
+     "type": "person"
+    }
+   ],
+   "confidence": 3,
+   "date": {
+    "day": null,
+    "iso": "1940-04",
+    "modifier": null,
+    "month": 4,
+    "quality": null,
+    "sort": 2429721,
+    "text": "April 1940",
+    "year": 1940
+   },
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "105528482f07616addbddd3ac659",
+   "id": "C1526",
+   "information": "primary",
+   "media": [
+    {
+     "ref": "O0272"
+    }
+   ],
+   "notes": [
+    "N2419",
+    "N2420"
+   ],
+   "page": "Year: 1940; Census Place: Manitowoc, Manitowoc, Wisconsin; Roll: m-t0627-04494; Page: 12A; Enumeration District: 36-12; 1123 South 7th St., household 257; line 29, Chester, head (indexed as Plantier)",
+   "proposal_file": "2026-11-27_100011_plantico-chester-a_census-1940-citation.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0290",
+   "source_type": "original",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "record",
+   "url": "https://www.ancestry.com/search/collections/2442/records/77102890"
+  },
+  "C1527": {
+   "ancestry_record_id": "",
+   "change": 1795793409,
+   "cited_by": [
+    {
+     "id": "I0525",
+     "type": "person"
+    }
+   ],
+   "confidence": 2,
+   "date": null,
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10552848501822027621422a197a",
+   "id": "C1527",
+   "information": "secondary",
+   "media": [],
+   "notes": [
+    "N2422",
+    "N2423"
+   ],
+   "page": "Lot R-45-5",
+   "proposal_file": "2026-11-27_100041_schlundt-emil-a_stone-index-citation.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0291",
+   "source_type": "derivative",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "index",
+   "url": "https://www.2manitowoc.com/44Schi.html"
+  },
+  "C1528": {
+   "ancestry_record_id": "",
+   "change": 1795793409,
+   "cited_by": [
+    {
+     "id": "E1743",
+     "type": "event"
+    }
+   ],
+   "confidence": 2,
+   "date": {
+    "day": 8,
+    "iso": "1905-06-08",
+    "modifier": null,
+    "month": 6,
+    "quality": null,
+    "sort": 2417005,
+    "text": "8 June 1905",
+    "year": 1905
+   },
+   "evidence": "direct",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1055284868bb4f283c81b1d1c170",
+   "id": "C1528",
+   "information": "secondary",
+   "media": [],
+   "notes": [
+    "N2424",
+    "N2425"
+   ],
+   "page": "Marriage Date: 08 Jun 1905, Vol: 05, Page: 0441 (Vol B, sequences 05927 and 02517)",
+   "proposal_file": "2026-11-27_100042_schlundt-emil-a_x_jentsch-martha_marriage.json",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "source": "S0292",
+   "source_type": "derivative",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "tier": "index",
+   "url": "https://www.2manitowoc.com/vb1905.html"
   }
  },
  "events": {
@@ -99908,6 +100319,350 @@
     "agent-proposed"
    ],
    "type": "Death"
+  },
+  "E1736": {
+   "attributes": [],
+   "change": 1795793402,
+   "citations": [
+    "C1521"
+   ],
+   "date": {
+    "day": 5,
+    "iso": "1893-11-05",
+    "modifier": null,
+    "month": 11,
+    "quality": null,
+    "sort": 2412773,
+    "text": "5 November 1893",
+    "year": 1893
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10552847476b2ca8314aa5cdb985",
+   "id": "E1736",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0523",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0158",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Birth"
+  },
+  "E1737": {
+   "attributes": [],
+   "change": 1795793402,
+   "citations": [
+    "C1521"
+   ],
+   "date": {
+    "day": 24,
+    "iso": "1981-12-24",
+    "modifier": null,
+    "month": 12,
+    "quality": null,
+    "sort": 2444963,
+    "text": "24 December 1981",
+    "year": 1981
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "105528474ec21aa9a8828a8135ea",
+   "id": "E1737",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0523",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0158",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Death"
+  },
+  "E1738": {
+   "attributes": [],
+   "change": 1795793403,
+   "citations": [
+    "C1522"
+   ],
+   "date": {
+    "day": null,
+    "iso": "1899",
+    "modifier": null,
+    "month": null,
+    "quality": null,
+    "sort": 2414656,
+    "text": "1899",
+    "year": 1899
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1055284774c2318c7640e6a1eb25",
+   "id": "E1738",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0524",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0158",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Birth"
+  },
+  "E1739": {
+   "attributes": [],
+   "change": 1795793403,
+   "citations": [
+    "C1522"
+   ],
+   "date": {
+    "day": 27,
+    "iso": "1952-01-27",
+    "modifier": null,
+    "month": 1,
+    "quality": null,
+    "sort": 2434039,
+    "text": "27 January 1952",
+    "year": 1952
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "105528477b0b3dc2ed89849f3f49",
+   "id": "E1739",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0524",
+     "role": "Primary"
+    }
+   ],
+   "place": "P0158",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Death"
+  },
+  "E1740": {
+   "attributes": [],
+   "change": 1795793405,
+   "citations": [
+    "C1523"
+   ],
+   "date": {
+    "day": null,
+    "iso": "1882",
+    "modifier": "about",
+    "month": null,
+    "quality": null,
+    "sort": 2408447,
+    "text": "about 1882",
+    "year": 1882
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10552847b4a7d545dc36db2bef5",
+   "id": "E1740",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0525",
+     "role": "Primary"
+    }
+   ],
+   "place": null,
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Birth"
+  },
+  "E1741": {
+   "attributes": [],
+   "change": 1795793405,
+   "citations": [
+    "C1523"
+   ],
+   "date": {
+    "day": null,
+    "iso": "1948",
+    "modifier": null,
+    "month": null,
+    "quality": null,
+    "sort": 2432552,
+    "text": "1948",
+    "year": 1948
+   },
+   "description": "",
+   "families": [],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10552847bd681d1a1a4403c40c8e",
+   "id": "E1741",
+   "media": [],
+   "notes": [],
+   "participants": [
+    {
+     "person": "I0525",
+     "role": "Primary"
+    }
+   ],
+   "place": null,
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Death"
+  },
+  "E1742": {
+   "attributes": [],
+   "change": 1795793407,
+   "citations": [
+    "C1525"
+   ],
+   "date": {
+    "day": 3,
+    "iso": "1919-07-03",
+    "modifier": null,
+    "month": 7,
+    "quality": null,
+    "sort": 2422143,
+    "text": "3 July 1919",
+    "year": 1919
+   },
+   "description": "",
+   "families": [
+    {
+     "family": "F0227",
+     "role": "Family"
+    }
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10552848073f15d776d6c32a875",
+   "id": "E1742",
+   "media": [],
+   "notes": [],
+   "participants": [],
+   "place": "P0158",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Marriage"
+  },
+  "E1743": {
+   "attributes": [],
+   "change": 1795793409,
+   "citations": [
+    "C1528"
+   ],
+   "date": {
+    "day": 8,
+    "iso": "1905-06-08",
+    "modifier": null,
+    "month": 6,
+    "quality": null,
+    "sort": 2417005,
+    "text": "8 June 1905",
+    "year": 1905
+   },
+   "description": "Manitowoc County marriage index Vol 05 p. 0441",
+   "families": [
+    {
+     "family": "F0229",
+     "role": "Family"
+    }
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "105528486d4560aa5788a2c287d5",
+   "id": "E1743",
+   "media": [],
+   "notes": [],
+   "participants": [],
+   "place": "P0171",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Marriage"
   }
  },
  "families": {
@@ -107141,6 +107896,127 @@
    "id": "F0226",
    "media": [],
    "mother": "I0521",
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Married"
+  },
+  "F0227": {
+   "attributes": [],
+   "change": 1795793407,
+   "children": [],
+   "citations": [],
+   "events": [
+    {
+     "ref": "E1742",
+     "role": "Family"
+    }
+   ],
+   "father": "I0523",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "105528475b63318b5fbe1f69f9bc",
+   "id": "F0227",
+   "marriage": {
+    "date": {
+     "day": 3,
+     "iso": "1919-07-03",
+     "modifier": null,
+     "month": 7,
+     "quality": null,
+     "sort": 2422143,
+     "text": "3 July 1919",
+     "year": 1919
+    },
+    "event": "E1742",
+    "place": "P0158",
+    "year": 1919
+   },
+   "media": [],
+   "mother": "I0515",
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Married"
+  },
+  "F0228": {
+   "attributes": [],
+   "change": 1795793404,
+   "children": [],
+   "citations": [],
+   "events": [],
+   "father": "I0524",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "105528478774710f3740e51282b2",
+   "id": "F0228",
+   "media": [],
+   "mother": "I0516",
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "type": "Married"
+  },
+  "F0229": {
+   "attributes": [],
+   "change": 1795793410,
+   "children": [],
+   "citations": [],
+   "events": [
+    {
+     "ref": "E1743",
+     "role": "Family"
+    }
+   ],
+   "father": "I0525",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10552847cece2bece388baf1c2cc",
+   "id": "F0229",
+   "marriage": {
+    "date": {
+     "day": 8,
+     "iso": "1905-06-08",
+     "modifier": null,
+     "month": 6,
+     "quality": null,
+     "sort": 2417005,
+     "text": "8 June 1905",
+     "year": 1905
+    },
+    "event": "E1743",
+    "place": "P0171",
+    "year": 1905
+   },
+   "media": [],
+   "mother": "I0513",
    "notes": [],
    "provenance": [
     "agent-karel",
@@ -116275,6 +117151,105 @@
     "agent-karel",
     "agent-proposed"
    ]
+  },
+  "O0270": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1523",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-27_100040_schlundt-emil-a_add-person.jpg"
+   },
+   "checksum": "f7ab6c80b07a63d3bc033de4a2ff0ff7",
+   "citations": [],
+   "date": null,
+   "desc": "1910 United States Census, Population Schedule, Wisconsin, Manitowoc County, Two Rivers city, ED 41, sheet 19A — Year: 1910; Census Place: Two Rivers, Manitowoc, Wisconsin; Page: 19A; Enumeration District: 0041; 2314 Adams St., dwelling 158, family 194; Emil A. Schlundt (head), Martha (wife), Otto (brother); image 4454976_00674",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10552847a1397a8466ff2b2d0af4",
+   "id": "O0270",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0270",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ]
+  },
+  "O0271": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1524",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-27_100001_burger-george_census-1950-citation.jpg"
+   },
+   "checksum": "59375a825e16bfec9494416a472d364f",
+   "citations": [],
+   "date": null,
+   "desc": "1950 United States Census, Population Schedule, Wisconsin, Manitowoc County, Manitowoc city, ED 36-48A, sheet 22 — Year: 1950; Census Place: Manitowoc, Manitowoc, Wisconsin; Enumeration District: 36-48A; Sheet: 22; house 1206, dwelling 257; lines 29-30, George M. Burger (head) and Erna M. (wife); NARA image 43290879-Wisconsin-147178-0023",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10552847eaa413675d8c81987127",
+   "id": "O0271",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0271",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ]
+  },
+  "O0272": {
+   "access": "login",
+   "attached_to": [
+    {
+     "id": "C1526",
+     "type": "citation"
+    }
+   ],
+   "attributes": {
+    "Original file": "2026-11-27_100011_plantico-chester-a_census-1940-citation.jpg"
+   },
+   "checksum": "c9542e87bbefe3f9374dabeff5908761",
+   "citations": [],
+   "date": null,
+   "desc": "1940 United States Census, Population Schedule, Wisconsin, Manitowoc County, Manitowoc city, ED 36-12, sheet 12A — Year: 1940; Census Place: Manitowoc, Manitowoc, Wisconsin; Roll: m-t0627-04494; Page: 12A; Enumeration District: 36-12; 1123 South 7th St., household 257; line 29, Chester, head (indexed as Plantier)",
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1055284827ee48310f60a3f301c3",
+   "id": "O0272",
+   "mime": "image/jpeg",
+   "notes": [],
+   "private_url": "https://familytree.konecny.net/media/O0272",
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ]
   }
  },
  "meta": {
@@ -116286,21 +117261,21 @@
    "very high"
   ],
   "counts": {
-   "citations": 1351,
-   "events": 1498,
-   "families": 218,
-   "media": 253,
-   "notes": 1572,
-   "people": 517,
+   "citations": 1359,
+   "events": 1506,
+   "families": 221,
+   "media": 256,
+   "notes": 1590,
+   "people": 520,
    "places": 346,
-   "repositories": 54,
-   "sources": 275
+   "repositories": 58,
+   "sources": 282
   },
   "counts_people": {
-   "full": 373,
+   "full": 376,
    "living": 144
   },
-  "generated": "2026-11-27T08:17:02+00:00",
+  "generated": "2026-11-28T08:17:02+00:00",
   "generator": "gramps_export.py 0.4.1",
   "gramps_version": "6.0.8",
   "gramps_webapi_version": "3.17.0",
@@ -116325,7 +117300,7 @@
    "oral",
    "ai-draft"
   ],
-  "today": "2026-11-27",
+  "today": "2026-11-28",
   "tree": "Konecny"
  },
  "notes": {
@@ -149559,6 +150534,348 @@
    "review": "unreviewed",
    "tags": [],
    "text": "2026-11-26 (karel): RESEARCH SUMMARY — Thomas Gordon Everett (1876–1930) and Ella Mae (Hulit) Everett (1884–1967), parents of Annetta (Everett) Morris. 26 Nov 2026.\nFound: 1910 census, West Windsor, Mercer Co., NJ, ED 106, sheets 11B-12A, dwelling 224: Thomas G 35 (head, laborer), Ella M 25 (wife; married 6 years; 3 children born, 3 living), Orville 4, Lester 3, Annetta 1/12. Find a Grave (Greenwood Cemetery, Hamilton NJ): Thomas Gordon Everett, 14 Mar 1876 Hightstown – 12 Jan 1930 Philadelphia, #112381543, son of James Hughes Everett Jr and Anna Mary Gordon; Ella Mae Hulit Everett, 24 Oct 1884 Lawrence Twp – 27 Oct 1967, #113339675, daughter of Reuben Vanderbilt Hulit and Hannah Maria Ross; married 3 Dec 1904, Trenton (compiled only). Obituaries transcribed on Find a Grave: Orville J. Everett (Trenton Evening Times, 11 May 1953, p. 4): 'Son of Mrs. Ella Mae Everett and the late Thomas G. Everett ... survived by two sisters, Mrs. John Morris of Orlando, Florida; and Miss Beulah Everett'; Beulah M. Everett (Trenton Evening Times, 9 Dec 1992, p. 18): 'Daughter of the late Thomas and Ella Mae Hewlett Everett ... a sister, Annetta Morris of Clearwater, Fla.'\nStill open: death certificates, the 1904 marriage record, and the Everett and Hulit parents (Ancestry hints not accepted).\n\nTier: ai-draft",
+   "type": "Research"
+  },
+  "N2408": {
+   "attached_to": [
+    {
+     "id": "C1521",
+     "type": "citation"
+    }
+   ],
+   "change": 1795793402,
+   "flags": [],
+   "handle": "105528473d5970bdd231313738b9",
+   "html": "<p>Transcription (as written): George Michael Burger, 88, of 1404 Gunnell Lane, Manitowoc, died Thursday morning, December 24, at Family Heritage Home, Manitowoc [...] burial will be in Evergreen Cemetery, Manitowoc. Mr. Burger was born Nov. 5, 1893, at Manitowoc, son of the late Henry B. and Mamie Oertling Burger. He was educated in Manitowoc schools and married Erna Jentsch July 3, 1919, at Manitowoc, residing here since. He was former vice president and secretary of Burger Boat Company, retiring in 1962. [...] Survivors include his wife; two daughters [...] Herald Times Reporter, December 24, 1981 P. 3</p>",
+   "id": "N2408",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): George Michael Burger, 88, of 1404 Gunnell Lane, Manitowoc, died Thursday morning, December 24, at Family Heritage Home, Manitowoc [...] burial will be in Evergreen Cemetery, Manitowoc. Mr. Burger was born Nov. 5, 1893, at Manitowoc, son of the late Henry B. and Mamie Oertling Burger. He was educated in Manitowoc schools and married Erna Jentsch July 3, 1919, at Manitowoc, residing here since. He was former vice president and secretary of Burger Boat Company, retiring in 1962. [...] Survivors include his wife; two daughters [...] Herald Times Reporter, December 24, 1981 P. 3",
+   "type": "Transcript"
+  },
+  "N2409": {
+   "attached_to": [
+    {
+     "id": "C1521",
+     "type": "citation"
+    }
+   ],
+   "change": 1795793402,
+   "flags": [],
+   "handle": "105528473ff97ff925b190225861",
+   "html": "<p>2026-11-27 (karel): Ancestry profile 212819283151 (tree 208290233, created 27 Nov 2026) shows George Michael Burger, M, b. 5 Nov 1893 Manitowoc, d. 24 Dec 1981 Manitowoc, marriage 3 Jul 1919 Manitowoc, spouse Erna J. Jentsch 212818335520 (Gramps I0515); the 1950 census record 118892040 is attached to both. His obituary (Herald Times Reporter, 24 Dec 1981, p. 3): &#x27;born Nov. 5, 1893, at Manitowoc [...] married Erna Jentsch July 3, 1919, at Manitowoc&#x27;; Erna&#x27;s 1991 obituary: &#x27;daughter of the late Frank and Anna Lodel Jentsch [...] married George M. Burger July 3, 1919, in Manitowoc&#x27;. Checked the 27 Nov export (commit 63d614a, generated 3:17 AM ET, 517 people): no person with this Ancestry ID and no Burger, Plantico or Schlundt person; I0515 has families [] there, so the spouse link makes a new family (no add_family, no hand link). Born 1893, died 1981: private false.<br>Conflicts: [&quot;Erna&#x27;s 1991 obituary says her husband died &#x27;in 1961&#x27;; his own obituary is dated 24 Dec 1981, says he retired in 1962 and died &#x27;Thursday ... December 24&#x27; (a Thursday in 1981, a Sunday in 1961). 1981 is entered; see research note 100003.&quot;, &quot;The 1950 census writes his wife as &#x27;Erna M.&#x27;; her obituary and Gramps have Erna J.&quot;]</p>",
+   "id": "N2409",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-27 (karel): Ancestry profile 212819283151 (tree 208290233, created 27 Nov 2026) shows George Michael Burger, M, b. 5 Nov 1893 Manitowoc, d. 24 Dec 1981 Manitowoc, marriage 3 Jul 1919 Manitowoc, spouse Erna J. Jentsch 212818335520 (Gramps I0515); the 1950 census record 118892040 is attached to both. His obituary (Herald Times Reporter, 24 Dec 1981, p. 3): 'born Nov. 5, 1893, at Manitowoc [...] married Erna Jentsch July 3, 1919, at Manitowoc'; Erna's 1991 obituary: 'daughter of the late Frank and Anna Lodel Jentsch [...] married George M. Burger July 3, 1919, in Manitowoc'. Checked the 27 Nov export (commit 63d614a, generated 3:17 AM ET, 517 people): no person with this Ancestry ID and no Burger, Plantico or Schlundt person; I0515 has families [] there, so the spouse link makes a new family (no add_family, no hand link). Born 1893, died 1981: private false.\nConflicts: [\"Erna's 1991 obituary says her husband died 'in 1961'; his own obituary is dated 24 Dec 1981, says he retired in 1962 and died 'Thursday ... December 24' (a Thursday in 1981, a Sunday in 1961). 1981 is entered; see research note 100003.\", \"The 1950 census writes his wife as 'Erna M.'; her obituary and Gramps have Erna J.\"]",
+   "type": "Research"
+  },
+  "N2410": {
+   "attached_to": [
+    {
+     "id": "C1522",
+     "type": "citation"
+    }
+   ],
+   "change": 1795793403,
+   "flags": [],
+   "handle": "105528476990240bd96637333d6",
+   "html": "<p>Transcription (as written): Heart Attack is Fatal to Plantico. Ald. Chester A. Plantico, 53, of 1123 South Seventh St., completing his 16th year as a member of the City Council, was stricken with a heart attack late Sunday afternoon while walking on South Eighth Street near the Courthouse. Rushed to the Holy Family Hospital in an ambulance he was pronounced dead on entrance. [...] Burial will be in Evergreen Cemetery. Mr. Plantico was born in Manitowoc in 1899, the son of the Mr. and Mrs. Charles Plantico. [...] In 1925 he married Miss Anna Jentsch. [...] Survivors are his wife; two sons, Chester Jr., of this city and Roger of Milledgeville, Ill.; mother, Mrs. Charles Plantico of this city [...] Manitowoc Herald Times, Mon., Jan. 28, 1952 page 2 [cemetery note:] bur. 01-30-1952/age 52 yrs.</p>",
+   "id": "N2410",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Heart Attack is Fatal to Plantico. Ald. Chester A. Plantico, 53, of 1123 South Seventh St., completing his 16th year as a member of the City Council, was stricken with a heart attack late Sunday afternoon while walking on South Eighth Street near the Courthouse. Rushed to the Holy Family Hospital in an ambulance he was pronounced dead on entrance. [...] Burial will be in Evergreen Cemetery. Mr. Plantico was born in Manitowoc in 1899, the son of the Mr. and Mrs. Charles Plantico. [...] In 1925 he married Miss Anna Jentsch. [...] Survivors are his wife; two sons, Chester Jr., of this city and Roger of Milledgeville, Ill.; mother, Mrs. Charles Plantico of this city [...] Manitowoc Herald Times, Mon., Jan. 28, 1952 page 2 [cemetery note:] bur. 01-30-1952/age 52 yrs.",
+   "type": "Transcript"
+  },
+  "N2411": {
+   "attached_to": [
+    {
+     "id": "C1522",
+     "type": "citation"
+    }
+   ],
+   "change": 1795793403,
+   "flags": [],
+   "handle": "105528476cd77ca9310f810738ea",
+   "html": "<p>2026-11-27 (karel): Ancestry profile 212819283289 (tree 208290233, created 27 Nov 2026) shows Chester A. Plantico, M, b. 1899 Manitowoc, d. 27 Jan 1952 Manitowoc, spouse Anna D. Jentsch 212818335525 (Gramps I0516), with no marriage event; the 1940 census record 77102890 is attached (companion 100011). His obituary (Manitowoc Herald Times, Mon. 28 Jan 1952, p. 2): &#x27;born in Manitowoc in 1899, the son of the Mr. and Mrs. Charles Plantico [...] In 1925 he married Miss Anna Jentsch&#x27;, stricken &#x27;late Sunday afternoon&#x27; (27 Jan 1952) and pronounced dead at Holy Family Hospital. Anna&#x27;s obituary (MHT 26 Jun 1967, p. 8): &#x27;Mrs. Chester A. Plantico [...] nee Anna Gentsch [...] daughter of the late Frank and Anna Lodel Gentsch [...] Her husband preceded her in death Jan. 27, 1952.&#x27; Checked the 27 Nov export (commit 63d614a, generated 3:17 AM ET, 517 people): no person with this Ancestry ID and no Burger, Plantico or Schlundt person; I0516 has families [] there, so the spouse link makes a new family. Born 1899, died 1952: private false.<br>Conflicts: [&quot;Birth is year only (obituary: &#x27;born in Manitowoc in 1899&#x27;); obituary age 53 and burial note &#x27;age 52 yrs.&#x27; fit 1898-1899; the 1940 census age (41, faint) fits about 1899.&quot;, &quot;Marriage year conflict (1925 in his obituary, 11 Nov 1923 in Anna&#x27;s): no marriage event filed; see research note 100014.&quot;, &#x27;The 1940 census is indexed on Ancestry under the surname Plantier.&#x27;]</p>",
+   "id": "N2411",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-27 (karel): Ancestry profile 212819283289 (tree 208290233, created 27 Nov 2026) shows Chester A. Plantico, M, b. 1899 Manitowoc, d. 27 Jan 1952 Manitowoc, spouse Anna D. Jentsch 212818335525 (Gramps I0516), with no marriage event; the 1940 census record 77102890 is attached (companion 100011). His obituary (Manitowoc Herald Times, Mon. 28 Jan 1952, p. 2): 'born in Manitowoc in 1899, the son of the Mr. and Mrs. Charles Plantico [...] In 1925 he married Miss Anna Jentsch', stricken 'late Sunday afternoon' (27 Jan 1952) and pronounced dead at Holy Family Hospital. Anna's obituary (MHT 26 Jun 1967, p. 8): 'Mrs. Chester A. Plantico [...] nee Anna Gentsch [...] daughter of the late Frank and Anna Lodel Gentsch [...] Her husband preceded her in death Jan. 27, 1952.' Checked the 27 Nov export (commit 63d614a, generated 3:17 AM ET, 517 people): no person with this Ancestry ID and no Burger, Plantico or Schlundt person; I0516 has families [] there, so the spouse link makes a new family. Born 1899, died 1952: private false.\nConflicts: [\"Birth is year only (obituary: 'born in Manitowoc in 1899'); obituary age 53 and burial note 'age 52 yrs.' fit 1898-1899; the 1940 census age (41, faint) fits about 1899.\", \"Marriage year conflict (1925 in his obituary, 11 Nov 1923 in Anna's): no marriage event filed; see research note 100014.\", 'The 1940 census is indexed on Ancestry under the surname Plantier.']",
+   "type": "Research"
+  },
+  "N2412": {
+   "attached_to": [
+    {
+     "id": "C1523",
+     "type": "citation"
+    }
+   ],
+   "change": 1795793404,
+   "flags": [],
+   "handle": "1055284798c4105ec68d5b45a96b",
+   "html": "<p>Transcription (as written): Thirteenth Census of the United States, 1910, Population; Wisconsin; Manitowoc; Two Rivers; ED 41; sheet 19A. [Adams St.] 2314 | 158 | 194 | Schlundt, Emil A. | Head | M | W | 28 | M1 | 4 [years married] | Wisconsin | Ger. German | Ger. German. Martha | Wife | F | W | 2[9] | M1 | 4 | Wisconsin. Otto | Brother | M | W | 2[?]. (Read from the Ancestry viewer screenshot; Martha&#x27;s age 29 and the street per the Ancestry index.)</p>",
+   "id": "N2412",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Thirteenth Census of the United States, 1910, Population; Wisconsin; Manitowoc; Two Rivers; ED 41; sheet 19A. [Adams St.] 2314 | 158 | 194 | Schlundt, Emil A. | Head | M | W | 28 | M1 | 4 [years married] | Wisconsin | Ger. German | Ger. German. Martha | Wife | F | W | 2[9] | M1 | 4 | Wisconsin. Otto | Brother | M | W | 2[?]. (Read from the Ancestry viewer screenshot; Martha's age 29 and the street per the Ancestry index.)",
+   "type": "Transcript"
+  },
+  "N2413": {
+   "attached_to": [
+    {
+     "id": "C1523",
+     "type": "citation"
+    }
+   ],
+   "change": 1795793404,
+   "flags": [],
+   "handle": "105528479c393d21308436732b5a",
+   "html": "<p>2026-11-27 (karel): Ancestry profile 212819283584 (tree 208290233, created 27 Nov 2026) shows Emil A. Schlundt, M, b. abt 1882, d. 1948, marriage 8 Jun 1905 Manitowoc, spouse Martha Jentsch 212818335485 (Gramps I0513); the 1910 census record 30852868 is attached to Emil and Martha. 1910 census, Two Rivers, ED 41, sheet 19A, 2314 Adams St.: Emil A. Schlundt, head, 28, married once, 4 years (fits a 1905 marriage), with Martha, wife, married 4 years, and Otto, brother. Marriage index: &#x27;Emil Aug Schlundt&#x27; and &#x27;Martha Jentsch&#x27;, 08 Jun 1905, Vol 05 p. 0441 (companion 100042). Frank Jentsch&#x27;s 1926 obituary lists his daughter &#x27;Mrs. Emil Schlundt, Two Rivers&#x27;. Death 1948 from the Evergreen Cemetery stone &#x27;Emil A. Schlundt/1881-1948&#x27;, beside &#x27;Martha Schlundt/1884-1940&#x27; (companion 100041). Checked the 27 Nov export (commit 63d614a, generated 3:17 AM ET, 517 people): no person with this Ancestry ID and no Burger, Plantico or Schlundt person; I0513 has families [] there, so the spouse link makes a new family. Born about 1882, died 1948: private false.<br>Conflicts: [&#x27;Birth: census age 28 (April 1910) gives about 1882; the gravestone index gives 1881. About 1882 is entered (as on Ancestry); 1881 is in the stone citation 100041.&#x27;, &#x27;The census gives his birthplace as Wisconsin; no birthplace is entered because Ancestry has none.&#x27;, &#x27;Death year 1948 rests on the stone index only; no obituary found.&#x27;]</p>",
+   "id": "N2413",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-27 (karel): Ancestry profile 212819283584 (tree 208290233, created 27 Nov 2026) shows Emil A. Schlundt, M, b. abt 1882, d. 1948, marriage 8 Jun 1905 Manitowoc, spouse Martha Jentsch 212818335485 (Gramps I0513); the 1910 census record 30852868 is attached to Emil and Martha. 1910 census, Two Rivers, ED 41, sheet 19A, 2314 Adams St.: Emil A. Schlundt, head, 28, married once, 4 years (fits a 1905 marriage), with Martha, wife, married 4 years, and Otto, brother. Marriage index: 'Emil Aug Schlundt' and 'Martha Jentsch', 08 Jun 1905, Vol 05 p. 0441 (companion 100042). Frank Jentsch's 1926 obituary lists his daughter 'Mrs. Emil Schlundt, Two Rivers'. Death 1948 from the Evergreen Cemetery stone 'Emil A. Schlundt/1881-1948', beside 'Martha Schlundt/1884-1940' (companion 100041). Checked the 27 Nov export (commit 63d614a, generated 3:17 AM ET, 517 people): no person with this Ancestry ID and no Burger, Plantico or Schlundt person; I0513 has families [] there, so the spouse link makes a new family. Born about 1882, died 1948: private false.\nConflicts: ['Birth: census age 28 (April 1910) gives about 1882; the gravestone index gives 1881. About 1882 is entered (as on Ancestry); 1881 is in the stone citation 100041.', 'The census gives his birthplace as Wisconsin; no birthplace is entered because Ancestry has none.', 'Death year 1948 rests on the stone index only; no obituary found.']",
+   "type": "Research"
+  },
+  "N2414": {
+   "attached_to": [
+    {
+     "id": "C1524",
+     "type": "citation"
+    }
+   ],
+   "change": 1795793406,
+   "flags": [],
+   "handle": "10552847e3229d93c67eb83f15c",
+   "html": "<p>Transcription (as written): Seventeenth Census of the United States, 1950; Wisconsin; Manitowoc County; Manitowoc; ED 36-48A; sheet 22. Line 29: [house no.] 1206 | [dwelling] 257 | Burger, George M. | Head | W | M | 56 | mar | Wisc. | WK | 40 [hours] | Secretary | Boat Building Co. Line 30: [ditto], Erna M. | Wife | W | F | 55 | mar | Wisc. | H.</p>",
+   "id": "N2414",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Seventeenth Census of the United States, 1950; Wisconsin; Manitowoc County; Manitowoc; ED 36-48A; sheet 22. Line 29: [house no.] 1206 | [dwelling] 257 | Burger, George M. | Head | W | M | 56 | mar | Wisc. | WK | 40 [hours] | Secretary | Boat Building Co. Line 30: [ditto], Erna M. | Wife | W | F | 55 | mar | Wisc. | H.",
+   "type": "Transcript"
+  },
+  "N2415": {
+   "attached_to": [
+    {
+     "id": "C1524",
+     "type": "citation"
+    }
+   ],
+   "change": 1795793406,
+   "flags": [],
+   "handle": "10552847e747a3265179e762f23",
+   "html": "<p>2026-11-27 (karel): Record-tier evidence for George Michael Burger (212819283151; companion to add_person 100000, applied after it): 1950 census, Manitowoc city, ED 36-48A, sheet 22, line 29 &#x27;Burger, George M.&#x27;, head, 56 (fits Nov 1893), married, born Wisconsin, secretary at a boat building company (his obituary: vice president and secretary of Burger Boat Company), with line 30 Erna M., wife, 55. Ancestry record 118892040 is attached to George and to Erna (1950 Residence facts only). Image is a crop of lines 29-30 from the NARA 1950 census image 147178-0023.<br>Conflicts: [&quot;Erna&#x27;s middle initial reads M. on the census; her obituary gives J.&quot;]</p>",
+   "id": "N2415",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-27 (karel): Record-tier evidence for George Michael Burger (212819283151; companion to add_person 100000, applied after it): 1950 census, Manitowoc city, ED 36-48A, sheet 22, line 29 'Burger, George M.', head, 56 (fits Nov 1893), married, born Wisconsin, secretary at a boat building company (his obituary: vice president and secretary of Burger Boat Company), with line 30 Erna M., wife, 55. Ancestry record 118892040 is attached to George and to Erna (1950 Residence facts only). Image is a crop of lines 29-30 from the NARA 1950 census image 147178-0023.\nConflicts: [\"Erna's middle initial reads M. on the census; her obituary gives J.\"]",
+   "type": "Research"
+  },
+  "N2416": {
+   "attached_to": [
+    {
+     "id": "C1525",
+     "type": "citation"
+    }
+   ],
+   "change": 1795793407,
+   "flags": [],
+   "handle": "10552847fc2e67ccf91bfb566fe0",
+   "html": "<p>Transcription (as written): George Michael Burger, 88, of 1404 Gunnell Lane, Manitowoc, died Thursday morning, December 24, at Family Heritage Home, Manitowoc [...] burial will be in Evergreen Cemetery, Manitowoc. Mr. Burger was born Nov. 5, 1893, at Manitowoc, son of the late Henry B. and Mamie Oertling Burger. He was educated in Manitowoc schools and married Erna Jentsch July 3, 1919, at Manitowoc, residing here since. He was former vice president and secretary of Burger Boat Company, retiring in 1962. [...] Survivors include his wife; two daughters [...] Herald Times Reporter, December 24, 1981 P. 3</p>",
+   "id": "N2416",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): George Michael Burger, 88, of 1404 Gunnell Lane, Manitowoc, died Thursday morning, December 24, at Family Heritage Home, Manitowoc [...] burial will be in Evergreen Cemetery, Manitowoc. Mr. Burger was born Nov. 5, 1893, at Manitowoc, son of the late Henry B. and Mamie Oertling Burger. He was educated in Manitowoc schools and married Erna Jentsch July 3, 1919, at Manitowoc, residing here since. He was former vice president and secretary of Burger Boat Company, retiring in 1962. [...] Survivors include his wife; two daughters [...] Herald Times Reporter, December 24, 1981 P. 3",
+   "type": "Transcript"
+  },
+  "N2417": {
+   "attached_to": [
+    {
+     "id": "C1525",
+     "type": "citation"
+    }
+   ],
+   "change": 1795793407,
+   "flags": [],
+   "handle": "10552847ffa86c9ebd111438503d",
+   "html": "<p>2026-11-27 (karel): Marriage of George Michael Burger 212819283151 (add_person 100000) and Erna J. Jentsch 212818335520 (I0515); the family is the one the applier makes from George&#x27;s spouse link. His obituary (HTR 24 Dec 1981, p. 3): &#x27;married Erna Jentsch July 3, 1919, at Manitowoc&#x27;; her obituary (HTR 7 Apr 1991, p. A2): &#x27;married George M. Burger July 3, 1919, in Manitowoc&#x27;. Ancestry has Marriage 3 Jul 1919 Manitowoc on both profiles. Compiled tier (obituary transcriptions), no marriage record image yet.<br>Conflicts: [&#x27;Both obituaries are transcriptions; a marriage record would raise this to record tier.&#x27;]</p>",
+   "id": "N2417",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-27 (karel): Marriage of George Michael Burger 212819283151 (add_person 100000) and Erna J. Jentsch 212818335520 (I0515); the family is the one the applier makes from George's spouse link. His obituary (HTR 24 Dec 1981, p. 3): 'married Erna Jentsch July 3, 1919, at Manitowoc'; her obituary (HTR 7 Apr 1991, p. A2): 'married George M. Burger July 3, 1919, in Manitowoc'. Ancestry has Marriage 3 Jul 1919 Manitowoc on both profiles. Compiled tier (obituary transcriptions), no marriage record image yet.\nConflicts: ['Both obituaries are transcriptions; a marriage record would raise this to record tier.']",
+   "type": "Research"
+  },
+  "N2418": {
+   "attached_to": [
+    {
+     "id": "I0523",
+     "type": "person"
+    }
+   ],
+   "change": 1795793407,
+   "flags": [],
+   "handle": "1055284811d920f0fddd0bab80c",
+   "html": "<p>2026-11-27 (karel): RESEARCH NOTE — George Michael Burger (1893–1981), husband of Erna J. (Jentsch) Burger. 27 Nov 2026.<br>Death year conflict: Erna&#x27;s obituary (Herald Times Reporter, 7 Apr 1991, p. A2) says she &#x27;was preceded in death by her husband in 1961&#x27;. George&#x27;s own obituary is printed in the Herald Times Reporter of 24 Dec 1981, p. 3: he &#x27;died Thursday morning, December 24, at Family Heritage Home, Manitowoc&#x27;, aged 88, and had retired from Burger Boat Company in 1962. 24 Dec was a Thursday in 1981 and a Sunday in 1961, so 24 Dec 1981 is entered and 1961 is taken as an error in Erna&#x27;s obituary.<br>The 1950 census (Manitowoc, ED 36-48A, sheet 22, lines 29-30) lists George M. Burger, 56, and his wife as &#x27;Erna M.&#x27;; her obituary and our tree have Erna J.<br>Still open: a death certificate or the Evergreen Cemetery record for George.</p><p>Tier: ai-draft</p>",
+   "id": "N2418",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-27 (karel): RESEARCH NOTE — George Michael Burger (1893–1981), husband of Erna J. (Jentsch) Burger. 27 Nov 2026.\nDeath year conflict: Erna's obituary (Herald Times Reporter, 7 Apr 1991, p. A2) says she 'was preceded in death by her husband in 1961'. George's own obituary is printed in the Herald Times Reporter of 24 Dec 1981, p. 3: he 'died Thursday morning, December 24, at Family Heritage Home, Manitowoc', aged 88, and had retired from Burger Boat Company in 1962. 24 Dec was a Thursday in 1981 and a Sunday in 1961, so 24 Dec 1981 is entered and 1961 is taken as an error in Erna's obituary.\nThe 1950 census (Manitowoc, ED 36-48A, sheet 22, lines 29-30) lists George M. Burger, 56, and his wife as 'Erna M.'; her obituary and our tree have Erna J.\nStill open: a death certificate or the Evergreen Cemetery record for George.\n\nTier: ai-draft",
+   "type": "Research"
+  },
+  "N2419": {
+   "attached_to": [
+    {
+     "id": "C1526",
+     "type": "citation"
+    }
+   ],
+   "change": 1795793408,
+   "flags": [],
+   "handle": "1055284821f72686cfbc64a85369",
+   "html": "<p>Transcription (as written): Sixteenth Census of the United States, 1940; Wisconsin; Manitowoc County; Manitowoc; ED 36-12; sheet 12A; 1123 [South 7th St.], household 257. Lines 29-32 as read from the image: Plantico, Chester | Head | M | W | 41 [faint] | Wisconsin. Anna D | Wife | F | W | 43 [faint] | Wisconsin. Roger | Son | M | W | 11 | S | Wisconsin. Chester Jr. | Son | M | W | 9 | S | Wisconsin. Ancestry indexes the surname as Plantier (Chester Plantier, Royer Plantier, Chester Plantier Jr).</p>",
+   "id": "N2419",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Sixteenth Census of the United States, 1940; Wisconsin; Manitowoc County; Manitowoc; ED 36-12; sheet 12A; 1123 [South 7th St.], household 257. Lines 29-32 as read from the image: Plantico, Chester | Head | M | W | 41 [faint] | Wisconsin. Anna D | Wife | F | W | 43 [faint] | Wisconsin. Roger | Son | M | W | 11 | S | Wisconsin. Chester Jr. | Son | M | W | 9 | S | Wisconsin. Ancestry indexes the surname as Plantier (Chester Plantier, Royer Plantier, Chester Plantier Jr).",
+   "type": "Transcript"
+  },
+  "N2420": {
+   "attached_to": [
+    {
+     "id": "C1526",
+     "type": "citation"
+    }
+   ],
+   "change": 1795793408,
+   "flags": [],
+   "handle": "1055284824bc55dcda5e90735b3d",
+   "html": "<p>2026-11-27 (karel): Record-tier evidence for Chester A. Plantico (212819283289; companion to add_person 100010, applied after it): 1940 census, Manitowoc, ED 36-12, sheet 12A, 1123 South 7th St.: Chester, head, with Anna D., wife, and sons Roger (11) and Chester Jr. (9), the sons named in his 1952 obituary; the address matches the obituary&#x27;s &#x27;1123 South Seventh St.&#x27;. Ancestry record 77102890 (indexed &#x27;Chester Plantier&#x27;) is attached to Chester and record 77102892 to Anna (1935/1940 Residence only). Image is the Ancestry viewer screenshot of the sheet (M-T0627-04494-00388).<br>Conflicts: [&#x27;Ancestry indexes the household as Plantier; the image reads Plantico.&#x27;, &#x27;Line numbers and the ages of Chester and Anna are read from a screenshot and are faint.&#x27;]</p>",
+   "id": "N2420",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-27 (karel): Record-tier evidence for Chester A. Plantico (212819283289; companion to add_person 100010, applied after it): 1940 census, Manitowoc, ED 36-12, sheet 12A, 1123 South 7th St.: Chester, head, with Anna D., wife, and sons Roger (11) and Chester Jr. (9), the sons named in his 1952 obituary; the address matches the obituary's '1123 South Seventh St.'. Ancestry record 77102890 (indexed 'Chester Plantier') is attached to Chester and record 77102892 to Anna (1935/1940 Residence only). Image is the Ancestry viewer screenshot of the sheet (M-T0627-04494-00388).\nConflicts: ['Ancestry indexes the household as Plantier; the image reads Plantico.', 'Line numbers and the ages of Chester and Anna are read from a screenshot and are faint.']",
+   "type": "Research"
+  },
+  "N2421": {
+   "attached_to": [
+    {
+     "id": "I0524",
+     "type": "person"
+    }
+   ],
+   "change": 1795793408,
+   "flags": [],
+   "handle": "105528483a566b79c4d0c2412843",
+   "html": "<p>2026-11-27 (karel): RESEARCH NOTE — Chester A. Plantico (1899–1952) &amp; Anna D. (Jentsch) Plantico. 27 Nov 2026.<br>Marriage year conflict: Chester&#x27;s obituary (Manitowoc Herald Times, 28 Jan 1952, p. 2) says &#x27;In 1925 he married Miss Anna Jentsch&#x27;; Anna&#x27;s obituary (Manitowoc Herald Times, 26 Jun 1967, p. 8) says &#x27;She was married to Chester Plantico Nov. 11, 1923.&#x27; No marriage event is entered until a marriage record settles it (their son Roger was born May 1928).<br>Roger F. Plantico&#x27;s 2004 obituary names his mother &#x27;Anna (Lodl) Plantico&#x27;; Lodl was her mother&#x27;s maiden name. Anna&#x27;s own obituary (&#x27;nee Anna Gentsch&#x27;) and Chester C.&#x27;s 1995 obituary (&#x27;Anna Jentsch Plantico&#x27;) confirm she was born Jentsch.<br>The 1940 census household at 1123 South 7th St., Manitowoc (ED 36-12, sheet 12A) is indexed on Ancestry under the surname Plantier.<br>Still open: the Manitowoc County marriage record (1923 or 1925).</p><p>Tier: ai-draft</p>",
+   "id": "N2421",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-27 (karel): RESEARCH NOTE — Chester A. Plantico (1899–1952) & Anna D. (Jentsch) Plantico. 27 Nov 2026.\nMarriage year conflict: Chester's obituary (Manitowoc Herald Times, 28 Jan 1952, p. 2) says 'In 1925 he married Miss Anna Jentsch'; Anna's obituary (Manitowoc Herald Times, 26 Jun 1967, p. 8) says 'She was married to Chester Plantico Nov. 11, 1923.' No marriage event is entered until a marriage record settles it (their son Roger was born May 1928).\nRoger F. Plantico's 2004 obituary names his mother 'Anna (Lodl) Plantico'; Lodl was her mother's maiden name. Anna's own obituary ('nee Anna Gentsch') and Chester C.'s 1995 obituary ('Anna Jentsch Plantico') confirm she was born Jentsch.\nThe 1940 census household at 1123 South 7th St., Manitowoc (ED 36-12, sheet 12A) is indexed on Ancestry under the surname Plantier.\nStill open: the Manitowoc County marriage record (1923 or 1925).\n\nTier: ai-draft",
+   "type": "Research"
+  },
+  "N2422": {
+   "attached_to": [
+    {
+     "id": "C1527",
+     "type": "citation"
+    }
+   ],
+   "change": 1795793409,
+   "flags": [],
+   "handle": "105528484a3526fb2bb84c5e150",
+   "html": "<p>Transcription (as written): SCHLUNDT: [R-45-5]-Emil A. Schlundt/1881-1948 Tombstone, ossw: [R-45-5]-Martha Schlundt/1884-1940 Tombstone</p>",
+   "id": "N2422",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): SCHLUNDT: [R-45-5]-Emil A. Schlundt/1881-1948 Tombstone, ossw: [R-45-5]-Martha Schlundt/1884-1940 Tombstone",
+   "type": "Transcript"
+  },
+  "N2423": {
+   "attached_to": [
+    {
+     "id": "C1527",
+     "type": "citation"
+    }
+   ],
+   "change": 1795793409,
+   "flags": [],
+   "handle": "105528484d014a73fc51433cbe29",
+   "html": "<p>2026-11-27 (karel): Evergreen Cemetery stone index for Emil A. Schlundt (212819283584; companion to add_person 100040, applied after it): &#x27;Emil A. Schlundt/1881-1948&#x27;, lot R-45-5, with &#x27;Martha Schlundt/1884-1940&#x27; on the same lot (Martha I0513: born June 1884, died 1940 in Gramps). Source of the death year 1948. Index tier.<br>Conflicts: [&quot;The stone&#x27;s birth year 1881 differs from the 1910 census age (about 1882).&quot;]</p>",
+   "id": "N2423",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-27 (karel): Evergreen Cemetery stone index for Emil A. Schlundt (212819283584; companion to add_person 100040, applied after it): 'Emil A. Schlundt/1881-1948', lot R-45-5, with 'Martha Schlundt/1884-1940' on the same lot (Martha I0513: born June 1884, died 1940 in Gramps). Source of the death year 1948. Index tier.\nConflicts: [\"The stone's birth year 1881 differs from the 1910 census age (about 1882).\"]",
+   "type": "Research"
+  },
+  "N2424": {
+   "attached_to": [
+    {
+     "id": "C1528",
+     "type": "citation"
+    }
+   ],
+   "change": 1795793409,
+   "flags": [],
+   "handle": "1055284862e211daef360229b97f",
+   "html": "<p>Transcription (as written): Emil Aug Schlundt  Marriage Date: 08 Jun 1905 Vol:05 Page:0441 Vol:B Sequence:05927 / Martha Jentsch  Marriage Date: 08 Jun 1905 Vol:05 Page:0441 Vol:B Sequence:02517</p>",
+   "id": "N2424",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "Transcription (as written): Emil Aug Schlundt  Marriage Date: 08 Jun 1905 Vol:05 Page:0441 Vol:B Sequence:05927 / Martha Jentsch  Marriage Date: 08 Jun 1905 Vol:05 Page:0441 Vol:B Sequence:02517",
+   "type": "Transcript"
+  },
+  "N2425": {
+   "attached_to": [
+    {
+     "id": "C1528",
+     "type": "citation"
+    }
+   ],
+   "change": 1795793409,
+   "flags": [],
+   "handle": "1055284865c269ba36ad59c610c4",
+   "html": "<p>2026-11-27 (karel): Marriage of Emil A. Schlundt 212819283584 (add_person 100040) and Martha Jentsch 212818335485 (I0513); the family is the one the applier makes from Emil&#x27;s spouse link. Manitowoc County marriage index: &#x27;Emil Aug Schlundt&#x27; and &#x27;Martha Jentsch&#x27;, both 08 Jun 1905, Vol 05 p. 0441. The 1910 census gives both as married 4 years, and the Manitowoc Herald News of 9 Jun 1925 reports that Mr. and Mrs. Emil Schlundt celebrated their twentieth wedding anniversary. Ancestry has Marriage 8 Jun 1905 on both profiles. Index tier.<br>Conflicts: [&quot;Ancestry gives the place as &#x27;Manitowoc, Wisconsin, USA&#x27;; the index is the county register, so Manitowoc County is entered. No marriage record image yet.&quot;]</p>",
+   "id": "N2425",
+   "preformatted": false,
+   "provenance": [],
+   "review": "unreviewed",
+   "tags": [],
+   "text": "2026-11-27 (karel): Marriage of Emil A. Schlundt 212819283584 (add_person 100040) and Martha Jentsch 212818335485 (I0513); the family is the one the applier makes from Emil's spouse link. Manitowoc County marriage index: 'Emil Aug Schlundt' and 'Martha Jentsch', both 08 Jun 1905, Vol 05 p. 0441. The 1910 census gives both as married 4 years, and the Manitowoc Herald News of 9 Jun 1925 reports that Mr. and Mrs. Emil Schlundt celebrated their twentieth wedding anniversary. Ancestry has Marriage 8 Jun 1905 on both profiles. Index tier.\nConflicts: [\"Ancestry gives the place as 'Manitowoc, Wisconsin, USA'; the index is the county register, so Manitowoc County is entered. No marriage record image yet.\"]",
    "type": "Research"
   }
  },
@@ -186141,7 +187458,7 @@
     "type": "Birth",
     "year": 1884
    },
-   "change": 1795618921,
+   "change": 1795793405,
    "citations": [
     "C1476"
    ],
@@ -186171,7 +187488,9 @@
      "role": "Primary"
     }
    ],
-   "families": [],
+   "families": [
+    "F0229"
+   ],
    "flags": [
     "agent-proposed"
    ],
@@ -186321,7 +187640,7 @@
     "type": "Birth",
     "year": 1895
    },
-   "change": 1795618921,
+   "change": 1795793403,
    "citations": [
     "C1478"
    ],
@@ -186351,7 +187670,9 @@
      "role": "Primary"
     }
    ],
-   "families": [],
+   "families": [
+    "F0227"
+   ],
    "flags": [
     "agent-proposed"
    ],
@@ -186411,7 +187732,7 @@
     "type": "Birth",
     "year": 1897
    },
-   "change": 1795618921,
+   "change": 1795793404,
    "citations": [
     "C1479"
    ],
@@ -186441,7 +187762,9 @@
      "role": "Primary"
     }
    ],
-   "families": [],
+   "families": [
+    "F0228"
+   ],
    "flags": [
     "agent-proposed"
    ],
@@ -186889,6 +188212,277 @@
    "urls": [],
    "xref": {
     "ancestry": "212818787041"
+   }
+  },
+  "I0523": {
+   "alt_names": [],
+   "attributes": [],
+   "birth": {
+    "date": {
+     "day": 5,
+     "iso": "1893-11-05",
+     "modifier": null,
+     "month": 11,
+     "quality": null,
+     "sort": 2412773,
+     "text": "5 November 1893",
+     "year": 1893
+    },
+    "event": "E1736",
+    "place": "P0158",
+    "type": "Birth",
+    "year": 1893
+   },
+   "change": 1795793407,
+   "citations": [
+    "C1521",
+    "C1524"
+   ],
+   "death": {
+    "date": {
+     "day": 24,
+     "iso": "1981-12-24",
+     "modifier": null,
+     "month": 12,
+     "quality": null,
+     "sort": 2444963,
+     "text": "24 December 1981",
+     "year": 1981
+    },
+    "event": "E1737",
+    "place": "P0158",
+    "type": "Death",
+    "year": 1981
+   },
+   "events": [
+    {
+     "ref": "E1736",
+     "role": "Primary"
+    },
+    {
+     "ref": "E1737",
+     "role": "Primary"
+    }
+   ],
+   "families": [
+    "F0227"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "gender": "M",
+   "handle": "105528475430291074a843632dc",
+   "id": "I0523",
+   "media": [],
+   "name": {
+    "call": "",
+    "display": "George Michael Burger",
+    "first": "George Michael",
+    "nick": "",
+    "prefix": "",
+    "sort": "Burger, George Michael",
+    "suffix": "",
+    "surname": "Burger",
+    "title": "",
+    "type": "Birth Name"
+   },
+   "notes": [
+    "N2418"
+   ],
+   "parents": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "urls": [],
+   "xref": {
+    "ancestry": "212819283151"
+   }
+  },
+  "I0524": {
+   "alt_names": [],
+   "attributes": [],
+   "birth": {
+    "date": {
+     "day": null,
+     "iso": "1899",
+     "modifier": null,
+     "month": null,
+     "quality": null,
+     "sort": 2414656,
+     "text": "1899",
+     "year": 1899
+    },
+    "event": "E1738",
+    "place": "P0158",
+    "type": "Birth",
+    "year": 1899
+   },
+   "change": 1795793408,
+   "citations": [
+    "C1522",
+    "C1526"
+   ],
+   "death": {
+    "date": {
+     "day": 27,
+     "iso": "1952-01-27",
+     "modifier": null,
+     "month": 1,
+     "quality": null,
+     "sort": 2434039,
+     "text": "27 January 1952",
+     "year": 1952
+    },
+    "event": "E1739",
+    "place": "P0158",
+    "type": "Death",
+    "year": 1952
+   },
+   "events": [
+    {
+     "ref": "E1738",
+     "role": "Primary"
+    },
+    {
+     "ref": "E1739",
+     "role": "Primary"
+    }
+   ],
+   "families": [
+    "F0228"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "gender": "M",
+   "handle": "105528478032637da0de210bb14b",
+   "id": "I0524",
+   "media": [],
+   "name": {
+    "call": "",
+    "display": "Chester A. Plantico",
+    "first": "Chester A.",
+    "nick": "",
+    "prefix": "",
+    "sort": "Plantico, Chester A.",
+    "suffix": "",
+    "surname": "Plantico",
+    "title": "",
+    "type": "Birth Name"
+   },
+   "notes": [
+    "N2421"
+   ],
+   "parents": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "urls": [],
+   "xref": {
+    "ancestry": "212819283289"
+   }
+  },
+  "I0525": {
+   "alt_names": [],
+   "attributes": [],
+   "birth": {
+    "date": {
+     "day": null,
+     "iso": "1882",
+     "modifier": "about",
+     "month": null,
+     "quality": null,
+     "sort": 2408447,
+     "text": "about 1882",
+     "year": 1882
+    },
+    "event": "E1740",
+    "place": null,
+    "type": "Birth",
+    "year": 1882
+   },
+   "change": 1795793409,
+   "citations": [
+    "C1523",
+    "C1527"
+   ],
+   "death": {
+    "date": {
+     "day": null,
+     "iso": "1948",
+     "modifier": null,
+     "month": null,
+     "quality": null,
+     "sort": 2432552,
+     "text": "1948",
+     "year": 1948
+    },
+    "event": "E1741",
+    "place": null,
+    "type": "Death",
+    "year": 1948
+   },
+   "events": [
+    {
+     "ref": "E1740",
+     "role": "Primary"
+    },
+    {
+     "ref": "E1741",
+     "role": "Primary"
+    }
+   ],
+   "families": [
+    "F0229"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "gender": "M",
+   "handle": "10552847c41769bfb8bda1b90378",
+   "id": "I0525",
+   "media": [],
+   "name": {
+    "call": "",
+    "display": "Emil A. Schlundt",
+    "first": "Emil A.",
+    "nick": "",
+    "prefix": "",
+    "sort": "Schlundt, Emil A.",
+    "suffix": "",
+    "surname": "Schlundt",
+    "title": "",
+    "type": "Birth Name"
+   },
+   "notes": [],
+   "parents": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "review": "unreviewed",
+   "status": "full",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "urls": [],
+   "xref": {
+    "ancestry": "212819283584"
    }
   }
  },
@@ -196913,6 +198507,38 @@
    "notes": [],
    "type": "Archive",
    "urls": []
+  },
+  "R0055": {
+   "handle": "10552847914f116d7a1ce11eee74",
+   "id": "R0055",
+   "name": "National Archives and Records Administration (NARA), microfilm T624; Ancestry.com, 1910 United States Federal Census (collection 7884)",
+   "notes": [],
+   "type": "Archive",
+   "urls": []
+  },
+  "R0056": {
+   "handle": "105528481a7072a8ad060389a82b",
+   "id": "R0056",
+   "name": "National Archives and Records Administration (NARA), microfilm T627 roll 4494; Ancestry.com, 1940 United States Federal Census (collection 2442)",
+   "notes": [],
+   "type": "Archive",
+   "urls": []
+  },
+  "R0057": {
+   "handle": "1055284842d253121b4bc36d0549",
+   "id": "R0057",
+   "name": "2manitowoc.com (Manitowoc County genealogy site), cemetery index",
+   "notes": [],
+   "type": "Archive",
+   "urls": []
+  },
+  "R0058": {
+   "handle": "105528485b7d552c1c178bc665c7",
+   "id": "R0058",
+   "name": "2manitowoc.com (Manitowoc County genealogy site), marriage index",
+   "notes": [],
+   "type": "Archive",
+   "urls": []
   }
  },
  "sources": {
@@ -205936,6 +207562,238 @@
     "agent-proposed"
    ],
    "title": "1910 United States Census, Population Schedule, New Jersey, Mercer County, West Windsor Township, ED 106, sheet 12A"
+  },
+  "S0286": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1521",
+    "C1525"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10552847390dd3ce08850d25590",
+   "id": "S0286",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0041"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "Herald Times Reporter (Manitowoc, Wisconsin), 24 Dec 1981, p. 3: obituary of George M. Burger (transcription, 2manitowoc.com, Evergreen Cemetery obituaries BU)"
+  },
+  "S0287": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1522"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10552847661f7caf03fb76311eaf",
+   "id": "S0287",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0041"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "Manitowoc Herald Times (Manitowoc, Wisconsin), 28 Jan 1952, p. 2: obituary of Ald. Chester A. Plantico (transcription, 2manitowoc.com, Evergreen Cemetery obituaries PL)"
+  },
+  "S0288": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1523"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "1055284794ef2c653e620035121",
+   "id": "S0288",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0055"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "1910 United States Census, Population Schedule, Wisconsin, Manitowoc County, Two Rivers city, ED 41, sheet 19A"
+  },
+  "S0289": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1524"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10552847dc90387bffa3c3625584",
+   "id": "S0289",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0040"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "1950 United States Census, Population Schedule, Wisconsin, Manitowoc County, Manitowoc city, ED 36-48A, sheet 22"
+  },
+  "S0290": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1526"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "105528481e29579508d792713f58",
+   "id": "S0290",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0056"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "1940 United States Census, Population Schedule, Wisconsin, Manitowoc County, Manitowoc city, ED 36-12, sheet 12A"
+  },
+  "S0291": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1527"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "10552848463b6f238d28f05863e5",
+   "id": "S0291",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0057"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "Evergreen Cemetery, Manitowoc, Wisconsin: tombstone index, surnames SCHI-SCHL (2manitowoc.com)"
+  },
+  "S0292": {
+   "abbrev": "",
+   "attributes": {},
+   "author": "",
+   "citations": [
+    "C1528"
+   ],
+   "flags": [
+    "agent-proposed"
+   ],
+   "handle": "105528485ec44e00b41a0fd2656e",
+   "id": "S0292",
+   "media": [],
+   "notes": [],
+   "provenance": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "pubinfo": "",
+   "repositories": [
+    {
+     "call_number": "",
+     "media_type": "Electronic",
+     "ref": "R0058"
+    }
+   ],
+   "review": "unreviewed",
+   "tags": [
+    "agent-karel",
+    "agent-proposed"
+   ],
+   "title": "Manitowoc County, Wisconsin, marriages, Vol. B 1905 (library microfiche index, 2manitowoc.com)"
   }
  }
 }
